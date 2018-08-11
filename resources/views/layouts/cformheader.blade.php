@@ -1,0 +1,76 @@
+﻿
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Pyrupay</title>
+        
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        @auth
+        <meta name="api-token" content="{{ auth()->user()->api_token }}">
+        @endauth
+
+    <title>{{ config('app.name', 'Pyrupay') }}</title>
+
+        <!-- Icon css link -->
+        <link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
+
+     
+        <link href="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.css') }}" rel="stylesheet">
+
+        <link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
+         <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
+          <link rel="stylesheet" href="{{asset('css/front.css')}}" />
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+   
+ </head>
+    <body>
+ 
+    @yield('content')
+    hi
+    <div id="app">
+    </div>
+ 
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{{ asset('webhome/js/jquery-3.2.1.min.js') }}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{ asset('webhome/js/popper.min.js') }}"></script>
+        <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="http://formbuilder.online/assets/js/form-builder.min.js"></script>
+        
+        <script src="{{ asset('webhome/vendors/counterup/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/counterup/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/counterup/apear.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/counterup/countto.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/parallaxer/jquery.parallax-1.1.3.js') }}"></script>
+        <!--Tweets-->
+       
+        <script src="{{ asset('js/adminlte.min.js') }}"></script>
+        <script src="{{ asset('webhome/js/theme.js') }}"></script>
+        <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+       <script src="{{ asset(mix('js/app.js')) }}"></script>
+       @yield('scripts')
+    </body>       
+</html>

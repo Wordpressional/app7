@@ -1,0 +1,38 @@
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Base
+@import "base/base";
+
+// Font-awesome
+@import "~font-awesome/scss/font-awesome";
+
+// Modules
+@import "modules/form";
+@import "modules/turbolinks";
+@import "modules/panels";
+@import "modules/buttons";
+
+// Shared
+@import "shared/sidebar";
+@import "shared/footer";
+
+// Layouts
+@import "layouts/posts";
+@import "layouts/administration";
+
+.note-popover.popover
+{
+  display: none;
+}
+
+.st
+{
+	background-color:#003F5B; 
+	color:#ffffff; 
+	
+	font-weight: bold;
+}
+
