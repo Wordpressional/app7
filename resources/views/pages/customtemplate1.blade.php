@@ -41,5 +41,3 @@
 @include ('layouts/innerpagefooter')
 
 @endsection
-
-  

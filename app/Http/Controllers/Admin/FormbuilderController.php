@@ -29,7 +29,7 @@ class FormbuilderController extends Controller
         {
             $formshortcode = new Form();
             $formshortcode->formname = "Home_Page";
-            $formshortcode->shortcode = "homepage";
+            $formshortcode->shortcode = "-";
             $formshortcode->save();
         }
         }

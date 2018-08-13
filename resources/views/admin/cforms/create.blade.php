@@ -42,18 +42,34 @@
  
   /*var template = document.getElementById('build-wrap');
   $(template).formBuilder();*/
+
     var fbEditor = document.getElementById('build-wrap');
-    var formBuilder = $(fbEditor).formBuilder();
+    var fbOptions = {
+      showActionButtons: false
+    },
+    formBuilder = $(fbEditor).formBuilder(fbOptions);
+
+    
+
    document.getElementById('getJSON').addEventListener('click', function() {
      //alert(formBuilder.actions.getData('json'));
 
+     console.log(formBuilder.formData);
+
+        data1 = JSON.parse(formBuilder.formData);
+        console.log(data1.length);
+
+        var countarr = data1.length;
+
+    //alert(countarr);
      var cformname = $('#cformname').val();
      var fileContent = formBuilder.actions.getData('json');
 
      var data = JSON.stringify({
                 _token:String($('meta[name="csrf-token"]').attr('content')),
                 cformname:String(cformname),
-                htmlelement:fileContent
+                htmlelement:fileContent,
+                colcount:countarr
             });
         
             $.ajax({
@@ -70,7 +86,7 @@
             
           
             success: function(result) {
-                  var newLocation = "{{ url('/admin/forms/preview/') }}"+result;
+                  var newLocation = "{{ url('/admin/cforms/preview') }}"+"/"+result;
               window.location.href= newLocation;
 
             },
@@ -82,9 +98,16 @@
                   }
               }
             });
-           
+          
+
      
   });
+    
+  
+       
+      
+         
+         
      
   
 

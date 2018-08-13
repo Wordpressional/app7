@@ -45,7 +45,7 @@
     <body>
  
     @yield('content')
-    hi
+    
     <div id="app">
     </div>
  
@@ -55,22 +55,12 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="{{ asset('webhome/js/popper.min.js') }}"></script>
         <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script src="http://formbuilder.online/assets/js/form-builder.min.js"></script>
-        
-        <script src="{{ asset('webhome/vendors/counterup/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('webhome/vendors/counterup/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('webhome/vendors/counterup/apear.js') }}"></script>
-        <script src="{{ asset('webhome/vendors/counterup/countto.js') }}"></script>
-        <script src="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
-        <script src="{{ asset('webhome/vendors/parallaxer/jquery.parallax-1.1.3.js') }}"></script>
-        <!--Tweets-->
        
-        <script src="{{ asset('js/adminlte.min.js') }}"></script>
-        <script src="{{ asset('webhome/js/theme.js') }}"></script>
-        <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
-       <script src="{{ asset(mix('js/app.js')) }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+         <script src="{{ asset('webhome/js/form-builder.min.js') }}"></script>
+        <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
+        
+       
        @yield('scripts')
     </body>       
 </html>

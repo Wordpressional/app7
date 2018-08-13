@@ -17,6 +17,7 @@ class CreateCformsTable extends Migration
             $table->increments('id');
             $table->string('cformname')->unique();
             $table->longtext('htmlelements');
+            $table->longtext('htmlcontents');
             $table->text('cshortcode');
             $table->string('cstatus');
             $table->string('cispublic');

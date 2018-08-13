@@ -13,7 +13,7 @@ class CShortcode {
   	$fs = array();
   	$page = Page::Where('content', 'like', '%[' . $content . ']'.$content.'[/' . $content . ']%')->first();
   //dd($page->content);
-  	 $forms = Form::all();
+  	 //$forms = Form::all();
   	 //dd($forms);
   /*	 foreach($forms as $form){
   	 	 
@@ -24,25 +24,27 @@ class CShortcode {
 	}
 	}*/
   	//dd($a);
-  	
-  	   $forms = Form::Where('shortcode', $content)->first();
-  	
-  	  // array_push($fs, $forms);
-  	
-  	
-  	//dd($fs);
+  	  
+      $forms = Form::Where('shortcode', $content)->first();
+      if($forms){
+        $fs1 = sprintf('<div>%s</div>', $forms->htmlcontent);
+        array_push($fs, $fs1);
+        
 
-    //return view('shortcodes.custp')->with(['forms' => $forms, 'a' => $a]);
-    //return $forms->htmlcontent;
-  	  // return sprintf('<div>%s</div>', $forms->htmlcontent);
+        $final = implode("", $fs);
+        return $final;
+      } 
+      else
+      {
 
-  	   
-		$fs1 = sprintf('<div>%s</div>', $forms->htmlcontent);
-		array_push($fs, $fs1);
+  	   return "no content";
+  	
+  	 
+      }
+  	
+  
 		
-
-		$final = implode("", $fs);
-		return $final;
+		
   }
   
 }

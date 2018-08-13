@@ -7,6 +7,7 @@ use App\Shortcodes\BoldShortcode;
 use Illuminate\Support\ServiceProvider;
 use Shortcode;
 use App\Form; 
+use App\Cform;
 
 class ShortcodesServiceProvider extends ServiceProvider
 {
@@ -22,6 +23,13 @@ class ShortcodesServiceProvider extends ServiceProvider
         foreach($forms as $fo)
         {
             Shortcode::register($fo->shortcode, 'App\Shortcodes\CShortcode@custp');
+        }
+
+        $cforms = Cform::all();
+        foreach($cforms as $cfo)
+        {
+            
+            Shortcode::register($cfo->cshortcode, 'App\Shortcodes\CFShortcode@cfcustp');
         }
     }
 

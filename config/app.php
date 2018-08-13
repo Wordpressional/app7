@@ -223,6 +223,7 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 	    'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Shortcode' => Webwizo\Shortcodes\Facades\Shortcode::class,
+        'Carbon' => 'Carbon\Carbon'
 	
     ],
 

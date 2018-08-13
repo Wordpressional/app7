@@ -42,8 +42,11 @@
 			              		
 			              	</td>
 			              	<td>
-			              		
+			              		@if($form->formname == "Home_Page")
+			              		[homepage]{{$form->shortcode}}[/homepage]
+			              		@else
 								[{{ $form->shortcode}}]{{ $form->shortcode }}[/{{ $form->shortcode}}]
+								@endif
 			              		
 			              	</td>
 

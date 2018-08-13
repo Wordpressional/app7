@@ -54,6 +54,8 @@
 		<script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 		@endif
 		<script src="{{ asset(mix('js/app.js')) }}"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+         <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
          <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
 
             <script>

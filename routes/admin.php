@@ -49,13 +49,7 @@ Route::get('/forms/edit/{id}',[
 ]);
 
 
-Route::get('/cforms/ppreview',[
 
-
-'uses' => 'ContactFormbuilderController@ppreview',
-'as' => 'cforms.ppreview'
-
-]);
 
 Route::get('/cforms/preview/{id}',[
 
@@ -241,6 +235,66 @@ Route::post('/cforms/update/{id}',[
 
 ]);
 
+Route::post('/cforms/createshortcode/{id}',[
+
+
+'uses' => 'ContactFormbuilderController@createshortcode',
+'as' => 'cforms.createshortcode'
+
+]);
+
+Route::post('/cforms/operate/{id}',[
+
+
+'uses' => 'ContactFormbuilderController@operate',
+'as' => 'cforms.operate'
+
+]);
+Route::post('/cforms/datacfsave/{id}',[
+
+
+'uses' => 'ContactFormbuilderController@datacfsave',
+'as' => 'cforms.datacfsave'
+
+]);
+
+Route::post('/cforms/ucolcount/{id}',[
+
+
+'uses' => 'ContactFormbuilderController@ucolcount',
+'as' => 'cforms.ucolcount'
+
+]);
 
 
 
+Route::post('/cforms/remcolftable/{id}',[
+
+
+'uses' => 'ContactFormbuilderController@remcolftable',
+'as' => 'cforms.remcolftable'
+
+]);
+
+Route::post('/cforms/addcoltotable/{id}',[
+
+
+'uses' => 'ContactFormbuilderController@addcoltotable',
+'as' => 'cforms.addcoltotable'
+
+]);
+
+Route::post('/cforms/remcolftable/{id}',[
+
+
+'uses' => 'ContactFormbuilderController@remcolftable',
+'as' => 'cforms.remcolftable'
+
+]);
+
+Route::post('/cforms/datacfsave',[
+
+'uses' => 'ContactFormbuilderController@datacfsave',
+'as' => 'cforms.datacfsave'
+
+]);
