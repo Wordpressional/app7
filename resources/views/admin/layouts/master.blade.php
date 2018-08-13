@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/skins/_all-skins.min.css')}}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
-   
+    <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
 
 
     
@@ -130,7 +130,7 @@
 
 
     </script>
-
+   
     @yield('scripts')
 </body>
 </html>

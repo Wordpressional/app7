@@ -38,11 +38,12 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 		<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+          <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  </head>
     <body class="bg-light">
        
                      @yield('contentfrontend')
-       
+    
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="{{ asset('webhome/js/jquery-3.2.1.min.js') }}"></script>
@@ -88,13 +89,28 @@
              <script type="text/javascript">
           $(function () {
            
-
+            $('#content-area').find('section').attr('contentEditable',false);
             $('#previewtest').find('section').attr('contentEditable',false);
 
             $( ".keditor-toolbar").hide();
             
+           
+
+          jQuery(document).on('ready', function(){
+    
+            $('a.page-scroll').on('click', function(e){
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top - 50
+                }, 1500);
+                e.preventDefault();
+                });     
             });
+        });     
+
         </script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 		@stack('inline-scripts')
     </body>       
 </html>

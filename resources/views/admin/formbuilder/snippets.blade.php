@@ -99,6 +99,24 @@
     <div data-dynamic-href="snippets/_dynamic_content.html"></div>
 </div>
 
+<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/slider.png')}}" data-keditor-title="Slider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Slider">
+
+@include('shortcodes.imgslider')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Freshers-ribbon-faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;FAQ">
+
+@include('shortcodes.faq')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/twitter.png')}}" data-keditor-title="Twitter" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Twitter">
+
+@include('shortcodes.twitter')
+
+</div>
+
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/photo.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
     <div class="photo-panel">
         <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" width="100%" height="" />

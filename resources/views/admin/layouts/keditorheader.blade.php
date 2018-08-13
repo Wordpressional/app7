@@ -32,7 +32,7 @@
     <!-- End of KEditor styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('examples/plugins/code-prettify/src/prettify.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('examples/css/examples.css')}}" />
-
+     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
     
 
 </head>

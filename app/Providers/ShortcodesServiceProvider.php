@@ -47,6 +47,7 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('homepage', 'App\Shortcodes\HomepageShortcode@customhomep');
         Shortcode::register('topmenu', 'App\Shortcodes\TopmenuShortcode@topm');
         
+        
          
         
 
