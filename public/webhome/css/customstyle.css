@@ -53,6 +53,23 @@ ul.dropdown-menu li a
   background-color: #2f233d !important;
 }
 
+.about_menu_area
+{
+  border:none !important;
+  background-color: #0E8F8F !important;
+  padding-top: 25px;
+}
+
+.nav-linka{
+    color: #ffffff;
+    margin-left: 10px;
+}
+.nav-linka:hover{
+    color: #ffffff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
 .imgpage
 {
   
@@ -659,3 +676,5 @@ font-size: 22px;
     margin-top: 10px;
     
 }
+
+

@@ -96,7 +96,7 @@
         <p><a role="button" href="#" class="btn btn-primary btn-lg">Learn more</a></p>
     </div>
 
-    <div data-dynamic-href="snippets/_dynamic_content.html"></div>
+    <div data-dynamic-href="{{asset('examples/snippets/_dynamic_content.html')}}"></div>
 </div>
 
 <div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/slider.png')}}" data-keditor-title="Slider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Slider">
@@ -111,9 +111,32 @@
 
 </div>
 
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/menu.png')}}" data-keditor-title="AMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;AMenu">
+
+@include('shortcodes.aboutmenu')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;ASPA">
+
+@include('shortcodes.aboutspa')
+
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/twitter.png')}}" data-keditor-title="Twitter" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Twitter">
 
 @include('shortcodes.twitter')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/introslider.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Introslider">
+
+@include('shortcodes.introslider')
+
+</div>
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/services.png')}}" data-keditor-title="Services" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Services">
+
+@include('shortcodes.services')
 
 </div>
 

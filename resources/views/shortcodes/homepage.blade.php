@@ -24,6 +24,8 @@
             $( ".keditor-toolbar").hide();
             
             });
+
 </script>
+
 
 @endsection

@@ -60,6 +60,7 @@
          <script src="{{ asset('webhome/js/form-builder.min.js') }}"></script>
         <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
         
+       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
        
        @yield('scripts')
     </body>       

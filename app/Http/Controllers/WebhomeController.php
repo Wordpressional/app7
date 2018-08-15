@@ -47,7 +47,7 @@ class WebhomeController extends Controller
         $shortcode = App('Shortcode');
     $form = Form::where('formname','Home_Page')->get();
     return view('webhome.pyrupayindex')->with('form', $form)->withShortcodes();
-       
+      
 
     }
 
