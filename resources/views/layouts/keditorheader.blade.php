@@ -44,7 +44,7 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-   
+
  </head>
     <body>
  
@@ -80,5 +80,6 @@
        <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
        <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
             <script type="text/javascript">jssor_1_slider_init();</script>
+        
     </body>       
 </html>

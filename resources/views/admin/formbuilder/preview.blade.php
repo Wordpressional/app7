@@ -41,7 +41,7 @@
 
             $( ".keditor-toolbar").hide();
             
-           
+          
 
           jQuery(document).on('ready', function(){
     

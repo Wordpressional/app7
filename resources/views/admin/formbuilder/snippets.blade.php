@@ -140,6 +140,18 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/bitcoin.png')}}" data-keditor-title="Bitcoinwidget" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Bitcoinwidget">
+
+@include('shortcodes.bitcoinwidget')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/links.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Footerlinks">
+
+@include('shortcodes.footerlinks')
+
+</div>
+
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/photo.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
     <div class="photo-panel">
         <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" width="100%" height="" />
