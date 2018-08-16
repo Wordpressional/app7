@@ -37,6 +37,7 @@
          <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
           <link rel="stylesheet" href="{{asset('css/front.css')}}" />
           <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+          
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,6 +52,7 @@
     @yield('content')
     <div id="app">
     </div>
+
  
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -80,6 +82,22 @@
        <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
        <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
             <script type="text/javascript">jssor_1_slider_init();</script>
-        
+      
+       <script src="{{ asset('webhome/js/jparticles.js')}}"></script>
+    <script src="{{ asset('webhome/js/particle.js')}}"></script>
+    <script src="{{ asset('webhome/js/require.js')}}"></script>
+   
+    <script>
+        var demo = new JParticles.particle( '#demo' );
+
+        document.addEventListener( 'click', function( event ){
+            var target = event.target;
+            if( target.getAttribute('data-open') !== null ){
+                demo.open();
+            }else if( target.getAttribute('data-pause') !== null ){
+                demo.pause();
+            }
+        });
+    </script>
     </body>       
 </html>

@@ -1,2 +1,2 @@
-<div id="hitbtc-ticker" class="hit-big" data-hue="86"></div>
+<div id="hitbtc-ticker" class="hit-medium" data-hue="86"></div>
 

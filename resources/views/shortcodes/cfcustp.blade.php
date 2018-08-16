@@ -70,7 +70,10 @@
 
                      $('#successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ $('#successalert').css("display", "none"); }, 3000);
+                     setTimeout(function(){ 
+
+                      $(".my-form")[0].reset();
+                      $('#successalert').css("display", "none"); }, 3000);
 
             },
              error: function (jqXHR, textStatus, errorThrown) {
