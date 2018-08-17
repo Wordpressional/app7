@@ -47,14 +47,14 @@
   
   
   height: 50px;
-  width: 340px;
-  font-size: 22px;
+  width: 318px;
+  font-size: 18px;
   font-weight: bold;
   padding: 0px;
   color: #000000;
-  margin-top: 25px;
+  
   text-transform: uppercase;
-  margin:20px;
+  margin:25px;
   
   
   opacity: 1;
@@ -83,7 +83,7 @@
 {
 	background-color: #FDFEEB;
 	
-  margin:25px;
+  margin:10px;
   padding:25px;
   border-radius: 15px;
   opacity: .7;

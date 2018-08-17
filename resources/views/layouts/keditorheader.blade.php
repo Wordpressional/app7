@@ -48,11 +48,13 @@
 
  </head>
     <body>
- 
+    <div class="container">
+        <div class="row">
     @yield('content')
     <div id="app">
     </div>
-
+        </div>
+    </div>
  
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

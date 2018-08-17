@@ -4,6 +4,7 @@
   <div id="ontop">
   	<br>
   	<h2> Welcome to our Blog </h2>
+  	<br>
     @foreach($posts as $post) 
 	<ul class="list8">
 	<li>
