@@ -45,7 +45,7 @@
  <style>
  .button {
   
-  background-color: #c2c2c2;
+  
   height: 50px;
   width: 340px;
   font-size: 22px;
@@ -57,7 +57,7 @@
   margin:20px;
   
   
-  opacity: .7;
+  opacity: 1;
   position: relative;
   text-align: center;
     box-sizing: border-box;
