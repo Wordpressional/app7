@@ -82,7 +82,16 @@
 
                  $('#successalert').text("Successfully created shortcode");
 
-                 setTimeout(function(){ $('#successalert').css("display", "none"); }, 3000);
+                 
+
+                 setTimeout(function(){ $('#successalert').css("display", "none");
+
+
+                   var newLocation = "{{ url('/admin/cforms') }}";
+                  window.location.href= newLocation;
+
+                  }, 3000);
+
 
             },
              error: function (jqXHR, textStatus, errorThrown) {

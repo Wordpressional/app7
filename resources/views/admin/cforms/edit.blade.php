@@ -52,7 +52,6 @@
 
  <script type="text/javascript">
 
-
   var fbEditor = document.getElementById('build-wrap');
   var fbOptions = {
       showActionButtons: false,
@@ -60,11 +59,13 @@
   },
     formBuilder = $(fbEditor).formBuilder(fbOptions);
 
+    
   
     $(document).ready(function () {
-     
-      
 
+      
+      
+     
     $("#setData").click(function (e) {
         e.preventDefault();
 
@@ -279,7 +280,7 @@ document.getElementById('UpdateJSON').addEventListener('click', function() {
         var colcount = '{{ $cform->colcount }}' ;
        var diff = countarr - colcount;
          
-         var arry = [];
+         /*var arry = [];
             console.log(formBuilder.actions.getData()[countarr-1].name);
             for(var i=0; i<countarr; i++)
              { 
@@ -288,7 +289,10 @@ document.getElementById('UpdateJSON').addEventListener('click', function() {
 
              }
           
-            console.log(arry);
+            console.log(arry);*/
+
+          var arry = '{{ $cform->tabfields }}' ;
+          var arry = arry.split(",");  
 
      var cshortcode = '{{ $cform->cshortcode }}' ;
      var colcount = '{{ $cform->colcount }}' ;

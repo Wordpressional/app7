@@ -47,7 +47,7 @@
                 <div data-u="caption" data-t="15" data-3d="1" style="position:absolute;top:70px;left:182px;width:616px;height:150px;z-index:0;">
                     <img data-u="caption" data-t="16" style="position:absolute;top:22px;left:266px;width:84px;height:84px;z-index:0;" src="{{ asset('introimgs/present/03/ios.png')}}" />
                     <img data-u="caption" data-t="17" style="position:absolute;top:16px;left:260px;width:96px;height:96px;z-index:0;" src="{{ asset('introimgs/present/03/circle.png')}}" />
-                    <div data-u="caption" data-t="18" style="position:absolute;top:195px;left:230px;width:199px;height:30px;z-index:0;font-size:18px;color:#ffffff;line-height:30px;text-align:center;">Token Sale</div>
+                    <div data-u="caption" data-t="18" style="position:absolute;top:195px;left:210px;width:199px;height:30px;z-index:0;font-size:18px;color:#ffffff;line-height:30px;text-align:center;">Token Sale</div>
                     <img data-u="caption" data-t="19" style="position:absolute;top:22px;left:22px;width:84px;height:84px;z-index:0;" src="{{ asset('introimgs/present/03/android.png')}}" />
                     <img data-u="caption" data-t="20" style="position:absolute;top:16px;left:16px;width:96px;height:96px;z-index:0;" src="{{ asset('introimgs/present/03/circle.png')}}" />
                     <div data-u="caption" data-t="21" style="position:absolute;top:125px;left:106px;width:196px;height:30px;z-index:0;font-size:18px;color:#ffffff;line-height:30px;text-align:center;">Smart Contracts</div>

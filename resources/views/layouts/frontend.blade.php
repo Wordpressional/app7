@@ -118,5 +118,6 @@
     
 		@stack('inline-scripts')
          <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
-    </body>       
+         <script src="{{ asset('webhome/js/css3-animate-it.js') }}"></script>
+    </body>      
 </html>

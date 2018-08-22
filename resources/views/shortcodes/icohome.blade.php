@@ -1,4 +1,4 @@
-<div class="icolist">
+<div class="icolist animatedParent">
 	<div class="col-md-12">
 	<div class="ani1">
 
@@ -10,7 +10,7 @@
 <div class="row">
 @foreach($icos as $ico) 
 		<div class="col-md-4">
-			<div class="ani">
+			<div class="ani animated bounceInDown">
 			<img class="circleimg" src="{{ asset('img/photo2.png') }}" />
 			<div> Token Name </div>
 			<p>Token Symbol </p>
@@ -81,7 +81,7 @@
 }
 .ani
 {
-	background-color: #FDFEEB;
+	background-color: #ffffff;
 	
   margin:10px;
   padding:25px;
@@ -194,3 +194,4 @@
 
 
 </style>
+  <script src="{{ asset('webhome/js/css3-animate-it.js') }}"></script>

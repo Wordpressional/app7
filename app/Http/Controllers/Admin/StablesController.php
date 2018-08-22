@@ -20,14 +20,14 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
-class ContactFormbuilderController extends Controller
+class StablesController extends Controller
 {
 
     public function index()
     {   
        
-        $cforms = Cform::withTrashed()->latest()->paginate(50);
-        return view('admin.cforms.index',compact('cforms'));
+        $stables = Cform::withTrashed()->latest()->paginate(50);
+        return view('admin.stables.index',compact('stables'));
     }
      /**
      * Show the form for creating a new resource.
@@ -65,6 +65,12 @@ class ContactFormbuilderController extends Controller
 
     // }
 
+        /*$product = new Product;
+        $product->getTable(); // products
+        $product->setTable('oooops');
+        $product->get(); // select * from oooops
+        $product->first(); // select * from oooops limit 1*/
+
      public function fsave(Request $request)
     {
          $pwd = bin2hex(openssl_random_pseudo_bytes(4));
@@ -74,32 +80,6 @@ class ContactFormbuilderController extends Controller
         $cform->htmlcontents = "nil";
         $cform->colcount = $request->colcount;
          $cform->cshortcode = "c".$pwd;
-
-          $obj = json_decode($request->htmlelement);
-        $cc = array();
-
-
-       
-       //dd($cform->htmlelements);
-
-        for($i=0; $i < count($obj); $i++)
-        {
-
-           if(isset($obj[$i]->name))
-            { 
-                array_push($cc, $obj[$i]->name);
-            } 
-            else
-            {
-                array_push($cc, $obj[$i]->type);
-            }  
-        
-        }
-       
-
-        $cc1 = implode(",", $cc);
-
-        $cform->tabfields = $cc1;
         $cform->save();
         //Session::flash('success','Form saved successfully');
         return $cform->id;
@@ -184,8 +164,18 @@ class ContactFormbuilderController extends Controller
      */
     public function edit($id)
     {
-        $cform = Cform::find($id);
-        return view('admin.cforms.edit')->with('cform', $cform);
+        $stablescform = Cform::find($id);
+        //dd($stables->cshortcode);
+        
+        //$stables = DB::table($stables->cshortcode)->select('*')->get();
+        $stablesfields = $stablescform->tabfields;
+
+        $stablef = explode(",", $stablesfields);
+        $stables = Schema::getColumnListing($stablescform->cshortcode);
+        
+
+
+        return view('admin.stables.edit')->with(['stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef]);
     }
 
     /**
@@ -218,49 +208,45 @@ class ContactFormbuilderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-
-            'cformname' => 'required'
-
-        ]);
-
-         $cform = Cform::find($id);
-        $cform->cformname = $request->cformname;
-        $cform->htmlelements = $request->htmlelement;
-
-        $cform->colcount = $request->colcount;
         
+         $arr = explode(",",$request->cfs);
+         $arr1 = explode(",",$request->cfs1);
+
         
-       
-        $obj = json_decode($cform->htmlelements);
-        $cc = array();
+         //dd($arr);
 
+        $fromtablename = Cform::find($id);
+        
+        $stables = Schema::getColumnListing($fromtablename->cshortcode);
 
-       
-       //dd($cform->htmlelements);
+        $cars = array();
 
-        for($i=0; $i < count($obj); $i++)
-        {
+        //for ($rows = 0; $rows < 4; $rows++) {
+         
+          for ($cols = 0; $cols < count($arr1); $cols++) {
+           $cars[0][$cols] = $arr[$cols];
+           $cars[1][$cols] = $arr1[$cols];
+          }
+         
+        //}
 
-           if(isset($obj[$i]->name))
-            { 
-                array_push($cc, $obj[$i]->name);
-            } 
+        //Schema::rename($fromtablename, $request->tablename);
+            //dd($fromtablename->htmlelements);
+          for ($cols = 0; $cols < count($arr1); $cols++) {
+            if($cars[1][$cols] == "")
+            {
+
+            }
             else
             {
-                array_push($cc, $obj[$i]->type);
-            }  
-        
-        }
-       
+                DB::statement("ALTER TABLE `".$fromtablename->cshortcode."` CHANGE COLUMN `" .$cars[1][$cols] ."` `".$cars[0][$cols]."` text NOT NULL");
+            }
+            
+          }
 
-        $cc1 = implode(",", $cc);
-
-        $cform->tabfields = $cc1;
        
-        $cform->save();
         
-        return "success";
+        return $cars;
     }
 
     /**
@@ -332,14 +318,12 @@ class ContactFormbuilderController extends Controller
 
     public function operate(Request $request, $id)
     {
-        
         // set dynamic table name according to your requirements
        
         $table_name = $request->cshortcode;
 
         // set your dynamic fields (you can fetch this data from database this is just an example)
-        //dd($request->fieldnames);
-
+        //dd($request->formData);
 
         $fields = array();
         

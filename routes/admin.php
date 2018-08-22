@@ -89,7 +89,39 @@ Route::get('/cforms/edit/{id}',[
 
 ]);
 
+Route::post('/stables/fsave',[
+
+
+'uses' => 'StablesController@fsave',
+'as' => 'stables.fsave'
+
+]);
+
+Route::get('/stables/restore/{id}',[
+
+'uses' => 'StablesController@restore',
+'as' => 'stables.restore'
+
+]);
+
+Route::get('/stables/delete/{id}',[
+
+'uses' => 'StablesController@destroy',
+'as' => 'stables.delete'
+
+]);
+
+Route::get('/stables/edit/{id}',[
+
+
+'uses' => 'StablesController@edit',
+'as' => 'stables.edit'
+
+]);
+
 Route::resource('cforms', 'ContactFormbuilderController');
+
+Route::resource('stables', 'StablesController');
 
 Route::resource('forms', 'FormbuilderController');
 Route::resource('posts', 'PostController');
@@ -232,6 +264,14 @@ Route::post('/cforms/update/{id}',[
 
 'uses' => 'ContactFormbuilderController@update',
 'as' => 'cforms.update'
+
+]);
+
+Route::post('/stables/update/{id}',[
+
+
+'uses' => 'StablesController@update',
+'as' => 'stables.update'
 
 ]);
 
