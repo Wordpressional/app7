@@ -37,6 +37,20 @@
       <!--<p>Category: $ico->token-category </p>-->
       
       <p>29 Days Left </p>
+      <div class="stars">
+          <form action="">
+            <input class="star star-5" id="star-{{ $key + 5 }}" type="radio" name="star"/>
+            <label class="star star-5" for="star-{{ $key + 5 }}"></label>
+            <input class="star star-4" id="star-{{ $key + 4 }}" type="radio" name="star"/>
+            <label class="star star-4" for="star-{{ $key + 4 }}"></label>
+            <input class="star star-3" id="star-{{ $key + 3 }}" type="radio" name="star"/>
+            <label class="star star-3" for="star-{{ $key + 3 }}"></label>
+            <input class="star star-2" id="star-{{ $key + 2 }}" type="radio" name="star"/>
+            <label class="star star-2" for="star-{{ $key + 2 }}"></label>
+            <input class="star star-1" id="star-{{ $key + 1 }}" type="radio" name="star"/>
+            <label class="star star-1" for="star-{{ $key + 1 }}"></label>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -270,10 +284,4 @@
 
 </style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/js/star-rating.min.js"></script>
-  <script type="text/javascript">
-
-    $("#input-id").rating();
-
-</script>
 
