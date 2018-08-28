@@ -5,7 +5,7 @@
    <div class="container pt-5">
        <div class="row">
            
-    	   <div class="col-xs-12 col-sm-6 col-md-4 footers-two commonf">
+    	   <div class="col-xs-12 col-sm-6 col-md-3 footers-two commonf">
     		    <h5>ICO SERVICES </h5>
 
     		    <ul class="list-unstyled tspacing">
@@ -21,18 +21,7 @@
     			<li><a href="contact.html">ICO Listing</a></li>
     			</ul>
     		</div>
-    	   <div class="col-xs-12 col-sm-6 col-md-3 footers-three commonf">
-    		    <h5>EXCHANGE </h5>
-    		    <ul class="list-unstyled tspacing">
-    			 <li><a href="maintenance.html">Register</a></li>
-    			 <li><a href="contact.html">Login</a></li>
-    			 <li><a href="about.html">Getting Familiar</a></li>
-    			 <ul class="list-unstyled ttspacing">
-    			 <li><a href="about.html">Videos</a></li>
-    			 <li><a href="about.html">Infographics</a></li>
-    			</ul>
-    			</ul>
-    		</div>
+    	   
     	   <div class="col-xs-12 col-sm-6 col-md-3 footers-four commonf">
     		    <h5>PROMOTE YOUR ICO </h5>
     		    <ul class="list-unstyled tspacing">
@@ -53,6 +42,29 @@
     			 <li><a href="contact.html">Blog</a></li>
     			</ul>
     		</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 footers-three commonf">
+                <h5>Subscribe </h5>
+                <br>
+                <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="thumbnail center well well-small">
+                            
+                            
+                            <p>Subscribe to our weekly Blog Updates and stay tuned.</p>
+                            
+                            <form action="" method="post">
+                                <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+                                    <input type="text" id="" name="" placeholder="your@email.com">
+                                </div>
+                                <br />
+                                <input type="submit" value="Subscribe Now!" class="btn btn-large" />
+                          </form>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+              </div>
     		
        </div>
    </div>
@@ -99,7 +111,7 @@
  
     <ul class="foote_bottom_ul_amrc">
     <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms of Condition</a></li>
+    <li><a href="#">Terms and Condition</a></li>
     <li><a href="#">User Agreement</a></li>
     <li><a href="#">Disclaimer</a></li>
    

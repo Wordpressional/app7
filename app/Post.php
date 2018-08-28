@@ -9,10 +9,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+
 class Post extends Model
 {
     use Mediable, Likeable;
     use SoftDeletes;
+    
 
     /**
      * The attributes that are mass assignable.

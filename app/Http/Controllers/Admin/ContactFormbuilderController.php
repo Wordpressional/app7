@@ -95,6 +95,9 @@ class ContactFormbuilderController extends Controller
             }  
         
         }
+
+        array_push($cc, 'created_at');
+        array_push($cc, 'updated_at');
        
 
         $cc1 = implode(",", $cc);
@@ -252,6 +255,9 @@ class ContactFormbuilderController extends Controller
             }  
         
         }
+
+        array_push($cc, 'created_at');
+        array_push($cc, 'updated_at');
        
 
         $cc1 = implode(",", $cc);

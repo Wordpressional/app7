@@ -99,6 +99,35 @@
                     </div>
                 </div>
             </div>
+
+            <div data-b="2" data-p="170.0">
+             <div class="opi" style="position:absolute;top:38px;left:420px;width:260px;height:260px;z-index:0; opacity: 0.5 !important;">
+                   
+                    <img data-u="caption" data-t="2" style="position:absolute;top:38px;left:190px;width:219px;height:219px;z-index:0;" src="{{ asset('introimgs/present/Blockchain-wallet.png')}}" />
+            </div>    
+            <div data-u="caption" style="position:absolute;top:75px;left:100px;width:799px;height:30px;z-index:0;font-size:18px;color:#ffffff;line-height:30px;text-align:center;">
+            Pyrupay is a platform of blockchain software products. Our mission is to simplify the creation of agreements between people around the world, with user-friendly design.
+            </div>
+
+            <div data-u="caption" style="position:absolute;top:175px;left:100px;width:799px;height:30px;z-index:0;font-size:18px;color:#ffffff;line-height:30px;text-align:center;">
+            Pyrupay a crowdfunding marketplace for entrepreneurs seeking funding. At Pyrupay Crypto-Crowdfunding is made easy. Get your blockchain business off the ground and launch a globally-accessible token crowdsale without need of a developer.
+            </div>
+
+            
+            </div>
+            <div data-b="3" data-p="170.0">
+             <div style="position:absolute;top:28px;left:499px;width:260px;height:260px;z-index:0;">
+                   
+                    <img data-u="caption" data-t="2" style="position:absolute;top:28px;left:350px;width:219px;height:219px;z-index:0;" src="{{ asset('introimgs/present/blue-blockchain-icon.png')}}" />
+            </div> 
+             <div data-u="caption" style="position:absolute;top:75px;left:100px;width:499px;height:30px;z-index:0;font-size:18px;color:#ffffff;line-height:30px;text-align:center;">
+            It is the ultimate ICO listing website with all the important Initial Coin Offerings (ICOs), token sales and cryptocurrency crowdsales in one place.
+
+            </div>
+             <div data-u="caption" style="position:absolute;top:195px;left:100px;width:499px;height:30px;z-index:0;font-size:18px;color:#ffffff;line-height:30px;text-align:center;">
+            Pyrupay allows a DApp to create token and crowdsale campaigns on Ethereum compatible networks using free Wizard. No coding skills required.
+            </div>
+            </div>
             <!--<div data-b="2" data-p="816.0">
                 <img data-u="image" src="{{asset('introimgs/present/banner.png')}}" />
                 <div data-u="caption" data-t="47" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">

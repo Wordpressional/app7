@@ -41,12 +41,16 @@ class PageController extends Controller
 
      public function artpage(Request $request, Page $page)
     {   
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+    
+              
                
           return view('pages.customtemplate3', [
             'page' => $page
             
 
-        ]);
+        ])->withShortcodes();
         
 
     }

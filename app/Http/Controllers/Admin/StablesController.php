@@ -174,7 +174,6 @@ class StablesController extends Controller
         $stables = Schema::getColumnListing($stablescform->cshortcode);
         
 
-
         return view('admin.stables.edit')->with(['stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef]);
     }
 
@@ -208,12 +207,18 @@ class StablesController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        $this->validate($request, [
+
+            'tablename' => 'required|regex:/^[a-zA-Z0-9]+$/u|max:255'
+
+        ]);
         
          $arr = explode(",",$request->cfs);
          $arr1 = explode(",",$request->cfs1);
 
         
-         //dd($arr);
+         
 
         $fromtablename = Cform::find($id);
         
@@ -243,6 +248,17 @@ class StablesController extends Controller
             }
             
           }
+
+          //dd($fromtablename);
+          //DB::statement("RENAME TABLE `".$fromtablename->cshortcode."` TO `" .$request->tablename ."`");
+
+          
+          Schema::rename($fromtablename->cshortcode, $request->tablename);
+
+          $cform = Cform::find($id);
+          $cform->cshortcode = $request->tablename;
+          
+          $cform->save();
 
        
         

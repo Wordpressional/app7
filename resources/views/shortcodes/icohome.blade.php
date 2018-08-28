@@ -1,4 +1,6 @@
-<div class="icolist animatedParent">
+<div class="icolist ">
+  <div class="container">
+<div class="row">
 	<div class="col-md-12">
 	<div class="ani1">
 
@@ -6,42 +8,115 @@
 
 	</div>
 </div>	
-<div class="container">
+
+ <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+      <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#blogCarousel" data-slide-to="1"></li>
+  </ol>   
+<div class="carousel-inner">
+
+
+
+<div class="carousel-item active">
 <div class="row">
-@foreach($icos as $ico) 
+@foreach($icos as $key => $ico)              
+
+@if($key < 3)
+
+
+
+    <div class="col-md-4">
+      <div class="ani">
+        <span class="premium">Premium</span>
+      <img class="circleimg" src="{{ asset('img/photo2.png') }}" />
+      <div> Token Name: {{ $ico->tokenname }} </div>
+      
+      <p>Token Symbol: {{ $ico->tokensymbol }}</p>
+      <!--<p>Category: $ico->token-category </p>-->
+      
+      <p>29 Days Left </p>
+      </div>
+    </div>
+
+
+@endif
+    
+@endforeach
+</div>
+</div>
+
+<div class="carousel-item">
+  <div class="row">
+@foreach($icos as $key => $ico)              
+
+
+@if($key > 2)
+
+  
 		<div class="col-md-4">
-			<div class="ani animated bounceInDown">
+			<div class="ani">
+        <span class="premium">Premium</span>
+        
 			<img class="circleimg" src="{{ asset('img/photo2.png') }}" />
-			<div> Token Name </div>
-			<p>Token Symbol </p>
-			<p>Category </p>
+			<div> Token Name: {{ $ico->tokenname }} </div>
+      
+      <p>Token Symbol: {{ $ico->tokensymbol }}</p>
 			<p>29 Days Left </p>
+      <div class="stars">
+          <form action="">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form>
+        </div>
 			</div>
 		</div>
+  
+
+@endif
+
+    
 @endforeach
-	
-	
-		
-	
+</div>
+</div>
+
+</div>    
+
+</div>
+
+        
+     
+	 
 		<div class="col-md-4">
 
-		<div class="b06_3d_swap button"><div><span style="font-size: 10px; color:blue; padding-right:10px;"> View all </span><span>ACTIVE ICO's (5552)</span></div><div><span>Click Here</span></div></div>
+		<div class="b06_3d_swap button"><div><span style="font-size: 10px; color:#470041; padding-right:10px;"> View all </span><span>ACTIVE ICO's (5552)</span></div><div><span>Click Here</span></div></div>
 		
 		</div>
 		<div class="col-md-4">
 			
-		<div class="b06_3d_swap button"><div><span style="font-size: 10px;color:blue; padding-right:10px;"> View all </span><span>UPCOMING ICO's (5516)</span></div><div><span>Click Here</span></div></div>
+		<div class="b06_3d_swap button"><div><span style="font-size: 10px;color:#470041; padding-right:10px;"> View all </span><span>UPCOMING ICO's (5516)</span></div><div><span>Click Here</span></div></div>
 		
 		</div>
 		<div class="col-md-4">
 			
-		<div class="b06_3d_swap button"><div><span style="font-size: 10px;color:blue; padding-right:10px;"> View all </span><span>ENDED ICO's (5556)</span></div><div><span>Click Here</span></div></div>
+		<div class="b06_3d_swap button"><div><span style="font-size: 10px;color:#470041; padding-right:10px;"> View all </span><span>ENDED ICO's (5556)</span></div><div><span>Click Here</span></div></div>
 		
 		</div>
 </div>	
 </div>
 </div>
 
+
+  
  <style>
  .button {
   
@@ -194,4 +269,11 @@
 
 
 </style>
-  <script src="{{ asset('webhome/js/css3-animate-it.js') }}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/js/star-rating.min.js"></script>
+  <script type="text/javascript">
+
+    $("#input-id").rating();
+
+</script>
+

@@ -15,10 +15,10 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
 <div class="row">
-	<div class="col-md-12">
-	   <div class="bg-white p-3 post-card minh">
+	<div>
+	   <div class="minh">
 		<h4 v-pre></h4>
 						
 			<div v-pre class="post-content">

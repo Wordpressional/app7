@@ -19,7 +19,7 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="{{ URL::to('/') }}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('/cattype/books') }}">ICO Services&nbsp;&nbsp;&nbsp;<span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>
-                        <li class="nav-item"><a  class="nav-link" href="{{ url('/artpage/online-resources') }}">Exchange&nbsp;&nbsp;&nbsp;<span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>
+                        <!--<li class="nav-item"><a  class="nav-link" href="{{ url('/artpage/online-resources') }}">Exchange&nbsp;&nbsp;&nbsp;<span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>-->
                        
                         <!--<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What We do <span class="caret"></span></a>

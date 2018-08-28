@@ -58,8 +58,11 @@ ul.dropdown-menu li a
   border:none !important;
   background-color: #0E8F8F !important;
   padding-top: 25px;
+  margin-top: -48px;
 }
-
+.opi img{
+  opacity: 0.3;
+}
 .nav-linka{
     color: #ffffff;
     margin-left: 10px;
@@ -68,6 +71,9 @@ ul.dropdown-menu li a
     color: #ffffff;
     margin-left: 10px;
     text-decoration: none;
+}
+#pyrupay{
+    padding: 20px;
 }
 
 .imgpage
