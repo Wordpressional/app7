@@ -23,24 +23,26 @@
     <link rel="stylesheet" href="{{asset('css/skins/_all-skins.min.css')}}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
-
+ <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
 
     
 
 </head>
 <body class="admin-body">
     <div class="wrapper">
+
         <div class="adminltehs">
         @include('admin.shared.header')
         @include('admin.shared.sidebar')
         </div>
     <div class="content-wrapper bg-light">
+
     <div id="app">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     @include('shared/alerts')
-
+                        
                     <div class="card">
                         <div class="card-body">
                             @yield('content')
@@ -58,6 +60,9 @@
     <script src="{{ asset(mix('js/admin.js')) }}"></script>
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
+    <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
+    <script src="{{ asset('js/colorcommon.js') }}"></script>
+   
    
    
     <script type="text/javascript">

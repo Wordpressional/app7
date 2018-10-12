@@ -19,6 +19,8 @@ use Illuminate\Database\Schema\Blueprint;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class StablesController extends Controller
 {
@@ -165,16 +167,50 @@ class StablesController extends Controller
     public function edit($id)
     {
         $stablescform = Cform::find($id);
-        //dd($stables->cshortcode);
+        
         
         //$stables = DB::table($stables->cshortcode)->select('*')->get();
         $stablesfields = $stablescform->tabfields;
 
         $stablef = explode(",", $stablesfields);
-        $stables = Schema::getColumnListing($stablescform->cshortcode);
         
+        $stables = Schema::getColumnListing($stablescform->cshortcode);
+        //dd($stables);
 
-        return view('admin.stables.edit')->with(['stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef]);
+        if($stables)
+        {
+        $index1 = array_search("created_at", $stablef);
+        if($index1 !== false){
+            unset($stablef[$index1]);
+        }
+
+        $index2 = array_search("created_at", $stables);
+        if($index2 !== false){
+            unset($stables[$index2]);
+        }
+
+         $index1 = array_search("updated_at", $stablef);
+        if($index1 !== false){
+            unset($stablef[$index1]);
+        }
+
+        $index2 = array_search("updated_at", $stables);
+        if($index2 !== false){
+            unset($stables[$index2]);
+        }
+
+       
+         $alldata = DB::table($stablescform->cshortcode)->select('*')->get();
+
+       }
+       else
+        {
+            $alldata = $stables = "tablenotcreated";
+        
+        }
+
+        return view('admin.stables.edit')->with(['stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef, 'alldata' => $alldata]);
+        
     }
 
     /**
@@ -196,7 +232,25 @@ class StablesController extends Controller
         return view('admin.cforms.snippets');
     }
 
-    
+    public function updatetablename(Request $request, $id)
+    {
+
+        $this->validate($request, [
+
+            'tablename' => 'required|regex:/^[a-zA-Z0-9]+$/u|max:255'
+
+        ]);
+
+        $fromtablename = Cform::find($id);
+        
+
+        Schema::rename($fromtablename->cshortcode, $request->tablename);
+
+          $cform = Cform::find($id);
+          $cform->cshortcode = $request->tablename;
+          
+          $cform->save();
+    }
 
     /**
      * Update the specified resource in storage.
@@ -216,7 +270,7 @@ class StablesController extends Controller
         
          $arr = explode(",",$request->cfs);
          $arr1 = explode(",",$request->cfs1);
-
+         
         
          
 

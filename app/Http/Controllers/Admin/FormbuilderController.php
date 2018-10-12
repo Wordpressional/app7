@@ -33,6 +33,21 @@ class FormbuilderController extends Controller
             $formshortcode->save();
         }
         }
+
+         $formshortcode = Form::where('formname', 'Front_Page')->first();
+        if($formshortcode != "")
+        {
+        } 
+        else
+        {
+        if($formshortcode['formname'] != 'Front_Page')
+        {
+            $formshortcode = new Form();
+            $formshortcode->formname = "Front_Page";
+            $formshortcode->shortcode = "frontpage";
+            $formshortcode->save();
+        }
+        }
         $forms = Form::withTrashed()->latest()->paginate(50);
         return view('admin.formbuilder.index',compact('forms'));
     }

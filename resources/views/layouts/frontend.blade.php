@@ -39,6 +39,11 @@
         <![endif]-->
 		<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
           <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+
+           <link rel="stylesheet" href="{{asset('css/star-rating.min.css')}}" />
+            <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
+            @yield('css')
+
  </head>
     <body class="bg-light">
        
@@ -94,7 +99,7 @@
 
             $( ".keditor-toolbar").hide();
             
-           
+           });
 
           jQuery(document).on('ready', function(){
     
@@ -106,18 +111,25 @@
                 e.preventDefault();
                 });     
             });
-        });     
+            
 
         </script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="https://fonts.googleapis.com/css?family=Lora" charset="utf-8"></script>
         <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
+
+        <script src="{{ asset('js/star-rating.min.js')}}" type="text/javascript"></script>
+
+
        
         <script type="text/javascript">jssor_1_slider_init();</script>
         
     
-		@stack('inline-scripts')
+		
          <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
          <script src="{{ asset('webhome/js/css3-animate-it.js') }}"></script>
+       
+         
+         @stack('inline-scripts')
     </body>      
 </html>

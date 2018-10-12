@@ -37,20 +37,9 @@
       <!--<p>Category: $ico->token-category </p>-->
       
       <p>29 Days Left </p>
-      <div class="stars">
-          <form action="">
-            <input class="star star-5" id="star-{{ $key + 5 }}" type="radio" name="star"/>
-            <label class="star star-5" for="star-{{ $key + 5 }}"></label>
-            <input class="star star-4" id="star-{{ $key + 4 }}" type="radio" name="star"/>
-            <label class="star star-4" for="star-{{ $key + 4 }}"></label>
-            <input class="star star-3" id="star-{{ $key + 3 }}" type="radio" name="star"/>
-            <label class="star star-3" for="star-{{ $key + 3 }}"></label>
-            <input class="star star-2" id="star-{{ $key + 2 }}" type="radio" name="star"/>
-            <label class="star star-2" for="star-{{ $key + 2 }}"></label>
-            <input class="star star-1" id="star-{{ $key + 1 }}" type="radio" name="star"/>
-            <label class="star star-1" for="star-{{ $key + 1 }}"></label>
-          </form>
-        </div>
+     <span title="5" id="{{ $key }}-5" data-index="{{ $key }}"  data-business_id="{{ $key }}" data-rating="" class="rating" style="cursor:pointer; color:red; font-size:16px;">&#9733;</span>
+    
+
       </div>
     </div>
 

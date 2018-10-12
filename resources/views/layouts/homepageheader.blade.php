@@ -31,6 +31,8 @@
 		<link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
         <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
 
+        <link rel="stylesheet" href="{{asset('css/star-rating.min.css')}}" />
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -86,6 +88,10 @@
             </script>
              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
+
+        <script src="{{ asset('js/star-rating.min.js')}}" type="text/javascript"></script>
+
+
        <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
             <script type="text/javascript">jssor_1_slider_init();</script>
 		

@@ -9,7 +9,11 @@
 
 <div id="previewtest">
    
+   @if($form)
+
       {!! $form->htmlcontent !!}  
+   
+   @endif
    
   </div>   
 @endsection

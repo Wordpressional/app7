@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Form;
+use App\Brand;
+use App\Colorsetting;
 use Illuminate\Http\Request;
 use Imagecow\Image;
 use Shortcode;
@@ -46,7 +48,8 @@ class WebhomeController extends Controller
         Shortcode::enable();
         $shortcode = App('Shortcode');
     $form = Form::where('formname','Home_Page')->get();
-    return view('webhome.pyrupayindex')->with('form', $form)->withShortcodes();
+    $branding = Brand::where('id', 1)->first();
+    return view('webhome.pyrupayindex')->with(['form' => $form, 'branding' => $branding ])->withShortcodes();
       
 
     }

@@ -13,6 +13,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
+
 use Shortcode;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -108,52 +109,18 @@ class ContactFormbuilderController extends Controller
         return $cform->id;
     }
 
-    public function datacfsave(Request $request)
-    {
-        $input = array();
+    public function array_search_partial($arr, $keyword) {
+        $iarr = array();
+    foreach($arr as $index => $string) {
+    if (strpos($string, $keyword) !== FALSE)
+        array_push($iarr, $index); 
         
-        $general = new General;
-        $general->setTable = $request->table_name;
-         $input = $request->all();
-         $output = array_except($input, ['_token', 'table_name']);
-         foreach($output as $key => $value)
-         {
-            $key = str_replace("[]","",$key);
-            
-            $id = DB::table($request->table_name)->insertGetId([$key => $value]);
-            break;
-
-         }
-
-            if($id)
-            {
-                foreach($output as $key => $value)
-                {
-                    $key = str_replace("[]","",$key);
-
-                    DB::table($request->table_name)->where('id', $id)->update([$key => $value]);
-                  
-
-                }
-            }
-            $check = DB::table($request->table_name)->where('id', $id)->select('*')->get();
-            if($check[0]->created_at)
-            {
-              DB::table($request->table_name)->where('id', $id)->update([
-                'updated_at' => Carbon::now()->toDateTimeString()]); 
-            }
-            else
-            {
-              DB::table($request->table_name)->where('id', $id)->update(['created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString()]); 
-            }
-        
-         
-        return $check;
-      
+    }
+    return $iarr;
     }
 
 
+    
 
      public function createshortcode(Request $request, $id)
     {
@@ -237,6 +204,10 @@ class ContactFormbuilderController extends Controller
        
         $obj = json_decode($cform->htmlelements);
         $cc = array();
+        $c = array();
+        $result1 = array();
+        $result2 = array();
+        $result3 = array();
 
 
        
@@ -251,7 +222,7 @@ class ContactFormbuilderController extends Controller
             } 
             else
             {
-                array_push($cc, $obj[$i]->type);
+                array_push($cc, $obj[$i]->type."_".$i);
             }  
         
         }
@@ -262,7 +233,60 @@ class ContactFormbuilderController extends Controller
 
         $cc1 = implode(",", $cc);
 
-        $cform->tabfields = $cc1;
+        
+
+        $stables = Schema::getColumnListing($cform->cshortcode);
+
+        $c = array_diff($stables,$cc);
+
+        $result1 = array_intersect($stables,$cc);
+
+        $result2 = array_diff($cc, $result1);
+
+        //dd($result1);
+        $fieldscre = $result2;
+
+        $fields = $c;
+        $table_name = $cform->cshortcode;
+
+         Schema::table($table_name, function (Blueprint $table) use ($table_name, $fields) {
+           if (count($fields) > 0) {
+                    foreach ($fields as $key => $field) {
+                        if($field == "id")
+                        {
+
+                        }
+                        else
+                        {
+                             $table->dropColumn($field);
+                        }
+                       
+                    }
+                }
+        });
+
+         Schema::table($table_name, function (Blueprint $table) use ($table_name, $fieldscre) {
+
+                if (count($fieldscre) > 0) {
+                    foreach ($fieldscre as $key => $field) {
+                        if($field == "id")
+                        {
+
+                        }
+                        else
+                        {
+                             $table->text($field);
+                        }
+                       
+                    }
+                }
+                
+        });
+
+         $result3 = array_merge($result1, $result2);
+         $rescc1 = implode(",", $result3);
+         //dd($result3);
+         $cform->tabfields = $rescc1;
        
         $cform->save();
         

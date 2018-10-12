@@ -111,7 +111,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/menu.png')}}" data-keditor-title="AMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;AMenu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/menu.png')}}" data-keditor-title="AMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;AMenu">
 
 @include('shortcodes.aboutmenu')
 
@@ -140,9 +140,9 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/bitcoin.png')}}" data-keditor-title="Bitcoinwidget" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Bitcoinwidget">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/bitcoin.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;pagesliderwidget">
 
-@include('shortcodes.bitcoinwidget')
+@include ('layouts/innerpageslider')
 
 </div>
 
@@ -157,6 +157,52 @@
         <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" width="100%" height="" />
     </div>
 </div>
+
+
+
+
+
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+
+  <div class="project-image bcg">
+   <img src="{{asset('parallax/bcg_slide-2.jpg')}}" class="img-responsive">
+  </div> 
+
+
+  </div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallax2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+
+
+<div class="project-img">
+  <img src="{{asset('parallax/bcg_slide-1.jpg')}}">
+  
+</div>
+
+
+
+</div>
+  <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax3.jpg')}}" data-keditor-title="Thumbnail Panel" data-keditor-categories="Text;Photo;Bootstrap component"> 
+  <h1 class="project-description">
+  Project Title
+  </h1>
+  <p class="project-description">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  <br/>
+  <br/>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  <br/>
+  <br/>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div>
+
+
+
+
 
 <div data-type="component-audio" data-preview="{{asset('examples/snippets/preview/audio.png')}}" data-keditor-title="Audio" data-keditor-categories="Media">
     <div class="audio-wrapper">

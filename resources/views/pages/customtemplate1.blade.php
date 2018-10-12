@@ -1,8 +1,9 @@
- @extends('layouts.frontend')
+@extends('layouts.frontend')
 
 @section('contentfrontend')
- @include ('layouts/innerpageheader')
-  @include ('layouts/innerpageslider')
+
+
+{!! html_entity_decode($branding->pagebanner) !!}
  
 <div class="jumbotron jumbotron bg-cover">
   <div class="overlay"></div>
@@ -40,4 +41,34 @@
  
 @include ('layouts/innerpagefooter')
 
+@endsection
+@section('css')
+<style>
+.jumbotron{
+	background: {{ $colorsetting[11]->color }} !important;
+
+}
+.project_area {
+    background: {{ $colorsetting[11]->color }} !important;
+}
+.main_menu_area
+{
+  background: {{ $colorsetting[11]->color }} !important;
+}
+.project_area:before
+{
+	background: transparent !important;
+}
+.overlay {
+   background: transparent !important;
+}
+
+body.bg-light {
+    background: {{ $colorsetting[8]->color }} !important;
+}
+
+.bg-mycolor {
+	background: {{ $colorsetting[1]->color }} !important;
+}
+</style>
 @endsection

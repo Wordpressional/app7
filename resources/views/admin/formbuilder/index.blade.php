@@ -83,10 +83,14 @@
 			              	</a>
 			              	
 			              	@else
+			              	@if($form->formname != "Home_Page")
+			              	@if($form->formname != "Front_Page")
 			              	<a class="btn btn-danger" href="{{ route('admin.forms.delete',['id'=>$form->id]) }}">
 			              	
 			              			<i class="fa fa-trash" aria-hidden="true"></i>
 			              	</a>
+			              	@endif
+			              	@endif
 			              	@endif
 			              	</td>
 

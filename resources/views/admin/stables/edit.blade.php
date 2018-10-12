@@ -3,20 +3,17 @@
 
 @section('content')
 <div class="page-header">
-        <h2>Update Contact Table Fields </h2>
+        <h2>Update Contact Table Name </h2>
             <hr>
       </div>
 
+ @if($stables != "tablenotcreated")
 <a href="{{route('admin.stables.index')}}" class="btn btn-primary btn-sm align-self-center"><b>Back</b></a>
 
-   <a href="#" id="UpdateJSON" class="btn btn-primary btn-sm align-self-center form-builder-save"><b>Update</b></a>
-
-   
-
-   
-
-    
   
+   <a href="#" id="UpdateJSON1" class="btn btn-primary btn-sm align-self-center form-builder-save"><b>Update Table Name</b></a> 
+
+   
    <meta name="csrf-token" content="{{ csrf_token() }}">
 
  
@@ -30,38 +27,66 @@
       <input type="text" name="tablename" id="tablename" value="{{ $stablescform->cshortcode }}" class="form-control" >
   </div>
 
-  @foreach($stablef as $key => $val)
-  @if($val == 'id')
-  @else
+<div class="rs" style="overflow-x:auto;">
+<table class="table table-hover table-striped table-sm table-responsive-md">
+<thead>
+<tbody>
 
- <div class="form-group">
-      <label for="tag">Field Name {{ $key + 1}}  :</label>
-      <input type="text" name="{{ $val }}" id="{{ $key }}" value="{{ $val }}" class="form-control" readonly="readonly">
-  </div>
+<tr>
+@if($stablef)
 
- @endif
+@foreach($stablef as $key => $val)
+@if(substr( $val, 0, 6 ) === "header" || substr( $val, 0, 9 ) === "paragraph" || substr( $val, 0, 6 ) === "hidden")
+@else
+
+<th> {{ $val }} </th>
+
+@endif
+@endforeach
+</tr>
+
+
+
+@foreach($alldata as $alld)
+<tr>
+@foreach($stablef as $key => $val)
+@if(substr( $val, 0, 6 ) === "header" || substr( $val, 0, 9 ) === "paragraph" || substr( $val, 0, 6 ) === "hidden")
+@else
+<td>
+@php $rest = substr($alld->$val, -4, 4) @endphp
+@if($rest == ".jpg" || $rest == ".gif" || $rest == ".png")
+<a href="{{ url('/uploads') }}/{{ $alld->$val }}" target="_blank">{{ $alld->$val }}</a>
+@else
+
+{{ $alld->$val }}
+@endif
+</td>
+@endif
+@endforeach
+</tr>
 @endforeach
 
-<div class="gsortable span8">
-@foreach($stables as $key => $val)
-  @if($val == 'id')
-  @else
-   <div class="form-group" class="well span2 tile">
-  <label for="tag">Old Field Name {{ $key }} :</label>
-  
-     
-      <div><input type="text" name="{{ $val }}_" id="{{ $key }}_" value="{{ $val }}" class="form-control" readonly="readonly"></div>
- 
-</div>
- @endif
-@endforeach
-</div>
+@else 
+<tr>
+<th colspan="5" style="background-color: rgb(23,45,67);color: white;" class="text-center">
+No forms are created yet 
+</th>
+</tr>
 
+@endif
+</tbody>
+</thead>
+</table>
+</div>
 
   <input type="hidden" id="fieldlen" name="fieldlen" value="{{  count($stables) }}">
  
-    
-  </div>   
+@else
+
+Table Not Created
+
+@endif  
+   
 @endsection
 @section('scripts')
 
@@ -84,6 +109,9 @@ document.getElementById('UpdateJSON').addEventListener('click', function() {
      
      var fn = [];
      var fn1 = [];
+     
+    
+
       for(var i = 0; i < fieldlen; i++)
       {
           var cfieldname = $('#'+i).val();
@@ -93,16 +121,17 @@ document.getElementById('UpdateJSON').addEventListener('click', function() {
 
       for(var i = 1; i < fieldlen; i++)
       {
-          var cfieldname1 = $('#'+i+'_').val();
+          var cfieldname1 = $('#'+i+'_o').val();
           //alert(cfieldname);
           fn1.push(cfieldname1);
       }
-     // alert(fn);
 
+     
      var data = JSON.stringify({
                 _token:String($('meta[name="csrf-token"]').attr('content')),
                 cfs: String(fn),
                 cfs1: String(fn1),
+               
                 tablename: tablename
                 
             });
@@ -145,10 +174,65 @@ document.getElementById('UpdateJSON').addEventListener('click', function() {
               }
             });
 
-        
+       
     });
+    
+document.getElementById('UpdateJSON1').addEventListener('click', function() {
+
+  var tablename = $('#tablename').val();
+     //alert(fieldlen);
+     
+    
+
+     
+     var data = JSON.stringify({
+                _token:String($('meta[name="csrf-token"]').attr('content')),
+                             
+                tablename: tablename
+                
+            });
+
+      $.ajax({
+            
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+              'Content-Type': 'application/json'
+              },
+
+            url: "{{route('admin.stables.updatetablename',['id'=>$stablescform->id])}}",
+           
+            type: 'post',
+            data:  data,
+            
+          
+            success: function(result) {
+              $('#successalert').css("display", "block");
+
+                 $('#successalert').text("Successfully updated the contact form");
+
+                 setTimeout(function(){ 
 
 
+                  $('#successalert').css("display", "none"); 
+
+                   var newLocation = "{{ url('/admin/stables') }}";
+                  window.location.href= newLocation;
+
+                }, 3000);
+
+            },
+             error: function (jqXHR, textStatus, errorThrown) {
+                  if (jqXHR.status == 500) {
+                      alert('Internal error: ' + jqXHR.responseText);
+                  } else {
+                      alert('Unexpected error.'+errorThrown);
+                  }
+              }
+            });
+
+       
+    });
+    
 
 </script>
 

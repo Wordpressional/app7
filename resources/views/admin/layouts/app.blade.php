@@ -18,7 +18,7 @@
     <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
     <link href="{{ asset(mix('css/admin.css')) }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
-   
+    
 
 
     
@@ -117,7 +117,6 @@
         return false;
         }
 
-       
 
 
     </script>

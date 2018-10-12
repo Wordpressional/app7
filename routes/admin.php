@@ -275,6 +275,15 @@ Route::post('/stables/update/{id}',[
 
 ]);
 
+Route::post('/stables/updatetablename/{id}',[
+
+
+'uses' => 'StablesController@updatetablename',
+'as' => 'stables.updatetablename'
+
+]);
+
+
 Route::post('/cforms/createshortcode/{id}',[
 
 
@@ -332,9 +341,67 @@ Route::post('/cforms/remcolftable/{id}',[
 
 ]);
 
-Route::post('/cforms/datacfsave',[
+Route::post('/cforms/datacfsave/',[
 
 'uses' => 'ContactFormbuilderController@datacfsave',
 'as' => 'cforms.datacfsave'
+
+]);
+
+Route::get('/styles',[
+
+
+'uses' => 'StyleController@style',
+'as' => 'styles'
+
+]);
+
+Route::post('/storecolors/',[
+
+'uses' => 'StyleController@storecolors',
+'as' => 'storecolors'
+
+]);
+
+Route::get('/branding',[
+
+
+'uses' => 'BrandingController@branding',
+'as' => 'branding'
+
+]);
+
+Route::post('/storebranding/',[
+
+'uses' => 'BrandingController@storebranding',
+'as' => 'storebranding'
+
+]);
+
+Route::get('/themes',[
+
+
+'uses' => 'ThemeController@themes',
+'as' => 'themes'
+
+]);
+
+Route::post('/loadthemes/',[
+
+'uses' => 'ThemeController@loadthemes',
+'as' => 'loadthemes'
+
+]);
+Route::post('/activatetheme/',[
+
+'uses' => 'ThemeController@activatetheme',
+'as' => 'activatetheme'
+
+]);
+
+Route::post('/deactivatetheme/',[
+
+'uses' => 'ThemeController@deactivatetheme',
+'as' => 'deactivatetheme'
 
 ]);

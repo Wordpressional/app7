@@ -5,6 +5,9 @@ namespace App\Providers;
 use App\Shortcodes\BoldShortcode;
 
 use Illuminate\Support\ServiceProvider;
+
+use Illuminate\Support\Facades\Schema;
+
 use Shortcode;
 use App\Form; 
 use App\Cform;
@@ -19,6 +22,9 @@ class ShortcodesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (Schema::hasTable('forms')) {
+   
+
         $forms = Form::all();
         foreach($forms as $fo)
         {
@@ -30,6 +36,8 @@ class ShortcodesServiceProvider extends ServiceProvider
         {
             
             Shortcode::register($cfo->cshortcode, 'App\Shortcodes\CFShortcode@cfcustp');
+        }
+
         }
     }
 

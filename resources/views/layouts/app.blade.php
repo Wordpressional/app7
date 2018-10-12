@@ -15,6 +15,8 @@
 
     <!-- Styles -->
     <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet"/>
+      @yield('css')
 </head>
 <body class="bg-light">
     <div id="app">
@@ -38,6 +40,22 @@
         <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
     @endif
     <script src="{{ asset(mix('js/app.js')) }}"></script>
+
+    <script>
+    $( document ).ready(function() {
+        $(".user").focusin(function(){
+        $(".inputUserIcon").css("color", "#e74c3c");
+        }).focusout(function(){
+        $(".inputUserIcon").css("color", "blue");
+        });
+
+        $(".pass").focusin(function(){
+        $(".inputPassIcon").css("color", "#e74c3c");
+        }).focusout(function(){
+        $(".inputPassIcon").css("color", "blue");
+        });
+    });
+</script>
     @stack('inline-scripts')
 </body>
 </html>

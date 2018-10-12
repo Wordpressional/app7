@@ -10,6 +10,10 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
+
+
+
 Route::get('/', 'WebhomeController@frontpage')->name('home');
 /*Route::get('/', function () {
     return 'Hello World';
@@ -74,9 +78,25 @@ Route::get('/arttype/{category}', ['uses' => 'PostController@arttype', 'as' => '
 Route::get('/linktype/{category}', ['uses' => 'PostController@linktype', 'as' => 'webhome.linktype']);
 
 Route::resource('pages', 'PageController')->only('show');
+//Route::post('/thispage/{page}/', 'PageController@thispage')->name('page.custompage');
 Route::get('/thispage/{page}', 'PageController@thispage')->name('page.custompage');
+
+Route::post('/cforms/datacfsave/',[
+
+'uses' => 'PageController@datacfsave',
+'as' => 'cforms.datacfsave'
+
+]);
+Route::post('/cforms/datacfsavemedia/',[
+
+'uses' => 'PageController@datacfsavemedia',
+'as' => 'cforms.datacfsavemedia'
+
+]);
+
 Route::get('/artpage/{page}', 'PageController@artpage')->name('page.custompage1');
 
 Route::resource('posts', 'PostController')->only('show');
 Route::resource('users', 'UserController')->only('show');
 
+Route::get('/logout', 'LogoutController@logout');

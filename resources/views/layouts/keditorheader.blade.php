@@ -37,6 +37,7 @@
          <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
           <link rel="stylesheet" href="{{asset('css/front.css')}}" />
           <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+          <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
           
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -88,6 +89,8 @@
        <script src="{{ asset('webhome/js/jparticles.js')}}"></script>
     <script src="{{ asset('webhome/js/particle.js')}}"></script>
     <script src="{{ asset('webhome/js/require.js')}}"></script>
+    <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
+    <script src="{{ asset('js/colorcommon.js') }}"></script>
    
     <script>
         var demo = new JParticles.particle( '#demo' );
@@ -100,6 +103,98 @@
                 demo.pause();
             }
         });
+
+ 
+  $('.img-parallax').each(function(){
+  var img = $(this);
+  var imgParent = $(this).parent();
+  function parallaxImg () {
+    var speed = img.data('speed');
+    var imgY = imgParent.offset().top;
+    var winY = $(this).scrollTop();
+    var winH = $(this).height();
+    var parentH = imgParent.innerHeight();
+
+
+    // The next pixel to show on screen      
+    var winBottom = winY + winH;
+
+    // If block is shown on screen
+    if (winBottom > imgY && winY < imgY + parentH) {
+      // Number of pixels shown after block appear
+      var imgBottom = ((winBottom - imgY) * speed);
+      // Max number of pixels until block disappear
+      var imgTop = winH + parentH;
+      // Porcentage between start showing until disappearing
+      var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+    }
+    img.css({
+      top: imgPercent + '%',
+      transform: 'translate(-50%, -' + imgPercent + '%)'
+    });
+  }
+  $(document).on({
+    scroll: function () {
+      parallaxImg();
+    }, ready: function () {
+      parallaxImg();
+    }
+  });
+});
+
+  $(document).ready(function() {
+  
+
+  $('.block').parallax();
+});
+
+  $( document ).ready(function() {
+var $window = $(window);
+function scroll_elements(){
+  var scroll = $window.scrollTop();
+  var scrollLayer = scroll/1.4;
+  
+  $(".project-image").css(
+    "-webkit-transform","translate3d(0," +  scrollLayer  + "px,0)",
+            "transform","translate3d(0," +  scrollLayer  + "px,0)"
+  );
+}
+
+$window.scroll(scroll_elements);
+});
+
+
     </script>
+<script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+
+            <script>
+                $(".rslides").responsiveSlides({
+                auto: true,             // Boolean: Animate automatically, true or false
+                speed: 500,            // Integer: Speed of the transition, in milliseconds
+                timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+                pager: true,           // Boolean: Show pager, true or false
+                pagination: true,
+                nav: true,             // Boolean: Show navigation, true or false
+                random: false,          // Boolean: Randomize the order of the slides, true or false
+                pause: false,           // Boolean: Pause on hover, true or false
+                pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+                prevText: "Previous",   // String: Text for the "previous" button
+                nextText: "Next",       // String: Text for the "next" button
+                maxwidth: 900,           // Integer: Max-width of the slideshow, in pixels
+                navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+                manualControls: "",     // Selector: Declare custom pager navigation
+                namespace: "rslides",   // String: Change the default namespace used
+                before: function(){},   // Function: Before callback
+                after: function(){}     // Function: After callback
+                });
+
+
+               
+                
+                
+
+            </script>
+
+            
     </body>       
 </html>

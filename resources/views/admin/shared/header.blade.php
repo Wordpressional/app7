@@ -9,6 +9,7 @@
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
             <span class="sr-only">Toggle navigation</span>
         </a>
+        <p> hkhslk fhslkdf s hkhslk fhslkdf s hkhslk fhslkdf s hkhslk fhslkdf s  hkhslk fhslkdf s </p>
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li class="dropdown user user-menu">
