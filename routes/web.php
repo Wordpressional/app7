@@ -15,39 +15,14 @@
 
 
 Route::get('/', 'WebhomeController@frontpage')->name('home');
-/*Route::get('/', function () {
-    return 'Hello World';
-});*/
-/*Route::get ('/', function () {
-   return view('webhome.pyrupayindex');
-});*/
+Route::get('/testabc', 'WebhomeController@test33');
 
-/*Route::get ('/test', function () {
-	$str = 'this is testing [b class="test"]test[/b]';
-   	$result = \Shortcode::compile($str);
-   	return $result;
-});*/
 
-Route::get('/test', function(){
-	Shortcode::enable();
-	$shortcode = App::make('Shortcode');
-    return view('test')->withShortcodes();
-});
-
-Route::get('/test1', function(){
-	Shortcode::enable();
-	$shortcode = App::make('Shortcode');
-    return view('shortcodes/imgslider')->withShortcodes();
-});
-
-Route::get ('/pyrupay', function () {
-   return view('webhome.pyrupayindex');
-});
    
 Route::get('/allposts', 'PostController@index')->name('allposts');
 Route::resource('media', 'MediaController')->only('show');
 Route::get('/posts/feed', 'PostFeedController@index')->name('posts.feed');
-//Route::get('/pyrupay', 'WebhomeController@pindex');
+Route::get('/pyrupay', 'WebhomeController@pindex');
 
 
 
@@ -100,3 +75,22 @@ Route::resource('posts', 'PostController')->only('show');
 Route::resource('users', 'UserController')->only('show');
 
 Route::get('/logout', 'LogoutController@logout');
+Route::get('/download', 'WebhomeController@download');
+
+Route::get('/laravel-filemanager', '\UniSharp\LaravelFilemanager\Controllers\LfmController@show')->name('laravel-filemanager');
+    Route::post('/laravel-filemanager/upload', '\UniSharp\LaravelFilemanager\Controllers\UploadController@upload');
+
+Route::get('/createconfig', 'InitialController@createconfig')->name('createconfig');
+Route::post('/generateconfig/',[
+
+'uses' => 'InitialController@generateconfig',
+'as' => 'config.generateconfig'
+
+]);
+Route::get('/createdatabase', 'InitialController@createdatabase')->name('createdatabase');
+Route::post('/generatedatabase/',[
+
+'uses' => 'InitialController@generatedatabase',
+'as' => 'config.generatedatabase'
+
+]);

@@ -1,8 +1,9 @@
 <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
     <div class="container">
         <!-- Branding Image -->
-        {{ link_to_route('home', config('app.name', 'Research Centre Vergelijkende Cultuurwetenschap'), [], ['class' => 'navbar-brand']) }}
-
+        @if($brand != "")
+        {{ link_to_route('home', $brand->cname, [], ['class' => 'navbar-brand']) }}
+        @endif
         <!-- Collapsed Hamburger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -13,14 +14,15 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         {{ link_to_route('admin.dashboard', __('dashboard.dashboard'), [], ['class' => 'nav-link']) }}
+
                     </li>
                 </ul>
             @endadmin
 
             <ul class="navbar-nav ml-auto">
                 @guest
-                    <li class="nav-item">{{ link_to_route('login', __('auth.login'), [], ['class' => 'nav-link']) }}</li>
-                    <li class="nav-item">{{ link_to_route('register', __('auth.register'), [], ['class' => 'nav-link']) }}</li>
+                    <li class="nav-item">{{ link_to_route('mylogin', __('auth.login'), [], ['class' => 'nav-link']) }}</li>
+                    <li class="nav-item">{{ link_to_route('signup', __('auth.register'), [], ['class' => 'nav-link']) }}</li>
                 @else
                     <li class="nav-item dropdown">
                         <a v-pre href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,8 +41,9 @@
                                             document.getElementById('logout-form').submit();">
                                 @lang('auth.logout')
                             </a>
+                            
 
-                            <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="POST">
+                            <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="GET">
                                 {{ csrf_field() }}
                             </form>
                         </div>

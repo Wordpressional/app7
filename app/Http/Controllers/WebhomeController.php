@@ -9,6 +9,7 @@ use App\Colorsetting;
 use Illuminate\Http\Request;
 use Imagecow\Image;
 use Shortcode;
+use File;
 
 class WebhomeController extends Controller
 {
@@ -47,11 +48,29 @@ class WebhomeController extends Controller
     {
         Shortcode::enable();
         $shortcode = App('Shortcode');
-    $form = Form::where('formname','Home_Page')->get();
+   
     $branding = Brand::where('id', 1)->first();
-    return view('webhome.pyrupayindex')->with(['form' => $form, 'branding' => $branding ])->withShortcodes();
+    return view('webhome.pyrupayindex')->with(['branding' => $branding ])->withShortcodes();
       
 
+    }
+
+    public function download()
+    {
+        
+    }
+
+    public function test33()
+    {
+        $vpath = base_path().'/resources/views/shortcodes/imgslider.blade.php';
+       
+        //$html = view('shortcodes.imgslider')->render();
+
+        
+
+        $html = File::get(base_path().'/resources/views/shortcodes/imgslider.blade.php');
+
+        return html_entity_decode($html);
     }
 
     

@@ -66,6 +66,51 @@
    
    
     <script type="text/javascript">
+        
+
+    // Define function to open filemanager window
+    var lfm = function(options, cb) {
+        var route_prefix = (options && options.prefix) ? options.prefix : '/laravel-filemanager';
+        window.open(route_prefix  || 'file', 'FileManager', 'width=900,height=600');
+        window.SetUrl = cb;
+    };
+    
+    // Define LFM summernote button
+    var LFMButton = function(context) {
+        var ui = $.summernote.ui;
+        var button = ui.button({
+             container: false,
+            contents: '<i class="note-icon-picture"></i>',
+            tooltip: 'Insert image with filemanager',
+            click: function() {
+                //alert("hi");
+                lfm({type: 'image', prefix: '/dynamic/laravel-filemanager'}, function(url, path) {
+                    context.invoke('insertImage', url);
+                });
+
+            }
+        });
+        return button.render();
+    };
+
+    var HelloButton = function (context) {
+      var ui = $.summernote.ui;
+    
+      // create button
+      var button = ui.button({
+        container: false,
+        contents: '<i class="fa fa-child"/> Hello',
+        tooltip: 'hello',
+        click: function (e) {
+          // invoke insertText method with 'hello' on editor module.
+          context.invoke('editor.insertText', 'hello');
+        }
+      });
+    
+      return button.render();   // return button as jquery object
+    }
+    
+     $(document).ready(function(){
     $('.summernote').summernote({
         toolbar: [   
                     ['style', ['bold', 'italic', 'underline', 'clear']],
@@ -77,9 +122,14 @@
                     ['fontname', ['fontname']],
                     ['table', ['table']],
                     ['insert', ['link', 'picture', 'video', 'hr']],
-                    ['misc', ['codeview', 'fullscreen', 'undo', 'redo', 'help']]
+                    ['misc', ['codeview', 'fullscreen', 'undo', 'redo', 'help']],
+                    ['popovers', ['lfm']],
+                    ['mybutton', ['hello']]
                 ],
-
+             buttons: {
+                lfm: LFMButton,
+                 hello: HelloButton
+            },
                 popover: {
                      
                 image: [
@@ -90,15 +140,21 @@
                 link: [
                         ['link', ['linkDialogShow', 'unlink']]
                       ],
+
                 
-            },
-                    height: 500,
-                    fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36', '48' , '64', '82', '150'],
-                    fontNames: [ 'Poppins', 'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 
-                    'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Segoe UI', 'Roboto', 'Segoe UI Symbol' ],
-                    fontNamesIgnoreCheck: ['Poppins', 'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Segoe UI', 'Roboto', 'Segoe UI Symbol'],
+                
+            },          
+          
+
+            height: 500,
+            fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36', '48' , '64', '82', '150'],
+            fontNames: [ 'Poppins', 'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 
+            'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Segoe UI', 'Roboto', 'Segoe UI Symbol' ],
+            fontNamesIgnoreCheck: ['Poppins', 'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Segoe UI', 'Roboto', 'Segoe UI Symbol'],
+        
 
         });
+    });
 
         $.ajaxSetup({
         headers: {            

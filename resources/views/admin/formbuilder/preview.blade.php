@@ -7,7 +7,7 @@
 
 
 
-
+<link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
 <link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
@@ -19,7 +19,8 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
-<link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
+
       {!! $form->htmlcontent !!}  
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="{{ asset('webhome/js/jquery-3.2.1.min.js') }}"></script>
@@ -57,6 +58,7 @@
  </script>     
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
+         <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
         <script type="text/javascript">jssor_1_slider_init();</script>
 
-        
+@include ('layouts.shortcode-layout')   

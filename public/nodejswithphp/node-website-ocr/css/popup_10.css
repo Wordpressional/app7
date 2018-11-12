@@ -1,0 +1,118 @@
+.popup
+{
+	border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border: 4px solid rgb(255, 255, 255);
+height: 250px;
+width: 462px;
+background-color: #6c8fba;
+text-align: center;
+	
+}
+.ok
+{
+	float:right;
+		
+}
+.topimage
+{
+	width: 461px;
+margin-top: -26px;
+border-radius: 7px;
+}
+.registerpop
+{
+	border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border: 4px solid rgb(255, 255, 255);
+
+
+background-color: #6c8fba;
+text-align: center;
+	width: 630px;
+margin-left: -36px;
+}
+.popupnew
+{
+	border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border: 4px solid rgb(255, 255, 255);
+height: 250px;
+width: 462px;
+background-color: #6c8fba;
+text-align: center;
+	
+}
+
+.Dasboardpopupnew
+{
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border: 4px solid rgb(255, 255, 255);
+height: 150px;
+width: 400px;
+background-color: #EEEEEE;
+text-align: center;
+	
+}
+
+.ErrorMessage
+{
+	margin-left: -37px;
+	height: 22px; 
+	border-radius: 7px;
+}
+.knowsub
+{
+	text-decoration: none;
+     font-size: 11px;
+     font-weight: bold; 
+     color: Navy;
+     padding-top: 3px;
+    margin-left: 102px;
+}
+.bill
+{
+	padding: 20px; 
+	font-size: 19px; 
+	font-weight: bold; 
+	text-decoration: none;
+    color: White;
+    float:left;
+    
+}
+
+.bill:hover{padding: 20px; 
+	font-size: 19px; 
+	font-weight: bold; 
+	text-decoration: underline;
+    color: White;
+    float:left;}
+    
+    
+    .griedpop
+{
+	border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+border-bottom-left-radius: 12px;
+border: 4px solid rgb(255, 255, 255);
+
+
+background-color: #6c8fba;
+text-align: center;
+	width: 630px;
+margin-left: -36px;
+
+height: 370px;
+margin-left:5px
+
+}

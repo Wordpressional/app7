@@ -1,0 +1,12 @@
+APP_NAME="DynamicWeb"
+APP_ENV=local
+APP_KEY=base64:729z+jtnCGzRG3aGFRvsKj7dobmp8/A5nH98UgbBmjo=
+APP_DEBUG=true
+APP_URL=http://localhost
+LOG_CHANNEL=stack
+
+DB_CONNECTION=mysql
+DB_HOST2=127.0.0.1
+DB_DATABASE2=dynamicdb
+DB_USERNAME2=nagashwini
+DB_PASSWORD2=nagashw1234

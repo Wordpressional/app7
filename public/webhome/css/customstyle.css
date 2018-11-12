@@ -14,6 +14,11 @@ ul.dropdown-menu li a
 	line-height: 15px !important;	
 }
 
+.cust {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
 .page-heading 
 {
     position: relative;
@@ -263,6 +268,7 @@ body > #app > .container {
 
 .post-content{
   font-size: 14px;
+  
 }
 
 span{
@@ -906,3 +912,7 @@ display: none;
 
 .input-group-addon{color:#ff0000; background-color: #cccccc;}
 
+.keditor-component .keditor-component-content {
+    
+    z-index: inherit;
+}

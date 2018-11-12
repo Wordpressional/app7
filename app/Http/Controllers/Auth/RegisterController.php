@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Colorsetting;
+use App\Brand;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Validator;
+use Illuminate\Support\Facades\Schema;
 
 class RegisterController extends Controller
 {
@@ -67,5 +70,30 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => $data['password'],
         ]);
+    }
+
+    public function signup()
+    {
+        $colorsetting = Colorsetting::all();
+        $brand = Brand::where('id',1)->first();
+        //dd($colorsetting);
+        if($colorsetting->count() > 0)
+        {  
+            
+         
+         
+        } 
+        else
+        {
+            $colorsetting = 'empty';
+            $brand = '';
+        }
+
+        
+         return view('auth.register', [
+            'brand' => $brand,
+            'colorsetting' => $colorsetting,
+        ]);
+       
     }
 }

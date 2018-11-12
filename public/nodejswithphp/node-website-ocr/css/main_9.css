@@ -1,0 +1,130 @@
+﻿body
+{
+	background:#0889d2; 
+}
+#wrapper
+{
+	width:1000px;
+	margin:auto;
+	
+}
+
+#wrapper .Header
+{
+  height:150px;
+}
+.Icon
+{    	
+  width:100%;
+  margin:0px auto;
+  padding:10px 0px 0px 50px;
+    	
+}
+   .Icon li
+    {
+    margin:2px;
+    float:left;
+    position:relative;
+    list-style:none;
+    }
+    img
+    {
+    	border:none;
+    }
+#wrapper .Header .Logo
+{
+	width:150px;
+	height:150px;
+	float:left;
+}
+#wrapper .Header .toptopmenu
+{
+	width: 983px;
+	text-align:right;
+	height: 50px;
+	padding-right:0px;
+	margin-right:0px;
+	
+}
+#wrapper .Header .toptopmenu a
+{
+	color:#fff;
+	text-decoration:none;
+}
+#wrapper .Header .toptopmenu a:hover
+{
+	text-decoration:overline;
+}
+#wrapper .Header .topmenu
+{
+	width: 850px;
+	margin: 0px 0px 50px 0px;
+	float: right;
+	height: 50px;
+	background-image: url('../img/mnuback_9.jpg');
+}
+#wrapper .ministerImages
+{
+	width: 1000px;
+	height: 150px;
+	background-color:#fff;
+}
+.footer
+{
+	width:1000px;
+	height:55px;
+	margin:0;
+	padding:0px;
+	margin-bottom:0px;
+	background-color:#3c5fa6;
+}
+.
+ .browser
+{
+	     width:100%;
+         margin:0px auto;
+         padding:10px 0px 0px 50px;
+}
+.browser li
+{
+	margin:2px;
+    float:left;
+    position:relative;
+    list-style:none;
+}
+img
+{
+ border:none;
+}
+ .log
+    {
+      	width:400px;
+      	height:200px;
+      	float:right;
+      /*	background-image: url('logbg.jpg'); */
+    }
+    .newsflash
+    {
+    	width:600px;
+    	height:200px;
+    	/*background-image: url('newsFlash.jpg');*/
+    	float:left;
+    }
+    .topbg1
+    {
+    	width:1000px;
+    	background-color:#fff;
+    	margin:0;
+    	padding:0;
+    }
+    .log .textbox
+    {
+    	width:330px;
+    	height:25px;
+    	border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size:14px;
+        font-weight:bold;
+    }

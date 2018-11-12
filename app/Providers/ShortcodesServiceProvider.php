@@ -22,23 +22,26 @@ class ShortcodesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (Schema::hasTable('forms')) {
-   
+        if(env('DB_DATABASE')!='')
+            {
+                if (Schema::hasTable('forms')) {
+           
 
-        $forms = Form::all();
-        foreach($forms as $fo)
-        {
-            Shortcode::register($fo->shortcode, 'App\Shortcodes\CShortcode@custp');
-        }
+                $forms = Form::all();
+                foreach($forms as $fo)
+                {
+                    Shortcode::register($fo->shortcode, 'App\Shortcodes\CShortcode@custp');
+                }
 
-        $cforms = Cform::all();
-        foreach($cforms as $cfo)
-        {
-            
-            Shortcode::register($cfo->cshortcode, 'App\Shortcodes\CFShortcode@cfcustp');
-        }
+                $cforms = Cform::all();
+                foreach($cforms as $cfo)
+                {
+                    
+                    Shortcode::register($cfo->cshortcode, 'App\Shortcodes\CFShortcode@cfcustp');
+                }
 
-        }
+            }
+            }
     }
 
     /**
@@ -53,10 +56,12 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('i', 'App\Shortcodes\ItalicShortcode@custom');
         Shortcode::register('imgslider', 'App\Shortcodes\ImgsliderShortcode@custom1');
         Shortcode::register('homepage', 'App\Shortcodes\HomepageShortcode@customhomep');
+        Shortcode::register('frontpage', 'App\Shortcodes\FrontpageShortcode@customfrontp');
         Shortcode::register('topmenu', 'App\Shortcodes\TopmenuShortcode@topm');
         Shortcode::register('bloglist', 'App\Shortcodes\BlogShortcode@bloglist');
         Shortcode::register('icohomelist', 'App\Shortcodes\ICOHomeShortcode@icohomelist');
         Shortcode::register('psubscribe', 'App\Shortcodes\PsubscribeShortcode@psubscribe');
+         
         
         
          

@@ -405,3 +405,21 @@ Route::post('/deactivatetheme/',[
 'as' => 'deactivatetheme'
 
 ]);
+
+Route::get('/widgeteditor',[
+
+
+'uses' => 'ThemeController@widgeteditor',
+'as' => 'widgeteditor'
+
+]);
+
+Route::post('/widgetupw',[
+
+'uses' => 'ThemeController@updatew',
+'as' => 'widgetupdate'
+
+]);
+
+
+

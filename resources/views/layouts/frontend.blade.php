@@ -25,11 +25,11 @@
         <link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
 
        
-
-
+        
         <link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
 		<link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
         <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
+
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,6 +42,8 @@
 
            <link rel="stylesheet" href="{{asset('css/star-rating.min.css')}}" />
             <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
+            <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
+
             @yield('css')
 
  </head>
@@ -124,12 +126,14 @@
        
         <script type="text/javascript">jssor_1_slider_init();</script>
         
-    
+         <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
 		
          <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
          <script src="{{ asset('webhome/js/css3-animate-it.js') }}"></script>
+
+        
        
-         
+         @include ('layouts.shortcode-layout')
          @stack('inline-scripts')
     </body>      
 </html>

@@ -10,7 +10,7 @@ use App\Form;
 use App\Theme;
 use App\Brand;
 use App\General;
-
+use File;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -561,7 +561,7 @@ class ThemeController extends Controller
         $branding = Brand::where('id', 1)->first();
            
                 
-        $branding->homepage = "[frontpage]frontpage[/frontpage]";
+        $branding->homepage = "[frontpage]-[/frontpage]";
         $branding->save();
        
         return "success";
@@ -649,6 +649,92 @@ class ThemeController extends Controller
         }
  
         return response()->json(['message' => 'Given table  already exists.'], 200);
+    }
+
+    public function widgeteditor()
+    {
+
+        $vpath = array();
+        $filename = array();
+        $arrayfile = array();
+        $arrayfileb = array();
+        $cc = array();
+        $cc1 = array();
+
+        $dirPath = base_path().'/resources/views/shortcodes/plainhtml/';
+        if (is_dir($dirPath)){
+          if ($dh = opendir($dirPath)){
+        while (($file = readdir($dh)) !== false)
+        {
+            if($file == "." || $file == "..")
+            {
+
+            }
+            else
+            {
+                //echo "<option value=\"" . trim($file) . "\">" . $file . "\n";
+                array_push($filename, $file);
+                array_push($vpath, $dirPath.$file);
+                $cc = str_replace(".blade.php","",$file);
+                array_push($cc1, $cc);
+            }
+           
+        }
+        }
+        }
+        closedir($dh);
+        //dd($cc1);
+        //dd($filename);
+
+        
+
+        for($i=0;$i<count($cc1);$i++)
+        {
+            //$cc = chop($filename[$i],".blade.php");
+
+         if($cc1[$i] == 'undefined')
+         {
+            $cc1[$i] = $cc1[0];
+         } 
+        
+
+        $arrayfileb[$i] =  view('shortcodesbackup.'.$cc1[$i])->render();
+        $arrayfile[$i] =  view('shortcodes.plainhtml.'.$cc1[$i])->render();
+        //dd($imgslider);
+        
+        }
+
+        //dd($arrayfile);
+
+        return view('admin.widgeteditor.weditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+    
+    }
+
+    public function updatew(Request $request)
+    {
+        //dd($request->imgsliderw);
+        //dd("ggg");
+
+        //dd(htmlspecialchars_decode($request->imgsliderw));
+        //dd($request->filewname);
+        if($request->filewname != "undefined")
+        {
+        
+            
+            $vpath = base_path().'/resources/views/shortcodes/plainhtml/'.$request->filewname;
+           //dd($vpath);
+       
+            //dd($vpath);
+            $html = File::put($vpath, htmlspecialchars_decode($request->filew));
+       
+        return "success";
+        } 
+        else
+        {
+            return "false";
+        }
+     
+    
     }
 
 

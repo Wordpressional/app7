@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
     <div class="container">
         <!-- Branding Image -->
-        {{ link_to_route('home', config('app.name', 'Research Centre Vergelijkende Cultuurwetenschap'), [], ['class' => 'navbar-brand']) }}
+        {{ link_to_route('home', config('app.name', ''), [], ['class' => 'navbar-brand']) }}
 
         <!-- Collapsed Hamburger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
                             @lang('auth.logout')
                         </a>
 
-                        <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="POST">
+                        <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="GET">
                             {{ csrf_field() }}
                         </form>
                     </div>

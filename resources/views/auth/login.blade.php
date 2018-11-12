@@ -62,10 +62,15 @@
 @section('css')
 <style>
 
-
+@if($colorsetting=="empty")
+body.bg-light {
+    background: #ffffff !important;
+}
+@else
 body.bg-light {
     background: {{ $colorsetting[12]->color }} !important;
 }
+@endif
 
 
 </style>

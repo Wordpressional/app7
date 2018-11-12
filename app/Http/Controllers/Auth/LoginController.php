@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Colorsetting;
+use App\Brand;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Schema;
+
 
 class LoginController extends Controller
 {
@@ -26,7 +29,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = '/admin/dashboard/';
 
     /**
      * Create a new controller instance.
@@ -40,10 +43,28 @@ class LoginController extends Controller
 
     public function mylogin()
     {
-         $colorsetting = Colorsetting::all();
-         return view('auth.login', [
+    
+        $colorsetting = Colorsetting::all();
+        $brand = Brand::where('id',1)->first();
+        //dd($colorsetting);
+        if($colorsetting->count() > 0)
+        {  
             
-            'colorsetting' => $colorsetting
+         
+         
+        } 
+        else
+        {
+            $colorsetting = 'empty';
+            $brand = '';
+        }
+
+        
+        
+         //dd($colorsetting);
+         return view('auth.login', [
+            'brand' => $brand,
+            'colorsetting' => $colorsetting,
         ]);
     }
 }

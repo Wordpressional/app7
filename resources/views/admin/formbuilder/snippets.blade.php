@@ -101,42 +101,48 @@
 
 <div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/slider.png')}}" data-keditor-title="Slider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Slider">
 
-@include('shortcodes.imgslider')
+@include('shortcodes.plainhtml.imgslider')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/slider.png')}}" data-keditor-title="MegaMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;MegaMenu">
+
+@include('shortcodes.plainhtml.megamenu')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Freshers-ribbon-faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;FAQ">
 
-@include('shortcodes.faq')
+@include('shortcodes.plainhtml.faq')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/menu.png')}}" data-keditor-title="AMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;AMenu">
 
-@include('shortcodes.aboutmenu')
+@include('shortcodes.plainhtml.aboutmenu')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;ASPA">
 
-@include('shortcodes.aboutspa')
+@include('shortcodes.plainhtml.aboutspa')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/twitter.png')}}" data-keditor-title="Twitter" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Twitter">
 
-@include('shortcodes.twitter')
+@include('shortcodes.plainhtml.twitter')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/introslider.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Introslider">
 
-@include('shortcodes.introslider')
+@include('shortcodes.plainhtml.introslider')
 
 </div>
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/services.png')}}" data-keditor-title="Services" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Services">
 
-@include('shortcodes.services')
+@include('shortcodes.plainhtml.services')
 
 </div>
 
@@ -148,7 +154,7 @@
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/links.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Footerlinks">
 
-@include('shortcodes.footerlinks')
+@include('shortcodes.plainhtml.footerlinks')
 
 </div>
 

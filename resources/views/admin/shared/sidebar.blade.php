@@ -86,9 +86,17 @@
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="{{ route('admin.forms.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Forms</span>
+                        <span class="nav-link-text">Widget Forms</span>
                     </a>
                 </li>
+
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/widgeteditor') || Request::is('admin/widgeteditor/*') ? 'active' : '' }}" href="{{ route('admin.widgeteditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Widget Editor</span>
+                    </a>
+                </li>
+
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/cforms') || Request::is('admin/cforms/*') ? 'active' : '' }}" href="{{ route('admin.cforms.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
@@ -108,7 +116,7 @@
                     </a>
                 </li>
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/stables') || Request::is('admin/stables/*') ? 'active' : '' }}" href="{{ route('admin.stables.index') }}">
+                    <a class="nav-link {{ Request::is('/laravel-filemanager') || Request::is('/laravel-filemanager/*') ? 'active' : '' }}" href="{{ route('laravel-filemanager') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">Upload Media Manager</span>
                     </a>
@@ -127,19 +135,19 @@
                     
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="{{ route('admin.styles') }}">
+                    <a class="nav-link {{ Request::is('admin/styles') || Request::is('admin/styles/*') ? 'active' : '' }}" href="{{ route('admin.styles') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">Color Management</span>
                     </a>
                 </li>
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/cforms') || Request::is('admin/cforms/*') ? 'active' : '' }}" href="{{ route('admin.themes') }}">
+                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="{{ route('admin.themes') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">Choose Themes</span>
                     </a>
                 </li>
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/stables') || Request::is('admin/stables/*') ? 'active' : '' }}" href="{{ route('admin.branding') }}">
+                    <a class="nav-link {{ Request::is('admin/branding') || Request::is('admin/branding/*') ? 'active' : '' }}" href="{{ route('admin.branding') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">Branding</span>
                     </a>

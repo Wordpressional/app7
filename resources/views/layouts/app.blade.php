@@ -54,6 +54,30 @@
         }).focusout(function(){
         $(".inputPassIcon").css("color", "blue");
         });
+
+        $(".ip1").focusin(function(){
+        $(".inputUserIcon1").css("color", "#e74c3c");
+        }).focusout(function(){
+        $(".inputUserIcon1").css("color", "blue");
+        });
+        
+        $(".ip2").focusin(function(){
+        $(".inputEmailIcon").css("color", "#e74c3c");
+        }).focusout(function(){
+        $(".inputEmailIcon").css("color", "blue");
+        });
+
+        $(".ip3").focusin(function(){
+        $(".inputPassIcon1").css("color", "#e74c3c");
+        }).focusout(function(){
+        $(".inputPassIcon1").css("color", "blue");
+        });
+        
+        $(".ip4").focusin(function(){
+        $(".inputPassIcon2").css("color", "#e74c3c");
+        }).focusout(function(){
+        $(".inputPassIcon2").css("color", "blue");
+        });
     });
 </script>
     @stack('inline-scripts')

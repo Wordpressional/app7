@@ -148,7 +148,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
-        willvincent\Rateable\RateableServiceProvider::class,
+        
         
 
         /*
@@ -156,6 +156,9 @@ return [
          */
 	Barryvdh\Debugbar\ServiceProvider::class,
     Webwizo\Shortcodes\ShortcodesServiceProvider::class,
+    UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
+    Intervention\Image\ImageServiceProvider::class,
+    RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -224,7 +227,8 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 	    'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Shortcode' => Webwizo\Shortcodes\Facades\Shortcode::class,
-        'Carbon' => 'Carbon\Carbon'
+        'Carbon' => 'Carbon\Carbon',
+        'Image' => Intervention\Image\Facades\Image::class,
 	
     ],
 

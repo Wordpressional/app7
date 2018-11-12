@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    DirectoryIndex index.php
+    RewriteEngine On
+    Options -Indexes
+   	
+
+	RewriteRule ^dynamic/(.*)$ staticweb/public/$1 [L] 
+</IfModule>
