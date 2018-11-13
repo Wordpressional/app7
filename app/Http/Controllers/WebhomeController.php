@@ -51,7 +51,7 @@ class WebhomeController extends Controller
    
     $branding = Brand::where('id', 1)->first();
 
-    if($branding->count() < 0)
+    if($branding)
         {  
             
          return "Welcome";
