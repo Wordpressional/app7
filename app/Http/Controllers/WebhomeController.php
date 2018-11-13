@@ -50,7 +50,17 @@ class WebhomeController extends Controller
         $shortcode = App('Shortcode');
    
     $branding = Brand::where('id', 1)->first();
-    return view('webhome.pyrupayindex')->with(['branding' => $branding ])->withShortcodes();
+
+    if($branding->count() < 0)
+        {  
+            
+         return "Welcome";
+         
+        } 
+        else
+        {
+            return view('webhome.pyrupayindex')->with(['branding' => $branding ])->withShortcodes();
+        }
       
 
     }

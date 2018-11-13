@@ -46,7 +46,7 @@ class InitialController extends Controller
 
     }*/
 
-    public function createdatabase()
+    /*public function createdatabase()
     {
               
          return view('initial.cdb');
@@ -72,6 +72,6 @@ class InitialController extends Controller
         echo "jo";
         return redirect()->route('install');
 
-    }
+    }*/
 
 }
