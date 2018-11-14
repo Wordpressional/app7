@@ -421,5 +421,49 @@ Route::post('/widgetupw',[
 
 ]);
 
+Route::get('/csseditor',[
+
+
+'uses' => 'ThemeController@csseditor',
+'as' => 'csseditor'
+
+]);
+
+Route::post('/cssupdate',[
+
+'uses' => 'ThemeController@updatecss',
+'as' => 'cssupdate'
+
+]);
+
+Route::get('/widgetcusteditor',[
+
+
+'uses' => 'ThemeController@widgetcusteditor',
+'as' => 'widgetcusteditor'
+
+]);
+
+Route::post('/widgetupcustw',[
+
+'uses' => 'ThemeController@updatewcust',
+'as' => 'widgetcustupdate'
+
+]);
+
+Route::get('/jseditor',[
+
+
+'uses' => 'ThemeController@jseditor',
+'as' => 'jseditor'
+
+]);
+
+Route::post('/jsupdate',[
+
+'uses' => 'ThemeController@updatejs',
+'as' => 'jsupdate'
+
+]);
 
 

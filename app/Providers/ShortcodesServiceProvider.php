@@ -61,6 +61,11 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('bloglist', 'App\Shortcodes\BlogShortcode@bloglist');
         Shortcode::register('icohomelist', 'App\Shortcodes\ICOHomeShortcode@icohomelist');
         Shortcode::register('psubscribe', 'App\Shortcodes\PsubscribeShortcode@psubscribe');
+
+        for($i=0;$i<12;$i++){
+            $name = "customplain_".$i;
+        Shortcode::register($name, 'App\Shortcodes\CustomplainShortcode@'.$name);
+        }
          
         
         

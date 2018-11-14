@@ -41,6 +41,7 @@
 <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
 
  <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
+  <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
  </head>
     <body>
    
@@ -202,8 +203,7 @@ $window.scroll(scroll_elements);
                 
 
             </script>
-
-      @include ('layouts.shortcode-layout')    
+<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>      @include ('layouts.shortcode-layout')    
           
     </body>       
 </html>

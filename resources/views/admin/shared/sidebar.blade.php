@@ -97,6 +97,27 @@
                     </a>
                 </li>
 
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/widgetcusteditor') || Request::is('admin/widgetcusteditor/*') ? 'active' : '' }}" href="{{ route('admin.widgetcusteditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Custom Widget Editor</span>
+                    </a>
+                </li>
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/csseditor') || Request::is('admin/csseditor/*') ? 'active' : '' }}" href="{{ route('admin.csseditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">CSS Editor</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/jseditor') || Request::is('admin/jseditor/*') ? 'active' : '' }}" href="{{ route('admin.jseditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">JS Editor</span>
+                    </a>
+                </li>
+
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/cforms') || Request::is('admin/cforms/*') ? 'active' : '' }}" href="{{ route('admin.cforms.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;

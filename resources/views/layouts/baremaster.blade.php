@@ -31,6 +31,7 @@
                 x.style.display = "none";
             };
         </script>
+       <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>
 
     </body>
 </html>

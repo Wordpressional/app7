@@ -44,6 +44,7 @@
 @endsection
 @section('css')
 <style>
+/* Banner Background Color */
 .jumbotron{
 	background: {{ $colorsetting[11]->color }} !important;
 
@@ -62,13 +63,18 @@
 .overlay {
    background: transparent !important;
 }
+/* Background Page Color */
 
 body.bg-light {
     background: {{ $colorsetting[8]->color }} !important;
 }
-
+/* Content area Color */
 .bg-mycolor {
 	background: {{ $colorsetting[1]->color }} !important;
+}
+
+.lead span {
+	color: {{ $colorsetting[0]->color }} !important;
 }
 </style>
 @endsection

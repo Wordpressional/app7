@@ -33,6 +33,7 @@
         <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
          <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
           <link rel="stylesheet" href="{{asset('css/front.css')}}" />
+           <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,7 +62,7 @@
         <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
         
        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-       
+       <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>
        @yield('scripts')
     </body>       
 </html>
