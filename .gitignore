@@ -10,3 +10,13 @@
 /storage/debugbar
 /storage/tmp
 /log
+/public/css/admin.css
+/public/css/app.css
+/public/fonts/vendor/font-awesome/fontawesome-webfont.eot
+/public/fonts/vendor/font-awesome/fontawesome-webfont.svg
+/public/fonts/vendor/font-awesome/fontawesome-webfont.ttf
+/public/fonts/vendor/font-awesome/fontawesome-webfont.woff
+/public/fonts/vendor/font-awesome/fontawesome-webfont.woff2
+/public/js/admin.js
+/public/js/app.js
+/public/js/ui/icons.svg
