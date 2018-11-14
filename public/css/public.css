@@ -1,0 +1,42 @@
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
+}
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+}
+
+#previewtest:focus, #previewtest section {
+  
+    outline: none !important;
+}
+.main_menu_area {
+    position: relative !important;
+}
+section.main_slider_area {
+    background-color: #e2e2e2;
+    width:100%;
+    
+}
+.carousel {
+    position: static;
+}
+.carousel-inner
+{
+	height:auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#header, #banner, #body, #footer {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: 3px dashed #ccc;
+}
+
+.rs table {
+    border-collapse: separate !important;
+}
+
+

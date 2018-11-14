@@ -1,0 +1,87 @@
+
+
+
+form {
+  position:relative;
+  margin: 50px auto;
+  width: 380px;
+  height: auto;
+}
+
+.passinput, .userinput {
+  padding: 16px;
+  border-radius:7px;
+  border:0px;
+  background: #000000;
+  display: block;
+  
+  width: 300px;  
+  color:white;
+  font-size:18px;
+  height: 54px;
+}
+
+.passinput:focus, .userinput:focus {
+  outline-color: rgba(0,0,0,0);
+  
+  color: white;
+}
+
+
+
+.inputUserIcon {
+  position:absolute;
+  top:94px;
+  right: 94px;
+  color:white;
+}
+
+.inputUserIcon1 {
+  position:absolute;
+  top:94px;
+  right: 94px;
+  color:white;
+}
+
+.inputEmailIcon {
+  position:absolute;
+  top: 194px;
+  right: 94px;
+  color:white;
+}
+
+.inputPassIcon {
+  position:absolute;
+  top:197px;
+  right: 91px;
+  color:white;
+}
+
+.inputPassIcon1 {
+  position:absolute;
+  top:297px;
+  right: 91px;
+  color:white;
+}
+
+.inputPassIcon2 {
+  position:absolute;
+  top:397px;
+  right: 91px;
+  color:white;
+}
+
+.passinput:focus, .userinput:focus {
+  background: green;
+}
+
+.btnblk
+{
+  background-color: #000000;
+  border-color: black;
+}
+
+.btnblk:hover
+{
+  background-color: green;
+}
