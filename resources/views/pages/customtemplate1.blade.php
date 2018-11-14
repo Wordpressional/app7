@@ -38,9 +38,11 @@
 	</div>
 </div>
 </div>
- 
-@include ('layouts/innerpagefooter')
-
+<div class="copy_right_area1">
+<div class="container"> 
+{!! html_entity_decode($branding->footer) !!}
+</div>
+</div>
 @endsection
 @section('css')
 <style>
@@ -63,14 +65,17 @@
 .overlay {
    background: transparent !important;
 }
+
 /* Background Page Color */
 
 body.bg-light {
     background: {{ $colorsetting[8]->color }} !important;
 }
-/* Content area Color */
-.bg-mycolor {
-	background: {{ $colorsetting[1]->color }} !important;
+
+/* Footer Background Color */
+
+.copy_right_area1 {
+    background: {{ $colorsetting[9]->color }} !important;
 }
 
 .lead span {

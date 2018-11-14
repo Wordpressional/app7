@@ -77,7 +77,7 @@
 </div>
 </div>
 <br>
-<h3> Background Page Color </h3>
+<h3> Page Background Color </h3>
 <div id="cp10" class="input-group colorpicker-component">
     <input type="text" name="cp10" id="demo10" value="{{ isset($colorsetting[8]->color) ? $colorsetting[8]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">
@@ -86,7 +86,7 @@
 </div>
 </div>
 <br>
-<h3> Link Color </h3>
+<h3> Footer Background Color </h3>
 <div id="cp11" class="input-group colorpicker-component">
     <input type="text" name="cp11" id="demo11" value="{{ isset($colorsetting[9]->color) ? $colorsetting[9]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">
