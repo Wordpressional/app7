@@ -53,8 +53,9 @@ class WebhomeController extends Controller
 
     if($branding)
         {  
-            
-         return "Welcome";
+            $html =  "Welcome <br> <a href='mylogin'>Login to design this page</a>";
+
+         return $html;
          
         } 
         else
