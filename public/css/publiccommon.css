@@ -733,9 +733,9 @@ div#demo {
     opacity: 0.4;
 }
 #previewtest {
-    min-width: 1200px;
+    
     overflow: hidden;
-    min-height:700px;
+    
 }
 @media (max-width: 550px) and (min-width: 50px){
 section.presentation .side {
@@ -924,3 +924,6 @@ label.star:before {
   margin:0px 20px;
   border-radius: 15px;
 }
+
+
+

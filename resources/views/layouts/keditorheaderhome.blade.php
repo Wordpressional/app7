@@ -45,15 +45,18 @@
  </head>
     <body>
    
-        
+    <div class="bg-mycolor1">     
    <div class="container-fluid">
-    <div class="row">
+    
+   
+      <div class="row">
+    @yield('content')
+  </div>
+  </div>
     <div id="app">
        
     </div>
-    @yield('content')
   </div>
-    </div>   
    
  
 
@@ -203,7 +206,39 @@ $window.scroll(scroll_elements);
                 
 
             </script>
-<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>      @include ('layouts.shortcode-layout')    
-          
+<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>     
+ @include ('layouts.shortcode-layout')    
+<style>
+#pyrupay1 .navbar1 {
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  background-color: #333;
+  width: 100%;
+  display: inline;
+}
+
+#pyrupay1 .navbar1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#pyrupay1 .navbar1 a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 60px;
+  min-height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>          
     </body>       
 </html>
