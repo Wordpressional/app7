@@ -49,7 +49,7 @@
  </head>
     <body>
  
-    @yield('content')
+    @yield('contenthome')
     <div id="app">
     </div>
  

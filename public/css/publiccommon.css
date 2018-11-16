@@ -925,5 +925,19 @@ label.star:before {
   border-radius: 15px;
 }
 
+#header, #banner, #body, #footer {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+}
 
+.backstretch {
+      width: 100%;
+      height: 700px;
+      margin: 0px auto;
+}
 
+#previewtest
+{
+  margin: -16px;
+}
