@@ -5,6 +5,8 @@ use App\Page;
 use App\Post;
 use App\Category;
 use App\Tag;
+use App\Colorsetting;
+use App\Brand;
 use Illuminate\Http\Request;
 use Shortcode;
 
@@ -46,12 +48,16 @@ class PostController extends Controller
     {
         Shortcode::enable();
         $shortcode = App('Shortcode');
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
 
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
 
         return view('webhome.single', [
-            'post' => $post
+            'post' => $post,
+            'colorsetting' => $colorsetting,
+            'branding' => $branding
         ])->withShortcodes();
     }
 

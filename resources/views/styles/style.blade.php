@@ -25,7 +25,7 @@
 </div>
 </div>
 <br>
-<h3> Heading 1 Color </h3>
+<h3> Post Title Color </h3>
 <div id="cp4" class="input-group colorpicker-component">
     <input type="text" name="cp4" id="demo4" value="{{ isset($colorsetting[2]->color) ? $colorsetting[2]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">
@@ -34,7 +34,7 @@
 </div>
 </div>
 <br>
-<h3> Heading 2 Color </h3>
+<h3> Post Content Color </h3>
 <div id="cp5" class="input-group colorpicker-component">
     <input type="text" name="cp5" id="demo5" value="{{ isset($colorsetting[3]->color) ? $colorsetting[3]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">

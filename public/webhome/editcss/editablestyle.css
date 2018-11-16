@@ -5,3 +5,9 @@
 .table-bordered td, .table-bordered th {
     border: 1px solid transparent !important;
 }
+
+.bg-cover {
+    background: url('http://localhost/dynamic/files/shares/1.jpg')  top repeat !important;
+    height: 225px;
+    
+}

@@ -929,6 +929,7 @@ label.star:before {
     padding: 0px !important;
     margin: 0px !important;
     border: none !important;
+    display: inline;
 }
 
 .backstretch {
@@ -940,4 +941,11 @@ label.star:before {
 #previewtest
 {
   margin: -16px;
+}
+p.lead {
+    padding-top: 90px;
+}
+
+.post-content {
+  min-height: 100px;
 }

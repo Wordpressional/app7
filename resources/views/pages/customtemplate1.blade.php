@@ -47,9 +47,8 @@
 @section('css')
 <style>
 /* Banner Background Color */
-.jumbotron{
-	background: {{ $colorsetting[11]->color }} !important;
-
+.bg-cover{
+	background: {{ $colorsetting[11]->color }};
 }
 .project_area {
     background: {{ $colorsetting[11]->color }} !important;
