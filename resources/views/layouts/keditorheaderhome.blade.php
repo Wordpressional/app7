@@ -25,11 +25,18 @@
 <link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
 
 
+<!-- Rev slider css -->
+  <link href="{{ asset('webhome/vendors/revolution/css/settings.css') }}" rel="stylesheet">
+  <link href="{{ asset('webhome/vendors/revolution/css/layers.css') }}" rel="stylesheet">
+  <link href="{{ asset('webhome/vendors/revolution/css/navigation.css') }}" rel="stylesheet">
+  <link href="{{ asset('webhome/vendors/animate-css/animate.css') }}" rel="stylesheet">
 
 
 <link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
+
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,20 +46,24 @@
 <![endif]-->
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
-
+ <link rel="stylesheet" href="{{asset('css/public.css')}}" />
  <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
+  <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
  </head>
     <body>
    
-        
+    <div class="bg-mycolor1">     
    <div class="container-fluid">
-    <div class="row">
+    
+   
+      <div class="row">
+    @yield('content')
+  </div>
+  </div>
     <div id="app">
        
     </div>
-    @yield('content')
   </div>
-    </div>   
    
  
 
@@ -71,6 +82,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
+
+<!-- Rev slider js -->
+  <script src="{{ asset('webhome/vendors/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+<script src="{{ asset('webhome/vendors/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+<script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.actions.min.js') }}"></script>
+<script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
+<script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+<script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+<script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
+<script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
  <script type="text/javascript">
           $(function () {
            
@@ -93,6 +114,22 @@
             });
         });     
  </script>     
+
+  <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+   <!-- Extra plugin css -->
+        <script src="{{ asset('webhome/vendors/counterup/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/counterup/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/counterup/apear.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/counterup/countto.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('webhome/vendors/parallaxer/jquery.parallax-1.1.3.js') }}"></script>
+        <!--Tweets-->
+       
+        <script src="{{ asset('js/adminlte.min.js') }}"></script>
+        <script src="{{ asset('webhome/js/theme.js') }}"></script>
+        <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+       <script src="{{ asset(mix('js/app.js')) }}"></script>
+       <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
          <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
@@ -202,8 +239,16 @@ $window.scroll(scroll_elements);
                 
 
             </script>
-
-      @include ('layouts.shortcode-layout')    
-          
+<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>     
+ @include ('layouts.shortcode-layout')    
+<script>
+  $(function() {
+      $('.backstretch').each(function(index, el) {
+        var img = $(el).children('img');
+        $(el).css('background', 'url(' + img.attr('src') + ') 50% 50% / cover fixed');
+        img.remove();
+      });
+    });
+</script>
     </body>       
 </html>

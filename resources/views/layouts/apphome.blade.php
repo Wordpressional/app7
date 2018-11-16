@@ -37,6 +37,7 @@
 		<link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
          <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
           <link rel="stylesheet" href="{{asset('css/public.css')}}" />
+          <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +49,7 @@
  </head>
     <body>
  
-    @yield('content')
+    @yield('contenthome')
     <div id="app">
     </div>
  
@@ -80,5 +81,6 @@
         <script src="{{ asset('webhome/js/theme.js') }}"></script>
         <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
        <script src="{{ asset(mix('js/app.js')) }}"></script>
+       <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>
     </body>       
 </html>

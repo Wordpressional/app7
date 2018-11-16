@@ -99,60 +99,54 @@
     <div data-dynamic-href="{{asset('examples/snippets/_dynamic_content.html')}}"></div>
 </div>
 
-<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/slider.png')}}" data-keditor-title="Slider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Slider">
+<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/imgslider.png')}}" data-keditor-title="Slider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Slider">
 
 @include('shortcodes.plainhtml.imgslider')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/slider.png')}}" data-keditor-title="MegaMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;MegaMenu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/megamenu.png')}}" data-keditor-title="MegaMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;MegaMenu">
 
 @include('shortcodes.plainhtml.megamenu')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Freshers-ribbon-faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;FAQ">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;FAQ">
 
 @include('shortcodes.plainhtml.faq')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/menu.png')}}" data-keditor-title="AMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;AMenu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.png')}}" data-keditor-title="AMenu" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;AMenu">
 
 @include('shortcodes.plainhtml.aboutmenu')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;ASPA">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;ASPA">
 
 @include('shortcodes.plainhtml.aboutspa')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/twitter.png')}}" data-keditor-title="Twitter" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Twitter">
-
-@include('shortcodes.plainhtml.twitter')
-
-</div>
-
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/introslider.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Introslider">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/introslider1.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Introslider">
 
 @include('shortcodes.plainhtml.introslider')
 
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/services.png')}}" data-keditor-title="Services" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Services">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/services1.png')}}" data-keditor-title="Services" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Services">
 
 @include('shortcodes.plainhtml.services')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/bitcoin.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;pagesliderwidget">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;pagesliderwidget">
 
-@include ('layouts/innerpageslider')
+@include('shortcodes.plainhtml.innerpageslider')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/links.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Footerlinks">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Footerlinks">
 
 @include('shortcodes.plainhtml.footerlinks')
 
@@ -171,43 +165,19 @@
 
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
 
-
-  <div class="project-image bcg">
-   <img src="{{asset('parallax/bcg_slide-2.jpg')}}" class="img-responsive">
-  </div> 
-
-
-  </div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallax2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
-
-
-
-<div class="project-img">
-  <img src="{{asset('parallax/bcg_slide-1.jpg')}}">
+@include('shortcodes.plainhtml.parallaxone')
   
+
+
 </div>
 
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/revolutionaryslider.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.revolutionslider')
+  
 
 
 </div>
-  <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax3.jpg')}}" data-keditor-title="Thumbnail Panel" data-keditor-categories="Text;Photo;Bootstrap component"> 
-  <h1 class="project-description">
-  Project Title
-  </h1>
-  <p class="project-description">
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  <br/>
-  <br/>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  <br/>
-  <br/>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-</div>
-
-
-
 
 
 <div data-type="component-audio" data-preview="{{asset('examples/snippets/preview/audio.png')}}" data-keditor-title="Audio" data-keditor-categories="Media">

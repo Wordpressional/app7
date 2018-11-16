@@ -2,19 +2,20 @@
 
 
 @section('content')
-<div class="bg-white bg-mycolor">
-    <div class="col-md-8">
-    	<div id="successalert" style="display:none; padding-bottom:35px;" class="alert alert-success  form-control"></div>
+
+<div class="col-md-12 col-lg-12">
+    	<div id="successalert" style="display:none; padding-bottom:35px;" class="alert alert-success "></div>
+
     	<form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="{your_ajax_function(); return false;}">
       {!! $cforms->htmlcontents !!} 
 
-      <!--<input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />-->
+      
       <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
       <input type="hidden" name="table_name" class="table_name" id="{{ $cforms->cshortcode }}" value="{{ $cforms->cshortcode }}" />
       <input type="hidden" name="files" class="files" value="" />
  		 </form>
-  	</div>
- </div>  
+  	
+</div>   
    
    
 @endsection
@@ -78,7 +79,7 @@
         
     
     
-    var f = null ;
+    var f = null;
     let i = 0;
 
     
@@ -191,7 +192,7 @@ for(i=0; i<file_data.length; i++)
             
               
             success: function(result) {
-              alert(result);
+              //alert(result);
               console.log(result);
                   $('#successalert').css("display", "block");
 

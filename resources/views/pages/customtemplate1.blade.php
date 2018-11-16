@@ -38,12 +38,15 @@
 	</div>
 </div>
 </div>
- 
-@include ('layouts/innerpagefooter')
-
+<div class="copy_right_area1">
+<div class="container"> 
+{!! html_entity_decode($branding->footer) !!}
+</div>
+</div>
 @endsection
 @section('css')
 <style>
+/* Banner Background Color */
 .jumbotron{
 	background: {{ $colorsetting[11]->color }} !important;
 
@@ -63,12 +66,20 @@
    background: transparent !important;
 }
 
+/* Background Page Color */
+
 body.bg-light {
     background: {{ $colorsetting[8]->color }} !important;
 }
 
-.bg-mycolor {
-	background: {{ $colorsetting[1]->color }} !important;
+/* Footer Background Color */
+
+.copy_right_area1 {
+    background: {{ $colorsetting[9]->color }} !important;
+}
+
+.lead span {
+	color: {{ $colorsetting[0]->color }} !important;
 }
 </style>
 @endsection

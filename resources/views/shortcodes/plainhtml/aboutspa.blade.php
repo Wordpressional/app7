@@ -1,4 +1,17 @@
+<div id="pyrupay1">       
+<div class="navbar1">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+</div>
+<div class="main">
+
 <div id="pyrupay">
+  <div class="container">
+   
+
+
 	<center><h3>About Pyrupay</h3></center>
 <p>Blockchain ICO made simple﻿
 Launching an Initial Coin Offering (ICO) can be a great mark of success for a cryptocurrency platform - but it requires overcoming major hurdles that currently plague the industry. We help businesses who believe that cryptocurrency is the next frontier in the world of money and finance</p>
@@ -11,7 +24,7 @@ Launching an Initial Coin Offering (ICO) can be a great mark of success for a cr
 
 <p>Its all about building a solid ICO project that aims to solve the pain points in the industry. Pyrupay is supporting the cryptocurrency industry while helping the people within it. Positioning, Marketing and Publicity are as important as the project itself.</p>
 </div>
-
+</div>
 
 
 <div id="pteam">
@@ -124,4 +137,4 @@ Launching an Initial Coin Offering (ICO) can be a great mark of success for a cr
 
 </div>
 
-
+</div>

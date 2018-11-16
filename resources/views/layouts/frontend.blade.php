@@ -43,6 +43,7 @@
            <link rel="stylesheet" href="{{asset('css/star-rating.min.css')}}" />
             <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
             <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
+             <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
             @yield('css')
 
@@ -131,7 +132,7 @@
          <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
          <script src="{{ asset('webhome/js/css3-animate-it.js') }}"></script>
 
-        
+        <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>
        
          @include ('layouts.shortcode-layout')
          @stack('inline-scripts')

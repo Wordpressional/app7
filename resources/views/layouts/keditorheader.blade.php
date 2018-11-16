@@ -36,7 +36,7 @@
           <link rel="stylesheet" href="{{asset('css/front.css')}}" />
           <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
           <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
-          
+           <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -192,7 +192,7 @@ $window.scroll(scroll_elements);
                 
 
             </script>
-
+<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>
             
     </body>       
 </html>

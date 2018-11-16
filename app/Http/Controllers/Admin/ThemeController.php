@@ -737,5 +737,270 @@ class ThemeController extends Controller
     
     }
 
+    public function csseditor()
+    {
+
+        $vpath = array();
+        $filename = array();
+        $arrayfile = array();
+        $arrayfileb = array();
+        $cc = array();
+        $cc1 = array();
+
+        $dirPath = base_path().'/public/webhome/editcss/';
+        if (is_dir($dirPath)){
+          if ($dh = opendir($dirPath)){
+        while (($file = readdir($dh)) !== false)
+        {
+            if($file == "." || $file == "..")
+            {
+
+            }
+            else
+            {
+                //echo "<option value=\"" . trim($file) . "\">" . $file . "\n";
+                array_push($filename, $file);
+                array_push($vpath, $dirPath.$file);
+                $cc = str_replace(".css","",$file);
+                array_push($cc1, $cc);
+            }
+           
+        }
+        }
+        }
+        closedir($dh);
+        //dd($cc1);
+        //dd($filename);
+
+        
+
+        for($i=0;$i<count($cc1);$i++)
+        {
+            //$cc = chop($filename[$i],".blade.php");
+
+         if($cc1[$i] == 'undefined')
+         {
+            $cc1[$i] = $cc1[0];
+         } 
+        
+        $vpath = public_path().'/webhome/editcss/'.$cc1[$i].'.css';
+
+        $html = File::get($vpath);
+        //dd($html);
+        $arrayfile[$i] =  $html;
+        //dd($imgslider);
+        //dd(public_path());
+        //dd($arrayfile[$i]);
+        
+        }
+
+        //dd($arrayfile);
+
+        return view('admin.widgeteditor.csseditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+    
+    }
+
+    public function updatecss(Request $request)
+    {
+        //dd($request->filewname);
+        //dd("ggg");
+
+        //dd(htmlspecialchars_decode($request->filew));
+        //dd($request->filewname);
+        if($request->filewname != "undefined")
+        {
+        
+            
+            $vpath = public_path().'/webhome/editcss/'.$request->filewname;
+           //dd($vpath);
+       
+            //dd($vpath);
+            $html = File::put($vpath, htmlspecialchars_decode($request->filew));
+       
+            return "success";
+        } 
+        else
+        {
+            return "false";
+        }
+     
+    
+    }
+
+     public function widgetcusteditor()
+    {
+
+        $vpath = array();
+        $filename = array();
+        $arrayfile = array();
+        $arrayfileb = array();
+        $cc = array();
+        $cc1 = array();
+
+        $dirPath = base_path().'/resources/views/shortcodes/custom/';
+        if (is_dir($dirPath)){
+          if ($dh = opendir($dirPath)){
+        while (($file = readdir($dh)) !== false)
+        {
+            if($file == "." || $file == "..")
+            {
+
+            }
+            else
+            {
+                //echo "<option value=\"" . trim($file) . "\">" . $file . "\n";
+                array_push($filename, $file);
+                array_push($vpath, $dirPath.$file);
+                $cc = str_replace(".blade.php","",$file);
+                array_push($cc1, $cc);
+            }
+           
+        }
+        }
+        }
+        closedir($dh);
+        //dd($cc1);
+        //dd($filename);
+
+        
+
+        for($i=0;$i<count($cc1);$i++)
+        {
+            //$cc = chop($filename[$i],".blade.php");
+
+         if($cc1[$i] == 'undefined')
+         {
+            $cc1[$i] = $cc1[0];
+         } 
+       
+        $arrayfile[$i] =  view('shortcodes.custom.'.$cc1[$i])->render();
+        //dd($imgslider);
+        
+        }
+
+        //dd($arrayfile);
+
+        return view('admin.widgeteditor.wcusteditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+    
+    }
+
+    public function updatewcust(Request $request)
+    {
+        //dd($request->imgsliderw);
+        //dd("ggg");
+
+        //dd(htmlspecialchars_decode($request->imgsliderw));
+        //dd($request->filewname);
+        if($request->filewname != "undefined")
+        {
+        
+            
+            $vpath = base_path().'/resources/views/shortcodes/custom/'.$request->filewname;
+           //dd($vpath);
+       
+            //dd($vpath);
+            $html = File::put($vpath, htmlspecialchars_decode($request->filew));
+       
+            return "success";
+        } 
+        else
+        {
+            return "false";
+        }
+     
+    
+    }
+
+
+     public function jseditor()
+    {
+
+        $vpath = array();
+        $filename = array();
+        $arrayfile = array();
+        $arrayfileb = array();
+        $cc = array();
+        $cc1 = array();
+
+        $dirPath = base_path().'/public/webhome/editjs/';
+        if (is_dir($dirPath)){
+          if ($dh = opendir($dirPath)){
+        while (($file = readdir($dh)) !== false)
+        {
+            if($file == "." || $file == "..")
+            {
+
+            }
+            else
+            {
+                //echo "<option value=\"" . trim($file) . "\">" . $file . "\n";
+                array_push($filename, $file);
+                array_push($vpath, $dirPath.$file);
+                $cc = str_replace(".js","",$file);
+                array_push($cc1, $cc);
+            }
+           
+        }
+        }
+        }
+        closedir($dh);
+        //dd($cc1);
+        //dd($filename);
+
+        
+
+        for($i=0;$i<count($cc1);$i++)
+        {
+            //$cc = chop($filename[$i],".blade.php");
+
+         if($cc1[$i] == 'undefined')
+         {
+            $cc1[$i] = $cc1[0];
+         } 
+        
+        $vpath = public_path().'/webhome/editjs/'.$cc1[$i].'.js';
+
+        $html = File::get($vpath);
+        //dd($html);
+        $arrayfile[$i] =  $html;
+        //dd($imgslider);
+        //dd(public_path());
+        //dd($arrayfile[$i]);
+        
+        }
+
+        //dd($arrayfile);
+
+        return view('admin.widgeteditor.jseditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+    
+    }
+
+    public function updatejs(Request $request)
+    {
+        //dd($request->filewname);
+        //dd("ggg");
+
+        //dd(htmlspecialchars_decode($request->filew));
+        //dd($request->filewname);
+        if($request->filewname != "undefined")
+        {
+        
+            
+            $vpath = public_path().'/webhome/editjs/'.$request->filewname;
+           //dd($vpath);
+       
+            //dd($vpath);
+            $html = File::put($vpath, htmlspecialchars_decode($request->filew));
+       
+            return "success";
+        } 
+        else
+        {
+            return "false";
+        }
+     
+    
+    }
+
 
 }

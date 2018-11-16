@@ -32,6 +32,7 @@
         <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
 
         <link rel="stylesheet" href="{{asset('css/star-rating.min.css')}}" />
+         <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -93,6 +94,7 @@
 
 
        <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
+      <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript"></script>
             <script type="text/javascript">jssor_1_slider_init();</script>
 		
     </body>       

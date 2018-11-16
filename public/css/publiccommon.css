@@ -733,9 +733,9 @@ div#demo {
     opacity: 0.4;
 }
 #previewtest {
-    min-width: 1200px;
+    
     overflow: hidden;
-    min-height:700px;
+    
 }
 @media (max-width: 550px) and (min-width: 50px){
 section.presentation .side {
@@ -923,4 +923,21 @@ label.star:before {
   width:100%;
   margin:0px 20px;
   border-radius: 15px;
+}
+
+#header, #banner, #body, #footer {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+}
+
+.backstretch {
+      width: 100%;
+      height: 700px;
+      margin: 0px auto;
+}
+
+#previewtest
+{
+  margin: -16px;
 }
