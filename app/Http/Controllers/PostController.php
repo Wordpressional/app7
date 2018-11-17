@@ -61,30 +61,66 @@ class PostController extends Controller
         ])->withShortcodes();
     }
 
+     public function showsingletwo(Request $request, Post $post)
+    {
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
+
+        $post->comments_count = $post->comments()->count();
+        $post->likes_count = $post->likes()->count();
+
+        return view('webhome.singletwo', [
+            'post' => $post,
+            'colorsetting' => $colorsetting,
+            'branding' => $branding
+        ])->withShortcodes();
+    }
+
     public function showbsingle(Request $request, Post $post)
     {
+
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
+
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
 
         return view('webhome.bsingle', [
-            'post' => $post
-        ]);
+            'post' => $post,
+            'colorsetting' => $colorsetting,
+            'branding' => $branding
+        ])->withShortcodes();
     }
 
     public function allcat(Request $request)
     {
-        
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
 
         return view('webhome.allcategory', [
+            'colorsetting' => $colorsetting,
+            'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
                              ->latest()
                              ->paginate(20)
-        ]);
+        ])->withShortcodes();
     }
 
      public function cattype(Request $request, $cat)
     {
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
         $catid = Category::where('name', $cat)->first();
@@ -111,9 +147,11 @@ class PostController extends Controller
              $this->post1 = $post1;
              //dd($this->printtags());
         return view('webhome.allcategory', [
+            'colorsetting' => $colorsetting,
+            'branding' => $branding,
             'posts' => $post,
             'posttags' => $this->printtags()
-        ]);
+        ])->withShortcodes();
         }
         } 
         else
@@ -124,6 +162,12 @@ class PostController extends Controller
 
     public function tagtype(Request $request, $tag)
     {
+
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
         $tagid = Tag::where('tag', $tag)->first();
@@ -144,9 +188,11 @@ class PostController extends Controller
            //dd($post);
         return view('webhome.alltag', [
             'posts' => $post,
+            'colorsetting' => $colorsetting,
+            'branding' => $branding,
            
            
-        ]);
+        ])->withShortcodes();
         }
         } 
         else
@@ -193,6 +239,11 @@ class PostController extends Controller
      public function arttype(Request $request, $cat)
     {
         //dd($cat);
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
         $catid = Category::where('name', $cat)->first();
 
         if($catid)
@@ -201,12 +252,14 @@ class PostController extends Controller
         if($catid->id != "")
         {
         return view('webhome.articles', [
+            'colorsetting' => $colorsetting,
+            'branding' => $branding,
             'posts' => Post::where('category_id', $catid->id)
                              ->with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
                              ->latest()
                              ->paginate(20)
-        ]);
+        ])->withShortcodes();
         }
         }
         else
@@ -241,26 +294,37 @@ class PostController extends Controller
 
      public function articles(Request $request)
     {
-       
-        
+       Shortcode::enable();
+        $shortcode = App('Shortcode');
+
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
         return view('webhome.articles', [
+            'colorsetting' => $colorsetting,
+            'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
                              ->latest()
                              ->paginate(20)
-        ]);
+        ])->withShortcodes();
     }
 
      public function links(Request $request)
     {
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
         
+        $colorsetting = Colorsetting::all();
+        $branding = Brand::where('id', 1)->first();
         
         return view('webhome.links', [
+            'colorsetting' => $colorsetting,
+            'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
                              ->latest()
                              ->paginate(20)
-        ]);
+        ])->withShortcodes();
     }
 
    

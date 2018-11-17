@@ -50,14 +50,14 @@
       <div class="card-text"><small v-pre class="text-muted">{{ $post->pubyear }}</small></div>
       <br>
      
-      <button class="btn btn-sm align-self-center fa-white" style="background-color:#003F5B; color:#ffffff;">{{ link_to_route('webhome.bsingle', 'Read More', $post) }}</button>
+      <button class="btn btn-sm align-self-center fa-white readmorebtn" >{{ link_to_route('webhome.bsingle', 'Read More', $post) }}</button>
 
        <div style="padding:0px; margin-bottom: 0px; background: #ffffff;">
-      <hr style="border-top:1px solid #16A085;">
+      <hr class="line11">
       @foreach($sep as $s)
-      <center><i class="fa fa-tags"></i>&nbsp;&nbsp;&nbsp;{{ link_to_route('webhome.tagtype', $s, $s) }}</center>
+      <center><i class="fa fa-tags"></i>&nbsp;&nbsp;&nbsp;<span class="link11">{{ link_to_route('webhome.tagtype', $s, $s) }}</span></center>
       @endforeach
-      <hr style="border-top:1px solid #16A085;">
+      <hr class="line11">
 
 
       </div>

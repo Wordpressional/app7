@@ -1,5 +1,5 @@
 <div id="app">
- <div class="jumbotron jumbotron bg-cover">
+ <div class="jumbotron jumbotron bg-coverpost">
   <div class="overlay"></div>
   <div class="container">
     <h3></h3>
@@ -7,7 +7,7 @@
   </div>
 </div>       
 
-        <div class="container">
+        <div class="container-fluid postbgcolor">
             @include('shared/alerts')
 
             <div class="row">

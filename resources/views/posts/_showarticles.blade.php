@@ -38,7 +38,7 @@
 		></like>
       </small>
     </p>
-      <button class="btn btn-sm align-self-center btnstyle">{{ link_to_route('webhome.single', 'Read More', $post) }}</button>
+      <button class="btn btn-sm align-self-center btnstyle readmorebtn">{{ link_to_route('webhome.single', 'Read More', $post) }}</button>
    </div>
   </div>
   </div>

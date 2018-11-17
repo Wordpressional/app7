@@ -47,15 +47,9 @@
 @section('css')
 <style>
 /* Banner Background Color */
-.bg-cover{
-	background: {{ $colorsetting[11]->color }};
-}
-.project_area {
+.bg-cover {
     background: {{ $colorsetting[11]->color }} !important;
-}
-.main_menu_area
-{
-  background: {{ $colorsetting[11]->color }} !important;
+    
 }
 .project_area:before
 {

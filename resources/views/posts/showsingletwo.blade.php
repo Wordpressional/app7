@@ -1,14 +1,6 @@
 <div id="app">
-        
- <div class="jumbotron jumbotron bg-coverpost ">
-  <div class="overlay"></div>
-  <div class="container">
-    <h3></h3>
-
-   
-
-    <p class="lead postlead"><span>{{ $post->title }}</span></p>
-  </div>
+ <div class="posttitlebg">
+    <h3 class="hfont">{{ $post->title }}</h3>
 </div>
 
 <div class="container-fluid postbgcolor">
@@ -50,5 +42,9 @@ logged_in="{{ Auth::check() }}"
 </div>
  
 
-     
+        
+
+
+
+
   

@@ -285,7 +285,7 @@ span{
   text-align: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  
+  border-radius: 0em;
 }
 
 .lead span {
@@ -297,9 +297,21 @@ span{
   background-size: cover;
   color: white;
   background-position: center center;
-  position: relative;
+ 
   z-index: -2;
+  margin: 0px !important;
 }
+
+.bg-coverpost {
+  background-size: cover;
+  color: white;
+  background-position: center center;
+ 
+  z-index: -2;
+  margin: 0px !important;
+}
+
+
 
 .overlay {
   background-color: #000;
@@ -906,4 +918,8 @@ display: none;
 .keditor-component .keditor-component-content {
     
     z-index: inherit;
+}
+.posttitlebg {
+    
+    padding: 15px 15px 2px 15px;
 }
