@@ -35,6 +35,12 @@ Route::get('/postsingle/{post}',[
 'as' => 'webhome.single'
 
 ]);
+Route::get('/postsinglemore/{post}',[
+
+'uses' => 'PostController@showsingletwo',
+'as' => 'webhome.singlemore'
+
+]);
 
 
 Route::get('/postbsingle/{post}',[

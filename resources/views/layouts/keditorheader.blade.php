@@ -33,6 +33,7 @@
         <link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
         <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
          <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
+         
           <link rel="stylesheet" href="{{asset('css/front.css')}}" />
           <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
           <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />

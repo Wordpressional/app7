@@ -1,7 +1,4 @@
-@extends('layouts.keditorheader')
 
-
-@section('content')
 <div class="bg-white bg-mycolor">
     <div class="col-md-8">
     	<div id="successalert" style="display:none; padding-bottom:35px;" class="alert alert-success  form-control"></div>
@@ -17,8 +14,8 @@
  </div>  
    
    
-@endsection
-@section('scripts')
+
+
 <script>
 //alert("hi............");
 
@@ -330,7 +327,7 @@ console.log("json",json);
 
             },
              error: function (jqXHR, textStatus, errorThrown) {
-              alert("hi++++++");
+              
                   if (jqXHR.status == 500) {
                       alert('Internal error: ' + jqXHR.responseText);
                   } else {
@@ -353,4 +350,3 @@ console.log("json",json);
 }
 
 </script>
-@endsection

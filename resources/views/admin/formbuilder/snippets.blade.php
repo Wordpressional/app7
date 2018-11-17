@@ -152,6 +152,12 @@
 
 </div>
 
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/gallery.png')}}" data-keditor-title="Gallery" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Gallery">
+
+@include('shortcodes.plainhtml.gallery')
+
+</div>
+
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/photo.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
     <div class="photo-panel">
         <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" width="100%" height="" />
@@ -178,6 +184,92 @@
 
 
 </div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_1')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom2.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_2')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom3.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_3')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom4.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_4')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom5.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_5')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom6.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_6')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom7.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_7')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom8.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_8')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom9.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_9')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom10.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_10')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom11.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_11')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom12.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.custom.customplain_12')
+  
+
+
+</div>
+
+
 
 
 <div data-type="component-audio" data-preview="{{asset('examples/snippets/preview/audio.png')}}" data-keditor-title="Audio" data-keditor-categories="Media">

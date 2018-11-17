@@ -258,13 +258,7 @@ ul.dropdown-menu li a
 background-color: #f4b942;
 }
 
-body > #app > .container {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-    font-size: 14px;
-    font-family: "Poppins", sans-serif !important;
-    
-}
+
 
 .post-content{
   font-size: 14px;
@@ -291,7 +285,7 @@ span{
   text-align: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  
+  border-radius: 0em;
 }
 
 .lead span {
@@ -303,9 +297,21 @@ span{
   background-size: cover;
   color: white;
   background-position: center center;
-  position: relative;
+ 
   z-index: -2;
+  margin: 0px !important;
 }
+
+.bg-coverpost {
+  background-size: cover;
+  color: white;
+  background-position: center center;
+ 
+  z-index: -2;
+  margin: 0px !important;
+}
+
+
 
 .overlay {
   background-color: #000;
@@ -318,10 +324,7 @@ span{
   z-index: -1;
 }
 
-.bg-cover 
-{
-  background-image: url("../img/custom1.jpg");
-}
+
 
 .c_box_item h4 i{
       color: #005b82 !important;
@@ -570,11 +573,11 @@ color: #000000;
    padding:0px !important;
 }
 .jumbotron {
-    padding: 20px !important;
+    padding: 40px !important;
     
 }
-.bg-cover {
-    background-image: none !important;
+.jumbotron {
+    background: none !important;
 }
 
 .img-fluid-art{
@@ -915,4 +918,8 @@ display: none;
 .keditor-component .keditor-component-content {
     
     z-index: inherit;
+}
+.posttitlebg {
+    
+    padding: 15px 15px 2px 15px;
 }

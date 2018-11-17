@@ -50,7 +50,7 @@
                   </select>
             </div>
             <div class="form-group col-md-6">
-                <label for="template">Select a template</label>
+                <label for="template">Related templates links</label>
                 <select name="template" id="template" class="form-control">
                     
                       <option value="Full width Template"  
@@ -71,6 +71,12 @@
                           @endif
                         @endif
                           >Title Template</option>
+                      <option value="Post Template"
+                      @if ($posted_at) @if ($post->template == "Post Template")
+                             selected 
+                          @endif
+                        @endif
+                          >Post Template</option>
  
                   </select>
             </div>
@@ -82,6 +88,10 @@
                @elseif ($post->template == "3 Column Template")
                 
                   <p> @lang('posts.link') : {{ link_to_route('posts.allcat', route('posts.allcat')) }}</p>
+               @elseif ($post->template == "Post Template")
+                
+                  <p> @lang('posts.link') : {{ link_to_route('webhome.singlemore', route('webhome.singlemore')) }}</p>
+
                @elseif ($post->template == "Title Template")
                  <p>@lang('posts.link') : {{ link_to_route('posts.links', route('posts.links')) }}</p>
               @endif
@@ -102,6 +112,13 @@
                <div id="titlel"  style="display: none;">
              
                  <p>@lang('posts.link') : {{ link_to_route('posts.links', route('posts.links')) }}</p>
+           
+             
+              </div>
+
+              <div id="posttemp"  style="display: none;">
+             
+                 <p>@lang('posts.link') : {{ link_to_route('webhome.singlemore', route('webhome.singlemore', $post), $post) }}</p>
            
              
               </div>

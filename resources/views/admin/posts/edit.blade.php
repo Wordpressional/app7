@@ -27,15 +27,19 @@ $(document).ready(function(){
 
            if ($(this).val() == 'Full width Template') {
                $('#full').css({'display':'block'}); 
-               $(' #first, #three, #titlel').css({'display':'none'});            
+               $(' #first, #three, #titlel, #posttemp').css({'display':'none'});            
            }
            else if ($(this).val() == '3 Column Template') {
                $('#three').css({'display':'block'}); 
-               $('#first, #full,  #titlel').css({'display':'none'});            
+               $('#first, #full,  #titlel, #posttemp').css({'display':'none'});            
            }
            else if ($(this).val() == 'Title Template') {
                $('#titlel').css({'display':'block'}); 
-               $('#first, #full, #three').css({'display':'none'});            
+               $('#first, #full, #three, #posttemp').css({'display':'none'});            
+           }
+           else if ($(this).val() == 'Post Template') {
+               $('#posttemp').css({'display':'block'}); 
+               $('#first, #full, #three, #titlel').css({'display':'none'});            
            }
            else
            {
