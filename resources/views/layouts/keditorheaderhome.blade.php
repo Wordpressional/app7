@@ -49,7 +49,7 @@
  <link rel="stylesheet" href="{{asset('css/public.css')}}" />
  <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
   <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
-  <link rel="manifest" href="{{ url('/') }}/manifest.json">
+   <link rel="manifest" href="{{url('/manifest.json')}}">
  </head>
     <body>
    
