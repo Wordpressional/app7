@@ -62,6 +62,6 @@
     
   ],
   "start_url": "/dynamic/",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#3367D6"
 }
