@@ -63,5 +63,6 @@
   ],
   "start_url": "/dynamic/",
   "display": "standalone",
-  "theme_color": "#3367D6"
+  "theme_color": "#3367D6",
+  "prefer_related_applications": true
 }
