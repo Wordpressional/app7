@@ -49,6 +49,9 @@
  <link rel="stylesheet" href="{{asset('css/public.css')}}" />
  <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
   <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
+
+  
+
    <link rel="manifest" href="{{url('/manifest.json')}}">
  </head>
     <body>
@@ -251,5 +254,16 @@ $window.scroll(scroll_elements);
       });
     });
 </script>
-    </body>       
+
+<script src="{{ asset('upup.min.js') }}"></script>
+<script src="{{ asset('upup.sw.min.js') }}"></script>
+<script>
+UpUp.start({
+  'content': 'You are Offline. Cannot reach site. Please check your internet connection.',
+  'service-worker-url': 'upup.sw.min.js'
+});
+</script>
+
+
+</body>       
 </html>

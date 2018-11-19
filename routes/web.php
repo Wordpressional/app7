@@ -17,6 +17,7 @@
 Route::get('/', 'WebhomeController@frontpage')->name('home');
 Route::get('/testabc', 'WebhomeController@test33');
 Route::get('/index123', 'WebhomeController@index123');
+Route::get('/welcome1', 'WebhomeController@welcome1');
 
 
    
