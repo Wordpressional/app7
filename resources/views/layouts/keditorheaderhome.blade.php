@@ -56,7 +56,7 @@
 
   
   
-   <link rel="manifest" href="{{url('/manifest.json')}}">
+   <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
  </head>
     <body>
    
