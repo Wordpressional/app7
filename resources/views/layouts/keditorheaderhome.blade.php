@@ -6,11 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="img/fav-icon.png"> 
-        <link rel="icon" sizes="128x128" href="img/fav-icon.png">
-        <link rel="apple-touch-icon" sizes="128x128" href="img/fav-icon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="img/fav-icon.png">
-        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+        <link rel="icon" sizes="192x192" href="{{ asset('icons/icon-192.png') }}"> 
+        <link rel="icon" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
+        <link rel="apple-touch-icon" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
+        <link rel="icon" href="{{ asset('icons/icon-36.png') }}"  type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Pyrupay</title>
         
