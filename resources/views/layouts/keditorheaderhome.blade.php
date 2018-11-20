@@ -5,7 +5,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="img/fav-icon.png"> 
+        <link rel="icon" sizes="128x128" href="img/fav-icon.png">
+        <link rel="apple-touch-icon" sizes="128x128" href="img/fav-icon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="img/fav-icon.png">
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Pyrupay</title>
@@ -51,7 +55,7 @@
   <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
   
-
+  
    <link rel="manifest" href="{{url('/manifest.json')}}">
  </head>
     <body>
