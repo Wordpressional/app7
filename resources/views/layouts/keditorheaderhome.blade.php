@@ -60,16 +60,16 @@
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
  </head>
     <body>
-   
+    <div id="app">
     <div class="bg-mycolor1">     
-   <div class="container-fluid">
+   <div class="rempm">
     
    
-      <div class="row">
+    
     @yield('content')
   </div>
-  </div>
-    <div id="app">
+  
+   
        
     </div>
   </div>

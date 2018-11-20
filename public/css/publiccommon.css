@@ -732,19 +732,13 @@ div#ontop {
 div#demo {
     opacity: 0.4;
 }
-#previewtest {
-    
-    overflow: hidden;
-    
-}
+
 @media (max-width: 550px) and (min-width: 50px){
 section.presentation .side {
     width: 350px;
   }
 
-  #previewtest img {
-     margin-bottom:15px;
-}
+ 
 }
 
 .img-responsive {
@@ -938,14 +932,17 @@ label.star:before {
       margin: 0px auto;
 }
 
-#previewtest
-{
-  margin: -16px;
-}
+
 p.lead {
     padding-top: 90px;
 }
 
 .post-content {
   min-height: 100px;
+}
+
+.rempm{
+  width:100%;
+  margin: auto !important;
+  overflow: hidden;
 }
