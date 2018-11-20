@@ -55,7 +55,7 @@
   <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
   
-  
+   <link rel="manifest" href="{{url('/manifest.json')}}">
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
  </head>
     <body>
