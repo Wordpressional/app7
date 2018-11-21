@@ -1,4 +1,4 @@
-<div class="contentmenu">
+<div class="contentmenu background">
 	 
 		<ul class="exo-menu">
 			<li><a class="active" href="#"><i class="fa fa-home"></i> Home</a></li>
