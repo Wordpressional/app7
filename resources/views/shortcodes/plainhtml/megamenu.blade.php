@@ -152,7 +152,7 @@
 			
 				</div>
 			</li>
-					
+				<a href="#" class="toggle-menu visible-xs-block">|||</a>		
 	</ul>
 	 
 </div>
