@@ -19,9 +19,7 @@ section.main_slider_area {
     width:100%;
     
 }
-.carousel {
-    position: static;
-}
+
 .carousel-inner
 {
 	height:auto;
