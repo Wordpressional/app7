@@ -778,9 +778,9 @@ section.presentation .side {
 
 .carousel-indicators li
 {
-  background-color: #470041 !important;
+  background-color: #e2e2e2 !important;
   cursor: pointer;
-  bottom: -35px !important;
+  bottom: 0px !important;
 }
 
 .carousel-indicators .active
