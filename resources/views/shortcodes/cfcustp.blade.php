@@ -142,8 +142,8 @@ console.log("filedata"+file_data);
 
 for(i=0; i<file_data.length; i++)
     {
-      f1 = file_data[1].name;
-     console.log(f1);
+      //f1 = file_data[1].name;
+     //console.log(f1);
       f = file_data;
      console.log(f);
      fobject = arrayToObject(f);

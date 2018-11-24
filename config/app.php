@@ -159,7 +159,7 @@ return [
     UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
     Intervention\Image\ImageServiceProvider::class,
     RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
-
+   
         /*
          * Application Service Providers...
          */

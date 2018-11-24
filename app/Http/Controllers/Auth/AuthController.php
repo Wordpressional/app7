@@ -29,7 +29,7 @@ class AuthController extends Controller
         try {
             $user = Socialite::driver($provider)->stateless()->user();
         } catch (Exception $e) {
-            return redirect()->route('login');
+            return redirect()->route('mylogin');
         }
 
         $authUser = $this->findOrCreateUser($user, $provider);
@@ -60,4 +60,17 @@ class AuthController extends Controller
                         'provider_id' => $user->id
                     ]);
     }
+
+    public function authenticated($request , $user){
+    if($user->role=='super_admin'){
+        return redirect()->route('admin.dashboard') ;
+    }elseif($user->role=='brand_manager'){
+        return redirect()->route('brands.dashboard') ;
+    }else{
+        return redirect()->route('mylogin') ;
+    }
+
+
+    }
+
 }
