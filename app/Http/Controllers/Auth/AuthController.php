@@ -61,16 +61,6 @@ class AuthController extends Controller
                     ]);
     }
 
-    public function authenticated($request , $user){
-    if($user->role=='super_admin'){
-        return redirect()->route('admin.dashboard') ;
-    }elseif($user->role=='brand_manager'){
-        return redirect()->route('brands.dashboard') ;
-    }else{
-        return redirect()->route('mylogin') ;
-    }
-
-
-    }
+   
 
 }

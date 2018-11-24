@@ -20,6 +20,7 @@ Route::middleware('auth')->group(function () {
     });
 
     Route::resource('newsletter-subscriptions', 'NewsletterSubscriptionController')->only('store');
+    
 });
 
 Route::get('/mylogin', 'Auth\LoginController@mylogin')->name('mylogin');
