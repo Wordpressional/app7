@@ -159,6 +159,7 @@ return [
     UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
     Intervention\Image\ImageServiceProvider::class,
     RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
+    
    
         /*
          * Application Service Providers...
@@ -172,6 +173,7 @@ return [
         App\Providers\ResponseServiceProvider::class,
         App\Providers\ObserverServiceProvider::class,
         App\Providers\ShortcodesServiceProvider::class,
+        Laratrust\LaratrustServiceProvider::class,
 	
 
     ],
@@ -229,6 +231,9 @@ return [
         'Shortcode' => Webwizo\Shortcodes\Facades\Shortcode::class,
         'Carbon' => 'Carbon\Carbon',
         'Image' => Intervention\Image\Facades\Image::class,
+        'Laratrust'   => Laratrust\LaratrustFacade::class,
+        
+
 	
     ],
 

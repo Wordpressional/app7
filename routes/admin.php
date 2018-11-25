@@ -127,7 +127,7 @@ Route::resource('forms', 'FormbuilderController');
 Route::resource('posts', 'PostController');
 Route::resource('pages', 'PageController');
 Route::delete('/posts/{post}/thumbnail', 'PostThumbnailController@destroy')->name('posts_thumbnail.destroy');
-Route::resource('users', 'UserController')->only(['index', 'edit', 'update']);
+Route::resource('users', 'UserController');
 Route::resource('comments', 'CommentController')->only(['index', 'edit', 'update', 'destroy']);
 Route::get('/posts/new/create', 'PostController@create')->name('posts.new.create');
 Route::get('/category/create',[
@@ -463,6 +463,70 @@ Route::post('/jsupdate',[
 
 'uses' => 'ThemeController@updatejs',
 'as' => 'jsupdate'
+
+]);
+
+Route::get('/authors',[
+
+'uses' => 'UserController@indexa',
+'as' => 'authors.index'
+
+]);
+
+Route::get('/authors/edita/{id}',[
+
+'uses' => 'UserController@edita',
+'as' => 'authors.edit'
+
+]);
+Route::post('/authors/updatea/{id}',[
+
+'uses' => 'UserController@updatea',
+'as' => 'authors.update'
+
+]);
+
+
+Route::get('/users',[
+
+'uses' => 'UserController@index',
+'as' => 'users'
+
+]);
+Route::get('/users/create',[
+
+'uses' => 'UserController@create',
+'as' => 'users.create'
+
+]);
+Route::post('/users/store',[
+
+'uses' => 'UserController@store',
+'as' => 'users.store'
+
+]);
+Route::get('/users/edit/{id}',[
+
+'uses' => 'UserController@edit',
+'as' => 'users.edit'
+
+]);
+Route::post('/users/update/{id}',[
+
+'uses' => 'UserController@update',
+'as' => 'users.update'
+
+]);
+Route::get('/users/delete/{id}',[
+
+'uses' => 'UserController@destroy',
+'as' => 'users.delete'
+
+]);
+Route::get('/users/restore/{id}',[
+
+'uses' => 'UserController@restore',
+'as' => 'users.restore'
 
 ]);
 

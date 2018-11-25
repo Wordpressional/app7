@@ -8,6 +8,7 @@ return [
 	'pages' => 'Pages',
     'comments' => 'Comments',
     'users' => 'Users',
+    'authors' => 'Authors',
 	'category' => 'Category',
 	'tag' => 'Tag',
 ];

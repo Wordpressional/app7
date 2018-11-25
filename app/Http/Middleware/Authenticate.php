@@ -18,14 +18,13 @@ class Authenticate
         $this->auth = $auth;
     }
 
-    //this method will be triggered before your controller constructor
+   
 public function handle($request, Closure $next)
 {
-    //check here if the user is authenticated
-   // dd();
-    if (!Auth::check()) {
+    
+    if(!Auth::check()) {
             return redirect()->route('mylogin');
-    }
+    } 
 
     return $next($request);
 }

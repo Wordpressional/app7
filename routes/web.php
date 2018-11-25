@@ -102,3 +102,10 @@ Route::post('/generatedatabase/',[
 'as' => 'config.generatedatabase'
 
 ]);
+
+// Administrator & SuperAdministrator Control Panel Routes
+Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'middleware' => ['role:administrator|superadministrator'], 'namespace' => 'Admin'], function () {
+    Route::resource('users', 'UserController');
+    Route::resource('permission', 'PermissionController');
+    Route::resource('roles', 'RolesController');
+});

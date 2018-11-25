@@ -1,9 +1,9 @@
-@extends('admin.layouts.app')
+@extends('admin.layouts.master')
 
 @section('content')
     <div class="page-header">
       <h1>@lang('dashboard.users')</h1>
     </div>
 
-    @include ('admin/users/_list')
+    @include ('admin/authors/_list')
 @endsection
