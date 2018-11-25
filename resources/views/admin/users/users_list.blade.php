@@ -7,7 +7,7 @@
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
         <h1 class="h2">Users</h1>
       </div>
-      <a class="btn btn-sm btn-primary" href="{{route('users.create')}}">Add New User</a>
+      <a class="btn btn-sm btn-primary" href="{{route('admin.users.create')}}">Add New User</a>
       <h2>{{$title}}</h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
@@ -31,8 +31,8 @@
                     </td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="{{ route('users.edit', ['id' => $user->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
-                        <a class="btn btn-danger" href="{{ route('users.show', ['id' => $user->id]) }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
+                        <a class="btn btn-primary" href="{{ route('admin.users.edit', ['id' => $user->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
+                        <a class="btn btn-danger" href="{{ route('admin.users.show', ['id' => $user->id]) }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
                       </div>
                     </td>
                   </tr>

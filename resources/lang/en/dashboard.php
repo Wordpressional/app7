@@ -10,5 +10,6 @@ return [
     'users' => 'Users',
     'authors' => 'Authors',
 	'category' => 'Category',
+	'count' => 'Total Count',
 	'tag' => 'Tag',
 ];

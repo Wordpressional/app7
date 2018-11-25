@@ -6,9 +6,9 @@
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
         <h1 class="h2">Users</h1>
     </div>
-    <a class="btn btn-sm btn-primary" href="{{route('users.index')}}">Back</a>
+    <a class="btn btn-sm btn-primary" href="{{route('admin.users')}}">Back</a>
     <h2>{{$title}}</h2>
-    <form method="post" action="{{ route('users.update', ['id' => $user->id]) }}" data-parsley-validate class="form-horizontal form-label-left">
+    <form method="post" action="{{ route('admin.users.update', ['id' => $user->id]) }}" data-parsley-validate class="form-horizontal form-label-left">
 
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} row">
             <label for="name" class="col-sm-2 col-form-label">Name</label>
