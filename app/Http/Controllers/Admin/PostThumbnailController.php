@@ -3,11 +3,17 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use App\Post;
 
+use App\Brand;
+use App\Role;
+use App\Permission;
 
+use Auth;
 class PostThumbnailController extends Controller
 {
+    use BrandsTrait;
     /**
      * Unset the post's thumbnail.
      *

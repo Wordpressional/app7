@@ -1155,3 +1155,8 @@ p.lead {
 .logo-lg img {
     height: 50px;
 }
+
+.moveright
+{
+  float:right;
+}

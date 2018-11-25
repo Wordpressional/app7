@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use App\User;
 use App\Role;
 use App\Permission;
@@ -11,16 +12,18 @@ use Illuminate\Support\Facades\DB;
 
 class PermissionController extends Controller
 {
+    use BrandsTrait;
     // Permission Listing Page
     public function index()
     {
         //
         $permissions = Permission::paginate(10);
         //dd($users);
-
+        $data = $this->brandsAll();
         $params = [
             'title' => 'Permissions Listing',
             'permissions' => $permissions,
+            'data' => $data,
         ];
 
         return view('admin.permission.perm_list')->with($params);
@@ -30,8 +33,10 @@ class PermissionController extends Controller
     public function create()
     {
         //
+        $data = $this->brandsAll();
         $params = [
             'title' => 'Create Permission',
+            'data' => $data,
         ];
 
         return view('admin.permission.perm_create')->with($params);

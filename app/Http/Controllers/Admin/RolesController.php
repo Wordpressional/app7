@@ -4,21 +4,25 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use App\Role;
 use App\Permission;
 use Illuminate\Support\Facades\DB;
 
 class RolesController extends Controller
 {
+    use BrandsTrait;
     // Roles Listing Page
     public function index()
     {
         //
+          $data = $this->brandsAll();
         $roles = Role::paginate(10);
 
         $params = [
             'title' => 'Roles Listing',
             'roles' => $roles,
+            'data' => $data,
         ];
 
         return view('admin.roles.roles_list')->with($params);
@@ -29,10 +33,11 @@ class RolesController extends Controller
     {
         //
         $permissions = Permission::all();
-
+         $data = $this->brandsAll();
         $params = [
             'title' => 'Create Roles',
             'permissions' => $permissions,
+            'data' => $data,
         ];
 
         return view('admin.roles.roles_create')->with($params);
@@ -85,12 +90,13 @@ class RolesController extends Controller
             $role = Role::findOrFail($id);
             $permissions = Permission::all();
             $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
-
+             $data = $this->brandsAll();
             $params = [
                 'title' => 'Edit Role',
                 'role' => $role,
                 'permissions' => $permissions,
                 'role_permissions' => $role_permissions,
+                'data' => $data,
             ];
 
             return view('admin.roles.roles_edit')->with($params);

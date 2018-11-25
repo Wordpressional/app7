@@ -19,13 +19,14 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use App\User;
 use App\Role;
 use App\Permission;
 
 class UserController extends Controller
 {
-    //
+    use BrandsTrait;
 
     public function __construct()
     {
@@ -35,11 +36,13 @@ class UserController extends Controller
     // Index Page for Users
     public function index()
     {
+         $data = $this->brandsAll();
         $users = User::paginate(10);
         
         $params = [
             'title' => 'Users Listing',
             'users' => $users,
+            'data' => $data,
         ];
 
         return view('admin.users.users_list')->with($params);
@@ -49,10 +52,11 @@ class UserController extends Controller
     public function create()
     {
         $roles = Role::all();
-
+         $data = $this->brandsAll();
         $params = [
             'title' => 'Create User',
             'roles' => $roles,
+            'data' => $data,
         ];
 
         return view('admin.users.users_create')->with($params);
@@ -108,12 +112,13 @@ class UserController extends Controller
             //$roles = Role::all();
             $roles = Role::with('permissions')->get();
             $permissions = Permission::all();
-
+             $data = $this->brandsAll();
             $params = [
                 'title' => 'Edit User',
                 'user' => $user,
                 'roles' => $roles,
                 'permissions' => $permissions,
+                'data' => $data,
             ];
 
             return view('admin.users.users_edit')->with($params);
@@ -193,7 +198,9 @@ class UserController extends Controller
      */
     public function indexa()
     {
+        $data = $this->brandsAll();
         return view('admin.authors.index', [
+            'data' => $data,
             'users' => User::latest()->paginate(50)
         ]);
     }
@@ -203,7 +210,9 @@ class UserController extends Controller
      */
     public function edita(User $user)
     {
+        $data = $this->brandsAll();
         return view('admin.authors.edit', [
+            'data' => $data,
             'user' => $user,
             'roles' => Role::all()
         ]);
@@ -218,7 +227,7 @@ class UserController extends Controller
 
         $role_ids = array_values($request->get('roles', []));
         $user->roles()->sync($role_ids);
-
+        
         return redirect()->route('admin.authors.edit', $user)->withSuccess(__('users.updated'));
     }
 }

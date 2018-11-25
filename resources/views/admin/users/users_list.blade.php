@@ -4,10 +4,10 @@
    
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
       
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+     <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
         <h1 class="h2">Users</h1>
-      </div>
-      <a class="btn btn-sm btn-primary" href="{{route('admin.users.create')}}">Add New User</a>
+      </div>-->
+      <a class="btn btn-sm btn-primary moveright" href="{{route('admin.users.create')}}">Add New User</a>
       <h2>{{$title}}</h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">

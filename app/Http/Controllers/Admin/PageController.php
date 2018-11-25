@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use App\Http\Requests\Admin\PagesRequest;
 use App\Page;
 use App\Post;
@@ -10,15 +11,13 @@ use App\User;
 use App\Category;
 use App\Tag;
 
-
-
 use Illuminate\Support\Facades\Auth;
-
 
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    use BrandsTrait;
     /**
      * Show the application posts index.
      *
@@ -26,9 +25,9 @@ class PageController extends Controller
      */
     public function index()
     {
-       
+         $data = $this->brandsAll();
 		$pages = Page::with('author')->withTrashed()->latest()->paginate(50);
-        return view('admin.pages.index',compact('pages'));
+        return view('admin.pages.index',compact('pages', 'data'));
         
     }
 
@@ -45,12 +44,13 @@ class PageController extends Controller
          $categories = Category::all();
         
    
-     
+      $data = $this->brandsAll();
        
         return view('admin.pages.edit', [
             'page' => $page,
             'users' => User::authors()->pluck('displayname', 'id'),
-            'tuser'=>$thisuser
+            'tuser'=>$thisuser,
+            'data'=>$data,
 
             
         ]);
@@ -64,11 +64,11 @@ class PageController extends Controller
     public function create(Request $request)
     {
 
-       
+        $data = $this->brandsAll();
         
         return view('admin.pages.create', [
-            'users' => User::authors()->pluck('displayname', 'id')
-           
+            'users' => User::authors()->pluck('displayname', 'id'),
+            'data'=>$data,
 
         ]);
     }

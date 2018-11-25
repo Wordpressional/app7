@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Admin;
 
 use App\Comment;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use App\Http\Requests\Admin\CommentsRequest;
 use App\User;
 
 class CommentController extends Controller
 {
+    use BrandsTrait;
     /**
      * Show the application comments index.
      *
@@ -16,8 +18,9 @@ class CommentController extends Controller
      */
     public function index()
     {
+        $data = $this->brandsAll();
         return view('admin.comments.index', [
-            'comments' => Comment::with('post', 'author')->latest()->paginate(50)
+            'comments' => Comment::with(['post'=> 'author', 'data'=>$data])->latest()->paginate(50)
         ]);
     }
 
@@ -26,9 +29,11 @@ class CommentController extends Controller
      */
     public function edit(Comment $comment)
     {
+        $data = $this->brandsAll();
         return view('admin.comments.edit', [
             'comment' => $comment,
-            'users' => User::pluck('name', 'id')
+            'users' => User::pluck('name', 'id'),
+             'data'=>$data,
         ]);
     }
 
@@ -37,6 +42,7 @@ class CommentController extends Controller
      */
     public function update(CommentsRequest $request, Comment $comment)
     {
+        
         $comment->update($request->validated());
 
         return redirect()->route('admin.comments.edit', $comment)->withSuccess(__('comments.updated'));

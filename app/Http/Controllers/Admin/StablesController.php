@@ -10,6 +10,7 @@ use App\Cform;
 use App\General;
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
@@ -24,12 +25,12 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class StablesController extends Controller
 {
-
+    use BrandsTrait;
     public function index()
     {   
-       
+       $data = $this->brandsAll();
         $stables = Cform::withTrashed()->latest()->paginate(50);
-        return view('admin.stables.index',compact('stables'));
+        return view('admin.stables.index',compact('stables','data'));
     }
      /**
      * Show the form for creating a new resource.
@@ -38,7 +39,8 @@ class StablesController extends Controller
      */
     public function create()
     {
-         return view('admin.cforms.create');
+        $data = $this->brandsAll();
+         return view('admin.cforms.create',compact('data'));
     }
 
     /**
@@ -208,8 +210,8 @@ class StablesController extends Controller
             $alldata = $stables = "tablenotcreated";
         
         }
-
-        return view('admin.stables.edit')->with(['stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef, 'alldata' => $alldata]);
+        $data = $this->brandsAll();
+        return view('admin.stables.edit')->with(['stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef, 'alldata' => $alldata,'data' => $data]);
         
     }
 
