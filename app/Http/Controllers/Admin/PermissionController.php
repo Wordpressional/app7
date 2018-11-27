@@ -65,13 +65,16 @@ class PermissionController extends Controller
     public function show($id)
     {
         //
+         $data = $this->brandsAll();
         try {
             $permission = Permission::findOrFail($id);
 
             $params = [
                 'title' => 'Delete Permission',
                 'permission' => $permission,
+                'data' => $data,
             ];
+
 
             return view('admin.permission.perm_delete')->with($params);
         } catch (ModelNotFoundException $ex) {
@@ -85,16 +88,18 @@ class PermissionController extends Controller
     public function edit($id)
     {
         //
+         $data = $this->brandsAll();
         try {
             $permission = Permission::findOrFail($id);
 
             $params = [
                 'title' => 'Edit Permission',
                 'permission' => $permission,
+                'data' => $data,
             ];
 
             //dd($role_permissions);
-
+            
             return view('admin.permission.perm_edit')->with($params);
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {

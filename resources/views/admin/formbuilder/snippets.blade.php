@@ -184,6 +184,72 @@
 
 
 </div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.stickymenut1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.bannert1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Aboutt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.aboutt1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Servicet1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.servicet1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/factst1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.factst1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.portfoliot1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallaxt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+
+@include('shortcodes.plainhtml.parallaxt1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/footert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+@include('shortcodes.plainhtml.footert1')
+  
+
+
+</div>
+
+
+
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
 
 @include('shortcodes.custom.customplain_1')

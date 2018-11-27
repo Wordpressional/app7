@@ -138,13 +138,33 @@
         <script src="{{ asset('webhome/js/theme.js') }}"></script>
         <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
        <script src="{{ asset(mix('js/app.js')) }}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
        <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
          <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
         <script type="text/javascript">jssor_1_slider_init();</script>
  
-
+<script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
+  <!-- BOOTSTRAP JS -->
+ 
+  <!-- TYPED JS -->
+  <script src="{{ asset('js/typed-custom.js') }}"></script>
+  <!-- WOW JS -->
+  <script src="{{ asset('js/wow.min.js') }}"></script>
+  <!-- scripts js -->
+  <script src="{{ asset('js/main.js') }}"></script>
    
     <script>
         var demo = new JParticles.particle( '#demo' );
