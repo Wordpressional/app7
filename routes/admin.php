@@ -530,4 +530,59 @@ Route::get('/users/restore/{id}',[
 
 ]);
 
+Route::get('/modules',[
 
+
+'uses' => 'ModuleController@loadmodules',
+'as' => 'modules'
+
+]);
+
+Route::get('/activate/{id}',[
+
+
+'uses' => 'ModuleController@activate',
+'as' => 'module.activate'
+
+]);
+
+Route::get('/deactivate/{id}',[
+
+
+'uses' => 'ModuleController@deactivate',
+'as' => 'module.deactivate'
+
+]);
+
+Route::get('/install/{id}',[
+
+
+'uses' => 'ModuleController@install',
+'as' => 'module.install'
+
+]);
+
+Route::get('/uninstall/{id}',[
+
+
+'uses' => 'ModuleController@uninstall',
+'as' => 'module.uninstall'
+
+]);
+
+
+Route::get('/dumpmodules',[
+
+
+'uses' => 'ModuleController@dumpmodules',
+'as' => 'module.dumpmodules'
+
+]);
+
+Route::get('/showpollingform',[
+
+
+'uses' => 'PollingController@showpollingform',
+'as' => 'polling.showpollingform'
+
+]);

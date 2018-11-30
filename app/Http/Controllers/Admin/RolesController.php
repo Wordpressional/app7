@@ -59,19 +59,21 @@ class RolesController extends Controller
             'description' => $request->input('description'),
         ]);
 
-        return redirect()->route('roles.index')->with('success', "The role <strong>$role->name</strong> has successfully been created.");
+        return redirect()->route('roles.index')->with('success', "The role $role->name has successfully been created.");
     }
 
     // Roles Delete Confirmation Page
     public function show($id)
     {
         //
+         $data = $this->brandsAll();
         try {
             $role = Role::findOrFail($id);
 
             $params = [
                 'title' => 'Delete Role',
                 'role' => $role,
+                'data' => $data,
             ];
 
             return view('admin.roles.roles_delete')->with($params);
@@ -131,7 +133,7 @@ class RolesController extends Controller
                 $role->attachPermission($value);
             }
 
-            return redirect()->route('roles.index')->with('success', "The role <strong>$role->name</strong> has successfully been updated.");
+            return redirect()->route('roles.index')->with('success', "The role $role->name has successfully been updated.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');
@@ -154,7 +156,7 @@ class RolesController extends Controller
 
             $role->forceDelete(); // Now force delete will work regardless of whether the pivot table has cascading delete
 
-            return redirect()->route('roles.index')->with('success', "The Role <strong>$role->name</strong> has successfully been archived.");
+            return redirect()->route('roles.index')->with('success', "The Role $role->name has successfully been archived.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');

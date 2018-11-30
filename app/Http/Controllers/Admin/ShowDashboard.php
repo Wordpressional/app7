@@ -34,12 +34,22 @@ class ShowDashboard extends Controller
     {
        $data = $this->brandsAll();
         //dd($data['n_companyname']->cname);
-        return view('admin.dashboard.index_home', [
-            'comments' =>  Comment::lastWeek()->get(),
-            'posts' => Post::lastWeek()->get(),
-            'users' => User::lastWeek()->get(),
-            'data' => $data,
-        ]);
+       if($user->can('pollingformshow') && $user->hasRole('superadministrator')
+       {
+            return view('admin.dashboard.index_home', [
+                'comments' =>  Comment::lastWeek()->get(),
+                'posts' => Post::lastWeek()->get(),
+                'users' => User::lastWeek()->get(),
+                'data' => $data,
+            ]);
+        }
+
+       if($user->can('pollingitemlink') && $user->hasRole('elec_ceo')
+       {
+            return view('admin.dashboard.index_ceohome'[
+                'data' => $data,
+            ]);
+        }
     }
 
     

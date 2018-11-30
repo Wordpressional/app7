@@ -8,6 +8,7 @@ use App\Http\Traits\BrandsTrait;
 use App\User;
 use App\Role;
 use App\Permission;
+use App\Permodule;
 use Illuminate\Support\Facades\DB;
 
 class PermissionController extends Controller
@@ -19,12 +20,16 @@ class PermissionController extends Controller
         //
         $permissions = Permission::paginate(10);
         //dd($users);
+        $permodules = Permodule::all();
         $data = $this->brandsAll();
         $params = [
             'title' => 'Permissions Listing',
             'permissions' => $permissions,
             'data' => $data,
+             'permodules' => $permodules,
         ];
+
+        //dd($params['permodules']);
 
         return view('admin.permission.perm_list')->with($params);
     }
@@ -126,7 +131,7 @@ class PermissionController extends Controller
 
             $permission->save();
 
-            return redirect()->route('permission.index')->with('success', "The permission <strong>$permission->name</strong> has successfully been updated.");
+            return redirect()->route('permission.index')->with('success', "The permission $permission->name has successfully been updated.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');
@@ -137,13 +142,14 @@ class PermissionController extends Controller
     // Permission Delete from DB
     public function destroy($id)
     {
+         $data = $this->brandsAll();
         //
         try {
             $permission = Permission::findOrFail($id);
-            DB::table("permission_role")->where('permission_id', $id)->delete();
+            DB::table("permission_role")->where(['data' => $data, 'permission_id', $id])->delete();
             $permission->delete();
             
-            return redirect()->route('permission.index')->with('success', "The Role <strong>$permission->name</strong> has successfully been archived.");
+            return redirect()->route('permission.index')->with('success' => "The Role <strong>$permission->name</strong> has successfully been archived.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');
