@@ -34,22 +34,25 @@ class ShowDashboard extends Controller
     {
        $data = $this->brandsAll();
         //dd($data['n_companyname']->cname);
-       if($user->can('pollingformshow') && $user->hasRole('superadministrator')
-       {
-            return view('admin.dashboard.index_home', [
+
+
+       $user = User::where('email', $data['n_loggeduser'])->first();
+
+        if($user->isCEO() == "yes" ) {
+            return view('admin.dashboard.index_ceohome', [
+               
+                'data' => $data,
+            ]);
+        } else if($user->isSuperadministrator() == "yes") {
+             return view('admin.dashboard.index_home', [
                 'comments' =>  Comment::lastWeek()->get(),
                 'posts' => Post::lastWeek()->get(),
                 'users' => User::lastWeek()->get(),
                 'data' => $data,
             ]);
-        }
-
-       if($user->can('pollingitemlink') && $user->hasRole('elec_ceo')
-       {
-            return view('admin.dashboard.index_ceohome'[
-                'data' => $data,
-            ]);
-        }
+        } else {      
+           return "You do not have permission to access this page";
+       }
     }
 
     

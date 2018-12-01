@@ -1,19 +1,4 @@
-<?php /*
-
-namespace App\Http\Controllers\Admin;
-
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\UsersRequest;
-use App\Role;
-use App\User;
-
-class UserController extends Controller
-{*/
-   
-
-
-//}
-
+<?php 
 
 namespace App\Http\Controllers\Admin;
 
@@ -81,7 +66,18 @@ class UserController extends Controller
 
         $user->attachRole($role);
 
-        return redirect()->route('users.index')->with('success', "The user <strong>$user->name</strong> has successfully been created.");
+        $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
+        //dd($role_permissions);
+        //$user->attachPermissions();
+        
+        //dd($role_permissions);
+             foreach ($role_permissions as $permission_id) {
+                $permission = Permission::find($permission_id);
+                //dd($permission);
+                 $user->attachPermission($permission);
+             }
+
+        return redirect()->route('admin.users')->with('success', "The user $user->name has successfully been created.");
     }
 
     // Delete Confirmation Page
@@ -132,6 +128,7 @@ class UserController extends Controller
     // Update User Information to DB
     public function update(Request $request, $id)
     {
+        //dd("hi");
         try {
             $user = User::findOrFail($id);
 
@@ -147,7 +144,7 @@ class UserController extends Controller
 
             // Update role of the user
             $roles = $user->roles;
-
+            //dd($roles);
             foreach ($roles as $key => $value) {
                 $user->detachRole($value);
             }
@@ -156,11 +153,19 @@ class UserController extends Controller
 
             $user->attachRole($role);
 
+             $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
+        //dd($role_permissions);
+             foreach ($role_permissions as $permission_id) {
+                $permission = Permission::find($permission_id);
+                //dd($permission);
+                 $user->detachPermission($permission);
+                 $user->attachPermission($permission);
+             }
             // Update permission of the user
             //$permission = Permission::find($request->input('permission_id'));
             //$user->attachPermission($permission);
 
-            return redirect()->route('users.index')->with('success', "The user <strong>$user->name</strong> has successfully been updated.");
+            return redirect()->route('admin.users')->with('success', "The user $user->name has successfully been updated.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');
@@ -183,7 +188,7 @@ class UserController extends Controller
 
             $user->delete();
 
-            return redirect()->route('users.index')->with('success', "The user <strong>$user->name</strong> has successfully been archived.");
+            return redirect()->route('admin.users')->with('success', "The user $user->name has successfully been archived.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');

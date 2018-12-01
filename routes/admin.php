@@ -511,7 +511,7 @@ Route::get('/users/edit/{id}',[
 'as' => 'users.edit'
 
 ]);
-Route::post('/users/update/{id}',[
+Route::put('/users/update/{id}',[
 
 'uses' => 'UserController@update',
 'as' => 'users.update'
@@ -578,7 +578,7 @@ Route::get('/dumpmodules',[
 'as' => 'module.dumpmodules'
 
 ]);
-
+Route::group(['middleware' => ['role_sadmin:elec_ceo']], function () {
 Route::get('/showpollingform',[
 
 
@@ -586,3 +586,4 @@ Route::get('/showpollingform',[
 'as' => 'polling.showpollingform'
 
 ]);
+});

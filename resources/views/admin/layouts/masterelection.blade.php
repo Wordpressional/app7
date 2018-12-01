@@ -24,7 +24,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
-
+<link rel="stylesheet" href="{{asset('css/election.css')}}" />
     
 
 </head>
@@ -32,8 +32,8 @@
     <div class="wrapper">
 
         <div class="adminltehs">
-        @include('admin.shared.header')
-        @include('admin.shared.sidebar')
+        @include('admin.shared.electionheader')
+        @include('admin.shared.electionsidebar')
         </div>
     <div class="content-wrapper bg-light">
 
@@ -45,8 +45,6 @@
                         
                     <div class="card">
                         <div class="card-body">
-                          
-        
                             @yield('content')
                         </div>
                     </div>

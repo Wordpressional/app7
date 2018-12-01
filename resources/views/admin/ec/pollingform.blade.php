@@ -1,4 +1,5 @@
-@extends('admin.layouts.adminpages')
+@extends('admin.layouts.masterelection')
+
 
 @section('content')
 <div class="container">

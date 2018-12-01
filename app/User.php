@@ -4,14 +4,20 @@ namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laratrust\Traits\LaratrustUserTrait;
+use Laratrust\Traits\LaratrustUserTrait ;
+use App\User;
+use App\Http\Traits\BrandsTrait;
+
+use Auth;
 
 
 class User extends Authenticatable
 {
-    
+     
     use LaratrustUserTrait;
     use Notifiable;
+   use BrandsTrait;
+    
 
 
     /**
@@ -99,46 +105,52 @@ class User extends Authenticatable
         });
     }
 
-    /**
-     * Check if the user can be an author
-     *
-     * @return boolean
-     */
-    public function canBeAuthor(): bool
-    {
-        return $this->isAdmin() || $this->isEditor();
-    }
+    // /**
+    //  * Check if the user can be an author
+    //  *
+    //  * @return boolean
+    //  */
+     public function canBeAuthor(): bool
+     {
+         return $this->isAdmin() || $this->isEditor();
+     }
 
-    /**
-     * Check if the user has a role
-     *
-     * @param string $role
-     * @return boolean
-     */
-    public function hasRole($role): bool
-    {
-        return true;
-    }
+    // /**
+    //  * Check if the user has a role
+    //  *
+    //  * @param string $role
+    //  * @return boolean
+    //  */
+     public function checkHasRole($role): bool
+     {
+        return $this->roles->where('name', $role)->isNotEmpty();
+       
+     }
 
-    /**
-     * Check if the user has role admin
-     *
-     * @return boolean
-     */
-    public function isAdmin(): bool
-    {
-        return true;
-    }
+    // /**
+    //  * Check if the user has role admin
+    //  *
+    //  * @return boolean
+    //  */
+     public function isAdmin(): bool
+     {
+         return $this->checkHasRole("Superadministrator");
+     }
 
-    /**
-     * Check if the user has role editor
-     *
-     * @return boolean
-     */
-    public function isEditor(): bool
-    {
-        return true;
-    }
+     public function islCEO(): bool
+     {
+         return $this->checkHasRole("elec_ceo");
+     }
+
+    // /**
+    //  * Check if the user has role editor
+    //  *
+    //  * @return boolean
+    //  */
+    // public function isEditor(): bool
+    // {
+    //     return true;
+    // }
 
     /**
      * Return the user's posts
@@ -175,8 +187,93 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function roles()
+    //public function roles()
+    //{
+    //    return $this->belongsToMany(Role::class)->withTimestamps();
+    //}
+
+    public function isCEO()
     {
-        return $this->belongsToMany(Role::class)->withTimestamps();
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //$rname = ::where('name')
+       //dd($data['n_loggeduser']);
+       //dd($role->roles[0]->name);
+      if($role->roles[0]->name == "elec_ceo")
+       {
+           return "yes";
+       }
+       return "no";
+    }
+
+    public function isPO()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "elec_presidingofficer")
+       {
+           return true;
+       }
+       return false;
+    }
+
+    public function isARO()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "elec_apresidingofficer")
+       {
+           return true;
+       }
+       return false;
+    }
+
+    public function isRO()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       
+       
+      if($role->roles[0]->name == "elec_returningofficer")
+       {
+           return true;
+       }
+       return false;
+    }
+
+    public function isSuperAdmin()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "elec_superadmin")
+       {
+           return true;
+       }
+       return false;
+    }
+
+    public function isSuperadministrator()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "superadministrator")
+       {
+           return "yes";
+       }
+       return "no";
     }
 }

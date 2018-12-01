@@ -41,7 +41,7 @@ class PollingController extends Controller
     {
     	$data = $this->brandsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow') && $user->hasRole('superadministrator')){
+        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingform',compact('data'));
         } else {
