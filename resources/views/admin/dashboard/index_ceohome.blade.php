@@ -1,7 +1,7 @@
 @extends('admin.layouts.masterelection')
 
 @section('content')
-  Hi
+ <h3> Poll Day Monitoring System </h3>
 
 
 

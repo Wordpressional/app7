@@ -48,7 +48,7 @@
         <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.dashboard')">
         <a class="nav-link {{ Request::is('admin/dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
-                <span class="nav-link-text">Post Poll</span>
+                <span class="nav-link-text">After Poll</span>
             </a>
         </li>
              <li class="treeview">
@@ -65,54 +65,54 @@
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="{{ route('admin.forms.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Widget Forms</span>
+                        <span class="nav-link-text">Poll Day Report</span>
                     </a>
                 </li>
 
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/widgeteditor') || Request::is('admin/widgeteditor/*') ? 'active' : '' }}" href="{{ route('admin.widgeteditor') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Widget Editor</span>
+                        <span class="nav-link-text">Poll Day Before Report</span>
                     </a>
                 </li>
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/widgetcusteditor') || Request::is('admin/widgetcusteditor/*') ? 'active' : '' }}" href="{{ route('admin.widgetcusteditor') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Custom Widget Editor</span>
+                        <span class="nav-link-text">Current Poll Day Report</span>
                     </a>
                 </li>
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/csseditor') || Request::is('admin/csseditor/*') ? 'active' : '' }}" href="{{ route('admin.csseditor') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">CSS Editor</span>
+                        <span class="nav-link-text">Poll Interruption Report</span>
                     </a>
                 </li>
 
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/jseditor') || Request::is('admin/jseditor/*') ? 'active' : '' }}" href="{{ route('admin.jseditor') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">JS Editor</span>
+                        <span class="nav-link-text">Poll Day Exception Report</span>
                     </a>
                 </li>
 
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/cforms') || Request::is('admin/cforms/*') ? 'active' : '' }}" href="{{ route('admin.cforms.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Contact Forms</span>
+                        <span class="nav-link-text">Modification Poll Day Report</span>
                     </a>
                 </li>
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/stables') || Request::is('admin/stables/*') ? 'active' : '' }}" href="{{ route('admin.stables.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Tables Management</span>
+                        <span class="nav-link-text">Poll Day Voter Turnout Report</span>
                     </a>
                 </li>
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/stables') || Request::is('admin/stables/*') ? 'active' : '' }}" href="{{ route('admin.stables.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Rename Shortcodes</span>
+                        <span class="nav-link-text">Poll Progress Chart</span>
                     </a>
                 </li>
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
@@ -137,27 +137,30 @@
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/styles') || Request::is('admin/styles/*') ? 'active' : '' }}" href="{{ route('admin.styles') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Color Management</span>
+                        <span class="nav-link-text">Mail Configuration</span>
                     </a>
                 </li>
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="{{ route('admin.themes') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Choose Themes</span>
+                        <span class="nav-link-text">SMS Configuration</span>
                     </a>
                 </li>
-                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/modules') || Request::is('admin/modules/*') ? 'active' : '' }}" href="{{ route('admin.modules') }}">
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="{{ route('admin.themes') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Install Modules</span>
+                        <span class="nav-link-text">My Account</span>
                     </a>
                 </li>
+
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/branding') || Request::is('admin/branding/*') ? 'active' : '' }}" href="{{ route('admin.branding') }}">
+                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="{{ route('admin.themes') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Branding</span>
+                        <span class="nav-link-text">Profile</span>
                     </a>
                 </li>
+                
             
         </ul>
         
@@ -171,11 +174,11 @@
                 </a>
                 <ul class="treeview-menu">
             
-            @role(['superadministrator','administrator'])
+            @role(['elec_ceo'])
             <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                 <a class="nav-link {{ Request::is('admin/users') ? ' active' : null }}" href="{{route('admin.users')}}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                Users
+                Create Users
                 </a>
             </li>
            
