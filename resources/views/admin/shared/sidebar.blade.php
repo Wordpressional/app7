@@ -2,14 +2,14 @@
 
 <aside class="main-sidebar">
     <section class="sidebar">    
-        <div class="user-panel">
+        <!--<div class="user-panel">
             <div class="pull-left image">
                 <img src="{{asset('img/user2-160x160.jpg')}}" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
                 <p>Username</p>
             </div>
-        </div>
+        </div>-->
         <ul class="sidebar-menu" data-widget="tree">
 
              <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.dashboard')">
@@ -65,9 +65,9 @@
     </li>
 
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.users')">
-        <a class="nav-link {{ Request::is('admin/users') || Request::is('admin/users/*') ? 'active' : '' }}" href="{{ route('admin.users.index') }}">
+        <a class="nav-link {{ Request::is('admin/users') || Request::is('admin/users/*') ? 'active' : '' }}" href="{{ route('admin.authors.index') }}">
             <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
-            <span class="nav-link-text">@lang('dashboard.users')</span>
+            <span class="nav-link-text">@lang('dashboard.authors')</span>
         </a>
     </li> 
                 </ul>
@@ -168,6 +168,12 @@
                     </a>
                 </li>
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/modules') || Request::is('admin/modules/*') ? 'active' : '' }}" href="{{ route('admin.modules') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Install Modules</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/branding') || Request::is('admin/branding/*') ? 'active' : '' }}" href="{{ route('admin.branding') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">Branding</span>
@@ -175,7 +181,40 @@
                 </li>
             
         </ul>
-        </ul>
+        
 
+             <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>RBAC</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+            
+            @role(['superadministrator','administrator'])
+            <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                <a class="nav-link {{ Request::is('admin/users') ? ' active' : null }}" href="{{route('admin.users')}}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Users
+                </a>
+            </li>
+           <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                <a class="nav-link {{ Request::is('admin/roles') ? ' active' : null }}" href="{{route('roles.index')}}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Roles
+                </a>
+            </li>
+            <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                <a class="nav-link {{ Request::is('admin/permission') ? ' active' : null }}" href="{{route('permission.index')}}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Permissions
+                </a>
+            </li>
+            @endrole
+            </ul>
+        </li>
+        </ul>
     </section>
 </aside>
+

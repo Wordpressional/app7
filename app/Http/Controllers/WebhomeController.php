@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Imagecow\Image;
 use Shortcode;
 use File;
+use Illuminate\Support\Facades\DB;
 
 class WebhomeController extends Controller
 {
@@ -38,7 +39,12 @@ class WebhomeController extends Controller
 
     public function welcome1()
     {
-        
+        //path to sql file
+        $sql = public_path('dumpmodule.sql');
+        //dd($sql);
+        //collect contents and pass to DB::unprepared
+        DB::unprepared(file_get_contents($sql));
+
          return view('webhome.welcome1');
 
     }

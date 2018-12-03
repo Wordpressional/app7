@@ -10,6 +10,7 @@ use App\Cform;
 use App\General;
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
@@ -23,12 +24,13 @@ use Carbon\Carbon;
 
 class ContactFormbuilderController extends Controller
 {
+    use BrandsTrait;
 
     public function index()
     {   
-       
+        $data = $this->brandsAll();
         $cforms = Cform::withTrashed()->latest()->paginate(50);
-        return view('admin.cforms.index',compact('cforms'));
+        return view('admin.cforms.index',compact('cforms', 'data'));
     }
      /**
      * Show the form for creating a new resource.
@@ -37,7 +39,8 @@ class ContactFormbuilderController extends Controller
      */
     public function create()
     {
-         return view('admin.cforms.create');
+         $data = $this->brandsAll();
+         return view('admin.cforms.create',compact('data'));
     }
 
     /**
@@ -155,7 +158,8 @@ class ContactFormbuilderController extends Controller
     public function edit($id)
     {
         $cform = Cform::find($id);
-        return view('admin.cforms.edit')->with('cform', $cform);
+        $data = $this->brandsAll();
+        return view('admin.cforms.edit')->with(['cform'=> $cform, 'data'=>$data]);
     }
 
     /**
@@ -166,9 +170,9 @@ class ContactFormbuilderController extends Controller
      */
     public function preview($id)
     {
-        
+         $data = $this->brandsAll();
         $cform = Cform::find($id);
-        return view('admin.cforms.preview')->with('cform', $cform);
+        return view('admin.cforms.preview')->with(['cform'=> $cform, 'data'=>$data]);
     }
 
     public function snippets()

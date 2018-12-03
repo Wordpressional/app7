@@ -80,11 +80,11 @@
     <div class="socialfooter">
         <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
     <div class="site-social-networks secondary-2-primary style-default show-title">
-    <span><a href="http://facebook.com" class="link facebook fa-facebook1" target="_blank" title="Facebook">Facebook</a>
+    <span><a href="//facebook.com" class="link facebook fa-facebook1" target="_blank" title="Facebook">Facebook</a>
     </span>
-    <span><a href="http://facebook.com" class="link twitter fa-twitter1" target="_blank" title="Twitter">Twitter</a>
+    <span><a href="//facebook.com" class="link twitter fa-twitter1" target="_blank" title="Twitter">Twitter</a>
     </span>
-    <span><a href="http://facebook.com" class="link telegram fa-telegram1" target="_blank" title="Telegram">Telegram</a>
+    <span><a href="//facebook.com" class="link telegram fa-telegram1" target="_blank" title="Telegram">Telegram</a>
     </span>
 
 

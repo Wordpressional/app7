@@ -12,6 +12,7 @@ use App\Brand;
 use App\General;
 use File;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
@@ -23,19 +24,22 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
+
 class ThemeController extends Controller
 {
+    use BrandsTrait;
 
     public function index()
     {   
-       
+       $data = $this->brandsAll();
         $cforms = Cform::withTrashed()->latest()->paginate(50);
-        return view('admin.cforms.index',compact('cforms'));
+        return view('admin.cforms.index',compact('cforms','data'));
     }
 
 
     public function themes()
     {   
+        $data = $this->brandsAll();
        $themes = Theme::all();
        if(!empty($themes[0]))
        {
@@ -57,7 +61,7 @@ class ThemeController extends Controller
 
        
 
-        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themes'));
+        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themes','data'));
     }
      /**
      * Show the form for creating a new resource.
@@ -66,7 +70,8 @@ class ThemeController extends Controller
      */
     public function create()
     {
-         return view('admin.cforms.create');
+        $data = $this->brandsAll();
+         return view('admin.cforms.create',compact('data'));
     }
 
     /**
@@ -653,7 +658,7 @@ class ThemeController extends Controller
 
     public function widgeteditor()
     {
-
+        $data = $this->brandsAll();
         $vpath = array();
         $filename = array();
         $arrayfile = array();
@@ -706,7 +711,7 @@ class ThemeController extends Controller
 
         //dd($arrayfile);
 
-        return view('admin.widgeteditor.weditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+        return view('admin.widgeteditor.weditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb, 'data'=>$data]);
     
     }
 
@@ -795,8 +800,8 @@ class ThemeController extends Controller
         }
 
         //dd($arrayfile);
-
-        return view('admin.widgeteditor.csseditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+        $data = $this->brandsAll();
+        return view('admin.widgeteditor.csseditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb, 'data'=>$data]);
     
     }
 
@@ -879,8 +884,8 @@ class ThemeController extends Controller
         }
 
         //dd($arrayfile);
-
-        return view('admin.widgeteditor.wcusteditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+        $data = $this->brandsAll();
+        return view('admin.widgeteditor.wcusteditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb, 'data'=>$data]);
     
     }
 
@@ -970,8 +975,8 @@ class ThemeController extends Controller
         }
 
         //dd($arrayfile);
-
-        return view('admin.widgeteditor.jseditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb]);
+        $data = $this->brandsAll();
+        return view('admin.widgeteditor.jseditor')->with(['arrayfile'=> $arrayfile, 'arrayfileb'=> $arrayfileb, 'data'=>$data]);
     
     }
 

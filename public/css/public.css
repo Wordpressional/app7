@@ -19,9 +19,7 @@ section.main_slider_area {
     width:100%;
     
 }
-.carousel {
-    position: static;
-}
+
 .carousel-inner
 {
 	height:auto;
@@ -39,4 +37,22 @@ section.main_slider_area {
     border-collapse: separate !important;
 }
 
+.main-header {
+  max-height: 200px !important;
+}
+@media (max-width: 767px){
+.main-sidebar {
+    
+    margin-top: 50px;
+}
+}
+
+.nav>li>a, .nav>li>a:hover, .nav>li>a:active, .nav>li>a:focus {
+    color: #a7eef9 !important;
+    
+}
+
+.logo-lg img {
+    height: 50px;
+}
 

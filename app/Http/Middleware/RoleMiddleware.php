@@ -16,9 +16,11 @@ class RoleMiddleware
      */
     public function handle($request, Closure $next, $role)
     {
-        if (! $request->user()->hasRole($role)) {
+       /* dd($role);
+        if (! $request->user()->checkHasRole($role) || ! $request->user()->checkHasRole("elec_ceo")) {
             return redirect()->route('home')->withErrors(__('auth.not_authorized'));
-        }
+        }*/
+        
 
         return $next($request);
     }

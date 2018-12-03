@@ -179,7 +179,7 @@
                     <img data-u="caption" data-t="79" style="position:absolute;top:0px;left:295px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
                     <img data-u="caption" data-t="80" style="position:absolute;top:0px;left:313px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
                 </div>
-                <a href="http://www.jssor.com/demos/introduction-slider.slider/=edit" target="_blank" style="display:block; position:absolute;top:22px;left:500px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Edit This Slider</a>
+                <a href="//www.jssor.com/demos/introduction-slider.slider/=edit" target="_blank" style="display:block; position:absolute;top:22px;left:500px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Edit This Slider</a>
                 <a href="https://www.jssor.com/action/sign_up.aspx" target="_blank" style="display:block; position:absolute;top:22px;left:720px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Sign up Now!</a>
             </div>-->
         </div>
@@ -210,17 +210,17 @@
         <section>
     <h3>Two Individual Images</h3>
     <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
+      <a class="example-image-link" href="//lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="//lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
+      <a class="example-image-link" href="//lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="//lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
     </div>
 
     <hr />
 
     <h3>A Four Image Set</h3>
     <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+      <a class="example-image-link" href="//lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="//lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
+      <a class="example-image-link" href="//lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="//lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
+      <a class="example-image-link" href="//lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="//lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
+      <a class="example-image-link" href="//lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="//lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
     </div>
   </section>

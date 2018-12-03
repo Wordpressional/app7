@@ -57,7 +57,7 @@
     @endforeach
   </div>
 
-  {{ link_to_route('admin.users.index', __('forms.actions.back'), [], ['class' => 'btn btn-secondary']) }}
+  {{ link_to_route('admin.authors.index', __('forms.actions.back'), [], ['class' => 'btn btn-secondary']) }}
   {!! Form::submit(__('forms.actions.update'), ['class' => 'btn btn-primary']) !!}
 
 {!! Form::close() !!}

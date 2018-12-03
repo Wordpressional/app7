@@ -8,7 +8,7 @@
     </div>
 
     @slot('footer')
-        <a href="{{ route('admin.users.index') }}" class="d-flex justify-content-between text-light">
+        <a href="{{ route('admin.authors.index') }}" class="d-flex justify-content-between text-light">
             <span>@lang('dashboard.details')</span>
             <span><i class="fa fa-arrow-circle-right"></i></span>
         </a>

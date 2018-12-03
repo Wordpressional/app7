@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use App\Http\Requests\Admin\PostsRequest;
 use App\Post;
 use App\User;
@@ -14,6 +15,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    use BrandsTrait;
     /**
      * Show the application posts index.
      *
@@ -21,7 +23,9 @@ class PostController extends Controller
      */
     public function index()
     {
+        $data = $this->brandsAll();
         return view('admin.posts.index', [
+            'data' => $data,
             'posts' => Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(50)
         ]);
     }
@@ -36,9 +40,10 @@ class PostController extends Controller
          $thisuser = Auth::user();
          $categories = Category::all();
         
-
+         $data = $this->brandsAll();
         return view('admin.posts.edit', [
             'post' => $post,
+            'data' => $data,
             'users' => User::authors()->pluck('displayname', 'id'),
             'categories'=>$categories,
             'tags'=>Tag::all(),
@@ -54,7 +59,7 @@ class PostController extends Controller
      */
     public function create(Request $request)
     {
-
+         $data = $this->brandsAll();
         $categories = Category::all();
         if($categories->count() == 0)
         {
@@ -67,6 +72,7 @@ class PostController extends Controller
             'users' => User::authors()->pluck('displayname', 'id'),
             'categories'=>$categories,
             'tags'=>Tag::all(),
+            'data' => $data,
 
         ]);
     }

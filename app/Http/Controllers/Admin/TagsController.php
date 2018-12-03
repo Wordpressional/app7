@@ -5,10 +5,12 @@ use Session;
 use App\Tag;
 use App\Page;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
 
 class TagsController extends Controller
 {
+    use BrandsTrait;
     /**
      * Display a listing of the resource.
      *
@@ -16,8 +18,8 @@ class TagsController extends Controller
      */
     public function index()
     {
-
-        return view('admin.tags.index')->with('tags',Tag::withTrashed()->get());
+        $data = $this->brandsAll();
+        return view('admin.tags.index')->with(['tags' => Tag::withTrashed()->get(), 'data' => $data]);
     }
 
     /**
@@ -27,7 +29,8 @@ class TagsController extends Controller
      */
     public function create()
     {
-         return view('admin.tags.create');
+         $data = $this->brandsAll();
+         return view('admin.tags.create',compact('data'));
     }
 
     /**

@@ -7,13 +7,16 @@ use App\Tag;
 use App\Page;
 use App\Form;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 use Shortcode;
 
+
 class FormbuilderController extends Controller
 {
+    use BrandsTrait;
 
     public function index()
     {   
@@ -48,8 +51,9 @@ class FormbuilderController extends Controller
             $formshortcode->save();
         }
         }
+         $data = $this->brandsAll();
         $forms = Form::withTrashed()->latest()->paginate(50);
-        return view('admin.formbuilder.index',compact('forms'));
+        return view('admin.formbuilder.index',compact('forms','data'));
     }
      /**
      * Show the form for creating a new resource.
@@ -58,7 +62,8 @@ class FormbuilderController extends Controller
      */
     public function create()
     {
-         return view('admin.formbuilder.create');
+         $data = $this->brandsAll();
+         return view('admin.formbuilder.create',compact('data'));
     }
 
     /**
@@ -119,7 +124,8 @@ class FormbuilderController extends Controller
     public function edit($id)
     {
         $form = Form::find($id);
-        return view('admin.formbuilder.edit')->with('form', $form);
+         $data = $this->brandsAll();
+        return view('admin.formbuilder.edit')->with(['form'=> $form, 'data'=> $data]);
     }
 
     /**

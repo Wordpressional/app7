@@ -11,11 +11,11 @@
     <tbody>
         @foreach($users as $user)
             <tr>
-                <td>{{ link_to_route('admin.users.edit', $user->fullname, $user) }}</td>
+                <td>{{ link_to_route('admin.authors.edit', $user->fullname, $user) }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ humanize_date($user->registered_at, 'd/m/Y H:i:s') }}</td>
                 <td>
-                    <a href="{{ route('admin.users.edit', $user) }}" class="btn btn-primary btn-sm">
+                    <a href="{{ route('admin.authors.edit', $user) }}" class="btn btn-primary btn-sm">
                         <i class="fa fa-pencil" aria-hidden="true"></i>
                     </a>
                 </td>

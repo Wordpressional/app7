@@ -179,7 +179,7 @@
                     <img data-u="caption" data-t="79" style="position:absolute;top:0px;left:295px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
                     <img data-u="caption" data-t="80" style="position:absolute;top:0px;left:313px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
                 </div>
-                <a href="http://www.jssor.com/demos/introduction-slider.slider/=edit" target="_blank" style="display:block; position:absolute;top:22px;left:500px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Edit This Slider</a>
+                <a href="//www.jssor.com/demos/introduction-slider.slider/=edit" target="_blank" style="display:block; position:absolute;top:22px;left:500px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Edit This Slider</a>
                 <a href="https://www.jssor.com/action/sign_up.aspx" target="_blank" style="display:block; position:absolute;top:22px;left:720px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Sign up Now!</a>
             </div>-->
         </div>

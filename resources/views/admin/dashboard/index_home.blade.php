@@ -19,7 +19,17 @@
     </div>
 </div>
  
+<div class="page-header">
+    <h1>@lang('dashboard.count')</h1>
+  </div>
 
+  <div class="row">
+    <div class="col-xl-12 col-sm-12 mb-3">
+      @include('admin/dashboard/_rbac')
+    </div>
+
+   
+</div>
 
 
 

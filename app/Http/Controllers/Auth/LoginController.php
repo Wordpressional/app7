@@ -7,7 +7,7 @@ use App\Brand;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Schema;
-
+use Auth;
 
 class LoginController extends Controller
 {
@@ -29,7 +29,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/admin/dashboard/';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -37,9 +37,16 @@ class LoginController extends Controller
      * @return void
      */
     public function __construct()
-    {
+    {   
+
+        
         $this->middleware('guest')->except('logout');
+        $this->redirectTo = route('admin.dashboard');
+        
     }
+
+    
+    
 
     public function mylogin()
     {

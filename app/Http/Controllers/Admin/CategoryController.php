@@ -3,12 +3,15 @@
 namespace App\Http\Controllers\Admin;
 use Session;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
 use App\Category;
+use App\Brand;
 
 
 class CategoryController extends Controller
 {
+     use BrandsTrait;
     /**
      * Display a listing of the resource.
      *
@@ -16,6 +19,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
+
         $category_def = Category::where('name', 'Default_Cat')->first();
         if($category_def != "")
         {
@@ -29,7 +33,9 @@ class CategoryController extends Controller
             $category->save();
         }
         }
-        return view('admin.categories.index')->with('categories',Category::withTrashed()->get());
+
+         $data = $this->brandsAll();
+        return view('admin.categories.index')->with(['categories' =>Category::withTrashed()->get(),'data' => $data]);
     }
 
     /**

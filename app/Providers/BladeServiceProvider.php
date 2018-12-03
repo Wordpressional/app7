@@ -18,6 +18,14 @@ class BladeServiceProvider extends ServiceProvider
         Blade::if('admin', function () {
             return Auth::check() && Auth::user()->isAdmin();
         });
+        
+        Blade::if('Superadministrator', function () {
+            return Auth::check() && Auth::user()->isAdmin();
+        });
+
+        Blade::if('elec_ceo', function () {
+            return Auth::check() && Auth::user()->islCEO();
+        });
 
         Blade::if('profile', function ($user) {
             return Auth::check() && Auth::user()->id == $user->id;

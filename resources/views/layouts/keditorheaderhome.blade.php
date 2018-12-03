@@ -138,13 +138,33 @@
         <script src="{{ asset('webhome/js/theme.js') }}"></script>
         <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
        <script src="{{ asset(mix('js/app.js')) }}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
        <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
          <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
         <script type="text/javascript">jssor_1_slider_init();</script>
  
-
+<script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
+  <!-- BOOTSTRAP JS -->
+ 
+  <!-- TYPED JS -->
+  <script src="{{ asset('js/typed-custom.js') }}"></script>
+  <!-- WOW JS -->
+  <script src="{{ asset('js/wow.min.js') }}"></script>
+  <!-- scripts js -->
+  <script src="{{ asset('js/main.js') }}"></script>
    
     <script>
         var demo = new JParticles.particle( '#demo' );
@@ -265,7 +285,23 @@ $window.scroll(scroll_elements);
 <script>
 UpUp.start({
   'content': 'You are Offline. Cannot reach site. Please check your internet connection.',
-  'service-worker-url': 'upup.sw.min.js'
+  'service-worker-url': "{{ asset('upup.sw.min.js') }}"
+});
+
+$(document).ready(function() {
+
+if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register("{{ asset('upup.sw.min.js') }}")
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+
+ 
+
 });
 </script>
 

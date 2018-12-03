@@ -94,6 +94,17 @@
       0 => 'RachidLaasri\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider',
     ),
   ),
+  'santigarcor/laratrust' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laratrust\\LaratrustServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Laratrust' => 'Laratrust\\LaratrustFacade',
+    ),
+  ),
   'spatie/laravel-backup' => 
   array (
     'providers' => 

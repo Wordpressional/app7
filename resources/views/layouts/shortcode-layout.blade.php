@@ -14,6 +14,13 @@ ul {
   margin: 0;
   padding: 0;
 }
+.background{
+  margin: 0;
+  padding: 0;
+  font: 300;
+  background:#e2e2e2;
+
+}
 .contentmenu a,
 .contentmenu a:hover,
 .contentmenu a.active,
@@ -50,6 +57,7 @@ ul {
   -moz-transition: color 0.2s linear, background 0.2s linear;
   -o-transition: color 0.2s linear, background 0.2s linear;
   transition: color 0.2s linear, background 0.2s linear;
+  
 }
 .exo-menu > li > a.active,
 .exo-menu > li > a:hover,
@@ -295,12 +303,16 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   .flyout-left > ul {
     right: 100%;
   }
+  a.toggle-menu.visible-xs-block {
+    display: none;
+}
 }
 @media (max-width: 767px) {
   .exo-menu {
     min-height: 58px;
     background-color: #23364b;
     width: 100%;
+
   }
 
   .exo-menu > li > a {
@@ -310,9 +322,10 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   .exo-menu > li {
     width: 100%;
   }
-  .display.exo-menu > li > a {
+  .exo-menu.display > li > a {
     display: block;
-    padding: 20px 22px;
+    padding: 10px;
+    height: 58px;
   }
 
   .mega-menu,
@@ -323,16 +336,26 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
   li.drop-down > ul {
     position: relative;
   }
+
+  a.toggle-menu.visible-xs-block {
+    display: block;
+}
 }
 a.toggle-menu {
   position: absolute;
   right: 0px;
-  padding: 20px;
+  padding: 10px;
   font-size: 27px;
   background-color: #ccc;
   color: #23364b;
   top: 0px;
+  float: right;
+    width: 20% !important;
+    height: 58px;
+  
 }
+
+
 
 </style> 
 <script>

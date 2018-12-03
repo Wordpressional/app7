@@ -2,17 +2,18 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Laratrust\Models\LaratrustRole;
 
-class Role extends Model
+class Role extends LaratrustRole
 {
-    const ROLE_ADMIN = 'admin';
-    const ROLE_EDITOR = 'editor';
+	protected $table = 'roles';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = ['name'];
+
+	protected $fillable = [
+        'name',
+        'display_name',
+        'description'
+    ];
+
+    
 }

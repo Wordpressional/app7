@@ -1,4 +1,4 @@
-<div class="contentmenu">
+<div class="contentmenu background">
 	 
 		<ul class="exo-menu">
 			<li><a class="active" href="#"><i class="fa fa-home"></i> Home</a></li>
@@ -12,7 +12,8 @@
 						<li><a href="#">Watch</a></li>
 					</ul>
 				</li>
-				
+				<li class="flyout-right"><a data-cke-saved-href="http://pwa" href="http://pwa">PWA</a><ul class="animated fadeIn"><li><a data-cke-saved-href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/simple/index.html" href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/simple/index.html">simple</a></li><li><a data-cke-saved-href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/add-event/index.html" href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/add-event/index.html">add-event</a></li><li><a data-cke-saved-href="#" href="#">Watch</a></li><li><a data-cke-saved-href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/debug/index.html" href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/debug/index.html">debug</a></li><li><a data-cke-saved-href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/detect-homescreen/index.html" href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/detect-homescreen/index.html">detect-homescreen</a><br></li><li><a data-cke-saved-href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/stock-android/index.html" href="https://pyrupay.com/dynamic/add-to-homescreen-master/demos/stock-android/index.html">stock-android</a><br></li></ul>
+				</li>
 				<li class="flyout-left"><a href="#">Flyout Left</a><!--Flyout Left-->
 					<ul class="animated fadeIn">
 						<li><a href="#">Mobile</a></li>
@@ -151,7 +152,7 @@
 			
 				</div>
 			</li>
-					
+				<a href="#" class="toggle-menu visible-xs-block">|||</a>		
 	</ul>
 	 
 </div>

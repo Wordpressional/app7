@@ -2,20 +2,24 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
+use App\Post;
+use App\User;
 use App\Brand;
 
 
 class BrandingController extends Controller
 {
+    use BrandsTrait;
     
-
     public function branding()
     {
         $company = Brand::where('id', 1)->first();
         //dd($colorsetting[0]->color);
-        
-        return view('admin.branding.brand')->with('company', $company);
+        //dd($this->commomindex());
+        $data = $this->brandsAll();
+        return view('admin.branding.brand')->with(['company' => $company, 'data' => $data]);
         
 
     }
