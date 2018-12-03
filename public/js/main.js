@@ -46,6 +46,7 @@ Version      : 1.0
 
 			// Mobile Navigation
 			$('.mobile-toggle').click(function() {
+				
 			    if ($('.main_h').hasClass('open-nav')) {
 			        $('.main_h').removeClass('open-nav');
 			    } else {
