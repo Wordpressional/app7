@@ -2357,9 +2357,7 @@ img.header-text {
     font-size: 14px;
   }
 
-  form.form{
-    width: 80%;
-  }
+ 
 
   .themeone .about-text {
     margin-top: 50px;
@@ -2377,13 +2375,8 @@ img.header-text {
   }
  }
 @media (max-width: 768px) {
-    section {
-        padding:20px 8px;
-    }
-    .col-33, .col-40, .col-60 {
-        float:none;
-        width:100%;
-    }
+   
+    
 
    .themeone .about-text h2, p  {
       text-align: center;
