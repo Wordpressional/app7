@@ -28,7 +28,8 @@
     <div class="content">
       <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p>
       <p></p>
-            <a href="http://localhost/dynamic/admin/showpollingform" data-ignore="push">Google<a>
+            
+      <a href="http://localhost/dynamic/admin/showpollingform" data-transition="fade" data-ignore="push">Two</a>
       <div class="card">
         <ul class="table-view">
           <li class="table-view-cell">
@@ -52,7 +53,7 @@
             </a>
           </li>
           <li class="table-view-cell">
-            <a class="navigate-right" href="http://localhost/dynamic/admin/showpollingform"  >
+            <a class="navigate-right" href="http://localhost/dynamic/admin/showpollingform" data-ignore="push" >
               <strong>Polling Form</strong>
             </a>
           </li>
