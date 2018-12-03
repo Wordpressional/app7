@@ -60,6 +60,19 @@
         </ul>
       </div>
     </div>
-
+<header class="bar bar-nav">
+  <h1 class="title">Push</h1>
+</header>
+<div class="content">
+  <div class="card">
+    <ul class="table-view">
+      <li class="table-view-cell">
+        <a class="navigate-right" href="http://localhost/dynamic/admin/showpollingform" data-transition="slide-in">
+          Load new page with push
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
   </body>
 </html>
