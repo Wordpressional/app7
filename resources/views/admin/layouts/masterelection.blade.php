@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
 <link rel="stylesheet" href="{{asset('css/election.css')}}" />
-    
+    <link rel="manifest" href="{{url('/manifest.json')}}">
+   <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
 
 </head>
 <body class="admin-body">
@@ -191,7 +192,30 @@
 
 
     </script>
-   
+   <script src="{{ asset('upup.min.js') }}"></script>
+<script src="{{ asset('upup.sw.min.js') }}"></script>
+<script>
+UpUp.start({
+  'content': 'You are Offline. Cannot reach site. Please check your internet connection.',
+  'service-worker-url': "{{ asset('upup.sw.min.js') }}"
+});
+
+$(document).ready(function() {
+
+if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register("{{ asset('upup.sw.min.js') }}")
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+
+ 
+
+});
+</script>
     @yield('scripts')
 </body>
 </html>
