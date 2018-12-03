@@ -20,7 +20,7 @@
         </li>
 
          <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.showpollingform')">
-        <a class="nav-link {{ Request::is('admin/showpollingform') ? 'active' : '' }}" href="{{ route('admin.polling.showpollingform') }}" >
+        <a class="nav-link navigate-right {{ Request::is('admin/showpollingform') ? 'active' : '' }}" href="{{ route('admin.polling.showpollingform') }}" data-transition="slide-in">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
                 <span class="nav-link-text">Pre Poll</span>
             </a>
@@ -37,7 +37,7 @@
                     
 
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
-        <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="/welcome1">
+        <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">Pre Poll</span>
         </a>
