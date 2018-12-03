@@ -61,7 +61,7 @@
     }
     
   ],
-  "start_url": "/dynamic/",
+  "start_url": "/dynamic/mylogin",
   "display": "standalone",
   "theme_color": "#3367D6"
 }
