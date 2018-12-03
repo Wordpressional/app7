@@ -37,7 +37,7 @@
                     
 
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
-        <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
+        <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="http://localhost/dynamic/welcome1">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">Pre Poll</span>
         </a>
