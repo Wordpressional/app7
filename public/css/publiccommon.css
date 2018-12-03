@@ -1236,6 +1236,204 @@ Version      : 1.0
 }
 
 
+/*
+* ----------------------------------------------------------------------------------------
+* 02.NAVBAR CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.main_h {
+    position: fixed;
+    max-height: 70px;
+    z-index: 999;
+    width: 100%;
+    background: none;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+    top: -100px;
+    padding-bottom: 6px;
+    font-family: "Lato", sans-serif;
+}
+
+.open-nav {
+    max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+    background-color: #fff;
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.themeone .logo {
+    width: 120px;
+    font-size: 25px;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: -15px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.themeone nav {
+    float: right;
+    width:90%;
+    margin-top: 7px;
+}
+
+.themeone nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+}
+
+.themeone nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+}
+  
+.themeone nav ul a {
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.themeone nav ul a:hover{
+    color: #02a9f7;
+
+}
+
+.themeone .mobile-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 30px;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.themeone .mobile-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: #8f8f8f;
+    display: block;
+}
+
+.themeone .row {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 3%;
+}
+
+
+
+.themeone .content {
+    padding: 50px 2% 250px;
+}
+
+.themeone .hero {
+    position: relative;
+    background: #333 url(https://srdjanpajdic.com/slike/2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 110px;
+    min-height: 500px;
+    letter-spacing: 2px;
+    font-family: "Lato", sans-serif;
+}
+
+.themeone .hero h1 {
+    font-size: 50px;
+    line-height: 1.3;
+}
+
+.themeone .hero h1 span {
+    font-size: 25px;
+    color: #e8f380;
+    border-bottom: 2px solid #e8f380;
+    padding-bottom: 12px;
+    line-height: 3;
+}
+
+.themeone .mouse {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 46px;
+    border-radius: 13px;
+    border: 2px solid #e8f380;
+    bottom: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+}
+
+.themeone .mouse span {
+    display: block;
+    margin: 6px auto;
+    width: 2px;
+    height: 2px;
+    border-radius: 4px;
+    background: #e8f380;
+    border: 1px solid transparent;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
 
 
 
@@ -1280,7 +1478,7 @@ Version      : 1.0
 
 .themeone .tagline { 
     text-transform: uppercase;
-    font-weight: lighter;
+    
     letter-spacing: 1px;
 }
 
@@ -1320,7 +1518,7 @@ Version      : 1.0
     vertical-align: middle;
 }
 
-img.header-text {
+.themeone img.header-text {
     width: 300px;
     height: 300px;
 }
@@ -1733,7 +1931,7 @@ img.header-text {
     opacity: 0;
     -webkit-transition: .4s ease;
     transition: .4s ease;
-    z-index: 200;
+    z-index: -1;
 }
 
 .themeone .container-porto span {
@@ -1864,6 +2062,9 @@ img.header-text {
     width: 100px;
     line-height: 45px;
     text-align: center;
+    width: 100%;
+    color: black;
+    font-weight: bold;
 }
 
 .themeone .cd-tab-filter a.selected {
@@ -2323,19 +2524,33 @@ img.header-text {
     margin-left:-15px;
 }
 
+.themeone .modal-body img {
+    width: 450px;
+}
+.themeone .modal-header{
+  display:inline;
+}
+
 @media (max-width: 480px) {
   .themeone .welcome-image-area {
     width: 100%;
   }
 
+  .themeone .header-text h1{
+    font-size: 12px;
+  }
+.themeone .modal-body img {
+    width: 240px;
+}
   .themeone .about-image {
     text-align: center;
-    height: 150px;
+    height: 208px;
   }
 
   .themeone .about-image img {
     width: 200px;
     height: 200px;
+    float: left;
   }
   .themeone .about-text h2{
     text-align: center;
@@ -2357,9 +2572,7 @@ img.header-text {
     font-size: 14px;
   }
 
-  form.form{
-    width: 80%;
-  }
+ 
 
   .themeone .about-text {
     margin-top: 50px;
@@ -2377,13 +2590,8 @@ img.header-text {
   }
  }
 @media (max-width: 768px) {
-    section {
-        padding:20px 8px;
-    }
-    .col-33, .col-40, .col-60 {
-        float:none;
-        width:100%;
-    }
+   
+    
 
    .themeone .about-text h2, p  {
       text-align: center;

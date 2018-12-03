@@ -19,22 +19,21 @@
             </tr>
           </thead>
           <tbody>
+             
               @foreach($roles as $role)
               <tr>
                 <td>{{ $role->display_name }}</td>
                 <td>{{ $role->description }}</td>
                 <td>{{ $role->name }}</td>
                 <td>
-                  @php $mod = substr($role->name,0,5) @endphp
-                  @if($mod == "elec_")
-                  
-                  @else
+                 
+                 
                   
                   <div class="btn-group">
                     <a class="btn btn-primary" href="{{ route('roles.edit', ['id' => $role->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
                     <a class="btn btn-danger" href="{{ route('roles.show', ['id' => $role->id]) }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
                   </div>
-                  @endif
+                 
                 </td>
               </tr>
               @endforeach

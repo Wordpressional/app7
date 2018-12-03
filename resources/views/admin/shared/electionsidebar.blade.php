@@ -19,8 +19,8 @@
             </a>
         </li>
 
-         <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.dashboard')">
-        <a class="nav-link {{ Request::is('admin/dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
+         <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.showpollingform')">
+        <a class="nav-link {{ Request::is('admin/showpollingform') ? 'active' : '' }}" href="{{ route('admin.polling.showpollingform') }}">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
                 <span class="nav-link-text">Pre Poll</span>
             </a>
