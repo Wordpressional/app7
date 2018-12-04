@@ -19,7 +19,8 @@ Route::get('/testabc', 'WebhomeController@test33');
 Route::get('/index123', 'WebhomeController@index123');
 Route::get('/welcome1', 'WebhomeController@welcome1')->name('welcome1');
 
-
+Route::get('/home1', 'WebhomeController@home1')->name('home1');
+Route::resource('/task', 'TaskController');
    
 Route::get('/allposts', 'PostController@index')->name('allposts');
 Route::resource('media', 'MediaController')->only('show');

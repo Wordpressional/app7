@@ -25,16 +25,7 @@
       <!-- Icon css link -->
 
 
-       <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="{{ asset('ratchet-v2.0.2/css/ratchet.css')}}" rel="stylesheet">
-
-    <!-- Include the compiled Ratchet JS -->
-    <script src="{{ asset('ratchet-v2.0.2/js/ratchet.js') }}"></script>
-
+     
     
 <link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">

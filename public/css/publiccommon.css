@@ -1286,8 +1286,8 @@ Version      : 1.0
 
 .themeone nav {
     float: right;
-    width:90%;
-    margin-top: 7px;
+    
+    margin-top: 20px;
 }
 
 .themeone nav ul {
@@ -2550,7 +2550,7 @@ Version      : 1.0
   .themeone .about-image img {
     width: 200px;
     height: 200px;
-    float: left;
+    display: inline;
   }
   .themeone .about-text h2{
     text-align: center;

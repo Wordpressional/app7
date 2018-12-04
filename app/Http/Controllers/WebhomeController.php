@@ -56,6 +56,13 @@ class WebhomeController extends Controller
 
     }
 
+     public function home1()
+    {
+        
+         return view('webhome.home1');
+
+    }
+
 
      public function frontpage()
     {
