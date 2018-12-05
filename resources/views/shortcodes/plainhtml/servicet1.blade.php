@@ -1,7 +1,13 @@
 
 <!-- SERVICE -->
 	    <section id="service" class="service">
+
 	    	<div class="themeone">
+	    		<div class="box">
+	    			<div class="text">
+	    		<span class="edit3">edit</span>
+  
+				<span class="save3">save</span>
 	    	<div class="container">
 	    		<div class="row">
 	    			<div class="col-sm-12">
@@ -18,6 +24,7 @@
 	                        <div class="service-icon">
 	                        	<i class="fa fa-desktop" aria-hidden="true"></i>
 	                        </div>
+
 	                        <h4>design </h4>
 	                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 	                    </div>
@@ -76,6 +83,8 @@
 					</div>
 	    	</div>
 	    	</div>
+	    </div>
+	</div>
 	    </section>
 	<!-- END SERVICE -->
 

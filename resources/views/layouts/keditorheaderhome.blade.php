@@ -128,7 +128,7 @@
         });     
  </script>     
 
-  <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+  
    <!-- Extra plugin css -->
         <script src="{{ asset('webhome/vendors/counterup/jquery.waypoints.min.js') }}"></script>
         <script src="{{ asset('webhome/vendors/counterup/jquery.counterup.min.js') }}"></script>

@@ -259,6 +259,13 @@ Route::post('/forms/update/{id}',[
 'as' => 'forms.update'
 
 ]);
+Route::post('/forms/updatepre/{id}',[
+
+
+'uses' => 'FormbuilderController@updatepre',
+'as' => 'forms.updatepre'
+
+]);
 Route::post('/cforms/update/{id}',[
 
 
@@ -587,3 +594,51 @@ Route::get('/showpollingform',[
 
 ]);
 });
+
+Route::resource('task', 'TaskController');
+Route::get('/task/create',[
+
+
+'uses' => 'TaskController@create',
+'as' => 'task.create'
+
+]);
+Route::get('/task/index',[
+
+
+'uses' => 'TaskController@index',
+'as' => 'task.index'
+
+]);
+Route::post('/task/store',[
+
+
+'uses' => 'TaskController@store',
+'as' => 'task.store'
+
+]);
+
+Route::get('/task/edit/{id}',[
+
+
+'uses' => 'TaskController@edit',
+'as' => 'task.edit'
+
+]);
+Route::get('/task/destroy/{id}',[
+
+
+'uses' => 'TaskController@destroy',
+'as' => 'task.destroy'
+
+]);
+Route::patch('/task/update/{id}',[
+
+
+'uses' => 'TaskController@update',
+'as' => 'task.update'
+
+]);
+
+
+Route::post('image-view','ImageController@store');

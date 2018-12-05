@@ -1,27 +1,15 @@
 <?php
-
-
-
 namespace App;
-
-
 
 use Illuminate\Database\Eloquent\Model;
 
-use Illuminate\Contracts\Validation\Validator;
-
 class Task extends Model
-
 {
+protected $table = 'tasks';
 
-   protected $fillable = [
-
-       'name',
-
-       'user_id',
-
-       'description',
-
-   ];
-
+protected $fillable = [
+'name',
+'user_id',
+'description'
+];
 }

@@ -1,223 +1,176 @@
-namespace App\Http\Controllers;
- 
+<?php
+namespace App\Http\Controllers\Admin;
+use Session;
 use App\Task;
- 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
- 
 use Illuminate\Support\Facades\Auth;
- 
- 
- 
-class TaskController extends Controller
- 
-{
- 
-   /**
- 
-    * Display a listing of the resource.
- 
-    *
- 
-    * @return \Illuminate\Http\Response
- 
-    */
- 
- 
- 
-   public function index()
- 
-   {
- 
- 
- 
-       $tasks = Task::where(['user_id' => Auth::user()->id])->get();
- 
-       return response()->json([
- 
-           'tasks'    => $tasks,
- 
-       ], 200);
- 
-   }
- 
- 
- 
-   /**
- 
-    * Show the form for creating a new resource.
- 
-    *
- 
-    * @return \Illuminate\Http\Response
- 
-    */
- 
-   public function create()
- 
-   {
- 
-       //
- 
-   }
- 
- 
- 
-   /**
- 
-    * Store a newly created resource in storage.
- 
-    *
- 
-    * @param  \Illuminate\Http\Request  $request
- 
-    * @return \Illuminate\Http\Response
- 
-    */
- 
-   public function store(Request $request)
- 
-   {
 
-    $this->validate($request, [
+class TaskController extends Controller {
+    public function __construct() {
 
-           'name'        => 'required',
+        $this->middleware('auth');
+    }
+    /**
 
-           'description' => 'required',
+     * Display a listing of the resource.
 
-       ]);
+     *
 
-       $task = Task::create([
+     * @return \Illuminate\Http\Response
 
-           'name'        => request('name'),
+     */
 
-           'description' => request('description'),
+    public function index() {
 
-           'user_id'     => Auth::user()->id
+        //return "index";
 
-       ]);
+        $tasks = Task::where(['user_id' => Auth::user()->id])->get();
 
+        return response()->json([
 
+            'tasks' => $tasks,
 
+        ], 200);
 
+    }
 
-       return response()->json([
+    /**
 
-           'task'    => $task,
+     * Show the form for creating a new resource.
 
-           'message' => 'Success'
+     *
 
-       ], 200);
- 
-        }
- 
- 
- 
-   /**
- 
+     * @return \Illuminate\Http\Response
+
+     */
+
+    public function create()
+
+    {
+
+        //
+        return "create";
+    }
+
+    /**
+
+     * Store a newly created resource in storage.
+
+     *
+
+     * @param  \Illuminate\Http\Request  $request
+
+     * @return \Illuminate\Http\Response
+
+     */
+
+    public function store(Request $request) {
+        //return "store";
+        $task = new Task();
+        $task->name = $request-> name;
+        $task->description = $request->description;
+        $task->user_id = Auth::user()->id;
+        $task->save();
+
+        return response()->json([
+            'task' => $task,
+            'message' => 'Success'
+        ], 200);
+    }
+
+    /**
+
     * Display the specified resource.
- 
+
     *
- 
+
     * @param  \App\Task  $task
- 
+
     * @return \Illuminate\Http\Response
- 
+
     */
- 
-   public function show(Task $task)
- 
-   {
- 
-       //
- 
-   }
- 
- 
- 
-   /**
- 
-    * Show the form for editing the specified resource.
- 
-    *
- 
-    * @param  \App\Task  $task
- 
-    * @return \Illuminate\Http\Response
- 
-    */
- 
-   public function edit(Task $task)
- 
-   {
- 
-       //
- 
-   }
- 
- 
- 
-   /**
- 
-    * Update the specified resource in storage.
- 
-    *
- 
-    * @param  \Illuminate\Http\Request  $request
- 
-    * @param  \App\Task  $task
- 
-    * @return \Illuminate\Http\Response
- 
-    */
- 
-   public function update(Request $request, Task $task)
- 
-   {
-      $this->validate($request, [
 
-           'name'        => 'required|max:255',
+    public function show(Task $task)
 
-           'description' => 'required',
+    {
 
-       ]);
+        //
+        return "show";
 
-       $task->name = request('name');
+    }
 
-       $task->description = request('description');
+    /**
 
-       $task->save();
+     * Show the form for editing the specified resource.
 
-       return response()->json([
+     *
 
-           'message' => 'Task updated successfully!'
+     * @param  \App\Task  $task
 
-       ], 200);
-        }
- 
- 
- 
-   /**
- 
+     * @return \Illuminate\Http\Response
+
+     */
+
+    public function edit(Task $task)
+
+    {
+
+        //
+        return "edit";
+
+    }
+
+    /**
+
+     * Update the specified resource in storage.
+
+     *
+
+     * @param  \Illuminate\Http\Request  $request
+
+     * @param  \App\Task  $task
+
+     * @return \Illuminate\Http\Response
+
+     */
+
+    public function update(Request $request, Task $task) {
+        //return "update";
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'description' => 'required',
+        ]);
+
+        $task->name = request('name');
+        $task->description = request('description');
+        $task->save();
+        return response()->json([
+            'message' => 'Task updated successfully!'
+        ], 200);
+    }
+
+    /**
+
     * Remove the specified resource from storage.
- 
+
     *
- 
+
     * @param  \App\Task  $task
- 
+
     * @return \Illuminate\Http\Response
- 
+
     */
- 
-   public function destroy(Task $task)
- 
-   {
-      $task->delete();
 
-       return response()->json([
+    public function destroy(Task $id)
 
-           'message' => 'Task deleted successfully!'
-
-       ], 200);
-   }
- 
+    {
+        //return "destroy";
+        $task = Task::findOrFail($id);
+        
+        $task->delete();
+        return response()->json([
+            'message' => 'Task deleted successfully!'
+        ], 200);
+    }
 }

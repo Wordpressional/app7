@@ -1,461 +1,525 @@
 <template>
 
-   <div class="container">
 
-       <div class="row">
+    <div class="container">
 
-           <div class="col-md-12">
+    
+        <div class="row">
 
-               <div class="panel panel-default">
+        
+            <div class="col-md-12">
 
-                   <div class="panel-heading">
+            
+                <div class="panel panel-default">
 
-                <h3><span class="glyphicon glyphicon-dashboard"></span> Assignment Dashboard </h3> <br>
-                    <button @click="initAddTask()" class="btn btn-success " style="padding:5px">
-                     Add New Assignment
-                     </button>
+                
+                    <div class="panel-heading">
 
-                   </div>
+                    
+                        <h3><span class="fa fa-pencil"></span> Assignment Dashboard </h3>
+                        <br>
+                        <button @click="initAddTask()" class="btn btn-success " style="padding:5px">
+                            Add New Assignment
+                        </button>
 
+                        </div>
 
+                
+                    <div class="panel-body">
 
-                   <div class="panel-body">
+                    
+                        <table class="table table-bordered table-striped table-responsive" v-if="tasks.length > 0">
 
-              <table class="table table-bordered table-striped table-responsive" v-if="tasks.length > 0">
+                        
+                            <tbody>
 
-                           <tbody>
+                            
+                                <tr>
 
-                           <tr>
+                                
+                                    <th>
 
-                               <th>
+                                        No.
 
-                                   No.
+                                    </th>
 
-                               </th>
+                                
+                                    <th>
 
-                               <th>
+                                        Name
 
-                                   Name
+                                    </th>
 
-                               </th>
+                                
+                                    <th>
 
-                               <th>
+                                        Description
 
-                                   Description
+                                    </th>
 
-                               </th>
+                                
+                                    <th>
 
-                               <th>
+                                        Action
 
-                                   Action
+                                    </th>
 
-                               </th>
+                                    </tr>
 
-                           </tr>
+                            
+                                <tr v-for="(task, index) in tasks">
 
-                           <tr v-for="(task, index) in tasks">
+                                
+                                    <td>{{ index + 1 }}</td>
 
-                               <td>{{ index + 1 }}</td>
+                                
+                                    <td>
 
-                               <td>
+                                        {{ task.name }}
 
-                                   {{ task.name }}
+                                    </td>
 
-                               </td>
+                                
+                                    <td>
 
-                               <td>
+                                        {{ task.description }}
 
-                                   {{ task.description }}
+                                    </td>
 
-                               </td>
+                                
+                                    <td>
+                                        <button @click="initUpdate(index)" class="btn btn-success btn-xs" style="padding:8px"><span class="fa fa-edit"></span></button>
 
-                               <td>
- <button @click="initUpdate(index)" class="btn btn-success btn-xs" style="padding:8px"><span class="glyphicon glyphicon-edit"></span></button>
- 
- <button @click="deleteTask(index)" class="btn btn-danger btn-xs" style="padding:8px"><span class="glyphicon glyphicon-trash"></span></button>
+                                        <button @click="deleteTask(index)" class="btn btn-danger btn-xs" style="padding:8px"><span class="fa fa-trash"></span></button>
 
-                               </td>
+                                        </td>
 
-                           </tr>
+                                    </tr>
 
-                           </tbody>
+                                </tbody>
 
-                       </table>
+                            </table>
 
-                   </div>
+                        </div>
 
-               </div>
+                    </div>
 
-           </div>
+                </div>
 
-       </div>
+            </div>
 
+    
+        <div class="modal fade" tabindex="-1" role="dialog" id="add_task_model">
 
+        
+            <div class="modal-dialog" role="document">
 
-       <div class="modal fade" tabindex="-1" role="dialog" id="add_task_model">
+            
+                <div class="modal-content">
 
-           <div class="modal-dialog" role="document">
+                
+                    <div class="modal-header">
 
-               <div class="modal-content">
+                    
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span                                aria-hidden="true">&times;</span></button>
 
-                   <div class="modal-header">
+                    
+                        <h4 class="modal-title">Add New Task</h4>
 
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    </div>
 
-                               aria-hidden="true">&times;</span></button>
+                
+                    <div class="modal-body">
 
-                       <h4 class="modal-title">Add New Task</h4>
+                    
+                        <div class="alert alert-danger" v-if="errors.length > 0">
 
-                   </div>
+                        
+                            <ul>
 
-                   <div class="modal-body">
+                            
+                                <li v-for="error in errors">{{ error }}</li>
 
+                                </ul>
 
+                            </div>
 
-                       <div class="alert alert-danger" v-if="errors.length > 0">
+                    
+                        <div class="form-group">
 
-                           <ul>
+                        
+                            <label for="names">Name:</label>
 
-                               <li v-for="error in errors">{{ error }}</li>
+                        
+                            <input type="text" name="name" id="name" placeholder="Task Name" class="form-control"                                   v-model="task.name">
 
-                           </ul>
+                        </div>
 
-                       </div>
+                    
+                        <div class="form-group">
 
+                        
+                            <label for="description">Description:</label>
 
+                        
+                            <textarea name="description" id="description" cols="30" rows="5" class="form-control"                                      placeholder="Task Description" v-model="task.description"></textarea>
 
-                       <div class="form-group">
+                            </div>
 
-                           <label for="names">Name:</label>
+                        </div>
 
-                           <input type="text" name="name" id="name" placeholder="Task Name" class="form-control"
+                
+                    <div class="modal-footer">
 
-                                  v-model="task.name">
+                    
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-                       </div>
+                    
+                        <button type="button" @click="createTask" class="btn btn-primary">Submit</button>
 
-                       <div class="form-group">
+                        </div>
 
-                           <label for="description">Description:</label>
+                    </div>
+                <!-- /.modal-content -->
 
-                           <textarea name="description" id="description" cols="30" rows="5" class="form-control"
+                </div>
+            <!-- /.modal-dialog -->
 
-                                     placeholder="Task Description" v-model="task.description"></textarea>
+            </div>
+        <!-- /.modal -->
 
-                       </div>
+    
+        <div class="modal fade" tabindex="-1" role="dialog" id="update_task_model">
 
-                   </div>
+        
+            <div class="modal-dialog" role="document">
 
-                   <div class="modal-footer">
+            
+                <div class="modal-content">
 
-                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                
+                    <div class="modal-header">
 
-                       <button type="button" @click="createTask" class="btn btn-primary">Submit</button>
+                    
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span                                aria-hidden="true">&times;</span></button>
 
-                   </div>
+                    
+                        <h4 class="modal-title">Update Task</h4>
 
-               </div><!-- /.modal-content -->
+                    </div>
 
-           </div><!-- /.modal-dialog -->
+                
+                    <div class="modal-body">
 
-       </div><!-- /.modal -->
+                    
+                        <div class="alert alert-danger" v-if="errors.length > 0">
 
+                        
+                            <ul>
 
+                            
+                                <li v-for="error in errors">{{ error }}</li>
 
-       <div class="modal fade" tabindex="-1" role="dialog" id="update_task_model">
+                                </ul>
 
-           <div class="modal-dialog" role="document">
+                            </div>
 
-               <div class="modal-content">
+                    
+                        <div class="form-group">
 
-                   <div class="modal-header">
+                        
+                            <label>Name:</label>
 
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        
+                            <input type="text" placeholder="Task Name" class="form-control"                                   v-model="update_task.name">
 
-                               aria-hidden="true">&times;</span></button>
+                        </div>
 
-                       <h4 class="modal-title">Update Task</h4>
+                    
+                        <div class="form-group">
 
-                   </div>
+                        
+                            <label for="description">Description:</label>
 
-                   <div class="modal-body">
+                        
+                            <textarea cols="30" rows="5" class="form-control"                                      placeholder="Task Description" v-model="update_task.description"></textarea>
 
+                            </div>
 
+                        </div>
 
-                       <div class="alert alert-danger" v-if="errors.length > 0">
+                
+                    <div class="modal-footer">
 
-                           <ul>
+                    
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-                               <li v-for="error in errors">{{ error }}</li>
+                    
+                        <button type="button" @click="updateTask" class="btn btn-primary">Submit</button>
 
-                           </ul>
+                        </div>
 
-                       </div>
+                    </div>
+                <!-- /.modal-content -->
 
+                </div>
+            <!-- /.modal-dialog -->
 
+            </div>
+        <!-- /.modal -->
 
-                       <div class="form-group">
-
-                           <label>Name:</label>
-
-                           <input type="text" placeholder="Task Name" class="form-control"
-
-                                  v-model="update_task.name">
-
-                       </div>
-
-                       <div class="form-group">
-
-                           <label for="description">Description:</label>
-
-                           <textarea cols="30" rows="5" class="form-control"
-
-                                     placeholder="Task Description" v-model="update_task.description"></textarea>
-
-                       </div>
-
-                   </div>
-
-                   <div class="modal-footer">
-
-                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                       <button type="button" @click="updateTask" class="btn btn-primary">Submit</button>
-
-                   </div>
-
-               </div><!-- /.modal-content -->
-
-           </div><!-- /.modal-dialog -->
-
-       </div><!-- /.modal -->
-
-
-
-   </div>
+        </div>
 
 </template>
 
-
-
 <script>
+    import axios from 'axios';   
+    export default {
 
-   export default {
+               
+        data() {
 
-       data(){
+                           
+                return {
 
-           return {
+                                   
+                    task: {
 
-               task: {
+                                           
+                        name: '',
 
-                   name: '',
+                                           description: ''
 
-                   description: ''
+                                       
+                    },
 
-               },
+                                   errors: [],
 
-               errors: [],
+                                   tasks: [],
 
-               tasks: [],
+                                   update_task: {}
 
-               update_task: {}
+                               
+                }
 
-           }
+                       
+            },
 
-       },
+                   mounted()
 
-       mounted()
+                {
 
-       {
+                       
+            this.readTasks();
 
-           this.readTasks();
+                   
+        },
 
-       },
+               methods: {
 
-       methods: {
+                       
+            deleteTask(index)
 
+                        {
 
+                               
+                let conf = confirm("Do you ready want to delete this task?");
 
-           deleteTask(index)
+                               
+                if (conf === true) {
 
-           {
+                                       
+                    axios.get('/admin/task/destroy/' + this.tasks[index].id)
 
-               let conf = confirm("Do you ready want to delete this task?");
+                                           .then(response => {
 
-               if (conf === true) {
+                                                   
+                        this.tasks.splice(index, 1);
 
+                                               
+                    })
 
+                                           .catch(error => {
 
-                   axios.delete('/task/' + this.tasks[index].id)
+                                               });
 
-                       .then(response => {
+                                   
+                }
 
+                           
+            },
 
+                       initAddTask()
 
-                           this.tasks.splice(index, 1);
+                        {
 
+                               
+                $("#add_task_model").modal("show");
 
+                           
+            },
 
-                       })
+                       createTask()
 
-                       .catch(error => {
+                        {
 
+                               
+                axios.post('/admin/task/store/', {
 
+                                       
+                    name: this.task.name,
 
-                       });
+                                       description: this.task.description,
 
-               }
+                                   
+                })
 
-           },
+                                   .then(response => {
 
-           initAddTask()
+                                           
+                    this.reset();
 
-           {
+                                           
+                    this.tasks.push(response.data.task);
 
-               $("#add_task_model").modal("show");
+                                           
+                    $("#add_task_model").modal("hide");
 
-           },
+                                       
+                })
 
-           createTask()
+                                   .catch(error => {
 
-           {
+                                           
+                    this.errors = [];
 
-               axios.post('/task', {
+                                           
+                    if (error.response.data.errors && error.response.data.errors.name) {
 
-                   name: this.task.name,
+                                                   
+                        this.errors.push(error.response.data.errors.name[0]);
 
-                   description: this.task.description,
+                                               
+                    }
 
-               })
+                    if (error.response.data.errors && error.response.data.errors.description)
 
-                   .then(response => {
+                                           {
 
+                                                   
+                        this.errors.push(error.response.data.errors.description[0]);
 
+                                               
+                    }
 
-                       this.reset();
+                                       
+                });
 
+                           
+            },
 
+                       reset()
 
-                       this.tasks.push(response.data.task);
+                        {
 
+                               
+                this.task.name = '';
 
+                               
+                this.task.description = '';
 
-                       $("#add_task_model").modal("hide");
+                           
+            },
 
+                       readTasks()
 
+                        {
 
-                   })
+                               
+                axios.get('/admin/task')
 
-                   .catch(error => {
+                                   .then(response => {
 
-                       this.errors = [];
+                                           
+                    this.tasks = response.data.tasks;
 
+                                       
+                });
 
+                           
+            },
 
-                       if (error.response.data.errors && error.response.data.errors.name) {
+                       initUpdate(index)
 
-                           this.errors.push(error.response.data.errors.name[0]);
+                        {
 
-                       }
+                               
+                this.errors = [];
 
-if (error.response.data.errors && error.response.data.errors.description)
+                               
+                $("#update_task_model").modal("show");
 
-                      {
+                               
+                this.update_task = this.tasks[index];
 
-                           this.errors.push(error.response.data.errors.description[0]);
+                           
+            },
 
-                       }
+                       updateTask()
 
-                   });
+                        {
 
-           },
+                               
+                axios.patch('/admin/task/update/' + this.update_task.id, {
 
-           reset()
+                                       
+                    name: this.update_task.name,
 
-           {
+                                       description: this.update_task.description,
 
-               this.task.name = '';
+                                   
+                })
 
-               this.task.description = '';
+                                   .then(response => {
 
-           },
+                                           
+                    $("#update_task_model").modal("hide");
 
-           readTasks()
+                                       
+                })
 
-           {
+                                   .catch(error => {
 
-               axios.get('http://127.0.0.1:8000/task')
+                                           
+                    this.errors = [];
 
-                   .then(response => {
+                                           
+                    if (error.response.data.errors.name) {
 
+                                                   
+                        this.errors.push(error.response.data.errors.name[0]);
 
+                                               
+                    }
 
-                       this.tasks = response.data.tasks;
+                                           
+                    if (error.response.data.errors.description) {
 
+                                                   
+                        this.errors.push(error.response.data.errors.description[0]);
 
+                                               
+                    }
 
-                   });
+                                       
+                });
 
-           },
+                           
+            }
 
-           initUpdate(index)
+                   
+        }
 
-           {
-
-               this.errors = [];
-
-               $("#update_task_model").modal("show");
-
-               this.update_task = this.tasks[index];
-
-           },
-
-           updateTask()
-
-           {
-
-               axios.patch('/task/' + this.update_task.id, {
-
-                   name: this.update_task.name,
-
-                   description: this.update_task.description,
-
-               })
-
-                   .then(response => {
-
-
-
-                       $("#update_task_model").modal("hide");
-
-
-
-                   })
-
-                   .catch(error => {
-
-                       this.errors = [];
-
-                       if (error.response.data.errors.name) {
-
-                           this.errors.push(error.response.data.errors.name[0]);
-
-                       }
-
-
-
-                       if (error.response.data.errors.description) {
-
-                           this.errors.push(error.response.data.errors.description[0]);
-
-                       }
-
-                   });
-
-           }
-
-       }
-
-   }
-
+           
+    }
 </script>

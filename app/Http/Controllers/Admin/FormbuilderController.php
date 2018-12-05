@@ -172,6 +172,17 @@ class FormbuilderController extends Controller
         return "success";
     }
 
+    public function updatepre(Request $request, $id)
+    {
+        
+        $form = Form::find($id);
+        
+        $form->htmlcontent = $request->htmlcontent;
+        $form->save();
+        
+        return "success";
+    }
+
     /**
      * Remove the specified resource from storage.
      *
