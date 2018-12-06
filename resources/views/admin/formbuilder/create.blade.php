@@ -62,7 +62,7 @@
                   
                     containerSettingEnabled: true,
                      snippetsUrl: "{{route('admin.forms.snippets')}}",
-                    contentAreasSelector: '#header, #banner, #body, #footer',
+                    contentAreasSelector: '#banner',
                     containerSettingInitFunction: function (form, keditor) {
                         // Add control for settings form
                         form.append(

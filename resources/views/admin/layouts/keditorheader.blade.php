@@ -23,17 +23,14 @@
     <!-- Start of KEditor styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor.min.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor-components.min.css')}}" />
-    <!-- End of KEditor styles -->
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/plugins/code-prettify/src/prettify.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/css/examples.css')}}" />
+    
      <!-- Start of KEditor styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor.min.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor-components.min.css')}}" />
     <!-- End of KEditor styles -->
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/plugins/code-prettify/src/prettify.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/css/examples.css')}}" />
-     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
-     <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
+   
+    
+     
     
 
 </head>
@@ -87,40 +84,10 @@
         <script type="text/javascript" src="{{asset('examples/plugins/js-beautify-1.7.5/js/lib/beautify.js')}}"></script>
         <script type="text/javascript" src="{{asset('examples/plugins/js-beautify-1.7.5/js/lib/beautify-html.js')}}"></script>
         <script type="text/javascript" src="{{asset('examples/js/examples.js')}}"></script>
-        <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
-        <script>
-                $(".rslides").responsiveSlides({
-                auto: true,             // Boolean: Animate automatically, true or false
-                speed: 500,            // Integer: Speed of the transition, in milliseconds
-                timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-                pager: true,           // Boolean: Show pager, true or false
-                pagination: true,
-                nav: true,             // Boolean: Show navigation, true or false
-                random: false,          // Boolean: Randomize the order of the slides, true or false
-                pause: false,           // Boolean: Pause on hover, true or false
-                pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-                prevText: "Previous",   // String: Text for the "previous" button
-                nextText: "Next",       // String: Text for the "next" button
-                maxwidth: 900,           // Integer: Max-width of the slideshow, in pixels
-                navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-                manualControls: "",     // Selector: Declare custom pager navigation
-                namespace: "rslides",   // String: Change the default namespace used
-                before: function(){},   // Function: Before callback
-                after: function(){}     // Function: After callback
-                });
-
-
-               
-                
-                
-
-            </script>
+        
 
     @yield('scripts')
-    <style>
-    #imageUpload1,#imageUpload2  {
-  display:none;
-}
+   
 </style>
 </body>
 </html>
