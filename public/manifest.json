@@ -62,7 +62,7 @@
     
   ],
   "start_url": "/dynamic/admin/dashboard",
-  "scope": ["/dynamic/mylogin", "/dynamic/admin/showpollingform"],
+  "scope": ["/dynamic", "/dynamic/admin/dashboard", "/dynamic/mylogin", "/dynamic/admin/showpollingform"],
   "display": "standalone",
   "theme_color": "#3367D6"
 }
