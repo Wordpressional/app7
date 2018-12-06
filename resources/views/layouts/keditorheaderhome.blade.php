@@ -45,6 +45,7 @@
 <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
 
+<link href="{{ asset('webhome/css/fixed.css') }}" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

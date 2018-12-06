@@ -39,9 +39,17 @@
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
         <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
-            <span class="nav-link-text">Pre Poll</span>
+            <span class="nav-link-text">Polling Data Entry - Hourly</span>
         </a>
     </li>
+
+    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
+        <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
+            <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">Polling Exception Entry</span>
+        </a>
+    </li>
+
        </ul>
             </li>
 
@@ -115,12 +123,7 @@
                         <span class="nav-link-text">Poll Progress Chart</span>
                     </a>
                 </li>
-                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('/laravel-filemanager') || Request::is('/laravel-filemanager/*') ? 'active' : '' }}" href="{{ route('laravel-filemanager') }}">
-                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Upload Media Manager</span>
-                    </a>
-                </li>
+                
             
         </ul>
         <li class="treeview">
