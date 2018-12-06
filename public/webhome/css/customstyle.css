@@ -1,18 +1,7 @@
 body{
   font-family: "Poppins", sans-serif !important;
 }
-ul.dropdown-menu
-{
-	background: rgba(0, 0, 0, 0.5) !important;
-	border: none !important;
-	min-width: 5rem !important;
-	padding: 10px !important;
-}
 
-ul.dropdown-menu li a
-{
-	line-height: 15px !important;	
-}
 
 .cust {
     margin: 0px !important;
@@ -89,10 +78,7 @@ ul.dropdown-menu li a
   
 }
 
-.navbar-nav {
-   
-    margin-top: -25px !important;
-  }
+
 
 
 .service_area 
@@ -1141,4 +1127,24 @@ display: none;
     -ms-transform: translateY(20px);
     transform: translateY(20px);
   }
+}
+@media only screen and (max-width: 480px) {
+.main-sidebar  {
+    
+    padding-top: 51px;
+}
+.main-header {
+    max-height: 250px !important;
+}
+.navbar-nav {
+    margin-top: 0px !important;
+}
+
+}
+@media (max-width: 550px) and (min-width: 50px){
+.navbar-nav {
+    margin-top: 0px !important;
+}
+
+
 }

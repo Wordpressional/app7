@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{asset('css/skins/_all-skins.min.css')}}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+    <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
  <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
 <link rel="stylesheet" href="{{asset('css/election.css')}}" />
     <link rel="manifest" href="{{url('/manifest.json')}}">

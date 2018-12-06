@@ -1143,8 +1143,9 @@ p.lead {
 @media (max-width: 767px){
 .main-sidebar {
     
-    margin-top: 50px;
+    margin-top: 65px;
 }
+
 }
 
 .nav>li>a, .nav>li>a:hover, .nav>li>a:active, .nav>li>a:focus {
