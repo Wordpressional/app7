@@ -68,7 +68,7 @@ class TaskController extends Controller {
     public function store(Request $request) {
         //return "store";
         $task = new Task();
-        $task->name = $request-> name;
+        $task->name = $request->name;
         $task->description = $request->description;
         $task->user_id = Auth::user()->id;
         $task->save();
@@ -135,15 +135,18 @@ class TaskController extends Controller {
 
      */
 
-    public function update(Request $request, Task $task) {
+    public function update(Request $request, $id) {
         //return "update";
         $this->validate($request, [
             'name' => 'required|max:255',
             'description' => 'required',
         ]);
-
-        $task->name = request('name');
-        $task->description = request('description');
+        //dd($id);
+        $task = Task::where('id',$id)->first();
+        //dd($task);
+        $task->name = $request->name;
+        $task->description = $request->description;
+        $task->user_id = Auth::user()->id;
         $task->save();
         return response()->json([
             'message' => 'Task updated successfully!'
@@ -162,12 +165,12 @@ class TaskController extends Controller {
 
     */
 
-    public function destroy(Task $id)
+    public function destroy($id)
 
     {
         //return "destroy";
-        $task = Task::findOrFail($id);
-        
+        $task = Task::where('id',$id)->first();
+        //dd($task);
         $task->delete();
         return response()->json([
             'message' => 'Task deleted successfully!'

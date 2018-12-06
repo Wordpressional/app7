@@ -329,7 +329,7 @@
                 if (conf === true) {
 
                                        
-                    axios.get('/admin/task/destroy/' + this.tasks[index].id)
+                    axios.delete('/admin/task/destroy/' + this.tasks[index].id)
 
                                            .then(response => {
 
