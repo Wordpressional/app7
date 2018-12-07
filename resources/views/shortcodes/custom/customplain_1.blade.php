@@ -1,10 +1,9 @@
-<!-- HEADER -->
-		<header class="main_h sticky" style="height:200px; max-height: 100px;">
+<header class="main_h " >
 			<div class="themeone">
 
 		    <div class="row">
 		        <a class="logo" href="#">
-					<img src="http://localhost/dynamic/files/1/logo.png.7059356d074558af6c8631865fece9f4.png" alt="Logo">
+					<img src="https://pyrupay.com/dynamic/files/1/logo.png.7059356d074558af6c8631865fece9f4.png" alt="Logo">
 		        </a>
 		        <div class="mobile-toggle">
 		            <span></span>
@@ -24,4 +23,3 @@
 		</div>
 	
 		</header>
-	<!-- END HEADER -->

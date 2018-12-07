@@ -593,6 +593,27 @@ Route::get('/showpollingform',[
 'as' => 'polling.showpollingform'
 
 ]);
+Route::get('/showpollingdataperhr',[
+
+
+'uses' => 'PollingController@showpollingdataperhr',
+'as' => 'polling.showpollingdataperhr'
+
+]);
+Route::get('/showpollingexceptiondata',[
+
+
+'uses' => 'PollingController@showpollingexceptiondata',
+'as' => 'polling.showpollingexceptiondata'
+
+]);
+Route::get('/showpollingvoterdata',[
+
+
+'uses' => 'PollingController@showpollingvoterdata',
+'as' => 'polling.showpollingvoterdata'
+
+]);
 });
 
 Route::resource('task', 'TaskController');

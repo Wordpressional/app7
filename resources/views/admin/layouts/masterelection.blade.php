@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
     <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
  <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 <link rel="stylesheet" href="{{asset('css/election.css')}}" />
     <link rel="manifest" href="{{url('/manifest.json')}}">
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
@@ -63,6 +64,7 @@
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
     <script src="{{ asset('js/colorcommon.js') }}"></script>
    
    
@@ -216,6 +218,43 @@ if ('serviceWorker' in navigator) {
  
 
 });
+
+</script>
+<script>
+$(document).ready(function() {
+      
+  $('.pollingdata').hide();
+});
+   
+
+$('.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    //minTime: '10',
+    //maxTime: '12:00pm',
+    //defaultTime: '11',
+    startTime: '1:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+
+</script>
+<script>
+
+    function show(id) {
+    
+     if (id == 1) {
+
+        var d = $('#pollingstartedinpt').val();
+        
+        document.getElementById('pollingstarted').innerHTML = "Polling Started at: "+ d;
+        $('.pollingdata').show();
+     }
+     
+
+     
+   }
 </script>
     @yield('scripts')
 </body>

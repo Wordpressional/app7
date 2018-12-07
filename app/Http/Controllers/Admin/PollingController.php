@@ -50,6 +50,45 @@ class PollingController extends Controller
 
     }
 
+    public function showpollingdataperhr()
+    {
+        $data = $this->brandsAll();
+        $user = User::where('email', $data['n_loggeduser'])->first();
+        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+       //dd($data['n_loggeduser']);
+        return view('admin.ec.pollingdataentry',compact('data'));
+        } else {
+        return "You do not have permission to access this page"; 
+        }
+
+    }
+
+    public function showpollingexceptiondata()
+    {
+        $data = $this->brandsAll();
+        $user = User::where('email', $data['n_loggeduser'])->first();
+        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+       //dd($data['n_loggeduser']);
+        return view('admin.ec.pollingexception',compact('data'));
+        } else {
+        return "You do not have permission to access this page"; 
+        }
+
+    }
+
+    public function showpollingvoterdata()
+    {
+        $data = $this->brandsAll();
+        $user = User::where('email', $data['n_loggeduser'])->first();
+        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+       //dd($data['n_loggeduser']);
+        return view('admin.ec.pollingvoterdata',compact('data'));
+        } else {
+        return "You do not have permission to access this page"; 
+        }
+
+    }
+
     
 
    

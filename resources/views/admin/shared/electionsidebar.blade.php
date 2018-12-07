@@ -37,14 +37,14 @@
                     
 
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
-        <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
+        <a class="nav-link {{ Request::is('admin/showpollingdataperhr') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.polling.showpollingdataperhr') }}">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">Polling Data Entry - Hourly</span>
         </a>
     </li>
 
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
-        <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
+        <a class="nav-link {{ Request::is('admin/showpollingexceptiondata') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.polling.showpollingexceptiondata') }}">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">Polling Exception Entry</span>
         </a>
@@ -54,7 +54,7 @@
             </li>
 
         <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.dashboard')">
-        <a class="nav-link {{ Request::is('admin/dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
+        <a class="nav-link {{ Request::is('admin/showpollingvoterdata') ? 'active' : '' }}" href="{{ route('admin.polling.showpollingvoterdata') }}">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
                 <span class="nav-link-text">After Poll</span>
             </a>
