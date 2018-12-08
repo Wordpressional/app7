@@ -10,7 +10,7 @@
 <div class="card" style="margin:50px 0">
     <!-- Default panel contents -->
     <div class="card-header">Pre Poll Details</div>
-
+<br>  <center><b>Today: <?php echo date("d-m-Y H:i:s"); ?><b></center><br>
     <ul class="list-group list-group-flush">
        <li class="list-group-item">
             <center><p> Safe Arrival of polling party at polling station </p></center>

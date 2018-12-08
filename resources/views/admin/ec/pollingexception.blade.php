@@ -10,6 +10,7 @@
 <div class="card" style="margin:50px 0">
     <!-- Default panel contents -->
     <div class="card-header">Exception Details</div>
+  <br>  <center><b>Today: <?php echo date("d-m-Y H:i:s"); ?><b></center><br>
     <ul class="list-group list-group-flush">
        <li class="list-group-item">
             <center><p> Poll Interrupted due to EVM Non-Functioning </p></center>
