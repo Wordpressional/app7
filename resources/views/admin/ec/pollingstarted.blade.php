@@ -11,7 +11,7 @@
 
 
 <div style="margin:50px 0;">
- <button id='1' onClick="show(this.id)" class="btn btn-warning">Click here to start polling</button>
+ <button id='1' onClick="show(this.id)" class="btn btn-warning">Click here to start polling day</button>
 
  <div class="pollingdata">
     <br><br>
