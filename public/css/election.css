@@ -100,3 +100,7 @@ input:checked + .slider:before {
 
 }
 
+.ui-timepicker-container
+{
+  z-index:10 !important;
+}

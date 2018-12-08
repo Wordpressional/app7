@@ -89,6 +89,19 @@ class PollingController extends Controller
 
     }
 
+     public function showpollingstarted()
+    {
+        $data = $this->brandsAll();
+        $user = User::where('email', $data['n_loggeduser'])->first();
+        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+       //dd($data['n_loggeduser']);
+        return view('admin.ec.pollingstarted',compact('data'));
+        } else {
+        return "You do not have permission to access this page"; 
+        }
+
+    }
+
     
 
    

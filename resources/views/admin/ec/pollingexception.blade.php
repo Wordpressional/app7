@@ -10,7 +10,6 @@
 <div class="card" style="margin:50px 0">
     <!-- Default panel contents -->
     <div class="card-header">Exception Details</div>
-
     <ul class="list-group list-group-flush">
        <li class="list-group-item">
             <center><p> Poll Interrupted due to EVM Non-Functioning </p></center>
@@ -19,34 +18,60 @@
 <span class="slider round"></span>
 <span class="absolute-no">NO</span>
 </label></center>
+ <center> <small>Select time</small></center>
+
+   <p><input class="timepicker text-center form-control" jt-timepicker="" time="model.time" time-string="model.timeString" default-time="model.options.defaultTime" time-format="model.options.timeFormat" start-time="model.options.startTime" min-time="model.options.minTime" max-time="model.options.maxTime" interval="model.options.interval" dynamic="model.options.dynamic" scrollbar="model.options.scrollbar" dropdown="model.options.dropdown"></p>
         </li>
+     <li class="list-group-item">
+    <center>  <button id='evmnonfunctioning' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button></center>
+</li>
+   
         <li class="list-group-item">    <center><p>Poll interruption due to Law & Order problem </p></center>
                  <center>  <label class="switch ">
 <input type="checkbox" class="primary">
 <span class="slider round"></span>
 <span class="absolute-no">NO</span>
 </label></center> 
-        </li>
+ <center> <small>Select time</small></center>
 
-        <li class="list-group-item">    <center><p>Poll interruption due to other Problem </p></center>
+   <p><input class="timepicker text-center form-control" jt-timepicker="" time="model.time" time-string="model.timeString" default-time="model.options.defaultTime" time-format="model.options.timeFormat" start-time="model.options.startTime" min-time="model.options.minTime" max-time="model.options.maxTime" interval="model.options.interval" dynamic="model.options.dynamic" scrollbar="model.options.scrollbar" dropdown="model.options.dropdown"></p>
+        </li>
+     <li class="list-group-item">
+      <center> <button id='lawandorderproblem' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button></center>
+  
+
+        <li class="list-group-item">  
+
+          <center><p>Poll interruption due to other Problem </p></center>
                  <center>  <label class="switch ">
 <input type="checkbox" class="primary">
 <span class="slider round"></span>
 <span class="absolute-no">NO</span>
 </label></center> 
-        </li>
+ <center> <small>Select time</small></center>
 
-        <li class="list-group-item">    <center><p>Problem resolved </p></center>
+   <p><input class="timepicker text-center form-control" jt-timepicker="" time="model.time" time-string="model.timeString" default-time="model.options.defaultTime" time-format="model.options.timeFormat" start-time="model.options.startTime" min-time="model.options.minTime" max-time="model.options.maxTime" interval="model.options.interval" dynamic="model.options.dynamic" scrollbar="model.options.scrollbar" dropdown="model.options.dropdown"></p>
+        </li>
+    <li class="list-group-item"> 
+    <center> <button id='otherproblem' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button></center>
+ </li>
+
+        <li class="list-group-item">    <center><p>Problem resolved</p></center>
                  <center>  <label class="switch ">
 <input type="checkbox" class="primary">
 <span class="slider round"></span>
 <span class="absolute-no">NO</span>
 </label></center> 
+ <center> <small>Select time</small></center>
+
+   <p><input class="timepicker text-center form-control" jt-timepicker="" time="model.time" time-string="model.timeString" default-time="model.options.defaultTime" time-format="model.options.timeFormat" start-time="model.options.startTime" min-time="model.options.minTime" max-time="model.options.maxTime" interval="model.options.interval" dynamic="model.options.dynamic" scrollbar="model.options.scrollbar" dropdown="model.options.dropdown"></p>
         </li>
        
-    </ul>
+   <li class="list-group-item"> 
+    <center><button id='proresolved' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button></center></li>
 </div> 
 </div>
 </div>
 </div>
+
 @endsection

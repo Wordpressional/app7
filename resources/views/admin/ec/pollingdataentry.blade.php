@@ -6,32 +6,26 @@
     <div class="row">
 
 <div class="col-md-7">
-    <h3> Information from Polling Stations </h3>
+    <h3> Information from polling stations </h3>
+<div class="card" style="margin:50px 0">
+    <!-- Default panel contents -->
+    <div class="card-header">During Poll Details</div>
 
+     <ul class="list-group list-group-flush">
+       <li class="list-group-item">
 
-
-<div style="margin:50px 0;">
- <button id='1' onClick="show(this.id)" class="btn btn-warning">Click here to start polling</button>
-
- <div class="pollingdata">
-    <br><br>
-    <input type='text' id="pollingstartedinpt" name="pollingstartedinpt" value="<?php echo date("d-m-Y H:i:s"); ?>" style="display:none;">
-    <div id="pollingstarted" name="pollingstarted" style="color:green; font-weight: bold;"></div>
-
-      
-  <br>
     
 
-    <h5>Enter polling data - Hourly</h5>
+    <center><b>Enter polling data - Hourly</b></center>
  <br>
 
- <h5>Select time</h5>
+ <center><small>Select time</small></center>
 
    <input class="timepicker text-center form-control" jt-timepicker="" time="model.time" time-string="model.timeString" default-time="model.options.defaultTime" time-format="model.options.timeFormat" start-time="model.options.startTime" min-time="model.options.minTime" max-time="model.options.maxTime" interval="model.options.interval" dynamic="model.options.dynamic" scrollbar="model.options.scrollbar" dropdown="model.options.dropdown"> 
+<br></li>
+    <li class="list-group-item"><center><b>Enter vouters count</b></center>
+
 <br>
-    <h5>Enter vouters count</h5>
-
-
 
  Male: <input type='text' id="mtotalcount" name="totalcount" class="form-control"  ><br>
  Female: <input type='text' id="ftotalcount" name="totalcount" class="form-control" ><br>
@@ -40,17 +34,22 @@
  Total Count: <input type='text' id="ototalcount" name="totalcount" class="form-control" readonly="readonly">
 
 <br>
-
-
+</li>
+ <li class="list-group-item">
+   <center> <button id='closurecount' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button></center>
+</li>
+ <li class="list-group-item">
 Voters in queue at the closure of poll:
 <input type='text' id="ctotalcount" name="totalcount" class="form-control">
 <br>
-
+</li>
+ <li class="list-group-item">
 <button id='closurecount' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button>
+</li>
 </div>
 </div>
 </div>
 </div>
-</div>
+
 
 @endsection

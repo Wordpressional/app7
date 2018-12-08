@@ -20,6 +20,9 @@
 <span class="absolute-no">NO</span>
 </label></center>
         </li>
+         <li class="list-group-item">
+    <center>  <button id='safearrival' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button></center>
+</li>
         <li class="list-group-item">    <center><p>Mock Poll Conducted </p></center>
                  <center>  <label class="switch ">
 <input type="checkbox" class="primary">
@@ -27,6 +30,9 @@
 <span class="absolute-no">NO</span>
 </label></center> 
         </li>
+         <li class="list-group-item">
+    <center>  <button id='mockpoll' onClick="submitclosurecount()" class="btn btn-primary">Submit  </button></center>
+</li>
        
     </ul>
 </div> 

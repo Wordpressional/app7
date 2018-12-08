@@ -614,6 +614,13 @@ Route::get('/showpollingvoterdata',[
 'as' => 'polling.showpollingvoterdata'
 
 ]);
+Route::get('/showpollingstarted',[
+
+
+'uses' => 'PollingController@showpollingstarted',
+'as' => 'polling.showpollingstarted'
+
+]);
 });
 
 Route::resource('task', 'TaskController');
