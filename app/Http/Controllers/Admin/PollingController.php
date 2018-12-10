@@ -41,7 +41,7 @@ class PollingController extends Controller
     {
     	$data = $this->brandsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+        if($user->can('pollingformshow')  && ($user->isPO() == "yes" || $user->isRO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingform',compact('data'));
         } else {
@@ -54,7 +54,7 @@ class PollingController extends Controller
     {
         $data = $this->brandsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+        if($user->can('pollingformshow')  && ($user->isPO() == "yes" || $user->isRO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingdataentry',compact('data'));
         } else {
@@ -67,7 +67,7 @@ class PollingController extends Controller
     {
         $data = $this->brandsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+        if($user->can('pollingformshow')  && ($user->isPO() == "yes" || $user->isRO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingexception',compact('data'));
         } else {
@@ -80,7 +80,7 @@ class PollingController extends Controller
     {
         $data = $this->brandsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+        if($user->can('pollingformshow')  && ($user->isPO() == "yes" || $user->isRO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingvoterdata',compact('data'));
         } else {
@@ -93,7 +93,7 @@ class PollingController extends Controller
     {
         $data = $this->brandsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && $user->isCEO() == "yes" ) {
+        if($user->can('pollingformshow')  && ($user->isPO() == "yes" || $user->isRO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingstarted',compact('data'));
         } else {

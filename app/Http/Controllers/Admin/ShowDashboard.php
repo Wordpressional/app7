@@ -38,7 +38,7 @@ class ShowDashboard extends Controller
 
        $user = User::where('email', $data['n_loggeduser'])->first();
 
-        if($user->isCEO() == "yes" ) {
+        if($user->isCEO() == "yes" || ($user->isPO() == "yes" || $user->isRO() == "yes")) {
             return view('admin.dashboard.index_ceohome', [
                
                 'data' => $data,
