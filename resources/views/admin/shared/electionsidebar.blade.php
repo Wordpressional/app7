@@ -18,7 +18,7 @@
                 <span class="nav-link-text">Polling Dashboard</span>
             </a>
         </li>
-        @role(['elec_returningofficer'] || elec_presidingofficer)
+        @role(['elec_returningofficer', 'elec_presidingofficer'] )
          <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.showpollingform')">
         <a class="nav-link push-right {{ Request::is('admin/showpollingform') ? 'active' : '' }}" href="{{ route('admin.polling.showpollingform') }}" data-transition="fade">
             <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;
