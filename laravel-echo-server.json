@@ -1,18 +1,14 @@
 {
-	"authHost": "http://blog-server",
+	"authHost": "http://localhost",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [],
 	"database": "redis",
-	"databaseConfig": {
-		"redis": {
-			"host": "redis",
-			"port": 6379,
-			"db": 0
-		},
-		"sqlite": {
-			"databasePath": "/database/laravel-echo-server.sqlite"
-		}
-	},
+    "databaseConfig": {
+        "redis": {
+            "host": "127.0.0.1",
+            "port": "6379"
+        }
+    },
 	"devMode": true,
 	"host": null,
 	"port": "8888",
@@ -22,6 +18,10 @@
 	"sslKeyPath": "",
 	"sslCertChainPath": "",
 	"sslPassphrase": "",
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
 	"apiOriginAllow": {
 		"allowCors": false,
 		"allowOrigin": "",

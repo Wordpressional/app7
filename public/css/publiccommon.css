@@ -2589,6 +2589,18 @@ Version      : 1.0
   .themeone .quote i{
     font-size: 20px;
   }
+
+  .input-group.inboxleft {
+    width: 229px !important;
+    margin-left:-20px;
+    float: left;
+  }
+
+  .blodet
+  {
+    max-width:280px;
+  }
+
  }
 @media (max-width: 768px) {
    
@@ -2847,4 +2859,18 @@ Version      : 1.0
     padding-left: 3%;
     padding-right: 3%;
   }
+
+  
+}
+
+.form-group.inbox {
+    width: 169px;
+    display: inline;
+    float: left;
+}
+
+.input-group.inboxleft {
+    width: 569px;
+    margin-bottom: 20px;
+    float: left;
 }

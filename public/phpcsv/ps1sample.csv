@@ -1,0 +1,353 @@
+psid,ac no,ac name,ps name,acid,tname
+1,8,Arabhavi,Dandapur ,8,Belgaum
+2,8,Arabhavi,Naganur,8,Belgaum
+3,8,Arabhavi,Rajapur   ,8,Belgaum
+4,8,Arabhavi,Gurlapur,8,Belgaum
+5,8,Arabhavi,Tukkanatti  ,8,Belgaum
+6,8,Arabhavi,Mudalgi,8,Belgaum
+7,3,Athani,Murgundi ,3,Chikkodi
+8,3,Athani,Kohalli,3,Chikkodi
+9,3,Athani,Masaraguppi,3,Chikkodi
+10,3,Athani,Kohalli,3,Chikkodi
+11,3,Athani,Adalatti ,3,Chikkodi
+12,3,Athani,Ramateerth ,3,Chikkodi
+13,3,Athani,Telasang,3,Chikkodi
+14,3,Athani,Kottalagi,3,Chikkodi
+15,3,Athani,Kakamari ,3,Chikkodi
+16,3,Athani,Adahalli,3,Chikkodi
+17,3,Athani,Bannur ,3,Chikkodi
+18,3,Athani,Kannal,3,Chikkodi
+19,3,Athani,Yakkanchi,3,Chikkodi
+20,16,Bailhongal,Kutaranatti ,16,Belgaum
+21,16,Bailhongal,Mutawad,16,Belgaum
+22,16,Bailhongal,Hirebudanur,16,Belgaum
+23,16,Bailhongal,Inchal,16,Belgaum
+24,16,Bailhongal,Malagali,16,Belgaum
+25,16,Bailhongal,Obaladinni ,16,Belgaum
+26,16,Bailhongal,Chachadi ,16,Belgaum
+27,16,Bailhongal,Marakumbi,16,Belgaum
+28,16,Bailhongal,Muragod,16,Belgaum
+29,16,Bailhongal,Tadasalur   ,16,Belgaum
+30,16,Bailhongal,Hirekoppa,16,Belgaum
+31,16,Bailhongal,Halaki   ,16,Belgaum
+32,16,Bailhongal,Halaki Tanda   ,16,Belgaum
+33,16,Bailhongal,Hulikeri Tanda  ,16,Belgaum
+34,16,Bailhongal,Muragod,16,Belgaum
+35,16,Bailhongal,Shivanagar,16,Belgaum
+36,16,Bailhongal,Subbapur,16,Belgaum
+37,16,Bailhongal,Gontamar,16,Belgaum
+38,12,Belgaum Dakshin,Tilkwadi ,12,Belgaum
+39,12,Belgaum Dakshin,Tilakwadi ,12,Belgaum
+40,12,Belgaum Dakshin,Govaves ,12,Belgaum
+41,12,Belgaum Dakshin,Godsewadi Belagavi   ,12,Belgaum
+42,12,Belgaum Dakshin,Angol ,12,Belgaum
+43,12,Belgaum Dakshin,R.C.Nagar ,12,Belgaum
+44,12,Belgaum Dakshin,Majagaon,12,Belgaum
+45,12,Belgaum Dakshin,Peeranwadi   ,12,Belgaum
+46,12,Belgaum Dakshin,Khadarwadi,12,Belgaum
+47,12,Belgaum Dakshin,Hunchanatti,12,Belgaum
+48,12,Belgaum Dakshin,Bhavani Nagar   ,12,Belgaum
+49,12,Belgaum Dakshin,Mache ,12,Belgaum
+50,12,Belgaum Dakshin,Zadshapur   ,12,Belgaum
+51,12,Belgaum Dakshin,Yallur   ,12,Belgaum
+52,12,Belgaum Dakshin,Awacharatti   ,12,Belgaum
+53,12,Belgaum Dakshin,Yaramale   ,12,Belgaum
+54,12,Belgaum Dakshin,Masagoundahatti ,12,Belgaum
+55,12,Belgaum Dakshin,Dhamne (S)   ,12,Belgaum
+56,12,Belgaum Dakshin,Vadagaon,12,Belgaum
+57,12,Belgaum Dakshin,June ,12,Belgaum
+58,12,Belgaum Dakshin,Bharat Nagar,12,Belgaum
+59,12,Belgaum Dakshin,Hindawadi ,12,Belgaum
+60,12,Belgaum Dakshin,Anandwadi,12,Belgaum
+61,12,Belgaum Dakshin,Shahapur,12,Belgaum
+62,12,Belgaum Dakshin,Shahapu,12,Belgaum
+63,12,Belgaum Dakshin,Mukherji Road,12,Belgaum
+64,12,Belgaum Dakshin,Hosur,12,Belgaum
+65,12,Belgaum Dakshin,Mahadwar Road ,12,Belgaum
+66,12,Belgaum Dakshin,Shastri Nagar,12,Belgaum
+67,12,Belgaum Dakshin,Khasabag,12,Belgaum
+68,13,Belgaum Rural,Attiwad,13,Belgaum
+69,13,Belgaum Rural,Bekkinkeri,13,Belgaum
+70,13,Belgaum Rural,Basurte,13,Belgaum
+71,13,Belgaum Rural,Konewadi,13,Belgaum
+72,13,Belgaum Rural,Gojage,13,Belgaum
+73,13,Belgaum Rural,Ambewadi,13,Belgaum
+74,13,Belgaum Rural,Mannur,13,Belgaum
+75,13,Belgaum Rural,Uchagaon,13,Belgaum
+76,13,Belgaum Rural,Kangrali B K,13,Belgaum
+77,13,Belgaum Rural,Kangrali K H,13,Belgaum
+78,13,Belgaum Rural,Hindalga,13,Belgaum
+79,13,Belgaum Rural,Hall Hindalaga,13,Belgaum
+80,13,Belgaum Rural,Right Wing Hindalaga,13,Belgaum
+81,13,Belgaum Rural,Hindalaga,13,Belgaum
+82,13,Belgaum Rural,Vijaya Nagar Hindalaga,13,Belgaum
+83,13,Belgaum Rural,Hindalaga,13,Belgaum
+84,13,Belgaum Rural,Laxmi Nagar Hindalaga,13,Belgaum
+85,13,Belgaum Rural,Hindalaga,13,Belgaum
+86,13,Belgaum Rural,Turamuri,13,Belgaum
+87,13,Belgaum Rural,Side Room Turamuri,13,Belgaum
+88,13,Belgaum Rural,Bachi,13,Belgaum
+89,13,Belgaum Rural,Benkanhalli,13,Belgaum
+90,13,Belgaum Rural,Ganeshpur Hindalga,13,Belgaum
+91,13,Belgaum Rural,Kallehol,13,Belgaum
+92,13,Belgaum Rural,Kudremani,13,Belgaum
+93,13,Belgaum Rural,Savagaon,13,Belgaum
+94,13,Belgaum Rural,Boknur,13,Belgaum
+95,13,Belgaum Rural,Belagundi,13,Belgaum
+96,13,Belgaum Rural,Belagundi,13,Belgaum
+97,13,Belgaum Rural,Belagundi,13,Belgaum
+98,13,Belgaum Rural,Sonoli,13,Belgaum
+99,13,Belgaum Rural,Yallebail,13,Belgaum
+100,13,Belgaum Rural,Rakaskoppa,13,Belgaum
+101,13,Belgaum Rural,Dhamane S Bailur,13,Belgaum
+102,13,Belgaum Rural,Hangarage,13,Belgaum
+103,13,Belgaum Rural,Hangaraga,13,Belgaum
+104,13,Belgaum Rural,Mandoli,13,Belgaum
+105,13,Belgaum Rural,Mandoli,13,Belgaum
+106,13,Belgaum Rural,Mandoli,13,Belgaum
+107,13,Belgaum Rural,Bijagarni,13,Belgaum
+108,13,Belgaum Rural,Kawalewadi,13,Belgaum
+109,13,Belgaum Rural,Belavatti,13,Belgaum
+110,13,Belgaum Rural,Belavatti,13,Belgaum
+111,13,Belgaum Rural,Bakanur,13,Belgaum
+112,13,Belgaum Rural,Badas Inam,13,Belgaum
+113,13,Belgaum Rural,Karle,13,Belgaum
+114,13,Belgaum Rural,Navage,13,Belgaum
+115,13,Belgaum Rural,Bamanwadi,13,Belgaum
+116,13,Belgaum Rural,Janewadi,13,Belgaum
+117,13,Belgaum Rural,Kuttalwadi,13,Belgaum
+118,13,Belgaum Rural,Bhadarwadi,13,Belgaum
+119,13,Belgaum Rural,Kinaye,13,Belgaum
+120,13,Belgaum Rural,Ranakunde,13,Belgaum
+121,13,Belgaum Rural,Santibastawad,13,Belgaum
+122,13,Belgaum Rural,"Side Room,Santibastwad",13,Belgaum
+123,13,Belgaum Rural,Santibastwad,13,Belgaum
+124,13,Belgaum Rural,Waghawade,13,Belgaum
+125,13,Belgaum Rural,Desur,13,Belgaum
+126,13,Belgaum Rural,Rajhunsgad,13,Belgaum
+127,13,Belgaum Rural,Nandihalli,13,Belgaum
+128,13,Belgaum Rural,Nagenahatti,13,Belgaum
+129,13,Belgaum Rural,Tummaraguddi,13,Belgaum
+130,13,Belgaum Rural,Karikatti,13,Belgaum
+131,13,Belgaum Rural,Chandur,13,Belgaum
+132,13,Belgaum Rural,New Building Sulebhavi,13,Belgaum
+133,13,Belgaum Rural,Sulebhavi,13,Belgaum
+134,13,Belgaum Rural,Yaddalbhavihatti,13,Belgaum
+135,13,Belgaum Rural,Karadiguddi,13,Belgaum
+136,13,Belgaum Rural,Gram Panchayath Office Marihal,13,Belgaum
+137,13,Belgaum Rural,"Middle Wing Side Room,Marihal",13,Belgaum
+138,13,Belgaum Rural,Marihal,13,Belgaum
+139,13,Belgaum Rural,"Side Room,Marihal",13,Belgaum
+140,13,Belgaum Rural,Modaga,13,Belgaum
+141,13,Belgaum Rural,Balekundri B K,13,Belgaum
+142,13,Belgaum Rural,Balekundari K H,13,Belgaum
+143,13,Belgaum Rural,Sambra,13,Belgaum
+144,13,Belgaum Rural,Sambra,13,Belgaum
+145,13,Belgaum Rural,Mutaga,13,Belgaum
+146,13,Belgaum Rural,Nilaji,13,Belgaum
+147,13,Belgaum Rural,Honnihal,13,Belgaum
+148,13,Belgaum Rural,Mavinkatti,13,Belgaum
+149,13,Belgaum Rural,Basarikatti,13,Belgaum
+150,13,Belgaum Rural,Shindholi,13,Belgaum
+151,13,Belgaum Rural,Mastmardi,13,Belgaum
+152,13,Belgaum Rural,Sheganamatti,13,Belgaum
+153,13,Belgaum Rural,Chandanhosur,13,Belgaum
+154,13,Belgaum Rural,Tarihal,13,Belgaum
+155,13,Belgaum Rural,Halaga,13,Belgaum
+156,13,Belgaum Rural,Bastwad,13,Belgaum
+157,13,Belgaum Rural,Kondaskoppa,13,Belgaum
+158,13,Belgaum Rural,Kamkaratti,13,Belgaum
+159,13,Belgaum Rural,Basaapur,13,Belgaum
+160,13,Belgaum Rural,Aralikatti,13,Belgaum
+161,13,Belgaum Rural,Hulikatti,13,Belgaum
+162,13,Belgaum Rural,Hirebagewadi,13,Belgaum
+163,13,Belgaum Rural,K K Koppa,13,Belgaum
+164,13,Belgaum Rural,Halagimardi,13,Belgaum
+165,13,Belgaum Rural,Su Halagimardi,13,Belgaum
+166,13,Belgaum Rural,Mutnal,13,Belgaum
+167,13,Belgaum Rural,Virappankoppa,13,Belgaum
+168,13,Belgaum Rural,Bhendigeri,13,Belgaum
+169,13,Belgaum Rural,Badal Ankagali,13,Belgaum
+170,13,Belgaum Rural,Badal Ankalgi,13,Belgaum
+171,13,Belgaum Rural,Hulikavi,13,Belgaum
+172,13,Belgaum Rural,Gajapati,13,Belgaum
+173,13,Belgaum Rural,Badas K H,13,Belgaum
+174,13,Belgaum Rural,Kukadolli,13,Belgaum
+175,11,Belgaum Uttar,Vishweshwarayya Nagar ,11,Belgaum
+176,11,Belgaum Uttar,Hanuman Nagar ,11,Belgaum
+177,11,Belgaum Uttar,Club Road ,11,Belgaum
+178,11,Belgaum Uttar,Shahu Nagar ,11,Belgaum
+179,11,Belgaum Uttar,A.P.M.C.Market Yard ,11,Belgaum
+180,11,Belgaum Uttar,Azam Nagar ,11,Belgaum
+181,11,Belgaum Uttar,Nehru Nagar ,11,Belgaum
+182,11,Belgaum Uttar,Muttyanatti ,11,Belgaum
+183,11,Belgaum Uttar,Yamanapur ,11,Belgaum
+184,11,Belgaum Uttar,Indal Colony ,11,Belgaum
+185,11,Belgaum Uttar,Kanabargi ,11,Belgaum
+186,11,Belgaum Uttar,Ramateerth Nagarr ,11,Belgaum
+187,11,Belgaum Uttar,Basavan Kudachi ,11,Belgaum
+188,11,Belgaum Uttar,Alarwad ,11,Belgaum
+189,11,Belgaum Uttar,Kanbargi Road ,11,Belgaum
+190,11,Belgaum Uttar,Mahantesh Nagar ,11,Belgaum
+191,11,Belgaum Uttar,Rukmini Nagar ,11,Belgaum
+192,11,Belgaum Uttar,Shivaji Nagar ,11,Belgaum
+193,11,Belgaum Uttar,Old Gandhi Nagar ,11,Belgaum
+194,11,Belgaum Uttar,New Gandhi Nagar [Aman Nagar] ,11,Belgaum
+195,11,Belgaum Uttar,Azad Nagar ,11,Belgaum
+196,11,Belgaum Uttar,Mali Galli ,11,Belgaum
+197,11,Belgaum Uttar,Patil Galli ,11,Belgaum
+198,11,Belgaum Uttar,Bhandur Galli ,11,Belgaum
+199,11,Belgaum Uttar,Kapileshwar Road ,11,Belgaum
+200,11,Belgaum Uttar,Mahadwar Road ,11,Belgaum
+201,11,Belgaum Uttar,Patil Galli ,11,Belgaum
+202,11,Belgaum Uttar,Fulbag Galli ,11,Belgaum
+203,11,Belgaum Uttar,Camp ,11,Belgaum
+204,11,Belgaum Uttar,Killa[Fort] ,11,Belgaum
+205,11,Belgaum Uttar,Old P.B.Road ,11,Belgaum
+206,11,Belgaum Uttar,College Road ,11,Belgaum
+207,11,Belgaum Uttar,Vishweshwarayya Nagar ,11,Belgaum
+208,11,Belgaum Uttar,Sadashiv Nagar ,11,Belgaum
+209,11,Belgaum Uttar,Nehru Nagar ,11,Belgaum
+210,11,Belgaum Uttar,Ashok  Nagar ,11,Belgaum
+211,11,Belgaum Uttar,Shivabasava Nagar ,11,Belgaum
+212,11,Belgaum Uttar,Ram Nagar ,11,Belgaum
+213,11,Belgaum Uttar,Mission Compound ,11,Belgaum
+214,11,Belgaum Uttar,Police Head Quarters ,11,Belgaum
+215,11,Belgaum Uttar,Mission Compound ,11,Belgaum
+216,11,Belgaum Uttar,Mahantesh Nagar ,11,Belgaum
+217,11,Belgaum Uttar,Anjaneya Nagar ,11,Belgaum
+218,11,Belgaum Uttar,Mahantesh Nagar ,11,Belgaum
+219,11,Belgaum Uttar,Kanbargi Road ,11,Belgaum
+220,11,Belgaum Uttar,Mahantesh Nagar ,11,Belgaum
+221,11,Belgaum Uttar,Shri Nagar ,11,Belgaum
+222,11,Belgaum Uttar,Vantamuri Colony ,11,Belgaum
+223,11,Belgaum Uttar,Vantamuri Colony ,11,Belgaum
+224,11,Belgaum Uttar,Shivaji Nagar ,11,Belgaum
+225,11,Belgaum Uttar,New Veerbhadra Nagar ,11,Belgaum
+226,11,Belgaum Uttar,Chavat galli ,11,Belgaum
+227,11,Belgaum Uttar,Shetti Galli ,11,Belgaum
+228,11,Belgaum Uttar,Old P.B.Road ,11,Belgaum
+229,11,Belgaum Uttar,Tenginkeri Galli ,11,Belgaum
+230,11,Belgaum Uttar,Mali Galli ,11,Belgaum
+231,11,Belgaum Uttar,Bhandur  Galli ,11,Belgaum
+232,11,Belgaum Uttar,Fulbag Galli ,11,Belgaum
+233,11,Belgaum Uttar,Ganapath Galli ,11,Belgaum
+234,11,Belgaum Uttar,Bhendi Bazar ,11,Belgaum
+235,11,Belgaum Uttar,Khanjar Galli ,11,Belgaum
+236,11,Belgaum Uttar,Bhadakal Galli ,11,Belgaum
+237,11,Belgaum Uttar,Kakatives ,11,Belgaum
+238,11,Belgaum Uttar,Risaldar Galli ,11,Belgaum
+239,11,Belgaum Uttar,Gavali Galli,11,Belgaum
+240,11,Belgaum Uttar,Ganapath Galli ,11,Belgaum
+241,11,Belgaum Uttar,Ganapath Galli ,11,Belgaum
+242,11,Belgaum Uttar,Khade Bazar ,11,Belgaum
+243,11,Belgaum Uttar,Ganapath Galli ,11,Belgaum
+244,11,Belgaum Uttar,Kelkar Bag,11,Belgaum
+245,11,Belgaum Uttar,Raviwar Peth ,11,Belgaum
+246,11,Belgaum Uttar,Maruti Galli ,11,Belgaum
+247,11,Belgaum Uttar,Konwal Galli ,11,Belgaum
+248,2,Chikkodi-Sadalga,Janawad  ,2,Chikkodi
+249,2,Chikkodi-Sadalga,Sadalaga  ,2,Chikkodi
+250,2,Chikkodi-Sadalga,Wadagol  ,2,Chikkodi
+251,2,Chikkodi-Sadalga,Malikawad  ,2,Chikkodi
+252,2,Chikkodi-Sadalga,Examba,2,Chikkodi
+253,2,Chikkodi-Sadalga,Kallol  ,2,Chikkodi
+254,2,Chikkodi-Sadalga,Old Yadur  ,2,Chikkodi
+255,2,Chikkodi-Sadalga,Yadurwadi  ,2,Chikkodi
+256,2,Chikkodi-Sadalga,New Yadur  ,2,Chikkodi
+257,2,Chikkodi-Sadalga,Chandur Tek  ,2,Chikkodi
+258,2,Chikkodi-Sadalga,Chandur  ,2,Chikkodi
+259,2,Chikkodi-Sadalga,West Wing Chandur  ,2,Chikkodi
+260,2,Chikkodi-Sadalga,Manjari  ,2,Chikkodi
+261,2,Chikkodi-Sadalga,Manjariwadi  ,2,Chikkodi
+262,2,Chikkodi-Sadalga,Ingali,2,Chikkodi
+263,2,Chikkodi-Sadalga,Gavathana  ,2,Chikkodi
+264,2,Chikkodi-Sadalga,Ankali  ,2,Chikkodi
+265,2,Chikkodi-Sadalga,Siddapurwadi  ,2,Chikkodi
+266,2,Chikkodi-Sadalga,Kadapur  ,2,Chikkodi
+267,2,Chikkodi-Sadalga,Kerur  ,2,Chikkodi
+268,2,Chikkodi-Sadalga,Rupinal  ,2,Chikkodi
+269,2,Chikkodi-Sadalga,Arabyanawadi  ,2,Chikkodi
+270,2,Chikkodi-Sadalga,Nanadi  ,2,Chikkodi
+271,2,Chikkodi-Sadalga,Nanadiwadi  ,2,Chikkodi
+272,2,Chikkodi-Sadalga,Nagaral  ,2,Chikkodi
+273,2,Chikkodi-Sadalga,Nej  ,2,Chikkodi
+274,2,Chikkodi-Sadalga,Shamanewadi  ,2,Chikkodi
+275,2,Chikkodi-Sadalga,Shiragaon  ,2,Chikkodi
+276,2,Chikkodi-Sadalga,Shiragaonwadi  ,2,Chikkodi
+277,2,Chikkodi-Sadalga,Khadakalat  ,2,Chikkodi
+278,2,Chikkodi-Sadalga,Manuchawadi  ,2,Chikkodi
+279,2,Chikkodi-Sadalga,Peerawadi  ,2,Chikkodi
+280,2,Chikkodi-Sadalga,Tapkarwadi  ,2,Chikkodi
+281,2,Chikkodi-Sadalga,Khadakalat  ,2,Chikkodi
+282,2,Chikkodi-Sadalga,Putanawadi  ,2,Chikkodi
+283,2,Chikkodi-Sadalga,Pangeri A  ,2,Chikkodi
+284,2,Chikkodi-Sadalga,Chikalwal  ,2,Chikkodi
+285,2,Chikkodi-Sadalga,Rampur  ,2,Chikkodi
+286,2,Chikkodi-Sadalga,Pattanakudi  ,2,Chikkodi
+287,2,Chikkodi-Sadalga,Walaki  ,2,Chikkodi
+288,2,Chikkodi-Sadalga,Nainglaj ,2,Chikkodi
+289,2,Chikkodi-Sadalga,Yadyanawadi  ,2,Chikkodi
+290,2,Chikkodi-Sadalga,Dulaganwadi  ,2,Chikkodi
+291,2,Chikkodi-Sadalga,Navalihal  ,2,Chikkodi
+292,2,Chikkodi-Sadalga,Kuthali  ,2,Chikkodi
+293,2,Chikkodi-Sadalga,Kuthali  ,2,Chikkodi
+294,2,Chikkodi-Sadalga,Kothali  ,2,Chikkodi
+295,2,Chikkodi-Sadalga,Sankanwadi  ,2,Chikkodi
+296,2,Chikkodi-Sadalga,Girgaon  ,2,Chikkodi
+297,2,Chikkodi-Sadalga,Chinchani  ,2,Chikkodi
+298,2,Chikkodi-Sadalga,Kuppanwadi  ,2,Chikkodi
+299,2,Chikkodi-Sadalga,Handyanwadi  ,2,Chikkodi
+300,2,Chikkodi-Sadalga,Chikodi  ,2,Chikkodi
+301,2,Chikkodi-Sadalga,Hirekudi  ,2,Chikkodi
+302,2,Chikkodi-Sadalga,Jodakurli  ,2,Chikkodi
+303,9,Gokak,Nandagaon ,9,Belgaum
+304,9,Gokak,Dhupadal ,9,Belgaum
+305,9,Gokak,Pamaldinni ,9,Belgaum
+306,9,Gokak,Shindhikurbet ,9,Belgaum
+307,9,Gokak,Shingalapur ,9,Belgaum
+308,9,Gokak,Konnur ,9,Belgaum
+309,9,Gokak,Maradimath ,9,Belgaum
+310,9,Gokak,Manikwadi ,9,Belgaum
+311,9,Gokak,Falls ,9,Belgaum
+312,9,Gokak,Melmatti ,9,Belgaum
+313,9,Gokak,Gokak ,9,Belgaum
+314,9,Gokak,Maladinni ,9,Belgaum
+315,9,Gokak,Upparatti ,9,Belgaum
+316,9,Gokak,Mamadapur ,9,Belgaum
+317,9,Gokak,Dundanatti ,9,Belgaum
+318,9,Gokak,Benachinmardi ,9,Belgaum
+319,9,Gokak,Kolavi ,9,Belgaum
+320,9,Gokak,Tavag ,9,Belgaum
+321,9,Gokak,Kanasageri ,9,Belgaum
+322,9,Gokak,Urabinhatti ,9,Belgaum
+323,9,Gokak,Kundargi ,9,Belgaum
+324,9,Gokak,Dasanahatti ,9,Belgaum
+325,9,Gokak,Musalmari ,9,Belgaum
+326,9,Gokak,Gujanal ,9,Belgaum
+327,9,Gokak,Ankalagi ,9,Belgaum
+328,9,Gokak,Ankalgi ,9,Belgaum
+329,9,Gokak,Akkatangerhal ,9,Belgaum
+330,9,Gokak,Urabinhatti ,9,Belgaum
+331,9,Gokak,Iranatti ,9,Belgaum
+332,9,Gokak,Madaval ,9,Belgaum
+333,9,Gokak,Telaginhatti ,9,Belgaum
+334,9,Gokak,Makkalageri ,9,Belgaum
+335,9,Gokak,Hanamapur ,9,Belgaum
+336,9,Gokak,Chikkanandi ,9,Belgaum
+337,9,Gokak,Hirenandi ,9,Belgaum
+338,9,Gokak,Jamunal ,9,Belgaum
+339,9,Gokak,Shiltibhanvi ,9,Belgaum
+340,9,Gokak,Khanagaon ,9,Belgaum
+341,9,Gokak,Gudanatti ,9,Belgaum
+342,9,Gokak,Nabhapur ,9,Belgaum
+343,9,Gokak,Khanagaon ,9,Belgaum
+344,9,Gokak,Midakanhatti ,9,Belgaum
+345,9,Gokak,Keshappanhatti ,9,Belgaum
+346,9,Gokak,Yelapatti ,9,Belgaum
+347,9,Gokak,Panjannati ,9,Belgaum
+348,9,Gokak,Davalatti ,9,Belgaum
+349,9,Gokak,Gada ,9,Belgaum
+350,9,Gokak,Yaddalgudd ,9,Belgaum
+351,9,Gokak,Bhudihal ,9,Belgaum
+352,9,Gokak,Suldhal ,9,Belgaum

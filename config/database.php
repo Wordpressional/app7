@@ -40,7 +40,7 @@ return [
         ],
 
         'mysql' => [
-            'driver' => 'mysql',
+            'driver' => env('DB_CONNECTION', 'mysql'),
             'host' => getenv('DB_HOST'),
             'port' => '3306',
             'database' => getenv('DB_DATABASE'),
@@ -52,6 +52,16 @@ return [
             'prefix' => '',
             'strict' => false,
             //'engine' => null,
+        ],
+
+        'mongodb' => [
+            'driver'   => env('MONGO_DB_CONNECTION', 'mongodb'),
+            'host'     => env('MONGO_DB_HOST', 'localhost'),
+            'port'     => env('MONGO_DB_PORT', 27017),
+            'database' => env('MONGO_DB_DATABASE'),
+            'username' => env('MONGO_DB_USERNAME'),
+            'password' => env('MONGO_DB_PASSWORD'),
+            'options'  => []
         ],
 
         'testing' => [
@@ -92,6 +102,16 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
+
+        'redis' => [
+        'client' => 'predis',
+        'default' => [
+            'host' => env('REDIS_HOST', '127.0.0.1'),
+            'password' => env('REDIS_PASSWORD', null),
+            'port' => env('REDIS_PORT', 6379),
+            'database' => env('REDIS_DATABASE', 0),
+        ],
+    ],
 
     ],
 

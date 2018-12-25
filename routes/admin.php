@@ -1,5 +1,6 @@
 <?php
 
+
 Route::get('dashboard', 'ShowDashboard')->name('dashboard');
 
 Route::get('/forms/snippets',[
@@ -621,6 +622,129 @@ Route::get('/showpollingstarted',[
 'as' => 'polling.showpollingstarted'
 
 ]);
+
+Route::get('/createeleusers',[
+
+
+'uses' => 'PollingController@createeleusers',
+'as' => 'polling.createeleusers'
+
+]);
+
+Route::get('/jsonuser',[
+
+
+'uses' => 'PollingController@jsonuser',
+'as' => 'polling.jsonuser'
+
+]);
+
+Route::get('/displayusers',[
+
+
+'uses' => 'PollingController@displayusers',
+'as' => 'polling.displayusers'
+
+]);
+
+Route::post('/createusersfromceo',[
+
+
+'uses' => 'PollingController@createusersfromceo',
+'as' => 'polling.createusersfromceo'
+
+]);
+
+Route::post('/usersearch',[
+
+
+'uses' => 'PollingController@userSearch',
+'as' => 'polling.usersearch'
+
+]);
+
+Route::post('/blosearch',[
+
+
+'uses' => 'PollingController@bloSearch',
+'as' => 'polling.blosearch'
+
+]);
+
+
+//Route::post('image-view','ImageController@store');
+
+Route::get('/testmongo',[
+
+
+'uses' => 'PollingController@someMethod',
+'as' => 'polling.testmongo'
+
+]);
+
+Route::get('/csvtoarray',[
+
+
+'uses' => 'UserController@csvToArray',
+'as' => 'polling.csvtoarray'
+
+]);
+
+Route::get('/importcsv',[
+
+
+'uses' => 'UserController@importCsv',
+'as' => 'polling.importcsv'
+
+]);
+
+Route::get('/showuserregreport',[
+
+
+'uses' => 'PollingController@showuserregreport',
+'as' => 'polling.showuserregreport'
+
+]);
+
+Route::get('/ajax-select-dist/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxDist',
+'as' => 'polling.ajax-select-dist'
+
+]);
+
+Route::get('/ajax-select-ac/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxAC',
+'as' => 'polling.ajax-select-ac'
+
+]);
+
+Route::get('/ajax-select-part/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxPart',
+'as' => 'polling.ajax-select-part'
+
+]);
+
+Route::get('/ajax-select-blo/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxBlo',
+'as' => 'polling.ajax-select-blo'
+
+]);
+
+Route::get('/ajax-select-blopart/{pid}',[
+
+
+'uses' => 'PollingController@selectAjaxBloPart',
+'as' => 'polling.ajax-select-blopart'
+
+]);
 });
 
 Route::resource('task', 'TaskController');
@@ -668,6 +792,3 @@ Route::patch('/task/update/{id}',[
 'as' => 'task.update'
 
 ]);
-
-
-Route::post('image-view','ImageController@store');

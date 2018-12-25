@@ -231,7 +231,7 @@
                             <label>Name:</label>
 
                         
-                            <input type="text" placeholder="Task Name" class="form-control"                                   v-model="update_task.name">
+                            <input type="text" placeholder="Task Name" class="form-control"                                    v-model="update_task.name">
 
                         </div>
 
@@ -329,7 +329,7 @@
                 if (conf === true) {
 
                                        
-                    axios.delete('/admin/task/destroy/' + this.tasks[index].id)
+                    axios.delete('admin/task/destroy/' + this.tasks[index].id)
 
                                            .then(response => {
 
@@ -364,7 +364,7 @@
                         {
 
                                
-                axios.post('/admin/task/store/', {
+                axios.post('admin/task/store/', {
 
                                        
                     name: this.task.name,
@@ -436,7 +436,7 @@
                         {
 
                                
-                axios.get('/admin/task')
+                axios.get('admin/task')
 
                                    .then(response => {
 
@@ -470,7 +470,7 @@
                         {
 
                                
-                axios.patch('/admin/task/update/' + this.update_task.id, {
+                axios.patch('admin/task/update/' + this.update_task.id, {
 
                                        
                     name: this.update_task.name,

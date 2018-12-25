@@ -7,6 +7,8 @@ Vue.component('comment-list', require('./components/comments/Comment-list.vue'))
 Vue.component('comment-form', require('./components/comments/Comment-form.vue'));
 
 Vue.component('like', require('./components/Like.vue'));
+Vue.config.debug = true; 
+Vue.config.devtools = true;
 
 window.Event = new Vue();
 

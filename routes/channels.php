@@ -18,3 +18,7 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
 });
 
 Broadcast::channel('post.{post}', PostChannel::class);
+
+Broadcast::channel('global', function () {
+    return true;
+});

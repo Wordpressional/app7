@@ -11,6 +11,9 @@ use App\Brand;
 use App\Role;
 use App\Permission;
 
+use App\Meleuser;
+use App\Elemdist;
+
 use Auth;
 
 class ShowDashboard extends Controller
@@ -38,10 +41,15 @@ class ShowDashboard extends Controller
 
        $user = User::where('email', $data['n_loggeduser'])->first();
 
+       $elemdist = new Elemdist;
+        $elemdist->setConnection('mongodb');
+        $something = $elemdist->where('did', 1)->first();
+        //dd($something);
         if($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes") {
             return view('admin.dashboard.index_ceohome', [
                
                 'data' => $data,
+                'something' => $something,
             ]);
         } else if($user->isSuperadministrator() == "yes") {
              return view('admin.dashboard.index_home', [
@@ -49,6 +57,7 @@ class ShowDashboard extends Controller
                 'posts' => Post::lastWeek()->get(),
                 'users' => User::lastWeek()->get(),
                 'data' => $data,
+                
             ]);
         } else {      
            return "You do not have permission to access this page";

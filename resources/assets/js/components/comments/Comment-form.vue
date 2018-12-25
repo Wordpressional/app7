@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  props: ["post_id", "placeholder", "button"],
+  props: ["post_slug", "post_id", "placeholder", "button", "api_token"],
 
   data() {
     return {
@@ -43,7 +43,7 @@ export default {
       this.isLoading = true;
 
       axios
-        .post("../api/v1/posts/" + this.post_id + "/comments", {
+        .post("../api/v1/posts/" + this.post_id + "/comments/?api_token="+this.api_token, {
           content: this.content
         })
         .then(response => {

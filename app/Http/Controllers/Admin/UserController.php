@@ -8,6 +8,8 @@ use App\Http\Traits\BrandsTrait;
 use App\User;
 use App\Role;
 use App\Permission;
+use App\Meleuser;
+use App\Elemdist;
 
 class UserController extends Controller
 {
@@ -59,9 +61,11 @@ class UserController extends Controller
         $user = User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
-            'password' => bcrypt($request->input('password')),
+           // 'password' => bcrypt($request->input('password')),
+            'password' => $request->input('password'),
         ]);
 
+       
         $role = Role::find($request->input('role_id'));
 
         $user->attachRole($role);
@@ -235,4 +239,69 @@ class UserController extends Controller
         
         return redirect()->route('admin.authors.edit', $user)->withSuccess(__('users.updated'));
     }
+
+    function csvToArray($filename = '', $delimiter = ',')
+    {
+        $filename = public_path('phpcsv/users3sample.csv');
+        //return $filename;
+        if (!file_exists($filename) || !is_readable($filename))
+            return false;
+
+        $header = null;
+        $data = array();
+        if (($handle = fopen($filename, 'r')) !== false)
+        {
+            while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
+            {
+                if (!$header)
+                    $header = $row;
+                else
+                    $data[] = array_combine($header, $row);
+            }
+            fclose($handle);
+        }
+
+        return $data;
+    }
+
+    public function importCsv()
+    {
+
+        $file = public_path('phpcsv/users3sample.csv');
+
+        $customerArr = $this->csvToArray($file);
+        //dd($customerArr);
+        //dd($customerArr[0]['email']);
+        for ($i = 0; $i < count($customerArr); $i ++)
+        {
+            User::firstOrCreate($customerArr[$i]);
+            /*$user = User::create([
+            'name' => $customerArr[$i]['name'],
+            'email' => $customerArr[$i]['email'],
+           // 'password' => bcrypt($request->input('password')),
+            'password' => $customerArr[$i]['password'],
+            ]);*/
+
+            $user = User::where('email', $customerArr[$i]['email'])->first();
+            //dd($user->id);
+            $role = Role::where('name', 'elec_returningofficer')->first();
+            //dd($role);
+             $roleid = Role::find($role->id);
+             //dd($roleid);
+        $user->attachRole($roleid);
+
+        $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
+       //dd($role_permissions);
+             foreach ($role_permissions as $permission_id) {
+                $permission = Permission::find($permission_id);
+               
+                 $user->attachPermission($permission);
+             }
+
+        }
+
+        return 'Jobi done or what ever'; 
+
+    }
+
 }

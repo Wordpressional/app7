@@ -134,7 +134,7 @@ class User extends Authenticatable
     //  */
      public function isAdmin(): bool
      {
-         return $this->checkHasRole("Superadministrator");
+         return $this->checkHasRole("superadministrator");
      }
 
      public function islCEO(): bool
@@ -147,10 +147,10 @@ class User extends Authenticatable
     //  *
     //  * @return boolean
     //  */
-    // public function isEditor(): bool
-    // {
-    //     return true;
-    // }
+     public function isEditor(): bool
+     {
+         return $this->checkHasRole("superadministrator");
+     }
 
     /**
      * Return the user's posts
@@ -167,7 +167,7 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function comments()
+    public function commentsfromusers()
     {
         return $this->hasMany(Comment::class, 'author_id');
     }
@@ -187,10 +187,10 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    //public function roles()
-    //{
-    //    return $this->belongsToMany(Role::class)->withTimestamps();
-    //}
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class)->withTimestamps();
+    }
 
     public function isCEO()
     {

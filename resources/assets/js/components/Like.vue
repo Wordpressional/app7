@@ -10,21 +10,25 @@
 </template>
 
 <script>
+ 
 export default {
-  props: ["liked", "likes_count", "item_type", "item_id", "logged_in"],
+name: 'app',
+  props: ["liked", "likes_count", "item_type", "item_id", "item_slug", "item_token", "logged_in"],
 
   data() {
     return {
       isLiked: this.liked,
       isLoggedIn: this.logged_in,
       count: parseInt(this.likes_count) || 0,
-      endpoint: "../api/v1/" + this.item_type + "/" + this.item_id + "/likes",
+      endpoint: "../api/v1/" + this.item_type + "/" + this.item_id + "/likes?api_token="+this.item_token,
       isLoading: false
     };
   },
 
   methods: {
     toggleLike() {
+   
+   
       if (this.isLoading || !this.isLoggedIn) {
         return;
       }

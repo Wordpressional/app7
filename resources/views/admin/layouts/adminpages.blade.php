@@ -40,37 +40,39 @@
 
     <div id="app">
         <div class="container-fluid">
-            <div class="row">
+           <div class="row">
                 <div class="col">
                     @include('shared/alerts')
                         
                     <div class="card">
                         <div class="card-body">
-                          
-        
                             @yield('content')
                         </div>
                     </div>
                 </div>
+            </div> 
             </div>
         </div>
     </div>
     </div>
     </div>
-
-    <!-- Scripts -->
+ <!-- Scripts -->
     <script src="{{ asset(mix('js/app.js')) }}"></script>
     <script src="{{ asset(mix('js/admin.js')) }}"></script>
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
+     <script src="//code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ asset('js/dataTables.responsive.js') }}"></script>
     <script src="{{ asset('js/colorcommon.js') }}"></script>
    
    
    
     <script type="text/javascript">
-        
-
+       
     // Define function to open filemanager window
     var lfm = function(options, cb) {
         var route_prefix = (options && options.prefix) ? options.prefix : '/laravel-filemanager';
@@ -217,6 +219,7 @@ if ('serviceWorker' in navigator) {
  
 
 });
+
 </script>
     @yield('scripts')
 </body>

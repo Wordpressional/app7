@@ -33,6 +33,13 @@ class CommentController extends Controller
         return new CommentResource($comment);
     }
 
+    public function showpost($id)
+    {
+        $comment = Comment::where('id',$id)->first();
+        //dd($post);
+        return new CommentResource($comment);
+    }
+
     /**
      * Remove the specified resource from storage.
      *

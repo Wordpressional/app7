@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+use Illuminate\Support\Facades\Redis;
 
 
 
@@ -89,8 +89,8 @@ Route::get('/download', 'WebhomeController@download');
 Route::get('/laravel-filemanager', '\UniSharp\LaravelFilemanager\Controllers\LfmController@show')->name('laravel-filemanager');
     Route::post('/laravel-filemanager/upload', '\UniSharp\LaravelFilemanager\Controllers\UploadController@upload');
 
-Route::get('/createconfig', 'InitialController@createconfig')->name('createconfig');
-Route::post('/generateconfig/',[
+//Route::get('/createconfig', 'InitialController@createconfig')->name('createconfig');
+/*Route::post('/generateconfig/',[
 
 'uses' => 'InitialController@generateconfig',
 'as' => 'config.generateconfig'
@@ -102,11 +102,19 @@ Route::post('/generatedatabase/',[
 'uses' => 'InitialController@generatedatabase',
 'as' => 'config.generatedatabase'
 
-]);
+]);*/
 
 // Administrator & SuperAdministrator Control Panel Routes
 Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'middleware' => ['role:administrator|superadministrator'], 'namespace' => 'Admin'], function () {
     Route::resource('users', 'UserController');
     Route::resource('permission', 'PermissionController');
     Route::resource('roles', 'RolesController');
+});
+Route::get('/test', 'WebhomeController@test')->name('test');
+Route::get('/broadcast-test', 'WebhomeController@broadcasttest')->name('test');
+   
+
+Route::get('/redistest', function () {
+    $visits = Redis::incr('visits');
+    return $visits;
 });
