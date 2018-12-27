@@ -18,7 +18,7 @@ class CreateElemacsTable extends Migration
             $collection->string('acno');
             $collection->string('acname');
             $collection->integer('did');
-            $collection->timestamps();
+            $collection->string('timestamp');
         });
     }
 

@@ -32,6 +32,7 @@ use App\Elemblo;
 use App\Elempart;
 use App\Mycollection;
 use App\Elemuser;
+use App\Elemactivitylog;
 
 use Illuminate\Support\Facades\Input;
 
@@ -196,6 +197,7 @@ class PollingController extends Controller
 
     public function createeleusers($id)
     {
+         $data = $this->brandsAll();
         return view('admin.ec.createeleusersform',compact('data'));
     }
 
@@ -409,9 +411,9 @@ class PollingController extends Controller
             array_push($part_array,$part->partname);
             
         
-        $blo1 = "no";
+        $blo1 = "ok";
            //dd($part_array);
-            $data = view('admin.ec.ajax-select-blopart',compact(['blos','part_array', 'blo1']))->render();
+            $data = view('admin.ec.ajax-select-blo',compact(['blos','part_array', 'blo1']))->render();
             return response()->json(['result'=>$data]);
         
     }
@@ -475,7 +477,10 @@ class PollingController extends Controller
           //dd($partnos);
           //dd($partnos);
     
-$blos = $Elemblo->where( 'bloname', 'LIKE', '%' . $q . '%' )->orWhere( 'bloname',  $q)->orWhere( 'blophno',  $q)->get();
+$blos = $Elemblo->where( 'bloname', 'LIKE', '%' . $q . '%' )->orWhere( 'bloname',  $q)->orWhere( 'blophno',  (int) $q)->get();
+
+//$blos = $Elemblo->where( 'blophno',  (int) $q)->get();
+//dd($blos);
 $t = count($blos);
 
 //dd($t);
@@ -547,7 +552,117 @@ $t = count($blos);
 
     
     }
+
+
+    public function eleSwitchUser(Request $request)
+    {
+        
+
+
+
+         $request->session()->put('existing_user_id', Auth::user()->id);
+         $request->session()->put('user_is_switched', true);
+
+         $newuserId = $request->input('new_user_id');
+
+
+
+        $timestamp = date("Y-m-d H:i:s");
+        $userid = Auth::user()->id;
+        $newuserId = $request->input('new_user_id');
+
+        $request->session()->put('user_is_switched_with_id', $newuserId);
+
+        //dd($userid);
+        $user = User::with('roles')->where( 'id', $userid)->first();
+        //dd($user->roles->first()->id);
+        //dd($request->header('User-Agent'));
+        $role = Role::where( 'id', $user->roles->first()->id)->first();
+        //dd($role);
+        $Elemblo = new Elemblo;
+        $Elemblo->setConnection('mongodb');
+
+        $elemblodetails = $Elemblo->where( 'userid', $userid )->first();
+        //dd($elemblodetails);
+        $Elemactivitylog = new Elemactivitylog;
+        $Elemactivitylog->setConnection('mongodb');
+
+            
+            $Elemactivitylog->username = $user->name;
+            $Elemactivitylog->useremail = $user->email;
+            $Elemactivitylog->userrole = $user->roles->first()->name;
+            $Elemactivitylog->eventname = "ceo switched to user ".$newuserId;
+            $Elemactivitylog->devicedetails = $request->header('User-Agent');
+            $Elemactivitylog->userid = $userid;
+            $Elemactivitylog->bloid = $elemblodetails->bloid;
+            $Elemactivitylog->timestamp = $timestamp;
+
+            $Elemactivitylog->save();
+
+
+
+         //$my_selected_job_id = $request->input('my_selected_job_id');
+         $url = '/admin/dashboard/';
+         Auth::loginUsingId($newuserId);
+         return redirect()->to($url);
+     }
+
+     public function eleRestoreUser(Request $request) {
+  
+
+         $oldUserId = $request->session()->get('existing_user_id');
+         $newUserId = $request->session()->get('user_is_switched_with_id');
+         //dd($newUserId);
+         Auth::loginUsingId($oldUserId);
+         $request->session()->forget('existing_user_id');
+         $request->session()->forget('user_is_switched');
+
+        
+
+        $timestamp = date("Y-m-d H:i:s");
+        $userid = Auth::user()->id;
+        //$newuserId = $request->input('user_is_switched');
+        //dd($userid);
+
+        $user = User::with('roles')->where( 'id', (int) $newUserId)->first();
+
+        //dd($user->roles->first()->id);
+        //dd($request->header('User-Agent'));
+        $role = Role::where( 'id', (int) $newUserId)->first();
+        //dd($role);
+        $Elemblo = new Elemblo;
+        $Elemblo->setConnection('mongodb');
+
+        $elemblodetails = $Elemblo->where( 'userid', (int) $newUserId )->first();
+        //dd($Elemblo);
+        $Elemactivitylog = new Elemactivitylog;
+        $Elemactivitylog->setConnection('mongodb');
+
+            
+            $Elemactivitylog->username = $user->name;
+            $Elemactivitylog->useremail = $user->email;
+            $Elemactivitylog->userrole = $user->roles->first()->name;
+            $Elemactivitylog->eventname = "ceo switched back from user ".(int) $newUserId;
+            $Elemactivitylog->devicedetails = $request->header('User-Agent');
+            $Elemactivitylog->userid = $userid;
+            $Elemactivitylog->bloid = $elemblodetails->bloid;
+            $Elemactivitylog->timestamp = $timestamp;
+
+            $Elemactivitylog->save();
+
+         $url = '/admin/dashboard/';
+         return redirect()->to($url);
+     }
+
    
+   public function activitylogs(Request $request) {
+    $data = $this->brandsAll();
+        $Elemactivitylog = new Elemactivitylog;
+        $Elemactivitylog->setConnection('mongodb');
+        $elemactivitylogdetails = $Elemactivitylog->all();
+        //dd($elemactivitylogdetails[0]);
+         return view('admin.ec.activitylogs', compact('elemactivitylogdetails', 'data'));
+   }
    
 }
 

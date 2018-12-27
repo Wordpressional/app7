@@ -2,8 +2,10 @@
        <div class="container">
        
             {{ csrf_field() }}
+
+            @php $search = (isset($_POST['q'])) ? htmlentities($_POST['q']) : ''; @endphp
             <div class="input-group inboxleft">
-                <input type="text" class="form-control" name="q" id="q"
+                <input type="text" class="form-control" name="q" id="q" value="{{ $search }}"
                     placeholder="Search users"> <span class="input-group-btn">
                     <button class="btn btn-default blosearch "  onclick="blosearchfunc()">
                         <span class="fa fa-search" ></span>
@@ -40,7 +42,7 @@
               <th>Phone Number</th>
               <th>Designation</th>
               <th>PS / Parts</th>
-              
+              <th>Actions</th>
              
             </tr>
           </thead>
@@ -55,7 +57,7 @@
                     <td>{{ $blos->blophno }}</td>
                     <td>{{ $blos->blodesg }}</td>
                     <td>{{ $part_array[0] }}</td>
-                    
+                    <td><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-mobile" aria-hidden="true" style="font-size: 30px;"></i></a></td>
                     
                     
                   </tr>
@@ -71,6 +73,8 @@
                     <td>{{ $blo->blophno }}</td>
                     <td>{{ $blo->blodesg }}</td>
                     <td>{{ $part_array[$key] }}</td>
+                     <td><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-mobile" aria-hidden="true" style="font-size: 30px;"></i></a></td>
+                    
                     @endif
                     
                     

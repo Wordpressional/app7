@@ -29,7 +29,7 @@ class CreateElemblosTable extends Migration
             $collection->integer('partid');
            
             $collection->integer('userid');
-            $collection->timestamps();
+           $collection->string('timestamp');
         });
     }
 

@@ -18,12 +18,18 @@
 
     <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
     <link href="{{ asset(mix('css/admin.css')) }}" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" />
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
      <link rel="stylesheet" href="{{asset('css/public.css')}}" />
     <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/skins/_all-skins.min.css')}}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+   
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
+
+
+
 
     <link rel="manifest" href="{{url('/manifest.json')}}">
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
@@ -33,8 +39,8 @@
     <div class="wrapper">
 
         <div class="adminltehs">
-        @include('admin.shared.header')
-        @include('admin.shared.sidebar')
+        @include('admin.shared.electionheader')
+        @include('admin.shared.electionsidebar')
         </div>
     <div class="content-wrapper bg-light">
 
@@ -61,13 +67,18 @@
     <script src="{{ asset(mix('js/admin.js')) }}"></script>
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
      <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    
     <script src="{{ asset('js/dataTables.responsive.js') }}"></script>
     <script src="{{ asset('js/colorcommon.js') }}"></script>
+
+    
    
    
    

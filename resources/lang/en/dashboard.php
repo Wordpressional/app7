@@ -12,4 +12,5 @@ return [
 	'category' => 'Category',
 	'count' => 'Total Count',
 	'tag' => 'Tag',
+    'activitylog' => 'Activity Logs',
 ];

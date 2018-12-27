@@ -42,7 +42,7 @@
                
                
               <h5> PS / Parts </h5>
-                 <select name="part" class="form-control" style="width:150px"></select>
+                 <select name="part" class="form-control" id="part" ></select>
             </div>
            <div class="form-group inbox">
              <h5> Reset </h5>
@@ -80,6 +80,7 @@
 @endsection
 
 @section('scripts')
+
 <script type="text/javascript">
  
     $(document).ready(function() {

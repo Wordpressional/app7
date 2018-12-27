@@ -19,7 +19,7 @@ class CreateElempartsTable extends Migration
             $collection->string('partname');
             $collection->integer('acid');
             $collection->string('tname');
-            $collection->timestamps();
+            $collection->string('timestamp');
         });
     }
 

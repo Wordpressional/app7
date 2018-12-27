@@ -118,3 +118,9 @@ Route::get('/redistest', function () {
     $visits = Redis::incr('visits');
     return $visits;
 });
+
+Route::get('a',function(){
+    $user = Auth::loginUsingId(2, true);
+    return $user;
+});
+

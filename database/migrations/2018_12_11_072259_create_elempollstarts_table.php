@@ -18,7 +18,7 @@ class CreateElempollstartsTable extends Migration
             $collection->string('pollstartedon');
             $collection->integer('userid');
             $collection->integer('bloid');
-            $collection->timestamps();
+            $collection->string('timestamp');
         });
     }
 

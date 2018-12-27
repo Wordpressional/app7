@@ -19,7 +19,7 @@ class CreateElemusersTable extends Migration
             $collection->string('email');
             $collection->string('phone');
             $collection->string('password');
-            $collection->timestamps();
+            $collection->string('timestamp');
         });
     }
 

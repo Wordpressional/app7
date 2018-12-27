@@ -17,7 +17,7 @@ class CreateElemdistsTable extends Migration
             $collection->index('did');
             $collection->string('distno');
             $collection->string('distname');
-            $collection->timestamps();
+           $collection->string('timestamp');
         });
     }
 

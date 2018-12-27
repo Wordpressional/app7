@@ -39,6 +39,7 @@
               <th data-priority="2">Name</th>
               <th data-priority="3">Email</th>
               <th data-priority="4">Actions</th>
+              <th data-priority="5">Switch User</th>
             </tr>
           </thead>
           <tbody>
@@ -53,8 +54,15 @@
                       <div class="btn-group">
                         <a class="btn btn-primary" href="{{ route('admin.users.edit', ['id' => $user->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
                         <a class="btn btn-danger" href="{{ route('admin.users.show', ['id' => $user->id]) }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
+
                       </div>
                     </td>
+                      <td><form action="{{ route('admin.user.eleswitch') }}" method="POST">
+                    <input type="hidden" name="new_user_id" value="{{ $user->id }}">
+                   
+                    {{ csrf_field() }}
+                    <button type="submit" class="btn btn-info"><i class="fa fa-sign-in" style="font-size: 20px;" aria-hidden="true"></i> Login</button>
+                </form></td>
                   </tr>
                   @endforeach
           </tbody>

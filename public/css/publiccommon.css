@@ -2874,3 +2874,8 @@ Version      : 1.0
     margin-bottom: 20px;
     float: left;
 }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button
+{
+  padding:2px !important;
+}

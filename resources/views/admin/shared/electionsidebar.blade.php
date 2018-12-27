@@ -65,6 +65,16 @@
                 <span class="nav-link-text">After Poll</span>
             </a>
         </li>
+
+        <li> 
+                @if(session('user_is_switched'))
+                
+                <a style="color:#ffffff;" href="{{ route('admin.user.elerestore') }}"><i class="fa fa-undo"></i><span>&nbsp;&nbsp;Return to CEO</span></a>
+                
+                @endif
+               
+        </li>
+
         @endrole
         @role(['elec_ceo'])
              <li class="treeview">
@@ -76,7 +86,19 @@
                 </a>
                 <ul class="treeview-menu">
                    
-                    
+                   <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="#">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">RO Report</span>
+                    </a>
+                </li>
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="#">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">PO Report</span>
+                    </a>
+                </li>  
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                     <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="#">
@@ -189,14 +211,29 @@
             <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                 <a class="nav-link {{ Request::is('admin/users') ? ' active' : null }}" href="{{ route('admin.polling.displayusers') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                 Users List
+                 Users Login List
                 </a>
             </li>
 
+            <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                <a class="nav-link {{ Request::is('admin/users') ? ' active' : null }}" href="{{route('admin.polling.showuserregreport')}}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                 Booth Officers List
+                </a>
+            </li>
+
+            
           
            
             
             </ul>
+        </li>
+
+            <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.activitylog')">
+        <a class="nav-link {{ Request::is('admin/activitylogs') ? 'active' : '' }}" href="{{ route('admin.polling.activitylogs') }}">
+            <i class="fa fa-history" aria-hidden="true"></i>&nbsp;
+                <span class="nav-link-text">Activity Logs</span>
+            </a>
         </li>
         @endrole
         </ul>

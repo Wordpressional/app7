@@ -19,7 +19,7 @@ class CreateElempstationsTable extends Migration
             $collection->string('psname');
             $collection->integer('acid');
             $collection->string('tname');
-            $collection->timestamps();
+            $collection->string('timestamp');
         });
     }
 

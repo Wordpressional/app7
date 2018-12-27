@@ -587,6 +587,15 @@ Route::get('/dumpmodules',[
 
 ]);
 Route::group(['middleware' => ['role_sadmin:elec_ceo']], function () {
+
+Route::get('/activitylogs',[
+
+
+'uses' => 'PollingController@activitylogs',
+'as' => 'polling.activitylogs'
+
+]);
+
 Route::get('/showpollingform',[
 
 
@@ -745,6 +754,11 @@ Route::get('/ajax-select-blopart/{pid}',[
 'as' => 'polling.ajax-select-blopart'
 
 ]);
+
+Route::post('eleswitchuser', 'PollingController@eleSwitchUser')->name('user.eleswitch');
+Route::get('elerestoreuser', 'PollingController@eleRestoreUser')->name('user.elerestore');
+
+
 });
 
 Route::resource('task', 'TaskController');
@@ -792,3 +806,4 @@ Route::patch('/task/update/{id}',[
 'as' => 'task.update'
 
 ]);
+
