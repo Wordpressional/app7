@@ -6,9 +6,16 @@
    <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
         <h1 class="h2">Users</h1>
     </div>-->
-    <a class="btn btn-sm btn-primary moveright" href="{{route('admin.users')}}">Back</a>
+    <a class="btn btn-sm btn-primary moveright" href="{{route('admin.polling.displayusers')}}">Back</a>
     <h2>{{$title}}</h2>
-    <form method="post" action="{{ route('admin.users.update', ['id' => $user->id]) }}" data-parsley-validate class="form-horizontal form-label-left">
+<hr>
+     @if(session()->has('error'))
+    <div class="alert alert-danger alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{ session()->get('error') }}
+    </div>
+    @endif
+    <form method="post" action="{{ route('admin.eleusers.updateelec', ['id' => $user->id]) }}" data-parsley-validate class="form-horizontal form-label-left">
 
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} row">
             <label for="name" class="col-sm-2 col-form-label">Name</label>
@@ -28,6 +35,24 @@
             </div>
         </div>
 
+         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} row">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" value="" id="password" name="password" class="form-control col-md-7 col-xs-12"> @if ($errors->has('password'))
+                <span class="help-block">{{ $errors->first('password') }}</span>
+                @endif
+            </div>
+        </div>
+
+         <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }} row">
+            <label for="password_confirmation" class="col-sm-2 col-form-label">Password Confirmation</label>
+            <div class="col-sm-10">
+                <input type="password" value="" id="password_confirmation" name="password_confirmation" class="form-control col-md-7 col-xs-12"> @if ($errors->has('password_confirmation'))
+                <span class="help-block">{{ $errors->first('password_confirmation') }}</span>
+                @endif
+            </div>
+        </div>
+
         
 
         <div class="form-group{{ $errors->has('role_id') ? ' has-error' : '' }} row">
@@ -38,7 +63,9 @@
                 <select class="form-control" id="role_id" name="role_id">
                     @if(count($roles))
                     @foreach($roles as $row)
+                    @if(stripos($row->name, "elec_") !== FALSE)
                     <option value="{{$row->id}}" {{$row->id == $user->roles[0]->id ? 'selected="selected"' : ''}}>{{$row->name}}</option>
+                    @endif
                     @endforeach
                     @endif
                 </select>

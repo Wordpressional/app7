@@ -8,7 +8,7 @@
     
     
 
-      <a class="btn btn-sm btn-primary moveright" href="{{route('admin.polling.createeleusers')}}">Add New User</a>
+      <a class="btn btn-sm btn-primary moveright" href="{{route('admin.polling.createeleusers')}}">Create Users</a>
       <h2>{{$title}}</h2>
 
 
@@ -38,22 +38,26 @@
               <th data-priority="1">Sl.no.</th>
               <th data-priority="2">Name</th>
               <th data-priority="3">Email</th>
-              <th data-priority="4">Actions</th>
-              <th data-priority="5">Switch User</th>
+              <th data-priority="4">Role</th>
+              <th data-priority="5">Actions</th>
+              <th data-priority="6">Switch User</th>
             </tr>
           </thead>
           <tbody>
             @php $i=1 @endphp
-              @foreach($users as $user)
+              @foreach($users as $key => $user)
+               @if($user->roles[0]->name == "elec_ceo"  || $user->roles[0]->name == "elec_returningofficer"  || $user->roles[0]->name == "elec_presidingofficer"  || $user->roles[0]->name == "elec_sectorofficer" || $user->roles[0]->name == "elec_asistantreturningofficer")
                   <tr>
                     <td>{{ $i++ }}</td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     
+                     <td>{{ $user->roles[0]->display_name}}</td>
+                   
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="{{ route('admin.users.edit', ['id' => $user->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
-                        <a class="btn btn-danger" href="{{ route('admin.users.show', ['id' => $user->id]) }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
+                        <a class="btn btn-primary" href="{{ route('admin.eleusers.editelec', ['id' => $user->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
+                        
 
                       </div>
                     </td>
@@ -63,6 +67,7 @@
                     {{ csrf_field() }}
                     <button type="submit" class="btn btn-info"><i class="fa fa-sign-in" style="font-size: 20px;" aria-hidden="true"></i> Login</button>
                 </form></td>
+                 @endif
                   </tr>
                   @endforeach
           </tbody>

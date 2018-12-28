@@ -640,6 +640,14 @@ Route::get('/createeleusers',[
 
 ]);
 
+Route::post('/storecsv',[
+
+
+'uses' => 'PollingController@storecsv',
+'as' => 'polling.storecsv'
+
+]);
+
 Route::get('/jsonuser',[
 
 
@@ -680,7 +688,30 @@ Route::post('/blosearch',[
 
 ]);
 
+Route::get('/eleusers/editelec/{id}',[
 
+'uses' => 'UserController@editelec',
+'as' => 'eleusers.editelec'
+
+]);
+Route::put('/eleusers/updateelec/{id}',[
+
+'uses' => 'UserController@updateelec',
+'as' => 'eleusers.updateelec'
+
+]);
+Route::get('/eleusers/deleteelec/{id}',[
+
+'uses' => 'UserController@destroyelec',
+'as' => 'eleusers.deleteelec'
+
+]);
+Route::get('/users/restoreelec/{id}',[
+
+'uses' => 'UserController@restoreelec',
+'as' => 'eleusers.restoreelec'
+
+]);
 //Route::post('image-view','ImageController@store');
 
 Route::get('/testmongo',[
@@ -696,6 +727,14 @@ Route::get('/csvtoarray',[
 
 'uses' => 'UserController@csvToArray',
 'as' => 'polling.csvtoarray'
+
+]);
+
+Route::post('/importcsv',[
+
+
+'uses' => 'UserController@importCsv',
+'as' => 'polling.importcsv'
 
 ]);
 

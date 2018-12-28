@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Session;
 use App\Tag;
 use App\Page;
+
 use App\Cform;
 use App\Form;
 use App\User;
@@ -195,23 +196,26 @@ class PollingController extends Controller
 
     }
 
-    public function createeleusers($id)
+    public function createeleusers()
     {
          $data = $this->brandsAll();
-        return view('admin.ec.createeleusersform',compact('data'));
+         $roles = Role::all();
+
+        return view('admin.ec.createeleusersform',compact('data', 'roles'));
     }
 
     public function displayusers()
     {
         $data = $this->brandsAll();
         //$users = User::paginate(10);
-        $users = User::paginate(50);
+        $users = User::with('roles')->paginate(50);
         $params = [
             'title' => 'Users Listing',
             'users' => $users,
             'data' => $data,
         ];
 
+       // dd($users[0]->roles[0]->name);
         return view('admin.ec.displayusers')->with($params);
 
     }
@@ -556,10 +560,6 @@ $t = count($blos);
 
     public function eleSwitchUser(Request $request)
     {
-        
-
-
-
          $request->session()->put('existing_user_id', Auth::user()->id);
          $request->session()->put('user_is_switched', true);
 
@@ -591,9 +591,9 @@ $t = count($blos);
             $Elemactivitylog->username = $user->name;
             $Elemactivitylog->useremail = $user->email;
             $Elemactivitylog->userrole = $user->roles->first()->name;
-            $Elemactivitylog->eventname = "ceo switched to user ".$newuserId;
+            $Elemactivitylog->eventname = "ceo switched to user ".$user->roles->first()->displayname;
             $Elemactivitylog->devicedetails = $request->header('User-Agent');
-            $Elemactivitylog->userid = $userid;
+            $Elemactivitylog->userid = $newuserId;
             $Elemactivitylog->bloid = $elemblodetails->bloid;
             $Elemactivitylog->timestamp = $timestamp;
 
@@ -642,10 +642,10 @@ $t = count($blos);
             $Elemactivitylog->username = $user->name;
             $Elemactivitylog->useremail = $user->email;
             $Elemactivitylog->userrole = $user->roles->first()->name;
-            $Elemactivitylog->eventname = "ceo switched back from user ".(int) $newUserId;
+            $Elemactivitylog->eventname = "ceo switched back from user ". $user->roles->first()->displayname;
             $Elemactivitylog->devicedetails = $request->header('User-Agent');
             $Elemactivitylog->userid = $userid;
-            $Elemactivitylog->bloid = $elemblodetails->bloid;
+            $Elemactivitylog->bloid =  $newUserId;
             $Elemactivitylog->timestamp = $timestamp;
 
             $Elemactivitylog->save();
@@ -663,6 +663,37 @@ $t = count($blos);
         //dd($elemactivitylogdetails[0]);
          return view('admin.ec.activitylogs', compact('elemactivitylogdetails', 'data'));
    }
+
+   public function storecsv(Request $request)
+    {
+
+        $input = $request->all();
+        //dd("hi");
+        //dd($input);
+
+        if($request->hasFile('csvfile')){
+
+           //$input = $request->file('filed');
+            //dd("hi");
+           //dd($input);
+            $extension = $request->file('csvfile')->getClientOriginalExtension(); // getting image extension
+
+            $fine = $request->file('csvfile')->getClientOriginalName();
+
+        //dd($extension);
+            $newFileName = $fine;
+
+            $dir = public_path(). '/phpcsv/';
+                 
+             $mime = $request->file('csvfile')->getMimeType();
+            
+            $path = $request->file('csvfile')->move($dir, $newFileName);
+
+            $url = '/admin/createeleusers/';
+            return redirect()->to($url)->with('message', 'Successfully uploaded CSV file to server');
+           
+        }
+    }
    
 }
 

@@ -3,7 +3,7 @@
 
 @section('content')
    
-    <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
+    <main role="main" class="col-md-12 ml-sm-auto col-lg-12 ">
   
       <h2>Activity Logs</h2>
 
@@ -13,18 +13,18 @@
             <tr>
               <th data-priority="1">Sl.no.</th>
               
-              <th data-priority="3">Email</th>
+              <th data-priority="2">Email</th>
              
-              <th data-priority="5">Event Name</th>
-               <th data-priority="6">Device Details</th>
-                <th data-priority="7">Timestamp</th>
+              <th data-priority="3">Event Name</th>
+               <th data-priority="4">Device Details</th>
+                <th data-priority="5">Timestamp</th>
             </tr>
           </thead>
           <tbody>
             @php $i=1 @endphp
               @foreach($elemactivitylogdetails as $log)
                   <tr>
-                    <td>{{ $i++ }}</td>
+                    <td width="5">{{ $i++ }}</td>
                     
                      <td>{{ $log->useremail }}</td>
                       

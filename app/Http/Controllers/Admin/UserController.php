@@ -177,6 +177,119 @@ class UserController extends Controller
         }
     }
 
+
+     // Editing User Information Page
+    public function editelec($id)
+    {
+        try {
+            $user = User::findOrFail($id);
+
+            //$roles = Role::all();
+            $roles = Role::with('permissions')->get();
+            $permissions = Permission::all();
+             $data = $this->brandsAll();
+            $params = [
+                'title' => 'Edit User',
+                'user' => $user,
+                'roles' => $roles,
+                'permissions' => $permissions,
+                'data' => $data,
+            ];
+
+            return view('admin.eleusers.users_edit')->with($params);
+        } catch (ModelNotFoundException $ex) {
+            if ($ex instanceof ModelNotFoundException) {
+                return response()->view('errors.' . '404');
+            }
+        }
+    }
+
+    // Update User Information to DB
+    public function updateelec(Request $request, $id)
+    {
+        //dd("hi");
+        try {
+            $user = User::findOrFail($id);
+
+            $this->validate($request, [
+                'name' => 'required',
+                'email' => 'required|email|unique:users,email,' . $id,
+
+            ]);
+
+            if($request->input('password') != "" && $request->input('password') == $request->input('password_confirmation'))
+            {
+                $user->password = $request->input('password');
+            } 
+            else if($request->input('password') != "" && $request->input('password') != $request->input('password_confirmation'))
+            {
+               
+                return redirect()->back()->with('error', 'Password mismatch');
+            } 
+            else
+            {
+
+            }
+
+            $user->name = $request->input('name');
+            $user->email = $request->input('email');
+
+            $user->save();
+
+            // Update role of the user
+            $roles = $user->roles;
+            //dd($roles);
+            foreach ($roles as $key => $value) {
+                $user->detachRole($value);
+            }
+
+            $role = Role::find($request->input('role_id'));
+
+            $user->attachRole($role);
+
+             $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
+        //dd($role_permissions);
+             foreach ($role_permissions as $permission_id) {
+                $permission = Permission::find($permission_id);
+                //dd($permission);
+                 $user->detachPermission($permission);
+                 $user->attachPermission($permission);
+             }
+            // Update permission of the user
+            //$permission = Permission::find($request->input('permission_id'));
+            //$user->attachPermission($permission);
+
+            return redirect()->route('admin.polling.displayusers')->with('success', "The user $user->name has successfully been updated.");
+        } catch (ModelNotFoundException $ex) {
+            if ($ex instanceof ModelNotFoundException) {
+                return response()->view('errors.' . '404');
+            }
+        }
+    }
+
+     // Remove User from DB with detaching Role
+    public function destroyelec($id)
+    {
+        try {
+            $user = User::findOrFail($id);
+
+            // Detach from Role
+            $roles = $user->roles;
+
+            foreach ($roles as $key => $value) {
+                $user->detachRole($value);
+            }
+
+            $user->delete();
+
+            return redirect()->route('admin.eleusers')->with('success', "The user $user->name has successfully been archived.");
+        } catch (ModelNotFoundException $ex) {
+            if ($ex instanceof ModelNotFoundException) {
+                return response()->view('errors.' . '404');
+            }
+        }
+    }
+
     // Remove User from DB with detaching Role
     public function destroy($id)
     {
@@ -240,9 +353,9 @@ class UserController extends Controller
         return redirect()->route('admin.authors.edit', $user)->withSuccess(__('users.updated'));
     }
 
-    function csvToArray($filename = '', $delimiter = ',')
+    function csvToArray($filename = '', $delimiter = ',', $csvname)
     {
-        $filename = public_path('phpcsv/users3sample.csv');
+        $filename = public_path('phpcsv/'.$csvname);
         //return $filename;
         if (!file_exists($filename) || !is_readable($filename))
             return false;
@@ -264,15 +377,15 @@ class UserController extends Controller
         return $data;
     }
 
-    public function importCsv()
+    public function importCsv(Request $request)
     {
 
-        $file = public_path('phpcsv/users3sample.csv');
+        $file = public_path('phpcsv/'.$request->csvname);
 
-        $customerArr = $this->csvToArray($file);
-        //dd($customerArr);
-        //dd($customerArr[0]['email']);
-        for ($i = 0; $i < count($customerArr); $i ++)
+        $customerArr = $this->csvToArray($file,',',$request->csvname);
+        //dd($customerArr[0]);
+       
+        for ($i = 0; $i < count($customerArr); ++$i)
         {
             User::firstOrCreate($customerArr[$i]);
             /*$user = User::create([
@@ -284,11 +397,11 @@ class UserController extends Controller
 
             $user = User::where('email', $customerArr[$i]['email'])->first();
             //dd($user->id);
-            $role = Role::where('name', 'elec_returningofficer')->first();
+            $role = Role::where('id', $request->role_id)->first();
             //dd($role);
              $roleid = Role::find($role->id);
              //dd($roleid);
-        $user->attachRole($roleid);
+        $user->attachRole($role);
 
         $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
        //dd($role_permissions);
@@ -299,8 +412,8 @@ class UserController extends Controller
              }
 
         }
-
-        return 'Jobi done or what ever'; 
+        $url = '/admin/createeleusers/';
+       return redirect()->to($url)->with('message', 'Successfully imported CSV file to database');
 
     }
 

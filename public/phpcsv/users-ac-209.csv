@@ -1,0 +1,3 @@
+id,name,email,password,remember_token,created_at,updated_at,provider,provider_id,registered_at,api_token,displayname
+NULL,9499110487,9499110487_1@eci.com,1,NULL,2018-12-12 11:27:54,2018-12-12 11:27:54,NULL,9499110487_1@eci.com,2018-12-12 11:27:54,NmeOqXHXx8za44xuDWroh48U4Rz9qhhjeTUrdIxHIYxAW87VuEEQ0gkcm201,Jayamma
+NULL,9482033910,9482033910_2@eci.com,2,NULL,2018-12-12 11:27:55,2018-12-12 11:27:55,NULL,9482033910_2@eci.com,2018-12-12 11:27:55,NmeOqXHXx8za44xuDWroh48U4Rz9qhhjeTUrdIxHIYxAW87VuEEQ0gkcm202,B S  Machamma 

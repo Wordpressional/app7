@@ -65,17 +65,25 @@
                 <span class="nav-link-text">After Poll</span>
             </a>
         </li>
-
+         @endrole
+         <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
+                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="#">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Profile</span>
+                    </a>
+                </li>
+       
+         @role(['elec_returningofficer', 'elec_presidingofficer'] )
         <li> 
-                @if(session('user_is_switched'))
-                
-                <a style="color:#ffffff;" href="{{ route('admin.user.elerestore') }}"><i class="fa fa-undo"></i><span>&nbsp;&nbsp;Return to CEO</span></a>
-                
-                @endif
+        @if(session('user_is_switched'))
+        
+        <a style="color:#ffffff;" href="{{ route('admin.user.elerestore') }}"><i class="fa fa-undo"></i><span>&nbsp;&nbsp;Return to CEO</span></a>
+        
+        @endif
                
         </li>
-
         @endrole
+       
         @role(['elec_ceo'])
              <li class="treeview">
                 <a href="#">
@@ -187,12 +195,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="#">
-                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
-                        <span class="nav-link-text">Profile</span>
-                    </a>
-                </li>
+                
                
             
         </ul>
