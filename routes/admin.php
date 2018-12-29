@@ -588,6 +588,23 @@ Route::get('/dumpmodules',[
 ]);
 Route::group(['middleware' => ['role_sadmin:elec_ceo']], function () {
 
+
+Route::get('/accountsettings',[
+
+
+'uses' => 'PollingController@accountSettings',
+'as' => 'polling.accountsettings'
+
+]);
+
+Route::post('/storeelecaccount',[
+
+
+'uses' => 'PollingController@storeelecaccount',
+'as' => 'polling.storeelecaccount'
+
+]);
+
 Route::get('/activitylogs',[
 
 

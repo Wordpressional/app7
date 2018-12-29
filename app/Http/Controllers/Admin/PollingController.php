@@ -38,6 +38,7 @@ use App\Elemactivitylog;
 use Illuminate\Support\Facades\Input;
 
 use App\Role;
+use App\Elecaccount;
 
 class PollingController extends Controller
 {
@@ -694,6 +695,122 @@ $t = count($blos);
            
         }
     }
+
+    public function accountSettings(Request $request)
+    {
+         $data = $this->brandsAll();
+
+          $account = Elecaccount::where('id', 1)->first();
+        //dd($colorsetting[0]->color);
+        //dd($this->commomindex());
+        $data = $this->brandsAll();
+
+        return view('admin.branding.account', compact('data', 'account'));
+    }
+
+    public function storeelecaccount(Request $request)
+    {
+
+        $input = $request->all();
+        //dd("hi");
+        //dd($input);
+
+        if($request->hasFile('filed')){
+
+           //$input = $request->file('filed');
+            //dd("hi");
+           //dd($input);
+            $extension = $request->file('filed')->getClientOriginalExtension(); // getting image extension
+
+            $fine = $request->file('filed')->getClientOriginalName();
+
+        //dd($fine);
+            $newFileName = $fine;
+
+            $dir = public_path(). '/uploads/cmp/';
+           
+             $mime = $request->file('filed')->getMimeType();
+            
+            $path = $request->file('filed')->move($dir, $fine);
+            $path = '/uploads/cmp/'.$fine;
+        }
+
+        if($request->hasFile('filed2')){
+
+           //$input = $request->file('filed');
+            //dd("hi");
+           //dd($input);
+            $extension2 = $request->file('filed2')->getClientOriginalExtension(); // getting image extension
+
+            $fine2 = $request->file('filed2')->getClientOriginalName();
+
+        //dd($fine);
+            $newFileName2 = $fine2;
+
+            $dir2 = public_path(). '/uploads/cmp/';
+            $filename2 =  $fine2;
+                   
+             $mime2 = $request->file('filed2')->getMimeType();
+            
+            $path2 = $request->file('filed2')->move($dir2, $filename2);
+            $path2 = '/uploads/cmp/'.$filename2;
+        }
+
+        if($request->hasFile('filed3')){
+
+           //$input = $request->file('filed');
+            //dd("hi");
+           //dd($input);
+            $extension3 = $request->file('filed3')->getClientOriginalExtension(); // getting image extension
+
+            $fine3 = $request->file('filed3')->getClientOriginalName();
+
+        //dd($fine);
+            $newFileName3 = $fine2;
+
+            $dir3 = public_path(). '/uploads/cmp/';
+            $filename3 =  $fine3;
+                   
+             $mime3 = $request->file('filed3')->getMimeType();
+            
+            $path3 = $request->file('filed3')->move($dir3, $filename3);
+            $path3 = '/uploads/cmp/'.$filename3;
+        }
+
+        
+            $myaccount = Elecaccount::where('id', 1)->first();
+            if($myaccount != "")
+            {
+                $myaccount = Elecaccount::find($myaccount->id);
+                $myaccount->cname = $request->cname;
+                $myaccount->caddr = $request->caddr;
+                $myaccount->cphno = $request->cphno;
+                $myaccount->cemail = $request->cemail;
+                $myaccount->clogo = $path;
+                $myaccount->favicon = $path2;
+                $myaccount->timezone = $request->timezone;
+                $myaccount->defaultprofileimg = $path3;
+
+                $myaccount->save();
+            } 
+            else
+            {
+                $myaccount = new Elecaccount();
+                $myaccount->cname = $request->cname;
+                $myaccount->caddr = $request->caddr;
+                $myaccount->cphno = $request->cphno;
+                $myaccount->cemail = $request->cemail;
+                $myaccount->clogo = $path;
+                $myaccount->favicon = $path2;
+                $myaccount->timezone = $request->timezone;
+                $myaccount->defaultprofileimg = $path3;
+                
+                $myaccount->save();
+            }
+        
+
+    }
+
    
 }
 
