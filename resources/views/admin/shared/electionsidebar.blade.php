@@ -95,14 +95,14 @@
                 <ul class="treeview-menu">
                    
                    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="#">
+                    <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="{{ route('admin.polling.showuserroreport')}}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">RO Report</span>
                     </a>
                 </li>
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
-                    <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="#">
+                    <a class="nav-link {{ Request::is('admin/forms') || Request::is('admin/forms/*') ? 'active' : '' }}" href="{{ route('admin.polling.showuserporeport')}}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">PO Report</span>
                     </a>

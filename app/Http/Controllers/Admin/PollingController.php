@@ -811,7 +811,119 @@ $t = count($blos);
 
     }
 
+    public function showuserroreport()
+    {
+        $acblo_array = array();
+        $lc = array();
+
+        $data = $this->brandsAll();
+         
+        $Elemblo = new Elemblo;
+        $Elemblo->setConnection('mongodb');
+
+        $Elemac = new Elemac;
+
+        $Elemac->setConnection('mongodb');
+
+        $Elemaclists = $Elemac::all();
+         //dd($Elemaclists[4]);
+
+          $user = User::with('roles')->get();
+
+        //dd($user->roles->first()->name);
+        //dd($request->header('User-Agent'));
+
+        foreach($user as $key => $u)
+        {
+            if($u->roles->first()->name == "elec_returningofficer")
+            {
+                 $rc[$key] = $u->id;
+            }
+        }
+        //dd($rc);
+
+        foreach($Elemaclists as $key => $list)
+        {
+           
+          
+            $Elemblolists = $Elemblo::where('acno', $list->acno)->whereIn('userid', $rc)->get();
+
+            $Elemblolists2 = $Elemblo::where('acno', $list->acno)->get();
+
+            $lc[$list->acno] = count($Elemblolists);
+
+            $lc2[$list->acno] = count($Elemblolists2);
+            
+        
+
+        }
+
+       
+        //dd($lc2);
+        
+         
+         return view('admin.ec.reports.roreport',compact('data', 'lc', 'Elemaclists','lc2'));
+     }
+
+
+   public function showuserporeport()
+    {
+        $acblo_array = array();
+        $lc = array();
+
+        $data = $this->brandsAll();
+         
+        $Elemblo = new Elemblo;
+        $Elemblo->setConnection('mongodb');
+
+        $Elemac = new Elemac;
+
+        $Elemac->setConnection('mongodb');
+
+        $Elemaclists = $Elemac::all();
+         //dd($Elemaclists[4]);
+
+          $user = User::with('roles')->get();
+
+        //dd($user->roles->first()->name);
+        //dd($request->header('User-Agent'));
+
+        foreach($user as $key => $u)
+        {
+            if($u->roles->first()->name == "elec_presidingofficer")
+            {
+                 $rc[$key] = $u->id;
+            }
+        }
+        //dd($rc);
+
+        foreach($Elemaclists as $key => $list)
+        {
+           
+          
+            $Elemblolists = $Elemblo::where('acno', $list->acno)->whereIn('userid', $rc)->get();
+
+            $Elemblolists2 = $Elemblo::where('acno', $list->acno)->get();
+
+            $lc[$list->acno] = count($Elemblolists);
+
+            $lc2[$list->acno] = count($Elemblolists2);
+            
+        
+
+        }
+
+       
+        //dd($lc2);
+        
+         
+         return view('admin.ec.reports.poreport',compact('data', 'lc', 'Elemaclists','lc2'));
+     }
+
+     
+
    
+    
 }
 
 

@@ -589,6 +589,23 @@ Route::get('/dumpmodules',[
 Route::group(['middleware' => ['role_sadmin:elec_ceo']], function () {
 
 
+
+Route::get('/showuserroreport',[
+
+
+'uses' => 'PollingController@showuserroreport',
+'as' => 'polling.showuserroreport'
+
+]);
+
+Route::get('/showuserporeport',[
+
+
+'uses' => 'PollingController@showuserporeport',
+'as' => 'polling.showuserporeport'
+
+]);
+
 Route::get('/accountsettings',[
 
 
