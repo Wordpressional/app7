@@ -11,9 +11,11 @@
     @auth
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
-
+    @if($data)
     <title>{{$data['n_companyname']->cname}}</title>
-
+    @else
+    <title></title>
+    @endif
     <!-- Styles -->
 
     <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
