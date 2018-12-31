@@ -28,7 +28,7 @@
                     
                      <td><center>{{ $aclist->acno }}<br>{{ $aclist->acname }}</center></td>
                       
-                       <td><center>{{ $lc[$aclist->acno] }}/{{ $lc2[$aclist->acno] }}</center></td>
+                       <td><center>ERO - {{ $lc[$aclist->acno] }} / AERO - {{ $lc2[$aclist->acno] }} / Booth - {{ $lc3[$aclist->acno] }}</center></td>
                         
                        <td><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-mobile" aria-hidden="true" style="font-size: 30px;"></i></a></td>   
                     

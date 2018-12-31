@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Comment;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
+use App\Http\Traits\AccountsTrait;
 use App\Post;
 use App\User;
 use App\Brand;
@@ -13,12 +14,13 @@ use App\Permission;
 
 use App\Meleuser;
 use App\Elemdist;
-
+use App\Account;
 use Auth;
 
 class ShowDashboard extends Controller
 {
     use BrandsTrait;
+    use AccountsTrait;
     /**
      * Show the application admin dashboard.
      *
@@ -35,27 +37,35 @@ class ShowDashboard extends Controller
 
     public function __invoke()
     {
-       $data = $this->brandsAll();
+        $user = User::where('email', Auth::user()->email)->first();
+
         //dd($data['n_companyname']->cname);
 
-
-       $user = User::where('email', $data['n_loggeduser'])->first();
-
-       $elemdist = new Elemdist;
-        $elemdist->setConnection('mongodb');
-        $something = $elemdist->where('did', 1)->first();
-        //dd($something);
-        if($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes") {
+         
+       
+       
+       
+        if($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes" || $user->isSuperAdmin() == "yes" || $user->isAERO() == "yes") {
+            $data = $this->accountsAll();
             return view('admin.dashboard.index_ceohome', [
                
                 'data' => $data,
-                'something' => $something,
+                
             ]);
         } else if($user->isSuperadministrator() == "yes") {
+            $data = $this->brandsAll();
              return view('admin.dashboard.index_home', [
                 'comments' =>  Comment::lastWeek()->get(),
                 'posts' => Post::lastWeek()->get(),
                 'users' => User::lastWeek()->get(),
+                'data' => $data,
+                
+            ]);
+         }
+             else if($user->isBoothOfficer() == "yes") {
+            $data = $this->accountsAll();
+             return view('admin.dashboard.index_ceohome', [
+                
                 'data' => $data,
                 
             ]);

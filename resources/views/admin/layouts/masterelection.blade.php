@@ -12,7 +12,7 @@
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
 
-    <title>{{ config('app.name', 'Pyrupay') }}</title>
+    <title>{{$data['n_companyname']->cname}}</title>
 
     <!-- Styles -->
 
@@ -68,7 +68,7 @@
     <script src="{{ asset(mix('js/admin.js')) }}"></script>
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
      <script src="//code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>

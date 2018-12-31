@@ -54,7 +54,7 @@
         </div>
 
         <div class="form-group{{ $errors->has('role_id') ? ' has-error' : '' }} ">
-            <label class="col-sm-12 col-form-label" for="category_id">Role
+            <label class="col-sm-12 col-form-label" for="role_id">Role
                 <span class="required">*</span>
             </label>
             <div class="col-md-10 col-sm-12 col-xs-12">
@@ -73,6 +73,23 @@
             </div>
         </div>
 
+        <div class="form-group">
+            <label class="col-sm-12 col-form-label" for="acid">AC
+                <span class="required">*</span>
+            </label>
+            <div class="col-md-10 col-sm-12 col-xs-12">
+                <select class="form-control" id="acid" name="acid">
+                    @if(count($acs))
+                    @foreach($acs as $ac)
+                   
+                    <option value="{{$ac->acid}}">{{$ac->acname}}</option>
+                   
+                    @endforeach
+                    @endif
+                </select>
+                
+            </div>
+        </div>
        
 
 

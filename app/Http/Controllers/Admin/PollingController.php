@@ -9,12 +9,12 @@ use App\Page;
 use App\Cform;
 use App\Form;
 use App\User;
-use App\Brand;
+use App\Account;
 use App\General;
 use File;
 
 use App\Http\Controllers\Controller;
-use App\Http\Traits\BrandsTrait;
+use App\Http\Traits\AccountsTrait;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
@@ -39,10 +39,12 @@ use Illuminate\Support\Facades\Input;
 
 use App\Role;
 use App\Elecaccount;
+use App\Usermac;
+use App\Userero;
 
 class PollingController extends Controller
 {
-	use BrandsTrait;
+	use AccountsTrait;
     /**
      * Show the application dashboard.
      *
@@ -53,9 +55,9 @@ class PollingController extends Controller
    
     public function showpollingform()
     {
-    	$data = $this->brandsAll();
+    	$data = $this->accountsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes")) {
+        if( ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes" || $user->isAERO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingform',compact('data'));
         } else {
@@ -66,9 +68,9 @@ class PollingController extends Controller
 
     public function showpollingdataperhr()
     {
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes")) {
+        if( ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes" || $user->isAERO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingdataentry',compact('data'));
         } else {
@@ -79,9 +81,9 @@ class PollingController extends Controller
 
     public function showpollingexceptiondata()
     {
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes")) {
+        if( ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes" || $user->isAERO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingexception',compact('data'));
         } else {
@@ -92,9 +94,9 @@ class PollingController extends Controller
 
     public function showpollingvoterdata()
     {
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes")) {
+        if( ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes" || $user->isAERO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingvoterdata',compact('data'));
         } else {
@@ -105,9 +107,9 @@ class PollingController extends Controller
 
      public function showpollingstarted()
     {
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
         $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes")) {
+        if( ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes" || $user->isAERO() == "yes")) {
        //dd($data['n_loggeduser']);
         return view('admin.ec.pollingstarted',compact('data'));
         } else {
@@ -123,10 +125,10 @@ class PollingController extends Controller
 
     public function showuserregreport()
     {
-         $data = $this->brandsAll();
+         $data = $this->accountsAll();
 
          $user = User::where('email', $data['n_loggeduser'])->first();
-        if($user->can('pollingformshow')  && ($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes")) {
+        if(($user->isCEO() == "yes" || $user->isPO() == "yes" || $user->isRO() == "yes" || $user->isAERO() == "yes")) {
          return view('admin.ec.pollinguserregreport',compact('data'));
      }
         //return "hi";
@@ -199,19 +201,22 @@ class PollingController extends Controller
 
     public function createeleusers()
     {
-         $data = $this->brandsAll();
+         $data = $this->accountsAll();
          $roles = Role::all();
+         $Elemac = new Elemac;
+         $Elemac->setConnection('mongodb');
+         $acs =  $Elemac->all();
 
-        return view('admin.ec.createeleusersform',compact('data', 'roles'));
+        return view('admin.ec.createeleusersform',compact('data', 'roles', 'acs'));
     }
 
     public function displayusers()
     {
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
         //$users = User::paginate(10);
         $users = User::with('roles')->paginate(50);
         $params = [
-            'title' => 'Users Listing',
+            'title' => 'Users List',
             'users' => $users,
             'data' => $data,
         ];
@@ -219,6 +224,71 @@ class PollingController extends Controller
        // dd($users[0]->roles[0]->name);
         return view('admin.ec.displayusers')->with($params);
 
+    }
+
+    public function displayerousers()
+    {
+        $data = $this->accountsAll();
+
+
+         $user = User::where('email', $data['n_loggeduser'])->first();
+        if($user->isAERO() == "yes") {
+            //dd(Auth::user()->id);
+        $myid = Userero::where('userid', Auth::user()->id)->first();
+
+        if($myid == null)
+        {
+            $myid = Userero::where('aeroid', Auth::user()->id)->first();
+        }
+        //dd($myid);
+        //$users = User::paginate(10);
+        $usersids = Userero::where('aeroid', $myid->aeroid)->get();
+        //dd($usersids);
+
+        $iuser = User::with('roles')->where('id',$myid->aeroid)->first();
+        
+         foreach($usersids as $key => $u)
+        {
+            
+                  
+                 $users2[$key."_".$u->aeroid] = $u->userid;
+                 $usereros[$key] =   $u->aeroid;  
+
+        }
+
+
+       
+        $i = 0;
+         foreach($users2 as $key => $u)
+        {
+           
+
+             $users3[$i] = User::with('roles')->where('id', $u)->get();
+                //$usersids = Userero::where('userid', )->first();  
+                // $users3[$key] = $usersids->userid;
+            $i++;
+
+        }
+       
+       //dd($users3[0]);
+
+        $params = [
+            'title' => 'Users Listing',
+            'users' => $users3,
+            'usereros' => $usereros,
+            'data' => $data,
+            'iuser' => $iuser,
+            'myauthid' => Auth::user()->id,
+
+        ];
+
+       // dd($users[0]->roles[0]->name);
+        return view('admin.ec.displayerousers')->with($params);
+       }
+       else 
+       {
+        return "You do not have permission to access this page"; 
+        }
     }
 
     public function editusers($id)
@@ -428,7 +498,7 @@ class PollingController extends Controller
      $q =  Input::get ( 'q' );
     
     //dd($q);
-     $data = $this->brandsAll();
+     $data = $this->accountsAll();
      //dd($data);
      $roles = Role::with('permissions')->get();
   //dd("kk"); 
@@ -473,7 +543,7 @@ class PollingController extends Controller
         $Elempart = new Elempart;
         $Elempart->setConnection('mongodb');
     //dd($q);
-     $data = $this->brandsAll();
+     $data = $this->accountsAll();
    
     if($q != ""){
         
@@ -592,7 +662,7 @@ $t = count($blos);
             $Elemactivitylog->username = $user->name;
             $Elemactivitylog->useremail = $user->email;
             $Elemactivitylog->userrole = $user->roles->first()->name;
-            $Elemactivitylog->eventname = "ceo switched to user ".$user->roles->first()->displayname;
+            $Elemactivitylog->eventname = "ceo switched to user ".$user->roles->first()->display_name;
             $Elemactivitylog->devicedetails = $request->header('User-Agent');
             $Elemactivitylog->userid = $newuserId;
             $Elemactivitylog->bloid = $elemblodetails->bloid;
@@ -643,7 +713,7 @@ $t = count($blos);
             $Elemactivitylog->username = $user->name;
             $Elemactivitylog->useremail = $user->email;
             $Elemactivitylog->userrole = $user->roles->first()->name;
-            $Elemactivitylog->eventname = "ceo switched back from user ". $user->roles->first()->displayname;
+            $Elemactivitylog->eventname = "ceo switched back from user ". $user->roles->first()->display_name;
             $Elemactivitylog->devicedetails = $request->header('User-Agent');
             $Elemactivitylog->userid = $userid;
             $Elemactivitylog->bloid =  $newUserId;
@@ -657,7 +727,7 @@ $t = count($blos);
 
    
    public function activitylogs(Request $request) {
-    $data = $this->brandsAll();
+    $data = $this->accountsAll();
         $Elemactivitylog = new Elemactivitylog;
         $Elemactivitylog->setConnection('mongodb');
         $elemactivitylogdetails = $Elemactivitylog->all();
@@ -698,12 +768,12 @@ $t = count($blos);
 
     public function accountSettings(Request $request)
     {
-         $data = $this->brandsAll();
+         $data = $this->accountsAll();
 
           $account = Elecaccount::where('id', 1)->first();
         //dd($colorsetting[0]->color);
         //dd($this->commomindex());
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
 
         return view('admin.branding.account', compact('data', 'account'));
     }
@@ -816,7 +886,7 @@ $t = count($blos);
         $acblo_array = array();
         $lc = array();
 
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
          
         $Elemblo = new Elemblo;
         $Elemblo->setConnection('mongodb');
@@ -840,19 +910,30 @@ $t = count($blos);
                  $rc[$key] = $u->id;
             }
         }
+
+        foreach($user as $key => $u)
+        {
+            if($u->roles->first()->name == "elec_asistantreturningofficer")
+            {
+                 $rc1[$key] = $u->id;
+            }
+        }
         //dd($rc);
 
         foreach($Elemaclists as $key => $list)
         {
            
           
-            $Elemblolists = $Elemblo::where('acno', $list->acno)->whereIn('userid', $rc)->get();
+            $usermac = Usermac::where('acid', $list->acno)->whereIn('userid', $rc)->get();
+
+            $usermac2 = Usermac::where('acid', $list->acno)->whereIn('userid', $rc1)->get();
 
             $Elemblolists2 = $Elemblo::where('acno', $list->acno)->get();
 
-            $lc[$list->acno] = count($Elemblolists);
+            $lc[$list->acno] = count($usermac);
 
-            $lc2[$list->acno] = count($Elemblolists2);
+            $lc2[$list->acno] = count($usermac2);
+            $lc3[$list->acno] = count($Elemblolists2);
             
         
 
@@ -862,7 +943,7 @@ $t = count($blos);
         //dd($lc2);
         
          
-         return view('admin.ec.reports.roreport',compact('data', 'lc', 'Elemaclists','lc2'));
+         return view('admin.ec.reports.roreport',compact('data', 'lc', 'Elemaclists','lc2', 'lc3'));
      }
 
 
@@ -871,7 +952,7 @@ $t = count($blos);
         $acblo_array = array();
         $lc = array();
 
-        $data = $this->brandsAll();
+        $data = $this->accountsAll();
          
         $Elemblo = new Elemblo;
         $Elemblo->setConnection('mongodb');
@@ -920,7 +1001,81 @@ $t = count($blos);
          return view('admin.ec.reports.poreport',compact('data', 'lc', 'Elemaclists','lc2'));
      }
 
+     public function ajax_prepolldetail1(Request $request)
+     {
+        dd($request);
+     }
+
+     public function listusers(Request $request)
+     {
+
+        $data = $this->accountsAll();
+        $users1 = array();
+        $users2 = array();
+
+        $users = User::with('roles')->get();
+        foreach($users as $key => $u)
+        {
+            if($u->roles->first()->name == "elec_returningofficer")
+            {
+                 $rc1[$key] = $u->id;
+                 $users1[$key] = $u;
+            }
+
+        }
+
+        foreach($users as $key => $u)
+        {
+            if($u->roles->first()->name == "elec_asistantreturningofficer")
+            {
+                 $rc2[$key] = $u->id;
+                 $users2[$key] = $u;
+            }
+
+        }
+        //dd($users2);
+        return view('admin.ec.usereromapping',compact('data','users1', 'users2', 'rc2', 'rc1'));
+     }
+
+     public function storeromapping(Request $request)
+     {
+
+        $user = Userero::where('aeroid', $request->userid2)->where('userid', $request->userid1)->first();
+         $url = '/admin/listusers/';
+         if($user){
+             return redirect()->to($url)->with('message', 'Already Mapped Users');
+         } 
+         else
+         {
+         $usermac = new Userero();
+
+
+            $usermac->userid = $request->userid1;
+            $usermac->aeroid = $request->userid2;
+            $usermac->save();
+
+            
+       return redirect()->to($url)->with('message', 'Successfully Mapped Users');
+        }
+     }
+
      
+    public function materialslist()
+    {
+        $data = $this->accountsAll();
+        //$users = User::paginate(10);
+        
+        $params = [
+            'title' => 'Materials List',
+            
+            'data' => $data,
+        ];
+
+       // dd($users[0]->roles[0]->name);
+        return view('admin.ec.materialslist')->with($params);
+
+    }
+
 
    
     

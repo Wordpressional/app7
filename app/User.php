@@ -221,14 +221,14 @@ class User extends Authenticatable
        return false;
     }
 
-    public function isARO()
+    public function isAERO()
     {
       $data = $this->brandsAll();
        $user = User::where('email', $data['n_loggeduser'])->first();
        $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
        //dd($role->name);
        
-      if($role->roles[0]->name == "elec_apresidingofficer")
+      if($role->roles[0]->name == "elec_asistantreturningofficer")
        {
            return true;
        }
@@ -276,4 +276,19 @@ class User extends Authenticatable
        }
        return "no";
     }
+
+    public function isBoothOfficer()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "elec_bootlevelofficer")
+       {
+           return "yes";
+       }
+       return "no";
+    }
+    
 }

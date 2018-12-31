@@ -8,9 +8,7 @@
     
      
 
-      <a class="btn btn-sm btn-primary moveright" href="{{route('admin.polling.createeleusers')}}" style="margin-left:30px;">Create Users</a>
-
-      <a class="btn btn-sm btn-primary moveright" href="{{route('admin.polling.listusers')}}">Map Users</a>
+      
       <h2>{{$title}}</h2>
 
 
@@ -47,34 +45,63 @@
           </thead>
           <tbody>
             @php $i=1 @endphp
-              @foreach($users as $key => $user)
-               @if($user->roles[0]->name == "elec_ceo"  || $user->roles[0]->name == "elec_returningofficer"  || $user->roles[0]->name == "elec_presidingofficer"  || $user->roles[0]->name == "elec_sectorofficer" || $user->roles[0]->name == "elec_asistantreturningofficer" || $user->roles[0]->name == "elec_bootlevelofficer")
+            
                   <tr>
-                    <td>{{ $i++ }}</td>
-                    <td>{{ $user->name }}</td>
-                    <td>{{ $user->email }}</td>
+                    <td>{{ $i++}} </td>
+                    <td>{{ $iuser->name }}</td>
+                    <td>{{ $iuser->email }}</td>
                     
-                     <td>{{ $user->roles[0]->display_name}}</td>
+                     <td>{{ $iuser->roles[0]->display_name}}</td>
                    
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="{{ route('admin.eleusers.editelec', ['id' => $user->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
+                        <a class="btn btn-primary" href="{{ route('admin.eleusers.editelec', ['id' => $iuser->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
                         
 
                       </div>
                     </td>
                       <td><form action="{{ route('admin.user.eleswitch') }}" method="POST">
-                    <input type="hidden" name="new_user_id" value="{{ $user->id }}">
+                    <input type="hidden" name="new_user_id" value="{{ $iuser->id }}">
                    
                     {{ csrf_field() }}
                     <button type="submit" class="btn btn-info"><i class="fa fa-sign-in" style="font-size: 20px;" aria-hidden="true"></i> Login</button>
                 </form></td>
-                 @endif
+                
                   </tr>
+                
+              @foreach($users as $key => $user)
+
+              @foreach($user as $key => $u)
+             
+                  <tr>
+                    <td>{{ $i++}} </td>
+                    <td>{{ $u->name }}</td>
+                    <td>{{ $u->email }}</td>
+                    
+                     <td>{{ $u->roles[0]->display_name}}</td>
+                   
+                    <td>
+                      <div class="btn-group">
+                        <a class="btn btn-primary" href="{{ route('admin.eleusers.editelec', ['id' => $u->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
+                        
+
+                      </div>
+                    </td>
+                      <td><form action="{{ route('admin.user.eleswitch') }}" method="POST">
+                    <input type="hidden" name="new_user_id" value="{{ $u->id }}">
+                   
+                    {{ csrf_field() }}
+                    <button type="submit" class="btn btn-info"><i class="fa fa-sign-in" style="font-size: 20px;" aria-hidden="true"></i> Login</button>
+                </form></td>
+                
+                  </tr>
+                  
+                   @endforeach
                   @endforeach
+                    
           </tbody>
         </table>
-        {{ $users->links() }}
+       
       </div>
     </main>
   </div>

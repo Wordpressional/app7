@@ -10,6 +10,8 @@ use App\Role;
 use App\Permission;
 use App\Meleuser;
 use App\Elemdist;
+use App\Usermac;
+use App\Elemac;
 
 class UserController extends Controller
 {
@@ -385,6 +387,10 @@ class UserController extends Controller
         $customerArr = $this->csvToArray($file,',',$request->csvname);
         //dd($customerArr[0]);
        
+        $Elemac = new Elemac;
+        $Elemac->setConnection('mongodb');
+        $ac = $Elemac->where('acid', (int) $request->acid)->first();
+        //dd($request->acid);
         for ($i = 0; $i < count($customerArr); ++$i)
         {
             User::firstOrCreate($customerArr[$i]);
@@ -397,7 +403,9 @@ class UserController extends Controller
 
             $user = User::where('email', $customerArr[$i]['email'])->first();
             //dd($user->id);
-            $role = Role::where('id', $request->role_id)->first();
+
+            $userroleid = (int) $request->role_id;
+            $role = Role::find($userroleid);
             //dd($role);
              $roleid = Role::find($role->id);
              //dd($roleid);
@@ -410,6 +418,12 @@ class UserController extends Controller
                
                  $user->attachPermission($permission);
              }
+
+            $usermac = new Usermac();
+            $usermac->userid = $user->id;
+            $usermac->acid = $request->acid;
+            $usermac->save();
+            
 
         }
         $url = '/admin/createeleusers/';

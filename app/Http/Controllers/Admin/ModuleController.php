@@ -90,7 +90,13 @@ class ModuleController extends Controller
        
         $module->mstatus = "installed";
         $module->save();
+         $role = Role::where('name', "elec_superadmin")->first();
 
+        if($role)
+        {
+        } 
+        else
+        {
         $permodule = Permodule::all();
         foreach($permodule as $permodule)
         {
@@ -100,8 +106,8 @@ class ModuleController extends Controller
             $per->description = $permodule->pername;
             $per->save();
         }
-        $module->mstatus = "installed";
-        $module->save();
+        
+       
 
         	$roles = new Role;
             $roles->name = "elec_superadmin";
@@ -133,7 +139,12 @@ class ModuleController extends Controller
             $roles->display_name = "Assistant Returning Officer";
             $roles->description = "Election Commission Assistant Returning Officer";
             $roles->save();
-
+            $roles = new Role;
+            $roles->name = "elec_bootlevelofficer";
+            $roles->display_name = "Assistant Returning Officer";
+            $roles->description = "Election Commission Assistant Returning Officer";
+            $roles->save();
+        }
            
         
         return redirect('/admin/modules');
@@ -146,7 +157,7 @@ class ModuleController extends Controller
         $module->mstatus = "uninstalled";
         $module->save();
 
-        $permodule = Permodule::where('modulename', $module->modulename)->get();
+       /* $permodule = Permodule::where('modulename', $module->modulename)->get();
 
         //dd($permodule);
       	foreach($permodule as $permodule)
@@ -160,6 +171,7 @@ class ModuleController extends Controller
         Role::where('name', 'elec_presidingofficer')->delete();
         Role::where('name', 'elec_sectorofficer')->delete();
         Role::where('name', 'elec_asistantreturningofficer')->delete();
+        Role::where('name', 'elec_boothlevelofficer')->delete();*/
 
          return redirect('/admin/modules');
 

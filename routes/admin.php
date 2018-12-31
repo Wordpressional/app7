@@ -586,9 +586,62 @@ Route::get('/dumpmodules',[
 'as' => 'module.dumpmodules'
 
 ]);
+
+Route::group(['middleware' => ['role_sadmin:elec_superadmin']], function () {
+Route::get('/accountsettings',[
+
+
+'uses' => 'PollingController@accountSettings',
+'as' => 'polling.accountsettings'
+
+]);
+});
+
+Route::group(['middleware' => ['role_sadmin:elec_bootlevelofficer']], function () {
+Route::get('/materialslist',[
+
+
+'uses' => 'PollingController@materialslist',
+'as' => 'polling.materialslist'
+
+]);
+});
+Route::group(['middleware' => ['role_sadmin:elec_asistantreturningofficer']], function () {
+Route::get('/displayerousers',[
+
+
+'uses' => 'PollingController@displayerousers',
+'as' => 'polling.displayerousers'
+
+]);
+});
+
 Route::group(['middleware' => ['role_sadmin:elec_ceo']], function () {
 
 
+Route::get('/listusers',[
+
+
+'uses' => 'PollingController@listusers',
+'as' => 'polling.listusers'
+
+]);
+
+Route::post('/storeromapping',[
+
+
+'uses' => 'PollingController@storeromapping',
+'as' => 'polling.storeromapping'
+
+]);
+
+Route::post('/ajaxprepolldetail1',[
+
+
+'uses' => 'PollingController@ajax_prepolldetail1',
+'as' => 'polling.ajaxprepolldetail1'
+
+]);
 
 Route::get('/showuserroreport',[
 
@@ -606,13 +659,7 @@ Route::get('/showuserporeport',[
 
 ]);
 
-Route::get('/accountsettings',[
 
-
-'uses' => 'PollingController@accountSettings',
-'as' => 'polling.accountsettings'
-
-]);
 
 Route::post('/storeelecaccount',[
 
@@ -697,6 +744,9 @@ Route::get('/displayusers',[
 'as' => 'polling.displayusers'
 
 ]);
+
+
+
 
 Route::post('/createusersfromceo',[
 

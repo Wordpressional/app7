@@ -12,7 +12,7 @@
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
 
-    <title>{{ config('app.name', 'Pyrupay') }}</title>
+    <title>{{$data['n_companyname']->cname}}</title>
 
     <!-- Styles -->
 

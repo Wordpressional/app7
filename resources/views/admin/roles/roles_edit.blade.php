@@ -1,4 +1,4 @@
-@extends('admin.layouts.adminpages')
+@extends('admin.layouts.master')
 
 @section('content')
 <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
