@@ -1,5 +1,6 @@
 <?php
 
+
 Route::get('dashboard', 'ShowDashboard')->name('dashboard');
 
 Route::get('/forms/snippets',[
@@ -257,6 +258,13 @@ Route::post('/forms/update/{id}',[
 
 'uses' => 'FormbuilderController@update',
 'as' => 'forms.update'
+
+]);
+Route::post('/forms/updatepre/{id}',[
+
+
+'uses' => 'FormbuilderController@updatepre',
+'as' => 'forms.updatepre'
 
 ]);
 Route::post('/cforms/update/{id}',[
@@ -578,7 +586,97 @@ Route::get('/dumpmodules',[
 'as' => 'module.dumpmodules'
 
 ]);
+
+Route::group(['middleware' => ['role_sadmin:elec_superadmin']], function () {
+Route::get('/accountsettings',[
+
+
+'uses' => 'PollingController@accountSettings',
+'as' => 'polling.accountsettings'
+
+]);
+});
+
+Route::group(['middleware' => ['role_sadmin:elec_bootlevelofficer']], function () {
+Route::get('/materialslist',[
+
+
+'uses' => 'PollingController@materialslist',
+'as' => 'polling.materialslist'
+
+]);
+});
+Route::group(['middleware' => ['role_sadmin:elec_asistantreturningofficer']], function () {
+Route::get('/displayerousers',[
+
+
+'uses' => 'PollingController@displayerousers',
+'as' => 'polling.displayerousers'
+
+]);
+});
+
 Route::group(['middleware' => ['role_sadmin:elec_ceo']], function () {
+
+
+Route::get('/listusers',[
+
+
+'uses' => 'PollingController@listusers',
+'as' => 'polling.listusers'
+
+]);
+
+Route::post('/storeromapping',[
+
+
+'uses' => 'PollingController@storeromapping',
+'as' => 'polling.storeromapping'
+
+]);
+
+Route::post('/ajaxprepolldetail1',[
+
+
+'uses' => 'PollingController@ajax_prepolldetail1',
+'as' => 'polling.ajaxprepolldetail1'
+
+]);
+
+Route::get('/showuserroreport',[
+
+
+'uses' => 'PollingController@showuserroreport',
+'as' => 'polling.showuserroreport'
+
+]);
+
+Route::get('/showuserporeport',[
+
+
+'uses' => 'PollingController@showuserporeport',
+'as' => 'polling.showuserporeport'
+
+]);
+
+
+
+Route::post('/storeelecaccount',[
+
+
+'uses' => 'PollingController@storeelecaccount',
+'as' => 'polling.storeelecaccount'
+
+]);
+
+Route::get('/activitylogs',[
+
+
+'uses' => 'PollingController@activitylogs',
+'as' => 'polling.activitylogs'
+
+]);
+
 Route::get('/showpollingform',[
 
 
@@ -586,4 +684,249 @@ Route::get('/showpollingform',[
 'as' => 'polling.showpollingform'
 
 ]);
+Route::get('/showpollingdataperhr',[
+
+
+'uses' => 'PollingController@showpollingdataperhr',
+'as' => 'polling.showpollingdataperhr'
+
+]);
+Route::get('/showpollingexceptiondata',[
+
+
+'uses' => 'PollingController@showpollingexceptiondata',
+'as' => 'polling.showpollingexceptiondata'
+
+]);
+Route::get('/showpollingvoterdata',[
+
+
+'uses' => 'PollingController@showpollingvoterdata',
+'as' => 'polling.showpollingvoterdata'
+
+]);
+Route::get('/showpollingstarted',[
+
+
+'uses' => 'PollingController@showpollingstarted',
+'as' => 'polling.showpollingstarted'
+
+]);
+
+Route::get('/createeleusers',[
+
+
+'uses' => 'PollingController@createeleusers',
+'as' => 'polling.createeleusers'
+
+]);
+
+Route::post('/storecsv',[
+
+
+'uses' => 'PollingController@storecsv',
+'as' => 'polling.storecsv'
+
+]);
+
+Route::get('/jsonuser',[
+
+
+'uses' => 'PollingController@jsonuser',
+'as' => 'polling.jsonuser'
+
+]);
+
+Route::get('/displayusers',[
+
+
+'uses' => 'PollingController@displayusers',
+'as' => 'polling.displayusers'
+
+]);
+
+
+
+
+Route::post('/createusersfromceo',[
+
+
+'uses' => 'PollingController@createusersfromceo',
+'as' => 'polling.createusersfromceo'
+
+]);
+
+Route::post('/usersearch',[
+
+
+'uses' => 'PollingController@userSearch',
+'as' => 'polling.usersearch'
+
+]);
+
+Route::post('/blosearch',[
+
+
+'uses' => 'PollingController@bloSearch',
+'as' => 'polling.blosearch'
+
+]);
+
+Route::get('/eleusers/editelec/{id}',[
+
+'uses' => 'UserController@editelec',
+'as' => 'eleusers.editelec'
+
+]);
+Route::put('/eleusers/updateelec/{id}',[
+
+'uses' => 'UserController@updateelec',
+'as' => 'eleusers.updateelec'
+
+]);
+Route::get('/eleusers/deleteelec/{id}',[
+
+'uses' => 'UserController@destroyelec',
+'as' => 'eleusers.deleteelec'
+
+]);
+Route::get('/users/restoreelec/{id}',[
+
+'uses' => 'UserController@restoreelec',
+'as' => 'eleusers.restoreelec'
+
+]);
+//Route::post('image-view','ImageController@store');
+
+Route::get('/testmongo',[
+
+
+'uses' => 'PollingController@someMethod',
+'as' => 'polling.testmongo'
+
+]);
+
+Route::get('/csvtoarray',[
+
+
+'uses' => 'UserController@csvToArray',
+'as' => 'polling.csvtoarray'
+
+]);
+
+Route::post('/importcsv',[
+
+
+'uses' => 'UserController@importCsv',
+'as' => 'polling.importcsv'
+
+]);
+
+Route::get('/importcsv',[
+
+
+'uses' => 'UserController@importCsv',
+'as' => 'polling.importcsv'
+
+]);
+
+Route::get('/showuserregreport',[
+
+
+'uses' => 'PollingController@showuserregreport',
+'as' => 'polling.showuserregreport'
+
+]);
+
+Route::get('/ajax-select-dist/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxDist',
+'as' => 'polling.ajax-select-dist'
+
+]);
+
+Route::get('/ajax-select-ac/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxAC',
+'as' => 'polling.ajax-select-ac'
+
+]);
+
+Route::get('/ajax-select-part/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxPart',
+'as' => 'polling.ajax-select-part'
+
+]);
+
+Route::get('/ajax-select-blo/{id}',[
+
+
+'uses' => 'PollingController@selectAjaxBlo',
+'as' => 'polling.ajax-select-blo'
+
+]);
+
+Route::get('/ajax-select-blopart/{pid}',[
+
+
+'uses' => 'PollingController@selectAjaxBloPart',
+'as' => 'polling.ajax-select-blopart'
+
+]);
+
+Route::post('eleswitchuser', 'PollingController@eleSwitchUser')->name('user.eleswitch');
+Route::get('elerestoreuser', 'PollingController@eleRestoreUser')->name('user.elerestore');
+
+
 });
+
+Route::resource('task', 'TaskController');
+Route::get('/task/create',[
+
+
+'uses' => 'TaskController@create',
+'as' => 'task.create'
+
+]);
+Route::get('/task/index',[
+
+
+'uses' => 'TaskController@index',
+'as' => 'task.index'
+
+]);
+Route::post('/task/store',[
+
+
+'uses' => 'TaskController@store',
+'as' => 'task.store'
+
+]);
+
+Route::get('/task/edit/{id}',[
+
+
+'uses' => 'TaskController@edit',
+'as' => 'task.edit'
+
+]);
+Route::get('/task/destroy/{id}',[
+
+
+'uses' => 'TaskController@destroy',
+'as' => 'task.destroy'
+
+]);
+
+Route::patch('/task/update/{id}',[
+
+
+'uses' => 'TaskController@update',
+'as' => 'task.update'
+
+]);
+

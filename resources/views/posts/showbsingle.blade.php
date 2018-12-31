@@ -1,4 +1,4 @@
- <div id="app">
+ 
         
  <div class="jumbotron jumbotron bg-coverpost ">
   <div class="overlay"></div>
@@ -28,19 +28,23 @@
 <div class="card-text"><small v-pre class="text-muted">{{ $post->pubyear }}</small></div>
 <br>
 
-
+<div id="app">
+	<div>
 	<p class="mt-3">
 <like
 likes_count="{{ $post->likes_count }}"
 liked="{{ $post->isLiked() }}"
 item_id="{{ $post->id }}"
+item_slug="{{ $post->slug }}"
 item_type="posts"
+item_token="{{ $api_token }}"
 logged_in="{{ Auth::check() }}"
 ></like>
 </p>
 
-@include ('comments/_list')
 
+@include ('comments/_list')
+</div>
 </div>
 </div>
 </div>

@@ -23,6 +23,10 @@
 
     <title>{{ config('app.name', 'Pyrupay') }}</title>
       <!-- Icon css link -->
+
+
+     
+    
 <link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
@@ -41,6 +45,7 @@
 <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
 
+<link href="{{ asset('webhome/css/fixed.css') }}" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -124,7 +129,7 @@
         });     
  </script>     
 
-  <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+  
    <!-- Extra plugin css -->
         <script src="{{ asset('webhome/vendors/counterup/jquery.waypoints.min.js') }}"></script>
         <script src="{{ asset('webhome/vendors/counterup/jquery.counterup.min.js') }}"></script>
@@ -165,6 +170,8 @@
   <script src="{{ asset('js/wow.min.js') }}"></script>
   <!-- scripts js -->
   <script src="{{ asset('js/main.js') }}"></script>
+
+
    
     <script>
         var demo = new JParticles.particle( '#demo' );

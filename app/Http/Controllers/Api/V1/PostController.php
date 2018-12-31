@@ -78,6 +78,14 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+       
+        return new PostResource($post);
+    }
+
+    public function showpost($id)
+    {
+        $post = Post::where('id',$id)->first();
+        //dd($post);
         return new PostResource($post);
     }
 

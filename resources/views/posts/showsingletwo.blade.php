@@ -29,7 +29,7 @@
 likes_count="{{ $post->likes_count }}"
 liked="{{ $post->isLiked() }}"
 item_id="{{ $post->id }}"
-item_type="posts"
+item_type="postshow"
 logged_in="{{ Auth::check() }}"
 ></like>
 </p>

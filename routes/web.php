@@ -10,15 +10,16 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+use Illuminate\Support\Facades\Redis;
 
 
 
 Route::get('/', 'WebhomeController@frontpage')->name('home');
 Route::get('/testabc', 'WebhomeController@test33');
 Route::get('/index123', 'WebhomeController@index123');
-Route::get('/welcome1', 'WebhomeController@welcome1');
+Route::get('/welcome1', 'WebhomeController@welcome1')->name('welcome1');
 
+Route::get('/home1', 'WebhomeController@home1')->name('home1');
 
    
 Route::get('/allposts', 'PostController@index')->name('allposts');
@@ -88,8 +89,8 @@ Route::get('/download', 'WebhomeController@download');
 Route::get('/laravel-filemanager', '\UniSharp\LaravelFilemanager\Controllers\LfmController@show')->name('laravel-filemanager');
     Route::post('/laravel-filemanager/upload', '\UniSharp\LaravelFilemanager\Controllers\UploadController@upload');
 
-Route::get('/createconfig', 'InitialController@createconfig')->name('createconfig');
-Route::post('/generateconfig/',[
+//Route::get('/createconfig', 'InitialController@createconfig')->name('createconfig');
+/*Route::post('/generateconfig/',[
 
 'uses' => 'InitialController@generateconfig',
 'as' => 'config.generateconfig'
@@ -101,7 +102,7 @@ Route::post('/generatedatabase/',[
 'uses' => 'InitialController@generatedatabase',
 'as' => 'config.generatedatabase'
 
-]);
+]);*/
 
 // Administrator & SuperAdministrator Control Panel Routes
 Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'middleware' => ['role:administrator|superadministrator'], 'namespace' => 'Admin'], function () {
@@ -109,3 +110,17 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'middleware' => ['rol
     Route::resource('permission', 'PermissionController');
     Route::resource('roles', 'RolesController');
 });
+Route::get('/test', 'WebhomeController@test')->name('test');
+Route::get('/broadcast-test', 'WebhomeController@broadcasttest')->name('test');
+   
+
+Route::get('/redistest', function () {
+    $visits = Redis::incr('visits');
+    return $visits;
+});
+
+Route::get('a',function(){
+    $user = Auth::loginUsingId(2, true);
+    return $user;
+});
+

@@ -12,7 +12,7 @@
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
 
-    <title>{{ config('app.name', 'Pyrupay') }}</title>
+    <title>{{$data['n_companyname']->cname}}</title>
 
     <!-- Styles -->
 
@@ -21,10 +21,17 @@
      <link rel="stylesheet" href="{{asset('css/public.css')}}" />
     <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/skins/_all-skins.min.css')}}" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+    <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
  <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
+ <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+ <link rel="stylesheet" href="{{asset('css/dataTables.responsive.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.datatables.net/scroller/1.5.1/css/scroller.dataTables.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('css/election.css')}}" />
+
     <link rel="manifest" href="{{url('/manifest.json')}}">
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
 
@@ -38,7 +45,7 @@
         </div>
     <div class="content-wrapper bg-light">
 
-    <div id="app">
+    <div id="app1">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -60,8 +67,13 @@
     <script src="{{ asset(mix('js/app.js')) }}"></script>
     <script src="{{ asset(mix('js/admin.js')) }}"></script>
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
+     <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ asset('js/dataTables.responsive.js') }}"></script>
     <script src="{{ asset('js/colorcommon.js') }}"></script>
    
    
@@ -215,7 +227,48 @@ if ('serviceWorker' in navigator) {
  
 
 });
+
 </script>
+<script>
+$(document).ready(function() {
+      
+  $('.pollingdata').hide();
+});
+   
+
+$('.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    //minTime: '10',
+    //maxTime: '12:00pm',
+    //defaultTime: '11',
+    startTime: '1:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+
+</script>
+<script>
+
+    function show(id) {
+    
+     if (id == 1) {
+
+        var d = $('#pollingstartedinpt').val();
+        
+        document.getElementById('pollingstarted').innerHTML = "Polling Started at: "+ d;
+        $('.pollingdata').show();
+     }
+     
+
+     
+   }
+
+
+</script>
+
+
     @yield('scripts')
 </body>
 </html>

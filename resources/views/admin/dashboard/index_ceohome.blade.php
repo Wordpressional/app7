@@ -4,6 +4,4 @@
  <h3> Poll Day Monitoring System </h3>
 
 
-
-
 @endsection

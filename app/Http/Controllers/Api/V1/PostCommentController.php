@@ -7,8 +7,11 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\CommentsRequest;
 use App\Http\Resources\Comment as CommentResource;
 use App\Post;
+use App\User;
+use App\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class PostCommentController extends Controller
 {
@@ -36,7 +39,7 @@ class PostCommentController extends Controller
     public function store(CommentsRequest $request, Post $post)
     {
         $comment = new CommentResource(
-            Auth::user()->comments()->create([
+            Auth::guard('api')->user()->commentsfromusers()->create([
                 'post_id' => $post->id,
                 'content' => $request->input('content')
             ])

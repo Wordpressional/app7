@@ -11,6 +11,7 @@ use Imagecow\Image;
 use Shortcode;
 use File;
 use Illuminate\Support\Facades\DB;
+use App\Events\TestEvent;
 
 class WebhomeController extends Controller
 {
@@ -54,6 +55,27 @@ class WebhomeController extends Controller
         
          return view('webhome.pyrupayindex');
 
+    }
+
+     public function home1()
+    {
+        
+         return view('webhome.home1');
+
+    }
+
+     public function test()
+    {
+        
+         return view('test');
+
+    }
+
+
+    public function broadcasttest()
+    {
+        event(new TestEvent('The server time is now ' . date('H:i:s')));
+        return ('The server time is now ' . date('H:i:s')); 
     }
 
 

@@ -23,16 +23,14 @@
     <!-- Start of KEditor styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor.min.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor-components.min.css')}}" />
-    <!-- End of KEditor styles -->
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/plugins/code-prettify/src/prettify.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/css/examples.css')}}" />
+    
      <!-- Start of KEditor styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor.min.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor-components.min.css')}}" />
     <!-- End of KEditor styles -->
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/plugins/code-prettify/src/prettify.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('examples/css/examples.css')}}" />
-     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+   
+    
+     
     
 
 </head>
@@ -86,7 +84,10 @@
         <script type="text/javascript" src="{{asset('examples/plugins/js-beautify-1.7.5/js/lib/beautify.js')}}"></script>
         <script type="text/javascript" src="{{asset('examples/plugins/js-beautify-1.7.5/js/lib/beautify-html.js')}}"></script>
         <script type="text/javascript" src="{{asset('examples/js/examples.js')}}"></script>
-       
+        
+
     @yield('scripts')
+   
+</style>
 </body>
 </html>

@@ -1,8 +1,3 @@
-
-
-
-
-
 <!-------------------------------------------------------------------------------------------------->
 <!-- Containers -->
 <!-------------------------------------------------------------------------------------------------->
@@ -129,18 +124,18 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/introslider1.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Introslider">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/introslider1.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Introslider">
 
 @include('shortcodes.plainhtml.introslider')
 
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/services1.png')}}" data-keditor-title="Services" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Services">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/services1.png')}}" data-keditor-title="Services" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;Services">
 
 @include('shortcodes.plainhtml.services')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;pagesliderwidget">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="Text;Heading;Bootstrap component;Dynamic component;pagesliderwidget">
 
 @include('shortcodes.plainhtml.innerpageslider')
 

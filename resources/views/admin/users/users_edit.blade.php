@@ -1,4 +1,4 @@
-@extends('admin.layouts.adminpages')
+@extends('admin.layouts.master')
 
 @section('content')
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
@@ -27,6 +27,8 @@
                 @endif
             </div>
         </div>
+
+        
 
         <div class="form-group{{ $errors->has('role_id') ? ' has-error' : '' }} row">
             <label class="col-sm-2 col-form-label" for="category_id">Role

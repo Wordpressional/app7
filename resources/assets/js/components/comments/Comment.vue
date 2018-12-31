@@ -21,13 +21,13 @@
 
 <script>
 export default {
-  props: ["comment", "data_confirm"],
+  props: ["comment", "data_confirm", "api_token"],
 
   methods: {
     deleteComment() {
       if (confirm(this.data_confirm)) {
         axios
-          .delete("api/v1/comments/" + this.comment.id)
+          .delete("../api/v1/comments/" + this.comment.id+"/?api_token="+this.api_token)
           .then(response => {
             this.$emit("deleted", this);
           })

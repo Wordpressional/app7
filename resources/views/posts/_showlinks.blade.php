@@ -20,7 +20,9 @@
 		likes_count="{{ $post->likes_count }}"
 		liked="{{ $post->isLiked() }}"
 		item_id="{{ $post->id }}"
-		item_type="posts"
+		item_slug="{{ $post->slug }}"
+    	item_type="posts"
+    	item_token="{{ $api_token }}"
 		logged_in="{{ Auth::check() }}"
 		></like>
       </small>

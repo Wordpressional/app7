@@ -5,6 +5,7 @@
  */
 
 window.$ = window.jQuery = require('jquery');
+
 window.Popper = require('popper.js').default;
 
 require('bootstrap');
@@ -42,6 +43,7 @@ let api_token = document.head.querySelector('meta[name="api-token"]');
 if (api_token) {
   axios.defaults.headers.common['Authorization'] = 'Bearer ' + api_token.content;
 }
+
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

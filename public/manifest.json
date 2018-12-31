@@ -61,7 +61,8 @@
     }
     
   ],
-  "start_url": "/dynamic/admin/dashboard/",
+  "start_url": "/dynamic/mylogin",
+  "scope": ["/dynamic", "/dynamic/mylogin", "/dynamic/admin/dashboard"],
   "display": "standalone",
   "theme_color": "#3367D6"
 }

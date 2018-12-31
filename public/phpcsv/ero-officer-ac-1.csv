@@ -1,0 +1,3 @@
+id,name,email,password,remember_token,created_at,updated_at,provider,provider_id,registered_at,api_token,displayname
+NULL,08172-268403,08172-268403_1@eci.com,1,NULL,2018-12-12 00:00:00,2018-12-12 00:00:00,NULL,08172-268403_1@eci.com,2018-12-12 00:00:00,e57w9AtCpSV2qqsXfQ5UUsyz3f02nWssEAGGnhZXaJVoqjr2Hdv87lV99763,Shri.S S Biradar Assistant
+NULL,08173-244003,08173-244003_1@eci.com,1,NULL,2018-12-12 00:00:00,2018-12-12 00:00:00,NULL,08173-244003_1@eci.com,2018-12-12 00:00:00,e57w9AtCpSV2qqsXfQ5UUsyz3f02nWssEAGGnhZXaJVoqjr2Hdv87lV99763,Shri.S S Biradar Assistant

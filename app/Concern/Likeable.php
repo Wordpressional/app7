@@ -3,6 +3,7 @@
 namespace App\Concern;
 
 use App\Like;
+use Auth;
 
 trait Likeable
 {
@@ -30,9 +31,10 @@ trait Likeable
      * Create a like if it does not exist yet.
      */
     public function like()
-    {
-        if ($this->likes()->where('author_id', auth()->id())->doesntExist()) {
-            return $this->likes()->create(['author_id' => auth()->id()]);
+    {   
+       
+        if ($this->likes()->where('author_id', Auth::guard('api')->user()->id)->doesntExist()) {
+            return $this->likes()->create(['author_id' => Auth::guard('api')->user()->id]);
         }
          
     }
@@ -42,7 +44,7 @@ trait Likeable
      */
     public function isLiked(): bool
     {
-        return $this->likes->where('author_id', auth()->id())->isNotEmpty();
+        return $this->likes->where('author_id', Auth::user()->id)->isNotEmpty();
     }
 
     /**
@@ -50,6 +52,6 @@ trait Likeable
      */
     public function dislike()
     {
-        return $this->likes()->where('author_id', auth()->id())->get()->each->delete();
+        return $this->likes()->where('author_id', Auth::guard('api')->user()->id)->get()->each->delete();
     }
 }

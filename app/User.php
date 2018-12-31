@@ -26,7 +26,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'provider', 'provider_id', 'registered_at', 'api_token'
+        'name', 'email', 'password', 'provider', 'provider_id', 'registered_at', 'api_token', 'displayname'
     ];
 
     /**
@@ -134,7 +134,7 @@ class User extends Authenticatable
     //  */
      public function isAdmin(): bool
      {
-         return $this->checkHasRole("Superadministrator");
+         return $this->checkHasRole("superadministrator");
      }
 
      public function islCEO(): bool
@@ -147,10 +147,10 @@ class User extends Authenticatable
     //  *
     //  * @return boolean
     //  */
-    // public function isEditor(): bool
-    // {
-    //     return true;
-    // }
+     public function isEditor(): bool
+     {
+         return $this->checkHasRole("superadministrator");
+     }
 
     /**
      * Return the user's posts
@@ -167,7 +167,7 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function comments()
+    public function commentsfromusers()
     {
         return $this->hasMany(Comment::class, 'author_id');
     }
@@ -187,10 +187,10 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    //public function roles()
-    //{
-    //    return $this->belongsToMany(Role::class)->withTimestamps();
-    //}
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class)->withTimestamps();
+    }
 
     public function isCEO()
     {
@@ -221,14 +221,14 @@ class User extends Authenticatable
        return false;
     }
 
-    public function isARO()
+    public function isAERO()
     {
       $data = $this->brandsAll();
        $user = User::where('email', $data['n_loggeduser'])->first();
        $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
        //dd($role->name);
        
-      if($role->roles[0]->name == "elec_apresidingofficer")
+      if($role->roles[0]->name == "elec_asistantreturningofficer")
        {
            return true;
        }
@@ -276,4 +276,19 @@ class User extends Authenticatable
        }
        return "no";
     }
+
+    public function isBoothOfficer()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "elec_bootlevelofficer")
+       {
+           return "yes";
+       }
+       return "no";
+    }
+    
 }

@@ -16,13 +16,13 @@
 
 <script>
 export default {
-  props: ["post_id", "loading_comments", "data_confirm"],
+  props: ["post_slug", "post_id", "loading_comments", "data_confirm", "api_token"],
 
   data() {
     return {
       comments: [],
       isLoading: false,
-      endpoint: "../api/v1/posts/" + this.post_id + "/comments/"
+      endpoint: "../api/v1/posts/" + this.post_id + "/comments/?api_token="+this.api_token
     };
   },
 
