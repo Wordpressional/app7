@@ -23,7 +23,8 @@
                     <ul class="dropdown-menu">
                     <!-- User image -->
                         <li class="user-header">
-                            <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="img-circle" alt="User Image" />
+                             @if($data)
+                            <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="img-circle" alt="User Image" />@endif
                             <p>
                                @if($data){{$data['n_loggeduser']}}@endif
                             </p>
