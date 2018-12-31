@@ -30,6 +30,14 @@ trait AccountsTrait {
         ];
         //$this->data = $data;
         //dd($this->data);
-        return $data;
+        if($n_companyname)
+        {
+            return $data;
+        }
+        else
+        {
+            $data = "";
+            return $data;
+        }
     }
 }
