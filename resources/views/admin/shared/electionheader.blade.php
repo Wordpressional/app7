@@ -3,7 +3,7 @@
 <header class="main-header">
     <a href="" class="logo">
         <!--<span class="logo-mini"><b>Symbol</b></span>-->
-        <span class="logo-lg"><b><img src="{{ asset($data['n_companyname']->clogo) }}" alt="logo"></b></span>
+        <span class="logo-lg"><b>@if($data)<img src="{{ asset($data['n_companyname']->clogo) }}" alt="logo">@endif</b></span>
     </a>
     <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -15,8 +15,9 @@
             <ul class="nav navbar-nav">
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
+                        @if($data)
                         <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="user-image" alt="User Image" />
+                        @endif
                         <span class="hidden-xs">@if($data){{$data['n_loggeduser']}}@endif</span>
                     </a>
                     <ul class="dropdown-menu">
