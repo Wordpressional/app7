@@ -51,8 +51,9 @@
 
  </head>
     <body class="bg-light">
+        <div id="app">
        @yield('contentfrontend')
-             
+         </div>    
        
 
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
