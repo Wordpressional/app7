@@ -400,6 +400,21 @@ Route::post('/loadthemes/',[
 'as' => 'loadthemes'
 
 ]);
+
+Route::post('/installthemes/',[
+
+'uses' => 'ThemeController@installthemes',
+'as' => 'installthemes'
+
+]);
+
+Route::get('/deletetheme/{id}',[
+
+
+'uses' => 'ThemeController@deletetheme',
+'as' => 'deletetheme'
+
+]);
 Route::post('/activatetheme/',[
 
 'uses' => 'ThemeController@activatetheme',

@@ -20,7 +20,8 @@ class CommentController extends Controller
     {
         $data = $this->brandsAll();
         return view('admin.comments.index', [
-            'comments' => Comment::with(['post'=> 'author', 'data'=>$data])->latest()->paginate(50)
+            'comments' => Comment::with(['post','author'])->latest()->paginate(50),
+            'data' =>  $data,
         ]);
     }
 

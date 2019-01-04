@@ -906,7 +906,7 @@ label.star:before {
 }
 
 .bdstyle{
-  border: 5px solid #cccccc;
+  border: 1px solid black;
   border-radius: 5px;
   margin:15px;
   padding:15px;
