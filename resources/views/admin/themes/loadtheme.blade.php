@@ -75,20 +75,20 @@ function random_color() {
 <textarea rows="5" cols="70" id="theme_{{$theme->id}}"  class="form-control fc" required="required" style="display:none;">{{ $theme->tcontent }}</textarea>
 @if($theme->tstatus == "active")
 
- <button id="deactivate_{{$theme->id}}" class="btn btn-sm btn-default">Deactivate</button>
+ <button id="deactivate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Deactivate</button>
 
 @elseif($theme->tstatus == "disabled")
 
-<button id="activate_{{$theme->id}}" class="btn btn-sm btn-default">Activate</button>
+<button id="activate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Activate</button>
 
 
 @elseif($theme->tstatus == "inactive")
  
-<button id="activate_{{$theme->id}}" class="btn btn-sm btn-default">Activate</button>
+<button id="activate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Activate</button>
 @php $capturedstring = substr($theme->tname,0,1) @endphp
 
 @if($capturedstring == "*")
-&nbsp;&nbsp;&nbsp;&nbsp;<button id="delete_{{$theme->id}}" class="btn btn-sm btn-warning">Delete</button>
+&nbsp;&nbsp;&nbsp;&nbsp;<button id="delete_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Delete</button>
 
 @endif
  
