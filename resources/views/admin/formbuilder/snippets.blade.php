@@ -94,7 +94,7 @@
     <div data-dynamic-href="{{asset('examples/snippets/_dynamic_content.html')}}"></div>
 </div>
 
-<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/imgslider.png')}}" data-keditor-title="Slider" data-keditor-categories="HTMLTemplates;Slider">
+<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/imgslider.png')}}" data-keditor-title="Slider" data-keditor-categories="HTMLTemplates;Sliders">
 
 @include('shortcodes.plainhtml.imgslider')
 
@@ -112,13 +112,13 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.png')}}" data-keditor-title="AMenu" data-keditor-categories="HTMLTemplates;AMenu;Menu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.png')}}" data-keditor-title="AMenu" data-keditor-categories="HTMLTemplates;Menu">
 
 @include('shortcodes.plainhtml.aboutmenu')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="HTMLTemplates;ASPA">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="HTMLTemplates;SPA">
 
 @include('shortcodes.plainhtml.aboutspa')
 
@@ -135,13 +135,13 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="HTMLTemplates;Pagesliderwidget;Sliders">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="HTMLTemplates;Sliders">
 
 @include('shortcodes.plainhtml.innerpageslider')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="HTMLTemplates;Footerlinks;Menu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="HTMLTemplates;Menu">
 
 @include('shortcodes.plainhtml.footerlinks')
 
@@ -180,7 +180,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menu">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menu;StickyMenu">
 
 @include('shortcodes.plainhtml.stickymenut1')
   
