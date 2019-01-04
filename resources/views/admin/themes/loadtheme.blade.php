@@ -69,7 +69,7 @@ function random_color() {
 @php  $tcolor = random_color(); @endphp
 <div class="col-lg-5 col-md-5 col-sm-12 bdstyle" style="background:#{{$tcolor}}; height:250px;">
 <input type="text" id="tid_{{$theme->id}}" value="{{$theme->id}}" style="display:none;">
-<h6 style="background:#0E3C88; color:#92F4FD; padding:5px; border-radius:5px; border: 5px solid #E6E6E6; margin-bottom:80px;"> <i class="fa fa-adjust"></i>
+<h6 style="background:#000000; color:#E6E6E6; padding:5px; border-radius:5px; border: 2px solid #E6E6E6; margin-bottom:80px;"> <i class="fa fa-adjust"></i>
  {{ $theme->tname }} </h6>
 
 <textarea rows="5" cols="70" id="theme_{{$theme->id}}"  class="form-control fc" required="required" style="display:none;">{{ $theme->tcontent }}</textarea>
