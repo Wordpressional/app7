@@ -497,37 +497,37 @@ class ThemeController extends Controller
     {
         //dd($request->themeone);
         $theme = new Theme;
-        $theme->tname = "themeone";
+        $theme->tname = "DarkTheme";
         $theme->tcontent = $request->themeone;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "themetwo";
+        $theme->tname = "CommingSoon";
         $theme->tcontent = $request->themetwo;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "themethree";
+        $theme->tname = "BlueThem";
         $theme->tcontent = $request->themethree;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "themefour";
+        $theme->tname = "PrinceTheme";
         $theme->tcontent = $request->themefour;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "themefive";
+        $theme->tname = "QueenTheme";
         $theme->tcontent = $request->themefive;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "themesix";
+        $theme->tname = "LaunchingSoon";
         $theme->tcontent = $request->themesix;
 
         $theme->tstatus = "inactive";
@@ -535,6 +535,42 @@ class ThemeController extends Controller
         
 
         return "success";
+    }
+
+    public function installthemes(Request $request)
+    {
+        //dd($request->themeone);
+        $themefs = Theme::all();
+
+        foreach($themefs as $tf)
+        {
+            if($tf->tname != $request->tname)
+            {
+
+            $current_time = Carbon::now()->toDateTimeString();
+            $theme = new Theme;
+            $theme->tname = "*".$request->tname;
+            $theme->tcontent = $request->newtheme;
+
+            $theme->tstatus = "inactive";
+            $theme->save();
+           
+            
+
+                return "success";
+            }
+            else
+            {
+                return "failure";
+            }
+        }
+    }
+
+    public function deletetheme($id)
+    {
+         $theme = Theme::where('id', $id)->first();
+
+            $theme->delete();       
     }
 
     public function activatetheme(Request $request)
