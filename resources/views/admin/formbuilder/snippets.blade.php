@@ -94,245 +94,6 @@
     <div data-dynamic-href="{{asset('examples/snippets/_dynamic_content.html')}}"></div>
 </div>
 
-<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/imgslider.png')}}" data-keditor-title="Slider" data-keditor-categories="HTMLTemplates;Sliders">
-
-@include('shortcodes.plainhtml.imgslider')
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/megamenu.png')}}" data-keditor-title="MegaMenu" data-keditor-categories="HTMLTemplates;MegaMenu;Menu">
-
-@include('shortcodes.plainhtml.megamenu')
-
-</div>
-
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="HTMLTemplates;FAQ">
-
-@include('shortcodes.plainhtml.faq')
-
-</div>
-
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.png')}}" data-keditor-title="AMenu" data-keditor-categories="HTMLTemplates;Menu">
-
-@include('shortcodes.plainhtml.aboutmenu')
-
-</div>
-
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="HTMLTemplates;SPA">
-
-@include('shortcodes.plainhtml.aboutspa')
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/introslider1.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="HTMLTemplates;Introslider;Sliders">
-
-@include('shortcodes.plainhtml.introslider')
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/services1.png')}}" data-keditor-title="Services" data-keditor-categories="HTMLTemplates;Services">
-
-@include('shortcodes.plainhtml.services')
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="HTMLTemplates;Sliders">
-
-@include('shortcodes.plainhtml.innerpageslider')
-
-</div>
-
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="HTMLTemplates;Menu">
-
-@include('shortcodes.plainhtml.footerlinks')
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/gallery.png')}}" data-keditor-title="Gallery" data-keditor-categories="HTMLTemplates;Gallery">
-
-@include('shortcodes.plainhtml.gallery')
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/photo.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
-    <div class="photo-panel">
-        <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" width="100%" height="" />
-    </div>
-</div>
-
-
-
-
-
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax">
-
-@include('shortcodes.plainhtml.parallaxone')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/revolutionaryslider.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Sliders;RevolutionarySlider">
-
-@include('shortcodes.plainhtml.revolutionslider')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menu;StickyMenu">
-
-@include('shortcodes.plainhtml.stickymenut1')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Banner">
-
-@include('shortcodes.plainhtml.bannert1')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Aboutt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;About">
-
-@include('shortcodes.plainhtml.aboutt1')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Servicet1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Services">
-
-@include('shortcodes.plainhtml.servicet1')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/factst1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Facts">
-
-@include('shortcodes.plainhtml.factst1')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portofolio">
-
-@include('shortcodes.plainhtml.portfoliot1')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallaxt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax">
-
-@include('shortcodes.plainhtml.parallaxt1')
-  
-
-
-</div>
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/footert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Footer">
-@include('shortcodes.plainhtml.footert1')
-  
-
-
-</div>
-
-
-
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_1')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom2.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_2')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom3.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_3')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom4.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_4')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom5.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_5')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom6.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_6')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom7.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_7')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom8.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_8')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom9.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_9')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom10.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_10')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom11.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_11')
-  
-
-
-</div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom12.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
-
-@include('shortcodes.custom.customplain_12')
-  
-
-
-</div>
-
-
-
-
 <div data-type="component-audio" data-preview="{{asset('examples/snippets/preview/audio.png')}}" data-keditor-title="Audio" data-keditor-categories="Media">
     <div class="audio-wrapper">
         <audio src="http://www.noiseaddicts.com/samples_1w72b820/2558.mp3" controls style="width: 100%"></audio>
@@ -448,3 +209,844 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore architecto fuga tempore omnis aliquid, rerum numquam deleniti ipsam earum velit aliquam deserunt, molestiae officiis mollitia accusantium suscipit fugiat esse magnam eaque cumque, iste corrupti magni? Illo dicta saepe, maiores fugit aliquid consequuntur aut, rem ex iusto dolorem molestias obcaecati eveniet vel voluptatibus recusandae illum, voluptatem! Odit est possimus nesciunt.</p>
     <div data-dynamic-href="{{asset('examples/snippets/_dynamic_content')}}"></div>
 </div>
+
+
+<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/imgslider.png')}}" data-keditor-title="Slider" data-keditor-categories="HTMLTemplates;Sliders">
+
+@include('shortcodes.plainhtml.imgslider')
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/megamenu.png')}}" data-keditor-title="MegaMenu" data-keditor-categories="HTMLTemplates;MegaMenu;Menu">
+
+@include('shortcodes.plainhtml.megamenu')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="HTMLTemplates;FAQ">
+
+@include('shortcodes.plainhtml.faq')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.png')}}" data-keditor-title="AMenu" data-keditor-categories="HTMLTemplates;Menu">
+
+@include('shortcodes.plainhtml.aboutmenu')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutspa.png')}}" data-keditor-title="ASPA" data-keditor-categories="HTMLTemplates;SPA">
+
+@include('shortcodes.plainhtml.aboutspa')
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/introslider1.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="HTMLTemplates;Introslider;Sliders">
+
+@include('shortcodes.plainhtml.introslider')
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/services1.png')}}" data-keditor-title="Services" data-keditor-categories="HTMLTemplates;Services">
+
+@include('shortcodes.plainhtml.services')
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="HTMLTemplates;Sliders">
+
+@include('shortcodes.plainhtml.innerpageslider')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="HTMLTemplates;Menu">
+
+@include('shortcodes.plainhtml.footerlinks')
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/gallery.png')}}" data-keditor-title="Gallery" data-keditor-categories="HTMLTemplates;Gallery">
+
+@include('shortcodes.plainhtml.gallery')
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/photo.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+    <div class="photo-panel">
+        <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" width="100%" height="" />
+    </div>
+</div>
+
+
+
+
+
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax">
+
+@include('shortcodes.plainhtml.parallaxone')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/revolutionaryslider.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Sliders;RevolutionarySlider">
+
+@include('shortcodes.plainhtml.revolutionslider')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menu;StickyMenu;Developerthemeone">
+
+@include('shortcodes.plainhtml.stickymenut1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Banner;Developerthemeone">
+
+@include('shortcodes.plainhtml.bannert1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Aboutt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;About;Developerthemeone">
+
+@include('shortcodes.plainhtml.aboutt1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Servicet1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Services;Developerthemeone">
+
+@include('shortcodes.plainhtml.servicet1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/factst1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Facts;Developerthemeone">
+
+@include('shortcodes.plainhtml.factst1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portofolio;Developerthemeone">
+
+@include('shortcodes.plainhtml.portfoliot1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallaxt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax;Developerthemeone">
+
+@include('shortcodes.plainhtml.parallaxt1')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/footert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Footer;Developerthemeone">
+@include('shortcodes.plainhtml.footert1')
+  
+
+
+</div>
+
+
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_1')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom2.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_2')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom3.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_3')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom4.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_4')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom5.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_5')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom6.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_6')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom7.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_7')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom8.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_8')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom9.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_9')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom10.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_10')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom11.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_11')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom12.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_12')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom13.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_13')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom14.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_14')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom15.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_15')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom16.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_16')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom17.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_17')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom18.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_18')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom19.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_19')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom20.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_20')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom21.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_21')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom22.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_22')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom23.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_23')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom24.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_24')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom25.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_25')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom26.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_26')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom27.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_27')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom28.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_28')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom29.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_29')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom30.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_30')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom31.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_31')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom32.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_32')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom33.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_33')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom34.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_34')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom35.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_35')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom36.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_36')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom37.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_37')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom38.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_38')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom39.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_39')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom40.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_40')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom41.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_41')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom42.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_42')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom43.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_43')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom44.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_44')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom45.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_45')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom46.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_46')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom47.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_47')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom48.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_48')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom49.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_49')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom50.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_50')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom51.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_51')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom52.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_52')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom53.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_53')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom54.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_54')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom55.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_55')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom56.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_56')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom57.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_57')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom58.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_58')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom59.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_59')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom60.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_60')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom61.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_61')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom62.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_62')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom63.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_63')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom64.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_64')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom65.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_65')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom66.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_66')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom67.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_67')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom68.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_68')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom69.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_69')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom70.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_70')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom71.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_71')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom72.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_72')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom73.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_73')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom74.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_74')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom75.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_75')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom76.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_76')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom77.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_77')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom78.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_78')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom79.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_79')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom80.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_80')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom81.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_81')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom82.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_82')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom83.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_83')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom84.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_84')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom85.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_85')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom86.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_86')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom87.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_87')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom88.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_88')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom89.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_89')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom90.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_90')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom91.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_91')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom92.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_92')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom93.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_93')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom94.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_94')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom95.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_95')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom96.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_96')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom97.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_97')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom98.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_98')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom99.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_99')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom100.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_100')
+  
+
+
+</div><div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom101.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_101')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom102.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_102')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom103.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_103')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom104.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_104')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom105.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_105')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom106.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_106')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom107.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_107')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom108.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_108')
+  
+
+
+</div>
+
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom109.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_109')
+  
+
+
+</div>
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom110.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+
+@include('shortcodes.custom.customplain_110')
+  
+
+
+</div>
+
+
+
