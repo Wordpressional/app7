@@ -60,6 +60,14 @@ Route::get('/cforms/preview/{id}',[
 
 ]);
 
+Route::get('/themepreview',[
+
+
+'uses' => 'ThemeController@previewintheme',
+'as' => 'themepreview'
+
+]);
+
 Route::post('/cforms/fsave',[
 
 
@@ -419,6 +427,13 @@ Route::post('/activatetheme/',[
 
 'uses' => 'ThemeController@activatetheme',
 'as' => 'activatetheme'
+
+]);
+
+Route::post('/previewtheme/',[
+
+'uses' => 'ThemeController@previewtheme',
+'as' => 'previewtheme'
 
 ]);
 

@@ -14,6 +14,11 @@
       <a href="{{route('admin.forms.index')}}" class="btn btn-primary btn-sm align-self-center"><b>Back</b></a>
 
       <a href="#" onClick="UpdateContent('{{route('admin.forms.update',['id'=>$form->id])}}', {{$form->id}})" class="btn btn-primary btn-sm align-self-center"><b>Update</b></a>
+
+     
+     
+      <button onclick="copyFunction()">Copy</button>
+ 
    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
@@ -21,6 +26,7 @@
     <div class="form-group">
           <label for="tag">Form Name :</label>
           <input type="text" name="formname" id="formname" placeholder="Enter Form Name" value="{{ $form->formname }}"  class="form-control">
+          <textarea id="myInputText" rows="1" cols="22" style="display:none;">{{ $form->htmlcontent }} </textarea><br/>
       </div>
 @if($form->formname == "Home_Page")
 
@@ -84,6 +90,8 @@
      
     </div>  
   @endif
+
+  
 @endsection
 @section('scripts')
 
@@ -228,7 +236,16 @@
             
         
         }
-       
+
+function copyFunction() {
+  $('#myInputText').css('display','inline');
+  var copyText = document.getElementById("myInputText");
+  copyText.select();
+  document.execCommand("copy");
+  alert("copied");
+  $('#myInputText').css('display','none');
+}
+
 
        
         </script>
