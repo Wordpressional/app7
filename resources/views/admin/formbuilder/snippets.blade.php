@@ -297,7 +297,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menu;StickyMenu;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menu;StickyMenu;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.stickymenut1')
   
@@ -313,7 +313,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Aboutt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;About;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Aboutt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;About;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.aboutt1')
   
@@ -321,7 +321,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Servicet1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Services;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Servicet1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Services;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.servicet1')
   
@@ -329,7 +329,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/factst1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Facts;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/factst1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Facts;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.factst1')
   
@@ -337,7 +337,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portofolio;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portofolio;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.portfoliot1')
   
@@ -345,7 +345,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallaxt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallaxt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.parallaxt1')
   
@@ -353,7 +353,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/footert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Footer;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/footert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Footer;In-built Developer Theme">
 @include('shortcodes.plainhtml.footert1')
   
 

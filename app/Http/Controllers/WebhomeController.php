@@ -13,6 +13,7 @@ use File;
 use Illuminate\Support\Facades\DB;
 use App\Events\TestEvent;
 
+
 class WebhomeController extends Controller
 {
     /**
@@ -118,6 +119,8 @@ class WebhomeController extends Controller
 
         return html_entity_decode($html);
     }
+
+   
 
     
 
