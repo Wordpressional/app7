@@ -305,7 +305,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Banner;Developerthemeone">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Banner;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.bannert1')
   

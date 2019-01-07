@@ -608,6 +608,45 @@ class ThemeController extends Controller
         return "success";
     }
 
+    public function Previewtheme(Request $request)
+    {
+        //dd($request->tid);
+        $themefs = Theme::all();
+
+        foreach($themefs as $tf)
+        {
+
+        $tf->tstatus = "inactive";
+        $tf->save();
+
+        }
+        $theme = Theme::where('id', $request->tid)->first();
+        //$theme->tname = $request->ntname;
+        //$theme->tcontent = $request->newtheme;
+
+        $theme->tstatus = "preview";
+        $theme->save();
+
+        $themef = Form::where('formname', "Front_Page")->first();
+       
+        $themef->htmlcontent = $request->newtheme;
+
+        $themef->status = "preview";
+        $themef->save();
+
+        
+       
+        return "success";
+    }
+
+     public function previewintheme()
+    {
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+        $form = Form::where('formname', "Front_Page")->first();
+        return view('admin.formbuilder.preview')->with('form', $form)->withShortcodes();
+    }
+
     public function deactivatetheme(Request $request)
     {
         //dd($request->tid);

@@ -80,23 +80,34 @@ function random_color() {
 @elseif($theme->tstatus == "disabled")
 
 <button id="activate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Activate</button>
-
+<button id="preview_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Preview</button>
 
 @elseif($theme->tstatus == "inactive")
  
 <button id="activate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Activate</button>
+
+<button id="preview_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Preview</button>
+
 @php $capturedstring = substr($theme->tname,0,1) @endphp
 
 @if($capturedstring == "*")
 &nbsp;&nbsp;&nbsp;&nbsp;<button id="delete_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Delete</button>
 
 @endif
- 
+
+@else
+<button id="deactivate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Preview off</button>
 @endif
 
  @if($theme->tstatus == "active")
  
- <center><div  class=" successalert" style="color:green; background-color:white; border-radius:5px; padding:5px; margin-top:20px;">Active</div></center>
+ <center><div  class=" successalert" style="color:green; background-color:white; border-radius:5px; padding:5px; margin-top:20px;"><a href="{{ url('/') }}" target="_blank">Active</a></div></center>
+ @endif
+
+ @if($theme->tstatus == "preview")
+ 
+ <center><div  class=" successalert" style="color:green; background-color:white; border-radius:5px; padding:5px; margin-top:20px;"><a href="{{route('admin.themepreview')}}" target="_blank">Preview</a></div></center>
+
  @endif
 
 </div>
@@ -182,6 +193,55 @@ function random_color() {
 
     	});
   	}
+
+    for($i=0; $i<50; $i++)
+    {
+      $("#preview_"+$i).click(function(){
+        //alert("hi");
+        var nostr = this.id;
+        //alert(this.id);
+        var slug = nostr.split('_').pop();
+
+       // alert(slug);
+
+        var tid = $("#tid_"+slug).val();
+        
+        //var ntname = $('#tname_'+$i).val();
+        var newtheme = $("#theme_"+slug).val();
+        //alert(newtheme);
+        arrasson =  {"newtheme": newtheme,  "tid": tid};
+
+         $.ajax({
+                
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+
+                url: "{{route('admin.previewtheme')}}",
+               
+                type: 'post',
+                data:  arrasson,
+                
+                success: function(result) {
+                  setTimeout(function(){ 
+
+                      window.location.reload();
+                      }, 300);
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+      });
+    }
 
 
   	for($i=0; $i<50; $i++)
