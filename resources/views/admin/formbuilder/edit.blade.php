@@ -26,7 +26,7 @@
     <div class="form-group">
           <label for="tag">Form Name :</label>
           <input type="text" name="formname" id="formname" placeholder="Enter Form Name" value="{{ $form->formname }}"  class="form-control">
-          <textarea id="myInputText" rows="1" cols="22" style="display:none;">{{ $form->htmlcontent }} </textarea><br/>
+          <textarea id="myInputText" rows="1" cols="22" style="display:none;">{{{ $form->htmlcontent }}} </textarea><br/>
       </div>
 @if($form->formname == "Home_Page")
 
