@@ -101,7 +101,7 @@ function random_color() {
 
  @if($theme->tstatus == "active")
  
- <center><div  class=" successalert" style="color:green; background-color:white; border-radius:5px; padding:5px; margin-top:20px;">Active</div></center>
+ <center><div  class=" successalert" style="color:green; background-color:white; border-radius:5px; padding:5px; margin-top:20px;"><a href="{{ url('/') }}" target="_blank">Active</a></div></center>
  @endif
 
  @if($theme->tstatus == "preview")
