@@ -11,19 +11,22 @@
         </a>
         
         <div class="navbar-custom-menu">
-            <center><p> {{$data['n_companyname']->cname}} </p></center>
+            <center><p> @if($data) {{$data['n_companyname']->cname}} @endif</p></center>
             <ul class="nav navbar-nav">
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{asset('img/user2-160x160.jpg')}}" class="user-image" alt="User Image" />
-                        <span class="hidden-xs">{{$data['n_loggeduser']}}</span>
+                        @if($data)
+                        <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="user-image" alt="User Image" />
+                        @endif
+                        <span class="hidden-xs">@if($data){{$data['n_loggeduser']}}@endif</span>
                     </a>
                     <ul class="dropdown-menu">
                     <!-- User image -->
                         <li class="user-header">
-                            <img src="{{asset('img/user2-160x160.jpg')}}" class="img-circle" alt="User Image" />
+                             @if($data)
+                            <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="img-circle" alt="User Image" />@endif
                             <p>
-                               {{$data['n_loggeduser']}}
+                               @if($data){{$data['n_loggeduser']}}@endif
                             </p>
                         </li>
                         <li class="user-footer">

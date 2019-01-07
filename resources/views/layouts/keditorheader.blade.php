@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+       @if($data)
+        <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
+        @endif
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Pyrupay</title>
         

@@ -12,10 +12,11 @@ use Shortcode;
 use File;
 use Illuminate\Support\Facades\DB;
 use App\Events\TestEvent;
-
+use App\Http\Traits\SettingsTrait;
 
 class WebhomeController extends Controller
 {
+    use SettingsTrait;
     /**
      * Show the application dashboard.
      *

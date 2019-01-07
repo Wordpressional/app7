@@ -7,7 +7,7 @@
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> DarkTheme </h5>
-<textarea rows="5" cols="70" id="themeone"  class="form-control fc" required="required" style="display:none;">{{{ $themeone }}}</textarea> 
+<textarea rows="5" cols="70" id="themeone"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
    
 
 </div>
