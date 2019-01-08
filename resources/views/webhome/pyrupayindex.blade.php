@@ -15,7 +15,7 @@
 }
 
 </style>
-
+ @include('layouts.compscripts.contactcustformscript')
 
 
     
