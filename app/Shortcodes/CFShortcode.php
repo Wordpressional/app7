@@ -4,11 +4,12 @@ namespace App\Shortcodes;
 use App\Cform;
 
 use App\Page;
-
+use App\Http\Traits\SettingsTrait;
 class CFShortcode {
-
+use SettingsTrait;
   public function cfcustp($shortcode, $content, $compiler, $name, $viewData)
   {
+    $data = $this->settingsAll();
   	//dd($content);
   	//$a = array();
   	$fs = array();
@@ -44,7 +45,7 @@ class CFShortcode {
 
 		//$final = implode("", $fs);
 	
-    return view('shortcodes.cfcustp')->with('cforms' , $cforms);
+    return view('shortcodes.cfcustp')->with(['cforms' => $cforms, 'data' => $data]);
     //return $content;
        
   }

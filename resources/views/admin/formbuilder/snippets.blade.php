@@ -365,7 +365,7 @@
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_1')
-  
+   
 
 
 </div>

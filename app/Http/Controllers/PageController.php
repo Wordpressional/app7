@@ -44,7 +44,7 @@ class PageController extends Controller
     
    //    $cforms = Cform::Where('cshortcode',$content)->first();   
      
-            //dd($cforms);
+            
     
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
@@ -53,11 +53,7 @@ class PageController extends Controller
             'page' => $page,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
-            'data' => $data
-     //       'cforms' => $cforms,
-            
-           
-            
+           'data' => $data
 
         ])->withShortcodes();
         

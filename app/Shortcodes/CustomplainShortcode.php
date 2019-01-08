@@ -75,5 +75,269 @@ class CustomplainShortcode {
     
     return view('shortcodes.custom.customplain_12');
   }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_13');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_14');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_15');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_16');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_17');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_18');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_19');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_20');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_21');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_22');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_23');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_24');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_24');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_26');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_27');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_28');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_29');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_30');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_31');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_32');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_33');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_34');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_35');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_36');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_37');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_38');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_39');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_40');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_41');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+  
+   public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
+
+  public function customplain_12($shortcode, $content, $compiler, $name, $viewData)
+  {
+    
+    return view('shortcodes.custom.customplain_12');
+  }
   
 }
