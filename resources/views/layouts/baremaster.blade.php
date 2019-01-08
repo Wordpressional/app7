@@ -11,8 +11,18 @@
         <link rel="icon" type="image/png" href="{{ asset('installer/img/favicon/favicon-96x96.png') }}" sizes="96x96"/>
         <link href="{{ asset('installer/css/style.min.css') }}" rel="stylesheet"/>-->
         @if($data)
-        <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
-        @endif
+    <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
+    @endif
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @auth
+        <meta name="api-token" content="{{ auth()->user()->api_token }}">
+    @endauth
+    @if($data)
+    <title>{{$data['n_companyname']->cname}}</title>
+    @else
+    <title></title>
+    @endif
         @yield('style')
         <script>
             window.Laravel = <?php echo json_encode([
