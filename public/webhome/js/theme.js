@@ -8,7 +8,7 @@
 
 	//* Navbar Fixed  
     function navbarFixed(){
-        if ( $('.main_menu_area, .search_area').length ){ 
+        if ( $('.main_menu_area, .search_area').length != 0){ 
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();   
                 if (scroll >= nav_offset_top ) {
@@ -26,7 +26,7 @@
     /*  Main Slider js
     /*----------------------------------------------------*/
     function main_slider(){
-        if ( $('#main_slider').length ){
+        if ( $('#main_slider').length != 0){
             $("#main_slider").revolution({
                 sliderType:"standard",
                 sliderLayout:"auto",

@@ -44,7 +44,7 @@
         });     
  </script>     
 
-  <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+ 
 
 
    <!-- Extra plugin css -->
