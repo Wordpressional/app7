@@ -6,7 +6,7 @@
 <div class="col-md-12 col-lg-12">
     	<div id="successalert" style="display:none; padding-bottom:35px;" class="alert alert-success "></div>
 
-    	<form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="{your_ajax_function(); return false;}">
+    	<form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="your_ajax_function(); return false;">
       {!! $cforms->htmlcontents !!} 
 
       
