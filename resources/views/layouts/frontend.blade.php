@@ -17,7 +17,7 @@
    @yield('scripts')
     @include('layouts.compscripts.serviceworker')
         
-         @include ('layouts.shortcode-layout')
+         
          @stack('inline-scripts')
     </body>      
 </html>

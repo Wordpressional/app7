@@ -3,12 +3,12 @@
     
     var nav_offset_top = $('header').height(); 
     /*-------------------------------------------------------------------------------
-	  Navbar 
-	-------------------------------------------------------------------------------*/
+      Navbar 
+    -------------------------------------------------------------------------------*/
 
-	//* Navbar Fixed  
+    //* Navbar Fixed  
     function navbarFixed(){
-        if ( $('.main_menu_area, .search_area').length != 0){ 
+        if ( $('.main_menu_area, .search_area').length ){ 
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();   
                 if (scroll >= nav_offset_top ) {
@@ -26,7 +26,7 @@
     /*  Main Slider js
     /*----------------------------------------------------*/
     function main_slider(){
-        if ( $('#main_slider').length != 0){
+        if ( $('#main_slider').length ){
             $("#main_slider").revolution({
                 sliderType:"standard",
                 sliderLayout:"auto",
@@ -45,7 +45,7 @@
                         hide_onleave:true,
                         hide_delay:200,
                         hide_delay_mobile:1200,
-                        tmp:'<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
+                        tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
                         left: {
                             h_align: "left",
                             v_align: "center",
@@ -79,29 +79,29 @@
     /*  Skill Slider
     /*----------------------------------------------------*/
     function progressBarConfig () {
-	  var progressBar = $('.progress');
-	  if(progressBar.length) {
-	    progressBar.each(function () {
-	      var Self = $(this);
-	      Self.appear(function () {
-	        var progressValue = Self.data('value');
+      var progressBar = $('.progress');
+      if(progressBar.length) {
+        progressBar.each(function () {
+          var Self = $(this);
+          Self.appear(function () {
+            var progressValue = Self.data('value');
 
-	        Self.find('.progress-bar').animate({
-	          width:progressValue+'%'           
-	        }, 1000);
+            Self.find('.progress-bar').animate({
+              width:progressValue+'%'           
+            }, 1000);
 
-	        Self.find('.number').countTo({
-	          from: 0,
-	            to: progressValue,
-	            speed: 1000
-	        });
-	      });
-	    })
-	  }
-	}
+            Self.find('.number').countTo({
+              from: 0,
+                to: progressValue,
+                speed: 1000
+            });
+          });
+        })
+      }
+    }
     progressBarConfig ();
     
-    /*$('.counter').counterUp({
+    $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
@@ -109,7 +109,7 @@
     if($(window).width()>992){
         $('.service_area').parallax("50%", 0.4);
         $('.project_area').parallax("50%", 0.4);
-    }*/
+    }
     
     
     

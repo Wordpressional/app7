@@ -1,3 +1,4 @@
+ 
 <script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
   <!-- BOOTSTRAP JS -->
  
@@ -96,37 +97,9 @@ $window.scroll(scroll_elements);
 
 
     </script>
-<script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
-
-            <script>
-                $(".rslides").responsiveSlides({
-                auto: true,             // Boolean: Animate automatically, true or false
-                speed: 500,            // Integer: Speed of the transition, in milliseconds
-                timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-                pager: true,           // Boolean: Show pager, true or false
-                pagination: true,
-                nav: true,             // Boolean: Show navigation, true or false
-                random: false,          // Boolean: Randomize the order of the slides, true or false
-                pause: false,           // Boolean: Pause on hover, true or false
-                pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-                prevText: "Previous",   // String: Text for the "previous" button
-                nextText: "Next",       // String: Text for the "next" button
-                maxwidth: 900,           // Integer: Max-width of the slideshow, in pixels
-                navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-                manualControls: "",     // Selector: Declare custom pager navigation
-                namespace: "rslides",   // String: Change the default namespace used
-                before: function(){},   // Function: Before callback
-                after: function(){}     // Function: After callback
-                });
-
-
-               
-                
-                
-
-            </script>
+ 
     
- @include ('layouts.shortcode-layout')    
+    
 <script>
   $(function() {
       $('.backstretch').each(function(index, el) {
@@ -137,30 +110,7 @@ $window.scroll(scroll_elements);
     });
 </script>
 
-<script src="{{ asset('upup.min.js') }}"></script>
-<script src="{{ asset('upup.sw.min.js') }}"></script>
-<script>
-UpUp.start({
-  'content': 'You are Offline. Cannot reach site. Please check your internet connection.',
-  'service-worker-url': "{{ asset('upup.sw.min.js') }}"
-});
 
-$(document).ready(function() {
-
-if ('serviceWorker' in navigator) {
-    console.log("Will the service worker register?");
-    navigator.serviceWorker.register("{{ asset('upup.sw.min.js') }}")
-      .then(function(reg){
-        console.log("Yes, it did.");
-      }).catch(function(err) {
-        console.log("No it didn't. This happened: ", err)
-      });
-  }
-
- 
-
-});
-</script>
 
 <script type="text/javascript">
    $(".imageUpload1").hide();
