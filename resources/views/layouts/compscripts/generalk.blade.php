@@ -3,7 +3,7 @@
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
 <script src="{{ asset('webhome/js/popper.min.js') }}"></script>
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('webhome/js/theme.js') }}"></script>
+
 <!-- Scripts -->
 @if (Request::is('posts/*'))
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
@@ -50,8 +50,8 @@
         <!--Tweets-->
        
         <script src="{{ asset('js/adminlte.min.js') }}"></script>
-        <script src="{{ asset('webhome/js/theme.js') }}"></script>
-        <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
+       
+      
       
 
 
