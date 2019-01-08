@@ -30,6 +30,6 @@
             });
 
 </script>
- 
+
 
 @endsection
