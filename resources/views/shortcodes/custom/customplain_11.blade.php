@@ -6,7 +6,7 @@
 
                     <!--Form with header-->
 
-                   <form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="{your_ajax_function(); return false;}">
+                   <form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="your_ajax_function(); return false;">
                         <div class="card border-primary rounded-0">
                             <div class="card-header p-0">
                                 <div class="bg-info text-white text-center py-2">
@@ -49,7 +49,7 @@
                             </div>
 
                         </div>
-                   <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
+                   <input type="hidden" id="ttoken" name="_token" value="2VlWhv1zsJSwkm4NAWAbBi4FCuz2vsGe2Ui32Wjn">
       <input type="hidden" name="table_name" class="table_name" id="c949bef32" value="c949bef32" />
 <input type="hidden" name="files" class="files" value="" />
                     <!--Form with header-->
