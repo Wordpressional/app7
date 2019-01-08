@@ -54,8 +54,8 @@ class WebhomeController extends Controller
 
      public function index()
     {
-        
-         return view('webhome.pyrupayindex');
+        $data = $this->settingsAll();
+         return view('webhome.pyrupayindex',compact('data'));
 
     }
 
@@ -83,6 +83,7 @@ class WebhomeController extends Controller
 
      public function frontpage()
     {
+        
         Shortcode::enable();
         $shortcode = App('Shortcode');
     $colorsetting = Colorsetting::all();

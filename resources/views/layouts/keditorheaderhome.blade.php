@@ -12,19 +12,19 @@
         <link rel="apple-touch-icon" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
         <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
         <link rel="icon" href="{{ asset('icons/icon-36.png') }}"  type="image/x-icon" />-->
-        @if($data)
-        <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
-        @endif
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Pyrupay</title>
-        
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        @auth
+            @if($data)
+    <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
+    @endif
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @auth
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
-        @endauth
-
-    <title>{{ config('app.name', 'Pyrupay') }}</title>
+    @endauth
+    @if($data)
+    <title>{{$data['n_companyname']->cname}}</title>
+    @else
+    <title></title>
+    @endif
       <!-- Icon css link -->
 
 

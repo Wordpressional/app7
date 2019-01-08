@@ -131,7 +131,7 @@ function random_color() {
 <br><br>
  <button id="install">Upload</button>  
 </div>
-
+<div id="loading"></div>
 </div>
 
 
@@ -429,12 +429,8 @@ function random_color() {
         console.log(arrasso);
      var token = document.getElementById('ttoken').value;
 
-      // var data = JSON.stringify({
-      //               _token: token,
-      //               arrasso: arrasso
+     $('#loading').html('<img src="{{asset("/introimgs/ajax-loader.gif")}}"> loading...');
 
-      //           });
- //alert(data);
           $.ajax({
                 
                 headers: {
@@ -447,6 +443,7 @@ function random_color() {
                 data:  arrasso,
                 
                 success: function(result) {
+                  $('#loading').css("display","none");
                   //alert(result);
                   //alert("pppp");
                   if(result == "failure")

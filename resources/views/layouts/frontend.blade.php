@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        @if($data)
-        <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
-        @endif
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Research Centre Vergelijkende Cultuurwetenschap</title>
-		
-		<!-- CSRF Token -->
-		<meta name="csrf-token" content="{{ csrf_token() }}">
-		@auth
-		<meta name="api-token" content="{{ auth()->user()->api_token }}">
-		@endauth
-
-    <title>{{ config('app.name', 'Research Centre Vergelijkende Cultuurwetenschap') }}</title>
+         @if($data)
+    <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
+    @endif
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @auth
+        <meta name="api-token" content="{{ auth()->user()->api_token }}">
+    @endauth
+    @if($data)
+    <title>{{$data['n_companyname']->cname}}</title>
+    @else
+    <title></title>
+    @endif
 
         <!-- Icon css link -->
         <link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
