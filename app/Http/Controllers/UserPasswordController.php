@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserPasswordsRequest;
 use App\User;
+use App\Http\Traits\SettingsTrait;
 
 class UserPasswordController extends Controller
 {
+    use SettingsTrait;
     /**
      * Show the form for editing the specified resource.
      */

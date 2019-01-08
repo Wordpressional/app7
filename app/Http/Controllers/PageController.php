@@ -19,10 +19,12 @@ use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use App\Http\Traits\SettingsTrait;
 
 
 class PageController extends Controller
 {
+    use SettingsTrait;
     /**
      * Show the application dashboard.
      *
@@ -31,7 +33,7 @@ class PageController extends Controller
     public function thispage(Request $request, Page $page)
     {	
        //
-         
+         $data = $this->settingsAll();
        Shortcode::enable();
         $shortcode = App('Shortcode');
             
@@ -51,6 +53,7 @@ class PageController extends Controller
             'page' => $page,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
+            'data' => $data
      //       'cforms' => $cforms,
             
            
@@ -63,13 +66,15 @@ class PageController extends Controller
 
      public function artpage(Request $request, Page $page)
     {   
+         $data = $this->settingsAll();
         Shortcode::enable();
         $shortcode = App('Shortcode');
     
               
                
           return view('pages.customtemplate3', [
-            'page' => $page
+            'page' => $page,
+            'data' => $data
             
 
         ])->withShortcodes();

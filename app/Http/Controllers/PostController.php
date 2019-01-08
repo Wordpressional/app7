@@ -10,10 +10,11 @@ use App\Brand;
 use Illuminate\Http\Request;
 use Shortcode;
 use Auth;
-
+use App\Http\Traits\SettingsTrait;
 
 class PostController extends Controller
 {
+    use SettingsTrait;
     private $post1;
 
     /**
@@ -23,7 +24,9 @@ class PostController extends Controller
      */
     public function index(Request $request)
     {
+        $data = $this->settingsAll();
         return view('posts.index', [
+            'data' => $data,
             'posts' => Post::search($request->input('q'))
                              ->with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
@@ -37,16 +40,19 @@ class PostController extends Controller
      */
     public function show(Request $request, Post $post)
     {
+         $data = $this->settingsAll();
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
 
         return view('posts.show', [
+            'data' => $data,
             'post' => $post
         ]);
     }
 
     public function showsingle(Request $request, Post $post)
     {
+        $data = $this->settingsAll();
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
@@ -56,6 +62,7 @@ class PostController extends Controller
         $post->likes_count = $post->likes()->count();
 
         return view('webhome.single', [
+            'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
@@ -65,6 +72,7 @@ class PostController extends Controller
 
      public function showsingletwo(Request $request, Post $post)
     {
+         $data = $this->settingsAll();
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
@@ -74,6 +82,7 @@ class PostController extends Controller
         $post->likes_count = $post->likes()->count();
 
         return view('webhome.singletwo', [
+            'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
@@ -83,6 +92,7 @@ class PostController extends Controller
 
     public function showbsingle(Request $request, Post $post)
     {
+         $data = $this->settingsAll();
 
         Shortcode::enable();
         $shortcode = App('Shortcode');
@@ -94,6 +104,7 @@ class PostController extends Controller
         $post->likes_count = $post->likes()->count();
 
         return view('webhome.bsingle', [
+            'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
@@ -103,12 +114,14 @@ class PostController extends Controller
 
     public function allcat(Request $request)
     {
+         $data = $this->settingsAll();
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
 
         return view('webhome.allcategory', [
+            'data' => $data,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
@@ -120,6 +133,7 @@ class PostController extends Controller
 
      public function cattype(Request $request, $cat)
     {
+         $data = $this->settingsAll();
         Shortcode::enable();
         $shortcode = App('Shortcode');
 
@@ -151,6 +165,7 @@ class PostController extends Controller
              $this->post1 = $post1;
              //dd($this->printtags());
         return view('webhome.allcategory', [
+            'data' => $data,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
             'posts' => $post,
@@ -166,6 +181,7 @@ class PostController extends Controller
 
     public function tagtype(Request $request, $tag)
     {
+        $data = $this->settingsAll();
 
         Shortcode::enable();
         $shortcode = App('Shortcode');
@@ -191,6 +207,7 @@ class PostController extends Controller
                              
            //dd($post);
         return view('webhome.alltag', [
+            'data' => $data,
             'posts' => $post,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
@@ -207,6 +224,7 @@ class PostController extends Controller
 
     public function tagtypeconf(Request $request, $tag)
     {
+         $data = $this->settingsAll();
         $arry = array();
         //dd($cat);
         $tagid = Tag::where('tag', $tag)->first();
@@ -228,6 +246,7 @@ class PostController extends Controller
                              
            //dd($post);
         return view('webhome.allconftag', [
+            'data' => $data,
             'posts' => $post,
              'page' => $page,
            
@@ -242,6 +261,7 @@ class PostController extends Controller
 
      public function arttype(Request $request, $cat)
     {
+         $data = $this->settingsAll();
         //dd($cat);
         Shortcode::enable();
         $shortcode = App('Shortcode');
@@ -256,6 +276,7 @@ class PostController extends Controller
         if($catid->id != "")
         {
         return view('webhome.articles', [
+            'data' => $data,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
             'posts' => Post::where('category_id', $catid->id)
@@ -274,6 +295,7 @@ class PostController extends Controller
 
      public function linktype(Request $request, $cat)
     {
+         $data = $this->settingsAll();
         //dd($cat);
         $catid = Category::where('name', $cat)->first();
         //dd($catid);
@@ -282,6 +304,7 @@ class PostController extends Controller
         if($catid->id != "")
         {
         return view('webhome.links', [
+            'data' => $data,
             'posts' => Post::where('category_id', $catid->id)
                              ->with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
@@ -298,12 +321,14 @@ class PostController extends Controller
 
      public function articles(Request $request)
     {
+         $data = $this->settingsAll();
        Shortcode::enable();
         $shortcode = App('Shortcode');
 
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
         return view('webhome.articles', [
+            'data' => $data,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
@@ -315,6 +340,7 @@ class PostController extends Controller
 
      public function links(Request $request)
     {
+         $data = $this->settingsAll();
         Shortcode::enable();
         $shortcode = App('Shortcode');
         
@@ -322,6 +348,7 @@ class PostController extends Controller
         $branding = Brand::where('id', 1)->first();
         
         return view('webhome.links', [
+            'data' => $data,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')

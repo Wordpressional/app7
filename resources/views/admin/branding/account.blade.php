@@ -44,12 +44,12 @@
         {
           print '<option value="' . $timezone . '" selected="selected" class="active">' .$name . '</option>' . "\n";
         } 
-        } 
+         
         else 
         {
           print '<option value="' . $timezone . '">' . $name . '</option>' . "\n";
         }
-        
+        }
         }
 
         print '</select>';
@@ -58,11 +58,21 @@
        @endphp
          
         
-       <br>      
+       <br> 
+       @php 
+        if(!$account->clogo){
+
+          $pgbnr = "required";
+        }
+        else
+        {
+          $pgbnr = "";
+        }
+        @endphp     
           <label for="cllogo">Company Logo</label>
              <br /><div class="form-group">
    
-              <input type="file" name="filelogo" id="filelogo" required="required">
+              <input type="file" name="filelogo" id="filelogo" {{$pgbnr}}>
                    
                
             </div>
@@ -74,11 +84,21 @@
                 <img src="{{url('/img/logo.png')}}" id="complogo" alt="photo" width="250" height="250"/>
                @endif
 
-        <br>      
+        <br> 
+        @php 
+        if(!$account->favicon){
+
+          $pgbnr = "required";
+        }
+        else
+        {
+          $pgbnr = "";
+        }
+        @endphp     
           <label for="cllogo">Favicon</label>
              <br /><div class="form-group">
    
-              <input type="file" name="favicon" id="favicon" required="required">
+              <input type="file" name="favicon" id="favicon" {{$pgbnr}}>
                    
                
             </div>
@@ -91,11 +111,21 @@
                @endif
 
 
-          <br>      
+          <br> 
+        @php 
+        if(!$account->favicon){
+
+          $pgbnr = "required";
+        }
+        else
+        {
+          $pgbnr = "";
+        }
+        @endphp      
           <label for="cllogo">Default Profile Image</label>
              <br /><div class="form-group">
    
-              <input type="file" name="pimg" id="pimg" required="required">
+              <input type="file" name="pimg" id="pimg" {{$pgbnr}}>
                    
                
             </div>

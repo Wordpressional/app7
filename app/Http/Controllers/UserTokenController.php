@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Token;
 use App\User;
+use App\Http\Traits\SettingsTrait;
 
 class UserTokenController extends Controller
 {
+    use SettingsTrait;
     /**
      * Show the form for editing the specified resource.
      */
