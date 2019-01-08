@@ -781,6 +781,8 @@ $t = count($blos);
     public function storeelecaccount(Request $request)
     {
 
+        $myaccount = Elecaccount::where('id', 1)->first();
+
         $input = $request->all();
         //dd("hi");
         //dd($input);
@@ -804,6 +806,17 @@ $t = count($blos);
             $path = $request->file('filed')->move($dir, $fine);
             $path = '/uploads/cmp/'.$fine;
         }
+        else
+        {
+            if($myaccount == "")
+            {
+                $path = '-';
+            }
+            else
+            {
+                $path = $myaccount->clogo;
+            }
+        }
 
         if($request->hasFile('filed2')){
 
@@ -824,6 +837,17 @@ $t = count($blos);
             
             $path2 = $request->file('filed2')->move($dir2, $filename2);
             $path2 = '/uploads/cmp/'.$filename2;
+        }
+        else
+        {
+            if($myaccount == "")
+            {
+                $path2 = '-';
+            }
+            else
+            {
+                $path2 = $myaccount->favicon;
+            }
         }
 
         if($request->hasFile('filed3')){
@@ -846,9 +870,20 @@ $t = count($blos);
             $path3 = $request->file('filed3')->move($dir3, $filename3);
             $path3 = '/uploads/cmp/'.$filename3;
         }
+        else
+        {
+            if($myaccount == "")
+            {
+                $path3 = '-';
+            }
+            else
+            {
+                $path3 = $myaccount->defaultprofileimg;
+            }
+        }
 
         
-            $myaccount = Elecaccount::where('id', 1)->first();
+            
             if($myaccount != "")
             {
                 $myaccount = Elecaccount::find($myaccount->id);

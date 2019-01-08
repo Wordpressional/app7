@@ -7,23 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="theme-color" content="#317EFB"/>
-        <link rel="icon" sizes="192x192" href="{{ asset('icons/icon-192.png') }}"> 
-        <link rel="icon" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
-        <link rel="apple-touch-icon" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
-        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
-        <link rel="icon" href="{{ asset('icons/icon-36.png') }}"  type="image/x-icon" />
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Pyrupay</title>
-        
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        @auth
+       @if($data)
+    <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
+    @endif
+    
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @auth
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
-        @endauth
+    @endauth
 
-    <title>{{ config('app.name', 'Pyrupay') }}</title>
-      <!-- Icon css link -->
-
+    @if($data)
+    <title>{{$data['n_companyname']->cname}}</title>
+    @else
+    <title></title>
+    @endif
 
      
     
@@ -64,11 +62,11 @@
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
  </head>
     <body>
-   
+   <div id="app">
     <div class="precon">
     {!! $form->htmlcontent !!} 
     </div>
- 
+   </div>
 
   
 

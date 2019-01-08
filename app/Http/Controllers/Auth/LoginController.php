@@ -8,9 +8,11 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Schema;
 use Auth;
+use App\Http\Traits\SettingsTrait;
 
 class LoginController extends Controller
 {
+    use SettingsTrait;
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -50,7 +52,7 @@ class LoginController extends Controller
 
     public function mylogin()
     {
-    
+        $data = $this->settingsAll();
         $colorsetting = Colorsetting::all();
         $brand = Brand::where('id',1)->first();
         //dd($colorsetting);
@@ -72,6 +74,7 @@ class LoginController extends Controller
          return view('auth.login', [
             'brand' => $brand,
             'colorsetting' => $colorsetting,
+            'data' => $data,
         ]);
     }
 }

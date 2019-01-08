@@ -200,9 +200,9 @@ class ThemeController extends Controller
      */
     public function preview($id)
     {
-        
+         $data = $this->brandsAll();
         $cform = Cform::find($id);
-        return view('admin.cforms.preview')->with('cform', $cform);
+        return view('admin.cforms.preview')->with(['cform'=> $cform, 'data' => $data]);
     }
 
     public function snippets()
@@ -641,10 +641,11 @@ class ThemeController extends Controller
 
      public function previewintheme()
     {
+         $data = $this->brandsAll();
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $form = Form::where('formname', "Front_Page")->first();
-        return view('admin.formbuilder.preview')->with('form', $form)->withShortcodes();
+        return view('admin.formbuilder.preview')->with(['form'=> $form, 'data' => $data])->withShortcodes();
     }
 
     public function deactivatetheme(Request $request)
