@@ -3,9 +3,7 @@
 
 @section('content')
 
-     
-      @include('admin.includes.errors')
-
+    
 
 <div id="previewtest">
 

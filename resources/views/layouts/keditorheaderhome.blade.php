@@ -12,7 +12,9 @@
         <link rel="apple-touch-icon" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
         <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{ asset('icons/icon-128.png') }}" >
         <link rel="icon" href="{{ asset('icons/icon-36.png') }}"  type="image/x-icon" />-->
-            @if($data)
+
+
+    @if($data)
     <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
     @endif
     <!-- CSRF Token -->
@@ -96,7 +98,7 @@
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 @endif
 <script src="{{ asset(mix('js/app.js')) }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
 

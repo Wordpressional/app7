@@ -62,7 +62,7 @@ Route::get('/arttype/{category}', ['uses' => 'PostController@arttype', 'as' => '
 Route::get('/linktype/{category}', ['uses' => 'PostController@linktype', 'as' => 'webhome.linktype']);
 
 Route::resource('pages', 'PageController')->only('show');
-//Route::post('/thispage/{page}/', 'PageController@thispage')->name('page.custompage');
+Route::post('/thispage/{page}/', 'PageController@thispage')->name('page.custompage');
 Route::get('/thispage/{page}', 'PageController@thispage')->name('page.custompage');
 
 Route::post('/cforms/datacfsave/',[
