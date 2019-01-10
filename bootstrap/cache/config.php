@@ -7,14 +7,14 @@
   ),
   'app' => 
   array (
-    'name' => 'DynamicApp',
+    'name' => 'DynamicWeb',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost/dynamic/',
+    'url' => 'http://localhost',
     'timezone' => 'Europe/Paris',
     'locale' => 'en',
     'fallback_locale' => 'en',
-    'key' => 'base64:a5U7OO04Bs+DdZOiH54fDD+qXto3VYAWzjPQf81SZtQ=',
+    'key' => 'base64:AypmddyAFdzad+4AnNh0Dwe6Xq2RzyKPUYlGHdXnQAE=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -145,7 +145,7 @@
   array (
     'backup' => 
     array (
-      'name' => 'DynamicApp',
+      'name' => 'DynamicWeb',
       'source' => 
       array (
         'files' => 
@@ -223,7 +223,7 @@
     array (
       0 => 
       array (
-        'name' => 'DynamicApp',
+        'name' => 'DynamicWeb',
         'disks' => 
         array (
           0 => 'local',
@@ -330,7 +330,7 @@
         'connection' => 'default',
       ),
     ),
-    'prefix' => 'dynamicapp_cache',
+    'prefix' => 'dynamicweb_cache',
   ),
   'cors' => 
   array (
@@ -383,7 +383,7 @@
       'sqlite' => 
       array (
         'driver' => 'sqlite',
-        'database' => 'dynamicdb1',
+        'database' => 'dynamicdb',
         'prefix' => '',
       ),
       'mysql' => 
@@ -391,9 +391,9 @@
         'driver' => 'mysql',
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'dynamicdb1',
+        'database' => 'dynamicdb',
         'username' => 'nagashwini',
-        'password' => 'nagashw1234',
+        'password' => '2oUwr9R3ua2bYKIl',
         'charset' => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix' => '',
@@ -405,10 +405,11 @@
         'host' => '127.0.0.1',
         'port' => '27017',
         'database' => 'mongoelecrud',
-        'username' => '',
-        'password' => '',
+        'username' => 'adminnagashw',
+        'password' => 'adminte564yufjjfhw3',
         'options' => 
         array (
+          'database' => 'admin',
         ),
       ),
       'testing' => 
@@ -416,9 +417,9 @@
         'driver' => 'mysql',
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'dynamicdb1',
+        'database' => 'dynamicdb',
         'username' => 'nagashwini',
-        'password' => 'nagashw1234',
+        'password' => '2oUwr9R3ua2bYKIl',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -430,10 +431,10 @@
       array (
         'driver' => 'pgsql',
         'host' => '127.0.0.1',
-        'port' => '3306',
-        'database' => 'dynamicdb1',
+        'port' => '5432',
+        'database' => 'dynamicdb',
         'username' => 'nagashwini',
-        'password' => 'nagashw1234',
+        'password' => '2oUwr9R3ua2bYKIl',
         'charset' => 'utf8',
         'prefix' => '',
         'schema' => 'public',
@@ -443,10 +444,10 @@
       array (
         'driver' => 'sqlsrv',
         'host' => '127.0.0.1',
-        'port' => '3306',
-        'database' => 'dynamicdb1',
+        'port' => '1433',
+        'database' => 'dynamicdb',
         'username' => 'nagashwini',
-        'password' => 'nagashw1234',
+        'password' => '2oUwr9R3ua2bYKIl',
         'charset' => 'utf8',
         'prefix' => '',
       ),
@@ -579,7 +580,7 @@
       array (
         'driver' => 'local',
         'root' => '/var/www/html/staticweb/storage/app/public',
-        'url' => 'http://localhost/dynamic//storage',
+        'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
       's3' => 
@@ -1256,7 +1257,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'dynamicapp_session',
+    'cookie' => 'dynamicweb_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => false,
