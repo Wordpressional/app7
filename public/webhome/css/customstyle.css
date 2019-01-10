@@ -73,8 +73,8 @@ body{
 .imgpage
 {
   
-  
-  height: 50px !important;
+  background:green;
+  height: 100px;
   
 }
 
