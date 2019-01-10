@@ -4,10 +4,10 @@
 		<div class="row-fluid fullwidth">
 			<div class="col-lg-12-fluid">
 				<div class="quote">
-			    	<i class="fa fa-quote-left"></i>
+			    	<i class="fa fa-quote-left">&nbsp;</i>
 			    	<h1>Design is not for philosophy, it's for life.</h1>
-			    	<p>Issey Miyake</p>
-			    	<i class="fa fa-quote-right"></i>
+			    	<p>Anonymous</p>
+			    	<i class="fa fa-quote-right">&nbsp;</i>
 				</div>
 			</div>
 		</div>

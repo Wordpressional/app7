@@ -217,21 +217,27 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/megamenu.png')}}" data-keditor-title="MegaMenu" data-keditor-categories="HTMLTemplates;MegaMenu;Menu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/megamenu.png')}}" data-keditor-title="MegaMenu" data-keditor-categories="HTMLTemplates;MegaMenu;Menus">
 
 @include('shortcodes.plainhtml.megamenu')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="HTMLTemplates;FAQ">
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/faq.png')}}" data-keditor-title="FAQ" data-keditor-categories="HTMLTemplates;FAQ">
 
 @include('shortcodes.plainhtml.faq')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.png')}}" data-keditor-title="AMenu" data-keditor-categories="HTMLTemplates;Menu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.png')}}" data-keditor-title="AMenu" data-keditor-categories="HTMLTemplates;Menus">
 
 @include('shortcodes.plainhtml.aboutmenu')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/topmenu.png')}}" data-keditor-title="TopMenu" data-keditor-categories="HTMLTemplates;Menus">
+
+@include('shortcodes.plainhtml.topmenu')
 
 </div>
 
@@ -241,36 +247,36 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/introslider1.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="HTMLTemplates;Introslider;Sliders">
+<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/introslider1.jpg')}}" data-keditor-title="Introslider" data-keditor-categories="HTMLTemplates;Introslider;Sliders">
 
 @include('shortcodes.plainhtml.introslider')
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/services1.png')}}" data-keditor-title="Services" data-keditor-categories="HTMLTemplates;Services">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/services1.png')}}" data-keditor-title="Services" data-keditor-categories="HTMLTemplates;Services">
 
 @include('shortcodes.plainhtml.services')
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="HTMLTemplates;Sliders">
+<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/innerpagesslider.png')}}" data-keditor-title="pagesliderwidget" data-keditor-categories="HTMLTemplates;Sliders">
 
 @include('shortcodes.plainhtml.innerpageslider')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="HTMLTemplates;Menu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="HTMLTemplates;Menus">
 
 @include('shortcodes.plainhtml.footerlinks')
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/gallery.png')}}" data-keditor-title="Gallery" data-keditor-categories="HTMLTemplates;Gallery">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/gallery.png')}}" data-keditor-title="Gallery" data-keditor-categories="HTMLTemplates;Gallery">
 
 @include('shortcodes.plainhtml.gallery')
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/photo.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/photo.png')}}" data-keditor-title="Photo" data-keditor-categories="Media;Photo">
     <div class="photo-panel">
         <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" width="100%" height="" />
     </div>
@@ -281,7 +287,7 @@
 
 
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Parallax">
 
 @include('shortcodes.plainhtml.parallaxone')
   
@@ -289,7 +295,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/revolutionaryslider.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Sliders;RevolutionarySlider">
+<div data-type="component-slider" data-preview="{{asset('examples/snippets/preview/revolutionaryslider.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Sliders;RevolutionarySlider">
 
 @include('shortcodes.plainhtml.revolutionslider')
   
@@ -297,7 +303,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menu;StickyMenu;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Menus;StickyMenu;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.stickymenut1')
   
@@ -305,7 +311,7 @@
 
 </div>
 
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Banner;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Banner;In-built Developer Theme">
 
 @include('shortcodes.plainhtml.bannert1')
   
@@ -360,7 +366,12 @@
 
 </div>
 
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/contspecial.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Contact Forms">
+@include('shortcodes.plainhtml.contactformspecial')
+  
 
+
+</div>
 
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 

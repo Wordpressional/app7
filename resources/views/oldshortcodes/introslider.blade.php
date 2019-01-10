@@ -1,7 +1,7 @@
  <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
-   <div class="col-md-12" style="background-color:#361f3f;">
+   <div class="col-md-12 icobak">
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -128,60 +128,7 @@
             Pyrupay allows a DApp to create token and crowdsale campaigns on Ethereum compatible networks using free Wizard. No coding skills required.
             </div>
             </div>
-            <!--<div data-b="2" data-p="816.0">
-                <img data-u="image" src="{{asset('introimgs/present/banner.png')}}" />
-                <div data-u="caption" data-t="47" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="asset('introimgs/present/01/main.jpg')}}"/>
-                    <div data-u="caption" data-t="48" style="position:absolute;top:30px;left:30px;width:180px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Main Image</div>
-                </div>
-                <div data-u="caption" data-t="49" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="50" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <img style="position:absolute;top:140px;left:170px;width:55px;height:51px;z-index:0;" src="{{ asset('introimgs/present/01/butterfly-light-yellow.png')}}" />
-                    <div data-u="caption" data-t="51" style="position:absolute;top:30px;left:30px;width:180px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Image Layer</div>
-                </div>
-                <div data-u="caption" data-t="52" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="53" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <div data-u="caption" data-t="54" style="position:absolute;top:100px;left:30px;width:280px;height:50px;z-index:0;font-size:40px;line-height:50px;text-align:center;">SOME TEXT</div>
-                    <div data-u="caption" data-t="55" style="position:absolute;top:30px;left:30px;width:180px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Text layer</div>
-                </div>
-                <div data-u="caption" data-t="56" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="57" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <div data-u="caption" data-t="58" style="position:absolute;top:25px;left:240px;width:300px;height:175px;z-index:0;background-color:#ffff8c;"></div>
-                    <div data-u="caption" data-t="59" style="position:absolute;top:30px;left:30px;width:180px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Panel Layer</div>
-                </div>
-                <div data-u="caption" data-t="60" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="61" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <div data-u="caption" data-t="62" style="position:absolute;top:30px;left:30px;width:250px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Nested Text Layer</div>
-                    <div style="position:absolute;top:40px;left:320px;width:200px;height:50px;z-index:0;font-size:26px;line-height:50px;text-align:center;">Nested Text</div>
-                </div>
-                <div data-u="caption" data-t="63" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="64" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <div data-u="caption" data-t="65" style="position:absolute;top:30px;left:30px;width:250px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Nested Image Layer</div>
-                    <img style="position:absolute;top:78px;left:249px;width:87px;height:92px;z-index:0;" src="{{ asset('introimgs/present/01/butterfly-blue.png')}}" />
-                </div>
-                <div data-u="caption" data-t="66" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="67" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <div data-u="caption" data-t="68" style="position:absolute;top:30px;left:30px;width:250px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Nested Image Layer</div>
-                    <img style="position:absolute;top:126px;left:364px;width:66px;height:66px;z-index:0;" src="{{ asset('introimgs/present/01/butterfly-dark-yellow.png')}}" />
-                </div>
-                <div data-u="caption" data-t="69" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="70" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <div data-u="caption" data-t="71" style="position:absolute;top:30px;left:30px;width:250px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Nested Image Layer</div>
-                    <img style="position:absolute;top:113px;left:463px;width:48px;height:49px;z-index:0;" src="{{ asset('introimgs/present/01/butterfly-red.png')}}" />
-                </div>
-                <div data-u="caption" data-t="72" data-3d="1" style="position:absolute;top:-210px;left:200px;width:580px;height:225px;z-index:0;">
-                    <img data-u="caption" data-t="73" style="position:absolute;top:0px;left:0px;width:580px;height:225px;z-index:0;" src="{{ asset('introimgs/present/01/layer-blurred-white.png')}}" />
-                    <div data-u="caption" data-t="74" style="position:absolute;top:30px;left:30px;width:200px;height:40px;z-index:0;background-color:#000000;font-size:22px;color:#ffffff;line-height:40px;text-align:center;">Arrow/Bullets</div>
-                    <img data-u="caption" data-t="75" style="position:absolute;top:93px;left:250px;width:18px;height:38px;z-index:0;" src="{{ asset('introimgs/present/01/arrow-left.png')}}" />
-                    <img data-u="caption" data-t="76" style="position:absolute;top:93px;left:312px;width:18px;height:38px;z-index:0;" src="{{ asset('introimgs/present/01/arrow-right.png')}}" />
-                    <img data-u="caption" data-t="77" style="position:absolute;top:0px;left:259px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
-                    <img data-u="caption" data-t="78" style="position:absolute;top:0px;left:277px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
-                    <img data-u="caption" data-t="79" style="position:absolute;top:0px;left:295px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
-                    <img data-u="caption" data-t="80" style="position:absolute;top:0px;left:313px;width:8px;height:8px;z-index:0;" src="{{ asset('introimgs/present/01/dot.png')}}" />
-                </div>
-                <a href="http://www.jssor.com/demos/introduction-slider.slider/=edit" target="_blank" style="display:block; position:absolute;top:22px;left:500px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Edit This Slider</a>
-                <a href="https://www.jssor.com/action/sign_up.aspx" target="_blank" style="display:block; position:absolute;top:22px;left:720px;width:220px;height:36px;z-index:0;font-size:22px;color:#ffffff;line-height:36px;text-align:center;">Sign up Now!</a>
-            </div>-->
+           
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb101" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
@@ -207,20 +154,4 @@
 </div>
         <!-- #endregion Jssor Slider End -->
 
-        <section>
-    <h3>Two Individual Images</h3>
-    <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
-    </div>
-
-    <hr />
-
-    <h3>A Four Image Set</h3>
-    <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
-    </div>
-  </section>
+  

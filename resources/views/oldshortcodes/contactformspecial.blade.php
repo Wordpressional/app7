@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-                 
 <div class="container contact-form">
             <div class="contact-image">
                 <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
@@ -17,15 +15,18 @@
                         <div class="form-group">
                             <input type="text" name="text1547009511316" id="text1547009511316" class="form-control" placeholder="Your Phone Number *" value="" />
                         </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="textarea1547009512316" id="textarea1547009512316" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    
                         <div class="form-group">
                             <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="textarea1547009512316" id="textarea1547009512316" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                        </div>
-                    </div>
+
+                    
                 </div>
 
  <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
@@ -33,6 +34,3 @@
 <input type="hidden" name="files" class="files" value="" />
             </form>
 </div>
-
-=======
->>>>>>> 85cbe11333ef8ebcb0bc7ba2b22cb1e0bc221eca

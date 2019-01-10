@@ -1,6 +1,6 @@
 <div class="ani1">
 
-<h2>Pyrupay Services</h2>
+<h2>Our Services</h2>
 
 </div>
 <section class="presentation">
@@ -11,7 +11,7 @@
                     
                     <h4 class="trusted">Trusted worldwide</h4>
                     
-                    <p>At Pyrupay we build trust among investors and gain the support your ICO needs. Using Blockchain concept we are building trust and transparency into your project. Also make your blockchain project catch the eye and build the trust and transparency of your participants, supporters, and clients. Payments are made using cryptocurrency which is Trustless, Decentralized & Immutable.</p>
+                    <p>At lll we build trust among investors and gain the support your ICO needs. Using Blockchain concept we are building trust and transparency into your project. Also make your blockchain project catch the eye and build the trust and transparency of your participants, supporters, and clients. Payments are made using cryptocurrency which is Trustless, Decentralized & Immutable.</p>
                     </div>
                 
 				 <div class="right sidepurple">
