@@ -6,9 +6,9 @@
 @endif
 
 <div>
-                
+                  
     @each('posts/_showtagconf', $posts, 'post', 'posts/_empty')
-
+  
 </div>
 
 <div class="d-flex justify-content-center">

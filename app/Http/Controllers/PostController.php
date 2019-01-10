@@ -225,12 +225,19 @@ class PostController extends Controller
     public function tagtypeconf(Request $request, $tag)
     {
          $data = $this->settingsAll();
+
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+
+         $data = $this->settingsAll();
+         $branding = Brand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
         $tagid = Tag::where('tag', $tag)->first();
          $page = Page::where('display_name', $tag)->first();
-        
-        //dd($tagid);
+        $api_token = Auth::user()->api_token;
+         //dd($api_token);
+        $colorsetting = Colorsetting::all();
         if($tagid)
         {
         if($tagid->id != "")
@@ -249,8 +256,11 @@ class PostController extends Controller
             'data' => $data,
             'posts' => $post,
              'page' => $page,
+              'branding' => $branding,
+              'api_token' => $api_token,
+              'colorsetting' => $colorsetting,
            
-        ]);
+        ])->withShortcodes();
         }
         } 
         else

@@ -44,7 +44,7 @@
 <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
 @if($themes == "empty")
 
-<button id="load">Load Pre installed Themes</button>
+<button id="load">Load Pre Installed Themes</button>
 @endif
 
 @if($themes != "empty")
@@ -81,6 +81,11 @@ function random_color() {
 
 <button id="activate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Activate</button>
 <button id="preview_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Preview</button>
+
+@if($capturedstring == "*")
+&nbsp;&nbsp;&nbsp;&nbsp;<button id="delete_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Delete</button>
+
+@endif
 
 @elseif($theme->tstatus == "inactive")
  

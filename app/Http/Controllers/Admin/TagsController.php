@@ -87,8 +87,9 @@ class TagsController extends Controller
      */
     public function edit($id)
     {
+        $data = $this->brandsAll();
         $tag = Tag::find($id);
-        return view('admin.tags.edit')->with('tag', $tag);
+        return view('admin.tags.edit')->with(['tag'=>$tag, 'data'=>$data]);
     }
 
     /**
