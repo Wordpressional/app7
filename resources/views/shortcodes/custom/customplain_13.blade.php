@@ -1,70 +1,35 @@
-<!-- Footer -->
-    <div class="mlthemeone footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-col">
-                        <h4>About Cedo</h4>
-                        <p>We're passionate about offering the best financial services to our loyal customers</p>
+                 
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+            </div>
+           <form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="your_ajax_function(); return false;">
+                <h3>Drop Us a Message</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="text1547009506085" id="text1547009506085" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="text1547009507933" id="text1547009507933" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="text1547009511316" id="text1547009511316" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col mx-auto">
-                        <h4>Important Links</h4>
-                        <p><a class="underline" href="terms-conditions.html">Terms & Conditions</a>, <a class="underline" href="privacy-policy.html">Privacy Policy</a>, <a class="underline" href="#your-link">Institute Of Credit & Loans Control</a>, <a class="underline" href="#your-link">National Bank</a></p>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="textarea1547009512316" id="textarea1547009512316" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col float-lg-right">
-                        <h4>Social Media</h4>
-                        <span class="fa-stack fa-lg">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x google-plus"></i>
-                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x instagram"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x linkedin"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x dribbble"></i>
-                                <i class="fab fa-dribbble fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-center">Copyright © Cedo - Loans Credit Landing Page Template by <a class="underline" href="main.html">Inovatik</a></p>
-                    </div> <!-- end of col -->
-                </div> <!-- enf of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of copyright -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+                </div>
+
+ <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="table_name" class="table_name" id="c50734c08" value="c50734c08" />
+<input type="hidden" name="files" class="files" value="" />
+            </form>
+</div>
+

@@ -13,7 +13,7 @@
 
    
 
-   <a href="#" id="trash" class="btn btn-primary btn-sm align-self-center form-builder-save"><b>Reset</b></a>
+   
 @endif
   <a href="#" id="setData" class="btn btn-primary btn-sm align-self-center form-builder-save" style="display: none;"><b>Load Form</b></a>
 

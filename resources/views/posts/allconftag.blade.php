@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-md-12">
                    <div class="bg-light p-3 ">
-                  
+     
      			@include ('posts/_listconftag')
                 
 
