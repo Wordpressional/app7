@@ -42,7 +42,7 @@
 		item_id="{{ $post->id }}"
     item_slug="{{ $post->slug }}"
     item_type="posts"
-    item_token="{{ $api_token }}"
+    item_token="{{Auth::user()->api_token}}"
 		logged_in="{{ Auth::check() }}"
 		></like>
       </small>

@@ -9,7 +9,7 @@
 	                        <div class="col-md-12">
 	                            <div class="header-text text-center">
 	                                <div class="head-text lift-text">
-									    <h1 class="tagline">I'm <span id="typed">Gwenyth.</span><span class="typed-cursor">|</span></h1>
+									    <h1 class="tagline">I'm <span id="typed">PPP.</span><span class="typed-cursor">|</span></h1>
 									    <p class="sub-tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 									    <a href="#portofolio" class="cta-button">view portofolio </a>
 									</div>

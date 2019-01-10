@@ -308,38 +308,10 @@ li.flyout-mega > a:hover + .flyout-mega-wrap {
 }
 }
 @media (max-width: 767px) {
-  .exo-menu {
-    min-height: 58px;
-    background-color: #23364b;
-    width: 100%;
-
-  }
-
-  .exo-menu > li > a {
-    width: 100%;
-    display: none;
-  }
-  .exo-menu > li {
-    width: 100%;
-  }
-  .exo-menu.display > li > a {
+   .exo-menu > li > a {
     display: block;
-    padding: 10px;
-    height: 58px;
+    padding: 20px 22px;
   }
-
-  .mega-menu,
-  .Images,
-  .Blog,
-  .flyout-right > ul,
-  .flyout-left > ul,
-  li.drop-down > ul {
-    position: relative;
-  }
-
-  a.toggle-menu.visible-xs-block {
-    display: block;
-}
 }
 a.toggle-menu {
   position: absolute;
@@ -358,12 +330,3 @@ a.toggle-menu {
 
 
 </style> 
-<script>
-$(function () {
- $('.toggle-menu').click(function(){
-	$('.exo-menu').toggleClass('display');
-	
- });
- 
-});
-</script>

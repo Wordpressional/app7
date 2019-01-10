@@ -92,10 +92,11 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
+        $data = $this->brandsAll();
         $category = Category::find($id);
        
     
-        return view('admin.categories.edit')->with('category', $category);
+        return view('admin.categories.edit')->with(['category' => $category, 'data' => $data]);
     }
 
     /**
