@@ -13,7 +13,6 @@
     height: 225px;
     
 }
-<<<<<<< HEAD
 .themeone .contact {
    
     background-color: black !important;
@@ -155,7 +154,7 @@ h6 {
 .custom8 .section-with-bg {
   background-color: #f6f7fd;
 }
-}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1675,11 +1674,4 @@ border-radius: 0;
   #subscribe button {
     margin-top: 10px;
   }
-=======
-
-.icobak span
-{
-  
-  color: blue !important;
->>>>>>> 8607b5ebce2086b89239572d5c8ff10585f8eddb
 }
