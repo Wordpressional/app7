@@ -6,40 +6,56 @@
 <h3> Pre Installed Themes </h3>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> DarkTheme </h5>
-<textarea rows="5" cols="70" id="themeone"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
-   
+  <h5> BaseTheme </h5>
+<input type="text" id="themename0" name="themename0" value="BaseTheme" style="display:none;">
+<textarea rows="5" cols="70" id="theme0"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
+ </div>  
 
 </div>
+<div class="row">
+<div class="col-lg-3 col-md-3 bdstyle preinstall">
+<h5> DarkTheme </h5>
+<input type="text" id="themename1" name="themename1" value="DarkTheme" style="display:none;">
+<textarea rows="5" cols="70" id="theme1"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
+   
+</div>
+
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> CommingSoon </h5>
-<textarea rows="5" cols="70" id="themetwo"  class="form-control fc" required="required" style="display:none;">{{ $themetwo }}</textarea>
+<input type="text" id="themename2" name="themename2" value="CommingSoon" style="display:none;">
+<textarea rows="5" cols="70" id="theme2"  class="form-control fc" required="required" style="display:none;">{{ $themetwo }}</textarea>
  
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> BlueThem </h5>
-<textarea rows="5" cols="70" id="themethree"  class="form-control fc" required="required" style="display:none;">{{ $themethree }}</textarea>
+<h5> BlueTheme </h5>
+<input type="text" id="themename3" name="themename3" value="BlueTheme" style="display:none;">
+<textarea rows="5" cols="70" id="theme3"  class="form-control fc" required="required" style="display:none;">{{ $themethree }}</textarea>
 
 </div>
 </div>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> PrinceTheme </h5>
-<textarea rows="5" cols="70" id="themefour"  class="form-control fc" required="required" style="display:none;">{{ $themefour }}</textarea> 
+<input type="text" id="themename4" name="themename4" value="PrinceTheme" style="display:none;">
+<textarea rows="5" cols="70" id="theme4"  class="form-control fc" required="required" style="display:none;">{{ $themefour }}</textarea> 
 
 
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> QueenTheme </h5>
-<textarea rows="5" cols="70" id="themefive"  class="form-control fc" required="required" style="display:none;">{{ $themefive }}</textarea>
+<input type="text" id="themename5" name="themename5" value="QueenTheme" style="display:none;">
+<textarea rows="5" cols="70" id="theme5"  class="form-control fc" required="required" style="display:none;">{{ $themefive }}</textarea>
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> LaunchingSoon </h5>
-<textarea rows="5" cols="70" id="themesix"  class="form-control fc" required="required" style="display:none;">{{ $themesix }}</textarea>
+<input type="text" id="themename6" name="themename6" value="LaunchingSoon" style="display:none;">
+<textarea rows="5" cols="70" id="theme6"  class="form-control fc" required="required" style="display:none;">{{ $themesix }}</textarea>
 
 </div>
 </div>
+
 @endif
+
 <meta name="_token" content="{{ csrf_token() }}"/>
 <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
 @if($themes == "empty")
@@ -67,16 +83,26 @@ function random_color() {
 
 @foreach($themes as $theme)
 @php  $tcolor = random_color(); @endphp
+@php $capturedstring = substr($theme->tname,0,1) @endphp
+@php $alteredstring = substr($theme->tname,0,8) @endphp
+
 <div class="col-lg-5 col-md-5 col-sm-12 bdstyle" style="background:#{{$tcolor}}; height:250px;">
 <input type="text" id="tid_{{$theme->id}}" value="{{$theme->id}}" style="display:none;">
 <h6 style="background:#000000; color:#E6E6E6; padding:5px; border-radius:5px; border: 2px solid #E6E6E6; margin-bottom:80px;"> <i class="fa fa-adjust"></i>
  {{ $theme->tname }} </h6>
 
 <textarea rows="5" cols="70" id="theme_{{$theme->id}}"  class="form-control fc" required="required" style="display:none;">{{ $theme->tcontent }}</textarea>
+
+
+
 @if($theme->tstatus == "active")
 
  <button id="deactivate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Deactivate</button>
 
+@if($alteredstring == "Altered_")
+&nbsp;&nbsp;&nbsp;&nbsp;<button id="reset_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Reset</button>
+
+@endif
 @elseif($theme->tstatus == "disabled")
 
 <button id="activate_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Activate</button>
@@ -93,7 +119,7 @@ function random_color() {
 
 <button id="preview_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Preview</button>
 
-@php $capturedstring = substr($theme->tname,0,1) @endphp
+
 
 @if($capturedstring == "*")
 &nbsp;&nbsp;&nbsp;&nbsp;<button id="delete_{{$theme->id}}" class="btn btn-sm" style="background:#000000; color:#E6E6E6;border-radius:5px; border: 2px solid #E6E6E6;">Delete</button>
@@ -300,6 +326,64 @@ function random_color() {
 
     for($i=0; $i<50; $i++)
     {
+      $("#reset_"+$i).click(function(){
+
+        $('.preinstalledthemes').css('display', 'inline');
+        //alert($i);
+        var nostr = this.id;
+        //alert(this.id);
+        var slug = nostr.split('_').pop();
+
+        //alert(slug);
+
+        var tid = $("#tid_"+slug).val();
+        
+        //var ntname = $('#tname_'+$i).val();
+        var newtheme = $("#theme_"+slug).val();
+
+       
+        
+                 
+        
+        arrasson =  {"newtheme": newtheme,  "tid": tid};
+        console.log(arrasson);
+        
+         $.ajax({
+                
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+
+                url: "{{route('admin.resettheme')}}",
+               
+                type: 'post',
+                data:  arrasson,
+                
+                success: function(result) {
+                  
+                  setTimeout(function(){ 
+
+                  window.location.reload();
+                  }, 300);
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+      });
+    }
+
+
+
+    for($i=0; $i<50; $i++)
+    {
       $("#delete_"+$i).click(function(){
         //alert("hi");
         var nostr = this.id;
@@ -354,12 +438,12 @@ function random_color() {
 
         var arrasso = {};
         
-        var themeone = $('#themeone').val();
-        var themetwo = $('#themetwo').val();
-        var themethree = $('#themethree').val();
-        var themefour = $('#themefour').val();
-        var themefive = $('#themefive').val();
-        var themesix = $('#themesix').val();
+        var themeone = $('#theme1').val();
+        var themetwo = $('#theme2').val();
+        var themethree = $('#theme3').val();
+        var themefour = $('#theme4').val();
+        var themefive = $('#theme5').val();
+        var themesix = $('#theme6').val();
         
         
         

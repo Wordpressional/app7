@@ -6,6 +6,7 @@ use Session;
 use App\Tag;
 use App\Page;
 use App\Form;
+use App\Theme;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use Illuminate\Support\Facades\Auth;
@@ -166,18 +167,52 @@ class FormbuilderController extends Controller
 
         ]);
         $form = Form::find($id);
-        $form->formname = $request->formname;
+        if($form->formname == "Front_Page")
+        {
+            $form->formname = "Front_Page";
+        }
+        else
+        {
+            $form->formname = $request->formname;
+        }
+        
         $form->htmlcontent = $request->htmlcontent;
         $form->save();
+
+        if($form->formname == "Front_Page")
+        {
+        $theme = Theme::where('tstatus', 'active')->first();
+        if(substr($theme->tname,0,8) == "Altered_")
+        {
+
+        }
+        else
+        {
+            $theme->tname = "Altered_".$theme->tname;
+            $th = new Theme;
+            $th->tname = "Backup_".$theme->id;
+            $th->tcontent = $theme->tcontent;
+            $th->save();
+        }
+        
+        
+        $theme->tcontent = $form->htmlcontent;
+        
+        $theme->save();
+
+        
+        }
+
+
         
         return "success";
     }
 
     public function updatepre(Request $request, $id)
     {
-        
+        //dd("hi");
         $form = Form::find($id);
-        
+        //dd($form);
         $form->htmlcontent = $request->htmlcontent;
         $form->save();
         

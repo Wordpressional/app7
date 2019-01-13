@@ -71,6 +71,7 @@
      
     @include('layouts.compscripts.general')
     @include('layouts.compscripts.themeone')
+    @include('layouts.compscripts.independentcomponents')
     @include('layouts.compscripts.serviceworker')
        
          @include ('layouts.shortcode-layout')
