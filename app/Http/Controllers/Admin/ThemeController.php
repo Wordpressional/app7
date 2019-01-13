@@ -58,8 +58,7 @@ class ThemeController extends Controller
         $themefive = view('admin.themes.themefive')->render();
         $themesix = view('admin.themes.themesix')->render();
         
-
-       
+        
 
         return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themes','data'));
     }
@@ -537,6 +536,8 @@ class ThemeController extends Controller
         return "success";
     }
 
+
+
     public function installthemes(Request $request)
     {
         //dd($request->themeone);
@@ -680,6 +681,38 @@ class ThemeController extends Controller
                 
         $branding->homepage = "[homepage]-[/homepage]";
         $branding->save();
+       
+        return "success";
+    }
+
+    public function resettheme(Request $request)
+    {
+        
+        $theme = Theme::where('id', $request->tid)->first();
+        $themename = explode("_",$theme->tname);
+        //dd($themename[1]);
+        $themes = Theme::all();
+
+        foreach($themes as $th)
+        {
+            $backupidstring = substr($th->tname,7, 5);
+        }
+
+        if($backupidstring == $theme->id)
+        {
+          $themeb = Theme::where('tname', "Backup_".$request->tid)->first();
+          $themeb = Theme::where('id', $themeb->id)->first();
+           $theme->tname = $themename[1];
+           $theme->tcontent = $themeb->tcontent;
+           $theme->save();
+           $themeb->delete();  
+
+            $themef = Form::where('formname', "Front_Page")->first();
+       
+            $themef->htmlcontent = $theme->tcontent; 
+            $themef->save();    
+        }
+        
        
         return "success";
     }

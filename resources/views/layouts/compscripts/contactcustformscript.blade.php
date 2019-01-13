@@ -1,9 +1,6 @@
    
 
 <script>
-alert("hi............");
-
-
 
  
 $(document).ready(function(){

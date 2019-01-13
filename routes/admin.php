@@ -444,6 +444,14 @@ Route::post('/deactivatetheme/',[
 
 ]);
 
+Route::post('/resettheme/',[
+
+'uses' => 'ThemeController@resettheme',
+'as' => 'resettheme'
+
+]);
+
+
 Route::get('/widgeteditor',[
 
 
