@@ -522,13 +522,13 @@ Route::get('/authors',[
 Route::get('/authors/edita/{id}',[
 
 'uses' => 'UserController@edita',
-'as' => 'authors.edit'
+'as' => 'authors.edita'
 
 ]);
-Route::post('/authors/updatea/{id}',[
+Route::patch('/authors/updatea/{id}',[
 
 'uses' => 'UserController@updatea',
-'as' => 'authors.update'
+'as' => 'authors.updatea'
 
 ]);
 

@@ -1,9 +1,9 @@
-{!! Form::model($user, ['method' => 'PATCH', 'route' => ['admin.users.update', $user]]) !!}
+{!! Form::model($user, ['method' => 'PATCH', 'route' => ['admin.authors.updatea', $user]]) !!}
 
   <div class="form-row">
     <div class="form-group col-md-6">
       {!! Form::label('name', __('users.attributes.name')) !!}
-      {!! Form::text('name', null, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.name'), 'required']) !!}
+      {!! Form::text('name', $user->name, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.name'), 'required']) !!}
 
       @if ($errors->has('name'))
         <span class="invalid-feedback">{{ $errors->first('name') }}</span>
@@ -12,7 +12,7 @@
 
     <div class="form-group col-md-6">
       {!! Form::label('email', __('users.attributes.email')) !!}
-      {!! Form::text('email', null, ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.email'), 'required']) !!}
+      {!! Form::text('email', $user->email, ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.email'), 'required']) !!}
 
       @if ($errors->has('email'))
         <span class="invalid-feedback">{{ $errors->first('email') }}</span>
@@ -43,6 +43,8 @@
   <div class="form-group">
     {!! Form::label('roles', __('users.attributes.roles')) !!}
 
+   
+
     @foreach($roles as $role)
       <div class="checkbox">
         <label>
@@ -55,6 +57,8 @@
         </label>
       </div>
     @endforeach
+  
+
   </div>
 
   {{ link_to_route('admin.authors.index', __('forms.actions.back'), [], ['class' => 'btn btn-secondary']) }}

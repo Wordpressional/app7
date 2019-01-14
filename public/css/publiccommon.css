@@ -2955,3 +2955,12 @@ img.example-image {
     border: none;
     cursor: pointer;
 }
+
+
+.card-body .dropdown-menu {
+    background-color: #ffffff !important; 
+}
+
+.note-editor.note-frame.fullscreen{
+  background: white;
+}

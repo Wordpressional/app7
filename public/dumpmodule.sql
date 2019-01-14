@@ -25,7 +25,9 @@ SET time_zone = "+00:00";
 --
 
 INSERT INTO `modules` (`id`, `modulename`, `mdisplay_name`, `mdescription`, `mstatus`, `created_at`, `updated_at`, `mmstatus`) VALUES
-(1, 'electioncommission', 'Election Commission', 'Polling Details', 'installed', 'now()', 'now()', 'active');
+(1, 'electioncommission', 'Election Commission', 'Polling Details', 'uninstalled', 'now()', 'now()', 'inactive');
+INSERT INTO `modules` (`id`, `modulename`, `mdisplay_name`, `mdescription`, `mstatus`, `created_at`, `updated_at`, `mmstatus`) VALUES
+(2, 'cms', 'Content Managaement System', 'Content Managaement System', 'uninstalled', 'now()', 'now()', 'inactive');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -1,9 +1,9 @@
 @php
     $posted_at = old('posted_at') ?? (isset($post) ? $post->posted_at->format('Y-m-d\TH:i') : null);
 @endphp
-
+<span style="color:red"> * marked fields are required</span>
 <div class="form-group">
-    {!! Form::label('title', __('posts.attributes.title')) !!}
+    {!! Form::label('title', __('posts.attributes.title')) !!}<span style="color:red"> * </span>
     {!! Form::text('title', null, ['class' => 'form-control' . ($errors->has('title') ? ' is-invalid' : ''), 'required']) !!}
 
     @if ($errors->has('title'))
@@ -14,16 +14,22 @@
 
 <div class="form-row">
     <div class="form-group col-md-6">
-        {!! Form::label('author_id', __('posts.attributes.author')) !!}
+      
+      @if($post)
+        {!! Form::label('author_id', __('posts.attributes.author')) !!}<span style="color:red"> * </span>
         {!! Form::select('author_id', $users, null, ['class' => 'form-control' . ($errors->has('author_id') ? ' is-invalid' : ''), 'required']) !!}
-
+        @else
+         {!! Form::label('author_id', __('posts.attributes.author')) !!}
+        {!! Form::select('author_id', $tuser, null, ['class' => 'form-control' . ($errors->has('author_id') ? ' is-invalid' : ''), 'required']) !!}
+      @endif
+      
         @if ($errors->has('author_id'))
             <span class="invalid-feedback">{{ $errors->first('author_id') }}</span>
         @endif
     </div>
 
     <div class="form-group col-md-6">
-        {!! Form::label('posted_at', __('posts.attributes.posted_at')) !!}
+        {!! Form::label('posted_at', __('posts.attributes.posted_at')) !!}<span style="color:red"> * </span>
         <input type="datetime-local" name="posted_at" class="form-control {{ ($errors->has('posted_at') ? ' is-invalid' : '') }}" required value="{{ $posted_at }}">
 
         @if ($errors->has('posted_at'))
@@ -34,16 +40,19 @@
 
     <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="category">Select a Category</label>
+                <label for="category">Select a Category </label><span style="color:red"> * </span>
                 <select name="category_id" id="category_id" class="form-control">
                      @foreach($categories as $category)
-
+                     @php  if ($post){
+                           if ($post->category_id == $category->id){
+                             $selected = "selected";
+                           }
+                         }
+                          
+                          
+                      @endphp
                       <option value="{{$category->id}}"
-                           @if ($posted_at)
-                           @if ($post->category_id == $category->id)
-                             selected 
-                          @endif
-                          @endif
+                          
                         >{{$category->name}}</option>
 
                      @endforeach     
@@ -51,37 +60,45 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="template">Related templates links</label>
+                 @php if ($post) {
+                 if ($post->template == "Full width Template") {
+                  $selected1 = "selected";
+               }
+             }
+             @endphp
+              @php if ($post) {
+                 if ($post->template == "Title Template") {
+                  $selected2 = "selected";
+               }
+             }
+              @endphp
+              @php if ($post) {
+                 if ($post->template == "Post Template") {
+                  $selected3 = "selected";
+               }
+             }
+              @endphp
                 <select name="template" id="template" class="form-control">
                     
                       <option value="Full width Template"  
-                      @if ($posted_at) @if ($post->template == "Full width Template")
-                             selected 
-                          @endif
-                        @endif
+                     
+                              
+                         
                      >Full width Template</option>
                       <option value="3 Column Template"
-                      @if ($posted_at) @if ($post->template == "3 Column Template")
-                             selected 
-                          @endif
-                        @endif
+                             
                           >3 Column Template</option>
                       <option value="Title Template"
-                      @if ($posted_at) @if ($post->template == "Title Template")
-                             selected 
-                          @endif
-                        @endif
+                             
                           >Title Template</option>
                       <option value="Post Template"
-                      @if ($posted_at) @if ($post->template == "Post Template")
-                             selected 
-                          @endif
-                        @endif
+                         
                           >Post Template</option>
  
                   </select>
             </div>
 
-              @if ($posted_at) 
+              @if ($post) 
               <div id="first" style="display: none;">
               @if ($post->template == "Full width Template")
                  <p>@lang('posts.link') : {{ link_to_route('posts.articles', route('posts.articles')) }}</p>
@@ -130,11 +147,11 @@
     <div class="form-group">
  @if (count($tags))
             <div class="form-group col-md-12">
-               <label for="tags">Select Tag</label>
+               <label for="tags">Select Tag</label><span style="color:red"> * </span>
                @foreach($tags as $tag)
                    <div class="checkbox">
                       <label for=""><input name="tags[]" value="{{$tag->id}}" type="checkbox"
-                        @if ($posted_at)
+                        @if ($post)
                         @foreach ($post->tags as $t)
                             @if ($tag->id == $t->id)
                                checked 
@@ -151,10 +168,10 @@
     </div>
 
 <div class="form-group thumbhide">
-    {!! Form::label('thumbnail', __('posts.attributes.thumbnail')) !!}
+    {!! Form::label('thumbnail', __('posts.attributes.thumbnail')) !!}<span style="color:red">* (size: 250 X 250)</span>
     {!! Form::file('thumbnail', ['accept' => 'image/*', 'class' => 'form-control' . ($errors->has('thumbnail') ? ' is-invalid' : '')]) !!}
 
-    @if ($posted_at)
+    @if ($post)
     @if ($post->hasThumbnail())
     {{ Html::image($post->thumbnail()->url, $post->thumbnail()->original_filename, ['class' => 'img-thumbnail', 'width' => '250']) }}
     
@@ -170,7 +187,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('excerpt', __('posts.attributes.excerpt')) !!}
+    {!! Form::label('excerpt', __('posts.attributes.excerpt')) !!}<span style="color:red"> * </span>
     {!! Form::textarea('excerpt', null, ['class' => 'form-control trumbowyg-form' . ($errors->has('excerpt') ? ' is-invalid' : ''), 'required' => 'required', 'rows'=>5]) !!}
 
     @if ($errors->has('excerpt'))
@@ -186,7 +203,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('content', __('posts.attributes.content')) !!}
+    {!! Form::label('content', __('posts.attributes.content')) !!}<span style="color:red"> * </span>
     {!! Form::textarea('content', null, ['class' => 'form-control summernote' . ($errors->has('content') ? ' is-invalid' : ''), 'required' => 'required']) !!}
 
     @if ($errors->has('content'))

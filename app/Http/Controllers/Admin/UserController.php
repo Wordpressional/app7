@@ -109,16 +109,27 @@ class UserController extends Controller
     public function edit($id)
     {
         try {
-            $user = User::findOrFail($id);
-
+            $user = User::with('roles')->findOrFail($id);
+            //dd($user->roles->id);
             //$roles = Role::all();
-            $roles = Role::with('permissions')->get();
+            if($user->roles === null)
+            {
+                 $roles = Role::with('permissions')->get();
+            }
+            else
+            {   
+                $roles = Role::with('permissions')->get();
+                $rolesempty = "";
+            }
+           
+            //dd(count($roles));
             $permissions = Permission::all();
              $data = $this->brandsAll();
             $params = [
                 'title' => 'Edit User',
                 'user' => $user,
                 'roles' => $roles,
+                'rolesempty' => $rolesempty,
                 'permissions' => $permissions,
                 'data' => $data,
             ];
@@ -325,20 +336,24 @@ class UserController extends Controller
         $data = $this->brandsAll();
         return view('admin.authors.index', [
             'data' => $data,
-            'users' => User::latest()->paginate(50)
+            'users' => User::whereHas('roles', function($q){
+    $q->where('name', 'like', 'cms_' . '%');
+})->latest()->paginate(50)
         ]);
     }
 
     /**
      * Display the specified resource edit form.
      */
-    public function edita(User $user)
+    public function edita($id)
     {
+        $user = User::findOrFail($id);
+       $roles = Role::where('name', 'like', 'cms_' . '%')->get();
         $data = $this->brandsAll();
         return view('admin.authors.edit', [
             'data' => $data,
             'user' => $user,
-            'roles' => Role::all()
+            'roles' => $roles,
         ]);
     }
 

@@ -62,6 +62,52 @@ class ShowDashboard extends Controller
                 
             ]);
          }
+
+         else if($user->isCMSAdmin() == "yes") {
+            $data = $this->brandsAll();
+             return view('admin.dashboard.index_home', [
+                'comments' =>  Comment::lastWeek()->get(),
+                'posts' => Post::lastWeek()->get(),
+                'users' => User::lastWeek()->get(),
+                'data' => $data,
+                
+            ]);
+         }
+
+         else if($user->isCMSEditor() == "yes") {
+            $data = $this->brandsAll();
+             return view('admin.dashboard.index_home', [
+                'comments' =>  Comment::lastWeek()->get(),
+                'posts' => Post::lastWeek()->get(),
+                'users' => User::lastWeek()->get(),
+                'data' => $data,
+                
+            ]);
+         }
+
+         else if($user->isCMSAuthor() == "yes") {
+            $data = $this->brandsAll();
+             return view('admin.dashboard.index_home', [
+                'comments' =>  Comment::lastWeek()->get(),
+                'posts' => Post::lastWeek()->get(),
+                'users' => User::lastWeek()->get(),
+                'data' => $data,
+                
+            ]);
+         }
+
+         else if($user->isCMSSubscriber() == "yes") {
+            $data = $this->brandsAll();
+             return view('admin.dashboard.index_home', [
+                'comments' =>  Comment::lastWeek()->get(),
+                'posts' => Post::lastWeek()->get(),
+                'users' => User::lastWeek()->get(),
+                'data' => $data,
+                
+            ]);
+         }
+
+        
              else if($user->isBoothOfficer() == "yes") {
             $data = $this->accountsAll();
              return view('admin.dashboard.index_ceohome', [

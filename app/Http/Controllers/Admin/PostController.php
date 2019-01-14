@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use App\Http\Requests\Admin\PostsRequest;
 use App\Post;
+use App\Role;
 use App\User;
 use App\Category;
 use App\Tag;
@@ -23,10 +24,13 @@ class PostController extends Controller
      */
     public function index()
     {
+        $tuser = Auth::user()->displayname;
+        
         $data = $this->brandsAll();
         return view('admin.posts.index', [
             'data' => $data,
-            'posts' => Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(50)
+            'posts' => Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(50),
+            'tuser' => $tuser,
         ]);
     }
 
@@ -35,8 +39,9 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //dd(User::authors()->get());
+        //dd(User::authors()->pluck('name', 'id'));
         //dd(Auth::user());
+
          $thisuser = Auth::user();
          $categories = Category::all();
         
@@ -44,7 +49,8 @@ class PostController extends Controller
         return view('admin.posts.edit', [
             'post' => $post,
             'data' => $data,
-            'users' => User::authors()->pluck('displayname', 'id'),
+            'roles' => Role::all(),
+            'users' => User::authors()->pluck('name', 'id'),
             'categories'=>$categories,
             'tags'=>Tag::all(),
             'tuser'=>$thisuser
@@ -59,7 +65,16 @@ class PostController extends Controller
      */
     public function create(Request $request)
     {
+
+        $rolearray = array();
+        $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+        foreach($roles as $role)
+        {
+            array_push($rolearray, $role->display_name);
+        }
+       //dd($rolearray);
          $data = $this->brandsAll();
+         $thisuser = Auth::user();
         $categories = Category::all();
         if($categories->count() == 0)
         {
@@ -71,9 +86,12 @@ class PostController extends Controller
         return view('admin.posts.create', [
             'users' => User::authors()->pluck('displayname', 'id'),
             'categories'=>$categories,
+             'roles' => $rolearray,
             'tags'=>Tag::all(),
             'data' => $data,
-
+            'authors' => Role::all(),
+            'tuser'=>$thisuser,
+            'post' => null,
         ]);
     }
 
@@ -93,7 +111,7 @@ class PostController extends Controller
         
          $post->tags()->attach($request->tags);
 
-        return redirect()->route('admin.posts.edit', $post)->withSuccess(__('posts.created'));
+        return redirect()->route('admin.posts.index', $post)->withSuccess(__('posts.created'));
     }
 
     /**

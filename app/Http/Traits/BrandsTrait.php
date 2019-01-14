@@ -19,6 +19,8 @@ trait BrandsTrait {
         $n_logged = Auth::user()->name;
          $n_loggeduser = Auth::user()->email;
          $n_companyname = Brand::where('id',1)->first();
+         $n_userrole = Auth::user()->roles[0]->name;
+
         $data = [
             'n_users' => $n_users,
             'n_roles' => $n_roles,
@@ -26,6 +28,7 @@ trait BrandsTrait {
             'n_logged' => $n_logged,
             'n_loggeduser' => $n_loggeduser,
             'n_companyname' => $n_companyname,
+            'n_userrole' => $n_userrole,
 
         ];
         //$this->data = $data;

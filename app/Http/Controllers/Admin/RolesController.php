@@ -20,7 +20,7 @@ class RolesController extends Controller
         $roles = Role::paginate(10);
 
         $params = [
-            'title' => 'Roles Listing',
+            'title' => 'Roles List',
             'roles' => $roles,
             'data' => $data,
         ];
@@ -129,8 +129,12 @@ class RolesController extends Controller
 
             DB::table("permission_role")->where("permission_role.role_id", $id)->delete();
             // Attach permission to role
+            //dd($request->input('permission_id'));
+            if($request->input('permission_id')){
             foreach ($request->input('permission_id') as $key => $value) {
+                //dd($key);
                 $role->attachPermission($value);
+            }
             }
 
             return redirect()->route('roles.index')->with('success', "The role $role->name has successfully been updated.");

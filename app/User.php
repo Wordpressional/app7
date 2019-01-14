@@ -100,8 +100,8 @@ class User extends Authenticatable
     public function scopeAuthors($query)
     {
         return $query->whereHas('roles', function ($query) {
-            $query->where('roles.name', "superadministrator")
-                  ->orWhere('roles.name', "administrator");
+            $query->where('roles.name', "cms_author")
+             ;
         });
     }
 
@@ -112,7 +112,22 @@ class User extends Authenticatable
     //  */
      public function canBeAuthor(): bool
      {
-         return $this->isAdmin() || $this->isEditor();
+         return $this->isAuthor();
+     }
+
+     public function canBeEditor(): bool
+     {
+         return $this->isEditor();
+     }
+
+     public function canBeAdmin(): bool
+     {
+         return $this->isAdmin();
+     }
+
+     public function canBeSAdmin(): bool
+     {
+         return $this->isSAdmin();
      }
 
     // /**
@@ -127,6 +142,8 @@ class User extends Authenticatable
        
      }
 
+
+
     // /**
     //  * Check if the user has role admin
     //  *
@@ -134,9 +151,20 @@ class User extends Authenticatable
     //  */
      public function isAdmin(): bool
      {
-         return $this->checkHasRole("superadministrator");
+         return $this->checkHasRole("cms_administrator");
      }
 
+     public function isAuthor(): bool
+     {
+         return $this->checkHasRole("cms_author");
+     }
+
+     public function isSAdmin(): bool
+     {
+         return $this->checkHasRole("cms_superadministrator");
+     }
+
+    
      public function islCEO(): bool
      {
          return $this->checkHasRole("elec_ceo");
@@ -149,7 +177,7 @@ class User extends Authenticatable
     //  */
      public function isEditor(): bool
      {
-         return $this->checkHasRole("superadministrator");
+         return $this->checkHasRole("cms_editor");
      }
 
     /**
@@ -167,10 +195,17 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
+    public function comments()
+    {
+        return $this->hasMany(Comment::class, 'author_id');
+    }
+
     public function commentsfromusers()
     {
         return $this->hasMany(Comment::class, 'author_id');
     }
+
+    
 
     /**
      * Return the user's likes
@@ -290,5 +325,60 @@ class User extends Authenticatable
        }
        return "no";
     }
-    
+
+    public function isCMSAdmin()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "cms_administrator")
+       {
+           return true;
+       }
+       return false;
+    }
+
+    public function isCMSEditor()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "cms_editor")
+       {
+           return true;
+       }
+       return false;
+    }
+
+    public function isCMSAuthor()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "cms_author")
+       {
+           return true;
+       }
+       return false;
+    }
+
+    public function isCMSSubscriber()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //dd($role->name);
+       
+      if($role->roles[0]->name == "cms_subscriber")
+       {
+           return true;
+       }
+       return false;
+    }
 }
