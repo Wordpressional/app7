@@ -2,7 +2,7 @@
   <comment-form
   	post_slug="{{ $post->slug }}"
       post_id="{{ $post->id }}"
-      api_token="{{ $api_token }}"
+      api_token="{{Auth::user()->api_token}}"
       placeholder="@lang('comments.placeholder.content')"
       button="@lang('comments.comment')">
   </comment-form>

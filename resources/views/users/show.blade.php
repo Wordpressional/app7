@@ -51,7 +51,13 @@
 
     <div class="col-md-12">
       <h2>Latest Posts</h2>
-      @each('users/_post', $posts, 'post')
+   
+         
+                
+            @each('posts/_showlinks', $posts, 'post', 'posts/_empty')
+
+          
+          
     </div>
   </div>
 </div>

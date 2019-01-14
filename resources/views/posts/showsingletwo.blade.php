@@ -29,7 +29,9 @@
 likes_count="{{ $post->likes_count }}"
 liked="{{ $post->isLiked() }}"
 item_id="{{ $post->id }}"
+item_slug="{{ $post->slug }}"
 item_type="postshow"
+item_token="{{Auth::user()->api_token}}"
 logged_in="{{ Auth::check() }}"
 ></like>
 </p>
