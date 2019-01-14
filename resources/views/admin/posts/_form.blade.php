@@ -20,7 +20,7 @@
         {!! Form::select('author_id', $users, null, ['class' => 'form-control' . ($errors->has('author_id') ? ' is-invalid' : ''), 'required']) !!}
         @else
          {!! Form::label('author_id', __('posts.attributes.author')) !!}
-        {!! Form::select('author_id', $tuser, null, ['class' => 'form-control' . ($errors->has('author_id') ? ' is-invalid' : ''), 'required']) !!}
+        {!! Form::select('author_id', $sthisuser, null, ['class' => 'form-control' . ($errors->has('author_id') ? ' is-invalid' : ''), 'required']) !!}
       @endif
       
         @if ($errors->has('author_id'))

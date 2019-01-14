@@ -13,6 +13,7 @@ use App\Elemdist;
 use App\Usermac;
 use App\Elemac;
 use Auth;
+use App\Http\Requests\Admin\UsersRequest;
 
 class UserController extends Controller
 {
@@ -352,11 +353,27 @@ class UserController extends Controller
     public function indexa()
     {
         $data = $this->brandsAll();
+
+         $user = User::where('email', Auth::user()->email)->first();
+         if($user->isCMSAuthor() == "yes") {
+            $users = User::where('id',$user->id)->whereHas('roles', function($q){
+            $q->where('name', 'cms_author');
+                                        })->latest()->paginate(50);
+         }
+         if($user->isSuperadministrator() == "yes") {
+            $users = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->latest()->paginate(50);
+         }
+         if($user->isCMSAdmin() == "yes") {
+            $users = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->latest()->paginate(50);
+         }
+
         return view('admin.authors.index', [
             'data' => $data,
-            'users' => User::whereHas('roles', function($q){
-            $q->where('name', 'like', 'cms_' . '%');
-                                        })->latest()->paginate(50)
+            'users' => $users,
         ]);
     }
 
@@ -366,7 +383,17 @@ class UserController extends Controller
     public function edita($id)
     {
         $user = User::findOrFail($id);
-       $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+        $user = User::where('email', Auth::user()->email)->first();
+         if($user->isCMSAuthor() == "yes") {
+           $roles = Role::where('name', 'cms_author')->get();
+         }
+         if($user->isSuperadministrator() == "yes") {
+          $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+         }
+         if($user->isCMSAdmin() == "yes") {
+          $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+         }
+       
         $data = $this->brandsAll();
         return view('admin.authors.edit', [
             'data' => $data,
@@ -378,14 +405,40 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function updatea(UsersRequest $request, User $user)
+    public function updatea(Request $request, $id)
     {
-        $user->update(array_filter($request->only(['name', 'email', 'password'])));
+
+        $user = User::findOrFail($id);
+
+            $this->validate($request, [
+                'name' => 'required',
+                'email' => 'required|email|unique:users,email,' . $id,
+
+            ]);
+
+            if($request->input('password') != "" && $request->input('password') == $request->input('password_confirmation'))
+            {
+                $user->password = $request->input('password');
+            } 
+            else if($request->input('password') != "" && $request->input('password') != $request->input('password_confirmation'))
+            {
+               
+                return redirect()->back()->with('error', 'Password mismatch');
+            } 
+            else
+            {
+
+            }
+
+            $user->name = $request->input('name');
+            $user->email = $request->input('email');
+
+            $user->save();
 
         $role_ids = array_values($request->get('roles', []));
         $user->roles()->sync($role_ids);
         
-        return redirect()->route('admin.authors.edit', $user)->withSuccess(__('users.updated'));
+        return redirect()->route('admin.authors.edita', $user)->withSuccess(__('users.updated'));
     }
 
     function csvToArray($filename = '', $delimiter = ',', $csvname)

@@ -11,6 +11,8 @@ use Illuminate\Http\Request;
 use Shortcode;
 use Auth;
 use App\Http\Traits\SettingsTrait;
+use App\Role;
+use App\User;
 
 class PostController extends Controller
 {
@@ -181,6 +183,10 @@ class PostController extends Controller
 
     public function tagtype(Request $request, $tag)
     {
+
+        $role = Role::where('name','superadministrator')->first();
+        $user = User::with('roles')->where('id', $role->id)->first();
+        //dd($user);
         $data = $this->settingsAll();
 
         Shortcode::enable();
@@ -196,7 +202,7 @@ class PostController extends Controller
         {
         if($tagid->id != "")
         {
-            $post = Post::whereHas('tags', function($q) use ($tagid)
+            $post = Post::where('author_id', "!=", $user->id)->whereHas('tags', function($q) use ($tagid)
                                 {
                                     $q->where('tag_id', $tagid->id);
                                 })

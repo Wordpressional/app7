@@ -24,8 +24,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        $tuser = Auth::user()->displayname;
         
+        $tuser = Auth::user()->displayname;
+        //dd($tuser);
         $data = $this->brandsAll();
         return view('admin.posts.index', [
             'data' => $data,
@@ -75,6 +76,9 @@ class PostController extends Controller
        //dd($rolearray);
          $data = $this->brandsAll();
          $thisuser = Auth::user();
+         
+         $sthisuser = User::where('id', $thisuser->id)->authors()->pluck('displayname', 'id');
+         //dd($sthisuser);
         $categories = Category::all();
         if($categories->count() == 0)
         {
@@ -91,6 +95,7 @@ class PostController extends Controller
             'data' => $data,
             'authors' => Role::all(),
             'tuser'=>$thisuser,
+            'sthisuser' => $sthisuser,
             'post' => null,
         ]);
     }

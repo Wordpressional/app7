@@ -15,8 +15,10 @@
     <tbody>
         @foreach($posts as $post)
          
+         
+         @if($post->author->isCMSAuthor() == "yes")
+         @if($post->author->roles[0]->name == "cms_author")
          @if($tuser == $post->author->displayname )
-         @if($post->author->roles[0]->name == $data['n_userrole'])
         
        <tr>
                 <td>@if($post->trashed())
@@ -58,6 +60,7 @@
                 </td>
             </tr>
            
+            @endif
             @endif
             @endif
             @if($post->author->isSuperadministrator() == "yes")

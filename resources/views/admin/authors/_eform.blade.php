@@ -1,4 +1,4 @@
-{!! Form::model($user, ['method' => 'PATCH', 'route' => ['admin.authors.updatea', $user]]) !!}
+{!! Form::model($user, ['method' => 'PATCH', 'route' => ['admin.authors.updatea', $user->id]]) !!}
 
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -48,7 +48,7 @@
     @foreach($roles as $role)
       <div class="checkbox">
         <label>
-          {!! Form::checkbox("roles[$role->id]", $role->id, $user->hasRole($role->name)) !!}
+          {!! Form::checkbox("roles[$role->id]", $role->id, $user->hasRole($role->name), array('disabled')) !!}
           @if (Lang::has('roles.' . $role->name))
             {!! __('roles.' . $role->name) !!}
           @else
@@ -57,7 +57,7 @@
         </label>
       </div>
     @endforeach
-  
+
 
   </div>
 
