@@ -26,7 +26,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
-
+use App\User;
 
 class ModuleController extends Controller
 {
@@ -62,7 +62,14 @@ class ModuleController extends Controller
     public function loadmodules()
     {
     	$data = $this->brandsAll();
+        $user = User::where('email', Auth::user()->email)->first();
+        if($user->isCMSAdmin() == "yes") {
+            $module = Module::where('modulename', 'cms')->get();
+        }
+        
+        if($user->isSuperadministrator() == "yes") {
         $module = Module::all();
+        }
         return view('admin.modules.loadmodule',compact('module','data'));
 
     }

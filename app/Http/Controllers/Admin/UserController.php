@@ -12,6 +12,7 @@ use App\Meleuser;
 use App\Elemdist;
 use App\Usermac;
 use App\Elemac;
+use Auth;
 
 class UserController extends Controller
 {
@@ -26,10 +27,19 @@ class UserController extends Controller
     public function index()
     {
          $data = $this->brandsAll();
-        $users = User::paginate(10);
+         $user = User::where('email', Auth::user()->email)->first();
+         if($user->isCMSAdmin() == "yes") {
+            $users = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->latest()->paginate(50);
+         }
+
+         if($user->isSuperadministrator() == "yes") {
+            $users = User::paginate(10);
+         }
         
         $params = [
-            'title' => 'Users Listing',
+            'title' => 'Users List',
             'users' => $users,
             'data' => $data,
         ];
@@ -40,7 +50,15 @@ class UserController extends Controller
     // Create User Page
     public function create()
     {
-        $roles = Role::all();
+        $user = User::where('email', Auth::user()->email)->first();
+         if($user->isCMSAdmin() == "yes") {
+            $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+         }
+         if($user->isSuperadministrator() == "yes") {
+            $roles = Role::all();
+         }
+
+        
          $data = $this->brandsAll();
         $params = [
             'title' => 'Create User',
@@ -337,8 +355,8 @@ class UserController extends Controller
         return view('admin.authors.index', [
             'data' => $data,
             'users' => User::whereHas('roles', function($q){
-    $q->where('name', 'like', 'cms_' . '%');
-})->latest()->paginate(50)
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->latest()->paginate(50)
         ]);
     }
 

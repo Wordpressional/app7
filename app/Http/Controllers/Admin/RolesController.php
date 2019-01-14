@@ -8,6 +8,8 @@ use App\Http\Traits\BrandsTrait;
 use App\Role;
 use App\Permission;
 use Illuminate\Support\Facades\DB;
+use App\User;
+use Auth;
 
 class RolesController extends Controller
 {
@@ -15,16 +17,23 @@ class RolesController extends Controller
     // Roles Listing Page
     public function index()
     {
-        //
-          $data = $this->brandsAll();
+        $user = User::where('email', Auth::user()->email)->first();
+        $data = $this->brandsAll();
+        
+        //dd($data['n_userrole']);
+        if($user->isSuperadministrator() == "yes") {
         $roles = Role::paginate(10);
+        }
+
+        if($user->isCMSAdmin() == "yes") {
+        $roles = Role::where('name', 'like', 'cms_' . '%')->paginate(10);
+        }
 
         $params = [
             'title' => 'Roles List',
             'roles' => $roles,
             'data' => $data,
         ];
-
         return view('admin.roles.roles_list')->with($params);
     }
 
@@ -52,12 +61,22 @@ class RolesController extends Controller
             'display_name' => 'required',
             'description' => 'required',
         ]);
+        
+        if($user->isCMSAdmin() == "yes") {
+        $role = Role::create([
+            'name' => "cms_".$request->input('name'),
+            'display_name' => $request->input('display_name'),
+            'description' => $request->input('description'),
+        ]);
+        }
 
+        if($user->isSuperadministrator() == "yes") {
         $role = Role::create([
             'name' => $request->input('name'),
             'display_name' => $request->input('display_name'),
             'description' => $request->input('description'),
         ]);
+        }
 
         return redirect()->route('roles.index')->with('success', "The role $role->name has successfully been created.");
     }
@@ -88,9 +107,15 @@ class RolesController extends Controller
     public function edit($id)
     {
         //
+        $user = User::where('email', Auth::user()->email)->first();
         try {
             $role = Role::findOrFail($id);
-            $permissions = Permission::all();
+            if($user->isCMSAdmin() == "yes") {
+                $permissions = Permission::where('name', 'like', 'cms_' . '%')->get();
+            }
+            if($user->isSuperadministrator() == "yes") {
+                $permissions = Permission::all();
+            }
             $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
              $data = $this->brandsAll();
             $params = [

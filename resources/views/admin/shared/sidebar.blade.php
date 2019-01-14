@@ -18,6 +18,7 @@
                 <span class="nav-link-text">@lang('dashboard.dashboard')</span>
             </a>
         </li>
+       
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>CMS</span>
@@ -28,7 +29,7 @@
                 <ul class="treeview-menu">
                    
                     
-
+ @role(['superadministrator','administrator','cms_administrator','cms_editor'])
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
         <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
             <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
@@ -42,21 +43,23 @@
             <span class="nav-link-text">@lang('dashboard.tag')</span>
         </a>
     </li>
-
+     @endrole
+    @role(['superadministrator','administrator','cms_administrator','cms_editor','cms_author'])
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.posts')">
         <a class="nav-link {{ Request::is('admin/posts') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.posts.index') }}">
             <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">@lang('dashboard.posts')</span>
         </a>
     </li>
-
+     @endrole
+     @role(['superadministrator','administrator','cms_administrator','cms_editor'])
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.pages')">
         <a class="nav-link {{ Request::is('admin/pages') || Request::is('admin/pages/*') ? 'active' : '' }}" href="{{ route('admin.pages.index') }}">
             <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">@lang('dashboard.pages')</span>
         </a>
     </li>
-
+   
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.comments')">
         <a class="nav-link {{ Request::is('admin/comments') || Request::is('admin/comments/*') ? 'active' : '' }}" href="{{ route('admin.comments.index') }}">
             <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;
@@ -72,6 +75,10 @@
     </li> 
                 </ul>
             </li>
+
+            @endrole
+
+            @role(['superadministrator','administrator','cms_administrator','cms_editor'])
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>FormBuilder</span>
@@ -144,6 +151,9 @@
                 </li>
             
         </ul>
+    </li>
+    @endrole
+         @role(['superadministrator','administrator','cms_administrator'])
         <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Settings</span>
@@ -181,8 +191,10 @@
                 </li>
             
         </ul>
+    </li>
+     @endrole
         
-
+            @role(['superadministrator','administrator','cms_administrator'])
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>RBAC</span>
@@ -192,7 +204,7 @@
                 </a>
                 <ul class="treeview-menu">
             
-            @role(['superadministrator','administrator'])
+            
             <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="FormBuilder">
                 <a class="nav-link {{ Request::is('admin/users') ? ' active' : null }}" href="{{route('admin.users')}}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
@@ -211,9 +223,10 @@
                 Permissions
                 </a>
             </li>
-            @endrole
+           
             </ul>
         </li>
+         @endrole
         </ul>
     </section>
 </aside>
