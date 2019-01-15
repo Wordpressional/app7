@@ -27,10 +27,53 @@ class PostController extends Controller
         
         $tuser = Auth::user()->displayname;
         //dd($tuser);
+        $author_ids = array();
+
+        $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isSuperadministrator() == "yes") {
+       $users1 = User::with('roles')->where('name', 'like',  'cms_%')->get();
+       $users2 = User::with('roles')->where('name', 'superadministrator')->get();
+        //dd($users);
+            foreach($users1 as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+            foreach($users2 as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+         }
+
+          if($thisuser->isCMSAuthor() == "yes") {
+       $users = User::with('roles')->where('name', 'cms_author')->get();
+        //dd($users);
+            foreach($users as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+         }
+
+          if($thisuser->isCMSEditor() == "yes") {
+       $users = User::with('roles')->where('name', 'like', '%cms_%')->get();
+        //dd($users);
+            foreach($users as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+         }
+         //dd($author_ids);
+        //dd($post[0]->author->name);
+        //dd($post[0]->author());
         $data = $this->brandsAll();
         return view('admin.posts.index', [
             'data' => $data,
-            'posts' => Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(50),
+            'posts' => $post,
             'tuser' => $tuser,
         ]);
     }
@@ -38,11 +81,13 @@ class PostController extends Controller
     /**
      * Display the specified resource edit form.
      */
-    public function edit(Post $post)
+    public function edit($id)
     {
         //dd(User::authors()->pluck('name', 'id'));
         //dd(Auth::user());
-
+        $author_ids = array();
+        $post = Post::where('id', $id)->first();
+       
          $thisuser = Auth::user();
          $categories = Category::all();
         
@@ -88,7 +133,7 @@ class PostController extends Controller
         }
         
         return view('admin.posts.create', [
-            'users' => User::authors()->pluck('displayname', 'id'),
+            'users' => User::authors()->pluck('name', 'id'),
             'categories'=>$categories,
              'roles' => $rolearray,
             'tags'=>Tag::all(),
@@ -126,7 +171,7 @@ class PostController extends Controller
     {
         
        
-        $post->update($request->only(['title', 'excerpt', 'content', 'posted_at', 'author_id', 'category_id', 'template', 'pubyear']));
+        $post->update($request->only(['title', 'excerpt', 'content', 'posted_at', 'author_id', 'category_id', 'template','pubyear']));
 
         if ($request->hasFile('thumbnail')) {
             $post->storeAndSetThumbnail($request->file('thumbnail'));
@@ -134,7 +179,7 @@ class PostController extends Controller
         
        $post->tags()->sync($request->tags);
 
-        return redirect()->route('admin.posts.edit', $post)->withSuccess(__('posts.updated'));
+        return redirect()->route('admin.posts.edit', $post->id)->withSuccess(__('posts.updated'));
     }
 
     /**

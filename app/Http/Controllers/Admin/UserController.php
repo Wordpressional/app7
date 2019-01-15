@@ -399,14 +399,14 @@ class UserController extends Controller
     public function edita($id)
     {
         $user = User::findOrFail($id);
-        $user = User::where('email', Auth::user()->email)->first();
-         if($user->isCMSAuthor() == "yes") {
+        $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isCMSAuthor() == "yes") {
            $roles = Role::where('name', 'cms_author')->get();
          }
-         if($user->isSuperadministrator() == "yes") {
+         if($thisuser->isSuperadministrator() == "yes") {
           $roles = Role::where('name', 'like', 'cms_' . '%')->get();
          }
-         if($user->isCMSAdmin() == "yes") {
+         if($thisuser->isCMSAdmin() == "yes") {
           $roles = Role::where('name', 'like', 'cms_' . '%')->get();
          }
        
@@ -451,8 +451,31 @@ class UserController extends Controller
 
             $user->save();
 
-        $role_ids = array_values($request->get('roles', []));
-        $user->roles()->sync($role_ids);
+            //dd($user->roles);
+            //dd($request->input('role_id'));
+             // Update role of the user
+            $roles = $user->roles;
+            //dd($roles);
+            foreach ($roles as $key => $value) {
+                $user->detachRole($value);
+            }
+
+            $role = Role::find($request->input('role_id'));
+
+            $user->attachRole($role);
+
+             $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
+        //dd($role_permissions);
+             foreach ($role_permissions as $permission_id) {
+                $permission = Permission::find($permission_id);
+                //dd($permission);
+                 $user->detachPermission($permission);
+                 $user->attachPermission($permission);
+             }
+            //dd($request->get('roles', ['cms_author']));
+
+        //$role_ids = array_values($request->get('roles', []));
+        //$user->roles()->sync($role_ids);
         
         return redirect()->route('admin.authors.edita', $user)->withSuccess(__('users.updated'));
     }

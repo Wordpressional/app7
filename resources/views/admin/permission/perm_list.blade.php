@@ -22,13 +22,7 @@
             
              
               @foreach($permissions as $row)
-               @php $j = 1 @endphp
-
-                 @foreach($permodules as $per)
-                
               
-
-                @if($per->pername == $row->name)
                     
                   
                 <tr>
@@ -37,49 +31,23 @@
                 <td>{{ $row->display_name }}</td>
                 <td>{{ $row->description }}</td>
 
-                <td>
-                 
-
-                  
-                
-                 
-                 
-                </td>
-              </tr>
-
-              @break;
-
-              @else
-              @php $j++ @endphp
-              @php $last = count($permodules)+1 @endphp
-
-              @if($j == $last)
-              <tr>
-                
-                <td>{{ $row->name }}</td>
-                <td>{{ $row->display_name }}</td>
-                <td>{{ $row->description }}</td>
+               
 
                 <td>
 
-                 @if($per->pername == $row->name)
-
-                 
-
-                 @else
+                
                  <div class="btn-group">
                     <a class="btn btn-primary" href="{{ route('permission.edit', ['id' => $row->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
                     <a class="btn btn-danger" href="{{ route('permission.show', ['id' => $row->id]) }}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
                   </div>
                   
-                 @endif
+                
                 </td>
               </tr>
-               @endif
-                @endif
+              
 
               
-              @endforeach
+              
                
              
               @endforeach

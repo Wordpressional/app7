@@ -56,6 +56,7 @@ class RolesController extends Controller
     public function store(Request $request)
     {
         //
+        $user = User::where('email', Auth::user()->email)->first();
         $this->validate($request, [
             'name' => 'required|unique:roles',
             'display_name' => 'required',

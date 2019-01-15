@@ -46,13 +46,14 @@
    
 
     @foreach($roles as $role)
+
       <div class="checkbox">
         <label>
-          {!! Form::checkbox("roles[$role->id]", $role->id, $user->hasRole($role->name), array('disabled')) !!}
+          {!! Form::radio("role_id", $role->id, $user->hasRole($role->name)) !!}
           @if (Lang::has('roles.' . $role->name))
             {!! __('roles.' . $role->name) !!}
           @else
-            {{ ucfirst($role->name) }}
+            {{ $role->name }}
           @endif
         </label>
       </div>

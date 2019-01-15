@@ -4,9 +4,10 @@
         <tr>
             <th>@lang('pages.attributes.title')</th>
             <th>@lang('pages.attributes.author')</th>
-            <th>@lang('pages.attributes.posted_at')</th>
             
-            <th></th>
+            <th>@lang('pages.attributes.posted_at')</th>
+            <th>View</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -22,8 +23,14 @@
                     @endif
                 </td>
                 <td>{{ link_to_route('admin.users.edit', $page->author->displayname, $page->author) }}</td>
-                <td>{{ humanize_date($page->created_at, 'd/m/Y H:i:s') }}</td>
                 
+                <td>{{ humanize_date($page->created_at, 'd/m/Y H:i:s') }}</td>
+                <td>
+                    <a class="btn btn-warning" href="{{ route('page.custompage', $page)}}" target="_blank">
+                
+                        <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                </a>
+                </td>
                 <td>
                     <a href="{{ route('admin.pages.edit', $page) }}" class="btn btn-primary">
                         <i class="fa fa-pencil" aria-hidden="true"></i>

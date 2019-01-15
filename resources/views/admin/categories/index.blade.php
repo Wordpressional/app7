@@ -54,6 +54,7 @@
 			              	
 			              			<span><i class="fa fa-eye" aria-hidden="true"></i></span>
 			              	</a>
+			              </td>
 			              	<td>
 			              	@if($category->trashed())
 			              	<a class="btn btn-warning" href="{{ route('admin.category.restore',['id'=>$category->id]) }}">

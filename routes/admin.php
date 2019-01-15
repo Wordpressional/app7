@@ -254,6 +254,13 @@ Route::get('/posts/restore/{id}',[
 
 ]);
 
+Route::get('/posts/edit/{id}',[
+
+'uses' => 'PostController@edit',
+'as' => 'posts.edit'
+
+]);
+
 Route::get('/posts/delete/{id}',[
 
 'uses' => 'PostController@destroy',

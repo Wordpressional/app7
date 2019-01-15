@@ -182,10 +182,10 @@ class PermissionController extends Controller
         //
         try {
             $permission = Permission::findOrFail($id);
-            DB::table("permission_role")->where(['data' => $data, 'permission_id', $id])->delete();
+            DB::table("permission_role")->where( 'permission_id', $id)->delete();
             $permission->delete();
             
-            return redirect()->route('permission.index')->with('success' , "The Role $permission->name has successfully been archived.");
+            return redirect()->route('permission.index')->with(['data' => $data,'success' => "The Role $permission->name has successfully been deleted."]);
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');

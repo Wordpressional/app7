@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="page-header">
-      <h1>@lang('dashboard.users')</h1>
+      <h1>Authors</h1>
     </div>
 
     @include ('admin/authors/_list')
