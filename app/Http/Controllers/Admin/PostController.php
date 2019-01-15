@@ -32,7 +32,7 @@ class PostController extends Controller
         $thisuser = User::where('email', Auth::user()->email)->first();
          if($thisuser->isSuperadministrator() == "yes") {
        $users1 = User::with('roles')->where('name', 'like',  'cms_%')->get();
-       $users2 = User::with('roles')->where('name', 'superadministrator')->get();
+       $users2 = User::with('roles')->where('name', Auth::user()->name)->get();
         //dd($users);
             foreach($users1 as $user)
             {
@@ -47,7 +47,7 @@ class PostController extends Controller
          }
 
           if($thisuser->isCMSAuthor() == "yes") {
-       $users = User::with('roles')->where('name', 'cms_author')->get();
+       $users = User::with('roles')->where('name', Auth::user()->name)->get();
         //dd($users);
             foreach($users as $user)
             {
@@ -131,9 +131,20 @@ class PostController extends Controller
 
             return redirect()->back()->withErrors('You Must First Create At least One Category');
         }
+
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isCMSAuthor() == "yes") {
+            $userauthor = User::with('roles')->where('name', Auth::user()->name)->pluck('name', 'id');
+            //dd($userauthor);
+           //$userauthor = User::authors()->pluck('name', 'id');
+           //dd($userauthor);
+         }
+         if($thisuser->isSuperadministrator() == "yes") {
+           $userauthor = User::authors()->pluck('name', 'id');
+         }
         
         return view('admin.posts.create', [
-            'users' => User::authors()->pluck('name', 'id'),
+            'users' => $userauthor,
             'categories'=>$categories,
              'roles' => $rolearray,
             'tags'=>Tag::all(),

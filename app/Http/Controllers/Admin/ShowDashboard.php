@@ -76,7 +76,7 @@ class ShowDashboard extends Controller
 
          else if($user->isCMSEditor() == "yes") {
             $data = $this->brandsAll();
-             return view('admin.dashboard.index_home', [
+             return view('admin.dashboard.index_cms_general', [
                 'comments' =>  Comment::lastWeek()->get(),
                 'posts' => Post::lastWeek()->get(),
                 'users' => User::lastWeek()->get(),
@@ -87,7 +87,7 @@ class ShowDashboard extends Controller
 
          else if($user->isCMSAuthor() == "yes") {
             $data = $this->brandsAll();
-             return view('admin.dashboard.index_home', [
+             return view('admin.dashboard.index_cms_general', [
                 'comments' =>  Comment::lastWeek()->get(),
                 'posts' => Post::lastWeek()->get(),
                 'users' => User::lastWeek()->get(),
@@ -98,7 +98,7 @@ class ShowDashboard extends Controller
 
          else if($user->isCMSSubscriber() == "yes") {
             $data = $this->brandsAll();
-             return view('admin.dashboard.index_home', [
+             return view('admin.dashboard.index_cms_general', [
                 'comments' =>  Comment::lastWeek()->get(),
                 'posts' => Post::lastWeek()->get(),
                 'users' => User::lastWeek()->get(),

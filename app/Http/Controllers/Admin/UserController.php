@@ -418,6 +418,83 @@ class UserController extends Controller
         ]);
     }
 
+    public function createa()
+    {
+        
+        $thisuser = User::where('email', Auth::user()->email)->first();
+         
+          $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+         
+       
+        $data = $this->brandsAll();
+        return view('admin.authors.create', [
+            'data' => $data,
+           
+            'roles' => $roles,
+        ]);
+    }
+
+    public function storea(Request $request)
+    {
+
+        $user = new User;
+
+            $this->validate($request, [
+                'name' => 'required',
+                'email' => 'required|email|unique:users,email',
+                'password' => 'required|confirmed',
+                'password_confirmation' => 'required',
+                'role' => 'required'
+            ]);
+
+            if($request->input('password') != "" && $request->input('password') == $request->input('password_confirmation'))
+            {
+                $user->password = $request->input('password');
+            } 
+            else if($request->input('password') != "" && $request->input('password') != $request->input('password_confirmation'))
+            {
+               
+                return redirect()->back()->with('error', 'Password mismatch');
+            } 
+            else
+            {
+
+            }
+
+            $user->name = $request->input('name');
+            $user->email = $request->input('email');
+
+            $user->save();
+
+            //dd($user->roles);
+            //dd($request->input('role_id'));
+             // Update role of the user
+            $roles = $user->roles;
+            //dd($roles);
+            foreach ($roles as $key => $value) {
+                $user->detachRole($value);
+            }
+
+            $role = Role::find($request->input('role'));
+
+            $user->attachRole($role);
+
+             $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
+        //dd($role_permissions);
+             foreach ($role_permissions as $permission_id) {
+                $permission = Permission::find($permission_id);
+                //dd($permission);
+                 $user->detachPermission($permission);
+                 $user->attachPermission($permission);
+             }
+            //dd($request->get('roles', ['cms_author']));
+
+        //$role_ids = array_values($request->get('roles', []));
+        //$user->roles()->sync($role_ids);
+        
+        return redirect()->route('admin.authors.index', $user)->withSuccess(__('User created'));
+    }
+
     /**
      * Update the specified resource in storage.
      */

@@ -538,7 +538,18 @@ Route::patch('/authors/updatea/{id}',[
 'as' => 'authors.updatea'
 
 ]);
+Route::get('/authors/createa',[
 
+'uses' => 'UserController@createa',
+'as' => 'authors.createa'
+
+]);
+Route::post('/authors/storea',[
+
+'uses' => 'UserController@storea',
+'as' => 'authors.storea'
+
+]);
 
 Route::get('/users',[
 
