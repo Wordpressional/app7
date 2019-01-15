@@ -31,7 +31,7 @@ class PostController extends Controller
 
         $thisuser = User::where('email', Auth::user()->email)->first();
          if($thisuser->isSuperadministrator() == "yes") {
-       $users1 = User::with('roles')->where('name', 'like',  'cms_%')->get();
+       $users1 = User::with('roles')->get();
        $users2 = User::with('roles')->where('name', Auth::user()->name)->get();
         //dd($users);
             foreach($users1 as $user)
@@ -47,7 +47,7 @@ class PostController extends Controller
          }
 
          if($thisuser->isCMSAdmin() == "yes") {
-       $users1 = User::with('roles')->where('name', 'like',  'cms_%')->get();
+       $users1 = User::with('roles')->get();
        $users2 = User::with('roles')->where('name', Auth::user()->name)->get();
         //dd($users);
             foreach($users1 as $user)
@@ -74,7 +74,7 @@ class PostController extends Controller
          }
 
           if($thisuser->isCMSEditor() == "yes") {
-       $users = User::with('roles')->where('name', 'like', '%cms_%')->get();
+       $users = User::with('roles')->get();
         //dd($users);
             foreach($users as $user)
             {
