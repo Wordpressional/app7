@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use App\Http\Requests\Admin\PostsRequest;
 use App\Post;
+use App\Role;
 use App\User;
 use App\Category;
 use App\Tag;
@@ -23,20 +24,70 @@ class PostController extends Controller
      */
     public function index()
     {
+        
+        $tuser = Auth::user()->displayname;
+        //dd($tuser);
+        $author_ids = array();
+
+        $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isSuperadministrator() == "yes") {
+       $users1 = User::with('roles')->where('name', 'like',  'cms_%')->get();
+       $users2 = User::with('roles')->where('name', Auth::user()->name)->get();
+        //dd($users);
+            foreach($users1 as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+            foreach($users2 as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+         }
+
+          if($thisuser->isCMSAuthor() == "yes") {
+       $users = User::with('roles')->where('name', Auth::user()->name)->get();
+        //dd($users);
+            foreach($users as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+         }
+
+          if($thisuser->isCMSEditor() == "yes") {
+       $users = User::with('roles')->where('name', 'like', '%cms_%')->get();
+        //dd($users);
+            foreach($users as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+         }
+         //dd($author_ids);
+        //dd($post[0]->author->name);
+        //dd($post[0]->author());
         $data = $this->brandsAll();
         return view('admin.posts.index', [
             'data' => $data,
-            'posts' => Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(50)
+            'posts' => $post,
+            'tuser' => $tuser,
         ]);
     }
 
     /**
      * Display the specified resource edit form.
      */
-    public function edit(Post $post)
+    public function edit($id)
     {
-        //dd(User::authors()->get());
+        //dd(User::authors()->pluck('name', 'id'));
         //dd(Auth::user());
+        $author_ids = array();
+        $post = Post::where('id', $id)->first();
+       
          $thisuser = Auth::user();
          $categories = Category::all();
         
@@ -44,7 +95,8 @@ class PostController extends Controller
         return view('admin.posts.edit', [
             'post' => $post,
             'data' => $data,
-            'users' => User::authors()->pluck('displayname', 'id'),
+            'roles' => Role::all(),
+            'users' => User::authors()->pluck('name', 'id'),
             'categories'=>$categories,
             'tags'=>Tag::all(),
             'tuser'=>$thisuser
@@ -59,7 +111,19 @@ class PostController extends Controller
      */
     public function create(Request $request)
     {
+
+        $rolearray = array();
+        $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+        foreach($roles as $role)
+        {
+            array_push($rolearray, $role->display_name);
+        }
+       //dd($rolearray);
          $data = $this->brandsAll();
+         $thisuser = Auth::user();
+         
+         $sthisuser = User::where('id', $thisuser->id)->authors()->pluck('displayname', 'id');
+         //dd($sthisuser);
         $categories = Category::all();
         if($categories->count() == 0)
         {
@@ -67,13 +131,28 @@ class PostController extends Controller
 
             return redirect()->back()->withErrors('You Must First Create At least One Category');
         }
+
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isCMSAuthor() == "yes") {
+            $userauthor = User::with('roles')->where('name', Auth::user()->name)->pluck('name', 'id');
+            //dd($userauthor);
+           //$userauthor = User::authors()->pluck('name', 'id');
+           //dd($userauthor);
+         }
+         if($thisuser->isSuperadministrator() == "yes") {
+           $userauthor = User::authors()->pluck('name', 'id');
+         }
         
         return view('admin.posts.create', [
-            'users' => User::authors()->pluck('displayname', 'id'),
+            'users' => $userauthor,
             'categories'=>$categories,
+             'roles' => $rolearray,
             'tags'=>Tag::all(),
             'data' => $data,
-
+            'authors' => Role::all(),
+            'tuser'=>$thisuser,
+            'sthisuser' => $sthisuser,
+            'post' => null,
         ]);
     }
 
@@ -93,7 +172,7 @@ class PostController extends Controller
         
          $post->tags()->attach($request->tags);
 
-        return redirect()->route('admin.posts.edit', $post)->withSuccess(__('posts.created'));
+        return redirect()->route('admin.posts.index', $post)->withSuccess(__('posts.created'));
     }
 
     /**
@@ -103,7 +182,7 @@ class PostController extends Controller
     {
         
        
-        $post->update($request->only(['title', 'excerpt', 'content', 'posted_at', 'author_id', 'category_id', 'template', 'pubyear']));
+        $post->update($request->only(['title', 'excerpt', 'content', 'posted_at', 'author_id', 'category_id', 'template','pubyear']));
 
         if ($request->hasFile('thumbnail')) {
             $post->storeAndSetThumbnail($request->file('thumbnail'));
@@ -111,7 +190,7 @@ class PostController extends Controller
         
        $post->tags()->sync($request->tags);
 
-        return redirect()->route('admin.posts.edit', $post)->withSuccess(__('posts.updated'));
+        return redirect()->route('admin.posts.edit', $post->id)->withSuccess(__('posts.updated'));
     }
 
     /**

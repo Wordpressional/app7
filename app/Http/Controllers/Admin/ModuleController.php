@@ -26,7 +26,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
-
+use App\User;
 
 class ModuleController extends Controller
 {
@@ -46,8 +46,14 @@ class ModuleController extends Controller
         //dd($sql);
         //collect contents and pass to DB::unprepared
         DB::unprepared(file_get_contents($sqlmodule));
+        $role_elec = Role::where('name', "elec_superadmin")->first();
+        if($role_elec)
+        {
+        } 
+        else
+        {
         DB::unprepared(file_get_contents($sqlpermodule));
-
+        }
          return redirect('/admin/modules');
 
     }
@@ -56,7 +62,14 @@ class ModuleController extends Controller
     public function loadmodules()
     {
     	$data = $this->brandsAll();
+        $user = User::where('email', Auth::user()->email)->first();
+        if($user->isCMSAdmin() == "yes") {
+            $module = Module::where('modulename', 'cms')->get();
+        }
+        
+        if($user->isSuperadministrator() == "yes") {
         $module = Module::all();
+        }
         return view('admin.modules.loadmodule',compact('module','data'));
 
     }
@@ -90,9 +103,11 @@ class ModuleController extends Controller
        
         $module->mstatus = "installed";
         $module->save();
-         $role = Role::where('name', "elec_superadmin")->first();
+        $role_elec = Role::where('name', "elec_superadmin")->first();
+        $role_cms = Role::where('name', "cms_administrator")->first();
 
-        if($role)
+        /*create permission if already not created */
+        if($role_elec)
         {
         } 
         else
@@ -144,6 +159,38 @@ class ModuleController extends Controller
             $roles->display_name = "Assistant Returning Officer";
             $roles->description = "Election Commission Assistant Returning Officer";
             $roles->save();
+        }
+
+        /*create permission if already not created */
+        if($role_cms)
+        {
+        } 
+        else
+        {
+             
+       
+
+            $roles = new Role;
+            $roles->name = "cms_administrator";
+            $roles->display_name = "Administrator";
+            $roles->description = "CMS Administrator";
+            $roles->save();
+            $roles = new Role;
+            $roles->name = "cms_editor";
+            $roles->display_name = "Editor";
+            $roles->description = "CMS Editor";
+            $roles->save();
+            $roles = new Role;
+            $roles->name = "cms_author";
+            $roles->display_name = "Author";
+            $roles->description = "CMS Author";
+            $roles->save();
+            $roles = new Role;
+            $roles->name = "cms_subscriber";
+            $roles->display_name = "Subscriber";
+            $roles->description = "CMS Subscriber";
+            $roles->save();
+            
         }
            
         

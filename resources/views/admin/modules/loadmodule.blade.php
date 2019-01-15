@@ -67,15 +67,20 @@
                      
                       
                        @if($module->mstatus == "uninstalled")
+                       @if($module->mmstatus == "inactive")
+                       @else
                       <a class="btn btn-danger" href="{{ route('admin.module.install',['id'=>$module->id]) }}">
                       
                           <span><i class="fa fa-download" aria-hidden="true"></i> Install</span>
                       </a>
+                      @endif
                        @else
+
                       <a class="btn btn-danger" href="{{ route('admin.module.uninstall',['id'=>$module->id]) }}">
                       
                           <span><i class="fa fa-download" aria-hidden="true"></i> Uninstall</span>
                       </a>
+                      
                       @endif
                       </td>
 

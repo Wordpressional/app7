@@ -934,7 +934,7 @@ label.star:before {
 
 
 p.lead {
-    padding-top: 90px;
+    padding-top: 10px;
 }
 
 .post-content {
@@ -1144,6 +1144,9 @@ p.lead {
 .main-sidebar {
     
     margin-top: 65px;
+}
+.exo-menu li {
+    width: 100%;
 }
 
 }
@@ -2954,4 +2957,25 @@ img.example-image {
     background-color: #0062cc;
     border: none;
     cursor: pointer;
+}
+
+
+.card-body .dropdown-menu {
+    background-color: #ffffff !important; 
+}
+
+.note-editor.note-frame.fullscreen{
+  background: white;
+}
+.container.marboth {
+    margin-top: 0px !important;
+    padding: 0px;
+    margin-bottom: 0px !important;
+}
+.jumbotron{
+ border-radius: 0px;
+}
+.post-card{
+  margin-top: 20px;
+
 }

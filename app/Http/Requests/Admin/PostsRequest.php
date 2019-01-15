@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Admin;
 
-use App\Rules\CanBeAuthor;
+use App\Rules\CanBePoster;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
@@ -46,7 +46,7 @@ class PostsRequest extends FormRequest
             'title' => 'required',
             'content' => 'required',
             'posted_at' => 'required|date',
-            'author_id' => ['required', 'exists:users,id', new CanBeAuthor],
+            'author_id' => ['required', 'exists:users,id', new CanBePoster],
             'slug' => 'unique:posts,slug,' . (optional($this->post)->id ?: 'NULL'),
             'thumbnail' => 'image',
         ];

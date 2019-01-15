@@ -11,6 +11,8 @@ use App\Permission;
 use App\Permodule;
 use Illuminate\Support\Facades\DB;
 
+use Auth;
+
 class PermissionController extends Controller
 {
     use BrandsTrait;
@@ -18,20 +20,46 @@ class PermissionController extends Controller
     public function index()
     {
         //
+        $user = User::where('email', Auth::user()->email)->first();
+        if($user->isSuperadministrator() == "yes") {
         $permissions = Permission::paginate(10);
         //dd($users);
-        $permodules = Permodule::all();
+        
+        }
+
+        if($user->isCMSAdmin() == "yes") {
+        $permissions = Permission::where('name', 'like', 'cms_' . '%')->paginate(10);
+        //dd($users);
+        
+        }
+
+        if($user->isCMSAdmin() == "yes") {
+        $permissions = Permission::where('name', 'like', 'cms_' . '%')->paginate(10);
+        //dd($users);
+        
+        }
+
+        if($user->isSuperAdmin() == "yes") {
+        $permissions = Permission::where('name', 'like', 'elec_' . '%')->paginate(10);
+        //dd($users);
+        
+        }
+
         $data = $this->brandsAll();
         $params = [
             'title' => 'Permissions Listing',
             'permissions' => $permissions,
             'data' => $data,
-             'permodules' => $permodules,
+            
         ];
 
+         if($user->isSuperadministrator() == "yes") {
+            return view('admin.permission.perm_list')->with($params);
+        }
         //dd($params['permodules']);
-
-        return view('admin.permission.perm_list')->with($params);
+        if($user->isCMSAdmin() == "yes") {
+            return view('admin.permission.perm_listcms')->with($params);
+        }
     }
 
     // Permission Create Page
@@ -51,19 +79,27 @@ class PermissionController extends Controller
     public function store(Request $request)
     {
         //
+         $user = User::where('email', Auth::user()->email)->first();
         $this->validate($request, [
             'name' => 'required|unique:permissions',
             'display_name' => 'required',
             'description' => 'required',
         ]);
-
-        $permission = Permission::create([
+        if($user->isSuperadministrator() == "yes") {
+            $permission = Permission::create([
             'name' => $request->input('name'),
             'display_name' => $request->input('display_name'),
             'description' => $request->input('description'),
         ]);
-
-        return redirect()->route('permission.index')->with('success', "The Permission <strong>$permission->name</strong> has successfully been created.");
+        }
+        if($user->isCMSAdmin() == "yes") {
+            $permission = Permission::create([
+            'name' => "cms_".$request->input('name'),
+            'display_name' => $request->input('display_name'),
+            'description' => $request->input('description'),
+        ]);
+        }
+        return redirect()->route('permission.index')->with('success', "The Permission $permission->name has successfully been created.");
     }
 
     // Permission Delete Confirmation Page
@@ -146,10 +182,10 @@ class PermissionController extends Controller
         //
         try {
             $permission = Permission::findOrFail($id);
-            DB::table("permission_role")->where(['data' => $data, 'permission_id', $id])->delete();
+            DB::table("permission_role")->where( 'permission_id', $id)->delete();
             $permission->delete();
             
-            return redirect()->route('permission.index')->with('success' , "The Role $permission->name has successfully been archived.");
+            return redirect()->route('permission.index')->with(['data' => $data,'success' => "The Role $permission->name has successfully been deleted."]);
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');

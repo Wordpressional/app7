@@ -25,6 +25,7 @@
             <div class="from-group">
             	 <div class="text-right">
             	 	<button class="btn btn-success" type="submit">Update Category</button>
+                 {{ link_to_route('admin.categories', __('forms.actions.back'), [], ['class' => 'btn btn-secondary pull-left']) }}
             	 </div>
             </div>
 

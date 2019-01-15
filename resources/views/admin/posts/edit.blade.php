@@ -1,6 +1,9 @@
 @extends('admin.layouts.master')
 
 @section('content')
+
+ <h1>Edit Post</h1>
+
     <p>@lang('posts.show') : {{ link_to_route('webhome.single', route('webhome.single', $post), $post) }}</p>
 
     <!--@include('admin/posts/_thumbnail')-->

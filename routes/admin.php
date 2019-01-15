@@ -254,6 +254,13 @@ Route::get('/posts/restore/{id}',[
 
 ]);
 
+Route::get('/posts/edit/{id}',[
+
+'uses' => 'PostController@edit',
+'as' => 'posts.edit'
+
+]);
+
 Route::get('/posts/delete/{id}',[
 
 'uses' => 'PostController@destroy',
@@ -522,16 +529,27 @@ Route::get('/authors',[
 Route::get('/authors/edita/{id}',[
 
 'uses' => 'UserController@edita',
-'as' => 'authors.edit'
+'as' => 'authors.edita'
 
 ]);
-Route::post('/authors/updatea/{id}',[
+Route::patch('/authors/updatea/{id}',[
 
 'uses' => 'UserController@updatea',
-'as' => 'authors.update'
+'as' => 'authors.updatea'
 
 ]);
+Route::get('/authors/createa',[
 
+'uses' => 'UserController@createa',
+'as' => 'authors.createa'
+
+]);
+Route::post('/authors/storea',[
+
+'uses' => 'UserController@storea',
+'as' => 'authors.storea'
+
+]);
 
 Route::get('/users',[
 

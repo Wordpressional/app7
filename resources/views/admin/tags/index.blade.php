@@ -20,8 +20,9 @@
 		 		<thead>
 					<th>@lang('tag.tagname')</th>
 
-					<th>Editing</th>
-					<th>Deleting</th>
+					<th>Edit</th>
+					<th>View</th>
+					<th>Delete</th>
 
 					<tbody>
 
@@ -44,9 +45,18 @@
 
 			              	<a class="btn btn-info" href="{{ route('admin.tags.edit',['id'=>$tag->id]) }}">
 			              	
-			              			<span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+			              	<span><i class="fa fa-pencil" aria-hidden="true"></i></span>
 			              	</a>
 			              	</td>
+
+			              	<td>
+			              		<a class="btn btn-warning" href="{{ route('webhome.tagtypeconf', $tag->tag) }}" target="_blank">
+			              	
+			              			<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+			              	</a>
+
+			                </td>
+
 			              	<td>
 			              	@if($tag->trashed())
 			              	<a class="btn btn-warning" href="{{ route('admin.tags.restore',['id'=>$tag->id]) }}">

@@ -23,15 +23,14 @@
              
               @foreach($permissions as $row)
               
-                    
                   
-                <tr>
+               
+             
+              <tr>
                 
                 <td>{{ $row->name }}</td>
                 <td>{{ $row->display_name }}</td>
                 <td>{{ $row->description }}</td>
-
-               
 
                 <td>
 
@@ -45,10 +44,6 @@
                 </td>
               </tr>
               
-
-              
-              
-               
              
               @endforeach
           </tbody>

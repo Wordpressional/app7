@@ -14,7 +14,7 @@
 <div class="container-fluid postbgcolor">
 <div class="row">
 	<div class="col-md-12 ">
-	   
+	   <div class="bg-white p-3 post-card">
 		<h4 v-pre></h4>
 						
 			<div v-pre class="post-content">
@@ -37,13 +37,14 @@ liked="{{ $post->isLiked() }}"
 item_id="{{ $post->id }}"
 item_slug="{{ $post->slug }}"
 item_type="posts"
-item_token="{{ $api_token }}"
+item_token="{{Auth::user()->api_token}}"
 logged_in="{{ Auth::check() }}"
 ></like>
 </p>
 
 
 @include ('comments/_list')
+</div>
 </div>
 </div>
 </div>

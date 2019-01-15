@@ -1,9 +1,9 @@
-{!! Form::model(null,['method' => 'POST', 'route' => ['admin.authors.storea']]) !!}
+{!! Form::model($user, ['method' => 'PATCH', 'route' => ['admin.authors.updatea', $user->id]]) !!}
 
   <div class="form-row">
     <div class="form-group col-md-6">
       {!! Form::label('name', __('users.attributes.name')) !!}
-      {!! Form::text('name', null, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.name'), 'required']) !!}
+      {!! Form::text('name', $user->name, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.name'), 'required']) !!}
 
       @if ($errors->has('name'))
         <span class="invalid-feedback">{{ $errors->first('name') }}</span>
@@ -12,7 +12,7 @@
 
     <div class="form-group col-md-6">
       {!! Form::label('email', __('users.attributes.email')) !!}
-      {!! Form::text('email', null, ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.email'), 'required']) !!}
+      {!! Form::text('email', $user->email, ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.email'), 'required']) !!}
 
       @if ($errors->has('email'))
         <span class="invalid-feedback">{{ $errors->first('email') }}</span>
@@ -49,7 +49,7 @@
 
       <div class="checkbox">
         <label>
-          {!! Form::radio("role", $role->id) !!}
+          {!! Form::radio("role_id", $role->id, $user->hasRole($role->name)) !!}
           @if (Lang::has('roles.' . $role->name))
             {!! __('roles.' . $role->name) !!}
           @else
@@ -63,6 +63,6 @@
   </div>
 
   {{ link_to_route('admin.authors.index', __('forms.actions.back'), [], ['class' => 'btn btn-secondary']) }}
-  {!! Form::submit(__('Submit'), ['class' => 'btn btn-primary']) !!}
+  {!! Form::submit(__('forms.actions.update'), ['class' => 'btn btn-primary']) !!}
 
 {!! Form::close() !!}

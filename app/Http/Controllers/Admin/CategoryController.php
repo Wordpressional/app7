@@ -45,9 +45,11 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.categories.create');
-
+        $data = $this->brandsAll();
+        return view('admin.categories.create',compact('data'));
     }
+
+    
 
     /**
      * Store a newly created resource in storage.

@@ -1,8 +1,11 @@
- @extends('layouts.frontend')
+@extends('layouts.frontend')
 
 @section('contentfrontend')
- @include ('layouts/innerpageheadernoslider')
-  
+
+
+{!! html_entity_decode($branding->pagebanner) !!}
+ 
+
      
  
 
@@ -40,18 +43,62 @@
     </div>
   </div>
 
-  <!--<div class="row">
-    <div class="col-md-6">
+  <div class="row">
+    <div class="col-md-12">
       <h2>@lang('comments.last_comments')</h2>
       @each('users/_comment', $comments, 'comment')
-    </div>-->
+    </div>
 
     <div class="col-md-12">
-      <h2></h2>
-      @each('users/_post', $posts, 'post')
+      <h2>Latest Posts</h2>
+   
+         
+                
+            @each('posts/_showlinks', $posts, 'post', 'posts/_empty')
+
+          
+          
     </div>
   </div>
 </div>
-@include ('layouts/innerpagefooter')
 
+
+
+<div class="copy_right_area1">
+<div class="container"> 
+{!! html_entity_decode($branding->footer) !!}
+</div>
+</div>
+@endsection
+@section('css')
+<style>
+/* Banner Background Color */
+.bg-cover {
+    background: {{ $colorsetting[11]->color }} !important;
+    
+}
+.project_area:before
+{
+  background: transparent !important;
+}
+.overlay {
+   background: transparent !important;
+}
+
+/* Background Page Color */
+
+body.bg-light {
+    background: {{ $colorsetting[8]->color }} !important;
+}
+
+/* Footer Background Color */
+
+.copy_right_area1 {
+    background: {{ $colorsetting[9]->color }} !important;
+}
+
+.lead span {
+  color: {{ $colorsetting[0]->color }} !important;
+}
+</style>
 @endsection

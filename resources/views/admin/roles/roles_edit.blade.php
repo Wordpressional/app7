@@ -13,7 +13,7 @@
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} row">
             <label for="name" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
-                <input type="text" value="{{$role->name}}" id="name" name="name" class="form-control col-md-7 col-xs-12"> @if ($errors->has('name'))
+                <input type="text" value="{{$role->name}}" id="name" name="name" class="form-control col-md-7 col-xs-12" readonly="readonly"> @if ($errors->has('name'))
                 <span class="help-block">{{ $errors->first('name') }}</span>
                 @endif
             </div>
