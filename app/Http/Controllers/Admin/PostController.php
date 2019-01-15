@@ -47,7 +47,9 @@ class PostController extends Controller
          }
 
          if($thisuser->isCMSAdmin() == "yes") {
-       $users1 = User::with('roles')->get();
+       $users1 = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->get();
        $users2 = User::with('roles')->where('name', Auth::user()->name)->get();
         //dd($users);
             foreach($users1 as $user)
@@ -159,7 +161,9 @@ class PostController extends Controller
            $userauthor = User::authors()->pluck('name', 'id');
          }
          if($thisuser->isCMSAdmin() == "yes") {
-           $userauthor = User::authors()->pluck('name', 'id');
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
          }
         
         return view('admin.posts.create', [
