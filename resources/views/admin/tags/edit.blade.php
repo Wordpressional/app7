@@ -26,9 +26,14 @@
             <div class="from-group">
             	 <div class="text-right">
             	 	<button class="btn btn-success" type="submit">Update Tag</button>
+                         {{ link_to_route('admin.tags', __('forms.actions.back'), [], ['class' => 'btn btn-secondary pull-left']) }}
             	 </div>
+                  
+             
+             
+            
             </div>
-
+            
 
 
       	</form>

@@ -131,6 +131,9 @@ class UserController extends Controller
             $user = User::with('roles')->findOrFail($id);
             //dd($user->roles->id);
             //$roles = Role::all();
+            $particularuser = User::where('email', Auth::user()->email)->first();
+         
+            if($particularuser->isSuperadministrator() == "yes") {
             if($user->roles === null)
             {
                  $roles = Role::with('permissions')->get();
@@ -139,6 +142,19 @@ class UserController extends Controller
             {   
                 $roles = Role::with('permissions')->get();
                 $rolesempty = "";
+            }
+            }
+
+            if($particularuser->isCMSAdmin() == "yes") {
+            if($user->roles === null)
+            {
+                 $roles = Role::with('permissions')->where('name', 'like', 'cms_' . '%')->get();
+            }
+            else
+            {   
+                $roles = Role::with('permissions')->where('name', 'like', 'cms_' . '%')->get();
+                $rolesempty = "";
+            }
             }
            
             //dd(count($roles));
