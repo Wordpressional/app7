@@ -158,6 +158,9 @@ class PostController extends Controller
          if($thisuser->isSuperadministrator() == "yes") {
            $userauthor = User::authors()->pluck('name', 'id');
          }
+         if($thisuser->isCMSAdmin() == "yes") {
+           $userauthor = User::authors()->pluck('name', 'id');
+         }
         
         return view('admin.posts.create', [
             'users' => $userauthor,
