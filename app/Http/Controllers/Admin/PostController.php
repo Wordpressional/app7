@@ -46,6 +46,22 @@ class PostController extends Controller
             $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
          }
 
+         if($thisuser->isCMSAdmin() == "yes") {
+       $users1 = User::with('roles')->where('name', 'like',  'cms_%')->get();
+       $users2 = User::with('roles')->where('name', Auth::user()->name)->get();
+        //dd($users);
+            foreach($users1 as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+            foreach($users2 as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+         }
+
           if($thisuser->isCMSAuthor() == "yes") {
        $users = User::with('roles')->where('name', Auth::user()->name)->get();
         //dd($users);
