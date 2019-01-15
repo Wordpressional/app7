@@ -37,7 +37,7 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
                 
                 <select class="form-control" id="role_id" name="role_id">
-                   @if($rolesempty != "")
+                  
                     @if(count($roles))
                     @foreach($roles as $row)
                     @if($row->id == $user->roles[0]->id) 
@@ -51,9 +51,7 @@
                     @endif
                     @endforeach
                     @endif
-                    @else
-                     <option value="-">-</option>
-                   @endif
+                   
                 </select>
                 @if ($errors->has('role_id'))
                 <span class="help-block">{{ $errors->first('role_id') }}</span>
