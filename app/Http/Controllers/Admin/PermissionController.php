@@ -47,7 +47,7 @@ class PermissionController extends Controller
 
         $data = $this->brandsAll();
         $params = [
-            'title' => 'Permissions Listing',
+            'title' => 'Permissions List',
             'permissions' => $permissions,
             'data' => $data,
             
