@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="page-header">
-        <h2>Create  Form </h2>
+        <h2>Create Widget Form </h2>
             <hr>
       </div>
 

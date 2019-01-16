@@ -7,7 +7,7 @@
       @include('admin.includes.errors')
 
     <div class="page-header">
-      	<h2>Update  Form :{{ $form->formname }}</h2>
+      	<h2>Update Widget Form :{{ $form->formname }}</h2>
             <hr>
       </div>
 
