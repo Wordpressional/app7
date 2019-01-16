@@ -5,17 +5,6 @@
 @php $st = isset($colorsetting[0]->color) ? $colorsetting[0]->color : false;
 @endphp
 
-   
-
-<h3> Page Title Color </h3>
-<div id="cp2" class="input-group colorpicker-component">
-    <input type="text" name="cp2" id="demo2" value="{{ isset($colorsetting[0]->color) ? $colorsetting[0]->color : 'transparent' }}" class="form-control"  required="required" />
-    <div class="input-group-prepend">
-    <span class="input-group-addon input-group-text" ><i></i></span>
-    
-</div>
-</div>
-<br>
 <h3> Homepage Content area Color </h3>
 <div id="cp3" class="input-group colorpicker-component">
     <input type="text" name="cp3" id="demo3" value="{{ isset($colorsetting[1]->color) ? $colorsetting[1]->color : 'transparent'}}" class="form-control"  required="required"/>
@@ -49,6 +38,15 @@
     <div class="input-group-prepend">
     <span class="input-group-addon input-group-text" ><i></i></span>
     
+</div>
+</div>
+<br>
+<h3> Post Footer Background Color </h3>
+<div id="cp12" class="input-group colorpicker-component">
+    <input type="text" name="cp12" id="demo12" value="{{ isset($colorsetting[10]->color) ? $colorsetting[10]->color : 'transparent'}}" class="form-control"  required="required"/>
+    <div class="input-group-prepend">
+    <span class="input-group-addon input-group-text" ><i></i></span>
+   
 </div>
 </div>
 <br>
@@ -95,15 +93,16 @@
 </div>
 </div>
 <br>
-<h3> Post Footer Background Color </h3>
-<div id="cp12" class="input-group colorpicker-component">
-    <input type="text" name="cp12" id="demo12" value="{{ isset($colorsetting[10]->color) ? $colorsetting[10]->color : 'transparent'}}" class="form-control"  required="required"/>
+<h3> Page Title Color </h3>
+<div id="cp2" class="input-group colorpicker-component">
+    <input type="text" name="cp2" id="demo2" value="{{ isset($colorsetting[0]->color) ? $colorsetting[0]->color : 'transparent' }}" class="form-control"  required="required" />
     <div class="input-group-prepend">
     <span class="input-group-addon input-group-text" ><i></i></span>
-   
+    
 </div>
 </div>
 <br>
+
 <h3> Page Title Background Color </h3>
 <div id="cp13" class="input-group colorpicker-component">
     <input type="text" name="cp13" id="demo13" value="{{ isset($colorsetting[11]->color) ? $colorsetting[11]->color : 'transparent'}}" class="form-control"  required="required"/>
