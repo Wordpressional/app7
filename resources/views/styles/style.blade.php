@@ -32,7 +32,7 @@
 </div>
 </div>
 <br>
-<h3> Post Title Background color </h3>
+<h3> Post Title Background Color </h3>
 <div id="cp6" class="input-group colorpicker-component">
     <input type="text" name="cp6" id="demo6" value="{{ isset($colorsetting[4]->color) ? $colorsetting[4]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">
