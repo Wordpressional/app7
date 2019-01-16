@@ -5,7 +5,7 @@
 @php $st = isset($colorsetting[0]->color) ? $colorsetting[0]->color : false;
 @endphp
 
-<h3> Homepage Content area Color </h3>
+<h3> Homepage Content Area Color </h3>
 <div id="cp3" class="input-group colorpicker-component">
     <input type="text" name="cp3" id="demo3" value="{{ isset($colorsetting[1]->color) ? $colorsetting[1]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">
@@ -32,7 +32,7 @@
 </div>
 </div>
 <br>
-<h3> Post title background color </h3>
+<h3> Post Title Background color </h3>
 <div id="cp6" class="input-group colorpicker-component">
     <input type="text" name="cp6" id="demo6" value="{{ isset($colorsetting[4]->color) ? $colorsetting[4]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">
@@ -66,7 +66,7 @@
     
 </div>
 </div>
-<br><h3> Line color/ Link color </h3>
+<br><h3> Line Color/ Link Color </h3>
 <div id="cp9" class="input-group colorpicker-component">
     <input type="text" name="cp9" id="demo9" value="{{ isset($colorsetting[7]->color) ? $colorsetting[7]->color : 'transparent'}}" class="form-control"  required="required"/>
     <div class="input-group-prepend">
