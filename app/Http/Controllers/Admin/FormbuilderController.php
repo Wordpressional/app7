@@ -56,6 +56,46 @@ class FormbuilderController extends Controller
         $forms = Form::withTrashed()->latest()->paginate(50);
         return view('admin.formbuilder.index',compact('forms','data'));
     }
+
+    public function smanagement()
+    {   
+       
+
+         $formshortcode = Form::where('formname', 'Home_Page')->first();
+        if($formshortcode != "")
+        {
+        } 
+        else
+        {
+        if($formshortcode['formname'] != 'Home_Page')
+        {
+            $formshortcode = new Form();
+            $formshortcode->formname = "Home_Page";
+            $formshortcode->shortcode = "-";
+            $formshortcode->save();
+        }
+        }
+
+         $formshortcode = Form::where('formname', 'Front_Page')->first();
+        if($formshortcode != "")
+        {
+        } 
+        else
+        {
+        if($formshortcode['formname'] != 'Front_Page')
+        {
+            $formshortcode = new Form();
+            $formshortcode->formname = "Front_Page";
+            $formshortcode->shortcode = "frontpage";
+            $formshortcode->save();
+        }
+        }
+         $data = $this->brandsAll();
+        $forms = Form::withTrashed()->latest()->paginate(50);
+        return view('admin.formbuilder.management',compact('forms','data'));
+    }
+
+
      /**
      * Show the form for creating a new resource.
      *
