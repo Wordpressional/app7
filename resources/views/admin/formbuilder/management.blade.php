@@ -6,10 +6,8 @@
 
 
 <div class="page-header d-flex justify-content-between">
-      <h2>Form Builder</h2>
-      <a href="{{ route('admin.forms.create') }}" class="btn btn-primary btn-sm align-self-center">
-        <i class="fa fa-plus-square" aria-hidden="true"></i> Add
-      </a>
+      <h2>Widget Shortcodes Management</h2>
+      
     </div>
 
 
@@ -20,10 +18,10 @@
 		 		<thead>
 					<th>@lang('form.formname')</th>
 					<th>Shortcode</th>
-					<th>Editing</th>
-					<th>Preview</th>
+					<th>Edit</th>
+					
 
-					<th>Deleting</th>
+					
 
 					<tbody>
 
@@ -43,58 +41,29 @@
 			              	</td>
 			              	<td>
 			              		@if($form->formname == "Home_Page")
-			              		[homepage]{{$form->shortcode}}[/homepage]
+			              		
 			              		@elseif($form->formname == "Front_Page")
-			              		[frontpage]{{$form->shortcode}}[/frontpage]
+			              		
 			              		@else
-								[{{ $form->shortcode}}]{{ $form->shortcode }}[/{{ $form->shortcode}}]
+								{{ $form->shortcode }}
 								@endif
 			              		
 			              	</td>
 
 			              	<td>
-
-			              	<a class="btn btn-info" href="{{ route('admin.forms.edit',['id'=>$form->id]) }}">
+			              		@if($form->formname == "Home_Page")
+			              		
+			              		@elseif($form->formname == "Front_Page")
+			              		
+			              		@else
+			              	<a class="btn btn-info" href="{{ route('admin.forms.shortedit',['id'=>$form->id]) }}">
 			              	
 			              			<span><i class="fa fa-pencil" aria-hidden="true"></i></span>
 			              	</a>
+			              		@endif
 			              	</td>
-			              	<td>
-			              	@if($form->formname == "Home_Page")
-			              	<a class="btn btn-warning" href="{{ URL::to('/') }}">
 			              	
-			              			<span><i class="fa fa-eye" aria-hidden="true"></i></span>
-			              	</a>
-			              	@else
-			              	<a class="btn btn-warning" href="{{ route('admin.forms.preview',['id'=>$form->id]) }}">
 			              	
-			              			<span><i class="fa fa-eye" aria-hidden="true"></i></span>
-			              	</a>
-			              	@endif
-			              	
-			              	</td>
-			              	<td>
-			              	@if($form->trashed())
-			              	<a class="btn btn-warning" href="{{ route('admin.forms.restore',['id'=>$form->id]) }}">
-			              	
-			              			<i class="fa fa-repeat" aria-hidden="true"></i>
-			              	</a>
-			              	<a class="btn btn-danger" href="{{ route('admin.forms.delete',['id'=>$form->id]) }}">
-			              	
-			              			<i class="fa fa-trash" aria-hidden="true"></i>
-			              	</a>
-			              	
-			              	@else
-			              	@if($form->formname != "Home_Page")
-			              	@if($form->formname != "Front_Page")
-			              	<a class="btn btn-danger" href="{{ route('admin.forms.delete',['id'=>$form->id]) }}">
-			              	
-			              			<i class="fa fa-trash" aria-hidden="true"></i>
-			              	</a>
-			              	@endif
-			              	@endif
-			              	@endif
-			              	</td>
 
 			              </tr>
 			             
@@ -104,7 +73,7 @@
 						 @else 
                               <tr>
                               	<th colspan="5" style="background-color: rgb(23,45,67);color: white;" class="text-center">
-                              		No forms are created yet 
+                              		No shortcodes are created yet 
                               	</th>
                               </tr>
 

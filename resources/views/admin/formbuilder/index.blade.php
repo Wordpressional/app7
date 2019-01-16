@@ -20,10 +20,10 @@
 		 		<thead>
 					<th>@lang('form.formname')</th>
 					<th>Shortcode</th>
-					<th>Editing</th>
+					<th>Edit</th>
 					<th>Preview</th>
 
-					<th>Deleting</th>
+					<th>Delete</th>
 
 					<tbody>
 

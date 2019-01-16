@@ -95,6 +95,30 @@ class FormbuilderController extends Controller
         return view('admin.formbuilder.management',compact('forms','data'));
     }
 
+    public function updateshortcode(Request $request, $id)
+    {
+
+        $this->validate($request, [
+
+            'shortcode' => 'required|regex:/^[a-zA-Z0-9]+$/u|max:255'
+
+        ]);
+
+       
+
+          $form = Form::find($id);
+          $form->shortcode = $request->shortcode;
+          
+          $form->save();
+    }
+
+    public function shortedit($id)
+    {
+        $form = Form::find($id);
+       $data = $this->brandsAll();
+        return view('admin.formbuilder.shortedit')->with(['data' => $data, 'form' => $form]);
+    } 
+
 
      /**
      * Show the form for creating a new resource.

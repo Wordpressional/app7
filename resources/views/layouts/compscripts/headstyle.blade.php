@@ -59,8 +59,9 @@
 <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  <link rel="stylesheet" href="{{asset('css/public.css')}}" />
  <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
-  <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
-
+ <link rel="stylesheet" href="{{asset('css/front.css')}}" />
+<link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
+<link href="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.css') }}" rel="stylesheet">
   
    <link rel="manifest" href="{{url('/manifest.json')}}">
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
