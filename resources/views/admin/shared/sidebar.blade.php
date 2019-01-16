@@ -18,6 +18,13 @@
                 <span class="nav-link-text">@lang('dashboard.dashboard')</span>
             </a>
         </li>
+
+        <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Profile">
+                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="{{ route('admin.dashboard.profile') }}">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Profile</span>
+                    </a>
+                </li>
        
             <li class="treeview">
                 <a href="#">

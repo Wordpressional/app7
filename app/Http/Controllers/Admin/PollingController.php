@@ -1111,7 +1111,13 @@ $t = count($blos);
 
     }
 
-
+     public function profile()
+    {
+        $thisuser = User::with('roles')->where('email', Auth::user()->email)->first();
+        $data = $this->accountsAll();
+        //dd($thisuser->roles[0]->display_name);
+        return view('admin.ec.profile')->with(['data' =>$data, 'thisuser' => $thisuser]);
+    }
    
     
 }

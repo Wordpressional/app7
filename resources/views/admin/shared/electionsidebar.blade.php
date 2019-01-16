@@ -60,8 +60,8 @@
         </li>
          @endrole
          <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Profile">
-                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="#">
-                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="{{ route('admin.ec.profile') }}">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">Profile</span>
                     </a>
                 </li>

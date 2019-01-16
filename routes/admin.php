@@ -551,6 +551,20 @@ Route::post('/jsupdate',[
 
 ]);
 
+Route::get('/profile',[
+
+'uses' => 'UserController@profile',
+'as' => 'dashboard.profile'
+
+]);
+
+Route::get('/ec/profile',[
+
+'uses' => 'PollingController@profile',
+'as' => 'ec.profile'
+
+]);
+
 Route::get('/authors',[
 
 'uses' => 'UserController@indexa',
