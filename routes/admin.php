@@ -3,6 +3,30 @@
 
 Route::get('dashboard', 'ShowDashboard')->name('dashboard');
 
+Route::get('/forms/smanagement',[
+
+
+'uses' => 'FormbuilderController@smanagement',
+'as' => 'forms.smanagement'
+
+]);
+
+Route::get('/forms/sedit',[
+
+
+'uses' => 'FormbuilderController@sedit',
+'as' => 'forms.sedit'
+
+]);
+
+Route::post('/forms/updateshortcode/{id}',[
+
+
+'uses' => 'FormbuilderController@updateshortcode',
+'as' => 'forms.updateshortcode'
+
+]);
+
 Route::get('/forms/snippets',[
 
 
@@ -95,6 +119,14 @@ Route::get('/cforms/edit/{id}',[
 
 'uses' => 'ContactFormbuilderController@edit',
 'as' => 'cforms.edit'
+
+]);
+
+Route::get('/forms/shortedit/{id}',[
+
+
+'uses' => 'FormbuilderController@shortedit',
+'as' => 'forms.shortedit'
 
 ]);
 

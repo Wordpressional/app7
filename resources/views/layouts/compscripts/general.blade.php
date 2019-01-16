@@ -58,7 +58,11 @@
         <script src="{{ asset('js/adminlte.min.js') }}"></script>
         <script src="{{ asset('webhome/js/theme.js') }}"></script>
        
-       
+       <script src="{{ asset('webhome/js/form-builder.min.js') }}"></script>
+        
+        
+       <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      
 
 
        <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
