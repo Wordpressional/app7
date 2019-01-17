@@ -125,6 +125,10 @@ $('.precon1').css('display', 'none');
     height: 930px;
     padding-top:170px;
 }
+
+.main_h {
+    position: static;
+}
 </style>
 
 </body>       
