@@ -15,6 +15,9 @@ use App\Permission;
 use App\Meleuser;
 use App\Elemdist;
 use App\Account;
+
+use App\Cmsactivitylog;
+use Illuminate\Http\Request;
 use Auth;
 
 class ShowDashboard extends Controller
@@ -120,6 +123,121 @@ class ShowDashboard extends Controller
        }
     }
 
-    
+    public function cmsactivitylogs(Request $request){
+        $data = $this->brandsAll();
+        $Cmsactivitylog = new Cmsactivitylog;
+        $Cmsactivitylog->setConnection('mongodb');
+        $cmsactivitylogdetails = $Cmsactivitylog->all();
+        //dd($elemactivitylogdetails[0]);
+         return view('admin.cms.cmsactivitylogs', compact('cmsactivitylogdetails', 'data'));
+    }
+
+    public function cmsdisplayusers(){
+         $data = $this->brandsAll();
+        //$users = User::paginate(10);
+        $users = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->paginate(50);
+        $params = [
+            'title' => 'Users Login List',
+            'users' => $users,
+            'data' => $data,
+        ];
+
+       // dd($users[0]->roles[0]->name);
+        return view('admin.cms.cmsdisplayusers')->with($params);
+    }
+
+     public function cmsSwitchUser(Request $request)
+    {
+         $request->session()->put('existing_user_id', Auth::user()->id);
+         $request->session()->put('user_is_switched', true);
+
+         $newuserId = $request->input('new_user_id');
+
+
+
+        $timestamp = date("Y-m-d H:i:s");
+        $userid = Auth::user()->id;
+        $newuserId = $request->input('new_user_id');
+
+        $request->session()->put('user_is_switched_with_id', $newuserId);
+
+        //dd($userid);
+        $user = User::with('roles')->where( 'id', $userid)->first();
+        //dd($user->roles->first()->id);
+        //dd($request->header('User-Agent'));
+        $role = Role::where( 'id', $user->roles->first()->id)->first();
+        //dd($role);
+        
+
+        
+        //dd($elemblodetails);
+        $Cmsactivitylog = new Cmsactivitylog;
+        $Cmsactivitylog->setConnection('mongodb');
+
+            
+            $Cmsactivitylog->username = $user->name;
+            $Cmsactivitylog->useremail = $user->email;
+            $Cmsactivitylog->userrole = $user->roles->first()->name;
+            $Cmsactivitylog->eventname = "admin switched to user ".$user->roles->first()->display_name;
+            $Cmsactivitylog->devicedetails = $request->header('User-Agent');
+            $Cmsactivitylog->userid = $newuserId;
+            $Cmsactivitylog->suserid = $userid;
+            $Cmsactivitylog->timestamp = $timestamp;
+
+            $Cmsactivitylog->save();
+
+
+
+         //$my_selected_job_id = $request->input('my_selected_job_id');
+         $url = '/admin/dashboard/';
+         Auth::loginUsingId($newuserId);
+         return redirect()->to($url);
+     }
+
+     public function cmsRestoreUser(Request $request) {
+  
+
+         $oldUserId = $request->session()->get('existing_user_id');
+         $newUserId = $request->session()->get('user_is_switched_with_id');
+         //dd($newUserId);
+         Auth::loginUsingId($oldUserId);
+         $request->session()->forget('existing_user_id');
+         $request->session()->forget('user_is_switched');
+
+        
+
+        $timestamp = date("Y-m-d H:i:s");
+        $userid = Auth::user()->id;
+        //$newuserId = $request->input('user_is_switched');
+        //dd($userid);
+
+        $user = User::with('roles')->where( 'id', (int) $newUserId)->first();
+
+        //dd($user->roles->first()->id);
+        //dd($request->header('User-Agent'));
+        $role = Role::where( 'id', (int) $newUserId)->first();
+        //dd($role);
+       
+        //dd($Elemblo);
+        $Cmsactivitylog = new Cmsactivitylog;
+        $Cmsactivitylog->setConnection('mongodb');
+
+            
+            $Cmsactivitylog->username = $user->name;
+            $Cmsactivitylog->useremail = $user->email;
+            $Cmsactivitylog->userrole = $user->roles->first()->name;
+            $Cmsactivitylog->eventname = "admin switched back from user ". $user->roles->first()->display_name;
+            $Cmsactivitylog->devicedetails = $request->header('User-Agent');
+            $Cmsactivitylog->userid = $userid;
+            $Cmsactivitylog->suserid =  $newUserId;
+            $Cmsactivitylog->timestamp = $timestamp;
+
+            $Cmsactivitylog->save();
+
+         $url = '/admin/dashboard/';
+         return redirect()->to($url);
+     }
 
 }

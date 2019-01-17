@@ -43,6 +43,14 @@ Route::get('/forms/preview/{id}',[
 
 ]);
 
+Route::get('/forms/preview1/{id}',[
+
+
+'uses' => 'FormbuilderController@preview1',
+'as' => 'forms.preview1'
+
+]);
+
 Route::post('/forms/fsave',[
 
 
@@ -159,6 +167,9 @@ Route::get('/stables/edit/{id}',[
 'as' => 'stables.edit'
 
 ]);
+
+Route::post('cmsswitchuser', 'ShowDashboard@cmsSwitchUser')->name('dashboard.cmsswitchuser');
+Route::get('/cmsrestoreuser', 'ShowDashboard@cmsRestoreUser')->name('dashboard.cmsrestoreuser');
 
 Route::resource('cforms', 'ContactFormbuilderController');
 
@@ -688,6 +699,24 @@ Route::get('/dumpmodules',[
 'as' => 'module.dumpmodules'
 
 ]);
+
+Route::get('/cmsactivitylogs',[
+
+
+'uses' => 'ShowDashboard@cmsactivitylogs',
+'as' => 'cms.cmsactivitylogs'
+
+]);
+
+Route::get('/cmsdisplayusers',[
+
+
+'uses' => 'ShowDashboard@cmsdisplayusers',
+'as' => 'cms.cmsdisplayusers'
+
+]);
+
+
 
 Route::group(['middleware' => ['role_sadmin:elec_superadmin']], function () {
 Route::get('/accountsettings',[
