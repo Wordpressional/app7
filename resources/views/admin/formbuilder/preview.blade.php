@@ -53,7 +53,7 @@ alert("mobile");
  $('.precon').css('display', 'none');
  $('.precon1').css('display', 'inline');
 //myWindow = window.open("{{route('admin.forms.preview', $form->id)}}", '_blank', 'toolbar=no, directories=no, location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=350, height=350');
-$('.precon1').html('<center><iframe src="{{route("admin.forms.preview1", $form->id)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
+$('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("admin.forms.preview1", $form->id)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
 
 
 });
@@ -91,6 +91,7 @@ $('.precon1').css('display', 'none');
 .mau {
     margin: auto !important;
    width:100%;
+
 } 
    
 .keditor-container-content {
@@ -99,6 +100,7 @@ $('.precon1').css('display', 'none');
 
 .precon1{
   display: none;
+
 }
 
 .precon{
@@ -107,7 +109,21 @@ $('.precon1').css('display', 'none');
 
 #mypreFrame{
   width:30%;
-   height:500px;
+   height:600px;
+   
+}
+
+.iframecentmobi
+{
+    background: url(../../../images/Phone.png);
+    background-repeat: no-repeat;
+    /* width: 500px; */
+    background-size: 36%;
+    background-position: bottom center;
+    padding-right: 1px;
+    margin-top: 30px;
+    height: 930px;
+    padding-top:170px;
 }
 </style>
 
