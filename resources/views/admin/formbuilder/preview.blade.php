@@ -10,6 +10,7 @@
      <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
    <span><a style="font-size:30px; color:red; padding:20px;" class="requestDesktopSite">
    <i class="fa fa-desktop"></i></a> </span>
+
    <span><a style="font-size:30px; color:red; padding:20px;" class="requestMobileSite">
    <i class="fa fa-mobile"></i></a> </span>
     <span><a style="font-size:30px; color:red; padding:20px;" class="requestTabletSite">
@@ -46,20 +47,24 @@
 
 $(document).ready(function(){
 $(".requestMobileSite").click(function(){
-alert("mobile");
-
- 
- $('a.phpdebugbar-restore-btn').css('display', 'none');
+//alert("mobile");
+if(detectmob()){
+  alert("This function works only on desktop");
+} else {
+  $('a.phpdebugbar-restore-btn').css('display', 'none');
  $('.precon').css('display', 'none');
  $('.precon1').css('display', 'inline');
 //myWindow = window.open("{{route('admin.forms.preview', $form->id)}}", '_blank', 'toolbar=no, directories=no, location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=350, height=350');
 $('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("admin.forms.preview1", $form->id)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
 
 
+}
+ 
+ 
 });
 
 $(".requestDesktopSite").click(function(){
-alert("desktop");
+//alert("desktop");
 
   location.reload();
 // vpw = 100;
@@ -72,7 +77,7 @@ alert("desktop");
 });
 
 $(".requestTabletSite").click(function(){
-alert("tablet");
+//alert("tablet");
 $('.precon1').css('display', 'none');
  $('.precon').css('display', 'inline');
  var vpw = 55;
@@ -84,6 +89,14 @@ $('.precon1').css('display', 'none');
  
 });
 });
+
+function detectmob() {
+   if(window.innerWidth <= 800 && window.innerHeight <= 800) {
+     return true;
+   } else {
+     return false;
+   }
+}
 
 </script>
 
