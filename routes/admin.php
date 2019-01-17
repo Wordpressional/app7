@@ -160,6 +160,9 @@ Route::get('/stables/edit/{id}',[
 
 ]);
 
+Route::post('cmsswitchuser', 'ShowDashboard@cmsSwitchUser')->name('dashboard.cmsswitchuser');
+Route::get('/cmsrestoreuser', 'ShowDashboard@cmsRestoreUser')->name('dashboard.cmsrestoreuser');
+
 Route::resource('cforms', 'ContactFormbuilderController');
 
 Route::resource('stables', 'StablesController');
@@ -688,6 +691,24 @@ Route::get('/dumpmodules',[
 'as' => 'module.dumpmodules'
 
 ]);
+
+Route::get('/cmsactivitylogs',[
+
+
+'uses' => 'ShowDashboard@cmsactivitylogs',
+'as' => 'cms.cmsactivitylogs'
+
+]);
+
+Route::get('/cmsdisplayusers',[
+
+
+'uses' => 'ShowDashboard@cmsdisplayusers',
+'as' => 'cms.cmsdisplayusers'
+
+]);
+
+
 
 Route::group(['middleware' => ['role_sadmin:elec_superadmin']], function () {
 Route::get('/accountsettings',[
