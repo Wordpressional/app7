@@ -17,7 +17,7 @@
                     <button type="submit" class="btn btn-default">
                         <span class="fa fa-search"></span>
                     </button>
-                     <a class="btn btn-md btn-default moveright" href="{{route('admin.polling.displayusers')}}">Clear Search</a>
+                     <a class="btn btn-md btn-default moveright" href="{{route('admin.cms.cmsdisplayusers')}}">Clear Search</a>
                 </span>
             </div>
         </form>
@@ -49,7 +49,7 @@
                      <td>{{ $user->roles[0]->display_name}}</td>
                    
                    
-                      <td><form action="{{ route('admin.user.eleswitch') }}" method="POST">
+                      <td><form action="{{ route('admin.dashboard.cmsswitchuser') }}" method="POST">
                     <input type="hidden" name="new_user_id" value="{{ $user->id }}">
                    
                     {{ csrf_field() }}
