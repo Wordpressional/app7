@@ -208,6 +208,16 @@ class FormbuilderController extends Controller
         return view('admin.formbuilder.preview')->with(['form'=> $form, 'data' => $data])->withShortcodes();
     }
 
+    public function preview1($id)
+    {
+        $data = $this->brandsAll();
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+        $form = Form::find($id);
+        return view('admin.formbuilder.preview1')->with(['form'=> $form, 'data' => $data])->withShortcodes();
+    }
+
+
     public function snippets()
     {
         

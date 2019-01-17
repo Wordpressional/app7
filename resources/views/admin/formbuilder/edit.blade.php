@@ -44,22 +44,19 @@
           
 
             <div id="banner">
-              <section>
-                
-                   
-                         <section>
-                             <div data-type="container-content">
-                             <section data-type="component-photo">
-                                <div class="photo-panel">
-                                     <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" style="display: inline-block;" height="" width="100%">
-                                 </div>
-                                </section>
-                              </div>
-                           </section>
+             
+             <section>
+                 <div data-type="container-content">
+                 <section data-type="component-photo">
+                    <div class="photo-panel">
+                         <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" style="display: inline-block;" height="" width="100%">
+                     </div>
+                    </section>
+                  </div>
+               </section>
                             
-                       
-                   
-                </section>
+                
+              
             </div>
             
         </div>
@@ -102,7 +99,7 @@
                   
                     containerSettingEnabled: true,
                      snippetsUrl: "{{route('admin.forms.snippets')}}",
-                    contentAreasSelector: '#header, #banner, #body, #footer',
+                    contentAreasSelector: '#banner',
                     containerSettingInitFunction: function (form, keditor) {
                         // Add control for settings form
                         form.append(

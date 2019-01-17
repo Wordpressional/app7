@@ -27,24 +27,24 @@
                  
             
           
-
+        
             <div id="banner">
-              <section>
+              
                 
                    
-                         <section>
-                             <div data-type="container-content">
-                             <section data-type="component-photo">
-                                <div class="photo-panel">
-                                     <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" style="display: inline-block;" height="" width="100%">
-                                 </div>
-                                </section>
-                              </div>
-                           </section>
+             <section>
+                 <div data-type="container-content">
+                 <section data-type="component-photo">
+                    <div class="photo-panel">
+                         <img src="{{asset('examples/snippets/img/somewhere_bangladesh.jpg')}}" style="display: inline-block;" height="" width="100%">
+                     </div>
+                    </section>
+                  </div>
+               </section>
                             
                        
                    
-                </section>
+                
             </div>
             
         </div>

@@ -2,71 +2,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="theme-color" content="#317EFB"/>
-       @if($data)
-    <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
-    @endif
-    
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    @auth
-        <meta name="api-token" content="{{ auth()->user()->api_token }}">
-    @endauth
-
-    @if($data)
-    <title>{{$data['n_companyname']->cname}}</title>
-    @else
-    <title></title>
-    @endif
-
-     
-    
-<link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
-<link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">
-<link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
-<!-- Bootstrap -->
-<link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
-
-
-<!-- Rev slider css -->
-  <link href="{{ asset('webhome/vendors/revolution/css/settings.css') }}" rel="stylesheet">
-  <link href="{{ asset('webhome/vendors/revolution/css/layers.css') }}" rel="stylesheet">
-  <link href="{{ asset('webhome/vendors/revolution/css/navigation.css') }}" rel="stylesheet">
-  <link href="{{ asset('webhome/vendors/animate-css/animate.css') }}" rel="stylesheet">
-
-
-<link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
-<link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
-<link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
-
-
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
-<link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
- <link rel="stylesheet" href="{{asset('css/public.css')}}" />
- <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
-  <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
-
-  
-   <link rel="manifest" href="{{url('/manifest.json')}}">
-   <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
+         @include('admin.layouts.compscripts.previewcss')
+    @yield('css') 
  </head>
     <body>
    <div id="app">
+     <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
+   <span><a style="font-size:30px; color:red; padding:20px;" class="requestDesktopSite">
+   <i class="fa fa-desktop"></i></a> </span>
+   <span><a style="font-size:30px; color:red; padding:20px;" class="requestMobileSite">
+   <i class="fa fa-mobile"></i></a> </span>
+    <span><a style="font-size:30px; color:red; padding:20px;" class="requestTabletSite">
+   <i class="fa fa-tablet"></i></a> </span>
+
+   </div>
+    <div class="mau" id="mau">
+     
+  
+   
     <div class="precon">
+
     {!! $form->htmlcontent !!} 
     </div>
-   </div>
+    
+  
+ 
+</div>
+
+<div class="precon1">
+</div>
+</div>
 
      
     @include('layouts.compscripts.general')
@@ -76,6 +41,75 @@
        
          @include ('layouts.shortcode-layout')
          @stack('inline-scripts')
+
+<script>
+
+$(document).ready(function(){
+$(".requestMobileSite").click(function(){
+alert("mobile");
+
+ 
+ $('a.phpdebugbar-restore-btn').css('display', 'none');
+ $('.precon').css('display', 'none');
+ $('.precon1').css('display', 'inline');
+//myWindow = window.open("{{route('admin.forms.preview', $form->id)}}", '_blank', 'toolbar=no, directories=no, location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=350, height=350');
+$('.precon1').html('<center><iframe src="{{route("admin.forms.preview1", $form->id)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
+
+
+});
+
+$(".requestDesktopSite").click(function(){
+alert("desktop");
+
+  location.reload();
+// vpw = 100;
+// vph = 'auto';
+// $('.mau').css({'width': vpw + '%'});
+// $('.mau').css({'height': vph});
+// $('.mau').css({'height': vph + 'px'});
+// $('.mau').css({'margin': 'auto'});
+// $('.mau').css({'overflow': 'unset'});
+});
+
+$(".requestTabletSite").click(function(){
+alert("tablet");
+$('.precon1').css('display', 'none');
+ $('.precon').css('display', 'inline');
+ var vpw = 55;
+ var vhw = 55;
+ $('.mau').css({'max-width': vpw + '%'});
+ $('.mau').css({'max-height': vhw + '%'});
+
+ $('.mau').css({'margin': 'auto'});
+ 
+});
+});
+
+</script>
+
+<style>
+.mau {
+    margin: auto !important;
+   width:100%;
+} 
+   
+.keditor-container-content {
+    padding: 0px;
+}
+
+.precon1{
+  display: none;
+}
+
+.precon{
+  display: inline;
+}
+
+#mypreFrame{
+  width:30%;
+   height:500px;
+}
+</style>
 
 </body>       
 </html>
