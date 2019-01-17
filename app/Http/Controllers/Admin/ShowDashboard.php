@@ -170,7 +170,11 @@ class ShowDashboard extends Controller
         $role = Role::where( 'id', $user->roles->first()->id)->first();
         //dd($role);
         
+        $nuser = User::with('roles')->where( 'id', (int) $newuserId)->first();
 
+        //dd($user->roles->first()->id);
+        //dd($request->header('User-Agent'));
+        $nrole = Role::where( 'id', (int) $newuserId)->first();
         
         //dd($elemblodetails);
         $Cmsactivitylog = new Cmsactivitylog;
@@ -180,7 +184,7 @@ class ShowDashboard extends Controller
             $Cmsactivitylog->username = $user->name;
             $Cmsactivitylog->useremail = $user->email;
             $Cmsactivitylog->userrole = $user->roles->first()->name;
-            $Cmsactivitylog->eventname = "admin switched to user ".$user->roles->first()->display_name;
+            $Cmsactivitylog->eventname = "admin switched to user ".$nuser->roles->first()->display_name;
             $Cmsactivitylog->devicedetails = $request->header('User-Agent');
             $Cmsactivitylog->userid = $newuserId;
             $Cmsactivitylog->suserid = $userid;
