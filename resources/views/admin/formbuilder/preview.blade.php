@@ -77,6 +77,9 @@ $(".requestDesktopSite").click(function(){
 });
 
 $(".requestTabletSite").click(function(){
+  if(detectmob()){
+  alert("This function works only on desktop");
+} else {
 //alert("tablet");
 $('.precon1').css('display', 'none');
  $('.precon').css('display', 'inline');
@@ -86,12 +89,14 @@ $('.precon1').css('display', 'none');
  $('.mau').css({'max-height': vhw + '%'});
 
  $('.mau').css({'margin': 'auto'});
- 
+ }
+
 });
+
 });
 
 function detectmob() {
-   if(window.innerWidth <= 800 && window.innerHeight <= 800) {
+   if(window.innerWidth <= 1000 && window.innerHeight <= 800) {
      return true;
    } else {
      return false;
