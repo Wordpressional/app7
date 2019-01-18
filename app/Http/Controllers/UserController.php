@@ -27,6 +27,7 @@ class UserController extends Controller
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
         $data = $this->settingsAll();
+        
         return view('users.show', [
             'user' => $user,
             'posts_count' => $user->posts()->count(),
@@ -37,6 +38,7 @@ class UserController extends Controller
             'data' => $data,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
+           
            
         ])->withShortcodes();
     }

@@ -25,7 +25,7 @@ class Comment extends Resource
             'id' => $this->id,
             'content' => $this->content,
             'posted_at' => $this->posted_at->toIso8601String(),
-            'humanized_posted_at' => humanize_date($this->posted_at),
+            'humanized_posted_at' => humanize_date_with_timezone($this->posted_at),
             'author_id' => $this->author_id,
             'post_id' => $this->post_id,
             'author_name' => $this->author->name,
