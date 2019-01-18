@@ -15,7 +15,7 @@
                 <td>{{ str_limit($comment->content, 50) }}</td>
                 <td>{{ link_to_route('admin.posts.edit', $comment->post->title, $comment->post) }}</td>
                 <td>{{ link_to_route('admin.authors.edita', $comment->author->fullname, $comment->author) }}</td>
-                <td>{{ humanize_date($comment->posted_at, 'd/m/Y H:i:s') }}</td>
+                <td>{{ humanize_date_with_timezone($comment->posted_at,'d F Y, H:i') }}</td>
                 <td>
                     <a href="{{ route('admin.comments.edit', $comment) }}" class="btn btn-primary btn-sm">
                         <i class="fa fa-pencil" aria-hidden="true"></i>

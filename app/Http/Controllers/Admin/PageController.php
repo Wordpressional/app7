@@ -48,7 +48,7 @@ class PageController extends Controller
        
         return view('admin.pages.edit', [
             'page' => $page,
-            'users' => User::authors()->pluck('displayname', 'id'),
+            'users' => User::authors()->pluck('name', 'id'),
             'tuser'=>$thisuser,
             'data'=>$data,
 
@@ -67,7 +67,7 @@ class PageController extends Controller
         $data = $this->brandsAll();
         
         return view('admin.pages.create', [
-            'users' => User::authors()->pluck('displayname', 'id'),
+            'users' => User::authors()->pluck('name', 'id'),
             'data'=>$data,
 
         ]);

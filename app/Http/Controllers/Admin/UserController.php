@@ -108,12 +108,14 @@ class UserController extends Controller
     // Delete Confirmation Page
     public function show($id)
     {
+        $data = $this->brandsAll();
         try {
             $user = User::findOrFail($id);
 
             $params = [
                 'title' => 'Confirm Delete Record',
                 'user' => $user,
+                'data' => $data,
             ];
 
             return view('admin.users.users_delete')->with($params);

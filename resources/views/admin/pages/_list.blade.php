@@ -1,3 +1,6 @@
+@php 
+//dd($data['n_companyname']->timezone);
+@endphp
 <table class="table table-hover table-striped table-sm table-responsive-md">
     <!--<caption>{{ trans_choice('pages.count', $pages->total()) }}</caption>-->
     <thead>
@@ -24,7 +27,7 @@
                 </td>
                 <td>{{ link_to_route('admin.users.edit', $page->author->displayname, $page->author) }}</td>
                 
-                <td>{{ humanize_date($page->created_at, 'd/m/Y H:i:s') }}</td>
+                <td>{{ humanize_date_with_timezone($page->created_at, 'd/m/Y H:i:s', $data['n_companyname']->timezone) }}</td>
                 <td>
                     <a class="btn btn-warning" href="{{ route('page.custompage', $page)}}" target="_blank">
                 

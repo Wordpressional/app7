@@ -6,7 +6,7 @@
 
     <p v-pre class="card-text">{{ $comment->content }}</p>
     <p class="card-text">
-      <small class="text-muted">{{ humanize_date($comment->posted_at) }}</small>
+      <small class="text-muted">{{ humanize_date_with_timezone($comment->posted_at,'d F Y, H:i') }}</small>
     </p>
   </div>
 </div>
