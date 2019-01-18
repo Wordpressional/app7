@@ -332,7 +332,7 @@ class UserController extends Controller
 
             $user->delete();
 
-            return redirect()->route('admin.eleusers')->with('success', "The user $user->name has successfully been archived.");
+            return redirect()->route('admin.eleusers')->with('success', "The user $user->name has successfully been deleted.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');
@@ -343,6 +343,7 @@ class UserController extends Controller
     // Remove User from DB with detaching Role
     public function destroy($id)
     {
+        //dd("hi");
         try {
             $user = User::findOrFail($id);
 
@@ -355,7 +356,7 @@ class UserController extends Controller
 
             $user->delete();
 
-            return redirect()->route('admin.users')->with('success', "The user $user->name has successfully been archived.");
+            return redirect()->route('admin.users')->with('success', "The user $user->name has successfully been deleted.");
         } catch (ModelNotFoundException $ex) {
             if ($ex instanceof ModelNotFoundException) {
                 return response()->view('errors.' . '404');
@@ -373,9 +374,14 @@ class UserController extends Controller
         $data = $this->brandsAll();
 
          $user = User::where('email', Auth::user()->email)->first();
-         if($user->isCMSAuthor() == "yes") {
+         if($user->isCMSAuthor() == "yes" ) {
             $users = User::where('id',$user->id)->whereHas('roles', function($q){
             $q->where('name', 'cms_author');
+                                        })->latest()->paginate(50);
+         }
+         if($user->isCMSEditor() == "yes" ) {
+            $users = User::whereHas('roles', function($q){
+            $q->whereIn('name', ['cms_editor', 'cms_author', 'cms_subscriber']);
                                         })->latest()->paginate(50);
          }
          if($user->isSuperadministrator() == "yes") {
@@ -404,6 +410,9 @@ class UserController extends Controller
         $thisuser = User::where('email', Auth::user()->email)->first();
          if($thisuser->isCMSAuthor() == "yes") {
            $roles = Role::where('name', 'cms_author')->get();
+         }
+         if($user->isCMSEditor() == "yes" ) {
+            $roles =  Role::whereIn('name', ['cms_editor', 'cms_author', 'cms_subscriber'])->get();
          }
          if($thisuser->isSuperadministrator() == "yes") {
           $roles = Role::where('name', 'like', 'cms_' . '%')->get();

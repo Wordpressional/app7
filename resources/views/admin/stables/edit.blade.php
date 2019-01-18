@@ -101,7 +101,7 @@ $(function () {
     });
 });
 
-document.getElementById('UpdateJSON').addEventListener('click', function() {
+/*document.getElementById('UpdateJSON').addEventListener('click', function() {
 
   var fieldlen = $('#fieldlen').val();
   var tablename = $('#tablename').val();
@@ -175,7 +175,7 @@ document.getElementById('UpdateJSON').addEventListener('click', function() {
             });
 
        
-    });
+    });*/
     
 document.getElementById('UpdateJSON1').addEventListener('click', function() {
 
