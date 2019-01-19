@@ -386,6 +386,20 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="DynamicTemplates;Blog">
+
+ [bloglist]blog[/bloglist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu.png')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus;Menu">
+
+[menulist]testm[/menulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/3levelmenu.png')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus;Menu">
+
+[responsivemenulist]testm[/responsivemenulist]
+</div>
 
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 

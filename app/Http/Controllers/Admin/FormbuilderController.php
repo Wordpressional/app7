@@ -329,6 +329,10 @@ class FormbuilderController extends Controller
          return redirect()->back();
     }
 
-
+    public function menubuilder()
+    {
+         $data = $this->brandsAll();
+         return view('admin.formbuilder.menubuilder')->with(['data'=> $data]);
+    }
 
 }

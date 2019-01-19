@@ -44,12 +44,16 @@
                            if ($post->category_id == $category->id){
                              $selected = "selected";
                            }
+                           else
+                           {
+                            $selected = "";
+                           }
                          }
                           
                           
                       @endphp
                       <option value="{{$category->id}}"
-                          
+                          selected="{{$selected}}"
                         >{{$category->name}}</option>
 
                      @endforeach     

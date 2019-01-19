@@ -147,6 +147,8 @@ function random_color() {
 
 </div>
 @endif
+@if($user->isCMSEditor() == "yes")
+@else 
 <h3> Install New Theme </h3>
 <div class="row">
 
@@ -165,7 +167,7 @@ function random_color() {
 <div id="loading"></div>
 </div>
 
-
+@endif
 
 
 @endsection

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use Session;
+use App\User;
 use App\Tag;
 use App\Page;
 use App\Cform;
@@ -39,7 +40,8 @@ class ThemeController extends Controller
 
     public function themes()
     {   
-        $data = $this->brandsAll();
+       $data = $this->brandsAll();
+       $user = User::where('email', Auth::user()->email)->first();
        $themes = Theme::all();
        if(!empty($themes[0]))
        {
@@ -60,7 +62,7 @@ class ThemeController extends Controller
         
         
 
-        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themes','data'));
+        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themes','data','user'));
     }
      /**
      * Show the form for creating a new resource.

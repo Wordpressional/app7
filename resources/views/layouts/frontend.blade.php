@@ -14,10 +14,11 @@
  
 
 
-   @yield('scripts')
+    @yield('scripts')
     @include('layouts.compscripts.serviceworker')
         
          
-         @stack('inline-scripts')
+    @stack('inline-scripts')
+   
     </body>      
 </html>

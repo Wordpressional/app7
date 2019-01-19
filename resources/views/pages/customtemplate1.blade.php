@@ -10,7 +10,7 @@
   <div class="container">
     <h3></h3>
 
-   
+    
 
     <p class="lead"><span>{{ $page->display_name }}</span></p>
   </div>
@@ -75,4 +75,9 @@ body.bg-light {
 	color: {{ $colorsetting[0]->color }} !important;
 }
 </style>
+@endsection
+@section('menuscripts')
+
+    {!! Menu::scripts() !!}
+
 @endsection

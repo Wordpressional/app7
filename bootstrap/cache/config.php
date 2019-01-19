@@ -47,16 +47,17 @@
       26 => 'UniSharp\\LaravelFilemanager\\LaravelFilemanagerServiceProvider',
       27 => 'Intervention\\Image\\ImageServiceProvider',
       28 => 'RachidLaasri\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider',
-      29 => 'App\\Providers\\AppServiceProvider',
-      30 => 'App\\Providers\\AuthServiceProvider',
-      31 => 'App\\Providers\\BroadcastServiceProvider',
-      32 => 'App\\Providers\\EventServiceProvider',
-      33 => 'App\\Providers\\RouteServiceProvider',
-      34 => 'App\\Providers\\BladeServiceProvider',
-      35 => 'App\\Providers\\ResponseServiceProvider',
-      36 => 'App\\Providers\\ObserverServiceProvider',
-      37 => 'App\\Providers\\ShortcodesServiceProvider',
-      38 => 'Laratrust\\LaratrustServiceProvider',
+      29 => 'Harimayco\\Menu\\MenuServiceProvider',
+      30 => 'App\\Providers\\AppServiceProvider',
+      31 => 'App\\Providers\\AuthServiceProvider',
+      32 => 'App\\Providers\\BroadcastServiceProvider',
+      33 => 'App\\Providers\\EventServiceProvider',
+      34 => 'App\\Providers\\RouteServiceProvider',
+      35 => 'App\\Providers\\BladeServiceProvider',
+      36 => 'App\\Providers\\ResponseServiceProvider',
+      37 => 'App\\Providers\\ObserverServiceProvider',
+      38 => 'App\\Providers\\ShortcodesServiceProvider',
+      39 => 'Laratrust\\LaratrustServiceProvider',
     ),
     'aliases' => 
     array (
@@ -101,6 +102,7 @@
       'Image' => 'Intervention\\Image\\Facades\\Image',
       'Laratrust' => 'Laratrust\\LaratrustFacade',
       'LRedis' => 'Illuminate\\Support\\Facades\\Redis',
+      'Menu' => 'Harimayco\\Menu\\Facades\\Menu',
     ),
   ),
   'auth' => 
@@ -936,6 +938,16 @@
         0 => '/var/www/html/staticweb/resources/views/vendor/mail',
       ),
     ),
+  ),
+  'menu' => 
+  array (
+    'middleware' => 
+    array (
+    ),
+    'table_prefix' => 'admin_',
+    'table_name_menus' => 'menus',
+    'table_name_items' => 'menu_items',
+    'route_path' => '/harimayco/',
   ),
   'modules' => 
   array (

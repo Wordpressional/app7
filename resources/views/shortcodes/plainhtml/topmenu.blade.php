@@ -17,6 +17,7 @@
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+        
         <li class="nav-item"><a class="nav-link" href="{{ URL::to('/') }}">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ url('/cattype/books') }}">ICO Services&nbsp;&nbsp;&nbsp;<span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>
        
