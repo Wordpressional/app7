@@ -159,6 +159,7 @@ return [
     UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
     Intervention\Image\ImageServiceProvider::class,
     RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
+    Harimayco\Menu\MenuServiceProvider::class,
     
    
         /*
@@ -233,7 +234,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Laratrust'   => Laratrust\LaratrustFacade::class,
         'LRedis'    => Illuminate\Support\Facades\Redis::class,
-        
+        'Menu' => Harimayco\Menu\Facades\Menu::class,
 
 	
     ],

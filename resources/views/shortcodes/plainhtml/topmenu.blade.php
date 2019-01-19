@@ -14,8 +14,14 @@
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+<<<<<<< HEAD
         <li class="nav-item"><a class="nav-link" href="http://139.59.47.15/dynamic">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="http://139.59.47.15/dynamic/cattype/books">ICO Services   <span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>
+=======
+        
+        <li class="nav-item"><a class="nav-link" href="{{ URL::to('/') }}">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/cattype/books') }}">ICO Services&nbsp;&nbsp;&nbsp;<span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>
+>>>>>>> 2690978e34d54e57ba13b035d1af6f718fc53e82
        
         <li class="nav-item"><a class="nav-link" href="http://139.59.47.15/dynamic/thispage/events-conferences-and-projects">Promote Your ICO   <span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>
         <li class="nav-item"><a class="nav-link" href="http://139.59.47.15/dynamic/thispage/contact">About   <span class="icon-cogw"><i class="fa fa-angle-down"></i></span></a></li>

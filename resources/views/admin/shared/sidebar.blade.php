@@ -158,11 +158,17 @@
                         <span class="nav-link-text">Upload Media Manager</span>
                     </a>
                 </li>
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Upload Media Manager">
+                    <a class="nav-link {{ Request::is('/laravel-filemanager') || Request::is('/laravel-filemanager/*') ? 'active' : '' }}" href="{{ route('admin.forms.menubuilder') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Menu Builder</span>
+                    </a>
+                </li>
             
         </ul>
     </li>
     @endrole
-         @role(['superadministrator','administrator','cms_administrator'])
+         @role(['superadministrator','administrator','cms_administrator','cms_editor'])
         <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Settings</span>
@@ -171,8 +177,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                   
-                    
+         @endrole          
+            @role(['superadministrator','administrator','cms_administrator','cms_editor'])        
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Color Management">
                     <a class="nav-link {{ Request::is('admin/styles') || Request::is('admin/styles/*') ? 'active' : '' }}" href="{{ route('admin.styles') }}">
@@ -186,6 +192,8 @@
                         <span class="nav-link-text">Choose Themes</span>
                     </a>
                 </li>
+                 @endrole
+                 @role(['superadministrator','administrator','cms_administrator'])  
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Install Modules">
                     <a class="nav-link {{ Request::is('admin/modules') || Request::is('admin/modules/*') ? 'active' : '' }}" href="{{ route('admin.modules') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
@@ -198,7 +206,8 @@
                         <span class="nav-link-text">Branding</span>
                     </a>
                 </li>
-            
+           @endrole
+                 @role(['superadministrator','administrator','cms_administrator','cms_editor'])  
         </ul>
     </li>
      @endrole

@@ -21,6 +21,10 @@ use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use App\Http\Traits\SettingsTrait;
 
+use Harimayco\Menu\Facades\Menu;
+
+use Harimayco\Menu\Models\Menus;
+use Harimayco\Menu\Models\MenuItems;
 
 class PageController extends Controller
 {
@@ -44,8 +48,8 @@ class PageController extends Controller
     
    //    $cforms = Cform::Where('cshortcode',$content)->first();   
      
-            
-    
+        $menuList = Menu::get(1);    
+        //dd($menuList);
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
 
@@ -53,7 +57,8 @@ class PageController extends Controller
             'page' => $page,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
-           'data' => $data
+           'data' => $data,
+           'menuList' => $menuList,
 
         ])->withShortcodes();
         

@@ -59,6 +59,8 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('frontpage', 'App\Shortcodes\FrontpageShortcode@customfrontp');
         Shortcode::register('topmenu', 'App\Shortcodes\TopmenuShortcode@topm');
         Shortcode::register('bloglist', 'App\Shortcodes\BlogShortcode@bloglist');
+        Shortcode::register('menulist', 'App\Shortcodes\MenuShortcode@menulist');
+        Shortcode::register('responsivemenulist', 'App\Shortcodes\MenuShortcode@responsivemenulist');
         Shortcode::register('icohomelist', 'App\Shortcodes\ICOHomeShortcode@icohomelist');
         Shortcode::register('psubscribe', 'App\Shortcodes\PsubscribeShortcode@psubscribe');
 

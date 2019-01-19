@@ -12,7 +12,8 @@
     outline: none !important;
 }
 .main_menu_area {
-    position: relative !important;
+    position: static !important;
+   height: 50px;
 }
 section.main_slider_area {
     background-color: #e2e2e2;

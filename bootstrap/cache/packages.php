@@ -28,6 +28,17 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
+  'harimayco/laravel-menu' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Harimayco\\Menu\\MenuServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Menu' => 'Harimayco\\Menu\\Facades\\Menu',
+    ),
+  ),
   'intervention/image' => 
   array (
     'providers' => 

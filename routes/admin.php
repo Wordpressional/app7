@@ -81,7 +81,13 @@ Route::get('/forms/edit/{id}',[
 
 ]);
 
+Route::get('/forms/gereneratemenu',[
 
+
+'uses' => 'FormbuilderController@menubuilder',
+'as' => 'forms.menubuilder'
+
+]);
 
 
 Route::get('/cforms/preview/{id}',[

@@ -2979,3 +2979,290 @@ img.example-image {
   margin-top: 20px;
 
 }
+
+.main_menu_area .navbar .navbar-nav {
+     display: flex !important; 
+    float: right;
+}
+.main_menu_area .navbar .navbar-nav li a
+{
+  line-height: 1.3em !important;
+  
+  color: #6b2d2d;
+}
+.main_menu_area
+{
+  background: green;
+  padding:0px;
+}
+.main_menu_area .dropdown-menu{
+ 
+ background: green;
+border: none;
+ 
+}
+ 
+.main_menu_area li {
+  padding-left: 25px;
+}
+
+.main_menu_area li a, .main_menu_area .show li a:hover{
+
+color: white;
+}
+
+.main_menu_area1 {
+    position: static;
+    
+    height:100%;
+    background: green;
+    width:100%;
+}
+/* main menu styles */
+#nav,#nav ul {
+    background-image:url(../images/tr75.png);
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#nav {
+    height:41px;
+    padding-left:5px;
+    padding-top:5px;
+    position:relative;
+    z-index:2;
+}
+#nav ul {
+    left:-9999px;
+    position:absolute;
+    top:37px;
+    width:auto;
+
+}
+#nav ul ul {
+    left:-9999px;
+    position:absolute;
+    top:0;
+    width:auto;
+
+}
+#nav li {
+    float:left;
+    margin-right:5px;
+    position:relative;
+}
+#nav li a {
+    background:#c1c1bf;
+    color:#000;
+    display:block;
+    float:left;
+    font-size:16px;
+    padding:8px 10px;
+    text-decoration:none;
+}
+#nav > li > a {
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -o-border-radius:6px;
+    border-radius:6px;
+    overflow:hidden;
+}
+#nav li a.fly {
+    background:#c1c1bf url(../images/arrow.gif) no-repeat right center;
+    padding-right:15px;
+}
+#nav ul li {
+    margin:0;
+}
+#nav ul li a {
+    width:120px;
+}
+#nav ul li a.fly {
+    padding-right:10px;
+}
+/*hover styles*/
+#nav li:hover > a {
+    background-color:#858180;
+    color:#fff;
+}
+/*focus styles*/
+    #nav li a:focus {
+    outline-width:0;
+}
+/*popups*/
+#nav li a:active + ul.dd,#nav li a:focus + ul.dd,#nav li ul.dd:hover {
+    left:0;
+}
+#nav ul.dd li a:active + ul,#nav ul.dd li a:focus + ul,#nav ul.dd li ul:hover {
+    left:140px;
+}
+
+@media (max-width: 550px) and (min-width: 50px){
+
+#nav li a.fly {
+   
+    margin: 5px;
+}
+
+}
+
+#menu1 ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu1 .main-menu1 {
+  display: none;
+}
+
+#tm:checked + .main-menu1 {
+  display: block;
+}
+
+#menu1 input[type="checkbox"], 
+#menu1 ul span.drop-icon {
+  display: none;
+}
+
+#menu1 li, 
+#toggle-menu1, 
+#menu1 .sub-menu1 {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, .05);
+}
+
+#menu1 li, 
+#toggle-menu1 {
+  border-width: 0 0 1px;
+}
+
+#menu1 .sub-menu1 {
+  background-color: #444;
+  border-width: 1px 1px 0;
+  margin: 0 1em;
+}
+
+#menu1 .sub-menu1 li:last-child {
+  border-width: 0;
+}
+
+#menu1 li, 
+#toggle-menu1, 
+#menu1 a {
+  position: relative;
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+}
+
+
+
+#toggle-menu1, 
+#menu1 a {
+  padding: 1em 1.5em;
+}
+
+#menu1 a {
+  transition: all .125s ease-in-out;
+  -webkit-transition: all .125s ease-in-out;
+}
+
+#menu1 a:hover {
+  background-color: white;
+  color: #09c;
+}
+
+#menu1 .sub-menu1 {
+  display: none;
+}
+
+#menu1 input[type="checkbox"]:checked + .sub-menu1 {
+  display: block;
+}
+
+#menu1 .sub-menu1 a:hover {
+  color: #444;
+}
+
+#toggle-menu1 .drop-icon, 
+#menu1 li label.drop-icon {
+  position: absolute;
+  right: 1.5em;
+  top: 1.25em;
+}
+
+#menu1 label.drop-icon, #toggle-menu1 span.drop-icon {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .125);
+  text-shadow: 0 0 0 transparent;
+  color: rgba(255, 255, 255, .75);
+}
+
+#menu1 .drop-icon {
+  line-height: 1;
+}
+
+@media only screen and (max-width: 64em) and (min-width: 52.01em) {
+  #menu1 li {
+    width: 33.333%;
+  }
+
+  #menu1 .sub-menu1 li {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 52em) {
+  #menu1 .main-menu1 {
+    display: block;
+  }
+
+  #toggle-menu1, 
+  #menu1 label.drop-icon {
+    display: none;
+  }
+
+  #menu1 ul span.drop-icon {
+    display: inline-block;
+  }
+
+  #menu1 li {
+    float: left;
+    border-width: 0 1px 0 0;
+  }
+
+  #menu1 .sub-menu1 li {
+    float: none;
+  }
+
+  #menu1 .sub-menu1 {
+    border-width: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12em;
+    z-index: 3000;
+  }
+
+  #menu1 .sub-menu1, 
+  #menu1 input[type="checkbox"]:checked + .sub-menu1 {
+    display: none;
+  }
+
+  #menu1 .sub-menu1 li {
+    border-width: 0 0 1px;
+  }
+
+  #menu1 .sub-menu1 .sub-menu1 {
+    top: 0;
+    left: 100%;
+  }
+
+  #menu1 li:hover > input[type="checkbox"] + .sub-menu1 {
+    display: block;
+  }
+}
