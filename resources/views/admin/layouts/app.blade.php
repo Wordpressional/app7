@@ -27,6 +27,7 @@
     </div>
 
    @include('admin.layouts.compscripts.general')
+   
    @include('admin.layouts.compscripts.serviceworker')
    @yield('scripts')
 </body>
