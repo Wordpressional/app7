@@ -34,7 +34,7 @@
     </div>
 
     @include('admin.layouts.compscripts.masterscriptcomm')
-     @yield('menuscripts')   
+       
     @include('admin.layouts.compscripts.serviceworker')
     @yield('scripts')
     
