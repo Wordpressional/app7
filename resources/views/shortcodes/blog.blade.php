@@ -1,10 +1,8 @@
 <div id="demo"></div>		
-<div class="container">
-  <div class="row">
+<div class="blogarticles">
+  
   <div id="ontop">
-  	<br>
-  	<h2> Welcome to our Blog </h2>
-  	<br>
+  	
     @foreach($posts as $post) 
 	<ul class="list8">
 	<li>
@@ -14,7 +12,7 @@
     @endforeach
     </div>
    </div>
-</div>
+
 
   
      
