@@ -688,7 +688,7 @@ div#footer-widgets li {
 div#ontop {
     position: absolute;
     top: 0;
-    width:100%;
+    width:80%;
     
 }
 
@@ -737,7 +737,19 @@ div#demo {
 section.presentation .side {
     width: 350px;
   }
+div#ontop {
+    
+    width:80%;
+    
+}
+.media{
+display: inline-block !important;
+}
 
+h4.media-heading {
+    text-align: center;
+    margin-top: 10px;
+}
  
 }
 
@@ -3267,4 +3279,10 @@ color: white;
   #menu1 li:hover > input[type="checkbox"] + .sub-menu1 {
     display: block;
   }
+}
+
+.blogarticles {
+    margin: 20px;
+    padding: 20px;
+    min-height: 200px;
 }
