@@ -11,7 +11,7 @@
 						
 			<div v-pre class="post-content">
 			
-			{!! html_entity_decode($post->content) !!}
+			{!! $post->content !!}
 				
 		
 			
