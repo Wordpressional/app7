@@ -42,7 +42,7 @@ class PostController extends Controller
             {
                 array_push($author_ids, $user->id);
             }
-        
+        //dd($users1);
             $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
          }
 
@@ -103,6 +103,8 @@ class PostController extends Controller
     {
         //dd(User::authors()->pluck('name', 'id'));
         //dd(Auth::user());
+
+
         $author_ids = array();
         $post = Post::where('id', $id)->first();
        
@@ -110,11 +112,49 @@ class PostController extends Controller
          $categories = Category::all();
         
          $data = $this->brandsAll();
+
+          $rolearray = array();
+        $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+        foreach($roles as $role)
+        {
+            array_push($rolearray, $role->display_name);
+        }
+       
+         
+        
+        if($categories->count() == 0)
+        {
+            //Session::flash('info', 'You Must have Choose At least One Category');
+
+            return redirect()->back()->withErrors('You Must First Create At least One Category');
+        }
+
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isCMSAuthor() == "yes") {
+            $userauthor = User::with('roles')->where('name', Auth::user()->name)->pluck('name', 'id');
+            //dd($userauthor);
+           //$userauthor = User::authors()->pluck('name', 'id');
+           //dd($userauthor);
+         }
+         if($thisuser->isSuperadministrator() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+         }
+         if($thisuser->isCMSAdmin() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+
+         }
+
+        //dd($userauthor);
+
         return view('admin.posts.edit', [
             'post' => $post,
             'data' => $data,
             'roles' => Role::all(),
-            'users' => User::authors()->pluck('name', 'id'),
+            'users' => $userauthor,
             'categories'=>$categories,
             'tags'=>Tag::all(),
             'tuser'=>$thisuser
@@ -140,7 +180,7 @@ class PostController extends Controller
          $data = $this->brandsAll();
          $thisuser = Auth::user();
          
-         $sthisuser = User::where('id', $thisuser->id)->authors()->pluck('displayname', 'id');
+         $sthisuser = User::where('id', $thisuser->id)->authors()->pluck('name', 'id');
          //dd($sthisuser);
         $categories = Category::all();
         if($categories->count() == 0)
@@ -158,13 +198,17 @@ class PostController extends Controller
            //dd($userauthor);
          }
          if($thisuser->isSuperadministrator() == "yes") {
-           $userauthor = User::authors()->pluck('name', 'id');
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
          }
          if($thisuser->isCMSAdmin() == "yes") {
            $userauthor = User::whereHas('roles', function($q){
             $q->where('name', 'like', 'cms_' . '%');
                                         })->pluck('name', 'id');
          }
+
+         //dd($userauthor);
         
         return view('admin.posts.create', [
             'users' => $userauthor,
