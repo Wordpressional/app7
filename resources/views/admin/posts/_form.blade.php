@@ -53,7 +53,7 @@
                           
                       @endphp
                       <option value="{{$category->id}}"
-                          selected="{{$selected}}"
+                          @if ($post) selected="{{$selected}}" @endif
                         >{{$category->name}}</option>
 
                      @endforeach     
