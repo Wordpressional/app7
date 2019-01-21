@@ -108,7 +108,7 @@
                   <p> @lang('posts.link') : {{ link_to_route('posts.allcat', route('posts.allcat')) }}</p>
                @elseif ($post->template == "Post Template")
                 
-                  <p> @lang('posts.link') : {{ link_to_route('webhome.singlemore', route('webhome.singlemore')) }}</p>
+                  <p> @lang('posts.link') : {{ link_to_route('webhome.singlemore', route('webhome.singlemore', $post), $post) }}</p>
 
                @elseif ($post->template == "Title Template")
                  <p>@lang('posts.link') : {{ link_to_route('posts.links', route('posts.links')) }}</p>
