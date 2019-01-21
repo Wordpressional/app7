@@ -31,20 +31,10 @@ class PostController extends Controller
 
         $thisuser = User::where('email', Auth::user()->email)->first();
          if($thisuser->isSuperadministrator() == "yes") {
-       $users1 = User::with('roles')->get();
-       $users2 = User::with('roles')->where('name', Auth::user()->name)->get();
-        //dd($users);
-            foreach($users1 as $user)
-            {
-                array_push($author_ids, $user->id);
-            }
-            foreach($users2 as $user)
-            {
-                array_push($author_ids, $user->id);
-            }
-        //dd($users1);
-            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+      
+            $post = Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(50);
          }
+         //dd($post);
 
          if($thisuser->isCMSAdmin() == "yes") {
        $users1 = User::whereHas('roles', function($q){
@@ -230,7 +220,7 @@ class PostController extends Controller
      */
     public function store(PostsRequest $request)
     {
-        $post = Post::create($request->only(['title', 'excerpt', 'content', 'posted_at', 'author_id', 'category_id', 'template', 'pubyear']));
+        $post = Post::create($request->only([addslashes('title'), 'excerpt', htmlentities('content'), 'posted_at', 'author_id', 'category_id', 'template', 'pubyear']));
 
         if ($request->hasFile('thumbnail')) {
             $post->storeAndSetThumbnail($request->file('thumbnail'));
@@ -249,7 +239,7 @@ class PostController extends Controller
     {
         
        
-        $post->update($request->only(['title', 'excerpt', 'content', 'posted_at', 'author_id', 'category_id', 'template','pubyear']));
+        $post->update($request->only([addslashes('title'), 'excerpt', htmlentities(addslashes('content')), 'posted_at', 'author_id', 'category_id', 'template','pubyear']));
 
         if ($request->hasFile('thumbnail')) {
             $post->storeAndSetThumbnail($request->file('thumbnail'));

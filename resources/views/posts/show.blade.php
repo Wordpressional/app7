@@ -14,7 +14,7 @@
     </div>
 
     <div v-pre class="post-content">
-      {!! $post->content !!}
+      {!! html_entity_decode($post->content) !!}
     </div>
 
     <p class="mt-3">
