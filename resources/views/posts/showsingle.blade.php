@@ -7,7 +7,7 @@
 
    
 
-    <p class="lead postlead"><span>{{ $post->title }}</span></p>
+    <p class="lead postlead"><span>{{ stripslashes($post->title) }}</span></p>
   </div>
 </div>
 
@@ -19,7 +19,7 @@
 						
 			<div v-pre class="post-content">
 			
-			{!! $post->content !!}
+			{!! html_entity_decode($post->content) !!}
 				
 		
 			
