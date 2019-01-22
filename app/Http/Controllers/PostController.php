@@ -59,16 +59,16 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
-        $api_token = Auth::user()->api_token;
+        
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
-
+        
         return view('webhome.single', [
             'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
-            'api_token' => $api_token
+           
         ])->withShortcodes();
     }
 
@@ -79,7 +79,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
-        $api_token = Auth::user()->api_token;
+       
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
 
@@ -88,7 +88,7 @@ class PostController extends Controller
             'post' => $post,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
-             'api_token' => $api_token
+            
         ])->withShortcodes();
     }
 
@@ -101,16 +101,16 @@ class PostController extends Controller
 
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
-        $api_token = Auth::user()->api_token;
+        
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
-
+        
         return view('webhome.bsingle', [
             'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
             'branding' => $branding,
-             'api_token' => $api_token
+            
         ])->withShortcodes();
     }
 
