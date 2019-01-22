@@ -1,11 +1,14 @@
 <style>
 
 
-@media only screen and (max-width: 3000px) and (min-width: 1000px) {
+@media only screen and (max-width: 3000px) and (min-width: 1000px){
+
 .brand{
   position: absolute;
   
 }
+
+
 
 .mcolorlibedit1, .mcolorlibsave1 {
   width: 90px;
@@ -760,5 +763,7 @@ img#mcolorlibimagePreview18 {
 }
 
 }
+
+
 
 </style>
