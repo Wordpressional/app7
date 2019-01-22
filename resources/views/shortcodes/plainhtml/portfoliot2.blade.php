@@ -53,7 +53,7 @@
 			</div>
 		</div>
 	
-				<div class="col-lg-3 col-sm-12 col-xs-12 col-xs-12 col-md-3 brand work grid-item fifty ze" data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-xs-12 col-md-3 brand work grid-item fifty ze" >
 					
 
 					<div class="mcolorlibbox">
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work grid-item seventy ze"  data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work grid-item seventy ze">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext">
 
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand work grid-item fifty tw"  data-toggle="tooltip" data-placement="top" title=" upload image size 540x252">
+				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand work grid-item fifty tw" >
 							<div class="mcolorlibbox">
 
                     <div class="mcolorlibtext"> 
@@ -103,7 +103,7 @@
 				</div>
 						</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand web grid-item zero fi"  data-toggle="tooltip" data-placement="top" title=" upload image size 540x253">
+				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand web grid-item zero fi"  >
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand work web grid-item fifty fi "  data-toggle="tooltip" data-placement="top" title=" upload image size 540x535">
+				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand work web grid-item fifty fi " >
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -131,7 +131,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work web grid-item zero eg "  data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work web grid-item zero eg " >
 						<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -145,7 +145,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work web grid-item twentyfive eg "  data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work web grid-item twentyfive eg ">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext">
 					<div class="projects_item">

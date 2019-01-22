@@ -93,7 +93,7 @@ $('.precon1').css('display', 'none');
  }
 
 });*/
-alert("tablet");
+//alert("tablet");
 if(detectmob()){
   alert("This function works only on desktop");
 } else {
@@ -217,7 +217,7 @@ $(".dropdowns").dropdowns();
 {
     background: url(../../../images/Phone.png);
     background-repeat: no-repeat;
-    /* width: 500px; */
+    width: 1200px; 
     background-size: 36%;
     background-position: bottom center;
     padding-right: 1px;
@@ -230,13 +230,13 @@ $(".dropdowns").dropdowns();
 {
     background: url(../../../images/Tablet.png);
     background-repeat: no-repeat;
-    /* width: 500px; */
+    width: 1200px; 
     background-size: 88%;
     background-position: bottom center;
     padding-right: 1px;
     margin-top: 30px;
-    height: 750px;
-    padding-top:100px;
+    height: 800px;
+    padding-top:170px;
 }
 
 .main_h {

@@ -50,6 +50,7 @@
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  <link rel="stylesheet" href="{{asset('css/public.css')}}" />
+ <link rel="stylesheet" href="{{asset('css/theme.css')}}" />
  <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
   <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
