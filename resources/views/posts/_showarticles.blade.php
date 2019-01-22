@@ -29,19 +29,8 @@
       <small class="text-muted">
         <i class="fa fa-comments-o" aria-hidden="true"></i> {{ $post->comments_count }}
         
-     @if($post->likes_count == 0)
-<p class="mt-3">
-<like
-likes_count="{{ $post->likes_count }}"
-liked=""
-item_id="{{ $post->id }}"
-item_slug="{{ $post->slug }}"
-item_type="posts"
-item_token=""
-logged_in="{{ Auth::check() }}"
-></like>
-</p>
-@else
+@if($post->likes_count >= 0)
+@if(Auth::user())
 
 <p class="mt-3">
 <like
@@ -54,6 +43,19 @@ item_token="{{Auth::user()->api_token}}"
 logged_in="{{ Auth::check() }}"
 ></like>
 </p>
+@else
+<p class="mt-3">
+<like
+likes_count="{{ $post->likes_count }}"
+liked=""
+item_id="{{ $post->id }}"
+item_slug="{{ $post->slug }}"
+item_type="posts"
+item_token=""
+logged_in="{{ Auth::check() }}"
+></like>
+</p>
+@endif
 @endif
       </small>
     </p>
