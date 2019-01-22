@@ -16,15 +16,32 @@
       <small class="text-muted">
         <i class="fa fa-comments-o" aria-hidden="true"></i> {{ $post->comments_count }}
         
-        <like
-		likes_count="{{ $post->likes_count }}"
-		liked="{{ $post->isLiked() }}"
-		item_id="{{ $post->id }}"
-		item_slug="{{ $post->slug }}"
-    	item_type="posts"
-    	item_token="{{Auth::user()->api_token}}"
-		logged_in="{{ Auth::check() }}"
-		></like>
+   @if($post->likes_count == 0)
+<p class="mt-3">
+<like
+likes_count="{{ $post->likes_count }}"
+liked=""
+item_id="{{ $post->id }}"
+item_slug="{{ $post->slug }}"
+item_type="posts"
+item_token=""
+logged_in="{{ Auth::check() }}"
+></like>
+</p>
+@else
+
+<p class="mt-3">
+<like
+likes_count="{{ $post->likes_count }}"
+liked="{{ $post->isLiked() }}"
+item_id="{{ $post->id }}"
+item_slug="{{ $post->slug }}"
+item_type="posts"
+item_token="{{Auth::user()->api_token}}"
+logged_in="{{ Auth::check() }}"
+></like>
+</p>
+@endif
       </small>
     </p>
     
