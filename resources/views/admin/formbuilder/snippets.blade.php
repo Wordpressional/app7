@@ -386,19 +386,27 @@
 
 </div>
 
+<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portofolio;In-built Developer Theme">
+
+@include('shortcodes.plainhtml.portfoliot2')
+  
+
+
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="DynamicTemplates;Blog">
 
- [bloglist]blog[/bloglist]
+ [bloglist]Post Category Name Here[/bloglist]
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu.png')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus;Menu">
 
-[menulist]testm[/menulist]
+[menulist]Menu Name Here[/menulist]
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/3levelmenu.png')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus;Menu">
 
-[responsivemenulist]testm[/responsivemenulist]
+[responsivemenulist]Menu Name Here[/responsivemenulist]
 </div>
 
 <div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">

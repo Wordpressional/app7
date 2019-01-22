@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
          @include('admin.layouts.compscripts.previewcss')
+         @include('layouts.compscripts.componentstyle')
     @yield('css') 
  </head>
     <body>
@@ -213,6 +214,8 @@ $(".dropdowns").dropdowns();
 .main_h {
     position: static;
 }
+
+
 </style>
 
 </body>       
