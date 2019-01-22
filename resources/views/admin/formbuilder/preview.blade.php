@@ -78,7 +78,7 @@ $(".requestDesktopSite").click(function(){
 });
 
 $(".requestTabletSite").click(function(){
-  if(detectmob()){
+/*  if(detectmob()){
   alert("This function works only on desktop");
 } else {
 //alert("tablet");
@@ -92,10 +92,19 @@ $('.precon1').css('display', 'none');
  $('.mau').css({'margin': 'auto'});
  }
 
-});
+});*/
+alert("tablet");
+if(detectmob()){
+  alert("This function works only on desktop");
+} else {
+  $('a.phpdebugbar-restore-btn').css('display', 'none');
+ $('.precon').css('display', 'none');
+ $('.precon1').css('display', 'inline');
 
+$('.precon1').html('<center class="iframecentmobi1"><iframe src="{{route("admin.forms.preview1", $form->id)}}" frameborder="0" scrolling="auto" id="mypreFrame1" ></iframe></center>');
+}
 });
-
+});
 function detectmob() {
    if(window.innerWidth <= 1000 && window.innerHeight <= 800) {
      return true;
@@ -198,6 +207,12 @@ $(".dropdowns").dropdowns();
    
 }
 
+#mypreFrame1{
+  width:70%;
+   height:520px;
+   
+}
+
 .iframecentmobi
 {
     background: url(../../../images/Phone.png);
@@ -209,6 +224,19 @@ $(".dropdowns").dropdowns();
     margin-top: 30px;
     height: 930px;
     padding-top:170px;
+}
+
+.iframecentmobi1
+{
+    background: url(../../../images/Tablet.png);
+    background-repeat: no-repeat;
+    /* width: 500px; */
+    background-size: 88%;
+    background-position: bottom center;
+    padding-right: 1px;
+    margin-top: 30px;
+    height: 750px;
+    padding-top:100px;
 }
 
 .main_h {

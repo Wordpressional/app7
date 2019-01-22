@@ -32,8 +32,8 @@
 		</div>
 	</div>
 			   <div class="projects_inner row grid" style="position: relative">
-				<div class="grid-sizer col-sm-12 col-xs-12  col-md-3 col-lg-3"></div>
-				<div class="col-lg-6 col-sm-12 col-xs-12 brand web grid-item zero" style="top: 0px; " data-toggle="tooltip" data-placement="top" title=" upload image size540x535">
+				<div class="grid-sizer col-sm-12 col-xs-12  col-md-12 col-lg-12"></div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 brand web grid-item zero ze"  data-toggle="tooltip" data-placement="top" title=" upload image size540x535">
 					
 					<div class="mcolorlibbox">
 
@@ -46,14 +46,14 @@
 						<span class="mcolorlibsave3">save</span>
 						<input type='file' id="mcolorlibimageUpload3" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload3" for="mcolorlibimageUpload3"></label>
-						<img id="mcolorlibimagePreview3" class="img-fluid w-100" src="{{asset('themes/comp/work1.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview3" class="img-fluid w-100 zebig" src="{{asset('themes/comp/work1.jpg')}}" alt="">
 						
 					</div>
 				</div>
 			</div>
 		</div>
 	
-				<div class="col-lg-3 col-sm-12 col-xs-12 col-xs-12 brand work grid-item fifty" style=" top: 0px;   " data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-xs-12 col-md-3 brand work grid-item fifty ze" data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
 					
 
 					<div class="mcolorlibbox">
@@ -66,13 +66,13 @@
 						<span class="mcolorlibsave4">save</span>
 						<input type='file' id="mcolorlibimageUpload4" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload4" for="mcolorlibimageUpload4"></label>
-						<img id="mcolorlibimagePreview4"class="img-fluid w-100" src="{{asset('themes/comp/work2.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview4"class="img-fluid w-100 zea" src="{{asset('themes/comp/work2.jpg')}}" alt="">
 						
 					</div>
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12 brand work grid-item seventy" style=" top: 0px;   " data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work grid-item seventy ze"  data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext">
 
@@ -82,13 +82,13 @@
 						<span class="mcolorlibsave5">save</span>
 						<input type='file' id="mcolorlibimageUpload5" accept=".png, .jpg, .jpeg" />
                        <label class="mcolorlibimageUpload5" for="mcolorlibimageUpload5"></label>
-						<img id="mcolorlibimagePreview5" class="img-fluid w-100" src="{{asset('themes/comp/work3.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview5" class="img-fluid w-100 zea" src="{{asset('themes/comp/work3.jpg')}}" alt="">
 						
 					</div>
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12  brand work grid-item fifty" style=" top: 283px; " data-toggle="tooltip" data-placement="top" title=" upload image size 540x252">
+				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand work grid-item fifty tw"  data-toggle="tooltip" data-placement="top" title=" upload image size 540x252">
 							<div class="mcolorlibbox">
 
                     <div class="mcolorlibtext"> 
@@ -97,13 +97,13 @@
 						<span class="mcolorlibsave11">save</span>
 						<input type='file' id="mcolorlibimageUpload11" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload11" for="mcolorlibimageUpload11"></label>
-						<img id="mcolorlibimagePreview11" class="img-fluid w-100" src="{{asset('themes/comp/work5.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview11" class="img-fluid w-100 zel" src="{{asset('themes/comp/work5.jpg')}}" alt="">
 						
 					</div>
 				</div>
 						</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12  brand web grid-item zero" style=" top: 565px;  " data-toggle="tooltip" data-placement="top" title=" upload image size 540x253">
+				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand web grid-item zero fi"  data-toggle="tooltip" data-placement="top" title=" upload image size 540x253">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -111,13 +111,13 @@
 						<span class="mcolorlibsave6">save</span>
 						<input type='file' id="mcolorlibimageUpload6" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload6" for="mcolorlibimageUpload6"></label>
-						<img  id="mcolorlibimagePreview6" class="img-fluid w-100" src="{{asset('themes/comp/work4.jpg')}}" alt="">
+						<img  id="mcolorlibimagePreview6" class="img-fluid w-100 zel" src="{{asset('themes/comp/work4.jpg')}}" alt="">
 						
 					</div>
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12  brand work web grid-item fifty" style=" top: 566px; " data-toggle="tooltip" data-placement="top" title=" upload image size 540x535">
+				<div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 brand work web grid-item fifty fi "  data-toggle="tooltip" data-placement="top" title=" upload image size 540x535">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -125,13 +125,13 @@
 						<span class="mcolorlibsave7">save</span>
 						<input type='file' id="mcolorlibimageUpload7" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload7" for="mcolorlibimageUpload7"></label>
-						<img  id="mcolorlibimagePreview7" class="img-fluid w-100" src="{{asset('themes/comp/work8.jpg')}}" alt="">
+						<img  id="mcolorlibimagePreview7" class="img-fluid w-100 zebig" src="{{asset('themes/comp/work8.jpg')}}" alt="">
 						
 					</div>
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12  brand work web grid-item zero" style=" top: 848px; " data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work web grid-item zero eg "  data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
 						<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -139,13 +139,13 @@
 						<span class="mcolorlibsave8">save</span>
 						<input type='file' id="mcolorlibimageUpload8" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload8" for="mcolorlibimageUpload8"></label>
-						<img  id="mcolorlibimagePreview8" class="img-fluid w-100" src="{{asset('themes/comp/work6.jpg')}}" alt="">
+						<img  id="mcolorlibimagePreview8" class="img-fluid w-100 zea" src="{{asset('themes/comp/work6.jpg')}}" alt="">
 						
 					</div>
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12  brand work web grid-item twentyfive" style="  top: 848px" data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-md-3 brand work web grid-item twentyfive eg "  data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext">
 					<div class="projects_item">
@@ -153,7 +153,7 @@
 						<span class="mcolorlibsave9">save</span>
 						<input type='file' id="mcolorlibimageUpload9" accept=".png, .jpg, .jpeg" />
                        <label class="mcolorlibimageUpload9" for="mcolorlibimageUpload9"></label>
-						<img id="mcolorlibimagePreview9" class="img-fluid w-100" src="{{asset('themes/comp/work7.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview9" class="img-fluid w-100 zea " src="{{asset('themes/comp/work7.jpg')}}" alt="">
 						
 					</div>
 				</div>
