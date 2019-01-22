@@ -1,5 +1,12 @@
 <style>
-@media only screen and (min-width: 1000px) {
+
+
+@media only screen and (max-width: 3000px) and (min-width: 1000px) {
+.brand{
+  position: absolute;
+  
+}
+
 .mcolorlibedit1, .mcolorlibsave1 {
   width: 90px;
   display: block;
@@ -753,93 +760,5 @@ img#mcolorlibimagePreview18 {
 }
 
 }
-@media only screen and (max-width: 480px) {
-
-.brand{
-  position: relative !important;
-  left:0px !important;
-  min-height: 10px;
-  margin: 10px;
-  top:0px !important;
-}
-
-.mcolorlibedit1, .mcolorlibsave1, #mcolorlibimageUpload1 {
- 
- display: none;
-}
-.mcolorlibedit2, .mcolorlibsave2, #mcolorlibimageUpload2 {
- 
- display: none;
-}
-.mcolorlibedit3, .mcolorlibsave3, #mcolorlibimageUpload3 {
- 
- display: none;
-}
-.mcolorlibedit4, .mcolorlibsave4, #mcolorlibimageUpload4 {
- 
- display: none;
-}
-.mcolorlibedit5, .mcolorlibsave5, #mcolorlibimageUpload5 {
- 
- display: none;
-}
-.mcolorlibedit6, .mcolorlibsave6, #mcolorlibimageUpload6 {
- 
- display: none;
-}
-.mcolorlibedit7, .mcolorlibsave7, #mcolorlibimageUpload7 {
- 
- display: none;
-}
-.mcolorlibedit8, .mcolorlibsave8, #mcolorlibimageUpload8 {
- 
- display: none;
-}
-.mcolorlibedit9, .mcolorlibsave9, #mcolorlibimageUpload9 {
- 
- display: none;
-}
-.mcolorlibedit10, .mcolorlibsave10, #mcolorlibimageUpload10 {
- 
- display: none;
-
-
-}
-.mcolorlibedit11, .mcolorlibsave11, #mcolorlibimageUpload11 {
- 
- display: none;
-}
-.mcolorlibedit12, .mcolorlibsave12, #mcolorlibimageUpload12 {
- 
- display: none;
-}
-.mcolorlibedit13, .mcolorlibsave13, #mcolorlibimageUpload13 {
- 
- display: none;
-}
-.mcolorlibedit14, .mcolorlibsave14, #mcolorlibimageUpload14 {
- 
- display: none;
-}
-.mcolorlibedit15, .mcolorlibsave15, #mcolorlibimageUpload15 {
- 
- display: none;
-}
-.mcolorlibedit16, .mcolorlibsave16, #mcolorlibimageUpload16 {
- 
- display: none;
-}
-.mcolorlibedit17, .mcolorlibsave17, #mcolorlibimageUpload17 {
- 
- display: none;
-}
-.mcolorlibedit18, .mcolorlibsave18, #mcolorlibimageUpload18 {
- 
- display: none;
-}
-
-
-}
-
 
 </style>

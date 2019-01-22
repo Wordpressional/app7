@@ -136,13 +136,9 @@ function Uploadsavemone2(newLocation, id)
             data:  data,
             
             success: function(result) {
-            if(result == "success"){
-                var newLocation = "{{ url('/admin/forms') }}";
-              window.location.href= newLocation;
-            }
+            
            
-            //alert(result);
-            //window.location.href= url('/');
+            
             },
              error: function (jqXHR, textStatus, errorThrown) {
                   if (jqXHR.status == 500) {
@@ -302,7 +298,7 @@ $(document).ready(function(){
   $(".mcolorlibedit2").show();
   $(".mcolorlibimageUpload2").hide();
     
-  //Uploadsave2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -322,7 +318,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit3").show();
   $(".mcolorlibimageUpload3").hide();
     
-  //Uploadsave3("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -343,7 +339,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit4").show();
   $(".mcolorlibimageUpload4").hide();
     
-  //Uploadsave4("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -364,7 +360,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit5").show();
   $(".mcolorlibimageUpload5").hide();
     
-  //Uploadsave5("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -385,7 +381,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit6").show();
   $(".mcolorlibimageUpload6").hide();
     
-  //Uploadsave6("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -405,7 +401,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit7").show();
   $(".mcolorlibimageUpload7").hide();
    
-  //Uploadsave7("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -426,7 +422,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit8").show();
   $(".mcolorlibimageUpload8").hide();
     
-  //Uploadsave8("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -446,7 +442,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit9").show();
   $(".mcolorlibimageUpload9").hide();
     
-  //Uploadsave9("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -467,7 +463,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit10").show();
   $(".mcolorlibimageUpload10").hide();
     
-  //Uploadsave10("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
   $(".mcolorlibedit11").click(function() {
@@ -486,7 +482,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit11").show();
   $(".mcolorlibimageUpload11").hide();
     
-  //Uploadsave11("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
    $(".mcolorlibedit12").click(function() {
@@ -505,7 +501,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit12").show();
   $(".mcolorlibimageUpload12").hide();
     
-  //Uploadsave12("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -525,7 +521,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit13").show();
   $(".mcolorlibimageUpload13").hide();
     
-  //Uploadsave13("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
   $(".mcolorlibedit14").click(function() {
@@ -544,7 +540,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit14").show();
   $(".mcolorlibimageUpload14").hide();
     
-  //Uploadsave14("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
    $(".mcolorlibedit15").click(function() {
@@ -563,7 +559,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit15").show();
   $(".mcolorlibimageUpload15").hide();
     
-  //Uploadsave15("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
   $(".mcolorlibedit16").click(function() {
@@ -582,7 +578,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit16").show();
   $(".mcolorlibimageUpload16").hide();
     
-  //Uploadsave16("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
    $(".mcolorlibedit17").click(function() {
@@ -601,7 +597,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit17").show();
   $(".mcolorlibimageUpload17").hide();
     
-  //Uploadsave17("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  $(".mcolorlibedit18").click(function() {
@@ -620,7 +616,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit18").show();
   $(".mcolorlibimageUpload18").hide();
     
-  //Uploadsave18("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -970,15 +966,7 @@ if (input.files && input.files[0]) {
             }
             reader.readAsDataURL(input.files[0]);
         }
-    /*if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-            $('#imagePreview').hide();
-            $('#imagePreview').fadeIn(650);
-        }
-        reader.readAsDataURL(input.files[0]);
-    }*/
+    
 }
 
 $("#mcolorlibimageUpload14").change(function() {
@@ -996,15 +984,7 @@ if (input.files && input.files[0]) {
             }
             reader.readAsDataURL(input.files[0]);
         }
-    /*if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-            $('#imagePreview').hide();
-            $('#imagePreview').fadeIn(650);
-        }
-        reader.readAsDataURL(input.files[0]);
-    }*/
+   
 }
 
 $("#mcolorlibimageUpload15").change(function() {
@@ -1022,15 +1002,7 @@ if (input.files && input.files[0]) {
             }
             reader.readAsDataURL(input.files[0]);
         }
-    /*if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-            $('#imagePreview').hide();
-            $('#imagePreview').fadeIn(650);
-        }
-        reader.readAsDataURL(input.files[0]);
-    }*/
+    
 }
 
 $("#mcolorlibimageUpload16").change(function() {
@@ -1048,15 +1020,7 @@ if (input.files && input.files[0]) {
             }
             reader.readAsDataURL(input.files[0]);
         }
-    /*if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-            $('#imagePreview').hide();
-            $('#imagePreview').fadeIn(650);
-        }
-        reader.readAsDataURL(input.files[0]);
-    }*/
+   
 }
 
 $("#mcolorlibimageUpload17").change(function() {
@@ -1075,15 +1039,7 @@ if (input.files && input.files[0]) {
             }
             reader.readAsDataURL(input.files[0]);
         }
-    /*if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-            $('#imagePreview').hide();
-            $('#imagePreview').fadeIn(650);
-        }
-        reader.readAsDataURL(input.files[0]);
-    }*/
+    
 }
 
 $("#mcolorlibimageUpload18").change(function() {

@@ -751,6 +751,23 @@ h4.media-heading {
     margin-top: 10px;
 }
  
+.twentyfive{
+  left: 0% !important;
+}
+.fifty{
+  left: 0% !important;
+}
+.zero{
+  left: 0% !important;
+}
+.seventy{
+  left:0% !important;
+}
+.brand{
+  top:0% !important;
+  margin:10px;
+}
+
 }
 
 .img-responsive {
@@ -3285,4 +3302,97 @@ color: white;
     margin: 20px;
     padding: 20px;
     min-height: 200px;
+}
+
+.twentyfive{
+  left: 25%;
+}
+.fifty{
+  left: 50%;
+}
+.zero{
+  left: 0%;
+}
+.seventy{
+  left:75%;
+}
+@media only screen and (max-width: 900px) and (min-width: 50px){
+
+
+
+.mcolorlibedit1, .mcolorlibsave1, #mcolorlibimageUpload1 {
+ 
+ display: none;
+}
+.mcolorlibedit2, .mcolorlibsave2, #mcolorlibimageUpload2 {
+ 
+ display: none;
+}
+.mcolorlibedit3, .mcolorlibsave3, #mcolorlibimageUpload3 {
+ 
+ display: none;
+}
+.mcolorlibedit4, .mcolorlibsave4, #mcolorlibimageUpload4 {
+ 
+ display: none;
+}
+.mcolorlibedit5, .mcolorlibsave5, #mcolorlibimageUpload5 {
+ 
+ display: none;
+}
+.mcolorlibedit6, .mcolorlibsave6, #mcolorlibimageUpload6 {
+ 
+ display: none;
+}
+.mcolorlibedit7, .mcolorlibsave7, #mcolorlibimageUpload7 {
+ 
+ display: none;
+}
+.mcolorlibedit8, .mcolorlibsave8, #mcolorlibimageUpload8 {
+ 
+ display: none;
+}
+.mcolorlibedit9, .mcolorlibsave9, #mcolorlibimageUpload9 {
+ 
+ display: none;
+}
+.mcolorlibedit10, .mcolorlibsave10, #mcolorlibimageUpload10 {
+ 
+ display: none;
+
+
+}
+.mcolorlibedit11, .mcolorlibsave11, #mcolorlibimageUpload11 {
+ 
+ display: none;
+}
+.mcolorlibedit12, .mcolorlibsave12, #mcolorlibimageUpload12 {
+ 
+ display: none;
+}
+.mcolorlibedit13, .mcolorlibsave13, #mcolorlibimageUpload13 {
+ 
+ display: none;
+}
+.mcolorlibedit14, .mcolorlibsave14, #mcolorlibimageUpload14 {
+ 
+ display: none;
+}
+.mcolorlibedit15, .mcolorlibsave15, #mcolorlibimageUpload15 {
+ 
+ display: none;
+}
+.mcolorlibedit16, .mcolorlibsave16, #mcolorlibimageUpload16 {
+ 
+ display: none;
+}
+.mcolorlibedit17, .mcolorlibsave17, #mcolorlibimageUpload17 {
+ 
+ display: none;
+}
+.mcolorlibedit18, .mcolorlibsave18, #mcolorlibimageUpload18 {
+ 
+ display: none;
+}
+
 }

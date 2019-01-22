@@ -33,7 +33,7 @@
 	</div>
 			   <div class="projects_inner row grid" style="position: relative">
 				<div class="grid-sizer col-sm-12 col-xs-12  col-md-3 col-lg-3"></div>
-				<div class="col-lg-6 col-sm-12 col-xs-12 brand web grid-item" style="position: absolute; left: 0%; top: 0px; " data-toggle="tooltip" data-placement="top" title=" upload image size540x535">
+				<div class="col-lg-6 col-sm-12 col-xs-12 brand web grid-item zero" style="top: 0px; " data-toggle="tooltip" data-placement="top" title=" upload image size540x535">
 					
 					<div class="mcolorlibbox">
 
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 	
-				<div class="col-lg-3 col-sm-12 col-xs-12 col-xs-12 brand work grid-item" style="position: absolute; left: 50%; top: 0px;   " data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
+				<div class="col-lg-3 col-sm-12 col-xs-12 col-xs-12 brand work grid-item fifty" style=" top: 0px;   " data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
 					
 
 					<div class="mcolorlibbox">
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12 brand work grid-item" style="position: absolute; left: 75%; top: 0px;   " data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
+				<div class="col-lg-3 col-sm-12 col-xs-12 brand work grid-item seventy" style=" top: 0px;   " data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext">
 
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12  brand work grid-item" style="position: absolute; left: 50%; top: 283px; " data-toggle="tooltip" data-placement="top" title=" upload image size 540x252">
+				<div class="col-lg-6 col-sm-12 col-xs-12  brand work grid-item fifty" style=" top: 283px; " data-toggle="tooltip" data-placement="top" title=" upload image size 540x252">
 							<div class="mcolorlibbox">
 
                     <div class="mcolorlibtext"> 
@@ -103,7 +103,7 @@
 				</div>
 						</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12  brand web grid-item" style="position: absolute; left: 0%; top: 565px;  " data-toggle="tooltip" data-placement="top" title=" upload image size 540x253">
+				<div class="col-lg-6 col-sm-12 col-xs-12  brand web grid-item zero" style=" top: 565px;  " data-toggle="tooltip" data-placement="top" title=" upload image size 540x253">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-6 col-sm-12 col-xs-12  brand work web grid-item" style="position: absolute; left: 50%; top: 566px; " data-toggle="tooltip" data-placement="top" title=" upload image size 540x535">
+				<div class="col-lg-6 col-sm-12 col-xs-12  brand work web grid-item fifty" style=" top: 566px; " data-toggle="tooltip" data-placement="top" title=" upload image size 540x535">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -131,7 +131,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12  brand work web grid-item" style="position: absolute; left: 0%; top: 848px; " data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
+				<div class="col-lg-3 col-sm-12 col-xs-12  brand work web grid-item zero" style=" top: 848px; " data-toggle="tooltip" data-placement="top" title=" upload image size 255x252">
 						<div class="mcolorlibbox">
                         <div class="mcolorlibtext"> 
 					<div class="projects_item">
@@ -145,7 +145,7 @@
 				</div>
 			</div>
 		</div>
-				<div class="col-lg-3 col-sm-12 col-xs-12  brand work web grid-item" style="position: absolute; left: 25%; top: 848px" data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
+				<div class="col-lg-3 col-sm-12 col-xs-12  brand work web grid-item twentyfive" style="  top: 848px" data-toggle="tooltip" data-placement="top" title=" upload image size 255x253">
 					<div class="mcolorlibbox">
                         <div class="mcolorlibtext">
 					<div class="projects_item">
