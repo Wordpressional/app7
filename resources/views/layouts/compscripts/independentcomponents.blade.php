@@ -1052,4 +1052,959 @@ $(document).ready(function(){
 });
 
 </script>
+<script> 
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutspathemeone1" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone1").hasClass("editable")) {
+    $(".editmlaboutspathemeone1").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone1").hide();
+
+});
+
+ $(".editmlaboutspathemeone1").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone1").addClass("editable");
+  $(".textmlaboutspathemeone1").attr("contenteditable", "true");
+   $(".editmlaboutspathemeone1").hide();
+  $(".savemlaboutspathemeone1").show();
  
+});
+
+$(".savemlaboutspathemeone1").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone1").removeClass("editable");
+ $(".textmlaboutspathemeone1").removeAttr("contenteditable");
+  $(".editmlaboutspathemeone1").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutspathemeone2" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone2").hasClass("editable")) {
+    $(".editmlaboutspathemeone2").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone2").hide();
+
+});
+
+ $(".editmlaboutspathemeone2").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone2").addClass("editable");
+  $(".textmlaboutspathemeone2").attr("contenteditable", "true");
+   $(".editmlaboutspathemeone2").hide();
+  $(".savemlaboutspathemeone2").show();
+ 
+});
+
+$(".savemlaboutspathemeone2").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone2").removeClass("editable");
+ $(".textmlaboutspathemeone2").removeAttr("contenteditable");
+  $(".editmlaboutspathemeone2").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutspathemeone3" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone3").hasClass("editable")) {
+    $(".editmlaboutspathemeone3").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone3").hide();
+
+});
+
+ $(".editmlaboutspathemeone3").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone3").addClass("editable");
+  $(".textmlaboutspathemeone3").attr("contenteditable", "true");
+   $(".editmlaboutspathemeone3").hide();
+  $(".savemlaboutspathemeone3").show();
+ 
+});
+
+$(".savemlaboutspathemeone3").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone3").removeClass("editable");
+ $(".textmlaboutspathemeone3").removeAttr("contenteditable");
+  $(".editmlaboutspathemeone3").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".contmaboutfacebook4").hide();
+
+   $( ".boxmlaboutspathemeone4" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone4").hasClass("editable")) {
+    $(".editmlaboutspathemeone4").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone4").hide();
+
+});
+
+
+$(".editmlaboutspathemeone4").click(function(e) {
+ $(".boxmlaboutspathemeone4").addClass("editable");
+
+  
+  
+  $(".contmaboutfacebook4").show();
+
+ 
+});
+
+$(".submitmaboutfacebook4").click(function() {
+  $(".boxmlaboutspathemeone4").removeClass("editable");
+  $(".contmaboutfacebook4").hide();
+addHrefmabout4();
+  
+});
+
+ 
+});
+
+function addHrefmabout4() {
+var inputmaboutfacebook4 = $('.inputmaboutfacebook4').val();
+  $('#hrefchangemaboutfacebook4').attr("href",inputmaboutfacebook4);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmabouttwitter5").hide();
+
+   $( ".boxmlaboutspathemeone5" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone5").hasClass("editable")) {
+    $(".editmlaboutspathemeone5").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone5").hide();
+
+});
+
+
+$(".editmlaboutspathemeone5").click(function(e) {
+ $(".boxmlaboutspathemeone5").addClass("editable");
+
+  
+  
+  $(".contmabouttwitter5").show();
+
+ 
+});
+
+$(".submitmabouttwitter5").click(function() {
+  $(".boxmlaboutspathemeone5").removeClass("editable");
+  $(".contmabouttwitter5").hide();
+addHrefmabout5();
+  
+});
+
+ 
+});
+
+function addHrefmabout5() {
+var inputmabouttwitter5 = $('.inputmabouttwitter5').val();
+  $('#hrefchangemabouttwitter5').attr("href",inputmabouttwitter5);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmabouttelegram6").hide();
+
+   $( ".boxmlaboutspathemeone6" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone6").hasClass("editable")) {
+    $(".editmlaboutspathemeone6").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone6").hide();
+
+});
+
+
+$(".editmlaboutspathemeone6").click(function(e) {
+ $(".boxmlaboutspathemeone6").addClass("editable");
+
+  
+  
+  $(".contmabouttelegram6").show();
+
+ 
+});
+
+$(".submitmabouttelegram6").click(function() {
+  $(".boxmlaboutspathemeone6").removeClass("editable");
+  $(".contmabouttelegram6").hide();
+addHrefmabout6();
+  
+});
+
+ 
+});
+
+function addHrefmabout6() {
+var inputmabouttelegram6 = $('.inputmabouttelegram6').val();
+  $('#hrefchangemabouttelegram6').attr("href",inputmabouttelegram6);
+}
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutspathemeone7" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone7").hasClass("editable")) {
+    $(".editmlaboutspathemeone7").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone7").hide();
+
+});
+
+ $(".editmlaboutspathemeone7").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone7").addClass("editable");
+  $(".textmlaboutspathemeone7").attr("contenteditable", "true");
+   $(".editmlaboutspathemeone7").hide();
+  $(".savemlaboutspathemeone7").show();
+ 
+});
+
+$(".savemlaboutspathemeone7").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone7").removeClass("editable");
+ $(".textmlaboutspathemeone7").removeAttr("contenteditable");
+  $(".editmlaboutspathemeone7").hide();
+
+  
+});
+});
+
+
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutspathemeone8" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone8").hasClass("editable")) {
+    $(".editmlaboutspathemeone8").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone8").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone8").hide();
+
+});
+
+ $(".editmlaboutspathemeone8").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone8").addClass("editable");
+  $(".textmlaboutspathemeone8").attr("contenteditable", "true");
+   $(".editmlaboutspathemeone8").hide();
+  $(".savemlaboutspathemeone8").show();
+ 
+});
+
+$(".savemlaboutspathemeone8").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone8").removeClass("editable");
+ $(".textmlaboutspathemeone8").removeAttr("contenteditable");
+  $(".editmlaboutspathemeone8").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+   $(".contmaboutfacebook9").hide();
+
+   $( ".boxmlaboutspathemeone9" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone9").hasClass("editable")) {
+    $(".editmlaboutspathemeone9").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone9").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone9").hide();
+
+});
+
+
+$(".editmlaboutspathemeone9").click(function(e) {
+ $(".boxmlaboutspathemeone9").addClass("editable");
+
+  
+  
+  $(".contmaboutfacebook9").show();
+
+ 
+});
+
+$(".submitmaboutfacebook9").click(function() {
+  $(".boxmlaboutspathemeone9").removeClass("editable");
+  $(".contmaboutfacebook9").hide();
+addHrefmabout9();
+  
+});
+
+ 
+});
+
+function addHrefmabout9() {
+var inputmaboutfacebook9 = $('.inputmaboutfacebook9').val();
+  $('#hrefchangemaboutfacebook9').attr("href",inputmaboutfacebook9);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmabouttwitter10").hide();
+
+   $( ".boxmlaboutspathemeone10" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone10").hasClass("editable")) {
+    $(".editmlaboutspathemeone10").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone10").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone10").hide();
+
+});
+
+
+$(".editmlaboutspathemeone10").click(function(e) {
+ $(".boxmlaboutspathemeone10").addClass("editable");
+
+  
+  
+  $(".contmabouttwitter10").show();
+
+ 
+});
+
+$(".submitmabouttwitter10").click(function() {
+  $(".boxmlaboutspathemeone10").removeClass("editable");
+  $(".contmabouttwitter10").hide();
+addHrefmabout10();
+  
+});
+
+ 
+});
+
+function addHrefmabout10() {
+var inputmabouttwitter10 = $('.inputmabouttwitter10').val();
+  $('#hrefchangemabouttwitter10').attr("href",inputmabouttwitter10);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmabouttelegram11").hide();
+
+   $( ".boxmlaboutspathemeone11" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone11").hasClass("editable")) {
+    $(".editmlaboutspathemeone11").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone11").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone11").hide();
+
+});
+
+
+$(".editmlaboutspathemeone11").click(function(e) {
+ $(".boxmlaboutspathemeone11").addClass("editable");
+
+  
+  
+  $(".contmabouttelegram11").show();
+
+ 
+});
+
+$(".submitmabouttelegram11").click(function() {
+  $(".boxmlaboutspathemeone11").removeClass("editable");
+  $(".contmabouttelegram11").hide();
+addHrefmabout11();
+  
+});
+
+ 
+});
+
+function addHrefmabout11() {
+var inputmabouttelegram11 = $('.inputmabouttelegram11').val();
+  $('#hrefchangemabouttelegram11').attr("href",inputmabouttelegram11);
+}
+
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutspathemeone12" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone12").hasClass("editable")) {
+    $(".editmlaboutspathemeone12").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone12").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone12").hide();
+
+});
+
+ $(".editmlaboutspathemeone12").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone12").addClass("editable");
+  $(".textmlaboutspathemeone12").attr("contenteditable", "true");
+   $(".editmlaboutspathemeone12").hide();
+  $(".savemlaboutspathemeone12").show();
+ 
+});
+
+$(".savemlaboutspathemeone12").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone12").removeClass("editable");
+ $(".textmlaboutspathemeone12").removeAttr("contenteditable");
+  $(".editmlaboutspathemeone12").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutspathemeone13" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone13").hasClass("editable")) {
+    $(".editmlaboutspathemeone13").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone13").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone13").hide();
+
+});
+
+ $(".editmlaboutspathemeone13").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone13").addClass("editable");
+  $(".textmlaboutspathemeone13").attr("contenteditable", "true");
+   $(".editmlaboutspathemeone13").hide();
+  $(".savemlaboutspathemeone13").show();
+ 
+});
+
+$(".savemlaboutspathemeone13").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone13").removeClass("editable");
+ $(".textmlaboutspathemeone13").removeAttr("contenteditable");
+  $(".editmlaboutspathemeone13").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".contmaboutfacebook14").hide();
+
+   $( ".boxmlaboutspathemeone14" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone14").hasClass("editable")) {
+    $(".editmlaboutspathemeone14").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone14").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone14").hide();
+
+});
+
+
+$(".editmlaboutspathemeone14").click(function(e) {
+ $(".boxmlaboutspathemeone14").addClass("editable");
+
+  
+  
+  $(".contmaboutfacebook14").show();
+
+ 
+});
+
+$(".submitmaboutfacebook14").click(function() {
+  $(".boxmlaboutspathemeone14").removeClass("editable");
+  $(".contmaboutfacebook14").hide();
+addHrefmabout14();
+  
+});
+
+ 
+});
+
+function addHrefmabout14() {
+var inputmaboutfacebook14 = $('.inputmaboutfacebook14').val();
+  $('#hrefchangemaboutfacebook14').attr("href",inputmaboutfacebook14);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmabouttwitter15").hide();
+
+   $( ".boxmlaboutspathemeone15" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone15").hasClass("editable")) {
+    $(".editmlaboutspathemeone15").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone15").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone15").hide();
+
+});
+
+
+$(".editmlaboutspathemeone15").click(function(e) {
+ $(".boxmlaboutspathemeone15").addClass("editable");
+
+  
+  
+  $(".contmabouttwitter15").show();
+
+ 
+});
+
+$(".submitmabouttwitter15").click(function() {
+  $(".boxmlaboutspathemeone15").removeClass("editable");
+  $(".contmabouttwitter15").hide();
+addHrefmabout15();
+  
+});
+
+ 
+});
+
+function addHrefmabout15() {
+var inputmabouttwitter15 = $('.inputmabouttwitter15').val();
+  $('#hrefchangemabouttwitter15').attr("href",inputmabouttwitter15);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmabouttelegram16").hide();
+
+   $( ".boxmlaboutspathemeone16" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone16").hasClass("editable")) {
+    $(".editmlaboutspathemeone16").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone16").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone16").hide();
+
+});
+
+
+$(".editmlaboutspathemeone16").click(function(e) {
+ $(".boxmlaboutspathemeone16").addClass("editable");
+
+  
+  
+  $(".contmabouttelegram16").show();
+
+ 
+});
+
+$(".submitmabouttelegram16").click(function() {
+  $(".boxmlaboutspathemeone16").removeClass("editable");
+  $(".contmabouttelegram16").hide();
+addHrefmabout16();
+  
+});
+
+ 
+});
+
+function addHrefmabout16() {
+var inputmabouttelegram16 = $('.inputmabouttelegram16').val();
+  $('#hrefchangemabouttelegram16').attr("href",inputmabouttelegram16);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmlaboutspathemeone17").hide();
+
+$( ".boxmlaboutspathemeone17" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone17").hasClass("editable")) {
+    $(".editmlaboutspathemeone17").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone17").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone17").hide();
+
+});
+
+ $(".editmlaboutspathemeone17").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone17").addClass("editable");
+   $(".editmlaboutspathemeone17").hide();
+  $(".savemlaboutspathemeone17").show();
+  $(".imageUploadmlaboutspathemeone17").show();
+});
+
+$(".savemlaboutspathemeone17").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone17").removeClass("editable");
+ 
+  $(".editmlaboutspathemeone17").hide();
+  $(".imageUploadmlaboutspathemeone17").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmlaboutspathemeone17").change(function() {
+
+    readURLmabout17(this);
+});
+
+});
+function readURLmabout17(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmlaboutspathemeone17').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmlaboutspathemeone18").hide();
+
+$( ".boxmlaboutspathemeone18" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone18").hasClass("editable")) {
+    $(".editmlaboutspathemeone18").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone18").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone18").hide();
+
+});
+
+ $(".editmlaboutspathemeone18").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone18").addClass("editable");
+   $(".editmlaboutspathemeone18").hide();
+  $(".savemlaboutspathemeone18").show();
+  $(".imageUploadmlaboutspathemeone18").show();
+});
+
+$(".savemlaboutspathemeone18").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone18").removeClass("editable");
+ 
+  $(".editmlaboutspathemeone18").hide();
+  $(".imageUploadmlaboutspathemeone18").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmlaboutspathemeone18").change(function() {
+
+    readURLmabout18(this);
+});
+
+});
+function readURLmabout18(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmlaboutspathemeone18').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmlaboutspathemeone19").hide();
+
+$( ".boxmlaboutspathemeone19" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutspathemeone19").hasClass("editable")) {
+    $(".editmlaboutspathemeone19").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutspathemeone19").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutspathemeone19").hide();
+
+});
+
+ $(".editmlaboutspathemeone19").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone19").addClass("editable");
+   $(".editmlaboutspathemeone19").hide();
+  $(".savemlaboutspathemeone19").show();
+  $(".imageUploadmlaboutspathemeone19").show();
+});
+
+$(".savemlaboutspathemeone19").click(function() {
+  $(this).hide();
+  $(".boxmlaboutspathemeone19").removeClass("editable");
+ 
+  $(".editmlaboutspathemeone19").hide();
+  $(".imageUploadmlaboutspathemeone19").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmlaboutspathemeone19").change(function() {
+
+    readURLmabout19(this);
+});
+
+});
+function readURLmabout19(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmlaboutspathemeone19').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+</script>

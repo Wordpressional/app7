@@ -28,3 +28,4 @@
     <!-- Start of KEditor styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor.min.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('dist/css/keditor-components.min.css')}}" />
+     <link rel="stylesheet" href="{{asset('css/keditorthemehide.css')}}" />

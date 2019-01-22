@@ -209,7 +209,7 @@ ul.social-icons {
     background-color: #e25714;
 }
 .heading-title {
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 .text-center {
     text-align: center;
@@ -218,12 +218,13 @@ ul.social-icons {
     margin-bottom: 0;
     letter-spacing: 2px;
     font-weight: normal;
+    margin-top: 15px;
 }
 .p-top-30 {
     padding-top: 30px;
 }
 .half-txt {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
@@ -235,13 +236,12 @@ ul.social-icons {
 
 .team-member, .team-member .team-img {
     position: relative;
+    margin-top: 15px;
 }
 .team-member {
     overflow: hidden;
 }
-.team-member, .team-member .team-img {
-    position: relative;
-}
+
 
 .team-hover {
     position: absolute;
@@ -313,6 +313,7 @@ ul.social-icons {
     letter-spacing: 2px;
     width: 100%;
     text-align: center;
+    margin-bottom: 15px;
 }
 .team-title h5 {
     margin-bottom: 0px;
@@ -358,9 +359,14 @@ ul.social-icons {
   padding: 10px;
   transition: .5s;
   color: #D7D0BE;
-  margin-left: 15px;
+  margin-left: 5px;
   margin-right: 15px;
   font-size: 50px;
+}
+
+.site-social-networks
+{
+  display: inline-flex;
 }
 
 .social .link span {
@@ -3399,65 +3405,6 @@ color: white;
     min-height: 200px;
 }
 
-.twentyfive{
-  left: 25%;
-  
-}
-.fifty{
-  left: 50%;
-  
-}
-.zero{
-  left: 0%;
-  
-}
-.seventy{
-  left:75%;
- 
-}
-
-
-
-.ze{
-  top:0px;
-}
-.tw{
-  top:283px;
-}
-.fi{
-  top:565px;
-}
-.eg{
-  top:848px;
-}
-
-.fifty.tw{
-  left: 50% ;
-  top: 283px ;
-}
-.fifty.fi {
-    left: 50% ;
-    top: 565px ;
-}
-.fifty.ze{
-  left: 50% ;
-}
-
-.zero.fi {
-    left: 0% ;
-    top: 565px ;
-}
-
-.twentyfive.eg {
-  left: 25% ;
-    top: 848px;
-}
-
-.zero.eg {
-    left: 0%;
-    top: 848px;
-    
-}
 
 @media (max-width: 1000px) and (min-width: 50px) {
 
@@ -3540,7 +3487,7 @@ color: white;
 
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 700px){
+@media only screen and (max-width: 3000px) and (min-width: 700px){
 .twentyfive{
   left: 25%;
   top: 848px;
@@ -3632,5 +3579,14 @@ color: white;
   left:0% !important;
 }
 
+.brand {
+    position: static;
+}
+#pteam
+{
+  padding:10px 10px 30px 10px;
+}
+
 
 }
+

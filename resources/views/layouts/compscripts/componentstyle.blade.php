@@ -4,7 +4,7 @@
 @media only screen and (max-width: 3000px) and (min-width: 1000px){
 
 .brand{
-  position: absolute;
+  position: static;
   
 }
 
@@ -760,6 +760,719 @@ img#mcolorlibimagePreview18 {
 {
   position:relative;
   display:inline-block;
+}
+
+}
+
+
+
+</style>
+<style>
+@media only screen and (min-width: 1000px) and (max-width: 3000px){
+
+.editmlaboutspathemeone1, .savemlaboutspathemeone1 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone1 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone1 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone2, .savemlaboutspathemeone2 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone2 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone2 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone3, .savemlaboutspathemeone3 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone3 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone3 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+.editmlaboutspathemeone4, .savemlaboutspathemeone4 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone4 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone4 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+.editmlaboutspathemeone5, .savemlaboutspathemeone5 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone5 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone5 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+.editmlaboutspathemeone6, .savemlaboutspathemeone6 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone6 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone6 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+
+.editmlaboutspathemeone7, .savemlaboutspathemeone7 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone7 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone7 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone8, .savemlaboutspathemeone8 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone8 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone8 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone9, .savemlaboutspathemeone9 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone9 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone9 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone10, .savemlaboutspathemeone10 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone10 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone10 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone11, .savemlaboutspathemeone11 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone11 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone11 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+
+.editmlaboutspathemeone12, .savemlaboutspathemeone12 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone12 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone12 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone13, .savemlaboutspathemeone13 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone13 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone13 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+.editmlaboutspathemeone14, .savemlaboutspathemeone14 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone14 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone14 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone15, .savemlaboutspathemeone15 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone15 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone15 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone16, .savemlaboutspathemeone16 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutspathemeone16 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone16 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutspathemeone17, .savemlaboutspathemeone17 {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+.editmlaboutspathemeone17 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone17 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+
+
+img#imagePreviewmlaboutspathemeone17 {
+    display: inline;
+   
+}
+
+
+
+#imageUploadmlaboutspathemeone17  {
+  display:none;
+}
+
+label.imageUploadmlaboutspathemeone17:after {
+  content: "\f093";
+  font-family: "FontAwesome";
+  color: black;
+  width: 30px;
+  display: inline;
+  position: relative;
+  top: 0px;
+  right: 90px;
+  padding: 8px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  margin: auto;
+  background-color: white;
+}
+
+
+
+
+.editmlaboutspathemeone18, .savemlaboutspathemeone18 {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+.editmlaboutspathemeone18 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone18 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+
+
+img#imagePreviewmlaboutspathemeone18 {
+    display: none;
+   
+}
+
+
+
+#imageUploadmlaboutspathemeone18  {
+  display:none;
+}
+
+label.imageUploadmlaboutspathemeone18:after {
+  content: "\f093";
+  font-family: "FontAwesome";
+  color: black;
+  width: 30px;
+  display: inline;
+  position: relative;
+  top: 0px;
+  right: 90px;
+  padding: 8px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  margin: auto;
+  background-color: white;
+}
+
+
+
+
+.editmlaboutspathemeone19, .savemlaboutspathemeone19 {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+.editmlaboutspathemeone19 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutspathemeone19 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+
+
+img#imagePreviewmlaboutspathemeone19 {
+    display: inline;
+   
+}
+
+
+
+#imageUploadmlaboutspathemeone19  {
+  display:none;
+}
+
+label.imageUploadmlaboutspathemeone19:after {
+  content: "\f093";
+  font-family: "FontAwesome";
+  color: black;
+  width: 30px;
+  display: inline;
+  position: relative;
+  top: 0px;
+  right: 90px;
+  padding: 8px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  margin: auto;
+  background-color: white;
 }
 
 }
