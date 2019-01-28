@@ -14,7 +14,7 @@
     @auth
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
-    @if($data)
+    @if($data['n_companyname'])
     <title>{{$data['n_companyname']->cname}}</title>
     @else
     <title></title>

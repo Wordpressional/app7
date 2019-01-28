@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" href="{{ asset('installer/img/favicon/favicon-32x32.png') }}" sizes="32x32"/>
         <link rel="icon" type="image/png" href="{{ asset('installer/img/favicon/favicon-96x96.png') }}" sizes="96x96"/>
         <link href="{{ asset('installer/css/style.min.css') }}" rel="stylesheet"/>-->
-        @if($data)
+        @if($data['n_companyname'])
     <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
      @else
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -20,7 +20,7 @@
     @auth
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
-    @if($data)
+    @if($data['n_companyname'])
     <title>{{$data['n_companyname']->cname}}</title>
     @else
     <title></title>
