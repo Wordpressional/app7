@@ -58,9 +58,9 @@ return [
             'driver'   => env('MONGO_DB_CONNECTION', 'mongodb'),
             'host'     => env('MONGO_DB_HOST', 'localhost'),
             'port'     => env('MONGO_DB_PORT', 27017),
-            'database' => env('MONGO_DB_DATABASE'),
-            'username' => env('MONGO_DB_USERNAME'),
-            'password' => env('MONGO_DB_PASSWORD'),
+            'database' => getenv('MONGO_DB_DATABASE'),
+            'username' => getenv('MONGO_DB_USERNAME'),
+            'password' => getenv('MONGO_DB_PASSWORD'),
             'options'  => []
         ],
 
