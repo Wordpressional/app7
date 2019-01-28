@@ -12,6 +12,8 @@
 
     @if($data)
     <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
+    @else
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     @endif
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
