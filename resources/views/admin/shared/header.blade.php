@@ -11,7 +11,7 @@
         </a>
         
         <div class="navbar-custom-menu">
-            <center><p> @if($data) {{$data['n_companyname']->cname}} @endif</p></center>
+            <center><p> @if($data['n_companyname']) {{$data['n_companyname']->cname}} @else @endif</p></center>
             <ul class="nav navbar-nav">
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
