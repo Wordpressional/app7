@@ -61,14 +61,10 @@ return [
             'database' => getenv('MONGO_DB_DATABASE'),
             'username' => getenv('MONGO_DB_USERNAME'),
             'password' => getenv('MONGO_DB_PASSWORD'),
-<<<<<<< HEAD
             //'options'  => []
 	    'options' => [
         	'database' =>  getenv('MONGO_DB_AUTH_DATABASE') // sets the authentication database required by mongo 3
    	    ]
-=======
-            'options'  => []
->>>>>>> c53ef7e9b3a6968517b87ca7b79caa5229f43229
         ],
 
         'testing' => [
