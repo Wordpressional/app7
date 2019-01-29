@@ -39,7 +39,7 @@
 </div>
 </div>
 <div class="copy_right_area1">
-<div class="container"> 
+<div class="container-fluid"> 
 {!! html_entity_decode($branding->footer) !!}
 </div>
 </div>

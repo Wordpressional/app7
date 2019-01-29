@@ -3590,3 +3590,8 @@ color: white;
 
 }
 
+.custom_footer_links
+{
+  margin-right: -15px;
+  margin-left: -15px;
+}
