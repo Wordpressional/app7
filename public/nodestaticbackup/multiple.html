@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <title>Hello, world!</title>
+
+</head>
+ 
+<body>
+    <h1>Hello, world!</h1>
+    <p id="click">Click here</p>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+       $('#click').click(function() {
+				var tools = require("multiple.js");
+				var value = tools.scrape;
+				console.log("Value: "+value);
+                alert("hi");
+           
+        });
+   });
+    </script>
+</body>
+ 
+</html>
