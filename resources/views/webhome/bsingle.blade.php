@@ -10,7 +10,7 @@
       
 
 <div class="custom_footer_links">
-<div class="container"> 
+<div class="container-fluid"> 
 {!! html_entity_decode($branding->footer) !!}
 </div>
 </div>
