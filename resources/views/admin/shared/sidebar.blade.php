@@ -274,6 +274,41 @@
                 <span class="nav-link-text">Activity Logs</span>
             </a>
         </li>
+
+          <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>Downloads</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+              
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Color Management">
+                    <a class="nav-link {{ Request::is('admin/styles') || Request::is('admin/styles/*') ? 'active' : '' }}" href="{{ route('admin.static.starterform') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Starter Kit</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Choose Themes">
+                    <a class="nav-link {{ Request::is('admin/themes') || Request::is('admin/themes/*') ? 'active' : '' }}" href="#">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Standard Kit</span>
+                    </a>
+                </li>
+                 
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Install Modules">
+                    <a class="nav-link {{ Request::is('admin/modules') || Request::is('admin/modules/*') ? 'active' : '' }}" href="#">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Enterprise Kit</span>
+                    </a>
+                </li>
+               
+             
+        </ul>
+    </li>
+     
         @endrole
 
          @role(['cms_administrator', 'cms_editor', 'cms_author', 'cms_subscriber'] )

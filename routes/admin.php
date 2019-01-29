@@ -89,6 +89,30 @@ Route::get('/forms/gereneratemenu',[
 
 ]);
 
+Route::get('/static/starterform',[
+
+
+'uses' => 'StaticController@StarterStaticForm',
+'as' => 'static.starterform'
+
+]);
+
+Route::get('/static/downloadstarter',[
+
+
+'uses' => 'StaticController@downloadStarterStatic',
+'as' => 'static.downloadstarter'
+
+]);
+
+Route::post('/static/savestarter',[
+
+
+'uses' => 'StaticController@SaveStarterStatic',
+'as' => 'static.savestarter'
+
+]);
+
 
 Route::get('/cforms/preview/{id}',[
 
