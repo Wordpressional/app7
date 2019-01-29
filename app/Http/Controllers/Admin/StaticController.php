@@ -24,11 +24,12 @@ class StaticController extends Controller
         $fileurl = public_path('jsonfiles/testurl.txt'); // path to your JSON file
 		$filedata = file_get_contents($fileurl); // put the contents of the file into a variable
 		//dd($filedata);
-
+        $fpath = public_path('nodejswithphp');
+        $zpath = public_path('downloadedstatic');
 		
-		$output1 = shell_exec('node /var/www/html/staticweb/public/nodejswithphp/multiple_test2.js 2>&1');
+		$output1 = shell_exec('node '.$fpath .'/multiple_test2.js 2>&1');
 		//print_r($output1);
-		exec('tar -zcvf /var/www/html/staticweb/public/downloadedstatic/node_website.tgz /var/www/html/staticweb/public/downloadedstatic/node_website');
+		exec('tar -zcvf '. $zpath.'/node_website.tgz '.$zpath.'/node_website');
 		
 
 		$url = url("/downloadedstatic/node_website.tgz");

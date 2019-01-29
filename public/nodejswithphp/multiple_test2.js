@@ -6,7 +6,7 @@ var fs = require('fs');
 
 //let jsonData = JSON.parse(fs.readFileSync('/var/www/html/staticweb/public/jsonfiles/testurl.json', 'utf-8'));
 //const jsonData = require('/var/www/html/staticweb/public/jsonfiles/testurl.txt');
-fs.readFile('/var/www/html/staticweb/public/jsonfiles/testurl.txt', function(err, buf) {
+fs.readFile('./jsonfiles/testurl.txt', function(err, buf) {
 //console.log(buf.toString());
 //jsonData = buf.toString();
 //var result = jsonData.replace(/\n\ /g, '');
