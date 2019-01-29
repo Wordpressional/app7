@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="themeone boxmparallaxone2">
   <span class="editmparallaxone2">edit</span>
   
@@ -26,3 +27,6 @@
 	</div>
 	<!-- END PARALLAX -->
 </div>
+=======
+hi
+>>>>>>> c53ef7e9b3a6968517b87ca7b79caa5229f43229

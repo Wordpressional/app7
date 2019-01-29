@@ -12,11 +12,11 @@
     <div class="clearfix"></div>
     <p>Are you sure you want to delete <strong>{{$user->name}}</strong></p>
 
-                    <form method="GET" action="{{ route('admin.users.delete', ['id' => $user->id]) }}">
-                        <input type="hidden" name="_token" value="{{ Session::token() }}">
-                        <input name="_method" type="hidden" value="DELETE">
-                        <button type="submit" class="btn btn-danger">Yes I'm sure. Delete</button>
-                    </form>
+    <form method="GET" action="{{ route('admin.users.delete', ['id' => $user->id]) }}">
+        <input type="hidden" name="_token" value="{{ Session::token() }}">
+        <input name="_method" type="hidden" value="DELETE">
+        <button type="submit" class="btn btn-danger">Yes I'm sure. Delete</button>
+    </form>
 </main>
 </div>
 </div>

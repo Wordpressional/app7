@@ -1,0 +1,23 @@
+[
+"http://example.com/foldername",
+{
+"url": "http://example.com/foldername/page1",
+"filename": "page1.html"
+},
+{
+"url": "http://example.com/foldername/page2",
+"filename": "page2.html"
+},
+{
+"url": "http://example.com/foldername/page3",
+"filename": "page3.html"
+},
+{
+"url": "http://example.com/foldername/page4",
+"filename": "page4.html"
+},
+{
+"url": "http://example.com/foldername/page5",
+"filename": "page5.html"
+}
+]

@@ -404,91 +404,91 @@
 [responsivemenulist]Menu Name Here[/responsivemenulist]
 </div>
 
-<div data-type="component-custom" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom1.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_1')
    
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom2.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom2.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_2')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom3.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom3.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_3')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom4.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom4.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_4')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom5.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom5.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_5')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom6.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom6.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_6')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom7.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom7.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_7')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom8.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom8.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_8')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom9.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom9.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_9')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom10.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom10.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_10')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom11.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom11.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_11')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom12.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom12.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_12')
   
 
 
 </div>
-<div data-type="component-photo" data-preview="{{asset('examples/snippets/preview/custom13.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom13.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;CustomTemplates">
 
 @include('shortcodes.custom.customplain_13')
   
