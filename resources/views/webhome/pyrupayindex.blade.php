@@ -6,7 +6,7 @@
 	Welcome to this website
 	<a href="{{ route('admin.dashboard') }}">Login to design this page</a>
 @endif
-@if($colorsetting)
+@if($colorsetting[1])
 <style>
 
 /* Content area Color */
