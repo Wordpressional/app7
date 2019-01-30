@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@if($data['n_companyname']['n_companyname'])
+@if($data['n_companyname'])
 <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
 @else
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
