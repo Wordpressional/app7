@@ -84,6 +84,7 @@
 
        <br> 
        @php 
+       $pgbnr = "";
         if($company){
         if(!$company->clogo){
 
@@ -114,6 +115,7 @@
              <br> 
 
         @php 
+         $pgbnr = "";
         if($company){
         if(!$company->favicon){
 
@@ -143,6 +145,7 @@
 
           <br> 
         @php
+        $pgbnr = "";
         if($company){ 
         if(!$company->favicon){
 
