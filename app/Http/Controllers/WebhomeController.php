@@ -87,6 +87,7 @@ class WebhomeController extends Controller
         Shortcode::enable();
         $shortcode = App('Shortcode');
     $colorsetting = Colorsetting::all();
+    dd($colorsetting);
     $branding = Brand::where('id', 1)->first();
 
     if(!$branding)
