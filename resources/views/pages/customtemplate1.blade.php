@@ -45,7 +45,7 @@
 </div>
 @endsection
 @section('css')
-@($colortest)
+@if($colortest)
 <style>
 /* Banner Background Color */
 .bg-cover {

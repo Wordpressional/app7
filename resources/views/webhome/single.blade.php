@@ -17,7 +17,7 @@
 
 @endsection
 @section('css')
-@($colortest)
+@if($colortest)
 <style>
 /* Post Title Background Color */
 
