@@ -6,7 +6,7 @@
 	Welcome to this website
 	<a href="{{ route('admin.dashboard') }}">Login to design this page</a>
 @endif
-
+@if($colorsetting)
 <style>
 
 /* Content area Color */
@@ -15,6 +15,7 @@
 }
 
 </style>
+@endif
  @include('layouts.compscripts.contactcustformscript')
 
 
