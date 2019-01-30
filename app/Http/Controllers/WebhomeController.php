@@ -88,7 +88,7 @@ class WebhomeController extends Controller
         $shortcode = App('Shortcode');
     $colorsetting = Colorsetting::all();
     $colortest = Colorsetting::find(1);
-    dd($colortest);
+    
     $branding = Brand::where('id', 1)->first();
 
     if(!$branding)
@@ -100,7 +100,7 @@ class WebhomeController extends Controller
         } 
         else
         {
-            return view('webhome.pyrupayindex')->with(['branding' => $branding, 'colorsetting' => $colorsetting])->withShortcodes();
+            return view('webhome.pyrupayindex')->with(['branding' => $branding, 'colorsetting' => $colorsetting, 'colortest' => $colortest])->withShortcodes();
         }
       
 

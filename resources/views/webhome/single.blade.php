@@ -17,6 +17,7 @@
 
 @endsection
 @section('css')
+@($colortest)
 <style>
 /* Post Title Background Color */
 
@@ -39,4 +40,5 @@
 	background: {{ $colorsetting[10]->color }} !important;
 }
 </style>
+@endif
 @endsection
