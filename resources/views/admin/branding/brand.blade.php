@@ -84,7 +84,7 @@
 
        <br> 
        @php 
-        if(!$company){
+        if($company){
         if(!$company->clogo){
 
           $pgbnr = "required";
