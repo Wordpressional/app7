@@ -89,10 +89,11 @@
 
           $pgbnr = "required";
         }
-        }
+        
         else
         {
           $pgbnr = "";
+        }
         }
         
         @endphp     
@@ -113,6 +114,7 @@
              <br> 
 
         @php 
+        if($company){
         if(!$company->favicon){
 
           $pgbnr = "required";
@@ -120,6 +122,7 @@
         else
         {
           $pgbnr = "";
+        }
         }
         @endphp     
           <label for="cllogo">Favicon</label>
@@ -139,7 +142,8 @@
 
 
           <br> 
-        @php 
+        @php
+        if($company){ 
         if(!$company->favicon){
 
           $pgbnr = "required";
@@ -147,6 +151,7 @@
         else
         {
           $pgbnr = "";
+        }
         }
         @endphp       
           <label for="cllogo">Default Profile Image</label>
