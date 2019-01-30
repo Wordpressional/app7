@@ -87,18 +87,20 @@ class WebhomeController extends Controller
         Shortcode::enable();
         $shortcode = App('Shortcode');
     $colorsetting = Colorsetting::all();
+    $colortest = Colorsetting::find(1);
+    
     $branding = Brand::where('id', 1)->first();
 
     if(!$branding)
         {  
-            $html =  "Welcome <br> <a href='mylogin'>Login to design this page</a>";
+            $html =  "Welcome <br> <a href='admin/dashboard'>GO to dashboard to design this page</a>";
 
          return $html;
          
         } 
         else
         {
-            return view('webhome.pyrupayindex')->with(['branding' => $branding, 'colorsetting' => $colorsetting])->withShortcodes();
+            return view('webhome.pyrupayindex')->with(['branding' => $branding, 'colorsetting' => $colorsetting, 'colortest' => $colortest])->withShortcodes();
         }
       
 

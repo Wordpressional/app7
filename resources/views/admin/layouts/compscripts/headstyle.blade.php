@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@if($data['n_companyname']['n_companyname'])
+@if($data['n_companyname'])
 <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
 @else
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -24,7 +24,7 @@
 
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
 <link href="{{ asset(mix('css/admin.css')) }}" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="{{asset('css/public.css')}}" />
 <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}" />

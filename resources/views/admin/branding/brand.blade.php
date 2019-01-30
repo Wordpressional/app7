@@ -45,12 +45,12 @@
         {
           print '<option value="' . $timezone . '" selected="selected" class="active">' .$name . '</option>' . "\n";
         } 
-       
+        } 
         else 
         {
           print '<option value="' . $timezone . '">' . $name . '</option>' . "\n";
         }
-        } 
+        
         }
         
 
@@ -84,14 +84,19 @@
 
        <br> 
        @php 
+       $pgbnr = "";
+        if($company){
         if(!$company->clogo){
 
           $pgbnr = "required";
         }
+        
         else
         {
           $pgbnr = "";
         }
+        }
+        
         @endphp     
           <label for="cllogo">Company Logo</label>
              <br /><div class="form-group">
@@ -110,6 +115,8 @@
              <br> 
 
         @php 
+         $pgbnr = "";
+        if($company){
         if(!$company->favicon){
 
           $pgbnr = "required";
@@ -117,6 +124,7 @@
         else
         {
           $pgbnr = "";
+        }
         }
         @endphp     
           <label for="cllogo">Favicon</label>
@@ -136,7 +144,9 @@
 
 
           <br> 
-        @php 
+        @php
+        $pgbnr = "";
+        if($company){ 
         if(!$company->favicon){
 
           $pgbnr = "required";
@@ -144,6 +154,7 @@
         else
         {
           $pgbnr = "";
+        }
         }
         @endphp       
           <label for="cllogo">Default Profile Image</label>

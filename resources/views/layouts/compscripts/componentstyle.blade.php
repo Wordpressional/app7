@@ -766,8 +766,7 @@ img#mcolorlibimagePreview18 {
 
 
 
-</style>
-<style>
+
 @media only screen and (min-width: 1000px) and (max-width: 3000px){
 
 .editmlaboutspathemeone1, .savemlaboutspathemeone1 {
@@ -1477,6 +1476,142 @@ label.imageUploadmlaboutspathemeone19:after {
 
 }
 
+
+
+</style>
+<style>
+
+@media only screen and (min-width: 1000px) and (max-width: 3000px){
+
+.editmlaboutt1theme1, .savemlaboutt1theme1 {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+.editmlaboutt1theme1 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutt1theme1 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+
+
+img#imagePreviewmlaboutt1theme1 {
+    display: inline;
+   
+}
+
+
+
+#imageUploadmlaboutt1theme1  {
+  display:none;
+}
+
+label.imageUploadmlaboutt1theme1:after {
+  content: "\f093";
+  font-family: "FontAwesome";
+  color: black;
+  width: 30px;
+  display: inline;
+  position: relative;
+  top: 0px;
+  right: 90px;
+  padding: 8px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  margin: auto;
+  background-color: white;
+}
+
+
+
+
+.editmlaboutt1theme2, .savemlaboutt1theme2 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutt1theme2 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutt1theme2 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlaboutt1theme3, .savemlaboutt1theme3 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlaboutt1theme3 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlaboutt1theme3 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+}
 
 
 </style>

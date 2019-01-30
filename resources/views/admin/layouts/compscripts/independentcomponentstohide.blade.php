@@ -266,4 +266,6 @@ label.imageUploadmparallaxone2:after {
   background-color: white;
    font-size: 12px;
 }
+
+
 </style>

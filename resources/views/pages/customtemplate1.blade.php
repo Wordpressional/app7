@@ -45,6 +45,7 @@
 </div>
 @endsection
 @section('css')
+@if($colortest)
 <style>
 /* Banner Background Color */
 .bg-cover {
@@ -75,6 +76,7 @@ body.bg-light {
 	color: {{ $colorsetting[0]->color }} !important;
 }
 </style>
+@endif
 @endsection
 @section('menuscripts')
 

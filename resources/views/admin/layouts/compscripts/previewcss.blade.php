@@ -3,7 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="theme-color" content="#317EFB"/>
-       @if($data)
+       @if($data['n_companyname'])
     <link rel="icon" href="{{asset($data['n_companyname']->favicon)}}" type="image/x-icon" />
     @endif
     
@@ -13,7 +13,7 @@
         <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
 
-    @if($data)
+    @if($data['n_companyname'])
     <title>{{$data['n_companyname']->cname}}</title>
     @else
     <title></title>
@@ -22,11 +22,12 @@
      
     
 <link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+
 <link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
-<!-- Bootstrap -->
-<link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 
 <!-- Rev slider css -->
   <link href="{{ asset('webhome/vendors/revolution/css/settings.css') }}" rel="stylesheet">

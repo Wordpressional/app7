@@ -4,9 +4,9 @@
 
 @else
 	Welcome to this website
-	<a href="{{ route('mylogin') }}">Login to design this page</a>
+	<a href="{{ route('admin.dashboard') }}">Login to design this page</a>
 @endif
-
+@if($colortest)
 <style>
 
 /* Content area Color */
@@ -15,6 +15,7 @@
 }
 
 </style>
+@endif
  @include('layouts.compscripts.contactcustformscript')
 
 
