@@ -2,13 +2,13 @@
 
 
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <!-- Scripts -->
 @if (Request::is('posts/*'))
@@ -71,7 +71,7 @@
       
 
 
-       <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
+      
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
          <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
@@ -108,7 +108,7 @@
                 
 
             </script>
-    
+     <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
  @include ('layouts.shortcode-layout')    
 
 

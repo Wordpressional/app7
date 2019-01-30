@@ -24,7 +24,7 @@
 
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
 <link href="{{ asset(mix('css/admin.css')) }}" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="{{asset('css/public.css')}}" />
 <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}" />

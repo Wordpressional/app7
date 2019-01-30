@@ -45,12 +45,12 @@
         {
           print '<option value="' . $timezone . '" selected="selected" class="active">' .$name . '</option>' . "\n";
         } 
-       
+        } 
         else 
         {
           print '<option value="' . $timezone . '">' . $name . '</option>' . "\n";
         }
-        } 
+        
         }
         
 

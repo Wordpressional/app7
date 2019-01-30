@@ -117,4 +117,9 @@ label.imageUploadmparallaxone2
 {
   display:none;
 }
+
+label.imageUploadmlaboutt1theme1
+{
+  display:none;
+}
 </style>

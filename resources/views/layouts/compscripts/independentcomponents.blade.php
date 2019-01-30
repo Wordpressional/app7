@@ -1089,7 +1089,7 @@ $(".savemlaboutspathemeone1").click(function() {
   $(".boxmlaboutspathemeone1").removeClass("editable");
  $(".textmlaboutspathemeone1").removeAttr("contenteditable");
   $(".editmlaboutspathemeone1").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1133,7 +1133,7 @@ $(".savemlaboutspathemeone2").click(function() {
   $(".boxmlaboutspathemeone2").removeClass("editable");
  $(".textmlaboutspathemeone2").removeAttr("contenteditable");
   $(".editmlaboutspathemeone2").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1177,7 +1177,7 @@ $(".savemlaboutspathemeone3").click(function() {
   $(".boxmlaboutspathemeone3").removeClass("editable");
  $(".textmlaboutspathemeone3").removeAttr("contenteditable");
   $(".editmlaboutspathemeone3").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1221,7 +1221,7 @@ $(".submitmaboutfacebook4").click(function() {
   $(".boxmlaboutspathemeone4").removeClass("editable");
   $(".contmaboutfacebook4").hide();
 addHrefmabout4();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1272,7 +1272,7 @@ $(".submitmabouttwitter5").click(function() {
   $(".boxmlaboutspathemeone5").removeClass("editable");
   $(".contmabouttwitter5").hide();
 addHrefmabout5();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1323,7 +1323,7 @@ $(".submitmabouttelegram6").click(function() {
   $(".boxmlaboutspathemeone6").removeClass("editable");
   $(".contmabouttelegram6").hide();
 addHrefmabout6();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1372,7 +1372,7 @@ $(".savemlaboutspathemeone7").click(function() {
   $(".boxmlaboutspathemeone7").removeClass("editable");
  $(".textmlaboutspathemeone7").removeAttr("contenteditable");
   $(".editmlaboutspathemeone7").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1418,7 +1418,7 @@ $(".savemlaboutspathemeone8").click(function() {
   $(".boxmlaboutspathemeone8").removeClass("editable");
  $(".textmlaboutspathemeone8").removeAttr("contenteditable");
   $(".editmlaboutspathemeone8").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1461,7 +1461,7 @@ $(".submitmaboutfacebook9").click(function() {
   $(".boxmlaboutspathemeone9").removeClass("editable");
   $(".contmaboutfacebook9").hide();
 addHrefmabout9();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1512,7 +1512,7 @@ $(".submitmabouttwitter10").click(function() {
   $(".boxmlaboutspathemeone10").removeClass("editable");
   $(".contmabouttwitter10").hide();
 addHrefmabout10();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1563,7 +1563,7 @@ $(".submitmabouttelegram11").click(function() {
   $(".boxmlaboutspathemeone11").removeClass("editable");
   $(".contmabouttelegram11").hide();
 addHrefmabout11();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1614,7 +1614,7 @@ $(".savemlaboutspathemeone12").click(function() {
   $(".boxmlaboutspathemeone12").removeClass("editable");
  $(".textmlaboutspathemeone12").removeAttr("contenteditable");
   $(".editmlaboutspathemeone12").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1658,7 +1658,7 @@ $(".savemlaboutspathemeone13").click(function() {
   $(".boxmlaboutspathemeone13").removeClass("editable");
  $(".textmlaboutspathemeone13").removeAttr("contenteditable");
   $(".editmlaboutspathemeone13").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1702,7 +1702,7 @@ $(".submitmaboutfacebook14").click(function() {
   $(".boxmlaboutspathemeone14").removeClass("editable");
   $(".contmaboutfacebook14").hide();
 addHrefmabout14();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1753,7 +1753,7 @@ $(".submitmabouttwitter15").click(function() {
   $(".boxmlaboutspathemeone15").removeClass("editable");
   $(".contmabouttwitter15").hide();
 addHrefmabout15();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1804,7 +1804,7 @@ $(".submitmabouttelegram16").click(function() {
   $(".boxmlaboutspathemeone16").removeClass("editable");
   $(".contmabouttelegram16").hide();
 addHrefmabout16();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1854,7 +1854,7 @@ $(".savemlaboutspathemeone17").click(function() {
  
   $(".editmlaboutspathemeone17").hide();
   $(".imageUploadmlaboutspathemeone17").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -1918,7 +1918,7 @@ $(".savemlaboutspathemeone18").click(function() {
  
   $(".editmlaboutspathemeone18").hide();
   $(".imageUploadmlaboutspathemeone18").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -1982,7 +1982,7 @@ $(".savemlaboutspathemeone19").click(function() {
  
   $(".editmlaboutspathemeone19").hide();
   $(".imageUploadmlaboutspathemeone19").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -2007,4 +2007,153 @@ if (input.files && input.files[0]) {
   
 }
 
+</script>
+<script>
+$(document).ready(function(){
+
+   $(".imageUploadmlaboutt1theme1").hide();
+    
+
+$( ".boxmlaboutt1theme1" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutt1theme1").hasClass("editable")) {
+    $(".editmlaboutt1theme1").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutt1theme1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutt1theme1").hide();
+
+});
+
+ $(".editmlaboutt1theme1").click(function() {
+  $(this).hide();
+  $(".boxmlaboutt1theme1").addClass("editable");
+   $(".editmlaboutt1theme1").hide();
+  $(".savemlaboutt1theme1").show();
+  $(".imageUploadmlaboutt1theme1").show();
+});
+
+$(".savemlaboutt1theme1").click(function() {
+  $(this).hide();
+  $(".boxmlaboutt1theme1").removeClass("editable");
+ 
+  $(".editmlaboutt1theme1").hide();
+  $(".imageUploadmlaboutt1theme1").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmlaboutt1theme1").change(function() {
+
+    readURLabt1(this);
+});
+
+});
+function readURLabt1(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmlaboutt1theme1').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutt1theme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutt1theme2").hasClass("editable")) {
+    $(".editmlaboutt1theme2").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutt1theme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutt1theme2").hide();
+
+});
+
+ $(".editmlaboutt1theme2").click(function() {
+  $(this).hide();
+  $(".boxmlaboutt1theme2").addClass("editable");
+  $(".textmlaboutt1theme2").attr("contenteditable", "true");
+   $(".editmlaboutt1theme2").hide();
+  $(".savemlaboutt1theme2").show();
+ 
+});
+
+$(".savemlaboutt1theme2").click(function() {
+  $(this).hide();
+  $(".boxmlaboutt1theme2").removeClass("editable");
+ $(".textmlaboutt1theme2").removeAttr("contenteditable");
+  $(".editmlaboutt1theme2").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlaboutt1theme3" )
+ .on("mouseenter", function() {
+   if ($(".boxmlaboutt1theme3").hasClass("editable")) {
+    $(".editmlaboutt1theme3").hide();
+
+   } 
+   else
+   {
+    $(".editmlaboutt1theme3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlaboutt1theme3").hide();
+
+});
+
+ $(".editmlaboutt1theme3").click(function() {
+  $(this).hide();
+  $(".boxmlaboutt1theme3").addClass("editable");
+  $(".textmlaboutt1theme3").attr("contenteditable", "true");
+   $(".editmlaboutt1theme3").hide();
+  $(".savemlaboutt1theme3").show();
+ 
+});
+
+$(".savemlaboutt1theme3").click(function() {
+  $(this).hide();
+  $(".boxmlaboutt1theme3").removeClass("editable");
+ $(".textmlaboutt1theme3").removeAttr("contenteditable");
+  $(".editmlaboutt1theme3").hide();
+
+  
+});
+});
 </script>
