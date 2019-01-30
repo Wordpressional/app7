@@ -84,14 +84,17 @@
 
        <br> 
        @php 
+        if(!$company){
         if(!$company->clogo){
 
           $pgbnr = "required";
+        }
         }
         else
         {
           $pgbnr = "";
         }
+        
         @endphp     
           <label for="cllogo">Company Logo</label>
              <br /><div class="form-group">
