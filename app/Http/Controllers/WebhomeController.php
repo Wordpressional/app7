@@ -90,10 +90,11 @@ class WebhomeController extends Controller
     $colortest = Colorsetting::find(1);
     
     $branding = Brand::where('id', 1)->first();
-
-    if(!$branding)
+     $formshortcode = Form::where('formname', 'Home_Page')->first();
+     //dd($formshortcode->htmlcontent);
+    if(!$branding || $formshortcode->htmlcontent == "")
         {  
-            $html =  "Welcome <br> <a href='admin/dashboard'>GO to dashboard to design this page</a>";
+            $html =  "Welcome <br> <a href='admin/dashboard'>Login and goto dashboard to design this page</a>";
 
          return $html;
          
