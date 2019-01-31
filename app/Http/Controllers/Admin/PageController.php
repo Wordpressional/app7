@@ -44,11 +44,30 @@ class PageController extends Controller
          $categories = Category::all();
         
    
-      $data = $this->brandsAll();
-       
+         $data = $this->brandsAll();
+        
+        $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isCMSAuthor() == "yes") {
+            $userauthor = User::with('roles')->where('name', Auth::user()->name)->pluck('name', 'id');
+            //dd($userauthor);
+           //$userauthor = User::authors()->pluck('name', 'id');
+           //dd($userauthor);
+         }
+         if($thisuser->isSuperadministrator() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+         }
+         if($thisuser->isCMSAdmin() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+
+         }
+
         return view('admin.pages.edit', [
             'page' => $page,
-            'users' => User::authors()->pluck('name', 'id'),
+            'users' => $userauthor,
             'tuser'=>$thisuser,
             'data'=>$data,
 
@@ -64,10 +83,34 @@ class PageController extends Controller
     public function create(Request $request)
     {
 
-        $data = $this->brandsAll();
         
+         $data = $this->brandsAll();
+         $thisuser = Auth::user();
+         
+         $sthisuser = User::where('id', $thisuser->id)->authors()->pluck('name', 'id');
+         //dd($sthisuser);
+        
+
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         if($thisuser->isCMSAuthor() == "yes") {
+            $userauthor = User::with('roles')->where('name', Auth::user()->name)->pluck('name', 'id');
+            //dd($userauthor);
+           //$userauthor = User::authors()->pluck('name', 'id');
+           //dd($userauthor);
+         }
+         if($thisuser->isSuperadministrator() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+         }
+         if($thisuser->isCMSAdmin() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+         }
+
         return view('admin.pages.create', [
-            'users' => User::authors()->pluck('name', 'id'),
+            'users' => $userauthor,
             'data'=>$data,
 
         ]);
