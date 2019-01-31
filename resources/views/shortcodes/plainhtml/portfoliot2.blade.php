@@ -33,7 +33,7 @@
 	</div>
 			   <div class="projects_inner row grid" style="position: relative">
 				<div class="grid-sizer col-sm-12 col-xs-12  col-md-12 col-lg-12"></div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 brand web grid-item zero ze"  data-toggle="tooltip" data-placement="top" title=" upload image size540x535">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 brand web grid-item zero ze">
 					
 					<div class="mcolorlibbox">
 
