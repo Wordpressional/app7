@@ -1,3 +1,6 @@
+.view-source{
+  display:none;
+}
 .mcolorlibedit1, .mcolorlibsave1, #mcolorlibimageUpload1 {
  
  display: none !important;
@@ -160,5 +163,29 @@
   display: none !important;
 }
 .editmlaboutt1theme3, .savemlaboutt1theme3, #imageUploadmlaboutt1theme3, span.editmlaboutt1theme3:hover{
+  display: none !important;
+}
+.editmlbannertheme1, .savemlbannertheme1, #imageUploadmlbannertheme1, span.editmlbannertheme1:hover{
+ 
+ display: none !important;
+}
+.editmlbannertheme2, .savemlbannertheme2, #imageUploadmlbannertheme2, span.editmlbannertheme2:hover{
+  display: none !important;
+}
+.editmlfactsblabethemeone1, .savemlfactsblabethemeone1, #imageUploadmlfactsblabethemeone1, span.editmlfactsblabethemeone1:hover{
+ 
+ display: none !important;
+}
+.editmlfactsblabethemeone2, .savemlfactsblabethemeone2, #imageUploadmlfactsblabethemeone2, span.editmlfactsblabethemeone2:hover{
+  display: none !important;
+}
+.editmlfactsblabethemeone3, .savemlfactsblabethemeone3, #imageUploadmlfactsblabethemeone3, span.editmlfactsblabethemeone3:hover{
+  display: none !important;
+} 
+.editmlfactsblabethemeone4, .savemlfactsblabethemeone4, #imageUploadmlfactsblabethemeone4, span.editmlfactsblabethemeone4:hover{
+ 
+ display: none !important;
+}
+.editmlfactsblabethemeone5, .savemlfactsblabethemeone5, #imageUploadmlfactsblabethemeone5, span.editmlfactsblabethemeone5:hover{
   display: none !important;
 }

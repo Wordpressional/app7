@@ -648,7 +648,7 @@ class ThemeController extends Controller
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $form = Form::where('formname', "Front_Page")->first();
-        return view('admin.formbuilder.preview')->with(['form'=> $form, 'data' => $data])->withShortcodes();
+        return view('admin.formbuilder.themepreview')->with(['form'=> $form, 'data' => $data])->withShortcodes();
     }
 
     public function deactivatetheme(Request $request)
