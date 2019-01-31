@@ -925,6 +925,8 @@ img#mcolorlibimagePreview18 {
   display: none !important;
 }
 
+.editmlactheme2, .savemlactheme2, #imageUploadmlactheme2, span.editmlactheme2:hover{
+  display: none !important;
 }
 
 

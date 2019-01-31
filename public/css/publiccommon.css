@@ -3596,3 +3596,21 @@ color: white;
   margin-left: -15px;
 }
 
+.accordion.md-accordion.accordion-5 .card h4{
+  background-color: skyblue;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: #ffffff;
+
+}
+.accordion.md-accordion.accordion-5 .card i{
+    background-color: #fff;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    color:skyblue;
+}
+.accordion.md-accordion.accordion-5 .card a{
+    
+    color:#ffffff;
+}
