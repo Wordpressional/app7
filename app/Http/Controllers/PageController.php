@@ -51,11 +51,13 @@ class PageController extends Controller
         $menuList = Menu::get(1);    
         //dd($menuList);
         $colorsetting = Colorsetting::all();
+        $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
 
           return view('pages.customtemplate1', [
             'page' => $page,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
            'data' => $data,
            'menuList' => $menuList,
