@@ -17,7 +17,7 @@
 
      
      
-      <button onclick="copyFunction()">Copy</button>
+      <button onclick="copyFunction()" data-clipboard-target="#myInputText">Copy</button>
  
    <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -26,8 +26,11 @@
     <div class="form-group">
           <label for="tag">Form Name :</label>
           <input type="text" name="formname" id="formname" placeholder="Enter Form Name" value="{{ $form->formname }}"  class="form-control">
-          <textarea id="myInputText" rows="1" cols="22" style="display:none;">{{{ $form->htmlcontent }}} </textarea><br/>
+          
       </div>
+<br>
+<p> Drag and Drop the Container and then place Components inside it.</p>
+<br>
 @if($form->formname == "Home_Page")
 
   @if($form->htmlcontent == "")
@@ -87,14 +90,15 @@
      
     </div>  
   @endif
-
-  
+  <br>
+<p> Code </p>
+  <textarea id="myInputText" rows="100" cols="98" readonly="readonly" style="background:skyblue;">{{{ $form->htmlcontent }}} </textarea><br/>
 @endsection
 @section('scripts')
 
  <script type="text/javascript" data-keditor="script">
           $(function () {
-           
+          
                 $('#content-area').keditor({
                   
                     containerSettingEnabled: true,
@@ -235,16 +239,18 @@
         }
 
 function copyFunction() {
-  $('#myInputText').css('display','inline');
+  
   var copyText = document.getElementById("myInputText");
   copyText.select();
+
   document.execCommand("copy");
   alert("copied");
-  $('#myInputText').css('display','none');
+
+  
 }
 
 
        
         </script>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 @endsection
