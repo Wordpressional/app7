@@ -2241,7 +2241,7 @@ $(".savemlbannertheme2").click(function() {
   $(".editmlbannertheme2").hide();
   $(".imageUploadmlbannertheme2").hide();
   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
-  
+
 });
 
 
@@ -2503,4 +2503,480 @@ if (input.files && input.files[0]) {
   
 }
 
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme1" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme1").hasClass("editable")) {
+    $(".editmlfaqtheme1").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme1").hide();
+
+});
+
+ $(".editmlfaqtheme1").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme1").addClass("editable");
+  $(".textmlfaqtheme1").attr("contenteditable", "true");
+   $(".editmlfaqtheme1").hide();
+  $(".savemlfaqtheme1").show();
+ 
+});
+
+$(".savemlfaqtheme1").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme1").removeClass("editable");
+ $(".textmlfaqtheme1").removeAttr("contenteditable");
+  $(".editmlfaqtheme1").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme2").hasClass("editable")) {
+    $(".editmlfaqtheme2").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme2").hide();
+
+});
+
+ $(".editmlfaqtheme2").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme2").addClass("editable");
+  $(".textmlfaqtheme2").attr("contenteditable", "true");
+   $(".editmlfaqtheme2").hide();
+  $(".savemlfaqtheme2").show();
+ 
+});
+
+$(".savemlfaqtheme2").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme2").removeClass("editable");
+ $(".textmlfaqtheme2").removeAttr("contenteditable");
+  $(".editmlfaqtheme2").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme3" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme3").hasClass("editable")) {
+    $(".editmlfaqtheme3").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme3").hide();
+
+});
+
+ $(".editmlfaqtheme3").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme3").addClass("editable");
+  $(".textmlfaqtheme3").attr("contenteditable", "true");
+   $(".editmlfaqtheme3").hide();
+  $(".savemlfaqtheme3").show();
+ 
+});
+
+$(".savemlfaqtheme3").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme3").removeClass("editable");
+ $(".textmlfaqtheme3").removeAttr("contenteditable");
+  $(".editmlfaqtheme3").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme4" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme4").hasClass("editable")) {
+    $(".editmlfaqtheme4").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme4").hide();
+
+});
+
+ $(".editmlfaqtheme4").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme4").addClass("editable");
+  $(".textmlfaqtheme4").attr("contenteditable", "true");
+   $(".editmlfaqtheme4").hide();
+  $(".savemlfaqtheme4").show();
+ 
+});
+
+$(".savemlfaqtheme4").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme4").removeClass("editable");
+ $(".textmlfaqtheme4").removeAttr("contenteditable");
+  $(".editmlfaqtheme4").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme5" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme5").hasClass("editable")) {
+    $(".editmlfaqtheme5").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme5").hide();
+
+});
+
+ $(".editmlfaqtheme5").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme5").addClass("editable");
+  $(".textmlfaqtheme5").attr("contenteditable", "true");
+   $(".editmlfaqtheme5").hide();
+  $(".savemlfaqtheme5").show();
+ 
+});
+
+$(".savemlfaqtheme5").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme5").removeClass("editable");
+ $(".textmlfaqtheme5").removeAttr("contenteditable");
+  $(".editmlfaqtheme5").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme6" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme6").hasClass("editable")) {
+    $(".editmlfaqtheme6").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme6").hide();
+
+});
+
+ $(".editmlfaqtheme6").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme6").addClass("editable");
+  $(".textmlfaqtheme6").attr("contenteditable", "true");
+   $(".editmlfaqtheme6").hide();
+  $(".savemlfaqtheme6").show();
+ 
+});
+
+$(".savemlfaqtheme6").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme6").removeClass("editable");
+ $(".textmlfaqtheme6").removeAttr("contenteditable");
+  $(".editmlfaqtheme6").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme7" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme7").hasClass("editable")) {
+    $(".editmlfaqtheme7").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme7").hide();
+
+});
+
+ $(".editmlfaqtheme7").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme7").addClass("editable");
+  $(".textmlfaqtheme7").attr("contenteditable", "true");
+   $(".editmlfaqtheme7").hide();
+  $(".savemlfaqtheme7").show();
+ 
+});
+
+$(".savemlfaqtheme7").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme7").removeClass("editable");
+ $(".textmlfaqtheme7").removeAttr("contenteditable");
+  $(".editmlfaqtheme7").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme8" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme8").hasClass("editable")) {
+    $(".editmlfaqtheme8").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme8").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme8").hide();
+
+});
+
+ $(".editmlfaqtheme8").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme8").addClass("editable");
+  $(".textmlfaqtheme8").attr("contenteditable", "true");
+   $(".editmlfaqtheme8").hide();
+  $(".savemlfaqtheme8").show();
+ 
+});
+
+$(".savemlfaqtheme8").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme8").removeClass("editable");
+ $(".textmlfaqtheme8").removeAttr("contenteditable");
+  $(".editmlfaqtheme8").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme9" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme9").hasClass("editable")) {
+    $(".editmlfaqtheme9").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme9").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme9").hide();
+
+});
+
+ $(".editmlfaqtheme9").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme9").addClass("editable");
+  $(".textmlfaqtheme9").attr("contenteditable", "true");
+   $(".editmlfaqtheme9").hide();
+  $(".savemlfaqtheme9").show();
+ 
+});
+
+$(".savemlfaqtheme9").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme9").removeClass("editable");
+ $(".textmlfaqtheme9").removeAttr("contenteditable");
+  $(".editmlfaqtheme9").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme10" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme10").hasClass("editable")) {
+    $(".editmlfaqtheme10").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme10").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme10").hide();
+
+});
+
+ $(".editmlfaqtheme10").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme10").addClass("editable");
+  $(".textmlfaqtheme10").attr("contenteditable", "true");
+   $(".editmlfaqtheme10").hide();
+  $(".savemlfaqtheme10").show();
+ 
+});
+
+$(".savemlfaqtheme10").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme10").removeClass("editable");
+ $(".textmlfaqtheme10").removeAttr("contenteditable");
+  $(".editmlfaqtheme10").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlfaqtheme11" )
+ .on("mouseenter", function() {
+   if ($(".boxmlfaqtheme11").hasClass("editable")) {
+    $(".editmlfaqtheme11").hide();
+
+   } 
+   else
+   {
+    $(".editmlfaqtheme11").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlfaqtheme11").hide();
+
+});
+
+ $(".editmlfaqtheme11").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme11").addClass("editable");
+  $(".textmlfaqtheme11").attr("contenteditable", "true");
+   $(".editmlfaqtheme11").hide();
+  $(".savemlfaqtheme11").show();
+ 
+});
+
+$(".savemlfaqtheme11").click(function() {
+  $(this).hide();
+  $(".boxmlfaqtheme11").removeClass("editable");
+ $(".textmlfaqtheme11").removeAttr("contenteditable");
+  $(".editmlfaqtheme11").hide();
+
+  
+});
+});
 </script>
