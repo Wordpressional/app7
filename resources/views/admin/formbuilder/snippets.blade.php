@@ -381,9 +381,17 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portofolio;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portofolio">
 
 @include('shortcodes.plainhtml.portfoliot2')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Accordion">
+
+@include('shortcodes.plainhtml.accordion3')
   
 
 

@@ -2540,7 +2540,7 @@ $(".savemlfaqtheme1").click(function() {
  $(".textmlfaqtheme1").removeAttr("contenteditable");
   $(".editmlfaqtheme1").hide();
 
-  
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -2584,7 +2584,7 @@ $(".savemlfaqtheme2").click(function() {
  $(".textmlfaqtheme2").removeAttr("contenteditable");
   $(".editmlfaqtheme2").hide();
 
-  
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -2628,7 +2628,7 @@ $(".savemlfaqtheme3").click(function() {
  $(".textmlfaqtheme3").removeAttr("contenteditable");
   $(".editmlfaqtheme3").hide();
 
-  
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -2671,7 +2671,7 @@ $(".savemlfaqtheme4").click(function() {
   $(".boxmlfaqtheme4").removeClass("editable");
  $(".textmlfaqtheme4").removeAttr("contenteditable");
   $(".editmlfaqtheme4").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2715,7 +2715,7 @@ $(".savemlfaqtheme5").click(function() {
   $(".boxmlfaqtheme5").removeClass("editable");
  $(".textmlfaqtheme5").removeAttr("contenteditable");
   $(".editmlfaqtheme5").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2759,7 +2759,7 @@ $(".savemlfaqtheme6").click(function() {
  $(".textmlfaqtheme6").removeAttr("contenteditable");
   $(".editmlfaqtheme6").hide();
 
-  
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -2801,7 +2801,7 @@ $(".savemlfaqtheme7").click(function() {
   $(".boxmlfaqtheme7").removeClass("editable");
  $(".textmlfaqtheme7").removeAttr("contenteditable");
   $(".editmlfaqtheme7").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2845,7 +2845,7 @@ $(".savemlfaqtheme8").click(function() {
  $(".textmlfaqtheme8").removeAttr("contenteditable");
   $(".editmlfaqtheme8").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -2888,7 +2888,7 @@ $(".savemlfaqtheme9").click(function() {
   $(".boxmlfaqtheme9").removeClass("editable");
  $(".textmlfaqtheme9").removeAttr("contenteditable");
   $(".editmlfaqtheme9").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2932,7 +2932,7 @@ $(".savemlfaqtheme10").click(function() {
   $(".boxmlfaqtheme10").removeClass("editable");
  $(".textmlfaqtheme10").removeAttr("contenteditable");
   $(".editmlfaqtheme10").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2975,8 +2975,73 @@ $(".savemlfaqtheme11").click(function() {
   $(".boxmlfaqtheme11").removeClass("editable");
  $(".textmlfaqtheme11").removeAttr("contenteditable");
   $(".editmlfaqtheme11").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
+
+$(document).ready(function(){
+
+   $(".imageUploadmlactheme2").hide();
+
+$( ".boxmlactheme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmlactheme2").hasClass("editable")) {
+    $(".editmlactheme2").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmlactheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlactheme2").hide();
+ 
+
+});
+
+ $(".editmlactheme2").click(function() {
+  $(this).hide();
+  $(".boxmlactheme2").addClass("editable");
+   $(".editmlactheme2").hide();
+  $(".savemlactheme2").show();
+  $(".imageUploadmlactheme2").show();
+});
+
+$(".savemlactheme2").click(function() {
+  $(this).hide();
+  $(".boxmlactheme2").removeClass("editable");
+ 
+  $(".editmlactheme2").hide();
+  $(".imageUploadmlactheme2").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+
+
+
+
+$("#imageUploadmlactheme2").change(function() {
+
+    readURLmac2(this);
+});
+
+});
+function readURLmac2(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.cbakimg').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
 </script>
