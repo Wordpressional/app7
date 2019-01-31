@@ -1047,9 +1047,7 @@ $("#mcolorlibimageUpload18").change(function() {
     readURL18(this);
 });
 
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
+
 
 </script>
 <script> 

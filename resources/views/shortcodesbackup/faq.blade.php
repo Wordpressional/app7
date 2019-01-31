@@ -21,7 +21,7 @@
   
              <span class="savemlfaqtheme2">save</span>
                 <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <a role="button" class="dropdown-toggle" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Why you choose Titanic? 
                   </a>
                 </h4>
