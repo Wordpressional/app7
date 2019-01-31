@@ -17,6 +17,7 @@
 
 @endsection
 @section('css')
+@if($colortest)
 <style>
 /* Post Title Background Color */
 
@@ -71,5 +72,6 @@ background: {{ $colorsetting[6]->color }} !important;
 .lead span {
 	color: {{ $colorsetting[0]->color }} !important;
 }
+@endif
 </style>
 @endsection

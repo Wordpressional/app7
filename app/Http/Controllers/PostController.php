@@ -58,6 +58,7 @@ class PostController extends Controller
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
+        $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
         
         $post->comments_count = $post->comments()->count();
@@ -67,6 +68,7 @@ class PostController extends Controller
             'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
            
         ])->withShortcodes();
@@ -78,6 +80,7 @@ class PostController extends Controller
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
+        $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
        
         $post->comments_count = $post->comments()->count();
@@ -87,6 +90,7 @@ class PostController extends Controller
             'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
             
         ])->withShortcodes();
@@ -101,7 +105,7 @@ class PostController extends Controller
 
         $colorsetting = Colorsetting::all();
         $branding = Brand::where('id', 1)->first();
-        
+        $colortest = Colorsetting::find(1);
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
         
@@ -109,6 +113,7 @@ class PostController extends Controller
             'data' => $data,
             'post' => $post,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
             
         ])->withShortcodes();
@@ -120,11 +125,13 @@ class PostController extends Controller
         Shortcode::enable();
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
+        $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
 
         return view('webhome.allcategory', [
             'data' => $data,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
@@ -140,6 +147,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
 
         $colorsetting = Colorsetting::all();
+        $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
@@ -169,6 +177,7 @@ class PostController extends Controller
         return view('webhome.allcategory', [
             'data' => $data,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
             'posts' => $post,
             'posttags' => $this->printtags()
@@ -193,6 +202,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
 
         $colorsetting = Colorsetting::all();
+         $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
@@ -216,6 +226,7 @@ class PostController extends Controller
             'data' => $data,
             'posts' => $post,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
            
            
@@ -244,6 +255,7 @@ class PostController extends Controller
         $api_token = Auth::user()->api_token;
          //dd($api_token);
         $colorsetting = Colorsetting::all();
+         $colortest = Colorsetting::find(1);
         if($tagid)
         {
         if($tagid->id != "")
@@ -265,6 +277,7 @@ class PostController extends Controller
               'branding' => $branding,
               'api_token' => $api_token,
               'colorsetting' => $colorsetting,
+              'colortest' => $colortest,
            
         ])->withShortcodes();
         }
@@ -283,6 +296,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
 
         $colorsetting = Colorsetting::all();
+         $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
         $catid = Category::where('name', $cat)->first();
 
@@ -294,6 +308,7 @@ class PostController extends Controller
         return view('webhome.articles', [
             'data' => $data,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
             'posts' => Post::where('category_id', $catid->id)
                              ->with('author', 'media', 'likes')
@@ -342,10 +357,12 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
 
         $colorsetting = Colorsetting::all();
+         $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
         return view('webhome.articles', [
             'data' => $data,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
@@ -361,11 +378,13 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
         
         $colorsetting = Colorsetting::all();
+         $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
         
         return view('webhome.links', [
             'data' => $data,
             'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
             'branding' => $branding,
             'posts' => Post::with('author', 'media', 'likes')
                              ->withCount('comments', 'likes')
