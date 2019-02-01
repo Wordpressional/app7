@@ -21,12 +21,10 @@
         <script type="text/javascript" src="{{asset('dist/js/keditor.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('dist/js/keditor-components.min.js')}}"></script>
         <!-- End of KEditor scripts -->
-         <script type="text/javascript" src="{{asset('examples/js/examples.js')}}"></script>
-
+        
 
         <script type="text/javascript" src="{{asset('examples/plugins/code-prettify/src/prettify.js')}}"></script>
-        <script type="text/javascript" src="{{asset('examples/plugins/js-beautify-1.7.5/js/lib/beautify.js')}}"></script>
-        <script type="text/javascript" src="{{asset('examples/plugins/js-beautify-1.7.5/js/lib/beautify-html.js')}}"></script>
+       
        
         
 

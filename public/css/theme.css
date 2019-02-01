@@ -163,6 +163,41 @@
  
  display: none !important;
 }
+.editmlservice0theme1, .savemlservice0theme1, #imageUploadmlservice0theme1, span.editmlservice0theme1:hover{
+ 
+ display: none !important;
+}
+.editmlservice1theme1, .savemlservice1theme1, #imageUploadmlservice1theme1, span.editmlservice1theme1:hover{
+ 
+ display: none !important;
+}
+.editmlservice1theme2, .savemlservice1theme2, #imageUploadmlservice1theme2, span.editmlservice1theme2:hover{
+  display: none !important;
+}
+.editmlservice1theme3, .savemlservice1theme3, #imageUploadmlservice1theme3, span.editmlservice1theme3:hover{
+  display: none !important;
+} 
+.editmlservice1theme4, .savemlservice1theme4, #imageUploadmlservice1theme4, span.editmlservice1theme4:hover{
+ 
+ display: none !important;
+}
+.editmlservice1theme5, .savemlservice1theme5, #imageUploadmlservice1theme5, span.editmlservice1theme5:hover{
+  display: none !important;
+}
+.editmlservice1theme6, .savemlservice1theme6, #imageUploadmlservice1theme6, span.editmlservice1theme6:hover{
+  display: none !important;
+} 
+
+.editmlservice1theme7, .savemlservice1theme7, #imageUploadmlservice1theme7, span.editmlservice1theme7:hover{
+ 
+ display: none !important;
+}
+.editmlservice1theme8, .savemlservice1theme8, #imageUploadmlservice1theme8, span.editmlservice1theme8:hover{
+  display: none !important;
+}
+.editmlservice1theme9, .savemlservice1theme9, #imageUploadmlservice1theme9, span.editmlservice1theme9:hover{
+  display: none !important;
+} 
 
 }
 

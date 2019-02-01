@@ -1,3 +1,4 @@
+<script src="{{ asset(mix('js/app.js')) }}"></script>
 <!-- jQuery library -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -11,7 +12,7 @@
 @if (Request::is('posts/*'))
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 @endif
-<script src="{{ asset(mix('js/app.js')) }}"></script>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
@@ -53,7 +54,8 @@
        
          <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
         
-        <script type="text/javascript">jssor_1_slider_init();</script>
+        <script type="text/javascript"> if($("#jssor_1").length != 0) {
+  jssor_1_slider_init(); }</script>
 
 <script type="text/javascript">
           $(function () {

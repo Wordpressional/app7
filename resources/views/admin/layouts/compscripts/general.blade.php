@@ -1,5 +1,5 @@
  
-  
+  <script src="{{ asset(mix('js/app.js')) }}"></script>
     <!-- jQuery library -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -14,7 +14,7 @@
   
 
   <!-- Scripts -->
-    <script src="{{ asset(mix('js/app.js')) }}"></script>
+    
     <script src="{{ asset(mix('js/admin.js')) }}"></script>
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
 

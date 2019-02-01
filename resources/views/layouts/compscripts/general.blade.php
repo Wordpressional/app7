@@ -56,7 +56,8 @@
        
          <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
         
-        <script type="text/javascript">jssor_1_slider_init();</script>
+        <script type="text/javascript"> if($("#jssor_1").length != 0) {
+  jssor_1_slider_init(); }</script>
 
 <script type="text/javascript">
           $(function () {

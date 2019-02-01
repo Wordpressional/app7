@@ -275,6 +275,12 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.png')}}" data-keditor-title="Footerlinks" data-keditor-categories="HTMLTemplates;Menus">
+
+@include('shortcodes.plainhtml.footerlinks2')
+
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/gallery.png')}}" data-keditor-title="Gallery" data-keditor-categories="HTMLTemplates;Gallery">
 
 @include('shortcodes.plainhtml.gallery')
