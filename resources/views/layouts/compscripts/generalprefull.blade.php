@@ -59,10 +59,12 @@
 
 <script type="text/javascript">
           $(function () {
-            
-
+           $('#content-area').find('section').attr('contentEditable',false);
+            $('#previewtest').find('section').attr('contentEditable',false);
             $( ".keditor-toolbar").hide();
- 
+            
+          
+
         });     
  </script>   
    

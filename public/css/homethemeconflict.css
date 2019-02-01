@@ -295,3 +295,10 @@
 {
   display: none !important;
 }
+.editmparallaxone1, .savemparallaxone1, #imageUploadmparallaxone1, span.editmparallaxone1:hover{
+ 
+ display: none !important;
+}
+.editmparallaxone2, .savemparallaxone2, #imageUploadmparallaxone2, span.editmparallaxone2:hover{
+  display: none !important;
+}

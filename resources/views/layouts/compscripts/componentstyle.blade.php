@@ -2886,7 +2886,115 @@ label.imageUploadmlservice0theme1:after {
   margin: auto;
   background-color: white;
 }
+.editmparallaxone1, .savemparallaxone1 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+  font-size: 12px;
+}
 
+.editmparallaxone1 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemparallaxone1 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmparallaxone2, .savemparallaxone2 {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 120px;
+  right: 0px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  float: right;
+   font-size: 12px;
+}
+
+.editmparallaxone2 { 
+  background: blue;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemparallaxone2 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+.labelmparallaxone2
+{
+  
+  position: relative;
+  top: 120px;
+  right: 0px;
+ 
+  z-index: 10000;
+  float: right;
+}
+
+
+
+
+
+img#imagePreviewmparallaxone2 {
+    display: inline;
+   
+}
+
+
+
+#imageUploadmparallaxone2  {
+  display:none;
+}
+
+label.imageUploadmparallaxone2:after {
+  content: "\f093";
+  font-family: "FontAwesome";
+  color: black;
+  width: 30px;
+  display: inline;
+  position: relative;
+  top: 0px;
+  right:-10px;
+  padding: 8px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  margin: auto;
+  background-color: white;
+   font-size: 12px;
+}
 
 }
 

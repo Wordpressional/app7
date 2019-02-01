@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) and (min-width: 50px){
+<style>
 .editmlaboutspathemeone1, .savemlaboutspathemeone1, #imageUploadmlaboutspathemeone1, span.editmlaboutspathemeone1:hover{
  
  display: none !important;
@@ -63,6 +63,96 @@
 .editmlaboutspathemeone19, .savemlaboutspathemeone19, #imageUploadmlaboutspathemeone19, span.editmlaboutspathemeone19:hover{
   display: none !important;
 }
+.inputmaboutfacebook4, .inputmabouttwitter5, .inputmabouttelegram6, .inputmabouttwitter7, 
+.inputmabouttwitter8, .inputmaboutfacebook9, .inputmabouttwitter10, 
+.inputmabouttelegram11, .inputmabouttwitter12, .inputmabouttwitter13, 
+.inputmaboutfacebook14, .inputmabouttwitter15, .inputmabouttelegram16
+{
+	display: none !important;
+}
+
+.submitmaboutfacebook4, .submitmabouttwitter5, .submitmabouttelegram6, .submitmabouttwitter7, 
+.submitmabouttwitter8, .submitmaboutfacebook9, .submitmabouttwitter10, 
+.submitmabouttelegram11, .submitmabouttwitter12, .submitmabouttwitter13, 
+.submitmaboutfacebook14, .submitmabouttwitter15, .submitmabouttelegram16
+{
+	display: none !important;
+}
+
+.mcolorlibedit1, .mcolorlibsave1, #mcolorlibimageUpload1 {
+ 
+ display: none !important;
+}
+.mcolorlibedit2, .mcolorlibsave2, #mcolorlibimageUpload2 {
+ 
+ display: none !important;
+}
+.mcolorlibedit3, .mcolorlibsave3, #mcolorlibimageUpload3 {
+ 
+ display: none !important;
+}
+.mcolorlibedit4, .mcolorlibsave4, #mcolorlibimageUpload4 {
+ 
+ display: none !important;
+}
+.mcolorlibedit5, .mcolorlibsave5, #mcolorlibimageUpload5 {
+ 
+ display: none !important;
+}
+.mcolorlibedit6, .mcolorlibsave6, #mcolorlibimageUpload6 {
+ 
+ display: none !important;
+}
+.mcolorlibedit7, .mcolorlibsave7, #mcolorlibimageUpload7 {
+ 
+ display: none !important;
+}
+.mcolorlibedit8, .mcolorlibsave8, #mcolorlibimageUpload8 {
+ 
+ display: none !important;
+}
+.mcolorlibedit9, .mcolorlibsave9, #mcolorlibimageUpload9 {
+ 
+ display: none !important;
+}
+.mcolorlibedit10, .mcolorlibsave10, #mcolorlibimageUpload10 {
+ 
+ display: none !important;
+
+
+}
+.mcolorlibedit11, .mcolorlibsave11, #mcolorlibimageUpload11 {
+ 
+ display: none !important;
+}
+.mcolorlibedit12, .mcolorlibsave12, #mcolorlibimageUpload12 {
+ 
+ display: none !important;
+}
+.mcolorlibedit13, .mcolorlibsave13, #mcolorlibimageUpload13 {
+ 
+ display: none !important;
+}
+.mcolorlibedit14, .mcolorlibsave14, #mcolorlibimageUpload14 {
+ 
+ display: none !important;
+}
+.mcolorlibedit15, .mcolorlibsave15, #mcolorlibimageUpload15 {
+ 
+ display: none !important;
+}
+.mcolorlibedit16, .mcolorlibsave16, #mcolorlibimageUpload16 {
+ 
+ display: none !important;
+}
+.mcolorlibedit17, .mcolorlibsave17, #mcolorlibimageUpload17 {
+ 
+ display: none !important;
+}
+.mcolorlibedit18, .mcolorlibsave18, #mcolorlibimageUpload18 {
+ 
+ display: none !important;
+}
 
 .editmlaboutt1theme1, .savemlaboutt1theme1, #imageUploadmlaboutt1theme1, span.editmlaboutt1theme1:hover{
  
@@ -74,7 +164,6 @@
 .editmlaboutt1theme3, .savemlaboutt1theme3, #imageUploadmlaboutt1theme3, span.editmlaboutt1theme3:hover{
   display: none !important;
 }
-
 .editmlbannertheme1, .savemlbannertheme1, #imageUploadmlbannertheme1, span.editmlbannertheme1:hover{
  
  display: none !important;
@@ -82,7 +171,6 @@
 .editmlbannertheme2, .savemlbannertheme2, #imageUploadmlbannertheme2, span.editmlbannertheme2:hover{
   display: none !important;
 }
-
 .editmlfactsblabethemeone1, .savemlfactsblabethemeone1, #imageUploadmlfactsblabethemeone1, span.editmlfactsblabethemeone1:hover{
  
  display: none !important;
@@ -135,13 +223,14 @@
  
  display: none !important;
 }
-.editmlfaqtheme11, .savemlfaqtheme11, #imageUploadmlfaqtheme11, span.editmlfaqtheme11:hover{
-  display: none !important;
-}
+
 .editmlactheme2, .savemlactheme2, #imageUploadmlactheme2, span.editmlactheme2:hover{
   display: none !important;
 }
-
+.editmlfooterbladethemeone1, .savemlfooterbladethemeone1, #imageUploadmlfooterbladethemeone1, span.editmlfooterbladethemeone1:hover{
+ 
+ display: none !important;
+}
 .editmlfooterbladethemeone2, .savemlfooterbladethemeone2, #imageUploadmlfooterbladethemeone2, span.editmlfooterbladethemeone2:hover{
   display: none !important;
 }
@@ -197,14 +286,23 @@
 }
 .editmlservice1theme9, .savemlservice1theme9, #imageUploadmlservice1theme9, span.editmlservice1theme9:hover{
   display: none !important;
+} 
+.inputmservice1telegram9, .inputmservice1twitter8, .inputmservice1facebook7
+{
+  display: none !important;
 }
+
+.submitmservice1facebook7, .submitmservice1twitter8, .submitmservice1telegram9
+{
+  display: none !important;
+}
+
 .editmparallaxone1, .savemparallaxone1, #imageUploadmparallaxone1, span.editmparallaxone1:hover{
  
  display: none !important;
 }
 .editmparallaxone2, .savemparallaxone2, #imageUploadmparallaxone2, span.editmparallaxone2:hover{
   display: none !important;
-} 
-
 }
 
+</style>

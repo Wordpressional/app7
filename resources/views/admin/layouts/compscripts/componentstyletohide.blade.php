@@ -964,6 +964,12 @@ img#mcolorlibimagePreview18 {
 .editmlservice1theme9, .savemlservice1theme9, #imageUploadmlservice1theme9, span.editmlservice1theme9:hover{
   display: none !important;
 } 
-
+.editmparallaxone1, .savemparallaxone1, #imageUploadmparallaxone1, span.editmparallaxone1:hover{
+ 
+ display: none !important;
+}
+.editmparallaxone2, .savemparallaxone2, #imageUploadmparallaxone2, span.editmparallaxone2:hover{
+  display: none !important;
+}
 
 </style>

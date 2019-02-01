@@ -3,13 +3,15 @@
 <html lang="en">
     <head>
          @include('admin.layouts.compscripts.previewcss')
-         @include('layouts.compscripts.componentstyle')
+          @include('layouts.compscripts.previewfullhide')
+         
     @yield('css') 
  </head>
     <body>
    <div id="app">
+
      <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
-      <span><a style="font-size:30px; color:red; padding:20px;" class="requestEditSite">
+   <span><a style="font-size:30px; color:red; padding:20px;" class="requestEditSite">
    <i class="fa fa-edit"></i></a> </span>
    <span><a style="font-size:30px; color:red; padding:20px;" class="requestDesktopSite">
    <i class="fa fa-desktop"></i></a> </span>
@@ -39,9 +41,10 @@
 
 </div>
      
-    @include('layouts.compscripts.generalpre')
+    @include('layouts.compscripts.generalprefull')
+
     @include('layouts.compscripts.themeone')
-    @include('layouts.compscripts.independentcomponents')
+    
     @include('layouts.compscripts.serviceworker')
        
          @include ('layouts.shortcode-layout')
@@ -51,8 +54,6 @@
 
 $(document).ready(function(){
 $(".requestMobileSite").click(function(){
-
-
 //alert("mobile");
 if(detectmob()){
   alert("This function works only on desktop");
@@ -68,11 +69,10 @@ $('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("admin.f
  
  
 });
-
 $(".requestEditSite").click(function(){
 //alert("desktop");
-window.location.href = "{{ url('/admin/forms/preview')}}"+"/"+"{{$form->id}}";
-  
+//location.reload();
+  window.location.href = "{{ url('/admin/forms/preview')}}"+"/"+"{{$form->id}}";
 // vpw = 100;
 // vph = 'auto';
 // $('.mau').css({'width': vpw + '%'});
@@ -95,8 +95,6 @@ window.location.href = "{{ url('/admin/forms/previewfull')}}"+"/"+"{{$form->id}}
 });
 
 $(".requestTabletSite").click(function(){
-
- 
 /*  if(detectmob()){
   alert("This function works only on desktop");
 } else {
