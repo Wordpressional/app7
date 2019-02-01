@@ -1,6 +1,3 @@
-
-
-
 <!-- jQuery library -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -61,9 +58,6 @@
 <script type="text/javascript">
           $(function () {
            
-            $('#content-area').find('section').attr('contentEditable',false);
-            $('#previewtest').find('section').attr('contentEditable',false);
-
             $( ".keditor-toolbar").hide();
             
           

@@ -368,6 +368,13 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/contspecial.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Contact Forms">
+@include('shortcodes.plainhtml.simplecontactme')
+  
+
+
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/bluecon.png')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Contact Forms">
 @include('shortcodes.plainhtml.bluecontact')
   

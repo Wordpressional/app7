@@ -33,10 +33,11 @@
 
 <div class="precon1">
 </div>
-</div>
 
+
+</div>
      
-    @include('layouts.compscripts.general')
+    @include('layouts.compscripts.generalpre')
     @include('layouts.compscripts.themeone')
     @include('layouts.compscripts.independentcomponents')
     @include('layouts.compscripts.serviceworker')
@@ -179,6 +180,9 @@ function detectmob() {
 })(jQuery)
 
 $(".dropdowns").dropdowns();
+
+
+
 </script>
 
 <style>

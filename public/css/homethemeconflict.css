@@ -222,9 +222,32 @@
  
  display: none !important;
 }
-.editmlfaqtheme11, .savemlfaqtheme11, #imageUploadmlfaqtheme11, span.editmlfaqtheme11:hover{
-  display: none !important;
-}
+
 .editmlactheme2, .savemlactheme2, #imageUploadmlactheme2, span.editmlactheme2:hover{
   display: none !important;
+}
+.editmlfooterbladethemeone1, .savemlfooterbladethemeone1, #imageUploadmlfooterbladethemeone1, span.editmlfooterbladethemeone1:hover{
+ 
+ display: none !important;
+}
+.editmlfooterbladethemeone2, .savemlfooterbladethemeone2, #imageUploadmlfooterbladethemeone2, span.editmlfooterbladethemeone2:hover{
+  display: none !important;
+}
+.editmlfooterbladethemeone3, .savemlfooterbladethemeone3, #imageUploadmlfooterbladethemeone3, span.editmlfooterbladethemeone3:hover{
+  display: none !important;
+} 
+.editmlfooterbladethemeone4, .savemlfooterbladethemeone4, #imageUploadmlfooterbladethemeone4, span.editmlfooterbladethemeone4:hover{
+ 
+ display: none !important;
+}
+.editmlfooterbladethemeone5, .savemlfooterbladethemeone5, #imageUploadmlfooterbladethemeone5, span.editmlfooterbladethemeone5:hover{
+  display: none !important;
+}
+.editmlfooterbladethemeone6, .savemlfooterbladethemeone6, #imageUploadmlfooterbladethemeone6, span.editmlfooterbladethemeone6:hover{
+  display: none !important;
+} 
+
+.editmlfooterbladethemeone7, .savemlfooterbladethemeone7, #imageUploadmlfooterbladethemeone7, span.editmlfooterbladethemeone7:hover{
+ 
+ display: none !important;
 }
