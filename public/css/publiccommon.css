@@ -406,10 +406,10 @@ section.presentation .side.left {
 }
 section.presentation .side {
     width: 450px;
-    display: inline-block;
+    display: inline-flex;
     line-height: normal;
     background: rgba(255,255,255,.1);
-    padding: 20px 25px;
+    padding: 10px;
     border-radius: 5px;
     margin: 0 auto;
     text-align: left;
@@ -435,7 +435,10 @@ section.presentation {
     padding: 25px 0;
     color: #fff;
     text-align: center !important;
+
+    background: cadetblue;
 }
+
 section.presentation .side>ul li {
     min-height: 100px;
     margin:10px;
@@ -443,104 +446,103 @@ section.presentation .side>ul li {
 
 
 section.presentation .side.left>h3.trusted:before {
-       content: "";
+      
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/global.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 }
 section.presentation .side.right>h3.dev:before {
-       content: "";
+   
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/secure.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 }
 
 section.presentation .side>ul li.feature.security:before {
-     content: "";
+  
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/icolisting.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 }
 section.presentation .side>ul li.feature.currencies:before {
-     content: "";
+    
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/icopromotions.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 }
 section.presentation .side>ul li.feature.sources:before {
-     content: "";
+  
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/launchico.png");
+ 
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 
 }
 section.presentation .side>ul li.feature.support:before {
-     content: "";
+   
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/whitepaper.png");
-  border-radius: 60px;
+  
   float: left;
   margin-right: 10px;
 }
 section.presentation .side>ul li.feature.powerful:before {
-     content: "";
+     
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/exchange.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 }
 section.presentation .side>ul li.feature.docs:before {
-  content: "";
+  
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/contractdeploy.png");
+ 
   border-radius: 60px;
   float: left;
   margin-right: 10px;
     
 }
 section.presentation .side>ul li.feature.historical:before {
-     content: "";
+    
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/dapp.png");
+
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 }
 section.presentation .side>ul li.feature.conversion:before {
-     content: "";
+    
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/freeicosubmission.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
@@ -553,6 +555,48 @@ section.presentation .side>p {
     margin-top: 15px;
     text-align: justify;
 }
+
+.docs {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+}
+
+.conversion {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+}
+
+.historical {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+
+}
+
+.powerful {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+}
+
+.support {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+}
+
+.sources {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+}
+
+.currencies {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+}
+
+.security {
+    background: rgb(32, 70, 119, 0.2);
+    padding: 10px;
+}
+
 #hitbtc-ticker.hit-big #hitbtc-logo{
   display: none !important;
 }
@@ -829,7 +873,7 @@ h4.media-heading {
 }
 
 section.presentation .sidepurple.left {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 section.presentation .sidepurple {
@@ -851,21 +895,21 @@ section.presentation .sidepurple>ul li {
 
 
 section.presentation .sidepurple.left>h4.trusted:before {
-       content: "";
+    
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/global.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
 }
 section.presentation .sidepurple.right>h4.dev:before {
-       content: "";
+  
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("../introimgs/gallery/secure.png");
+  
   border-radius: 60px;
   float: left;
   margin-right: 10px;
@@ -3176,7 +3220,29 @@ color: white;
     margin: 5px;
 }
 
+section.presentation .sidepurple {
+    width: 300px;
 }
+
+section.presentation .sidepurple.left {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+section.presentation .side.left
+{
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+section.presentation .side
+{
+  width: 300px;
+}
+
+}
+
+
 
 #menu1 ul {
   margin: 0;
@@ -3819,4 +3885,9 @@ color: white;
 .contmfooterrss4,.contmfootergoogleplus7,.contmfooteryoutube5,.contmfooterlinkedin6,.contmfooterrss4,.contmfootertwitter3,.contmfooterfacebook2
 {
   float:left;
+}
+span.service-icon {
+    display: inline;
+    font-size: 90px;
+    float: left;
 }
