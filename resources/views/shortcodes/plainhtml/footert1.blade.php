@@ -10,17 +10,107 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<div id="form-main">
+				
 				    
-				    <ul class="social-icons">
-				        <li><a href="https://smartpixel.id/gwenyth/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-				        <li><a href="https://smartpixel.id/gwenyth/" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-				        <li><a href="https://smartpixel.id/gwenyth/" class="social-icon"> <i class="fa fa-rss"></i></a></li>
-				        <li><a href="https://smartpixel.id/gwenyth/" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-				        <li><a href="https://smartpixel.id/gwenyth/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-				        <li><a href="https://smartpixel.id/gwenyth/" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
-				    </ul>
-				</div>
+				     <ul class="social-icons">
+                 
+              
+                  
+                    
+                 
+                  <li>
+                  	<span class="contmfooterfacebook2">
+                    <input type="text" name="mfooterfacebook" value="" class="inputmfooterfacebook2" placeholder="http://facebook.com"><br>
+                    <input type="submit" value="Submit" class="submitmfooterfacebook2">
+                    </span>
+                <span class="boxmlfooterbladethemeone2">
+                  <span class="editmlfooterbladethemeone2">edit</span>
+                <a href="#your-link"  class="social-icon" id="hrefchangemfooterfacebook2"> 
+                  <i class="fa fa-facebook">&nbsp;</i>
+                </a>
+              </span>
+              </li>
+                  
+
+                  
+                  <li>
+                  	<span class="contmfootertwitter3">
+                  <input type="text" name="mfootertwitter" value="" class="inputmfootertwitter3" placeholder="http://twitter.com"><br>
+                  <input type="submit" value="Submit" class="submitmfootertwitter3">
+                    </span>
+                  <span class="boxmlfooterbladethemeone3">
+                  <span class="editmlfooterbladethemeone3">edit</span>
+                  <a href="#your-link"class="social-icon" id="hrefchangemfootertwitter3"> 
+                    <i class="fa fa-twitter">&nbsp;</i></a>
+                  </span>
+                  </li>
+
+
+
+                 
+                <li>
+                	 <span class="contmfooterrss4">
+                  <input type="text" name="mfooterrss" value="" class="inputmfooterrss4" placeholder="http://rss.com"><br>
+                  <input type="submit" value="Submit" class="submitmfooterrss4"">
+                    </span>
+                  <span class="boxmlfooterbladethemeone4">
+                  <span class="editmlfooterbladethemeone4">edit</span>
+                  <a href="#your-link" class="social-icon" id="hrefchangemfooterrss4" > 
+                    <i class="fa fa-rss">&nbsp;</i></a>
+                  </span>
+                  </li>
+
+
+
+
+                 
+                <li>
+                	 <span class="contmfooteryoutube5">
+                  <input type="text" name="mfooteryoutube" value="" class="inputmfooteryoutube5" placeholder="http://youtube.com"><br>
+                  <input type="submit" value="Submit" class="submitmfooteryoutube5"">
+                  </span>
+
+                   <span class="boxmlfooterbladethemeone5">
+                    <span class="editmlfooterbladethemeone5">edit</span>
+                  <a href="#your-link" class="social-icon" id="hrefchangemfooteryoutube5"> 
+                  <i class="fa fa-youtube">&nbsp;</i></a>
+                   </span>
+                </li>
+
+
+
+
+
+                
+                <li>
+                	 <span class="contmfooterlinkedin6">
+                  <input type="text" name="mfooterlinkedin" value="" class="inputmfooterlinkedin6" placeholder="http://linkedin.com"><br>
+                  <input type="submit" value="Submit" class="submitmfooterlinkedin6">
+                  </span>
+                  <span class="boxmlfooterbladethemeone6">
+                   <span class="editmlfooterbladethemeone6">edit</span> 
+                  <a href="#your-link" class="social-icon" id="hrefchangemfooterlinkedin6"> 
+                  <i class="fa fa-linkedin">&nbsp;</i></a>
+                </span>
+                </li>
+
+
+
+
+               
+                <li>
+                	 <span class="contmfootergoogleplus7">
+                  <input type="text" name="mfootergoogleplus" value="" class="inputmfootergoogleplus7" placeholder="http://googleplus.com"><br>
+                  <input type="submit" value="Submit" class="submitmfootergoogleplus7">
+                  </span>
+                   <span class="boxmlfooterbladethemeone7">
+                   <span class="editmlfooterbladethemeone7">edit</span>
+                  <a href="#your-link" class="social-icon" id="hrefchangemfootergoogleplus7"> 
+                    <i class="fa fa-google-plus">&nbsp;</i></a>
+                  </span>
+                  </li>
+            </ul>
+				
 			</div>
 		</div>
 	</div>
@@ -33,7 +123,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="copyright text-center ">
-						<span class="wow fadeInUp" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">© 2017 Gwenyth Themes. All Rights Reserved<br>Developed by lapakweb</span>
+						<span>© 2017 XYZ Themes. All Rights Reserved<br>Developed by ABC</span>
 					</div>
 				</div>
 			</div>
@@ -41,11 +131,5 @@
 	</div>
 	<!-- END FOOTER -->
 
-  	<!-- START SCROOL UP DESIGN AREA -->
-    <div class="scroll-to-up">
-        <div class="scrollup" style="display: block;">
-            <span class="fa fa-arrow-up"></span>
-        </div>
-    </div>
-    <!-- / END SCROOL UP DESIGN AREA -->
+  
 </div>

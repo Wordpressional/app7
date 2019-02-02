@@ -1,12 +1,20 @@
 <div class="big-leader">
-<div class="backstretch">
-<img src="{{asset('parallax/bcg_slide-1.jpg')}}">
+<div class="backstretch  boxmlparallaxonetheme3">
+   <span class="editmlparallaxonetheme3">edit</span>
+  
+<span class="savemlparallaxonetheme3">save</span>
+<input type='file' id="imageUploadmlparallaxonetheme3" accept=".png, .jpg, .jpeg" />
+<label class="imageUploadmlparallaxonetheme3" for="imageUploadmlparallaxonetheme3">&nbsp;</label>
+<div class="backstretchone">&nbsp;</div>
 </div>
 
-<div class="backstretch">
+<div class="backstretchcon">
 <div class="container">
-<div class="row"> 
-	<br>
+<div class="row boxmlparallaxonetheme1 textmlparallaxonetheme1"> 
+    <span class="editmlparallaxonetheme1">edit</span>
+  
+    <span class="savemlparallaxonetheme1">save</span>
+  <br>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 <p>Why do we use it?
@@ -21,7 +29,12 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 </div>
 </div>
 </div>
-<div class="backstretch">
-<img src="{{asset('parallax/bcg_slide-2.jpg')}}">
+<div class="backstretch  boxmlparallaxonetheme2">
+   <span class="editmlparallaxonetheme2">edit</span>
+
+<span class="savemlparallaxonetheme2">save</span>
+<input type='file' id="imageUploadmlparallaxonetheme2" accept=".png, .jpg, .jpeg" />
+<label class="imageUploadmlparallaxonetheme2" for="imageUploadmlparallaxonetheme2">&nbsp;</label>
+<div class="backstretchtwo">&nbsp;</div>
 </div>
 </div>

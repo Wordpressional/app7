@@ -35,6 +35,7 @@
     </div>
 </div>
 @include('admin.layouts.compscripts.generalk')
+
 @include('admin.layouts.compscripts.serviceworker')
 @yield('scripts')
 

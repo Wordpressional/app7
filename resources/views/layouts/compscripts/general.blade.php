@@ -28,28 +28,7 @@
 <script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
 <script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 <script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
- <script type="text/javascript">
-          $(function () {
-           
-            $('#content-area').find('section').attr('contentEditable',false);
-            $('#previewtest').find('section').attr('contentEditable',false);
-
-            $( ".keditor-toolbar").hide();
-            
-          
-
-          jQuery(document).on('ready', function(){
-    
-            $('a.page-scroll').on('click', function(e){
-                var anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $(anchor.attr('href')).offset().top - 50
-                }, 1500);
-                e.preventDefault();
-                });     
-            });
-        });     
- </script>     
+   
 
   
    <!-- Extra plugin css -->
@@ -69,15 +48,29 @@
         
        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       
-
+ <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 
       
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
+       
          <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
-        <script type="text/javascript">jssor_1_slider_init();</script>
+        
+        <script type="text/javascript"> if($("#jssor_1").length != 0) {
+  jssor_1_slider_init(); }</script>
 
+<script type="text/javascript">
+          $(function () {
+           
+            $('#content-area').find('section').attr('contentEditable',false);
+            $('#previewtest').find('section').attr('contentEditable',false);
 
+            $( ".keditor-toolbar").hide();
+            
+          
+
+        });     
+ </script>   
    
 <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
 
@@ -104,11 +97,11 @@
 
 
                
-                
+  
                 
 
             </script>
-     <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
+    
  @include ('layouts.shortcode-layout')    
 
 

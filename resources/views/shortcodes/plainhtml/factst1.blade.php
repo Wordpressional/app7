@@ -4,7 +4,7 @@
          <span class="editmlfactsblabethemeone5">edit</span>
          <span class="savemlfactsblabethemeone5">save</span>
           <span class="labelmlfactsblabethemeone5">
-            <label class="imageUploadmlfactsblabethemeone5" for="imageUploadmlfactsblabethemeone5"></label></span>
+            <label class="imageUploadmlfactsblabethemeone5" for="imageUploadmlfactsblabethemeone5">&nbsp;</label></span>
 
           <input type='file' id="imageUploadmlfactsblabethemeone5" accept=".png, .jpg, .jpeg" />
       <div class="container-fluid facts">

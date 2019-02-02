@@ -64,7 +64,7 @@ Version      : 1.0
 			});
 
 			// Navigation Scroll - ljepo radi materem
-			$('a').click(function(event) {
+			$('.cd-main-content a').click(function(event) {
 			    var id = $(this).attr("href");
 			    var offset = 70;
 			    var target = $(id).offset().top - offset;

@@ -1,8 +1,5 @@
- <!-- Scripts -->
-    <script src="{{ asset(mix('js/app.js')) }}"></script>
-    <script src="{{ asset(mix('js/admin.js')) }}"></script>
-    <script src="{{ asset('js/adminlte.min.js') }}"></script>
-  
+ 
+  <script src="{{ asset(mix('js/app.js')) }}"></script>
     <!-- jQuery library -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -15,6 +12,13 @@
      <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
   
+
+  <!-- Scripts -->
+    
+    <script src="{{ asset(mix('js/admin.js')) }}"></script>
+    <script src="{{ asset('js/adminlte.min.js') }}"></script>
+
+    
      <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
@@ -152,7 +156,6 @@
         return false;
         }
 
-       
-
+ 
 
     </script>
