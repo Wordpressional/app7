@@ -3830,5 +3830,551 @@ var inputmservice1telegram9 = $('.inputmservice1telegram9').val();
   $('#hrefchangemservice1telegram9').attr("href",inputmservice1telegram9);
 }
 
+$(document).ready(function(){
+
+  
+
+$( ".boxmlparallaxonetheme1" )
+ .on("mouseenter", function() {
+   if ($(".boxmlparallaxonetheme1").hasClass("editable")) {
+    $(".editmlparallaxonetheme1").hide();
+
+   } 
+   else
+   {
+    $(".editmlparallaxonetheme1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlparallaxonetheme1").hide();
+
+});
+
+ $(".editmlparallaxonetheme1").click(function() {
+  $(this).hide();
+  $(".boxmlparallaxonetheme1").addClass("editable");
+  $(".textmlparallaxonetheme1").attr("contenteditable", "true");
+   $(".editmlparallaxonetheme1").hide();
+  $(".savemlparallaxonetheme1").show();
+ 
+});
+
+$(".savemlparallaxonetheme1").click(function() {
+  $(this).hide();
+  $(".boxmlparallaxonetheme1").removeClass("editable");
+ $(".textmlparallaxonetheme1").removeAttr("contenteditable");
+  $(".editmlparallaxonetheme1").hide();
+
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmlparallaxonetheme2").hide();
+
+$( ".boxmlparallaxonetheme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmlparallaxonetheme2").hasClass("editable")) {
+    $(".editmlparallaxonetheme2").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmlparallaxonetheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlparallaxonetheme2").hide();
+ 
+
+});
+
+ $(".editmlparallaxonetheme2").click(function() {
+  $(this).hide();
+  $(".boxmlparallaxonetheme2").addClass("editable");
+   $(".editmlparallaxonetheme2").hide();
+  $(".savemlparallaxonetheme2").show();
+  $(".imageUploadmlparallaxonetheme2").show();
+});
+
+$(".savemlparallaxonetheme2").click(function() {
+  $(this).hide();
+  $(".boxmlparallaxonetheme2").removeClass("editable");
+ 
+  $(".editmlparallaxonetheme2").hide();
+  $(".imageUploadmlparallaxonetheme2").hide();
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+
+
+
+
+$("#imageUploadmlparallaxonetheme2").change(function() {
+
+    readURLparallaxtwo2(this);
+});
+
+});
+function readURLparallaxtwo2(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.backstretchtwo').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmlparallaxonetheme3").hide();
+
+$( ".boxmlparallaxonetheme3" )
+ .on("mouseenter", function() {
+   if ($(".boxmlparallaxonetheme3").hasClass("editable")) {
+    $(".editmlparallaxonetheme3").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmlparallaxonetheme3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlparallaxonetheme3").hide();
+ 
+
+});
+
+ $(".editmlparallaxonetheme3").click(function() {
+  $(this).hide();
+  $(".boxmlparallaxonetheme3").addClass("editable");
+   $(".editmlparallaxonetheme3").hide();
+  $(".savemlparallaxonetheme3").show();
+  $(".imageUploadmlparallaxonetheme3").show();
+});
+
+$(".savemlparallaxonetheme3").click(function() {
+  $(this).hide();
+  $(".boxmlparallaxonetheme3").removeClass("editable");
+ 
+  $(".editmlparallaxonetheme3").hide();
+  $(".imageUploadmlparallaxonetheme3").hide();
+   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+
+
+
+
+$("#imageUploadmlparallaxonetheme3").change(function() {
+
+    readURLparallaxtwo3(this);
+});
+
+});
+function readURLparallaxtwo3(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+              console.log(e.target.result);
+               $('.backstretchone').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlservices1theme1" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme1").hasClass("editable")) {
+    $(".editmlservices1theme1").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme1").hide();
+
+});
+
+ $(".editmlservices1theme1").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme1").addClass("editable");
+  $(".textmlservices1theme1").attr("contenteditable", "true");
+   $(".editmlservices1theme1").hide();
+  $(".savemlservices1theme1").show();
+ 
+});
+
+$(".savemlservices1theme1").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme1").removeClass("editable");
+ $(".textmlservices1theme1").removeAttr("contenteditable");
+  $(".editmlservices1theme1").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlservices1theme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme2").hasClass("editable")) {
+    $(".editmlservices1theme2").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme2").hide();
+
+});
+
+ $(".editmlservices1theme2").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme2").addClass("editable");
+  $(".textmlservices1theme2").attr("contenteditable", "true");
+   $(".editmlservices1theme2").hide();
+  $(".savemlservices1theme2").show();
+ 
+});
+
+$(".savemlservices1theme2").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme2").removeClass("editable");
+ $(".textmlservices1theme2").removeAttr("contenteditable");
+  $(".editmlservices1theme2").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlservices1theme3" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme3").hasClass("editable")) {
+    $(".editmlservices1theme3").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme3").hide();
+
+});
+
+ $(".editmlservices1theme3").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme3").addClass("editable");
+  $(".textmlservices1theme3").attr("contenteditable", "true");
+   $(".editmlservices1theme3").hide();
+  $(".savemlservices1theme3").show();
+ 
+});
+
+$(".savemlservices1theme3").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme3").removeClass("editable");
+ $(".textmlservices1theme3").removeAttr("contenteditable");
+  $(".editmlservices1theme3").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlservices1theme4" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme4").hasClass("editable")) {
+    $(".editmlservices1theme4").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme4").hide();
+
+});
+
+ $(".editmlservices1theme4").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme4").addClass("editable");
+  $(".textmlservices1theme4").attr("contenteditable", "true");
+   $(".editmlservices1theme4").hide();
+  $(".savemlservices1theme4").show();
+ 
+});
+
+$(".savemlservices1theme4").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme4").removeClass("editable");
+ $(".textmlservices1theme4").removeAttr("contenteditable");
+  $(".editmlservices1theme4").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlservices1theme5" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme5").hasClass("editable")) {
+    $(".editmlservices1theme5").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme5").hide();
+
+});
+
+ $(".editmlservices1theme5").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme5").addClass("editable");
+  $(".textmlservices1theme5").attr("contenteditable", "true");
+   $(".editmlservices1theme5").hide();
+  $(".savemlservices1theme5").show();
+ 
+});
+
+$(".savemlservices1theme5").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme5").removeClass("editable");
+ $(".textmlservices1theme5").removeAttr("contenteditable");
+  $(".editmlservices1theme5").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlservices1theme6" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme6").hasClass("editable")) {
+    $(".editmlservices1theme6").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme6").hide();
+
+});
+
+ $(".editmlservices1theme6").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme6").addClass("editable");
+  $(".textmlservices1theme6").attr("contenteditable", "true");
+   $(".editmlservices1theme6").hide();
+  $(".savemlservices1theme6").show();
+ 
+});
+
+$(".savemlservices1theme6").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme6").removeClass("editable");
+ $(".textmlservices1theme6").removeAttr("contenteditable");
+  $(".editmlservices1theme6").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmlservices1theme7" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme7").hasClass("editable")) {
+    $(".editmlservices1theme7").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme7").hide();
+
+});
+
+ $(".editmlservices1theme7").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme7").addClass("editable");
+  $(".textmlservices1theme7").attr("contenteditable", "true");
+   $(".editmlservices1theme7").hide();
+  $(".savemlservices1theme7").show();
+ 
+});
+
+$(".savemlservices1theme7").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme7").removeClass("editable");
+ $(".textmlservices1theme7").removeAttr("contenteditable");
+  $(".editmlservices1theme7").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmlservices1theme8").hide();
+
+$( ".boxmlservices1theme8" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservices1theme8").hasClass("editable")) {
+    $(".editmlservices1theme8").hide();
+
+   } 
+   else
+   {
+    $(".editmlservices1theme8").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservices1theme8").hide();
+
+});
+
+ $(".editmlservices1theme8").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme8").addClass("editable");
+   $(".editmlservices1theme8").hide();
+  $(".savemlservices1theme8").show();
+  $(".imageUploadmlservices1theme8").show();
+});
+
+$(".savemlservices1theme8").click(function() {
+  $(this).hide();
+  $(".boxmlservices1theme8").removeClass("editable");
+ 
+  $(".editmlservices1theme8").hide();
+  $(".imageUploadmlservices1theme8").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmlservices1theme8").change(function() {
+
+    readURLms8(this);
+});
+
+});
+function readURLms8(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('.mlservicechangeclass').attr('class', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
 
 </script>

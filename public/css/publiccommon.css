@@ -966,8 +966,36 @@ label.star:before {
 }
 
 .backstretch {
+      
+      margin: 0px auto;
+
+}
+
+.backstretchone{
+  width: 100%;
+  min-height: 600px;
+  background-image: url('../parallax/bcg_slide-1.jpg');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  
+}
+
+.backstretchtwo{
+  width: 100%;
+  min-height: 600px;
+  background-image: url('../parallax/bcg_slide-2.jpg');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  
+}
+
+.backstretchcon {
       width: 100%;
-      height: 700px;
+      min-height: 100px;
       margin: 0px auto;
 }
 
@@ -2301,6 +2329,7 @@ Version      : 1.0
     color: #fff;
     font-size: 30px;
     font-style: italic;
+
 }
 
 .themeone .quote p {
@@ -2327,7 +2356,7 @@ Version      : 1.0
     background-color:#6ed3cf;
     text-align:center;
     width: 100%;
-    height: 238px
+    height: 248px
 }
 
 .themeone .contact h2 {
@@ -2623,6 +2652,7 @@ Version      : 1.0
 
   .themeone .quote h1{
     font-size: 18px;
+    padding:20px;
   }
 
   .themeone .quote p{
@@ -2654,6 +2684,7 @@ Version      : 1.0
 
    .themeone .quote h1{
       font-size: 20px;
+      padding:20px;
     }
 
     .themeone .quote p{
@@ -3628,7 +3659,7 @@ color: white;
     background-color:transparent;
     text-align:center;
     width: 100%;
-    height: 378px
+    height: 518px
 }
 .simplecont #text-feedback{
     width: 80%;
@@ -3784,4 +3815,8 @@ color: white;
 .simplecont .submit:hover .ease{
     width:100%;
     background-color:white;
+}
+.contmfooterrss4,.contmfootergoogleplus7,.contmfooteryoutube5,.contmfooterlinkedin6,.contmfooterrss4,.contmfootertwitter3,.contmfooterfacebook2
+{
+  float:left;
 }

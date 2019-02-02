@@ -971,5 +971,42 @@ img#mcolorlibimagePreview18 {
 .editmparallaxone2, .savemparallaxone2, #imageUploadmparallaxone2, span.editmparallaxone2:hover{
   display: none !important;
 }
+.editmlparallaxonetheme1, .savemlparallaxonetheme1, #imageUploadmlparallaxonetheme1, span.editmlparallaxonetheme1:hover{
+ 
+ display: none !important;
+}
+.editmlparallaxonetheme2, .savemlparallaxonetheme2, #imageUploadmlparallaxonetheme2, span.editmlparallaxonetheme2:hover{
+  display: none !important;
+}
+.editmlparallaxonetheme3, .savemlparallaxonetheme3, #imageUploadmlparallaxonetheme3, span.editmlparallaxonetheme3:hover{
+  display: none !important;
+} 
+.editmlservices1theme1, .savemlservices1theme1, #imageUploadmlservices1theme1, span.editmlservices1theme1:hover{
+ 
+ display: none !important;
+}
+.editmlservices1theme2, .savemlservices1theme2, #imageUploadmlservices1theme2, span.editmlservices1theme2:hover{
+  display: none !important;
+}
+.editmlservices1theme3, .savemlservices1theme3, #imageUploadmlservices1theme3, span.editmlservices1theme3:hover{
+  display: none !important;
+} 
+.editmlservices1theme4, .savemlservices1theme4, #imageUploadmlservices1theme4, span.editmlservices1theme4:hover{
+ 
+ display: none !important;
+}
+.editmlservices1theme5, .savemlservices1theme5, #imageUploadmlservices1theme5, span.editmlservices1theme5:hover{
+  display: none !important;
+}
+.editmlservices1theme6, .savemlservices1theme6, #imageUploadmlservices1theme6, span.editmlservices1theme6:hover{
+  display: none !important;
+} 
 
+.editmlservices1theme7, .savemlservices1theme7, #imageUploadmlservices1theme7, span.editmlservices1theme7:hover{
+ 
+ display: none !important;
+}
+.editmlservices1theme8, .savemlservices1theme8, #imageUploadmlservices1theme8, span.editmlservices1theme8:hover{
+  display: none !important;
+}
 </style>

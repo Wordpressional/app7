@@ -20,6 +20,9 @@
    <i class="fa fa-tablet"></i></a> </span>
 
    </div>
+   <br>
+   <center><p>Upload images of size below 25 KB</p></center>
+   <br>
     <div class="mau" id="mau">
      
   

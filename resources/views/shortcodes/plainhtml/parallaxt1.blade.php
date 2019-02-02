@@ -2,14 +2,14 @@
   <span class="editmparallaxone2">edit</span>
   
     <span class="savemparallaxone2">save</span>
-    <span class="labelmparallaxone2"><label class="imageUploadmparallaxone2" for="imageUploadmparallaxone2"></label></span>
+    <span class="labelmparallaxone2"><label class="imageUploadmparallaxone2" for="imageUploadmparallaxone2">&nbsp;</label></span>
 
      <input type='file' id="imageUploadmparallaxone2" accept=".png, .jpg, .jpeg" />
 <!-- PARALLAX -->
 	<div class="container-fluid parallax" id="parallax">
      
 		<div class="row-fluid fullwidth">
-			<div class="col-lg-12-fluid">
+			<div class="col-lg-12-fluid sm-col-12">
 				<div class="quote boxmparallaxone1 textmparallaxone1">
          
               <span class="editmparallaxone1">edit</span>
