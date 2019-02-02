@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let modalId = $('#image-gallery');
 
 $(document)
@@ -764,5 +763,4 @@ if (input.files && input.files[0]) {
         }
   
 }
-=======
->>>>>>> 51d808c38fd569d6a1eefb7e9b8c4c9f3be62950
+
