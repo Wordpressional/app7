@@ -397,14 +397,22 @@
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/featurest2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/featurest2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Features;In-built Developer Theme two">
 @include('shortcodes.plainhtml.featurest2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Footer;In-built Developer Theme two">
 @include('shortcodes.plainhtml.footert2')
   
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Header;In-built Developer Theme Three">
+
+@include('shortcodes.plainhtml.headermenut3')
+  
+
+
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/contspecial.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Contact Forms">
@@ -458,6 +466,11 @@
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus;Menu">
 
 [menulist]Menu Name Here[/menulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus;Menu">
+
+[loanmenulist]Menu Name Here[/loanmenulist]
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/3levelmenu11.jpg')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus;Menu">

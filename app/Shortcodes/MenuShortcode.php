@@ -32,6 +32,14 @@ class MenuShortcode {
     return view('shortcodes.menus.responsivemenu')->with('menuList', $menuList);
   }
 
+  public function loanmenulist($shortcode, $content, $compiler, $name, $viewData)
+  {
+    $menuList = Menu::getByName($content);
+
+    //dd($posts);
+    return view('shortcodes.menus.loanmenu')->with('menuList', $menuList);
+  }
+
 
   
   
