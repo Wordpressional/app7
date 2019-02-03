@@ -3450,6 +3450,323 @@ label.imageUploadmlservices1theme8:after {
   background-color: white;
 }
 
+.editmlservicetheme1, .savemlservicetheme1, .editpresentationcolor {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: -30px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme1, .editpresentationcolor { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme1 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlservicetheme2, .savemlservicetheme2, .editcontpur {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme2, .editcontpur { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+
+.savemlservicetheme2 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+span.contpur {
+    padding-top: 15px;
+    display: inline-block;
+}
+span.contpur2 {
+    padding-top: 15px;
+    display: inline-block;
+}
+span.contpur3 {
+    padding-top: 15px;
+    display: inline-block;
+}
+span.contpur4 {
+    padding-top: 15px;
+    display: inline-block;
+}
+span.contpur5 {
+    padding-top: 15px;
+    display: inline-block;
+}
+span.contpur6 {
+    padding-top: 15px;
+    display: inline-block;
+}
+span.contpur7 {
+    padding-top: 15px;
+    display: inline-block;
+}
+span.contpur8 {
+    padding-top: 15px;
+    display: inline-block;
+}
+
+
+
+.editmlservicetheme3, .savemlservicetheme3, .editcontpur2 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme3, .editcontpur2 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme3 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlservicetheme4, .savemlservicetheme4, .editcontpur3 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme4, .editcontpur3 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme4 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+.editmlservicetheme5, .savemlservicetheme5, .editcontpur4 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme5, .editcontpur4 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme5 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+.editmlservicetheme5a, .savemlservicetheme5a, .editcontpur5 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme5a, .editcontpur5 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme5a {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+.editmlservicetheme6, .savemlservicetheme6, .editcontpur6 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme6, .editcontpur6 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme6 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+.editmlservicetheme7, .savemlservicetheme7, .editcontpur7 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme7, .editcontpur7 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme7 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+.editmlservicetheme7a, .savemlservicetheme7a, .editcontpur8 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
+
+.editmlservicetheme7a, .editcontpur8 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemlservicetheme7a {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+.contpresentationcolor, .submitpresentationcolor
+{
+  margin: 0px 20px 0px 20px;
+}
+
 }
 
 

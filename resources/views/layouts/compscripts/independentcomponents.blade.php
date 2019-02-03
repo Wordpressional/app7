@@ -4044,7 +4044,7 @@ $(".savemlservices1theme1").click(function() {
   $(".boxmlservices1theme1").removeClass("editable");
  $(".textmlservices1theme1").removeAttr("contenteditable");
   $(".editmlservices1theme1").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4089,7 +4089,7 @@ $(".savemlservices1theme2").click(function() {
  $(".textmlservices1theme2").removeAttr("contenteditable");
   $(".editmlservices1theme2").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -4132,7 +4132,7 @@ $(".savemlservices1theme3").click(function() {
  $(".textmlservices1theme3").removeAttr("contenteditable");
   $(".editmlservices1theme3").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -4176,7 +4176,7 @@ $(".savemlservices1theme4").click(function() {
  $(".textmlservices1theme4").removeAttr("contenteditable");
   $(".editmlservices1theme4").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -4219,7 +4219,7 @@ $(".savemlservices1theme5").click(function() {
   $(".boxmlservices1theme5").removeClass("editable");
  $(".textmlservices1theme5").removeAttr("contenteditable");
   $(".editmlservices1theme5").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4264,7 +4264,7 @@ $(".savemlservices1theme6").click(function() {
  $(".textmlservices1theme6").removeAttr("contenteditable");
   $(".editmlservices1theme6").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -4307,7 +4307,7 @@ $(".savemlservices1theme7").click(function() {
   $(".boxmlservices1theme7").removeClass("editable");
  $(".textmlservices1theme7").removeAttr("contenteditable");
   $(".editmlservices1theme7").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4351,7 +4351,7 @@ $(".savemlservices1theme8").click(function() {
  
   $(".editmlservices1theme8").hide();
   $(".imageUploadmlservices1theme8").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -4375,6 +4375,662 @@ if (input.files && input.files[0]) {
         }
   
 }
+$(document).ready(function(){
+
+  $(".contpresentationcolor").hide(); 
+
+$( ".boxmlservicetheme1" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme1").hasClass("editable")) {
+    $(".editmlservicetheme1").hide();
+    $(".editpresentationcolor").hide();
+
+   } 
+   else
+   {
+    $(".editmlservicetheme1").show();
+    $(".editpresentationcolor").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme1").hide();
+   $(".editpresentationcolor").hide();
+});
+
+ $(".editmlservicetheme1").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme1").addClass("editable");
+  $(".textmlservicetheme1").attr("contenteditable", "true");
+   $(".editmlservicetheme1").hide();
+  $(".savemlservicetheme1").show();
+ 
+});
+
+  $(".editpresentationcolor").click(function() {
+    $(".boxmlservicetheme1").addClass("editable");
+  $(".editpresentationcolor").hide();
+  $(".contpresentationcolor").show(); 
+
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+  $(".submitpresentationcolor").click(function() {
+  
+  $(".contpresentationcolor").hide();
+   $(".boxmlservicetheme1").removeClass("editable");
+addpresentationcolor();
+  
+});
+
+$(".savemlservicetheme1").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme1").removeClass("editable");
+ $(".textmlservicetheme1").removeAttr("contenteditable");
+  $(".editmlservicetheme1").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+});
+
+function addpresentationcolor() {
+var inputpresentationcolor = $('.inputpresentationcolor').val();
+  $('.presentation').css("background",inputpresentationcolor);
+}
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpur").hide(); 
+
+$( ".boxmlservicetheme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme2").hasClass("editable")) {
+    $(".editmlservicetheme2").hide();
+    $(".editcontpur").hide();
+   } 
+   else
+   {
+    $(".editmlservicetheme2").show();
+    $(".editcontpur").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme2").hide();
+   $(".editcontpur").hide();
+
+});
+
+ $(".editmlservicetheme2").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme2").addClass("editable");
+  $(".textmlservicetheme2").attr("contenteditable", "true");
+   $(".editmlservicetheme2").hide();
+  $(".savemlservicetheme2").show();
+ 
+});
+
+$(".savemlservicetheme2").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme2").removeClass("editable");
+ $(".textmlservicetheme2").removeAttr("contenteditable");
+  $(".editmlservicetheme2").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+
+
+ $(".editcontpur").click(function() {
+   $(".boxmlservicetheme2").addClass("editable");
+  $(this).hide();
+  $(".contpur").show(); 
+ 
+});
+
+  $(".submitcontpur").click(function() {
+  
+  $(".contpur").hide();
+   $(".boxmlservicetheme2").removeClass("editable");
+addfontawesomecontpur();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addfontawesomecontpur() {
+var inputcontpur = $('.inputcontpur').val();
+ $('#pur').removeClass();
+  $('#pur').addClass(inputcontpur);
+  if(inputcontpur == "")
+  {
+    $('.service-icon').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon').css('font-size','90px');
+  }
+}
+
+
+$(document).ready(function(){
+
+   $(".contpur2").hide(); 
+
+$( ".boxmlservicetheme3" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme3").hasClass("editable")) {
+    $(".editmlservicetheme3").hide();
+    $(".editcontpur2").hide();
+
+   } 
+   else
+   {
+    $(".editmlservicetheme3").show();
+    $(".editcontpur2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme3").hide();
+  $(".editcontpur2").hide();
+});
+
+ $(".editmlservicetheme3").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme3").addClass("editable");
+  $(".textmlservicetheme3").attr("contenteditable", "true");
+   $(".editmlservicetheme3").hide();
+  $(".savemlservicetheme3").show();
+ 
+});
+
+$(".savemlservicetheme3").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme3").removeClass("editable");
+ $(".textmlservicetheme3").removeAttr("contenteditable");
+  $(".editmlservicetheme3").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+
+$(".editcontpur2").click(function() {
+   $(".boxmlservicetheme3").addClass("editable");
+  $(this).hide();
+  $(".contpur2").show(); 
+ 
+});
+
+  $(".submitcontpur2").click(function() {
+  
+  $(".contpur2").hide();
+  $(".boxmlservicetheme3").removeClass("editable");
+addfontawesomecontpur2();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addfontawesomecontpur2() {
+var inputcontpur2 = $('.inputcontpur2').val();
+ $('#pur2').removeClass();
+  $('#pur2').addClass(inputcontpur2);
+  if(inputcontpur2 == "")
+  {
+    $('.service-icon2').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon2').css('font-size','90px');
+  }
+}
+
+
+$(document).ready(function(){
+
+  $(".contpur3").hide(); 
+
+$( ".boxmlservicetheme4" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme4").hasClass("editable")) {
+    $(".editmlservicetheme4").hide();
+    $(".editcontpur3").hide();
+   } 
+   else
+   {
+    $(".editmlservicetheme4").show();
+    $(".editcontpur3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme4").hide();
+  $(".editcontpur3").hide();
+
+});
+
+ $(".editmlservicetheme4").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme4").addClass("editable");
+  $(".textmlservicetheme4").attr("contenteditable", "true");
+   $(".editmlservicetheme4").hide();
+  $(".savemlservicetheme4").show();
+ 
+});
+
+$(".savemlservicetheme4").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme4").removeClass("editable");
+ $(".textmlservicetheme4").removeAttr("contenteditable");
+  $(".editmlservicetheme4").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  });
+
+$(".editcontpur3").click(function() {
+   $(".boxmlservicetheme4").addClass("editable");
+  $(this).hide();
+  $(".contpur3").show(); 
+ 
+});
+
+  $(".submitcontpur3").click(function() {
+  
+  $(".contpur3").hide();
+  $(".boxmlservicetheme4").removeClass("editable");
+addfontawesomecontpur3();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addfontawesomecontpur3() {
+var inputcontpur3 = $('.inputcontpur3').val();
+ $('#cur').removeClass();
+  $('#cur').addClass(inputcontpur3);
+  if(inputcontpur3 == "")
+  {
+    $('.service-icon3').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon3').css('font-size','90px');
+  }
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contpur4").hide(); 
+
+$( ".boxmlservicetheme5" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme5").hasClass("editable")) {
+    $(".editmlservicetheme5").hide();
+     $(".editcontpur4").hide();
+   } 
+   else
+   {
+    $(".editmlservicetheme5").show();
+    $(".editcontpur4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme5").hide();
+  $(".editcontpur4").hide();
+});
+
+ $(".editmlservicetheme5").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme5").addClass("editable");
+  $(".textmlservicetheme5").attr("contenteditable", "true");
+   $(".editmlservicetheme5").hide();
+  $(".savemlservicetheme5").show();
+ 
+});
+
+$(".savemlservicetheme5").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme5").removeClass("editable");
+ $(".textmlservicetheme5").removeAttr("contenteditable");
+  $(".editmlservicetheme5").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+$(".editcontpur4").click(function() {
+   $(".boxmlservicetheme5").addClass("editable");
+  $(this).hide();
+  $(".contpur4").show(); 
+ 
+});
+
+  $(".submitcontpur4").click(function() {
+  
+  $(".contpur4").hide();
+  $(".boxmlservicetheme5").removeClass("editable");
+addfontawesomecontpur4();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addfontawesomecontpur4() {
+var inputcontpur4 = $('.inputcontpur4').val();
+ $('#src').removeClass();
+  $('#src').addClass(inputcontpur4);
+  if(inputcontpur4 == "")
+  {
+    $('.service-icon4').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon4').css('font-size','90px');
+  }
+}
+
+$(document).ready(function(){
+
+  $(".contpur5").hide();
+
+$( ".boxmlservicetheme5a" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme5a").hasClass("editable")) {
+    $(".editmlservicetheme5a").hide();
+    $(".editcontpur5").hide();
+   } 
+   else
+   {
+    $(".editmlservicetheme5a").show();
+    $(".editcontpur5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme5a").hide();
+  $(".editcontpur5").hide();
+
+});
+
+ $(".editmlservicetheme5a").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme5a").addClass("editable");
+  $(".textmlservicetheme5a").attr("contenteditable", "true");
+   $(".editmlservicetheme5a").hide();
+  $(".savemlservicetheme5a").show();
+ 
+});
+
+$(".savemlservicetheme5a").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme5a").removeClass("editable");
+ $(".textmlservicetheme5a").removeAttr("contenteditable");
+  $(".editmlservicetheme5a").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+$(".editcontpur5").click(function() {
+   $(".boxmlservicetheme5a").addClass("editable");
+  $(this).hide();
+  $(".contpur5").show(); 
+ 
+});
+
+  $(".submitcontpur5").click(function() {
+  
+  $(".contpur5").hide();
+  $(".boxmlservicetheme5a").removeClass("editable");
+addfontawesomecontpur5();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addfontawesomecontpur5() {
+var inputcontpur5 = $('.inputcontpur5').val();
+ $('#sec').removeClass();
+  $('#sec').addClass(inputcontpur5);
+  if(inputcontpur5 == "")
+  {
+    $('.service-icon5').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon5').css('font-size','90px');
+  }
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contpur6").hide();
+
+$( ".boxmlservicetheme6" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme6").hasClass("editable")) {
+    $(".editmlservicetheme6").hide();
+    $(".editcontpur6").hide();
+
+   } 
+   else
+   {
+    $(".editmlservicetheme6").show();
+    $(".editcontpur6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme6").hide();
+  $(".editcontpur6").hide();
+
+});
+
+ $(".editmlservicetheme6").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme6").addClass("editable");
+  $(".textmlservicetheme6").attr("contenteditable", "true");
+   $(".editmlservicetheme6").hide();
+  $(".savemlservicetheme6").show();
+ 
+});
+
+$(".savemlservicetheme6").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme6").removeClass("editable");
+ $(".textmlservicetheme6").removeAttr("contenteditable");
+  $(".editmlservicetheme6").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+$(".editcontpur6").click(function() {
+   $(".boxmlservicetheme6").addClass("editable");
+  $(this).hide();
+  $(".contpur6").show(); 
+ 
+});
+
+  $(".submitcontpur6").click(function() {
+  
+  $(".contpur6").hide();
+  $(".boxmlservicetheme6").removeClass("editable");
+addfontawesomecontpur6();
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+});
+});
+
+function addfontawesomecontpur6() {
+var inputcontpur6 = $('.inputcontpur6').val();
+ $('#doc').removeClass();
+  $('#doc').addClass(inputcontpur6);
+  if(inputcontpur6 == "")
+  {
+    $('.service-icon6').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon6').css('font-size','90px');
+  }
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contpur7").hide();
+
+$( ".boxmlservicetheme7" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme7").hasClass("editable")) {
+    $(".editmlservicetheme7").hide();
+     $(".editcontpur7").hide();
+   } 
+   else
+   {
+    $(".editmlservicetheme7").show();
+     $(".editcontpur7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme7").hide();
+   $(".editcontpur7").hide();
+
+});
+
+ $(".editmlservicetheme7").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme7").addClass("editable");
+  $(".textmlservicetheme7").attr("contenteditable", "true");
+   $(".editmlservicetheme7").hide();
+  $(".savemlservicetheme7").show();
+ 
+});
+
+$(".savemlservicetheme7").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme7").removeClass("editable");
+ $(".textmlservicetheme7").removeAttr("contenteditable");
+  $(".editmlservicetheme7").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+$(".editcontpur7").click(function() {
+   $(".boxmlservicetheme7").addClass("editable");
+  $(this).hide();
+  $(".contpur7").show(); 
+ 
+});
+
+  $(".submitcontpur7").click(function() {
+  
+  $(".contpur7").hide();
+  $(".boxmlservicetheme7").removeClass("editable");
+addfontawesomecontpur7();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addfontawesomecontpur7() {
+var inputcontpur7 = $('.inputcontpur7').val();
+ $('#hist').removeClass();
+  $('#hist').addClass(inputcontpur7);
+  if(inputcontpur7 == "")
+  {
+    $('.service-icon7').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon7').css('font-size','90px');
+  }
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contpur8").hide();
+
+$( ".boxmlservicetheme7a" )
+ .on("mouseenter", function() {
+   if ($(".boxmlservicetheme7a").hasClass("editable")) {
+    $(".editmlservicetheme7a").hide();
+     $(".editcontpur8").hide();
+   } 
+   else
+   {
+    $(".editmlservicetheme7a").show();
+     $(".editcontpur8").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlservicetheme7a").hide();
+   $(".editcontpur8").hide();
+
+});
+
+ $(".editmlservicetheme7a").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme7a").addClass("editable");
+  $(".textmlservicetheme7a").attr("contenteditable", "true");
+   $(".editmlservicetheme7a").hide();
+  $(".savemlservicetheme7a").show();
+ 
+});
+
+$(".savemlservicetheme7a").click(function() {
+  $(this).hide();
+  $(".boxmlservicetheme7a").removeClass("editable");
+ $(".textmlservicetheme7a").removeAttr("contenteditable");
+  $(".editmlservicetheme7a").hide();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+  
+});
+$(".editcontpur8").click(function() {
+   $(".boxmlservicetheme8").addClass("editable");
+  $(this).hide();
+  $(".contpur8").show(); 
+ 
+});
+
+  $(".submitcontpur8").click(function() {
+  
+  $(".contpur8").hide();
+  $(".boxmlservicetheme8").removeClass("editable");
+addfontawesomecontpur8();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addfontawesomecontpur8() {
+var inputcontpur8 = $('.inputcontpur8').val();
+ $('#pow').removeClass();
+  $('#pow').addClass(inputcontpur8);
+  if(inputcontpur8 == "")
+  {
+    $('.service-icon8').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon8').css('font-size','90px');
+  }
+}
+
+
+
 
 
 </script>

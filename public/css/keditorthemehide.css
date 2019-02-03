@@ -349,3 +349,41 @@
 .inputmfooterfacebook2, .submitmfooterfacebook2,.inputmfootertwitter3,.submitmfootertwitter3,.inputmfooterrss4,.submitmfooterrss4,.inputmfooteryoutube5,.submitmfooteryoutube5,.inputmfooterlinkedin6,.submitmfooterlinkedin6,.inputmfootergoogleplus7,.submitmfootergoogleplus7{
    display: none !important;
 }
+.editmlservicetheme1, .savemlservicetheme1, #imageUploadmlservicetheme1, span.editmlservicetheme1:hover{
+ 
+ display: none !important;
+}
+.editmlservicetheme2, .savemlservicetheme2, #imageUploadmlservicetheme2, span.editmlservicetheme2:hover{
+  display: none !important;
+}
+.editmlservicetheme3, .savemlservicetheme3, #imageUploadmlservicetheme3, span.editmlservicetheme3:hover{
+  display: none !important;
+} 
+.editmlservicetheme4, .savemlservicetheme4, #imageUploadmlservicetheme4, span.editmlservicetheme4:hover{
+ 
+ display: none !important;
+}
+.editmlservicetheme5, .savemlservicetheme5, #imageUploadmlservicetheme5, span.editmlservicetheme5:hover{
+  display: none !important;
+}
+.editmlservicetheme5a, .savemlservicetheme5a, #imageUploadmlservicetheme5a, span.editmlservicetheme5a:hover{
+  display: none !important;
+}
+.editmlservicetheme6, .savemlservicetheme6, #imageUploadmlservicetheme6, span.editmlservicetheme6:hover{
+  display: none !important;
+} 
+
+.editmlservicetheme7, .savemlservicetheme7, #imageUploadmlservicetheme7, span.editmlservicetheme7:hover{
+ 
+ display: none !important;
+}
+.editmlservicetheme7a, .savemlservicetheme7a, #imageUploadmlservicetheme7a, span.editmlservicetheme7a:hover{
+ 
+ display: none !important;
+}
+.editcontpur, .editcontpur1, .editcontpur2, .editcontpur3, .editcontpur4, .editcontpur5, .editcontpur6, .editcontpur7, .editcontpur8{
+  display: none !important;
+}
+.editpresentationcolor, .contpresentationcolor, .contpur, .contpur1, .contpur2, .contpur3, .contpur4, .contpur5, .contpur6, .contpur7, .contpur8{
+ display: none !important;
+}
