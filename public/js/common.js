@@ -167,20 +167,37 @@ $(document).ready(function() {
 
  
        
-/*var $button = document.querySelector('.icolist', '.button');
-$button.addEventListener('click', function() {
-  var duration = 0.3,
-      delay = 0.08;
-  TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
-  TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
-  TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
-});*/
+function resizebanner() {
+      $(".demo-banner").css("height", $(window).height());
+   }
    
 
-/*$('#blogCarousel').carousel({
-        interval: 5000
-});*/
 
+ $(window).scroll(function () {
+      var $scroll = $(window).scrollTop();
+      var $navbar = $("#navigation");
+      if ($scroll > 50) {
+         $navbar.addClass("scroling-menu");
+      } else {
+         $navbar.removeClass("scroling-menu");
+      }
+   });
+
+$(document).ready(function() {
+$(".scroll").on('click', function(event) {
+    event.preventDefault();
+    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+});
+
+
+$(".parallaxie").parallaxie({
+         speed: 0.5,
+         offset: 0,
+      });
+
+resizebanner();
+   $(window).resize(resizebanner);
+});
 
 
 

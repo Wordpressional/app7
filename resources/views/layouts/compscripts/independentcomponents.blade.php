@@ -5030,7 +5030,3157 @@ var inputcontpur8 = $('.inputcontpur8').val();
 }
 
 
+$(document).ready(function(){
 
+   $(".imageUploadmmultithemeone1").hide();
+
+$( ".boxmmultithemeone1" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone1").hasClass("editable")) {
+    $(".editmmultithemeone1").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone1").hide();
+
+});
+
+ $(".editmmultithemeone1").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone1").addClass("editable");
+   $(".editmmultithemeone1").hide();
+  $(".savemmultithemeone1").show();
+  $(".imageUploadmmultithemeone1").show();
+});
+
+$(".savemmultithemeone1").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone1").removeClass("editable");
+ 
+  $(".editmmultithemeone1").hide();
+  $(".imageUploadmmultithemeone1").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone1").change(function() {
+
+    readURLmmulti1(this);
+});
+
+});
+function readURLmmulti1(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone1').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone2").hide();
+
+$( ".boxmmultithemeone2" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone2").hasClass("editable")) {
+    $(".editmmultithemeone2").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone2").hide();
+
+});
+
+ $(".editmmultithemeone2").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone2").addClass("editable");
+   $(".editmmultithemeone2").hide();
+  $(".savemmultithemeone2").show();
+  $(".imageUploadmmultithemeone2").show();
+});
+
+$(".savemmultithemeone2").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone2").removeClass("editable");
+ 
+  $(".editmmultithemeone2").hide();
+  $(".imageUploadmmultithemeone2").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone2").change(function() {
+
+    readURLmmulti2(this);
+});
+
+});
+function readURLmmulti2(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone2').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone3" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone3").hasClass("editable")) {
+    $(".editmmultithemeone3").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone3").hide();
+
+});
+
+ $(".editmmultithemeone3").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone3").addClass("editable");
+  $(".textmmultithemeone3").attr("contenteditable", "true");
+   $(".editmmultithemeone3").hide();
+  $(".savemmultithemeone3").show();
+ 
+});
+
+$(".savemmultithemeone3").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone3").removeClass("editable");
+ $(".textmmultithemeone3").removeAttr("contenteditable");
+  $(".editmmultithemeone3").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone4" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone4").hasClass("editable")) {
+    $(".editmmultithemeone4").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone4").hide();
+
+});
+
+ $(".editmmultithemeone4").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone4").addClass("editable");
+  $(".textmmultithemeone4").attr("contenteditable", "true");
+   $(".editmmultithemeone4").hide();
+  $(".savemmultithemeone4").show();
+ 
+});
+
+$(".savemmultithemeone4").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone4").removeClass("editable");
+ $(".textmmultithemeone4").removeAttr("contenteditable");
+  $(".editmmultithemeone4").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone5").hide();
+
+$( ".boxmmultithemeone5" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone5").hasClass("editable")) {
+    $(".editmmultithemeone5").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone5").hide();
+
+});
+
+ $(".editmmultithemeone5").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone5").addClass("editable");
+   $(".editmmultithemeone5").hide();
+  $(".savemmultithemeone5").show();
+  $(".imageUploadmmultithemeone5").show();
+});
+
+$(".savemmultithemeone5").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone5").removeClass("editable");
+ 
+  $(".editmmultithemeone5").hide();
+  $(".imageUploadmmultithemeone5").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone5").change(function() {
+
+    readURLmmulti5(this);
+});
+
+});
+function readURLmmulti5(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone5').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone6" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone6").hasClass("editable")) {
+    $(".editmmultithemeone6").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone6").hide();
+
+});
+
+ $(".editmmultithemeone6").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone6").addClass("editable");
+  $(".textmmultithemeone6").attr("contenteditable", "true");
+   $(".editmmultithemeone6").hide();
+  $(".savemmultithemeone6").show();
+ 
+});
+
+$(".savemmultithemeone6").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone6").removeClass("editable");
+ $(".textmmultithemeone6").removeAttr("contenteditable");
+  $(".editmmultithemeone6").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone7").hide();
+
+$( ".boxmmultithemeone7" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone7").hasClass("editable")) {
+    $(".editmmultithemeone7").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone7").hide();
+
+});
+
+ $(".editmmultithemeone7").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone7").addClass("editable");
+   $(".editmmultithemeone7").hide();
+  $(".savemmultithemeone7").show();
+  $(".imageUploadmmultithemeone7").show();
+});
+
+$(".savemmultithemeone7").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone7").removeClass("editable");
+ 
+  $(".editmmultithemeone7").hide();
+  $(".imageUploadmmultithemeone7").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone7").change(function() {
+
+    readURLmmulti7(this);
+});
+
+});
+function readURLmmulti7(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone7').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone8" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone8").hasClass("editable")) {
+    $(".editmmultithemeone8").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone8").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone8").hide();
+
+});
+
+ $(".editmmultithemeone8").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone8").addClass("editable");
+  $(".textmmultithemeone8").attr("contenteditable", "true");
+   $(".editmmultithemeone8").hide();
+  $(".savemmultithemeone8").show();
+ 
+});
+
+$(".savemmultithemeone8").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone8").removeClass("editable");
+ $(".textmmultithemeone8").removeAttr("contenteditable");
+  $(".editmmultithemeone8").hide();
+
+  
+});
+});
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone9").hide();
+
+$( ".boxmmultithemeone9" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone9").hasClass("editable")) {
+    $(".editmmultithemeone9").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone9").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone9").hide();
+
+});
+
+ $(".editmmultithemeone9").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone9").addClass("editable");
+   $(".editmmultithemeone9").hide();
+  $(".savemmultithemeone9").show();
+  $(".imageUploadmmultithemeone9").show();
+});
+
+$(".savemmultithemeone9").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone9").removeClass("editable");
+ 
+  $(".editmmultithemeone9").hide();
+  $(".imageUploadmmultithemeone9").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone9").change(function() {
+
+    readURLmmulti9(this);
+});
+
+});
+function readURLmmulti9(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone9').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone10").hide();
+
+$( ".boxmmultithemeone10" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone10").hasClass("editable")) {
+    $(".editmmultithemeone10").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone10").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone10").hide();
+
+});
+
+ $(".editmmultithemeone10").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone10").addClass("editable");
+   $(".editmmultithemeone10").hide();
+  $(".savemmultithemeone10").show();
+  $(".imageUploadmmultithemeone10").show();
+});
+
+$(".savemmultithemeone10").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone10").removeClass("editable");
+ 
+  $(".editmmultithemeone10").hide();
+  $(".imageUploadmmultithemeone10").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone10").change(function() {
+
+    readURLmmulti10(this);
+});
+
+});
+function readURLmmulti10(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone10').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone11").hide();
+
+$( ".boxmmultithemeone11" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone11").hasClass("editable")) {
+    $(".editmmultithemeone11").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone11").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone11").hide();
+
+});
+
+ $(".editmmultithemeone11").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone11").addClass("editable");
+   $(".editmmultithemeone11").hide();
+  $(".savemmultithemeone11").show();
+  $(".imageUploadmmultithemeone11").show();
+});
+
+$(".savemmultithemeone11").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone11").removeClass("editable");
+ 
+  $(".editmmultithemeone11").hide();
+  $(".imageUploadmmultithemeone11").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone11").change(function() {
+
+    readURLmmulti11(this);
+});
+
+});
+function readURLmmulti11(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone11').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone12").hide();
+
+$( ".boxmmultithemeone12" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone12").hasClass("editable")) {
+    $(".editmmultithemeone12").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone12").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone12").hide();
+
+});
+
+ $(".editmmultithemeone12").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone12").addClass("editable");
+   $(".editmmultithemeone12").hide();
+  $(".savemmultithemeone12").show();
+  $(".imageUploadmmultithemeone12").show();
+});
+
+$(".savemmultithemeone12").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone12").removeClass("editable");
+ 
+  $(".editmmultithemeone12").hide();
+  $(".imageUploadmmultithemeone12").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone12").change(function() {
+
+    readURLmmulti12(this);
+});
+
+});
+function readURLmmulti12(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone12').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone13" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone13").hasClass("editable")) {
+    $(".editmmultithemeone13").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone13").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone13").hide();
+
+});
+
+ $(".editmmultithemeone13").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone13").addClass("editable");
+  $(".textmmultithemeone13").attr("contenteditable", "true");
+   $(".editmmultithemeone13").hide();
+  $(".savemmultithemeone13").show();
+ 
+});
+
+$(".savemmultithemeone13").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone13").removeClass("editable");
+ $(".textmmultithemeone13").removeAttr("contenteditable");
+  $(".editmmultithemeone13").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone14" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone14").hasClass("editable")) {
+    $(".editmmultithemeone14").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone14").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone14").hide();
+
+});
+
+ $(".editmmultithemeone14").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone14").addClass("editable");
+  $(".textmmultithemeone14").attr("contenteditable", "true");
+   $(".editmmultithemeone14").hide();
+  $(".savemmultithemeone14").show();
+ 
+});
+
+$(".savemmultithemeone14").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone14").removeClass("editable");
+ $(".textmmultithemeone14").removeAttr("contenteditable");
+  $(".editmmultithemeone14").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone15" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone15").hasClass("editable")) {
+    $(".editmmultithemeone15").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone15").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone15").hide();
+
+});
+
+ $(".editmmultithemeone15").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone15").addClass("editable");
+  $(".textmmultithemeone15").attr("contenteditable", "true");
+   $(".editmmultithemeone15").hide();
+  $(".savemmultithemeone15").show();
+ 
+});
+
+$(".savemmultithemeone15").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone15").removeClass("editable");
+ $(".textmmultithemeone15").removeAttr("contenteditable");
+  $(".editmmultithemeone15").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone16" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone16").hasClass("editable")) {
+    $(".editmmultithemeone16").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone16").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone16").hide();
+
+});
+
+ $(".editmmultithemeone16").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone16").addClass("editable");
+  $(".textmmultithemeone16").attr("contenteditable", "true");
+   $(".editmmultithemeone16").hide();
+  $(".savemmultithemeone16").show();
+ 
+});
+
+$(".savemmultithemeone16").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone16").removeClass("editable");
+ $(".textmmultithemeone16").removeAttr("contenteditable");
+  $(".editmmultithemeone16").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone17" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone17").hasClass("editable")) {
+    $(".editmmultithemeone17").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone17").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone17").hide();
+
+});
+
+ $(".editmmultithemeone17").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone17").addClass("editable");
+  $(".textmmultithemeone17").attr("contenteditable", "true");
+   $(".editmmultithemeone17").hide();
+  $(".savemmultithemeone17").show();
+ 
+});
+
+$(".savemmultithemeone17").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone17").removeClass("editable");
+ $(".textmmultithemeone17").removeAttr("contenteditable");
+  $(".editmmultithemeone17").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone18" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone18").hasClass("editable")) {
+    $(".editmmultithemeone18").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone18").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone18").hide();
+
+});
+
+ $(".editmmultithemeone18").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone18").addClass("editable");
+  $(".textmmultithemeone18").attr("contenteditable", "true");
+   $(".editmmultithemeone18").hide();
+  $(".savemmultithemeone18").show();
+ 
+});
+
+$(".savemmultithemeone18").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone18").removeClass("editable");
+ $(".textmmultithemeone18").removeAttr("contenteditable");
+  $(".editmmultithemeone18").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone19" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone19").hasClass("editable")) {
+    $(".editmmultithemeone19").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone19").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone19").hide();
+
+});
+
+ $(".editmmultithemeone19").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone19").addClass("editable");
+  $(".textmmultithemeone19").attr("contenteditable", "true");
+   $(".editmmultithemeone19").hide();
+  $(".savemmultithemeone19").show();
+ 
+});
+
+$(".savemmultithemeone19").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone19").removeClass("editable");
+ $(".textmmultithemeone19").removeAttr("contenteditable");
+  $(".editmmultithemeone19").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone20" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone20").hasClass("editable")) {
+    $(".editmmultithemeone20").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone20").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone20").hide();
+
+});
+
+ $(".editmmultithemeone20").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone20").addClass("editable");
+  $(".textmmultithemeone20").attr("contenteditable", "true");
+   $(".editmmultithemeone20").hide();
+  $(".savemmultithemeone20").show();
+ 
+});
+
+$(".savemmultithemeone20").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone20").removeClass("editable");
+ $(".textmmultithemeone20").removeAttr("contenteditable");
+  $(".editmmultithemeone20").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone21" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone21").hasClass("editable")) {
+    $(".editmmultithemeone21").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone21").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone21").hide();
+
+});
+
+ $(".editmmultithemeone21").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone21").addClass("editable");
+  $(".textmmultithemeone21").attr("contenteditable", "true");
+   $(".editmmultithemeone21").hide();
+  $(".savemmultithemeone21").show();
+ 
+});
+
+$(".savemmultithemeone21").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone21").removeClass("editable");
+ $(".textmmultithemeone21").removeAttr("contenteditable");
+  $(".editmmultithemeone21").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone22" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone22").hasClass("editable")) {
+    $(".editmmultithemeone22").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone22").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone22").hide();
+
+});
+
+ $(".editmmultithemeone22").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone22").addClass("editable");
+  $(".textmmultithemeone22").attr("contenteditable", "true");
+   $(".editmmultithemeone22").hide();
+  $(".savemmultithemeone22").show();
+ 
+});
+
+$(".savemmultithemeone22").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone22").removeClass("editable");
+ $(".textmmultithemeone22").removeAttr("contenteditable");
+  $(".editmmultithemeone22").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone23" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone23").hasClass("editable")) {
+    $(".editmmultithemeone23").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone23").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone23").hide();
+
+});
+
+ $(".editmmultithemeone23").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone23").addClass("editable");
+  $(".textmmultithemeone23").attr("contenteditable", "true");
+   $(".editmmultithemeone23").hide();
+  $(".savemmultithemeone23").show();
+ 
+});
+
+$(".savemmultithemeone23").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone23").removeClass("editable");
+ $(".textmmultithemeone23").removeAttr("contenteditable");
+  $(".editmmultithemeone23").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone24").hide();
+
+$( ".boxmmultithemeone24" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone24").hasClass("editable")) {
+    $(".editmmultithemeone24").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone24").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone24").hide();
+
+});
+
+ $(".editmmultithemeone24").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone24").addClass("editable");
+   $(".editmmultithemeone24").hide();
+  $(".savemmultithemeone24").show();
+  $(".imageUploadmmultithemeone24").show();
+});
+
+$(".savemmultithemeone24").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone24").removeClass("editable");
+ 
+  $(".editmmultithemeone24").hide();
+  $(".imageUploadmmultithemeone24").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone24").change(function() {
+
+    readURLmmulti24(this);
+});
+
+});
+function readURLmmulti24(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone24').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone25").hide();
+
+$( ".boxmmultithemeone25" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone25").hasClass("editable")) {
+    $(".editmmultithemeone25").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone25").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone25").hide();
+
+});
+
+ $(".editmmultithemeone25").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone25").addClass("editable");
+   $(".editmmultithemeone25").hide();
+  $(".savemmultithemeone25").show();
+  $(".imageUploadmmultithemeone25").show();
+});
+
+$(".savemmultithemeone25").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone25").removeClass("editable");
+ 
+  $(".editmmultithemeone25").hide();
+  $(".imageUploadmmultithemeone25").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone25").change(function() {
+
+    readURLmmulti25(this);
+});
+
+});
+function readURLmmulti25(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone25').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone26").hide();
+
+$( ".boxmmultithemeone26" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone26").hasClass("editable")) {
+    $(".editmmultithemeone26").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone26").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone26").hide();
+
+});
+
+ $(".editmmultithemeone26").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone26").addClass("editable");
+   $(".editmmultithemeone26").hide();
+  $(".savemmultithemeone26").show();
+  $(".imageUploadmmultithemeone26").show();
+});
+
+$(".savemmultithemeone26").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone26").removeClass("editable");
+ 
+  $(".editmmultithemeone26").hide();
+  $(".imageUploadmmultithemeone26").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone26").change(function() {
+
+    readURLmmulti26(this);
+});
+
+});
+function readURLmmulti26(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone26').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone27").hide();
+
+$( ".boxmmultithemeone27" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone27").hasClass("editable")) {
+    $(".editmmultithemeone27").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone27").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone27").hide();
+
+});
+
+ $(".editmmultithemeone27").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone27").addClass("editable");
+   $(".editmmultithemeone27").hide();
+  $(".savemmultithemeone27").show();
+  $(".imageUploadmmultithemeone27").show();
+});
+
+$(".savemmultithemeone27").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone27").removeClass("editable");
+ 
+  $(".editmmultithemeone27").hide();
+  $(".imageUploadmmultithemeone27").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone27").change(function() {
+
+    readURLmmulti27(this);
+});
+
+});
+function readURLmmulti27(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone27').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone28").hide();
+
+$( ".boxmmultithemeone28" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone28").hasClass("editable")) {
+    $(".editmmultithemeone28").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone28").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone28").hide();
+
+});
+
+ $(".editmmultithemeone28").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone28").addClass("editable");
+   $(".editmmultithemeone28").hide();
+  $(".savemmultithemeone28").show();
+  $(".imageUploadmmultithemeone28").show();
+});
+
+$(".savemmultithemeone28").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone28").removeClass("editable");
+ 
+  $(".editmmultithemeone28").hide();
+  $(".imageUploadmmultithemeone28").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone28").change(function() {
+
+    readURLmmulti28(this);
+});
+
+});
+function readURLmmulti28(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone28').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone29").hide();
+
+$( ".boxmmultithemeone29" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone29").hasClass("editable")) {
+    $(".editmmultithemeone29").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone29").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone29").hide();
+
+});
+
+ $(".editmmultithemeone29").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone29").addClass("editable");
+   $(".editmmultithemeone29").hide();
+  $(".savemmultithemeone29").show();
+  $(".imageUploadmmultithemeone29").show();
+});
+
+$(".savemmultithemeone29").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone29").removeClass("editable");
+ 
+  $(".editmmultithemeone29").hide();
+  $(".imageUploadmmultithemeone29").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone29").change(function() {
+
+    readURLmmulti29(this);
+});
+
+});
+function readURLmmulti29(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone29').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone30" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone30").hasClass("editable")) {
+    $(".editmmultithemeone30").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone30").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone30").hide();
+
+});
+
+ $(".editmmultithemeone30").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone30").addClass("editable");
+  $(".textmmultithemeone30").attr("contenteditable", "true");
+   $(".editmmultithemeone30").hide();
+  $(".savemmultithemeone30").show();
+ 
+});
+
+$(".savemmultithemeone30").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone30").removeClass("editable");
+ $(".textmmultithemeone30").removeAttr("contenteditable");
+  $(".editmmultithemeone30").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone31" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone31").hasClass("editable")) {
+    $(".editmmultithemeone31").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone31").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone31").hide();
+
+});
+
+ $(".editmmultithemeone31").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone31").addClass("editable");
+  $(".textmmultithemeone31").attr("contenteditable", "true");
+   $(".editmmultithemeone31").hide();
+  $(".savemmultithemeone31").show();
+ 
+});
+
+$(".savemmultithemeone31").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone31").removeClass("editable");
+ $(".textmmultithemeone31").removeAttr("contenteditable");
+  $(".editmmultithemeone31").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone32" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone32").hasClass("editable")) {
+    $(".editmmultithemeone32").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone32").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone32").hide();
+
+});
+
+ $(".editmmultithemeone32").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone32").addClass("editable");
+  $(".textmmultithemeone32").attr("contenteditable", "true");
+   $(".editmmultithemeone32").hide();
+  $(".savemmultithemeone32").show();
+ 
+});
+
+$(".savemmultithemeone32").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone32").removeClass("editable");
+ $(".textmmultithemeone32").removeAttr("contenteditable");
+  $(".editmmultithemeone32").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone33" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone33").hasClass("editable")) {
+    $(".editmmultithemeone33").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone33").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone33").hide();
+
+});
+
+ $(".editmmultithemeone33").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone33").addClass("editable");
+  $(".textmmultithemeone33").attr("contenteditable", "true");
+   $(".editmmultithemeone33").hide();
+  $(".savemmultithemeone33").show();
+ 
+});
+
+$(".savemmultithemeone33").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone33").removeClass("editable");
+ $(".textmmultithemeone33").removeAttr("contenteditable");
+  $(".editmmultithemeone33").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone34").hide();
+
+$( ".boxmmultithemeone34" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone34").hasClass("editable")) {
+    $(".editmmultithemeone34").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone34").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone34").hide();
+
+});
+
+ $(".editmmultithemeone34").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone34").addClass("editable");
+   $(".editmmultithemeone34").hide();
+  $(".savemmultithemeone34").show();
+  $(".imageUploadmmultithemeone34").show();
+});
+
+$(".savemmultithemeone34").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone34").removeClass("editable");
+ 
+  $(".editmmultithemeone34").hide();
+  $(".imageUploadmmultithemeone34").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone34").change(function() {
+
+    readURLmmulti34(this);
+});
+
+});
+function readURLmmulti34(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone34').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone35").hide();
+
+$( ".boxmmultithemeone35" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone35").hasClass("editable")) {
+    $(".editmmultithemeone35").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone35").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone35").hide();
+
+});
+
+ $(".editmmultithemeone35").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone35").addClass("editable");
+   $(".editmmultithemeone35").hide();
+  $(".savemmultithemeone35").show();
+  $(".imageUploadmmultithemeone35").show();
+});
+
+$(".savemmultithemeone35").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone35").removeClass("editable");
+ 
+  $(".editmmultithemeone35").hide();
+  $(".imageUploadmmultithemeone35").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone35").change(function() {
+
+    readURLmmulti35(this);
+});
+
+});
+function readURLmmulti35(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone35').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone36").hide();
+
+$( ".boxmmultithemeone36" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone36").hasClass("editable")) {
+    $(".editmmultithemeone36").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone36").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone36").hide();
+
+});
+
+ $(".editmmultithemeone36").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone36").addClass("editable");
+   $(".editmmultithemeone36").hide();
+  $(".savemmultithemeone36").show();
+  $(".imageUploadmmultithemeone36").show();
+});
+
+$(".savemmultithemeone36").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone36").removeClass("editable");
+ 
+  $(".editmmultithemeone36").hide();
+  $(".imageUploadmmultithemeone36").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone36").change(function() {
+
+    readURLmmulti36(this);
+});
+
+});
+function readURLmmulti36(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone36').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone37" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone37").hasClass("editable")) {
+    $(".editmmultithemeone37").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone37").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone37").hide();
+
+});
+
+ $(".editmmultithemeone37").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone37").addClass("editable");
+  $(".textmmultithemeone37").attr("contenteditable", "true");
+   $(".editmmultithemeone37").hide();
+  $(".savemmultithemeone37").show();
+ 
+});
+
+$(".savemmultithemeone37").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone37").removeClass("editable");
+ $(".textmmultithemeone37").removeAttr("contenteditable");
+  $(".editmmultithemeone37").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone38" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone38").hasClass("editable")) {
+    $(".editmmultithemeone38").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone38").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone38").hide();
+
+});
+
+ $(".editmmultithemeone38").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone38").addClass("editable");
+  $(".textmmultithemeone38").attr("contenteditable", "true");
+   $(".editmmultithemeone38").hide();
+  $(".savemmultithemeone38").show();
+ 
+});
+
+$(".savemmultithemeone38").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone38").removeClass("editable");
+ $(".textmmultithemeone38").removeAttr("contenteditable");
+  $(".editmmultithemeone38").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone39" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone39").hasClass("editable")) {
+    $(".editmmultithemeone39").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone39").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone39").hide();
+
+});
+
+ $(".editmmultithemeone39").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone39").addClass("editable");
+  $(".textmmultithemeone39").attr("contenteditable", "true");
+   $(".editmmultithemeone39").hide();
+  $(".savemmultithemeone39").show();
+ 
+});
+
+$(".savemmultithemeone39").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone39").removeClass("editable");
+ $(".textmmultithemeone39").removeAttr("contenteditable");
+  $(".editmmultithemeone39").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone40" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone40").hasClass("editable")) {
+    $(".editmmultithemeone40").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone40").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone40").hide();
+
+});
+
+ $(".editmmultithemeone40").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone40").addClass("editable");
+  $(".textmmultithemeone40").attr("contenteditable", "true");
+   $(".editmmultithemeone40").hide();
+  $(".savemmultithemeone40").show();
+ 
+});
+
+$(".savemmultithemeone40").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone40").removeClass("editable");
+ $(".textmmultithemeone40").removeAttr("contenteditable");
+  $(".editmmultithemeone40").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone41" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone41").hasClass("editable")) {
+    $(".editmmultithemeone41").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone41").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone41").hide();
+
+});
+
+ $(".editmmultithemeone41").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone41").addClass("editable");
+  $(".textmmultithemeone41").attr("contenteditable", "true");
+   $(".editmmultithemeone41").hide();
+  $(".savemmultithemeone41").show();
+ 
+});
+
+$(".savemmultithemeone41").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone41").removeClass("editable");
+ $(".textmmultithemeone41").removeAttr("contenteditable");
+  $(".editmmultithemeone41").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone42" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone42").hasClass("editable")) {
+    $(".editmmultithemeone42").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone42").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone42").hide();
+
+});
+
+ $(".editmmultithemeone42").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone42").addClass("editable");
+  $(".textmmultithemeone42").attr("contenteditable", "true");
+   $(".editmmultithemeone42").hide();
+  $(".savemmultithemeone42").show();
+ 
+});
+
+$(".savemmultithemeone42").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone42").removeClass("editable");
+ $(".textmmultithemeone42").removeAttr("contenteditable");
+  $(".editmmultithemeone42").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone43" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone43").hasClass("editable")) {
+    $(".editmmultithemeone43").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone43").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone43").hide();
+
+});
+
+ $(".editmmultithemeone43").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone43").addClass("editable");
+  $(".textmmultithemeone43").attr("contenteditable", "true");
+   $(".editmmultithemeone43").hide();
+  $(".savemmultithemeone43").show();
+ 
+});
+
+$(".savemmultithemeone43").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone43").removeClass("editable");
+ $(".textmmultithemeone43").removeAttr("contenteditable");
+  $(".editmmultithemeone43").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone44" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone44").hasClass("editable")) {
+    $(".editmmultithemeone44").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone44").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone44").hide();
+
+});
+
+ $(".editmmultithemeone44").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone44").addClass("editable");
+  $(".textmmultithemeone44").attr("contenteditable", "true");
+   $(".editmmultithemeone44").hide();
+  $(".savemmultithemeone44").show();
+ 
+});
+
+$(".savemmultithemeone44").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone44").removeClass("editable");
+ $(".textmmultithemeone44").removeAttr("contenteditable");
+  $(".editmmultithemeone44").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone45" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone45").hasClass("editable")) {
+    $(".editmmultithemeone45").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone45").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone45").hide();
+
+});
+
+ $(".editmmultithemeone45").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone45").addClass("editable");
+  $(".textmmultithemeone45").attr("contenteditable", "true");
+   $(".editmmultithemeone45").hide();
+  $(".savemmultithemeone45").show();
+ 
+});
+
+$(".savemmultithemeone45").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone45").removeClass("editable");
+ $(".textmmultithemeone45").removeAttr("contenteditable");
+  $(".editmmultithemeone45").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone46" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone46").hasClass("editable")) {
+    $(".editmmultithemeone46").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone46").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone46").hide();
+
+});
+
+ $(".editmmultithemeone46").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone46").addClass("editable");
+  $(".textmmultithemeone46").attr("contenteditable", "true");
+   $(".editmmultithemeone46").hide();
+  $(".savemmultithemeone46").show();
+ 
+});
+
+$(".savemmultithemeone46").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone46").removeClass("editable");
+ $(".textmmultithemeone46").removeAttr("contenteditable");
+  $(".editmmultithemeone46").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone47").hide();
+
+$( ".boxmmultithemeone47" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone47").hasClass("editable")) {
+    $(".editmmultithemeone47").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone47").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone47").hide();
+
+});
+
+ $(".editmmultithemeone47").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone47").addClass("editable");
+   $(".editmmultithemeone47").hide();
+  $(".savemmultithemeone47").show();
+  $(".imageUploadmmultithemeone47").show();
+});
+
+$(".savemmultithemeone47").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone47").removeClass("editable");
+ 
+  $(".editmmultithemeone47").hide();
+  $(".imageUploadmmultithemeone47").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone47").change(function() {
+
+    readURLmmulti47(this);
+});
+
+});
+function readURLmmulti47(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone47').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone48").hide();
+
+$( ".boxmmultithemeone48" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone48").hasClass("editable")) {
+    $(".editmmultithemeone48").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone48").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone48").hide();
+
+});
+
+ $(".editmmultithemeone48").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone48").addClass("editable");
+   $(".editmmultithemeone48").hide();
+  $(".savemmultithemeone48").show();
+  $(".imageUploadmmultithemeone48").show();
+});
+
+$(".savemmultithemeone48").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone48").removeClass("editable");
+ 
+  $(".editmmultithemeone48").hide();
+  $(".imageUploadmmultithemeone48").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone48").change(function() {
+
+    readURLmmulti48(this);
+});
+
+});
+function readURLmmulti48(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone48').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone49").hide();
+
+$( ".boxmmultithemeone49" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone49").hasClass("editable")) {
+    $(".editmmultithemeone49").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone49").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone49").hide();
+
+});
+
+ $(".editmmultithemeone49").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone49").addClass("editable");
+   $(".editmmultithemeone49").hide();
+  $(".savemmultithemeone49").show();
+  $(".imageUploadmmultithemeone49").show();
+});
+
+$(".savemmultithemeone49").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone49").removeClass("editable");
+ 
+  $(".editmmultithemeone49").hide();
+  $(".imageUploadmmultithemeone49").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone49").change(function() {
+
+    readURLmmulti49(this);
+});
+
+});
+function readURLmmulti49(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone49').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone50").hide();
+
+$( ".boxmmultithemeone50" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone50").hasClass("editable")) {
+    $(".editmmultithemeone50").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone50").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone50").hide();
+
+});
+
+ $(".editmmultithemeone50").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone50").addClass("editable");
+   $(".editmmultithemeone50").hide();
+  $(".savemmultithemeone50").show();
+  $(".imageUploadmmultithemeone50").show();
+});
+
+$(".savemmultithemeone50").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone50").removeClass("editable");
+ 
+  $(".editmmultithemeone50").hide();
+  $(".imageUploadmmultithemeone50").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone50").change(function() {
+
+    readURLmmulti50(this);
+});
+
+});
+function readURLmmulti50(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone50').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone51").hide();
+
+$( ".boxmmultithemeone51" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone51").hasClass("editable")) {
+    $(".editmmultithemeone51").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone51").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone51").hide();
+
+});
+
+ $(".editmmultithemeone51").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone51").addClass("editable");
+   $(".editmmultithemeone51").hide();
+  $(".savemmultithemeone51").show();
+  $(".imageUploadmmultithemeone51").show();
+});
+
+$(".savemmultithemeone51").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone51").removeClass("editable");
+ 
+  $(".editmmultithemeone51").hide();
+  $(".imageUploadmmultithemeone51").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone51").change(function() {
+
+    readURLmmulti51(this);
+});
+
+});
+function readURLmmulti51(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone51').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone52").hide();
+
+$( ".boxmmultithemeone52" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone52").hasClass("editable")) {
+    $(".editmmultithemeone52").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone52").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone52").hide();
+
+});
+
+ $(".editmmultithemeone52").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone52").addClass("editable");
+   $(".editmmultithemeone52").hide();
+  $(".savemmultithemeone52").show();
+  $(".imageUploadmmultithemeone52").show();
+});
+
+$(".savemmultithemeone52").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone52").removeClass("editable");
+ 
+  $(".editmmultithemeone52").hide();
+  $(".imageUploadmmultithemeone52").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone52").change(function() {
+
+    readURLmmulti52(this);
+});
+
+});
+function readURLmmulti52(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone52').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone53").hide();
+
+$( ".boxmmultithemeone53" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone53").hasClass("editable")) {
+    $(".editmmultithemeone53").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone53").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone53").hide();
+
+});
+
+ $(".editmmultithemeone53").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone53").addClass("editable");
+   $(".editmmultithemeone53").hide();
+  $(".savemmultithemeone53").show();
+  $(".imageUploadmmultithemeone53").show();
+});
+
+$(".savemmultithemeone53").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone53").removeClass("editable");
+ 
+  $(".editmmultithemeone53").hide();
+  $(".imageUploadmmultithemeone53").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone53").change(function() {
+
+    readURLmmulti53(this);
+});
+
+});
+function readURLmmulti53(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone53').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone54").hide();
+
+$( ".boxmmultithemeone54" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone54").hasClass("editable")) {
+    $(".editmmultithemeone54").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone54").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone54").hide();
+
+});
+
+ $(".editmmultithemeone54").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone54").addClass("editable");
+   $(".editmmultithemeone54").hide();
+  $(".savemmultithemeone54").show();
+  $(".imageUploadmmultithemeone54").show();
+});
+
+$(".savemmultithemeone54").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone54").removeClass("editable");
+ 
+  $(".editmmultithemeone54").hide();
+  $(".imageUploadmmultithemeone54").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone54").change(function() {
+
+    readURLmmulti54(this);
+});
+
+});
+function readURLmmulti54(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone54').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone55").hide();
+
+$( ".boxmmultithemeone55" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone55").hasClass("editable")) {
+    $(".editmmultithemeone55").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone55").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone55").hide();
+
+});
+
+ $(".editmmultithemeone55").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone55").addClass("editable");
+   $(".editmmultithemeone55").hide();
+  $(".savemmultithemeone55").show();
+  $(".imageUploadmmultithemeone55").show();
+});
+
+$(".savemmultithemeone55").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone55").removeClass("editable");
+ 
+  $(".editmmultithemeone55").hide();
+  $(".imageUploadmmultithemeone55").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone55").change(function() {
+
+    readURLmmulti55(this);
+});
+
+});
+function readURLmmulti55(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmmultithemeone55').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone56" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone56").hasClass("editable")) {
+    $(".editmmultithemeone56").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone56").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone56").hide();
+
+});
+
+ $(".editmmultithemeone56").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone56").addClass("editable");
+  $(".textmmultithemeone56").attr("contenteditable", "true");
+   $(".editmmultithemeone56").hide();
+  $(".savemmultithemeone56").show();
+ 
+});
+
+$(".savemmultithemeone56").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone56").removeClass("editable");
+ $(".textmmultithemeone56").removeAttr("contenteditable");
+  $(".editmmultithemeone56").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+$( ".boxmmultithemeone57" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone57").hasClass("editable")) {
+    $(".editmmultithemeone57").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone57").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone57").hide();
+
+});
+
+ $(".editmmultithemeone57").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone57").addClass("editable");
+  $(".textmmultithemeone57").attr("contenteditable", "true");
+   $(".editmmultithemeone57").hide();
+  $(".savemmultithemeone57").show();
+ 
+});
+
+$(".savemmultithemeone57").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone57").removeClass("editable");
+ $(".textmmultithemeone57").removeAttr("contenteditable");
+  $(".editmmultithemeone57").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone58" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone58").hasClass("editable")) {
+    $(".editmmultithemeone58").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone58").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone58").hide();
+
+});
+
+ $(".editmmultithemeone58").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone58").addClass("editable");
+  $(".textmmultithemeone58").attr("contenteditable", "true");
+   $(".editmmultithemeone58").hide();
+  $(".savemmultithemeone58").show();
+ 
+});
+
+$(".savemmultithemeone58").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone58").removeClass("editable");
+ $(".textmmultithemeone58").removeAttr("contenteditable");
+  $(".editmmultithemeone58").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmmultithemeone59" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone59").hasClass("editable")) {
+    $(".editmmultithemeone59").hide();
+
+   } 
+   else
+   {
+    $(".editmmultithemeone59").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone59").hide();
+
+});
+
+ $(".editmmultithemeone59").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone59").addClass("editable");
+  $(".textmmultithemeone59").attr("contenteditable", "true");
+   $(".editmmultithemeone59").hide();
+  $(".savemmultithemeone59").show();
+ 
+});
+
+$(".savemmultithemeone59").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone59").removeClass("editable");
+ $(".textmmultithemeone59").removeAttr("contenteditable");
+  $(".editmmultithemeone59").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone60").hide();
+
+$( ".boxmmultithemeone60" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone60").hasClass("editable")) {
+    $(".editmmultithemeone60").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmmultithemeone60").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone60").hide();
+ 
+
+});
+
+ $(".editmmultithemeone60").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone60").addClass("editable");
+   $(".editmmultithemeone60").hide();
+  $(".savemmultithemeone60").show();
+  $(".imageUploadmmultithemeone60").show();
+});
+
+$(".savemmultithemeone60").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone60").removeClass("editable");
+ 
+  $(".editmmultithemeone60").hide();
+  $(".imageUploadmmultithemeone60").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone60").change(function() {
+
+    readURLmmulti60(this);
+});
+
+});
+function readURLmmulti60(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.mmultithemeone.demo-banner').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmmultithemeone61").hide();
+
+$( ".boxmmultithemeone61" )
+ .on("mouseenter", function() {
+   if ($(".boxmmultithemeone61").hasClass("editable")) {
+    $(".editmmultithemeone61").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmmultithemeone61").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmmultithemeone61").hide();
+ 
+
+});
+
+ $(".editmmultithemeone61").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone61").addClass("editable");
+   $(".editmmultithemeone61").hide();
+  $(".savemmultithemeone61").show();
+  $(".imageUploadmmultithemeone61").show();
+});
+
+$(".savemmultithemeone61").click(function() {
+  $(this).hide();
+  $(".boxmmultithemeone61").removeClass("editable");
+ 
+  $(".editmmultithemeone61").hide();
+  $(".imageUploadmmultithemeone61").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmmultithemeone61").change(function() {
+
+    readURLmmulti61(this);
+});
+
+});
+function readURLmmulti61(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.mmultithemeone.responsive_retina_support').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
 
 
 </script>

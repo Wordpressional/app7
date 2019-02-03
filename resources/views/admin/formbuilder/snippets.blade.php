@@ -367,6 +367,46 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Header;In-built Developer Theme two">
+@include('shortcodes.plainhtml.headert2')
+ 
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portofoliot2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+@include('shortcodes.plainhtml.multipaget2')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portofolio2t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+@include('shortcodes.plainhtml.nichepaget2')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portofolio3t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+@include('shortcodes.plainhtml.onepaget2')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portofolio4t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+@include('shortcodes.plainhtml.elementst2')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/buypaget2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Buypage;In-built Developer Theme two">
+@include('shortcodes.plainhtml.buypaget2')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/featurest2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+@include('shortcodes.plainhtml.featurest2')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Portfolio;In-built Developer Theme two">
+@include('shortcodes.plainhtml.footert2')
+  
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/contspecial.jpg')}}" data-keditor-title="Photo" data-keditor-categories="HTMLTemplates;Contact Forms">
 @include('shortcodes.plainhtml.contactformspecial')
   
