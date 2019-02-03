@@ -4509,11 +4509,11 @@ var inputcontpur = $('.inputcontpur').val();
   $('#pur').addClass(inputcontpur);
   if(inputcontpur == "")
   {
-    $('.service-icon').css('font-size','0px');
+    $('.service-icon1').css('font-size','0px');
   }
   else
   {
-    $('.service-icon').css('font-size','90px');
+    $('.service-icon1').css('font-size','90px');
   }
 }
 
