@@ -33,8 +33,9 @@
 <link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Bootstrap -->
+<link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
+
 
 
 <!-- Rev slider css -->

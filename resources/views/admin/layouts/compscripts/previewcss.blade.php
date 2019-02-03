@@ -21,9 +21,11 @@
 
      
     
-<link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
 
+<!-- Bootstrap -->
+<link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
+
+<link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
 
