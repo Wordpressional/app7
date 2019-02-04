@@ -27,16 +27,7 @@
                     <a class="nav-link" href="main.html#description">Description</a>
                 </li>
                 
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Terms Conditions</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Privacy Policy</span></a>
-                    </div>
-                </li>
-                <!-- end of dropdown menu -->
+               
 
                 <li class="nav-item">
                     <a class="nav-link" href="main.html#contact">Contact</a>

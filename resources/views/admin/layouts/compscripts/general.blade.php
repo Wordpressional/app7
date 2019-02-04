@@ -1,23 +1,27 @@
  
-  <script src="{{ asset(mix('js/app.js')) }}"></script>
-    <!-- jQuery library -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+    <!-- Bootstrap -->
+<script src="{{ asset('webhome/js/jquery-3.3.1.min.js') }}"></script>
 
-    <!-- Popper JS -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!-- Popper JS -->
+<script src="{{ asset('webhome/js/popper.min.js') }}"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
+<!-- Bootstrap -->
+<script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery-ui.min.js')}}"></script>
+<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+ <script src="{{ asset('js/swiper.min.js') }}"></script>
+ <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
+<script src="{{ asset('js/validator.min.js') }}"></script>
+    <script src="{{ asset(mix('js/app.js')) }}"></script>
+    <script src="{{ asset(mix('js/admin.js')) }}"></script>
+    <script src="{{ asset('js/adminlte.min.js') }}"></script>
      <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
   
 
   <!-- Scripts -->
-    
-    <script src="{{ asset(mix('js/admin.js')) }}"></script>
-    <script src="{{ asset('js/adminlte.min.js') }}"></script>
-
+   
     
      <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
@@ -28,7 +32,9 @@
     <script src="{{ asset('js/colorcommon.js') }}"></script>
 
     
-   
+    
+    
+
    
    
    <script type="text/javascript">

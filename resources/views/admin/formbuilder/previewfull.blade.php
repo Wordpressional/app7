@@ -262,6 +262,9 @@ $(".dropdowns").dropdowns();
 .main_h {
     position: static;
 }
+.mlthemeone.navbar-custom{
+   position: static;
+}
 
 
 </style>

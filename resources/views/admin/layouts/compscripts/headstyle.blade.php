@@ -22,20 +22,25 @@
 
 <!-- Styles -->
 
-<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
-<link href="{{ asset(mix('css/admin.css')) }}" rel="stylesheet">
+
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
-<link rel="stylesheet" href="{{asset('css/public.css')}}" />
-<link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}" />
-<link rel="stylesheet" href="{{asset('css/skins/_all-skins.min.css')}}" />
+<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+<link href="{{ asset(mix('css/admin.css')) }}" rel="stylesheet">
+
+
+
 <link href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
 
-<link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
+
 <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
 
 
 <link rel="stylesheet" type="text/css" href="{{asset('examples/plugins/code-prettify/src/prettify.css')}}" />
+<link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}" />
+<link rel="stylesheet" href="{{asset('css/skins/_all-skins.min.css')}}" />
+<link rel="stylesheet" href="{{asset('css/public.css')}}" />
+<link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('examples/css/examples.css')}}" />
 
 <link rel="manifest" href="{{url('/manifest.json')}}">
