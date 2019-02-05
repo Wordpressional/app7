@@ -34,7 +34,7 @@ $(".savemparallaxone1").click(function() {
  $(".textmparallaxone1").removeAttr("contenteditable");
   $(".editmparallaxone1").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -3670,7 +3670,7 @@ $(".savemlservice1theme6").click(function() {
   $(".boxmlservice1theme6").removeClass("editable");
  $(".textmlservice1theme6").removeAttr("contenteditable");
   $(".editmlservice1theme6").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5066,7 +5066,7 @@ $(".savemmultithemeone1").click(function() {
  
   $(".editmmultithemeone1").hide();
   $(".imageUploadmmultithemeone1").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5129,7 +5129,7 @@ $(".savemmultithemeone2").click(function() {
  
   $(".editmmultithemeone2").hide();
   $(".imageUploadmmultithemeone2").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5191,7 +5191,7 @@ $(".savemmultithemeone3").click(function() {
   $(".boxmmultithemeone3").removeClass("editable");
  $(".textmmultithemeone3").removeAttr("contenteditable");
   $(".editmmultithemeone3").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5235,7 +5235,7 @@ $(".savemmultithemeone4").click(function() {
  $(".textmmultithemeone4").removeAttr("contenteditable");
   $(".editmmultithemeone4").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5276,7 +5276,7 @@ $(".savemmultithemeone5").click(function() {
  
   $(".editmmultithemeone5").hide();
   $(".imageUploadmmultithemeone5").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5339,7 +5339,7 @@ $(".savemmultithemeone6").click(function() {
  $(".textmmultithemeone6").removeAttr("contenteditable");
   $(".editmmultithemeone6").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5381,7 +5381,7 @@ $(".savemmultithemeone7").click(function() {
  
   $(".editmmultithemeone7").hide();
   $(".imageUploadmmultithemeone7").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5443,7 +5443,7 @@ $(".savemmultithemeone8").click(function() {
   $(".boxmmultithemeone8").removeClass("editable");
  $(".textmmultithemeone8").removeAttr("contenteditable");
   $(".editmmultithemeone8").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5484,7 +5484,7 @@ $(".savemmultithemeone9").click(function() {
  
   $(".editmmultithemeone9").hide();
   $(".imageUploadmmultithemeone9").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5547,7 +5547,7 @@ $(".savemmultithemeone10").click(function() {
  
   $(".editmmultithemeone10").hide();
   $(".imageUploadmmultithemeone10").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5609,7 +5609,7 @@ $(".savemmultithemeone11").click(function() {
  
   $(".editmmultithemeone11").hide();
   $(".imageUploadmmultithemeone11").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5674,7 +5674,7 @@ $(".savemmultithemeone12").click(function() {
  
   $(".editmmultithemeone12").hide();
   $(".imageUploadmmultithemeone12").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5737,7 +5737,7 @@ $(".savemmultithemeone13").click(function() {
   $(".boxmmultithemeone13").removeClass("editable");
  $(".textmmultithemeone13").removeAttr("contenteditable");
   $(".editmmultithemeone13").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5779,7 +5779,7 @@ $(".savemmultithemeone14").click(function() {
   $(".boxmmultithemeone14").removeClass("editable");
  $(".textmmultithemeone14").removeAttr("contenteditable");
   $(".editmmultithemeone14").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5823,7 +5823,7 @@ $(".savemmultithemeone15").click(function() {
  $(".textmmultithemeone15").removeAttr("contenteditable");
   $(".editmmultithemeone15").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5865,7 +5865,7 @@ $(".savemmultithemeone16").click(function() {
  $(".textmmultithemeone16").removeAttr("contenteditable");
   $(".editmmultithemeone16").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -5907,7 +5907,7 @@ $(".savemmultithemeone17").click(function() {
   $(".boxmmultithemeone17").removeClass("editable");
  $(".textmmultithemeone17").removeAttr("contenteditable");
   $(".editmmultithemeone17").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5950,7 +5950,7 @@ $(".savemmultithemeone18").click(function() {
  $(".textmmultithemeone18").removeAttr("contenteditable");
   $(".editmmultithemeone18").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5992,7 +5992,7 @@ $(".savemmultithemeone19").click(function() {
  $(".textmmultithemeone19").removeAttr("contenteditable");
   $(".editmmultithemeone19").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -6034,7 +6034,7 @@ $(".savemmultithemeone20").click(function() {
  $(".textmmultithemeone20").removeAttr("contenteditable");
   $(".editmmultithemeone20").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6076,7 +6076,7 @@ $(".savemmultithemeone21").click(function() {
  $(".textmmultithemeone21").removeAttr("contenteditable");
   $(".editmmultithemeone21").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6118,7 +6118,7 @@ $(".savemmultithemeone22").click(function() {
  $(".textmmultithemeone22").removeAttr("contenteditable");
   $(".editmmultithemeone22").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6160,7 +6160,7 @@ $(".savemmultithemeone23").click(function() {
  $(".textmmultithemeone23").removeAttr("contenteditable");
   $(".editmmultithemeone23").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6201,7 +6201,7 @@ $(".savemmultithemeone24").click(function() {
  
   $(".editmmultithemeone24").hide();
   $(".imageUploadmmultithemeone24").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6264,7 +6264,7 @@ $(".savemmultithemeone25").click(function() {
  
   $(".editmmultithemeone25").hide();
   $(".imageUploadmmultithemeone25").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6327,7 +6327,7 @@ $(".savemmultithemeone26").click(function() {
  
   $(".editmmultithemeone26").hide();
   $(".imageUploadmmultithemeone26").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6390,7 +6390,7 @@ $(".savemmultithemeone27").click(function() {
  
   $(".editmmultithemeone27").hide();
   $(".imageUploadmmultithemeone27").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6453,7 +6453,7 @@ $(".savemmultithemeone28").click(function() {
  
   $(".editmmultithemeone28").hide();
   $(".imageUploadmmultithemeone28").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6515,7 +6515,7 @@ $(".savemmultithemeone29").click(function() {
  
   $(".editmmultithemeone29").hide();
   $(".imageUploadmmultithemeone29").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6578,7 +6578,7 @@ $(".savemmultithemeone30").click(function() {
  $(".textmmultithemeone30").removeAttr("contenteditable");
   $(".editmmultithemeone30").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6620,7 +6620,7 @@ $(".savemmultithemeone31").click(function() {
  $(".textmmultithemeone31").removeAttr("contenteditable");
   $(".editmmultithemeone31").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -6662,7 +6662,7 @@ $(".savemmultithemeone32").click(function() {
  $(".textmmultithemeone32").removeAttr("contenteditable");
   $(".editmmultithemeone32").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6704,7 +6704,7 @@ $(".savemmultithemeone33").click(function() {
  $(".textmmultithemeone33").removeAttr("contenteditable");
   $(".editmmultithemeone33").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6746,7 +6746,7 @@ $(".savemmultithemeone34").click(function() {
  
   $(".editmmultithemeone34").hide();
   $(".imageUploadmmultithemeone34").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6808,7 +6808,7 @@ $(".savemmultithemeone35").click(function() {
  
   $(".editmmultithemeone35").hide();
   $(".imageUploadmmultithemeone35").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6871,7 +6871,7 @@ $(".savemmultithemeone36").click(function() {
  
   $(".editmmultithemeone36").hide();
   $(".imageUploadmmultithemeone36").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6935,7 +6935,7 @@ $(".savemmultithemeone37").click(function() {
  $(".textmmultithemeone37").removeAttr("contenteditable");
   $(".editmmultithemeone37").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6977,7 +6977,7 @@ $(".savemmultithemeone38").click(function() {
  $(".textmmultithemeone38").removeAttr("contenteditable");
   $(".editmmultithemeone38").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7019,7 +7019,7 @@ $(".savemmultithemeone39").click(function() {
  $(".textmmultithemeone39").removeAttr("contenteditable");
   $(".editmmultithemeone39").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7061,7 +7061,7 @@ $(".savemmultithemeone40").click(function() {
  $(".textmmultithemeone40").removeAttr("contenteditable");
   $(".editmmultithemeone40").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7103,7 +7103,7 @@ $(".savemmultithemeone41").click(function() {
  $(".textmmultithemeone41").removeAttr("contenteditable");
   $(".editmmultithemeone41").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7145,7 +7145,7 @@ $(".savemmultithemeone42").click(function() {
  $(".textmmultithemeone42").removeAttr("contenteditable");
   $(".editmmultithemeone42").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7187,7 +7187,7 @@ $(".savemmultithemeone43").click(function() {
  $(".textmmultithemeone43").removeAttr("contenteditable");
   $(".editmmultithemeone43").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -7229,7 +7229,7 @@ $(".savemmultithemeone44").click(function() {
  $(".textmmultithemeone44").removeAttr("contenteditable");
   $(".editmmultithemeone44").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7271,7 +7271,7 @@ $(".savemmultithemeone45").click(function() {
  $(".textmmultithemeone45").removeAttr("contenteditable");
   $(".editmmultithemeone45").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7313,7 +7313,7 @@ $(".savemmultithemeone46").click(function() {
  $(".textmmultithemeone46").removeAttr("contenteditable");
   $(".editmmultithemeone46").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -7355,7 +7355,7 @@ $(".savemmultithemeone47").click(function() {
  
   $(".editmmultithemeone47").hide();
   $(".imageUploadmmultithemeone47").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7417,7 +7417,7 @@ $(".savemmultithemeone48").click(function() {
  
   $(".editmmultithemeone48").hide();
   $(".imageUploadmmultithemeone48").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7479,7 +7479,7 @@ $(".savemmultithemeone49").click(function() {
  
   $(".editmmultithemeone49").hide();
   $(".imageUploadmmultithemeone49").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7541,7 +7541,7 @@ $(".savemmultithemeone50").click(function() {
  
   $(".editmmultithemeone50").hide();
   $(".imageUploadmmultithemeone50").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7604,7 +7604,7 @@ $(".savemmultithemeone51").click(function() {
  
   $(".editmmultithemeone51").hide();
   $(".imageUploadmmultithemeone51").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7667,7 +7667,7 @@ $(".savemmultithemeone52").click(function() {
  
   $(".editmmultithemeone52").hide();
   $(".imageUploadmmultithemeone52").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7729,7 +7729,7 @@ $(".savemmultithemeone53").click(function() {
  
   $(".editmmultithemeone53").hide();
   $(".imageUploadmmultithemeone53").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7791,7 +7791,7 @@ $(".savemmultithemeone54").click(function() {
  
   $(".editmmultithemeone54").hide();
   $(".imageUploadmmultithemeone54").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7853,7 +7853,7 @@ $(".savemmultithemeone55").click(function() {
  
   $(".editmmultithemeone55").hide();
   $(".imageUploadmmultithemeone55").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7917,7 +7917,7 @@ $(".savemmultithemeone56").click(function() {
  $(".textmmultithemeone56").removeAttr("contenteditable");
   $(".editmmultithemeone56").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7957,7 +7957,7 @@ $(".savemmultithemeone57").click(function() {
  $(".textmmultithemeone57").removeAttr("contenteditable");
   $(".editmmultithemeone57").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -8001,7 +8001,7 @@ $(".savemmultithemeone58").click(function() {
  $(".textmmultithemeone58").removeAttr("contenteditable");
   $(".editmmultithemeone58").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -8044,7 +8044,7 @@ $(".savemmultithemeone59").click(function() {
  $(".textmmultithemeone59").removeAttr("contenteditable");
   $(".editmmultithemeone59").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -8089,7 +8089,7 @@ $(".savemmultithemeone60").click(function() {
  
   $(".editmmultithemeone60").hide();
   $(".imageUploadmmultithemeone60").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8156,7 +8156,7 @@ $(".savemmultithemeone61").click(function() {
  
   $(".editmmultithemeone61").hide();
   $(".imageUploadmmultithemeone61").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8218,7 +8218,7 @@ $(".savemlthemeone1").click(function() {
  
   $(".editmlthemeone1").hide();
   $(".imageUploadmlthemeone1").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8281,7 +8281,7 @@ $(".savemlthemeone2").click(function() {
  
   $(".editmlthemeone2").hide();
   $(".imageUploadmlthemeone2").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8342,7 +8342,7 @@ $(".savemlthemeone3").click(function() {
  
   $(".editmlthemeone3").hide();
   $(".imageUploadmlthemeone3").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8403,7 +8403,7 @@ $(".savemlthemeone4").click(function() {
  
   $(".editmlthemeone4").hide();
   $(".imageUploadmlthemeone4").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8464,7 +8464,7 @@ $(".savemlthemeone5").click(function() {
  
   $(".editmlthemeone5").hide();
   $(".imageUploadmlthemeone5").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8525,7 +8525,7 @@ $(".savemlthemeone6").click(function() {
  
   $(".editmlthemeone6").hide();
   $(".imageUploadmlthemeone6").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8586,7 +8586,7 @@ $(".savemlthemeone7").click(function() {
  
   $(".editmlthemeone7").hide();
   $(".imageUploadmlthemeone7").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8647,7 +8647,7 @@ $(".savemlthemeone8").click(function() {
  
   $(".editmlthemeone8").hide();
   $(".imageUploadmlthemeone8").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8708,7 +8708,7 @@ $(".savemlthemeone9").click(function() {
  
   $(".editmlthemeone9").hide();
   $(".imageUploadmlthemeone9").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8770,7 +8770,7 @@ $(".savemlthemeone10").click(function() {
  
   $(".editmlthemeone10").hide();
   $(".imageUploadmlthemeone10").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8832,7 +8832,7 @@ $(".savemlthemeone11").click(function() {
  
   $(".editmlthemeone11").hide();
   $(".imageUploadmlthemeone11").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8893,7 +8893,7 @@ $(".savemlthemeone12").click(function() {
  
   $(".editmlthemeone12").hide();
   $(".imageUploadmlthemeone12").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8955,7 +8955,7 @@ $(".savemlthemeone13").click(function() {
  
   $(".editmlthemeone13").hide();
   $(".imageUploadmlthemeone13").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9016,7 +9016,7 @@ $(".savemlthemeone14").click(function() {
  
   $(".editmlthemeone14").hide();
   $(".imageUploadmlthemeone14").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9078,7 +9078,7 @@ $(".savemlthemeone15").click(function() {
  
   $(".editmlthemeone15").hide();
   $(".imageUploadmlthemeone15").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9141,7 +9141,7 @@ $(".savemlthemeone16").click(function() {
  
   $(".editmlthemeone16").hide();
   $(".imageUploadmlthemeone16").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9205,7 +9205,7 @@ $(".savemlthemeone17").click(function() {
  
   $(".editmlthemeone17").hide();
   $(".imageUploadmlthemeone17").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9267,7 +9267,7 @@ $(".savemlthemeone18").click(function() {
  
   $(".editmlthemeone18").hide();
   $(".imageUploadmlthemeone18").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9329,7 +9329,7 @@ $(".savemlthemeone19").click(function() {
  
   $(".editmlthemeone19").hide();
   $(".imageUploadmlthemeone19").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9390,7 +9390,7 @@ $(".savemlthemeone20").click(function() {
  
   $(".editmlthemeone20").hide();
   $(".imageUploadmlthemeone20").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9451,7 +9451,7 @@ $(".savemlthemeone21").click(function() {
  
   $(".editmlthemeone21").hide();
   $(".imageUploadmlthemeone21").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9512,7 +9512,7 @@ $(".savemlthemeone22").click(function() {
  
   $(".editmlthemeone22").hide();
   $(".imageUploadmlthemeone22").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9574,7 +9574,7 @@ $(".savemlthemeone23").click(function() {
  
   $(".editmlthemeone23").hide();
   $(".imageUploadmlthemeone23").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9636,7 +9636,7 @@ $(".savemlthemeone24").click(function() {
  
   $(".editmlthemeone24").hide();
   $(".imageUploadmlthemeone24").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9698,7 +9698,7 @@ $(".savemlthemeone25").click(function() {
   $(".boxmlthemeone25").removeClass("editable");
  $(".textmlthemeone25").removeAttr("contenteditable");
   $(".editmlthemeone25").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -9740,7 +9740,7 @@ $(".submitmlfacebook26").click(function() {
   $(".boxmlthemeone26").removeClass("editable");
   $(".contmlfacebook26").hide();
 addHref26();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -9790,7 +9790,7 @@ $(".savemlthemeone27").click(function() {
  
   $(".editmlthemeone27").hide();
   $(".imageUploadmlthemeone27").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9854,7 +9854,7 @@ $(".savemlthemeone28").click(function() {
   $(".boxmlthemeone28").removeClass("editable");
  $(".textmlthemeone28").removeAttr("contenteditable");
   $(".editmlthemeone28").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -9897,7 +9897,7 @@ $(".savemlthemeone29").click(function() {
  $(".textmlthemeone29").removeAttr("contenteditable");
   $(".editmlthemeone29").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -9939,7 +9939,7 @@ $(".savemlthemeone30").click(function() {
  $(".textmlthemeone30").removeAttr("contenteditable");
   $(".editmlthemeone30").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -9980,7 +9980,7 @@ $(".savemlthemeone31").click(function() {
   $(".boxmlthemeone31").removeClass("editable");
  $(".textmlthemeone31").removeAttr("contenteditable");
   $(".editmlthemeone31").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -10023,7 +10023,7 @@ $(".savemlthemeone32").click(function() {
  $(".textmlthemeone32").removeAttr("contenteditable");
   $(".editmlthemeone32").hide();
 
-  
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -10064,7 +10064,7 @@ $(".savemlthemeone33").click(function() {
  $(".textmlthemeone33").removeAttr("contenteditable");
   $(".editmlthemeone33").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10105,7 +10105,7 @@ $(".savemlthemeone34").click(function() {
  $(".textmlthemeone34").removeAttr("contenteditable");
   $(".editmlthemeone34").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10147,7 +10147,7 @@ $(".savemlthemeone35").click(function() {
  $(".textmlthemeone35").removeAttr("contenteditable");
   $(".editmlthemeone35").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10189,7 +10189,7 @@ $(".savemlthemeone36").click(function() {
  $(".textmlthemeone36").removeAttr("contenteditable");
   $(".editmlthemeone36").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10231,7 +10231,7 @@ $(".savemlthemeone37").click(function() {
  $(".textmlthemeone37").removeAttr("contenteditable");
   $(".editmlthemeone37").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10274,7 +10274,7 @@ $(".savemlthemeone38").click(function() {
  $(".textmlthemeone38").removeAttr("contenteditable");
   $(".editmlthemeone38").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10317,7 +10317,7 @@ $(".savemlthemeone39").click(function() {
  $(".textmlthemeone39").removeAttr("contenteditable");
   $(".editmlthemeone39").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10359,7 +10359,7 @@ $(".savemlthemeone40").click(function() {
  $(".textmlthemeone40").removeAttr("contenteditable");
   $(".editmlthemeone40").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10401,7 +10401,7 @@ $(".savemlthemeone41").click(function() {
  $(".textmlthemeone41").removeAttr("contenteditable");
   $(".editmlthemeone41").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10444,7 +10444,7 @@ $(".savemlthemeone42").click(function() {
  $(".textmlthemeone42").removeAttr("contenteditable");
   $(".editmlthemeone42").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10486,7 +10486,7 @@ $(".savemlthemeone43").click(function() {
  $(".textmlthemeone43").removeAttr("contenteditable");
   $(".editmlthemeone43").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10529,7 +10529,7 @@ $(".savemlthemeone44").click(function() {
  $(".textmlthemeone44").removeAttr("contenteditable");
   $(".editmlthemeone44").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10572,7 +10572,7 @@ $(".savemlthemeone45").click(function() {
  $(".textmlthemeone45").removeAttr("contenteditable");
   $(".editmlthemeone45").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10614,7 +10614,7 @@ $(".savemlthemeone46").click(function() {
  $(".textmlthemeone46").removeAttr("contenteditable");
   $(".editmlthemeone46").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10656,7 +10656,7 @@ $(".savemlthemeone47").click(function() {
  $(".textmlthemeone47").removeAttr("contenteditable");
   $(".editmlthemeone47").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10698,7 +10698,7 @@ $(".savemlthemeone48").click(function() {
  $(".textmlthemeone48").removeAttr("contenteditable");
   $(".editmlthemeone48").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10740,7 +10740,7 @@ $(".savemlthemeone49").click(function() {
  $(".textmlthemeone49").removeAttr("contenteditable");
   $(".editmlthemeone49").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10782,7 +10782,7 @@ $(".savemlthemeone50").click(function() {
  $(".textmlthemeone50").removeAttr("contenteditable");
   $(".editmlthemeone50").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10824,7 +10824,7 @@ $(".savemlthemeone51").click(function() {
  $(".textmlthemeone51").removeAttr("contenteditable");
   $(".editmlthemeone51").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10866,7 +10866,7 @@ $(".savemlthemeone52").click(function() {
  $(".textmlthemeone52").removeAttr("contenteditable");
   $(".editmlthemeone52").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10908,7 +10908,7 @@ $(".savemlthemeone53").click(function() {
  $(".textmlthemeone53").removeAttr("contenteditable");
   $(".editmlthemeone53").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10950,7 +10950,7 @@ $(".savemlthemeone54").click(function() {
  $(".textmlthemeone54").removeAttr("contenteditable");
   $(".editmlthemeone54").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10992,7 +10992,7 @@ $(".savemlthemeone55").click(function() {
  $(".textmlthemeone55").removeAttr("contenteditable");
   $(".editmlthemeone55").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11034,7 +11034,7 @@ $(".savemlthemeone56").click(function() {
  $(".textmlthemeone56").removeAttr("contenteditable");
   $(".editmlthemeone56").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11077,7 +11077,7 @@ $(".savemlthemeone57").click(function() {
  $(".textmlthemeone57").removeAttr("contenteditable");
   $(".editmlthemeone57").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11120,7 +11120,7 @@ $(".savemlthemeone58").click(function() {
  $(".textmlthemeone58").removeAttr("contenteditable");
   $(".editmlthemeone58").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11164,7 +11164,7 @@ $(".savemlthemeone59").click(function() {
  $(".textmlthemeone59").removeAttr("contenteditable");
   $(".editmlthemeone59").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11208,7 +11208,7 @@ $(".savemlthemeone60").click(function() {
  $(".textmlthemeone60").removeAttr("contenteditable");
   $(".editmlthemeone60").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11252,7 +11252,7 @@ $(".savemlthemeone61").click(function() {
  $(".textmlthemeone61").removeAttr("contenteditable");
   $(".editmlthemeone61").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11296,7 +11296,7 @@ $(".savemlthemeone62").click(function() {
  $(".textmlthemeone62").removeAttr("contenteditable");
   $(".editmlthemeone62").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11340,7 +11340,7 @@ $(".submitmltwitter63").click(function() {
   $(".boxmlthemeone63").removeClass("editable");
   $(".contmltwitter63").hide();
 addHref63();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -11389,7 +11389,7 @@ $(".submitmlgoogleplus64").click(function() {
   $(".boxmlthemeone64").removeClass("editable");
   $(".contmlgoogleplus64").hide();
 addHref64();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -11439,7 +11439,7 @@ $(".submitmlinstagram65").click(function() {
   $(".boxmlthemeone65").removeClass("editable");
   $(".contmlinstagram65").hide();
 addHref65();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -11489,7 +11489,7 @@ $(".submitmllinkedin66").click(function() {
   $(".boxmlthemeone66").removeClass("editable");
   $(".contmllinkedin66").hide();
 addHref66();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -11539,7 +11539,7 @@ $(".submitmldribbble67").click(function() {
   $(".boxmlthemeone67").removeClass("editable");
   $(".contmldribbble67").hide();
 addHref67();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -11589,7 +11589,7 @@ $(".savemlthemeone68").click(function() {
  $(".textmlthemeone68").removeAttr("contenteditable");
   $(".editmlthemeone68").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11633,7 +11633,7 @@ $(".savemlthemeone69").click(function() {
  $(".textmlthemeone69").removeAttr("contenteditable");
   $(".editmlthemeone69").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11678,7 +11678,7 @@ $(".savemlthemeone70").click(function() {
  
   $(".editmlthemeone70").hide();
   $(".imageUploadmlthemeone70").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -11743,7 +11743,7 @@ $(".savemlthemeone71").click(function() {
  $(".textmlthemeone71").removeAttr("contenteditable");
   $(".editmlthemeone71").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11786,7 +11786,7 @@ $(".savemlthemeone72").click(function() {
  $(".textmlthemeone72").removeAttr("contenteditable");
   $(".editmlthemeone72").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11830,7 +11830,7 @@ $(".savemlthemeone73").click(function() {
  $(".textmlthemeone73").removeAttr("contenteditable");
   $(".editmlthemeone73").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11874,7 +11874,7 @@ $(".savemlthemeone74").click(function() {
  $(".textmlthemeone74").removeAttr("contenteditable");
   $(".editmlthemeone74").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11917,10 +11917,12 @@ $(".savemlthemeone75").click(function() {
   $(".boxmlthemeone75").removeClass("editable");
  $(".textmlthemeone75").removeAttr("contenteditable");
   $(".editmlthemeone75").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
+
+
 
 
 
@@ -11964,7 +11966,7 @@ $(".savemlthemeone76").click(function() {
  
   $(".editmlthemeone76").hide();
   $(".imageUploadmlthemeone76").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12031,7 +12033,7 @@ $(".savemlthemeone77").click(function() {
  
   $(".editmlthemeone77").hide();
   $(".imageUploadmlthemeone77").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12097,7 +12099,7 @@ $(".savemlthemeone78").click(function() {
  
   $(".editmlthemeone78").hide();
   $(".imageUploadmlthemeone78").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12124,6 +12126,100 @@ if (input.files && input.files[0]) {
 }
 
 
+$(document).ready(function(){
 
+   $(".contmllinkedin24").hide();
+
+   $( ".boxmlthemeone24" )
+ .on("mouseenter", function() {
+   if ($(".boxmlthemeone24").hasClass("editable")) {
+    $(".editmlthemeone24").hide();
+
+   } 
+   else
+   {
+    $(".editmlthemeone24").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlthemeone24").hide();
+
+});
+
+
+$(".editmlthemeone24").click(function(e) {
+ $(".boxmlthemeone24").addClass("editable");
+
+  
+  
+  $(".contmllinkedin24").show();
+
+ 
+});
+
+$(".submitmlthemeone24").click(function() {
+  $(".boxmlthemeone24").removeClass("editable");
+  $(".contmllinkedin24").hide();
+addHref24();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+ 
+});
+
+function addHref24() {
+var inputmlthemeone24 = $('.inputmlthemeone24').val();
+  $('.hrefchangemllinkedin24').attr("src",inputmlthemeone24);
+}
+
+$(document).ready(function(){
+
+   $(".contmllinkedin27").hide();
+
+   $( ".boxmlthemeone27" )
+ .on("mouseenter", function() {
+   if ($(".boxmlthemeone27").hasClass("editable")) {
+    $(".editmlthemeone27").hide();
+    
+   } 
+   else
+   {
+    $(".editmlthemeone27").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlthemeone27").hide();
+
+});
+
+
+$(".editmlthemeone27").click(function(e) {
+ $(".boxmlthemeone27").addClass("editable");
+
+  
+  
+  $(".contmllinkedin27").show();
+
+ 
+});
+
+$(".submitmlthemeone27").click(function() {
+  $(".boxmlthemeone27").removeClass("editable");
+  $(".contmllinkedin27").hide();
+addHref27();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+ 
+});
+
+function addHref27() {
+var inputmlthemeone27 = $('.inputmlthemeone27').val();
+  $('.hrefchangemllinkedin27').attr("src",inputmlthemeone27);
+}
 
 </script>

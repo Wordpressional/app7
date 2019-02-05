@@ -5545,6 +5545,15 @@ input[type='checkbox'] {
   color: #864b82;
 }
 
+.mlthemeone.cards-1 h2 {
+    
+    color: #864b82 !important;
+}
+.mlthemeone.cards-2 h2 {
+    
+    color: #864b82 !important;
+}
+
 .mlthemeone.cards-2 .card {
   max-width: 20rem;
   margin-right: auto;
@@ -5877,6 +5886,7 @@ input[type='checkbox'] {
 
 .mlthemeone.footer h4 {
   margin-bottom: 0.75rem;
+  color: white;
 }
 
 .mlthemeone.footer h3,
@@ -5888,10 +5898,10 @@ input[type='checkbox'] {
 .mlthemeone.footer .fa-stack.fa-lg {
   margin-top: 0.125rem;
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 3rem !important;
 }
 
-.mlthemeone.footer .fa-stack a .facebook.fa-stack-2x {
+.mlthemeone.footer .fa-stack a .facebook.fa-stack-2x  {
     color: #3b5998;
 }
 
@@ -6371,3 +6381,27 @@ a:hover.back-to-top {
   /* end of terms & conditions and privacy policy */
 }
 /* end of min-width width 1200px */
+
+.mlthemeone .img-fluid{
+  width: 100% !important;
+}
+
+.mlthemeone.slider-1 h3, .mlthemeone.slider-1 tr
+{
+  color:#f9f9fc;
+}
+.mlthemeone.form h2
+{
+  color: #864b82;
+}
+
+.mlthemeone .fa-facebook, .mlthemeone .fa-twitter, .mlthemeone .fa-linkedin
+{
+   background-color: transparent !important;
+   padding: 0px !important;
+}
+
+.mlthemeone .fa-circle:before {
+    content: "\f111" !important;
+
+}

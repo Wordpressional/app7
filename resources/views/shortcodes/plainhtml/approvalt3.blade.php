@@ -3,7 +3,7 @@
         <span class="editmlthemeone76">edit</span>
   
                            <span class="savemlthemeone76">save</span>
-                       <span class="labelmlthemeone76"><label class="imageUploadmlthemeone76" for="imageUploadmlthemeone76"></label></span>
+                       <span class="labelmlthemeone76"><label class="imageUploadmlthemeone76" for="imageUploadmlthemeone76">&nbsp;</label></span>
 
                         <input type='file' id="imageUploadmlthemeone76" accept=".png, .jpg, .jpeg" />
 

@@ -10,6 +10,7 @@
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
 <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+ <script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
  <script src="{{ asset('js/swiper.min.js') }}"></script>
  <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
 <script src="{{ asset('js/validator.min.js') }}"></script>
@@ -29,6 +30,15 @@
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
     <script src="{{ asset('js/dataTables.responsive.js') }}"></script>
+
+   
+  
+ 
+  <!-- TYPED JS -->
+  <script src="{{ asset('js/typed-custom.js') }}"></script>
+  <!-- WOW JS -->
+  <script src="{{ asset('js/wow.min.js') }}"></script>
+  <!-- scripts js -->
     <script src="{{ asset('js/colorcommon.js') }}"></script>
 
     
