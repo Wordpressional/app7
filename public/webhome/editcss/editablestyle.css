@@ -1,40 +1,94 @@
-.tabanu .nav{
-    background-color: #336683;
-    padding: 25px;
+body  {
+ background:#000000 !important;
 }
 
-.nav-tabs {
-    border-bottom: none !important;
+/*
+
+*/
+
+.pradeepmainsn3  h3 {
+  color: rgba(31,181,172,.9);
+}
+.pradeepmainsn3 .text{
+	color: rgba(31,181,172,.9);
+	text-align: center;
 }
 
-#anutabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #336683 !important;
-    background-color: #a4d6ef !important;
-    border-color: transparent transparent #f3f3f3;
+
+.pradeepmainsn3 .folded-corner:hover .text{
+	visibility: visible;
+	color: #000000;;
 }
-#anutabs .nav-tabs .nav-link {
-    border: 1px solid transparent;
-    color: #eee;
-    font-size: 20px;
-    background-color: #336683;
-    border: 1px solid #a4d6ef;
-    color: #a4d6ef;
+.pradeepmainsn3 .Services-tab{
+	margin-top:20px;
+	
+
 }
 
-.nav-item {
-    border-radius: 0 !important;
+/*
+  nav link items
+*/
+.pradeepmainsn3 .folded-corner{
+  padding: 25px 25px;
+  position: relative;
+  font-size: 90%;
+  text-decoration: none;
+  color: #999; 
+  background: transparent;
+  transition: all ease .5s;
+  border: 1px solid rgba(31,181,172,.9);
+}
+.pradeepmainsn3 .folded-corner:hover{
+	background-color: rgba(31,181,172,.9);
 }
 
-.nav-item:last-child {
-    border-top-right-radius: .5rem !important;
-    border-bottom-right-radius: .5rem !important;
+/*
+  paper fold corner
+*/
+
+.pradeepmainsn3 .folded-corner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 0px 0px 0;
+  border-color: #ddd #000;
+  transition: all ease .3s;
 }
 
-.nav-item:first-child {
-    border-top-left-radius: .5rem !important;
-    border-bottom-left-radius: .5rem !important;
+/*
+  on li hover make paper fold larger
+*/
+.pradeepmainsn3 .folded-corner:hover:before {
+	background-color: #D00003;
+  border-width: 0 50px 50px 0;
+  border-color: #eee #000;
+  
 }
 
-.nav-tabs .nav-link.active{
-   background-color: #a4d6ef !important; 
+.pradeepmainsn3 .service_tab_1{
+	background-color: #000;
+}
+.pradeepmainsn3 .service_tab_1:hover .fa-icon-image{
+    color: #000;
+    transform: rotate(360deg) scale(1.5);
+}
+
+
+.pradeepmainsn3 .fa-icon-image{
+	color: rgba(31,181,172,.9);
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    text-rendering: auto;
+    transition: all .65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(.99,.82,.11,1.41);
 }
