@@ -16,14 +16,14 @@
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> PersonalThemeone </h5>
 <input type="text" id="themename1" name="themename1" value="DarkTheme" style="display:none;">
-<textarea rows="5" cols="70" id="theme1"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
+<textarea rows="5" cols="70" id="theme1"  class="form-control fc" required="required" style="display:none;">{{ $themetwo }}</textarea> 
    
 </div>
 
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> LoanThemeone </h5>
 <input type="text" id="themename2" name="themename2" value="CommingSoon" style="display:none;">
-<textarea rows="5" cols="70" id="theme2"  class="form-control fc" required="required" style="display:none;">{{ $themetwo }}</textarea>
+<textarea rows="5" cols="70" id="theme2"  class="form-control fc" required="required" style="display:none;">{{ $themethree }}</textarea>
  
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">

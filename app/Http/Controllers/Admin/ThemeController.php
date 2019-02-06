@@ -498,19 +498,19 @@ class ThemeController extends Controller
     {
         //dd($request->themeone);
         $theme = new Theme;
-        $theme->tname = "DarkTheme";
+        $theme->tname = "PortfolioThemeone";
         $theme->tcontent = $request->themeone;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "CommingSoon";
+        $theme->tname = "PersonalThemeone";
         $theme->tcontent = $request->themetwo;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "BlueThem";
+        $theme->tname = "LoanThemeone";
         $theme->tcontent = $request->themethree;
 
         $theme->tstatus = "inactive";
@@ -528,7 +528,7 @@ class ThemeController extends Controller
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "LaunchingSoon";
+        $theme->tname = "BasicTheme";
         $theme->tcontent = $request->themesix;
 
         $theme->tstatus = "inactive";
