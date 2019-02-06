@@ -57,7 +57,7 @@ logged_in="{{ Auth::check() }}"
 </p>
 @endif
 @endif
-@endif
+
       </small>
     </p>
       <button class="btn btn-sm align-self-center btnstyle">{{ link_to_route('webhome.single', 'Read More', $post) }}</button>

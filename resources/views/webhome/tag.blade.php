@@ -12,7 +12,7 @@
             <div class="row medium-padding120">
                   <main class="main">
                               
-<div class="row">
+            <div class="row">
             <div class="case-item-wrap">
                   @foreach($tag->posts as $post)
                         
@@ -27,7 +27,7 @@
 
                   @endforeach
             </div>
-</div>
+            </div>
 
                         </main>
             </div>

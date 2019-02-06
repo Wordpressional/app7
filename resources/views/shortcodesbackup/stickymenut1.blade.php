@@ -3,7 +3,7 @@
 			<div class="themeone">
 
 		    <div class="row">
-		        <a class="logo" href="#">
+		        <a class="logo" href="#123">
 					<img src="{{asset('themes/t1/logo2.png')}}" alt="Logo">
 		        </a>
 		        <div class="mobile-toggle">
