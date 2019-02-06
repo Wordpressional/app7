@@ -30,14 +30,15 @@
 <link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
-
+<link href="{{ asset('css/swiper.css')}}" rel="stylesheet">
+<link href="{{ asset('css/magnific-popup.css')}}" rel="stylesheet">
 <!-- Rev slider css -->
   <link href="{{ asset('webhome/vendors/revolution/css/settings.css') }}" rel="stylesheet">
   <link href="{{ asset('webhome/vendors/revolution/css/layers.css') }}" rel="stylesheet">
   <link href="{{ asset('webhome/vendors/revolution/css/navigation.css') }}" rel="stylesheet">
   <link href="{{ asset('webhome/vendors/animate-css/animate.css') }}" rel="stylesheet">
 
-
+<link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
 <link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/responsive.css') }}" rel="stylesheet">
@@ -54,7 +55,7 @@
 <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  <link rel="stylesheet" href="{{asset('css/public.css')}}" />
  <link rel="stylesheet" href="{{asset('css/theme.css')}}" />
- <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
+ 
   <link href="{{ asset('webhome/editcss/editablestyle.css') }}" rel="stylesheet">
 
   

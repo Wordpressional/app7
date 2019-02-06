@@ -161,3 +161,47 @@ foreach( $items as $key => $item )
 <?php
 }
 }
+
+function loanmenuItems($items) {
+	//dd($items);
+	
+	foreach( $items as $item ) {
+		
+	
+	?>
+		
+		<?php if($item['child'] != []) {?>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		 <?php print_r( $item['label']); ?> </a>
+			
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		<?php loanmenuItemschild( $item['child'] ) ?>
+		</div>
+		
+		</li>
+		<?php } else {?>
+		<li class="nav-item" >
+		<a class="nav-link" href="<?php print_r( $item['link']); ?>"  >
+		 <?php print_r( $item['label']); ?> </a>
+		 </li>
+	 <?php
+	}
+}
+}
+function loanmenuItemschild($items) {
+
+	foreach( $items as $item ) {
+		
+	
+	?>
+
+
+			
+		<a  href="<?php print_r( $item['link']); ?>" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+		 <?php print_r( $item['label']); ?>   </a>
+		 
+	 <?php
+	}
+}
+

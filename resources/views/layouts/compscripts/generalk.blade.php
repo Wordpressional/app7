@@ -9,6 +9,11 @@
 
 <!-- Bootstrap -->
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery-ui.min.js')}}"></script>
+<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+ <script src="{{ asset('js/swiper.min.js') }}"></script>
+ <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
+<script src="{{ asset('js/validator.min.js') }}"></script>
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
 
 
@@ -17,7 +22,8 @@
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 @endif
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
 
 
 
@@ -60,8 +66,7 @@
         <script src="{{ asset('js/adminlte.min.js') }}"></script>
        
       
-      
+ 
 
 
-
-       <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
+<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 

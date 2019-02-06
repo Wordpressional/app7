@@ -63,6 +63,7 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('responsivemenulist', 'App\Shortcodes\MenuShortcode@responsivemenulist');
         Shortcode::register('icohomelist', 'App\Shortcodes\ICOHomeShortcode@icohomelist');
         Shortcode::register('psubscribe', 'App\Shortcodes\PsubscribeShortcode@psubscribe');
+        Shortcode::register('loanmenulist', 'App\Shortcodes\MenuShortcode@loanmenulist');
 
         for($i=0;$i<110;$i++){
             $name = "customplain_".$i;
