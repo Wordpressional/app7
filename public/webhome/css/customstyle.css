@@ -211,9 +211,7 @@ body{
   
    
   }
-  .card-separator {
-    border: 1px solid #16a085 !important;
-  }
+  
   .carddim{
     min-height: 400px !important;
   }
