@@ -6,7 +6,7 @@
 <h3> Pre Installed Themes </h3>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-  <h5> BaseTheme </h5>
+  <h5> PortfolioThemeone </h5>
 <input type="text" id="themename0" name="themename0" value="BaseTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme0"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
  </div>  
@@ -14,20 +14,20 @@
 </div>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> DarkTheme </h5>
+<h5> PersonalThemeone </h5>
 <input type="text" id="themename1" name="themename1" value="DarkTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme1"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
    
 </div>
 
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> CommingSoon </h5>
+<h5> LoanThemeone </h5>
 <input type="text" id="themename2" name="themename2" value="CommingSoon" style="display:none;">
 <textarea rows="5" cols="70" id="theme2"  class="form-control fc" required="required" style="display:none;">{{ $themetwo }}</textarea>
  
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> BlueTheme </h5>
+<h5> BlueThemeone </h5>
 <input type="text" id="themename3" name="themename3" value="BlueTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme3"  class="form-control fc" required="required" style="display:none;">{{ $themethree }}</textarea>
 
@@ -35,19 +35,19 @@
 </div>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> PrinceTheme </h5>
+<h5> PrinceThemeone </h5>
 <input type="text" id="themename4" name="themename4" value="PrinceTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme4"  class="form-control fc" required="required" style="display:none;">{{ $themefour }}</textarea> 
 
 
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> QueenTheme </h5>
+<h5> QueenThemeone </h5>
 <input type="text" id="themename5" name="themename5" value="QueenTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme5"  class="form-control fc" required="required" style="display:none;">{{ $themefive }}</textarea>
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> LaunchingSoon </h5>
+<h5> BasicThemeone </h5>
 <input type="text" id="themename6" name="themename6" value="LaunchingSoon" style="display:none;">
 <textarea rows="5" cols="70" id="theme6"  class="form-control fc" required="required" style="display:none;">{{ $themesix }}</textarea>
 
