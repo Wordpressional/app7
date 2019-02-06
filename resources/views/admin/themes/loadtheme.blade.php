@@ -29,7 +29,7 @@
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
 <h5> BlueThemeone </h5>
 <input type="text" id="themename3" name="themename3" value="BlueTheme" style="display:none;">
-<textarea rows="5" cols="70" id="theme3"  class="form-control fc" required="required" style="display:none;">{{ $themethree }}</textarea>
+<textarea rows="5" cols="70" id="theme3"  class="form-control fc" required="required" style="display:none;">{{ $themefour }}</textarea>
 
 </div>
 </div>
