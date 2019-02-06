@@ -1,17 +1,15 @@
-<div class="site-footer">
-        
 <section>
-
+<div class="site-footer">
 <div class="themeone boxmlservice0theme1">
 <span class="editmlservice0theme1">edit</span>
   
 <span class="savemlservice0theme1">save</span>
-<span class="labelmlservice0theme1"><label class="imageUploadmlservice0theme1" for="imageUploadmlservice0theme1"></label></span>
+<span class="labelmlservice0theme1"><label class="imageUploadmlservice0theme1" for="imageUploadmlservice0theme1">&nbsp;</label></span>
 
 <input type='file' id="imageUploadmlservice0theme1" accept=".png, .jpg, .jpeg" />
 
 <div id="footer-widgets" class="site footer-widgets">
-   <div class="container pt-5">
+   <div class="container-fluid pt-5">
        <div class="row">
            
          <div class="col-xs-12 col-sm-6 col-md-3 footers-two commonf boxmlservice1theme1 textmlservice1theme1">
@@ -144,34 +142,10 @@
     </div>
     </div>
     
-
-</div>
-
-</section>
-
-</div>
-
-<section class="blk">
-<div class="container">
-    <div class="row">
- <div class="col-xs-12 col-sm-12 col-md-12 boxmlservice1theme6 textmlservice1theme6"> 
-   <span class="editmlservice1theme6">edit</span>
-  
-          <span class="savemlservice1theme6">save</span>
-    <ul class="foote_bottom_ul_amrc">
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms and Condition</a></li>
-    <li><a href="#">User Agreement</a></li>
-    <li><a href="#">Disclaimer</a></li>
-   
-
-    </ul>
-    <!--foote_bottom_ul_amrc ends here-->
-        
-
-<p>Copyright @2017  | All Rights Reserved <a href="#">Company Name</a></p>
-</div>
 </div>
 </div>
 </div>
 </section>
+
+
+

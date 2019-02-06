@@ -1,33 +1,60 @@
-<div class="container contact-form">
-            <div class="contact-image">
-                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-            </div>
-           <form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="your_ajax_function(); return false;">
-                <h3>Drop Us a Message</h3>
-               <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="text1547009506085" id="text1547009506085" class="form-control" placeholder="Your Name *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="text1547009507933" id="text1547009507933" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="text1547009511316" id="text1547009511316" class="form-control" placeholder="Your Phone Number *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="textarea1547009512316" id="textarea1547009512316" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                        </div>
-                    </div>
-                </div>
+<div class="container">
+    <h2 class="text-center">Contac Form</h2>
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-8 col-lg-6 pb-5">
 
- <input type="hidden" id="ttoken" name="_token" value="IIgveTOdGA8SFJfHBx1zpLPH0EoDN5KtImRNyfrD">
-      <input type="hidden" name="table_name" class="table_name" id="c50734c08" value="c50734c08" />
+
+                    <!--Form with header-->
+
+                   <form class="my-form" enctype="multipart/form-data" method="POST" onSubmit="your_ajax_function(); return false;">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                                    <p class="m-0">Con gusto te ayudaremos</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="text1546942046490" id="text1546942046490" placeholder="Nombre y Apellido" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="text1546942049040" id="text1546942049040" placeholder="ejemplo@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Envianos tu Mensaje" name="textarea1546942067049" id="textarea1546942067049" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2" name="button1546942091640"  id="button1546942091640">
+                                </div>
+                            </div>
+
+                        </div>
+                   <input type="hidden" id="ttoken" name="_token" value="2VlWhv1zsJSwkm4NAWAbBi4FCuz2vsGe2Ui32Wjn">
+      <input type="hidden" name="table_name" class="table_name" id="c949bef32" value="c949bef32" />
 <input type="hidden" name="files" class="files" value="" />
-            </form>
+                    <!--Form with header-->
+</form>
+
+                </div>
+	</div>
 </div>

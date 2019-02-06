@@ -1,7 +1,7 @@
 <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="section-title text-center wow zoomIn boxmlfaqtheme1 textmlfaqtheme1" onclick="$(this).focus();">
+          <div class="section-title text-center wow zoomIn boxmlfaqtheme1 textmlfaqtheme1">
             <span class="editmlfaqtheme1">edit</span>
   
              <span class="savemlfaqtheme1">save</span>
@@ -13,7 +13,7 @@
       </div>
       <div class="row">       
         <div class="col-md-12">
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel-group myfaq1" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingOne">
                 <div class="boxmlfaqtheme2 textmlfaqtheme2">
@@ -21,7 +21,7 @@
   
              <span class="savemlfaqtheme2">save</span>
                 <h4 class="panel-title">
-                  <a role="button" class="dropdown-toggle" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Why you choose Titanic? 
                   </a>
                 </h4>
@@ -120,4 +120,3 @@
         </div><!--- END COL -->   
       </div><!--- END ROW -->     
     </div>
-  
