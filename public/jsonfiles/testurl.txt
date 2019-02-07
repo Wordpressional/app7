@@ -1,5 +1,9 @@
 [
+<<<<<<< HEAD
 "http://139.59.47.15/dynamic",
+=======
+"http://localhost/dynamic/",
+>>>>>>> 82304b5ba579999138fa399d7a2933576d2d968b
 {
 "url": "http://139.59.47.15/dynamic/thispage/anupage1",
 "filename": "page1.html"

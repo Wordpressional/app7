@@ -520,4 +520,21 @@ resizebanner();
    
 })(jQuery);
 
+$( document ).ready(function() {
+$('#testmail').click(function(){
+  
+alert("clicked");
+    $.ajax({
+        url: "{{url('/')}}:8123/",
+        dataType: "text",
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
+    
+
+ });
+});
 

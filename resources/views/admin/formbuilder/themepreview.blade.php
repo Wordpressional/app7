@@ -3,12 +3,14 @@
 <html lang="en">
     <head>
          @include('admin.layouts.compscripts.previewcss')
-         @include('layouts.compscripts.componentstyle')
+          @include('layouts.compscripts.previewfullhide')
+         
     @yield('css') 
  </head>
     <body>
    <div id="app">
      <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
+     
    <span><a style="font-size:30px; color:red; padding:20px;" class="requestDesktopSite">
    <i class="fa fa-desktop"></i></a> </span>
 
@@ -18,6 +20,7 @@
    <i class="fa fa-tablet"></i></a> </span>
 
    </div>
+  
     <div class="mau" id="mau">
      
   
@@ -33,12 +36,14 @@
 
 <div class="precon1">
 </div>
-</div>
 
+
+</div>
      
-    @include('layouts.compscripts.general')
+     @include('layouts.compscripts.generalprefull')
+
     @include('layouts.compscripts.themeone')
-    @include('layouts.compscripts.independentcomponents')
+    
     @include('layouts.compscripts.serviceworker')
        
          @include ('layouts.shortcode-layout')
@@ -48,6 +53,8 @@
 
 $(document).ready(function(){
 $(".requestMobileSite").click(function(){
+
+
 //alert("mobile");
 if(detectmob()){
   alert("This function works only on desktop");
@@ -64,10 +71,11 @@ $('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("admin.f
  
 });
 
+
 $(".requestDesktopSite").click(function(){
 //alert("desktop");
-
-  location.reload();
+window.location.href = "{{ url('/admin/themepreview')}}";
+  
 // vpw = 100;
 // vph = 'auto';
 // $('.mau').css({'width': vpw + '%'});
@@ -78,6 +86,8 @@ $(".requestDesktopSite").click(function(){
 });
 
 $(".requestTabletSite").click(function(){
+
+ 
 /*  if(detectmob()){
   alert("This function works only on desktop");
 } else {
@@ -179,6 +189,9 @@ function detectmob() {
 })(jQuery)
 
 $(".dropdowns").dropdowns();
+
+
+
 </script>
 
 <style>
@@ -242,7 +255,9 @@ $(".dropdowns").dropdowns();
 .main_h {
     position: static;
 }
-
+.mlthemeone.navbar-custom{
+   position: static;
+}
 
 </style>
 

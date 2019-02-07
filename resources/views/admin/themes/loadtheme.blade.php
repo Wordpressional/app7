@@ -440,12 +440,12 @@ function random_color() {
 
         var arrasso = {};
         
-        var themeone = $('#theme1').val();
-        var themetwo = $('#theme2').val();
-        var themethree = $('#theme3').val();
-        var themefour = $('#theme4').val();
-        var themefive = $('#theme5').val();
-        var themesix = $('#theme6').val();
+        var themeone = $('#theme0').val();
+        var themetwo = $('#theme1').val();
+        var themethree = $('#theme2').val();
+        var themefour = $('#theme3').val();
+        var themefive = $('#theme4').val();
+        var themesix = $('#theme5').val();
         
         
         

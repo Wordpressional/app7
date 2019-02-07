@@ -100,12 +100,12 @@
       }
     }
     progressBarConfig ();
-    
+    if ( $('.counter').length ){
     $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
-    
+    }
     if($(window).width()>992){
         $('.service_area').parallax("50%", 0.4);
         $('.project_area').parallax("50%", 0.4);

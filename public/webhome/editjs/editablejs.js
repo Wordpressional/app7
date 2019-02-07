@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let modalId = $('#image-gallery');
 
 $(document)
@@ -1545,3 +1546,8 @@ $(".saveteam12").click(function() {
   
 });
 })
+=======
+$(".input").focus(function() {
+	$(this).parent().addClass("focus");
+});
+>>>>>>> 82304b5ba579999138fa399d7a2933576d2d968b
