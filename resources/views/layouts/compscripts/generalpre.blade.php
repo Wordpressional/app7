@@ -34,7 +34,7 @@
 <script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 <script src="{{ asset('webhome/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
    
- 
+ <script src="//smtpjs.com/v2/smtp.js"></script>
   
    <!-- Extra plugin css -->
         <script src="{{ asset('webhome/vendors/counterup/jquery.waypoints.min.js') }}"></script>

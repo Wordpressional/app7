@@ -54,7 +54,7 @@
                             <div class="help-block with-errors">&nbsp;</div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
+                            <input type="button" class="form-control-submit-button" id="testmail" value="Submit">
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden">&nbsp;</div>

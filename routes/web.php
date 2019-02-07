@@ -125,4 +125,5 @@ Route::get('a',function(){
 });
 
 
+Route::get('/sendmail', 'WebhomeController@sendMailfromNodemailer')->name('mail.sendmail');
 

@@ -520,4 +520,38 @@ resizebanner();
    
 })(jQuery);
 
+$( document ).ready(function() {
+$('#testmail').click(function(){
+  
+alert("clicked");
+    $.ajax({
+        url: 'http://pyrupay.com:81234/',
+        dataType: "text",
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
+    
 
+ });
+});
+
+$( document ).ready(function() {
+$('#testmaillocal').click(function(){
+  
+alert("clicked");
+    $.ajax({
+        url: 'http://localhost:81234/',
+        dataType: "text",
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
+    
+
+ });
+});

@@ -1,5 +1,5 @@
 [
-"http://example.com/foldername",
+"http://localhost/dynamic/",
 {
 "url": "http://example.com/foldername/page1",
 "filename": "page1.html"

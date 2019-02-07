@@ -126,6 +126,20 @@ class WebhomeController extends Controller
     }
 
    
+    public function sendMailfromNodemailer()
+    {
+       
+
+        
+        $fpath = public_path('nodejswithphp');
+        
+        
+        $output1 = shell_exec('node '.$fpath .'/mail.js 2>&1');
+       
+        
+        return "success";
+    }
+
 
     
 

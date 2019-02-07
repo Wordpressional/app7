@@ -1,0 +1,52 @@
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
+}
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+}
+
+#previewtest:focus, #previewtest section {
+  
+    outline: none !important;
+}
+.main_menu_area {
+    position: relative !important;
+}
+section.main_slider_area {
+    background-color: #e2e2e2;
+    width:100%;
+    
+}
+
+.carousel-inner
+{
+	height:auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.keditor-container-content:before{
+    border: none !important;
+}
+.keditor-container:before{
+    border: none !important;
+}
+.keditor-container:hover, .keditor-component:before{
+    border: none !important;
+    outline: none;
+}
+.keditor-container.showed-keditor-toolbar:before {
+    border-color: transparent !important;
+}
+.content-area :focus, .content-area :hover{
+
+   outline: none !important;
+}
+.keditor-content-area {
+    padding: 0px;
+}
+.keditor-toolbar
+{
+    display: none;
+}

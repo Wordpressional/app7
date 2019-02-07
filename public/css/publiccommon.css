@@ -3917,42 +3917,42 @@ section.presentation .side.left {
 {
   float:left;
 }
-span.service-icon1 {
+.mmultithemeone span.service-icon1 {
     display: inline;
     font-size: 90px;
     float: left;
 }
-span.service-icon2 {
+.mmultithemeone span.service-icon2 {
     display: inline;
     font-size: 90px;
     float: left;
 }
-span.service-icon3 {
+.mmultithemeone span.service-icon3 {
     display: inline;
     font-size: 90px;
     float: left;
 }
-span.service-icon4 {
+.mmultithemeone span.service-icon4 {
     display: inline;
     font-size: 90px;
     float: left;
 }
-span.service-icon5 {
+.mmultithemeone span.service-icon5 {
     display: inline;
     font-size: 90px;
     float: left;
 }
-span.service-icon6 {
+.mmultithemeone span.service-icon6 {
     display: inline;
     font-size: 90px;
     float: left;
 }
-span.service-icon7 {
+.mmultithemeone span.service-icon7 {
     display: inline;
     font-size: 90px;
     float: left;
 }
-span.service-icon8 {
+.mmultithemeone span.service-icon8 {
     display: inline;
     font-size: 90px;
     float: left;
@@ -3961,7 +3961,7 @@ span.service-icon8 {
 /*Multipurpose theme two*/
 /*loader start */
 
-.loader {
+.mmultithemeone .loader {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -3970,7 +3970,7 @@ span.service-icon8 {
     background: #ffffff;
 }
 
-.cssload-loader {
+.mmultithemeone .cssload-loader {
     width: 54px;
     height: 54px;
     position: absolute;
@@ -3983,7 +3983,7 @@ span.service-icon8 {
     top: 50%;
 }
 
-.cssload-inner {
+.mmultithemeone .cssload-inner {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3999,7 +3999,7 @@ span.service-icon8 {
     -moz-border-radius: 50%;
 }
 
-.cssload-inner.cssload-one {
+.mmultithemeone .cssload-inner.cssload-one {
     left: 0%;
     top: 0%;
     animation: cssload-rotate-one 1.15s linear infinite;
@@ -4010,7 +4010,7 @@ span.service-icon8 {
     border-bottom: 3px solid rgba(252, 193, 33, 0.97);
 }
 
-.cssload-inner.cssload-two {
+.mmultithemeone .cssload-inner.cssload-two {
     right: 0%;
     top: 0%;
     animation: cssload-rotate-two 1.15s linear infinite;
@@ -4021,7 +4021,7 @@ span.service-icon8 {
     border-right: 3px solid #3aa9d8;
 }
 
-.cssload-inner.cssload-three {
+.mmultithemeone .cssload-inner.cssload-three {
     right: 0%;
     bottom: 0%;
     animation: cssload-rotate-three 1.15s linear infinite;
@@ -4240,7 +4240,7 @@ span.service-icon8 {
    transition: all .3s ease;
 }
 
-.button:hover, .button:focus, .button:active {
+.mmultithemeone .button:hover, .mmultithemeone .button:focus, .mmultithemeone .button:active {
     color: #303840;
 }
 
@@ -4271,9 +4271,9 @@ span.service-icon8 {
     background: #fff;
 }
 .mmultithemeone .bg_before_pink:hover,
-.bg_before_pink:focus,
-.bg_before_blue:hover,
-.bg_before_blue:focus{
+.mmultithemeone .bg_before_pink:focus,
+.mmultithemeone .bg_before_blue:hover,
+.mmultithemeone .bg_before_blue:focus{
    border: 2px solid #fff;
    background: #fff;
    color: #303840;
@@ -4320,7 +4320,7 @@ span.service-icon8 {
    visibility: hidden;
    opacity: 0;
 }
-.scroling-menu .navbar-brand {
+.mmultithemeone .scroling-menu .navbar-brand {
    visibility: visible;
    opacity: 1;
 }
@@ -4342,7 +4342,7 @@ span.service-icon8 {
    -o-transition: all .4s ease;
    transition: all .4s ease;
 }
-.scroling-menu .navbar-default .navbar-nav > li > a{
+.mmultithemeone .scroling-menu .navbar-default .navbar-nav > li > a{
    color: #303840 !important;
 }
 .mmultithemeone .navbar-default .navbar-nav > li > a:hover,
@@ -4376,11 +4376,11 @@ span.service-icon8 {
    margin-top: 16px;
 }
 
-.navbar-nav li {
+.mmultithemeone .navbar-nav li {
     float: left;
 }
 
-.navbar-nav {
+.mmultithemeone .navbar-nav {
   display:inline !important;
 }
 
@@ -4548,7 +4548,7 @@ span.service-icon8 {
    background: #333333;
    color: #fff;
 }
-.mmultithemeone.footer_link{
+.mmultithemeone .footer_link{
     display: inline-block;
     padding: 0 10px;
     text-align: right;
@@ -4556,11 +4556,11 @@ span.service-icon8 {
     -o-transition: 1s;
     transition: 1s;
 }
-.footer_link a{
+.mmultithemeone .footer_link a{
    color: #fff;
 }
 
-.footer_link a:hover{
+.mmultithemeone .footer_link a:hover{
     color: #fff;
 }
 
@@ -4613,7 +4613,7 @@ span.service-icon8 {
         font-size: 32px;
     }
 
-    .default_text{
+    .mmultithemeone .default_text{
         font-size: 14px;
     }
 
@@ -4643,21 +4643,21 @@ span.service-icon8 {
 .mmultithemeone.footer.all_big_padding {
     padding: 30px;
 }
-li.footer_link {
+.mmultithemeone li.footer_link {
    
     display: inline;
     margin-right: 15px;
 }
-.underline,
-.underline:hover {
+.mmultithemeone .underline,
+.mmultithemeone .underline:hover {
   text-decoration: underline;
 }
 
-.testimonial-text {
+.mmultithemeone .testimonial-text {
   font-style: italic;
 }
 
-.btn-solid-reg {
+.mmultithemeone .btn-solid-reg {
   display: inline-block;
     padding: 1.25rem 2.25rem 1.25rem 2.25rem;
     padding-top: 1.25rem;
@@ -4962,13 +4962,13 @@ li.footer_link {
   display: block;
 }
 
-.help-block.with-errors {
+ .mlthemeone .help-block.with-errors {
   color: #fff;
   font-size: 0.75rem;
   line-height: 1.125rem
 }
 
-.help-block.with-errors ul {
+ .mlthemeone .help-block.with-errors ul {
   margin-bottom: 0;
 }
 /* end of form success and error message formatting */
@@ -5045,7 +5045,7 @@ li.footer_link {
 
 /* Fade-move Animation For Lightbox - Magnific Popup */
 /* at start */
-.my-mfp-slide-bottom .zoom-anim-dialog {
+ .mlthemeone .my-mfp-slide-bottom .zoom-anim-dialog {
   opacity: 0;
   transition: all 0.2s ease-out;
   -webkit-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
@@ -5054,7 +5054,7 @@ li.footer_link {
 }
 
 /* animate in */
-.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+ .mlthemeone .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
   opacity: 1;
   -webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
   -ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
@@ -5062,7 +5062,7 @@ li.footer_link {
 }
 
 /* animate out */
-.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+ .mlthemeone .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
   opacity: 0;
   -webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
   -ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
@@ -5070,17 +5070,17 @@ li.footer_link {
 }
 
 /* dark overlay, start state */
-.my-mfp-slide-bottom.mfp-bg {
+ .mlthemeone .my-mfp-slide-bottom.mfp-bg {
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
 
 /* animate in */
-.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+ .mlthemeone .my-mfp-slide-bottom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
 /* animate out */
-.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+ .mlthemeone .my-mfp-slide-bottom.mfp-removing.mfp-bg {
   opacity: 0;
 }
 /* end of fade-move animation for lightbox - magnific popup */
@@ -5966,7 +5966,7 @@ li.footer_link {
 /**********************************/
 /*     16. Back To Top Button     */
 /**********************************/
-a.back-to-top {
+ .mlthemeone a.back-to-top {
   position: fixed;
   z-index: 999;
   right: 0.75rem;
@@ -5980,7 +5980,7 @@ a.back-to-top {
   text-indent: -9999px;
 }
 
-a:hover.back-to-top {
+ .mlthemeone a:hover.back-to-top {
   background-color: #dd2956; 
 }
 
@@ -5988,60 +5988,60 @@ a:hover.back-to-top {
 /***************************************************/
 /*     17. Terms Conditions And Privacy Policy     */
 /***************************************************/
-.ex-header {
+ .mlthemeone .ex-header {
   padding-top: 7rem;
   padding-bottom: 5rem;
   background: #7a2874;
   text-align: center;
 }
 
-.ex-basic {
+ .mlthemeone .ex-basic {
   padding-top: 4rem;
   padding-bottom: 5.5rem;
   color: #864b82;
 }
 
-.ex-basic h4,
-.ex-basic p,
-.ex-basic a.underline {
+ .mlthemeone .ex-basic h4,
+ .mlthemeone .ex-basic p,
+ .mlthemeone .ex-basic a.underline {
   color: #864b82;
 }
 
-.ex-basic .breadcrumbs .list-inline-item {
+ .mlthemeone .ex-basic .breadcrumbs .list-inline-item {
   margin-right: 0.25rem;
   font-size: 0.875rem;
 }
 
-.ex-basic .text-container h4 {
+ .mlthemeone .ex-basic .text-container h4 {
   margin-bottom: 0.75rem;
 }
 
-.ex-basic .text-container {
+ .mlthemeone .ex-basic .text-container {
   margin-bottom: 3rem;
 }
 
-.ex-basic form {
+ .mlthemeone .ex-basic form {
   margin-bottom: 4rem;
 }
 
-.ex-basic .form-control-input:focus,
-.ex-basic .form-control-select:focus,
-.ex-basic .form-control-textarea:focus {
+ .mlthemeone .ex-basic .form-control-input:focus,
+ .mlthemeone .ex-basic .form-control-select:focus,
+ .mlthemeone .ex-basic .form-control-textarea:focus {
   outline: none; /* Removes blue border on focus */
   box-shadow: 0 0.5rem 0.5rem -0.375rem #d8c1d4;
 }
 
-.ex-basic .form-control-input:hover,
-.ex-basic .form-control-select:hover,
-.ex-basic .form-control-textarea:hover {
+ .mlthemeone .ex-basic .form-control-input:hover,
+ .mlthemeone .ex-basic .form-control-select:hover,
+ .mlthemeone .ex-basic .form-control-textarea:hover {
   box-shadow: 0 0.5rem 0.5rem -0.375rem #d8c1d4;
 }
 
-.ex-basic .help-block.with-errors {
+ .mlthemeone .ex-basic .help-block.with-errors {
   color: #864b82;
 }
 
-.ex-basic .list-wrapper {
+ .mlthemeone .ex-basic .list-wrapper {
   margin-top: 2rem;
   margin-bottom: 3rem;
   padding-top: 1.75rem;
@@ -6064,7 +6064,7 @@ a:hover.back-to-top {
         transition: all 0.2s;
     }
 
-    .mlthemeone.navbar-custom.top-nav-collapse {
+  .mlthemeone.navbar-custom.top-nav-collapse {
         padding: 0.5rem 1.5rem 0.5rem 1.5rem;
         background-color: #7a2874;
   }
@@ -6156,19 +6156,19 @@ a:hover.back-to-top {
 
 
   /* Footer */
-  .footer .footer-col {
+   .mlthemeone .footer .footer-col {
     margin-bottom: 4rem;
   }
   /* end of footer */
 
 
   /* Terms Conditions And Privacy Policy */
-  .ex-header {
+   .mlthemeone .ex-header {
     padding-top: 10rem;
     padding-bottom: 8rem;
   }
 
-  .ex-basic form {
+   .mlthemeone .ex-basic form {
     margin-bottom: 0;
   }
   /* end of terms conditions and privacy policy */
@@ -6180,13 +6180,13 @@ a:hover.back-to-top {
 @media (min-width: 992px) {
   
   /* General Styles */
-  .p-heading {
+   .mlthemeone .p-heading {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .h1-large {
+   .mlthemeone .h1-large {
     font: 700 4rem/4.375rem "Open Sans", sans-serif;
   }
   /* end of general styles */
@@ -6256,12 +6256,12 @@ a:hover.back-to-top {
 
 
   /* Contact */
-  .form .map-responsive {
+   .mlthemeone .form .map-responsive {
     margin-bottom: 0;
     padding-bottom: 73%;
   }
 
-  .form .form-control-textarea {
+   .mlthemeone .form .form-control-textarea {
     height: 6.5rem; 
   }
   /* end of contact */
@@ -6273,7 +6273,7 @@ a:hover.back-to-top {
 @media (min-width: 1200px) {
   
   /* General Styles */
-  .p-heading {
+   .mlthemeone .p-heading {
     width: 60%;
   }
   /* end of general styles */
@@ -6351,30 +6351,30 @@ a:hover.back-to-top {
 
 
   /* Contact */
-  .form #ContactForm {
+   .mlthemeone .form #ContactForm {
     margin-left: 1rem;
   }
 
-  .form .form-control-textarea {
+   .mlthemeone .form .form-control-textarea {
     height: 10rem; 
   }
   /* end of contact */
 
 
   /* Footer */
-  .footer .footer-col {
+   .mlthemeone .footer .footer-col {
     width: 95%;
   }
   /* end of footer */
 
 
   /* Terms & Conditions And Privacy Policy */
-  .ex-basic .list-wrapper {
+   .mlthemeone .ex-basic .list-wrapper {
     padding-right: 2rem;
     padding-left: 0.75rem;
   }
 
-  .ex-basic form {
+  .mlthemeone .ex-basic form {
     max-width: 28.75rem;
     margin-left: 2rem;
   }
