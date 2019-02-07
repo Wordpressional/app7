@@ -525,7 +525,7 @@ $('#testmail').click(function(){
   
 alert("clicked");
     $.ajax({
-        url: "{{url('/')}}:8123/",
+        url: "http://139.59.47.15:8123/",
         dataType: "text",
          success: function(data) {
           alert("Sent email successfully");
