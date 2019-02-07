@@ -525,7 +525,7 @@ $('#testmail').click(function(){
   
 alert("clicked");
     $.ajax({
-        url: 'http://pyrupay.com:8123/',
+        url: "{{url('/')}}:8123/",
         dataType: "text",
          success: function(data) {
           alert("Sent email successfully");
@@ -538,20 +538,3 @@ alert("clicked");
  });
 });
 
-$( document ).ready(function() {
-$('#testmaillocal').click(function(){
-  
-alert("clicked");
-    $.ajax({
-        url: 'http://localhost:8123/',
-        dataType: "text",
-         success: function(data) {
-          alert("Sent email successfully");
-           
-        },
-       
-    });
-    
-
- });
-});
