@@ -12,7 +12,7 @@ var express     =    require('express'),
     fs          =    require('fs');
 
 
-      
+app.use('/*', express.static(path.join(__dirname, 'index.html')));      
 app.get('/mymail', function(req, res){exec("node mail.js", function (error, stdout, stderr) {res.send(stdout);});});
 
 
