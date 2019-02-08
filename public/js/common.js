@@ -543,7 +543,7 @@ $('#testmail').click(function(){
   
 alert("clicked");
     $.ajax({
-        url: "http://pyrupay.com:8123/mymail",
+        url: "https://pyrupay.com/mailapp3/mymail",
         dataType: "text",
          success: function(data) {
           alert("Sent email successfully using pyrupay");
