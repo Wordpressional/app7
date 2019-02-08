@@ -1,13 +1,4 @@
  
-<script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
-  <!-- BOOTSTRAP JS -->
- 
-  <!-- TYPED JS -->
-  <script src="{{ asset('js/typed-custom.js') }}"></script>
-  <!-- WOW JS -->
-  <script src="{{ asset('js/wow.min.js') }}"></script>
-  <!-- scripts js -->
-
  <script>
     $(document).ready(function() {
       if($(".cd-main-content").length != 0) {

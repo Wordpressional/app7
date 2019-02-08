@@ -918,7 +918,7 @@ display: none;
 }
 
 .nav>li>a, .nav>li>a:hover, .nav>li>a:active, .nav>li>a:focus {
-    color: #a7eef9 !important;
+    color: #a7eef9 ;
     
 }
 
