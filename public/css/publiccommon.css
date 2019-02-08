@@ -4300,6 +4300,7 @@ section.presentation .side.left {
    position: fixed;
    -webkit-box-shadow: 0 10px 10px -10px rgba(87, 97, 100, 0.35);
    box-shadow: 0 10px 10px -10px rgba(87, 97, 100, 0.35);
+
 }
 .mmultithemeone .navbar-default {
   background-color: transparent;
@@ -4329,7 +4330,7 @@ section.presentation .side.left {
 }
 
 .mmultithemeone .navbar-default .navbar-nav > li > a {
-  color: #fff !important;
+  color: #fff;
   font-size: 15px;
   position: relative;
   display: inline-block !important;
