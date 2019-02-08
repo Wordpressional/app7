@@ -13,7 +13,7 @@ var express     =    require('express'),
 
 
       
-app.get('/', function(req, res){exec("node mail.js", function (error, stdout, stderr) {res.send(stdout);});});
+app.get('/mymail', function(req, res){exec("node mail.js", function (error, stdout, stderr) {res.send(stdout);});});
 
 
 /*app.post('/wc',[

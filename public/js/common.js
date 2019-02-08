@@ -525,7 +525,7 @@ $('#testmail').click(function(){
   
 alert("clicked");
     $.ajax({
-        url: "http://139.59.47.15:8123/",
+        url: "http://139.59.47.15:8123/mymail",
         dataType: "text",
          success: function(data) {
           alert("Sent email successfully");
@@ -543,10 +543,10 @@ $('#testmail').click(function(){
   
 alert("clicked");
     $.ajax({
-        url: "http://pyrupay.com:8123/",
+        url: "http://pyrupay.com:8123/mymail",
         dataType: "text",
          success: function(data) {
-          alert("Sent email successfully");
+          alert("Sent email successfully using pyrupay");
            
         },
        
