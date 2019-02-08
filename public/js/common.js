@@ -523,7 +523,7 @@ resizebanner();
 $( document ).ready(function() {
 $('#testmail').click(function(){
   
-alert("clicked");
+//alert("clicked");
     $.ajax({
         url: "http://139.59.47.15:8123/mymail",
         dataType: "text",
@@ -541,12 +541,12 @@ alert("clicked");
 $( document ).ready(function() {
 $('#testmail').click(function(){
   
-alert("clicked");
+//alert("clicked");
     $.ajax({
         url: "https://pyrupay.com/mailapp3/mymail",
         dataType: "text",
          success: function(data) {
-          alert("Sent email successfully using pyrupay");
+          //alert("Sent email successfully using pyrupay");
            
         },
        

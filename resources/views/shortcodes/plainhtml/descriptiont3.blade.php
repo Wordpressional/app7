@@ -71,7 +71,7 @@
                            <span class="savemlthemeone23">save</span>
                            <input type='file' id="imageUploadmlthemeone23" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone23" for="imageUploadmlthemeone23">&nbsp;</label>
-                    <img id="imagePreviewmlthemeone23" class="description-image" src="http://via.placeholder.com/500x430/98bf5d/fff" alt="description">
+                    <img id="imagePreviewmlthemeone23" class="description-image" src=" //via.placeholder.com/500x430/98bf5d/fff" alt="description">
                        </div>
                 </div> <!-- end of col -->
            

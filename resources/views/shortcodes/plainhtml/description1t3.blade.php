@@ -26,8 +26,8 @@
                            <input type='file' id="imageUploadmlthemeone14" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone14" for="imageUploadmlthemeone14">&nbsp;</label>
 
-                                <a class="popup-link imagePreviewmlthemeone14a" href="http://via.placeholder.com/700x462/98bf5d/fff" data-effect="fadeIn">
-                                    <img id="imagePreviewmlthemeone14"  class="img-fluid" src="http://via.placeholder.com/700x462/98bf5d/fff" alt="description"></a>
+                                <a class="popup-link imagePreviewmlthemeone14a" href=" //via.placeholder.com/700x462/98bf5d/fff" data-effect="fadeIn">
+                                    <img id="imagePreviewmlthemeone14"  class="img-fluid" src=" //via.placeholder.com/700x462/98bf5d/fff" alt="description"></a>
                             </div>
                         </div>
                             <div class="swiper-slide">
@@ -37,7 +37,7 @@
                            <span class="savemlthemeone15">save</span>
                            <input type='file' id="imageUploadmlthemeone15" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone15" for="imageUploadmlthemeone15">&nbsp;</label>
-                                <a class="popup-link imagePreviewmlthemeone15a" href="http://via.placeholder.com/700x462/98bf5d/fff" data-effect="fadeIn"><img id="imagePreviewmlthemeone15" class="img-fluid" src="http://via.placeholder.com/700x462/98bf5d/fff" alt="description"></a>
+                                <a class="popup-link imagePreviewmlthemeone15a" href=" //via.placeholder.com/700x462/98bf5d/fff" data-effect="fadeIn"><img id="imagePreviewmlthemeone15" class="img-fluid" src=" //via.placeholder.com/700x462/98bf5d/fff" alt="description"></a>
                             </div>
                         </div>
                             <div class="swiper-slide">
@@ -47,7 +47,7 @@
                            <span class="savemlthemeone16">save</span>
                            <input type='file' id="imageUploadmlthemeone16" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone16" for="imageUploadmlthemeone16">&nbsp;</label>
-                                <a class="popup-link imagePreviewmlthemeone16a" href="http://via.placeholder.com/700x462/98bf5d/fff" data-effect="fadeIn"><img id="imagePreviewmlthemeone16" class="img-fluid" src="http://via.placeholder.com/700x462/98bf5d/fff" alt="description"></a>
+                                <a class="popup-link imagePreviewmlthemeone16a" href=" //via.placeholder.com/700x462/98bf5d/fff" data-effect="fadeIn"><img id="imagePreviewmlthemeone16" class="img-fluid" src=" //via.placeholder.com/700x462/98bf5d/fff" alt="description"></a>
                             </div>
                         </div>
 
