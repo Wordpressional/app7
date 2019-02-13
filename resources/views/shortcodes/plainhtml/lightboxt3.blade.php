@@ -394,7 +394,7 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of lightbox --> 
 
     <!-- Lightbox -->
     <div id="lightbox-6" class="mlthemeone lightbox-basic zoom-anim-dialog mfp-hide">
