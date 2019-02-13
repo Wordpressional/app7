@@ -1,4 +1,4 @@
-      <!-- Main-Navigation -->
+<!-- Main-Navigation -->
 <div id="navigation" class="mmultithemeone">
    <div class="container-fluid">
       <div class="row">
@@ -14,10 +14,10 @@
   
                            <span class="savemmultithemeone1">save</span>
                            <input type='file' id="imageUploadmmultithemeone1" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmmultithemeone1" for="imageUploadmmultithemeone1">&nbsp;</label>
+                           <label class="imageUploadmmultithemeone1" for="imageUploadmmultithemeone1">&nbsp; </label>
 
                   <a class="navbar-brand" href="main.html">
-                        <img id="imagePreviewmmultithemeone1" src="{{asset('themes/t2/logo-demos.png')}}" alt="logo" class="logo">
+                        <img id="imagePreviewmmultithemeone1" src="http://139.59.47.15/dynamic/themes/t2/logo-demos.png" alt="logo" class="logo">
                      </a>
                   </div>
                </div>
@@ -25,9 +25,9 @@
                
                <div class="navbar-right">
                   <ul class="nav navbar-nav">
-                     <li class=""><a href="#one_page" class="scroll">one page</a></li>
-                     <li class=""><a href="#multi_page" class="scroll">multi page</a></li>
-                     <li class=""><a href="#elements" class="scroll">elements</a></li>
+                     <li class=""><a href="#mmultione_page" class="scroll">one page</a></li>
+                     <li class=""><a href="#mmultimulti_page" class="scroll">multi page</a></li>
+                     <li class=""><a href="#mmultielements" class="scroll">elements</a></li>
                   </ul>
                </div>
           
@@ -40,11 +40,11 @@
 
 <!-- Main-Navigation ends -->
 <!--Banner-->
-<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url(&quot;http://www.themesindustry.com/html/synx-demo/demos/images/demo-header.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
+<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url("http://www.themesindustry.com/html/synx-demo/demos/images/demo-header.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
     <span class="editmmultithemeone60">edit</span>
   
                            <span class="savemmultithemeone60">save</span>
-                       <span class="labelmmultithemeone60"><label class="imageUploadmmultithemeone60" for="imageUploadmmultithemeone60"></label></span>
+                       <span class="labelmmultithemeone60"><label class="imageUploadmmultithemeone60" for="imageUploadmmultithemeone60">&nbsp;</label></span>
 
                         <input type='file' id="imageUploadmmultithemeone60" accept=".png, .jpg, .jpeg" />
    <div class="container-fluid">
@@ -55,9 +55,9 @@
   
                            <span class="savemmultithemeone2">save</span>
                            <input type='file' id="imageUploadmmultithemeone2" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmmultithemeone2" for="imageUploadmmultithemeone2">&nbsp;</label>
+                           <label class="imageUploadmmultithemeone2" for="imageUploadmmultithemeone2"> </label>
           <a class="demos-brand" href="main.html">
-            <img id="imagePreviewmmultithemeone2" src="{{asset('themes/t2/logo-demos.png')}}" alt="logo" class="logo">
+            <img id="imagePreviewmmultithemeone2" src="http://139.59.47.15/dynamic/themes/t2/logo-demos.png" alt="logo" class="logo">
           </a>
        </div>
        <div class="boxmmultithemeone3 textmmultithemeone3">
