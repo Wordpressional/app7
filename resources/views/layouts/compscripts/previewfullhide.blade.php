@@ -703,7 +703,7 @@
   display: none !important;
 }
 
-.editmlthemeone1, .savemlthemeone31, #imageUploadmlthemeone31, span.editmlthemeone31:hover{
+.editmlthemeone31, .savemlthemeone31, #imageUploadmlthemeone31, span.editmlthemeone31:hover{
  
  display: none !important;
 }
@@ -825,7 +825,7 @@
  
  display: none !important;
 }
-.editmlthemeone6, .savemlthemeone65, #imageUploadmlthemeone65, span.editmlthemeone65:hover{
+.editmlthemeone65, .savemlthemeone65, #imageUploadmlthemeone65, span.editmlthemeone65:hover{
   display: none !important;
 }
 .editmlthemeone66, .savemlthemeone66, #imageUploadmlthemeone66, span.editmlthemeone66:hover{

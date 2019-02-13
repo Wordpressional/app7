@@ -39,9 +39,9 @@
   
                            <span class="savemlthemeone54">save</span>
                             <table>
-                                <tr><td class="icon-cell"><i class="fas fa-home">&nbsp;</i></td><td>Approval takes no longer than 3 business days and usually customers get a positive answer</td></tr>
-                                <tr><td class="icon-cell"><i class="fas fa-book">&nbsp;</i></td><td>Most of the cases with negative answers are due to incorrect personal information sent by customers </td></tr>
-                                <tr><td class="icon-cell"><i class="fas fa-pencil-alt">&nbsp;</i></td><td>After the loan approval you will receive the money in your bank account in no more than 10 - 15 days </td></tr>
+                                <tr><td class="icon-cell"><i class="fa fa-home">&nbsp;</i></td><td>Approval takes no longer than 3 business days and usually customers get a positive answer</td></tr>
+                                <tr><td class="icon-cell"><i class="fa fa-book">&nbsp;</i></td><td>Most of the cases with negative answers are due to incorrect personal information sent by customers </td></tr>
+                                <tr><td class="icon-cell"><i class="fa fa-pencil-alt">&nbsp;</i></td><td>After the loan approval you will receive the money in your bank account in no more than 10 - 15 days </td></tr>
                             </table>
                         </div>
                         </div> <!-- end of tab -->

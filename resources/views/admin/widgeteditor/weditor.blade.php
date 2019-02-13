@@ -90,6 +90,7 @@ while (($file1 = readdir($dh1)) !== false)
             //dd($cc);
             $ccstr1 = "$".$cc1;
             $val1 =  $ccstr1;
+            $arrayfileb[$i] = htmlentities($arrayfileb[$i]);
             ?>
            
             <textarea rows="40" cols="100" class="{{$cc1}}b testb" style="display:none;">{{ $arrayfileb[$i]}}</textarea>
@@ -137,6 +138,7 @@ while (($file1 = readdir($dh1)) !== false)
             //dd($cc);
             $ccstr = "$".$cc;
             $val =  $ccstr;
+            $arrayfile[$i] = htmlentities($arrayfile[$i]);
             ?>
            
             <textarea rows="40" cols="100" class="{{$cc}} test" style="display:none;">{{ $arrayfile[$i]}}</textarea>
@@ -284,7 +286,7 @@ while (($file1 = readdir($dh1)) !== false)
 		//$('{{$cc}}').css("display","inline");
 		//$('{{$cc}}').html('k');
 		if('{{$file}}' == dc){
-			alert($('.{{$cc}}').val());
+			//alert($('.{{$cc}}').val());
 			$('.{{$cc}}').css("display","inline");
 			$('.{{$cc}}').html($('.{{$cc}}').val());
 		}

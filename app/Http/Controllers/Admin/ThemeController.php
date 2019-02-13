@@ -841,7 +841,7 @@ class ThemeController extends Controller
            //dd($vpath);
        
             //dd($vpath);
-            $html = File::put($vpath, htmlspecialchars_decode($request->filew));
+            $html = File::put($vpath,htmlspecialchars_decode(htmlspecialchars($request->filew)));
        
         return "success";
         } 
