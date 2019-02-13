@@ -1,4 +1,4 @@
-    <!-- Loan Options -->
+    <!-- Loan mloptions -->
     <div id="mloptions" class="mlthemeone cards-1">
         <div class="container">
             <div class="row">
@@ -8,7 +8,7 @@
   
                           
                            <span class="savemlthemeone34">save</span>
-                    <h2 class="text-center">Loan Options</h2>
+                    <h2 class="text-center">Loan mloptions</h2>
                     <p class="p-heading p-large text-center">Need money for your next awesome project? Our product development team has assembled the following loan packages you can choose from. Click on details</p>
                </div>
                 </div> <!-- end of col --> 
@@ -25,9 +25,9 @@
   
                            <span class="savemlthemeone2">save</span>
                            <input type='file' id="imageUploadmlthemeone2" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone2" for="imageUploadmlthemeone2">&nbsp;</label>
+                           <label class="imageUploadmlthemeone2" for="imageUploadmlthemeone2">.</label>
 
-                        <img id="imagePreviewmlthemeone2" class="card-image" src="http://via.placeholder.com/110x110/7a2874/fff" alt="description">
+                        <img id="imagePreviewmlthemeone2" class="card-image" src=" //via.placeholder.com/110x110/7a2874/fff" alt="description">
                     </div>
                         <div class="card-body">
                              <div class="boxmlthemeone36 textmlthemeone36">
@@ -53,9 +53,9 @@
   
                            <span class="savemlthemeone3">save</span>
                            <input type='file' id="imageUploadmlthemeone3" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone3" for="imageUploadmlthemeone3">&nbsp;</label>
+                           <label class="imageUploadmlthemeone3" for="imageUploadmlthemeone3">.</label>
 
-                        <img id="imagePreviewmlthemeone3" class="card-image" src="http://via.placeholder.com/110x110/7a2874/fff" alt="description">
+                        <img id="imagePreviewmlthemeone3" class="card-image" src=" //via.placeholder.com/110x110/7a2874/fff" alt="description">
                     </div>
                         <div class="card-body">
                                 <div class="boxmlthemeone35 textmlthemeone35">
@@ -82,8 +82,8 @@
   
                            <span class="savemlthemeone4">save</span>
                            <input type='file' id="imageUploadmlthemeone4" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone4" for="imageUploadmlthemeone4">&nbsp;</label>
-                        <img id="imagePreviewmlthemeone4" class="card-image" src="http://via.placeholder.com/110x110/7a2874/fff" alt="description">
+                           <label class="imageUploadmlthemeone4" for="imageUploadmlthemeone4">.</label>
+                        <img id="imagePreviewmlthemeone4" class="card-image" src=" //via.placeholder.com/110x110/7a2874/fff" alt="description">
                     </div>
                         <div class="card-body">
                             <div class="boxmlthemeone37 textmlthemeone37">
@@ -109,8 +109,8 @@
   
                            <span class="savemlthemeone5">save</span>
                            <input type='file' id="imageUploadmlthemeone5" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone5" for="imageUploadmlthemeone5">&nbsp;</label>
-                        <img id="imagePreviewmlthemeone5" class="card-image" src="http://via.placeholder.com/110x110/7a2874/fff" alt="description">
+                           <label class="imageUploadmlthemeone5" for="imageUploadmlthemeone5">.</label>
+                        <img id="imagePreviewmlthemeone5" class="card-image" src=" //via.placeholder.com/110x110/7a2874/fff" alt="description">
                     </div>
                         <div class="card-body">
                                <div class="boxmlthemeone38 textmlthemeone38">
@@ -136,8 +136,8 @@
   
                            <span class="savemlthemeone6">save</span>
                            <input type='file' id="imageUploadmlthemeone6" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone6" for="imageUploadmlthemeone6">&nbsp;</label>
-                        <img id="imagePreviewmlthemeone6" class="card-image" src="http://via.placeholder.com/110x110/7a2874/fff" alt="description">
+                           <label class="imageUploadmlthemeone6" for="imageUploadmlthemeone6">.</label>
+                        <img id="imagePreviewmlthemeone6" class="card-image" src=" //via.placeholder.com/110x110/7a2874/fff" alt="description">
                     </div>
                         <div class="card-body">
                               <div class="boxmlthemeone39 textmlthemeone39">
@@ -163,8 +163,8 @@
   
                            <span class="savemlthemeone7">save</span>
                            <input type='file' id="imageUploadmlthemeone7" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone7" for="imageUploadmlthemeone7">&nbsp;</label>
-                        <img id="imagePreviewmlthemeone7" class="card-image" src="http://via.placeholder.com/110x110/7a2874/fff" alt="description">
+                           <label class="imageUploadmlthemeone7" for="imageUploadmlthemeone7">.</label>
+                        <img id="imagePreviewmlthemeone7" class="card-image" src=" //via.placeholder.com/110x110/7a2874/fff" alt="description">
                     </div>
                         <div class="card-body">
                             <div class="boxmlthemeone40 textmlthemeone40">
@@ -184,10 +184,10 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
-    <!-- end of loan options -->
+    <!-- end of loan mloptions -->
 
 
-    <!-- Loan Options Lightboxes -->
+    <!-- Loan mloptions Lightboxes -->
     <!-- Lightbox -->
     <div id="lightbox-1" class="mlthemeone lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="container">
@@ -201,8 +201,8 @@
   
                            <span class="savemlthemeone8">save</span>
                            <input type='file' id="imageUploadmlthemeone8" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone8" for="imageUploadmlthemeone8">&nbsp;</label>
-                    <img id="imagePreviewmlthemeone8" src="http://via.placeholder.com/797x669/98bf5d/fff" alt="description">
+                           <label class="imageUploadmlthemeone8" for="imageUploadmlthemeone8">.</label>
+                    <img id="imagePreviewmlthemeone8" src=" //via.placeholder.com/797x669/98bf5d/fff" alt="description">
                 </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -215,14 +215,14 @@
                     <h4>$16.000 max</h4>
                     <p>Do you want to buy a bicycle, that all new smartphone or even an awesome laptop? This credit option will suit you best.
                     <table>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Repayment schedule</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Easy 4 step approval</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Money in the bank</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Credit counselors</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Small interest rates</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Low income is accepted</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Repayment schedule</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Easy 4 step approval</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Money in the bank</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Credit counselors</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Small interest rates</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Low income is accepted</td></tr>
                     </table>
-                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#header">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#options">Back</a>
+                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#mlheader">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#mloptions">Back</a>
                </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -243,8 +243,8 @@
   
                            <span class="savemlthemeone9">save</span>
                            <input type='file' id="imageUploadmlthemeone9" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone9" for="imageUploadmlthemeone9">&nbsp;</label>
-                    <img id="imagePreviewmlthemeone9" src="http://via.placeholder.com/797x669/98bf5d/fff" alt="description">
+                           <label class="imageUploadmlthemeone9" for="imageUploadmlthemeone9">.</label>
+                    <img id="imagePreviewmlthemeone9" src=" //via.placeholder.com/797x669/98bf5d/fff" alt="description">
                 </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -257,14 +257,14 @@
                     <h4>$38.000 max</h4>
                     <p>It's time to change that old rust bucket you're currently driving. Apply for a vehicle loan and enjoy the car of your dreams.
                     <table>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Repayment schedule</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Easy 4 step approval</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Money in the bank</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Credit counselors</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Small interest rates</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Low income is accepted</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Repayment schedule</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Easy 4 step approval</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Money in the bank</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Credit counselors</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Small interest rates</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Low income is accepted</td></tr>
                     </table>
-                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#header">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#options">Back</a>
+                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#mlheader">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#mloptions">Back</a>
                 </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -285,8 +285,8 @@
   
                            <span class="savemlthemeone10">save</span>
                            <input type='file' id="imageUploadmlthemeone10" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone10" for="imageUploadmlthemeone10">&nbsp;</label>
-                    <img id="imagePreviewmlthemeone10" src="http://via.placeholder.com/797x669/98bf5d/fff" alt="description">
+                           <label class="imageUploadmlthemeone10" for="imageUploadmlthemeone10">.</label>
+                    <img id="imagePreviewmlthemeone10" src=" //via.placeholder.com/797x669/98bf5d/fff" alt="description">
                 </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -299,14 +299,14 @@
                     <h4>$280.000 max</h4>
                     <p>The family can't fit anymore in that one bedroom flat? Change their lives with a nice new home and modern appliances.
                     <table>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Repayment schedule</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Easy 4 step approval</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Money in the bank</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Credit counselors</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Small interest rates</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Low income is accepted</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Repayment schedule</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Easy 4 step approval</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Money in the bank</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Credit counselors</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Small interest rates</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Low income is accepted</td></tr>
                     </table>
-                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#header">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#options">Back</a>
+                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#mlheader">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#mloptions">Back</a>
                 </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -326,8 +326,8 @@
   
                            <span class="savemlthemeone11">save</span>
                            <input type='file' id="imageUploadmlthemeone11" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone11" for="imageUploadmlthemeone11">&nbsp;</label>
-                    <img id="imagePreviewmlthemeone11" src="http://via.placeholder.com/797x669/98bf5d/fff" alt="description">
+                           <label class="imageUploadmlthemeone11" for="imageUploadmlthemeone11">.</label>
+                    <img id="imagePreviewmlthemeone11" src=" //via.placeholder.com/797x669/98bf5d/fff" alt="description">
                 </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -340,14 +340,14 @@
                     <h4>$10.000 max</h4>
                     <p>Have you decided to invest in your education and can't afford the costs? Use the student loan for a better future.
                     <table>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Repayment schedule</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Easy 4 step approval</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Money in the bank</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Credit counselors</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Small interest rates</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Low income is accepted</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Repayment schedule</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Easy 4 step approval</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Money in the bank</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Credit counselors</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Small interest rates</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Low income is accepted</td></tr>
                     </table>
-                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#header">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#options">Back</a>
+                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#mlheader">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#mloptions">Back</a>
                 </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -367,8 +367,8 @@
   
                            <span class="savemlthemeone12">save</span>
                            <input type='file' id="imageUploadmlthemeone12" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone12" for="imageUploadmlthemeone12">&nbsp;</label>
-                    <img id="imagePreviewmlthemeone12" src="http://via.placeholder.com/797x669/98bf5d/fff" alt="description">
+                           <label class="imageUploadmlthemeone12" for="imageUploadmlthemeone12">.</label>
+                    <img id="imagePreviewmlthemeone12" src=" //via.placeholder.com/797x669/98bf5d/fff" alt="description">
                 </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -381,14 +381,14 @@
                     <h4>$26.000 max</h4>
                     <p>Ready to see the world? Pack your bags and go travelling to any destination you desire using our travelling loan.
                     <table>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Repayment schedule</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Easy 4 step approval</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Money in the bank</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Credit counselors</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Small interest rates</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Low income is accepted</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Repayment schedule</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Easy 4 step approval</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Money in the bank</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Credit counselors</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Small interest rates</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Low income is accepted</td></tr>
                     </table>
-                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#header">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#options">Back</a>
+                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#mlheader">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#mloptions">Back</a>
                 </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -408,8 +408,8 @@
   
                            <span class="savemlthemeone13">save</span>
                            <input type='file' id="imageUploadmlthemeone13" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlthemeone13" for="imageUploadmlthemeone13">&nbsp;</label>
-                    <img id="imagePreviewmlthemeone13" src="http://via.placeholder.com/797x669/98bf5d/fff" alt="description">
+                           <label class="imageUploadmlthemeone13" for="imageUploadmlthemeone13">.</label>
+                    <img id="imagePreviewmlthemeone13" src=" //via.placeholder.com/797x669/98bf5d/fff" alt="description">
                 </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -422,14 +422,14 @@
                     <h4>$80.000 max</h4>
                     <p>Nowadays everyone has a business idea but doesn't have the resources to make it a reality. We're prepared to fix that.
                     <table>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Repayment schedule</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Easy 4 step approval</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Money in the bank</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Credit counselors</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Small interest rates</td></tr>
-                        <tr><td class="icon-cell"><i class="fa fa-check">&nbsp;</i></td><td>Low income is accepted</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Repayment schedule</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Easy 4 step approval</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Money in the bank</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Credit counselors</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Small interest rates</td></tr>
+                        <tr><td class="icon-cell"><i class="fa fa-check">.</i></td><td>Low income is accepted</td></tr>
                     </table>
-                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#header">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#options">Back</a>
+                    <a class="btn-solid-reg mfp-close as-button page-scroll" href="#mlheader">Quote</a> <a class="btn-outline-reg mfp-close as-button" href="#mloptions">Back</a>
                 </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -437,5 +437,5 @@
     </div> <!-- end of lightbox-basic -->
     <!-- end of lightbox -->
 
-    <!-- end of loan options lightboxes -->
+    <!-- end of loan mloptions lightboxes -->
        

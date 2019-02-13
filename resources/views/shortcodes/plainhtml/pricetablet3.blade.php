@@ -36,7 +36,7 @@
                                 <li class="list-group-item"><i class="fa fa-check">&nbsp;</i>Credit Counselor</li>
                                 <li class="list-group-item"><i class="fa fa-check">&nbsp;</i>Low Interest Rate</li>
                             </ul>
-                            <a class="btn-solid-reg page-scroll" href="#header">Quote</a>
+                            <a class="btn-solid-reg page-scroll" href="#mlheader">Quote</a>
                         </div>
                     </div>
                     </div>
@@ -63,7 +63,7 @@
                                 <li class="list-group-item"><i class="fa fa-check">&nbsp;</i>Credit Counselor</li>
                                 <li class="list-group-item"><i class="fa fa-check">&nbsp;</i>Small Commissions</li>
                             </ul>
-                            <a class="btn-solid-reg page-scroll" href="#header">Quote</a>
+                            <a class="btn-solid-reg page-scroll" href="#mlheader">Quote</a>
                         </div>
                     </div>
                     </div>
@@ -90,7 +90,7 @@
                                 <li class="list-group-item"><i class="fa fa-check">&nbsp;</i>Credit Counselor</li>
                                 <li class="list-group-item"><i class="fa fa-check">&nbsp;</i>Repayment Schedule</li>
                             </ul>
-                            <a class="btn-solid-reg page-scroll" href="#header">Quote</a>
+                            <a class="btn-solid-reg page-scroll" href="#mlheader">Quote</a>
                         </div>
                     </div>
                     </div>

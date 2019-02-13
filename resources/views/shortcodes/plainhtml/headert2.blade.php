@@ -40,7 +40,9 @@
 
 <!-- Main-Navigation ends -->
 <!--Banner-->
-<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url("http://www.themesindustry.com/html/synx-demo/demos/images/demo-header.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
+
+<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url(//www.themesindustry.com/html/synx-demo/demos/images/demo-header.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
+
     <span class="editmmultithemeone60">edit</span>
   
                            <span class="savemmultithemeone60">save</span>
@@ -67,7 +69,7 @@
                            <span class="savemmultithemeone3">save</span>
          <h2 class="default_section_heading "> Create Better Websites with Synx. </h2>
          <p class="open_sans">You will get 100+ elements and 50+ truly unique pre-made templates.  </p>
-         <a class="button raleway bg_before_pink scroll" href=#one_page">View Demos</a>
+         <a class="button raleway bg_before_pink scroll" href=#mmultione_page">View Demos</a>
       </div>
       </div>
    </div>

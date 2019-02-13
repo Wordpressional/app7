@@ -4662,7 +4662,7 @@ section.presentation .side.left {
   font-style: italic;
 }
 
-.mmultithemeone .btn-solid-reg {
+.mlthemeone .btn-solid-reg {
   display: inline-block;
     padding: 1.25rem 2.25rem 1.25rem 2.25rem;
     padding-top: 1.25rem;
@@ -4738,7 +4738,7 @@ section.presentation .side.left {
     /* color: #e23963; */
 }
 
-.mmultithemeone .btn-solid-lg {
+.mlthemeone .btn-solid-lg {
   display: inline-block;
   padding: 1.5rem 2.625rem 1.5rem 2.625rem;
   border: 1px solid #e23963;
@@ -4749,13 +4749,13 @@ section.presentation .side.left {
   transition: all 0.2s;
 }
 
-.mmultithemeone .btn-solid-lg:hover {
+.mlthemeone .btn-solid-lg:hover {
   border: 1px solid #e23963;
   background-color: transparent;
   color: #e23963;
 }
 
-.mmultithemeone .btn-outline-reg {
+.mlthemeone .btn-outline-reg {
   display: inline-block;
   padding: 1.25rem 2.25rem 1.25rem 2.25rem;
   border: 1px solid #fff;
@@ -4766,7 +4766,7 @@ section.presentation .side.left {
   transition: all 0.2s;
 }
 
-.mmultithemeone .btn-outline-reg:hover {
+.mlthemeone .btn-outline-reg:hover {
   border: 1px solid #e23963;
   color: #e23963;
 }
@@ -4801,6 +4801,16 @@ section.presentation .side.left {
   font: 400 0.9375rem/1.25rem "Open Sans", sans-serif;
   cursor: text;
   transition: all 0.2s ease;
+}
+
+.mlthemeone, .mlthemeone p{
+  color: #ffffff;
+}
+
+.header-content a, .footer a
+{
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
@@ -5358,6 +5368,7 @@ section.presentation .side.left {
   font: 700 1rem/2.375rem "Open Sans", sans-serif;
   text-align: center;
   vertical-align: top;
+  line-height: 2.3em !important;
 }
 
 .mlthemeone.accordion a[aria-expanded="false"] .circle-numbering {
@@ -5372,6 +5383,7 @@ section.presentation .side.left {
   font: 700 1rem/2.375rem "Open Sans", sans-serif;
   text-align: center;
   vertical-align: top;
+  line-height: 2.3em !important;
 }
 
 .mlthemeone.accordion .accordion-title {

@@ -11,9 +11,18 @@ var express     =    require('express'),
     exec        =    require('child_process').exec,
     fs          =    require('fs');
 
+const path = require('path');
+const router = express.Router();
+/*app.get('/', function (req, res) {
+  res.send('hello world')
+});*/
 
-      
-app.get('/', function(req, res){exec("node mail.js", function (error, stdout, stderr) {res.send(stdout);});});
+
+app.get('/',function(req,res) {
+  res.sendFile(path.join(__dirname+'/index.html'));
+});
+
+app.get('/mymail', function(req, res){exec("node mail.js", function (error, stdout, stderr) {res.send(stdout);});});
 
 
 /*app.post('/wc',[
