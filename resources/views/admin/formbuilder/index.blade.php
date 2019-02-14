@@ -112,6 +112,9 @@
 					</tbody>
 				</thead>
 			</table>
+			<div class="d-flex justify-content-center">
+			{{ $forms->links() }}
+		    </div>
 	 	</div>
 	 </div>
 	

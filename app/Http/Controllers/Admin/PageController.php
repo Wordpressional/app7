@@ -26,7 +26,7 @@ class PageController extends Controller
     public function index()
     {
          $data = $this->brandsAll();
-		$pages = Page::with('author')->withTrashed()->latest()->paginate(50);
+		$pages = Page::with('author')->withTrashed()->latest()->paginate(10);
         return view('admin.pages.index',compact('pages', 'data'));
         
     }

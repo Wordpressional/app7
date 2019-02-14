@@ -39,7 +39,9 @@
               @endforeach
           </tbody>
         </table>
+        <div class="d-flex justify-content-center">
         {{ $roles->links() }}
+        </div>
       </div>
     </main>
   </div>

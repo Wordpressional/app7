@@ -32,7 +32,7 @@ class PostController extends Controller
         $thisuser = User::where('email', Auth::user()->email)->first();
          if($thisuser->isSuperadministrator() == "yes") {
       
-            $post = Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(50);
+            $post = Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(10);
          }
          //dd($post);
 
@@ -51,7 +51,7 @@ class PostController extends Controller
                 array_push($author_ids, $user->id);
             }
         
-            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(10);
          }
 
           if($thisuser->isCMSAuthor() == "yes") {
@@ -62,7 +62,7 @@ class PostController extends Controller
                 array_push($author_ids, $user->id);
             }
         
-            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(10);
          }
 
           if($thisuser->isCMSEditor() == "yes") {
@@ -73,7 +73,7 @@ class PostController extends Controller
                 array_push($author_ids, $user->id);
             }
         
-            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(50);
+            $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(10);
          }
          //dd($author_ids);
         //dd($post[0]->author->name);

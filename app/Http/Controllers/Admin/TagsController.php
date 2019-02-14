@@ -19,7 +19,7 @@ class TagsController extends Controller
     public function index()
     {
         $data = $this->brandsAll();
-        return view('admin.tags.index')->with(['tags' => Tag::withTrashed()->get(), 'data' => $data]);
+        return view('admin.tags.index')->with(['tags' => Tag::withTrashed()->latest()->paginate(10), 'data' => $data]);
     }
 
     /**

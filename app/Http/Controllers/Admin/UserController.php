@@ -377,22 +377,22 @@ class UserController extends Controller
          if($user->isCMSAuthor() == "yes" ) {
             $users = User::where('id',$user->id)->whereHas('roles', function($q){
             $q->where('name', 'cms_author');
-                                        })->latest()->paginate(50);
+                                        })->latest()->paginate(10);
          }
          if($user->isCMSEditor() == "yes" ) {
             $users = User::whereHas('roles', function($q){
             $q->whereIn('name', ['cms_editor', 'cms_author', 'cms_subscriber']);
-                                        })->latest()->paginate(50);
+                                        })->latest()->paginate(10);
          }
          if($user->isSuperadministrator() == "yes") {
             $users = User::whereHas('roles', function($q){
             $q->where('name', 'like', 'cms_' . '%');
-                                        })->latest()->paginate(50);
+                                        })->latest()->paginate(10);
          }
          if($user->isCMSAdmin() == "yes") {
             $users = User::whereHas('roles', function($q){
             $q->where('name', 'like', 'cms_' . '%');
-                                        })->latest()->paginate(50);
+                                        })->latest()->paginate(10);
          }
 
         return view('admin.authors.index', [
