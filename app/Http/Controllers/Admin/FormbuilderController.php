@@ -53,7 +53,7 @@ class FormbuilderController extends Controller
         }
         }
          $data = $this->brandsAll();
-        $forms = Form::withTrashed()->latest()->paginate(50);
+        $forms = Form::withTrashed()->latest()->paginate(10);
         return view('admin.formbuilder.index',compact('forms','data'));
     }
 

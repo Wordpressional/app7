@@ -3168,7 +3168,7 @@ color: white;
 }
 #nav ul {
     left:-9999px;
-    position:absolute;
+   
     top:37px;
     width:auto;
     z-index:2000;
@@ -3211,7 +3211,7 @@ color: white;
     margin:0;
 }
 #nav ul li a {
-    width:120px;
+    width:135px;
 }
 #nav ul li a.fly {
     padding-right:10px;

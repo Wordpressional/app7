@@ -35,7 +35,7 @@ class CategoryController extends Controller
         }
 
          $data = $this->brandsAll();
-        return view('admin.categories.index')->with(['categories' =>Category::withTrashed()->get(),'data' => $data]);
+        return view('admin.categories.index')->with(['categories' =>Category::withTrashed()->latest()->paginate(10),'data' => $data]);
     }
 
     /**

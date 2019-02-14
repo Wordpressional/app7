@@ -48,7 +48,9 @@
               @endforeach
           </tbody>
         </table>
+        <div class="d-flex justify-content-center">
         {{ $permissions->links() }}
+      </div>
       </div>
     </main>
   </div>

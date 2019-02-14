@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                         </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
+                        <!-- end of slide --> 
 
                         <!-- Slide -->
                         <div class="swiper-slide">

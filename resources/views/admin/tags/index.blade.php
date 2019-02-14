@@ -92,6 +92,9 @@
 					</tbody>
 				</thead>
 			</table>
+			 <div class="d-flex justify-content-center">
+	        {{ $tags->links() }}
+	      </div>
 	 	</div>
 	 </div>
 	

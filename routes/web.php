@@ -65,6 +65,10 @@ Route::resource('pages', 'PageController')->only('show');
 Route::post('/thispage/{page}/', 'PageController@thispage')->name('page.custompage');
 Route::get('/thispage/{page}', 'PageController@thispage')->name('page.custompage');
 
+
+Route::post('/staticpage/{page}/', 'PageController@staticpage')->name('page.staticpage');
+Route::get('/staticpage/{page}', 'PageController@staticpage')->name('page.staticpage');
+
 Route::post('/cforms/datacfsave/',[
 
 'uses' => 'PageController@datacfsave',
