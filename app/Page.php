@@ -25,7 +25,12 @@ class Page extends Model
         'display_name',
         'name',
         'content',
-        'author_id'        
+        'author_id',       
+       'ptitlecolor',
+       'ptitlebgcolor',
+       'pcontbgcolor',
+       'headercode',
+       'footercode'
     ];
 	
 	

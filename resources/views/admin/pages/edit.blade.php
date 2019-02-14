@@ -1,7 +1,8 @@
 @extends('admin.layouts.master')
 
 @section('content')
-    <p>@lang('pages.show') : {{ link_to_route('page.custompage', route('page.custompage', $page), $page) }}</p>
+    <p>@lang('pages.show') Link 1: {{ link_to_route('page.custompage', route('page.custompage', $page), $page) }}</p>
+    <p>@lang('pages.show') Link 2: {{ link_to_route('page.staticpage', route('page.staticpage', $page), $page) }}</p>
 
     
 

@@ -17,5 +17,6 @@ class BlogShortcode {
     //dd($posts);
     return view('shortcodes.blog')->with('posts', $posts);
   }
-  
+
+   
 }

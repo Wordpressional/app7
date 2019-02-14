@@ -123,7 +123,7 @@ class PageController extends Controller
      */
     public function store(PagesRequest $request)
     {
-        $page = Page::create($request->only(['display_name', 'content', 'author_id']));
+        $page = Page::create($request->only(['display_name', 'content', 'author_id','ptitlecolor', 'ptitlebgcolor', 'pcontbgcolor', 'headercode', 'footercode']));
   
 
         return redirect()->route('admin.pages.edit', $page)->withSuccess(__('pages.created'));
@@ -136,7 +136,7 @@ class PageController extends Controller
     {
        
        
-        $page->update($request->only(['display_name', 'content', 'author_id']));
+        $page->update($request->only(['display_name', 'content', 'author_id','ptitlecolor', 'ptitlebgcolor', 'pcontbgcolor', 'headercode', 'footercode']));
 
         return redirect()->route('admin.pages.edit', $page)->withSuccess(__('pages.updated'));
     }

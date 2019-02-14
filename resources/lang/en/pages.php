@@ -27,6 +27,11 @@ return [
     'author' => 'Author',
     'name' => 'Slug',
     'posted_at' => 'Posted at',
+    'pagetitlecolor' => 'Page Title Color',
+    'ptitlebgcolor' => 'Page Title Background Color',
+    'pcontbgcolor' => 'Page Content Background Color',
+    'headercode' => 'Page Header Code',
+    'footercode' => 'Page Footer Code',
   ],
 
   'placeholder' => [
