@@ -81,14 +81,14 @@
        
 <textarea rows="5" cols="70" class="form-control fc" required="required">
 ///////////////////Style1 ////////////////////////////////
-.bakimg{
+.bakimgs{
   height:200px;
   vertical-align: middle;
  background: url('https://images.all-free-download.com/images/wallpapers_large/best_hd_scenery_8188.jpg') no-repeat;
  background-size: 100%;
  background-position: 50% 50%;
 }
-.lead{
+.leads{
   margin-top:60px;
   color:white;
   font-weight:bold;

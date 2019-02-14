@@ -6,8 +6,8 @@
 {!! html_entity_decode($page->headercode) !!}
  
 
-  <div class="container-fluid bakimg">
-    <h3 class="lead">{{ $page->display_name }}</h3>
+  <div class="container-fluid bakimgs">
+    <h3 class="leads">{{ $page->display_name }}</h3>
 
   </div>
 
@@ -64,7 +64,7 @@ body.bg-light {
     background: {{ $page->pcontbgcolor }} !important;
 }
 
-.lead h3 {
+.leads h3 {
 	color: {{ $page->ptitlecolor }} !important;
 }
 </style>
