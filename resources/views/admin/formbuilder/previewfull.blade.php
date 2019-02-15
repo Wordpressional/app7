@@ -44,11 +44,11 @@
     @include('layouts.compscripts.generalprefull')
 
     @include('layouts.compscripts.themeone')
-    
+     @include ('layouts.shortcode-layout')
+         @stack('inline-scripts')
     @include('layouts.compscripts.serviceworker')
        
-         @include ('layouts.shortcode-layout')
-         @stack('inline-scripts')
+        
 
 <script>
 

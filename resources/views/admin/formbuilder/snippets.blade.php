@@ -304,7 +304,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Menus;StickyMenu;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Menus;StickyMenu;In-built Developer Theme One">
 
 @include('shortcodes.plainhtml.stickymenut1')
   
@@ -312,7 +312,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Banner;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Bannert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Banner;In-built Developer Theme One">
 
 @include('shortcodes.plainhtml.bannert1')
   
@@ -320,7 +320,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="About;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="About;In-built Developer Theme One">
 
 @include('shortcodes.plainhtml.aboutt1')
   
@@ -328,7 +328,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Servicest1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Services;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Servicest1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Services;In-built Developer Theme One">
 
 @include('shortcodes.plainhtml.servicet1')
   
@@ -336,7 +336,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/factst1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Facts;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/factst1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Facts;In-built Developer Theme One">
 
 @include('shortcodes.plainhtml.factst1')
   
@@ -344,7 +344,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Developer Theme One">
 
 @include('shortcodes.plainhtml.portfoliot1')
   
@@ -352,7 +352,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallaxt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Parallax;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallaxt1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Parallax;In-built Developer Theme One">
 
 @include('shortcodes.plainhtml.parallaxt1')
   
@@ -360,61 +360,61 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Footer;In-built Developer Theme">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Footer;In-built Developer Theme One">
 @include('shortcodes.plainhtml.footert1')
   
 
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.headert2')
  
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.multipaget2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfolio2t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfolio2t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.nichepaget2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfolio3t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfolio3t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.onepaget2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfolio4t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfolio4t2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio;In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.elementst2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/buypaget2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Buypage;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/buypaget2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Buypage;In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.buypaget2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/featurest2.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Features;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/featurest2.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Features;In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.featurest2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Footer;In-built Developer Theme two">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Footer;In-built Portfolio Theme One">
 @include('shortcodes.plainhtml.footert2')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/singlelevelmenut3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/singlelevelmenut3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.headermenut3')
   
 
 
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Header;In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Header;In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.headert3')
  
@@ -425,63 +425,63 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/accordiont3.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Accordion;In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/accordiont3.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Accordion;In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.approvalt3')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/optionst3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Lightbox;In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/optionst3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Lightbox;In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.lightboxt3')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/pricetablet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" PriceTable;In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/pricetablet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" PriceTable;In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.pricetablet3')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/smallslidert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/smallslidert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.description1t3')
 
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/questiontabst3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/questiontabst3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.descriptiont3')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/questiont3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/questiont3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.questionst3')
 
 </div>
 
-<div data-type="component-youtube" data-preview="{{asset('examples/snippets/preview/aboutt3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-youtube" data-preview="{{asset('examples/snippets/preview/aboutt3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.aboutt3')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/roundslidert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/roundslidert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.testimonialt3')
 
 </div>
-<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/contactt3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/contactt3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.contactinfot3')
 
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.footer1t3')
 
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footer2t3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Developer Theme Three">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footer2t3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Loan Theme One">
 
 @include('shortcodes.plainhtml.footer2t3')
 

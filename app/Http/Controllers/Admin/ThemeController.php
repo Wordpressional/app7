@@ -59,10 +59,11 @@ class ThemeController extends Controller
         $themefour = view('admin.themes.themefour')->render();
         $themefive = view('admin.themes.themefive')->render();
         $themesix = view('admin.themes.themesix')->render();
+        $themeseven = view('admin.themes.themeseven')->render();
         
         
 
-        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themes','data','user'));
+        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themeseven','themes','data','user'));
     }
      /**
      * Show the form for creating a new resource.
@@ -498,38 +499,44 @@ class ThemeController extends Controller
     {
         //dd($request->themeone);
         $theme = new Theme;
-        $theme->tname = "PortfolioThemeone";
+        $theme->tname = "Portfolio Theme One";
         $theme->tcontent = $request->themeone;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "PersonalThemeone";
+        $theme->tname = "Personal Theme One";
         $theme->tcontent = $request->themetwo;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "LoanThemeone";
+        $theme->tname = "Loan Theme One";
         $theme->tcontent = $request->themethree;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "PrinceTheme";
+        $theme->tname = "General Theme One";
         $theme->tcontent = $request->themefour;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "QueenTheme";
+        $theme->tname = "General Theme Two";
         $theme->tcontent = $request->themefive;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "BasicTheme";
+        $theme->tname = "General Theme Three";
         $theme->tcontent = $request->themesix;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+        $theme = new Theme;
+        $theme->tname = "Basic Theme One";
+        $theme->tcontent = $request->themeseven;
 
         $theme->tstatus = "inactive";
         $theme->save();

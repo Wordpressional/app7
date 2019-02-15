@@ -53,7 +53,11 @@
 
   <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
 
-   
+   <!-- TYPED JS -->
+  <script src="{{ asset('js/typed-custom.js') }}"></script>
+  <!-- WOW JS -->
+  <script src="{{ asset('js/wow.min.js') }}"></script>
+  
    <!-- Extra plugin css -->
         <script src="{{ asset('webhome/vendors/counterup/jquery.waypoints.min.js') }}"></script>
         <script src="{{ asset('webhome/vendors/counterup/jquery.counterup.min.js') }}"></script>

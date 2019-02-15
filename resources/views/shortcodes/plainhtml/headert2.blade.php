@@ -41,8 +41,8 @@
 <!-- Main-Navigation ends -->
 <!--Banner-->
 
-<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url(//www.themesindustry.com/html/synx-demo/demos/images/demo-header.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
 
+<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url('{{asset('themes/t2/p2.jpg')}}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
     <span class="editmmultithemeone60">edit</span>
   
                            <span class="savemmultithemeone60">save</span>
