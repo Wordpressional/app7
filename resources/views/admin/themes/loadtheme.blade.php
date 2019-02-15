@@ -6,7 +6,7 @@
 <h3> Pre Installed Themes </h3>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-  <h5> PortfolioThemeone </h5>
+  <h5> Portfolio Theme One </h5>
 <input type="text" id="themename0" name="themename0" value="BaseTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme0"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
  </div>  
@@ -14,20 +14,20 @@
 </div>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> PersonalThemeone </h5>
+<h5> Personal Theme One </h5>
 <input type="text" id="themename1" name="themename1" value="DarkTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme1"  class="form-control fc" required="required" style="display:none;">{{ $themetwo }}</textarea> 
    
 </div>
 
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> LoanThemeone </h5>
+<h5> Loan Theme One </h5>
 <input type="text" id="themename2" name="themename2" value="CommingSoon" style="display:none;">
 <textarea rows="5" cols="70" id="theme2"  class="form-control fc" required="required" style="display:none;">{{ $themethree }}</textarea>
  
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> BlueThemeone </h5>
+<h5> General Theme One </h5>
 <input type="text" id="themename3" name="themename3" value="BlueTheme" style="display:none;">
 <textarea rows="5" cols="70" id="theme3"  class="form-control fc" required="required" style="display:none;">{{ $themefour }}</textarea>
 
@@ -35,21 +35,21 @@
 </div>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> PrinceThemeone </h5>
+<h5> General Theme Two </h5>
 <input type="text" id="themename4" name="themename4" value="PrinceTheme" style="display:none;">
-<textarea rows="5" cols="70" id="theme4"  class="form-control fc" required="required" style="display:none;">{{ $themefour }}</textarea> 
+<textarea rows="5" cols="70" id="theme4"  class="form-control fc" required="required" style="display:none;">{{ $themefive }}</textarea> 
 
 
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> QueenThemeone </h5>
+<h5> General Theme Three </h5>
 <input type="text" id="themename5" name="themename5" value="QueenTheme" style="display:none;">
-<textarea rows="5" cols="70" id="theme5"  class="form-control fc" required="required" style="display:none;">{{ $themefive }}</textarea>
+<textarea rows="5" cols="70" id="theme5"  class="form-control fc" required="required" style="display:none;">{{ $themesix }}</textarea>
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> BasicThemeone </h5>
+<h5> Basic Theme one </h5>
 <input type="text" id="themename6" name="themename6" value="LaunchingSoon" style="display:none;">
-<textarea rows="5" cols="70" id="theme6"  class="form-control fc" required="required" style="display:none;">{{ $themesix }}</textarea>
+<textarea rows="5" cols="70" id="theme6"  class="form-control fc" required="required" style="display:none;">{{ $themeseven }}</textarea>
 
 </div>
 </div>
@@ -446,11 +446,12 @@ function random_color() {
         var themefour = $('#theme3').val();
         var themefive = $('#theme4').val();
         var themesix = $('#theme5').val();
+        var themeseven = $('#theme6').val();
         
         
         
 
-        arrasso =  {"themeone": themeone, "themetwo": themetwo, "themethree": themethree, "themefour": themefour, "themefive": themefive, "themesix": themesix};
+        arrasso =  {"themeone": themeone, "themetwo": themetwo, "themethree": themethree, "themefour": themefour, "themefive": themefive, "themesix": themesix, "themeseven":themeseven};
 
         console.log(arrasso);
      var token = document.getElementById('ttoken').value;

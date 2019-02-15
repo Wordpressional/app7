@@ -44,7 +44,8 @@
 
 
 <script src="{{ asset('webhome/js/form-builder.min.js') }}"></script>
-
+<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
 
 <script src="{{ asset('js/swiper.min.js') }}"></script>
  <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
@@ -64,7 +65,11 @@
   <script src="{{ asset('js/wow.min.js') }}"></script>
   <!-- scripts js -->
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<!-- TYPED JS -->
+  <script src="{{ asset('js/typed-custom.js') }}"></script>
+  <!-- WOW JS -->
+  <script src="{{ asset('js/wow.min.js') }}"></script>
+  
 <script src="//smtpjs.com/v2/smtp.js"></script>
 <script src="{{ asset('webhome/js/theme.js') }}"></script>
 

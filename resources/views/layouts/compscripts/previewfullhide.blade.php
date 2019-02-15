@@ -223,6 +223,10 @@
  
  display: none !important;
 }
+.editmlfaqtheme11, .savemlfaqtheme11, #imageUploadmlfaqtheme11, span.editmlfaqtheme11:hover{
+ 
+ display: none !important;
+}
 
 .editmlactheme2, .savemlactheme2, #imageUploadmlactheme2, span.editmlactheme2:hover{
   display: none !important;

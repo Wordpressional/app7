@@ -63,16 +63,7 @@ Version      : 1.0
 			    }
 			});
 
-			// Navigation Scroll - ljepo radi materem
-			$('.cd-main-content a').click(function(event) {
-			    var id = $(this).attr("href");
-			    var offset = 70;
-			    var target = $(id).offset().top - offset;
-			    $('html, body').animate({
-			        scrollTop: target
-			    }, 500);
-			    event.preventDefault();
-			});
+			
 
 		/*
          * ----------------------------------------------------------------------------------------
@@ -308,7 +299,7 @@ Version      : 1.0
          */
 
 			$("#typed").typed({
-		        strings: ["a Web Developer.", "a Web Designer.", "a Graphic Designer.", "Gwenyth."],
+		        strings: ["a Web Developer.", "a Web Designer.", "a Graphic Designer.", "Developer."],
 		        typeSpeed: 50,
 		        callback: function(){
 		            lift();
