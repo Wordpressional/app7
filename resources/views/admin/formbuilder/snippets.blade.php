@@ -228,7 +228,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.jpg')}}" data-keditor-title="FAQ" data-keditor-categories=" FAQ">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.jpg')}}" data-keditor-title="FAQ" data-keditor-categories=" Accordion">
 
 @include('shortcodes.plainhtml.faq')
 
@@ -419,7 +419,7 @@
 @include('shortcodes.plainhtml.headert3')
  
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/quotet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Contact Forms">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/quotet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Forms">
 
 @include('shortcodes.plainhtml.getquoteformt3')
 
@@ -524,6 +524,38 @@
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/accordion.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Accordion">
 
 @include('shortcodes.plainhtml.accordion3')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/comptabs.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Tabs">
+
+@include('shortcodes.plainhtml.bluetabs')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/gallery.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Gallery">
+
+@include('shortcodes.plainhtml.nextgallery')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/roundtext.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Text">
+
+@include('shortcodes.plainhtml.roundtext')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/imagesnippet.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Snippets">
+
+@include('shortcodes.plainhtml.imagesnippet')
   
 
 

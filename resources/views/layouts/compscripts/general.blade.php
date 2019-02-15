@@ -99,7 +99,7 @@ jssor_1_slider_init(); }</script>
 
 });     
 </script>   
-
+<script src="{{ asset('js/nextgallery.js') }}"></script>   
 <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
 
     <script>

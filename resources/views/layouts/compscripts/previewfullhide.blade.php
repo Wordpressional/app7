@@ -885,4 +885,29 @@
   display: none !important;
 }
 
+.editsnipetimage1,.editsnipetimage2,.editsnipetimage3,.editsnipetimage4,.editsnipetimage5,.editsnipetimage6,.editsnipetimage7,.editsnipetimage8,.editsnipetimage9,.editsnipetimage10,.editsnipetimage11
+{
+display: none !important;
+}
+
+.savesnipetimage1,.savesnipetimage2,.savesnipetimage3,.savesnipetimage4,.savesnipetimage5,.savesnipetimage6,.savesnipetimage7,.savesnipetimage8,.savesnipetimage9,.savesnipetimage10,.savesnipetimage11
+{
+display: none !important;
+}
+
+#imageUploadsnipetimage1, #imageUploadsnipetimage2, #imageUploadsnipetimage3, #imageUploadsnipetimage4, #imageUploadsnipetimage5, #imageUploadsnipetimage6, #imageUploadsnipetimage7, #imageUploadsnipetimage8, #imageUploadsnipetimage9, #imageUploadsnipetimage10, #imageUploadsnipetimage11
+{
+  display: none !important;
+}
+
+.editgallerytheme1, .savegallerytheme1, .editgallerytheme2, .savegallerytheme2, .editgallerytheme3, .savegallerytheme3
+, .editgallerytheme4, .savegallerytheme4, .editgallerytheme5, .savegallerytheme5, .editgallerytheme6, .savegallerytheme6
+, .editgallerytheme7, .savegallerytheme7, .editgallerytheme8, .savegallerytheme8, .editgallerytheme9, .savegallerytheme9
+, .editgallerytheme10, .savegallerytheme10, .editgallerytheme11, .savegallerytheme11, .editgallerytheme12, .savegallerytheme12
+{
+  display: none !important;
+}
+#imageUploadgallerytheme1, #imageUploadgallerytheme2, #imageUploadgallerytheme3, #imageUploadgallerytheme4, #imageUploadgallerytheme5, #imageUploadgallerytheme6, #imageUploadgallerytheme7{
+   display: none !important;
+}
 </style>

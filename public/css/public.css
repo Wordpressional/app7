@@ -56,3 +56,138 @@ section.main_slider_area {
 .logo-lg img {
     height: 50px;
 }
+.anuhow-section1{
+    padding: 30px;
+}
+.anuhow-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+  .anuhow-section1  .text-muted{
+  text-align: justify;
+}
+.anuhow-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.anuhow-section1 .row
+{
+    margin-top: 10%;
+}
+.anuhow-img 
+{
+    text-align: center;
+    margin:auto;
+}
+.anuhow-img img{
+    width: 50% !important;
+}
+@media only screen and (max-width: 1200px) { 
+ .anuhow-img img { 
+width:70% !important;
+} 
+}
+
+
+.anucontainer {
+    position:relative;
+    width:100%;
+    height:auto;
+    margin:80px auto;
+}
+.anucontainer .box {
+    position:relative;
+    width:calc(400px - 60px);
+    height:calc(320px - 30px);
+    background:#000;
+    float:left;
+    margin:15px 15px 15px 25px;
+    box-sizing:border-box;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(0,0,0,.8);
+}
+.anucontainer .box:before {
+    content:'';
+    position:absolute;
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    box-sizing:border-box;
+    transition:0.5s;
+    transform: scaleX(0);
+    opacity:0;
+}
+.anucontainer .box:hover:before {
+    transform:scaleX(1);
+    opacity:1;
+}
+.anucontainer .box:after {
+    content:'';
+    position:absolute;
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+    box-sizing:border-box;
+    transition:0.5s;
+    transform: scaleY(0);
+    opacity:0;
+}
+.anucontainer .box:hover:after {
+    transform:scaleY(1);
+    opacity:1;
+}
+.anucontainer .box .imgBox {
+    position:relative;
+}
+
+.anucontainer .box .imgBox img {
+    width:100%;
+    transition:0.5s;
+}
+
+.anucontainer .box:hover .imgBox img {
+    opacity:.2;
+    transform:scale(1.2);
+}
+
+.anucontainer .box .content {
+    position:absolute;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:2;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.anucontainer .box .content h2 {
+    margin: 0 0 10px;
+    padding:0;
+    color:#fff;
+    transition:0.5s;
+    transform:translateY(-50px);
+    opacity:0;
+    visibility:hidden;
+}
+.anucontainer .box .content p {
+    margin:0;
+    padding:0;
+    color:#fff;
+    transform:translateY(50px);
+    opacity:0;
+    visibility:hidden;
+}
+.anucontainer .box:hover .content h2,
+.anucontainer .box:hover .content P {
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0px);
+}

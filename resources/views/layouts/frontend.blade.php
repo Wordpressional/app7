@@ -13,7 +13,7 @@
     @include('layouts.compscripts.general')
  
 
-
+    @include('layouts.compscripts.themeone')
     @yield('scripts')
     @include('layouts.compscripts.serviceworker')
         

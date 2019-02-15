@@ -5,6 +5,8 @@
         var main = "{{ asset('js/main.js') }}";
         $("#headone").html("<script src=\"{{ asset('js/main.js') }}\" type=\"text/javascript\">\<\/script\>");
       }
+
+
     });
   </script>
         
@@ -145,5 +147,9 @@ $(".myfaq1 .panel-heading").click(function(){
 $(this).next().toggle("slow");
 });
 });
-}          
+}   
+
+
+
+
 </script>
