@@ -486,6 +486,42 @@
 @include('shortcodes.plainhtml.footer2t3')
 
 </div>
+<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/headert4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.headeroxyt4')
+
+</div>
+
+<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/servicest4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.servicesoxyt4')
+
+</div>
+
+<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/aboutt4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.aboutusoxyt4')
+
+</div>
+
+<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/portfoliot4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.portfoliooxyt4')
+
+</div>
+
+<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/teamt4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.teamoxyt4')
+
+</div>
+
+<div data-type="component-video" data-preview="{{asset('examples/snippets/preview/featurest4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.featuresoxyt4')
+
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/contspecial.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Contact Forms">
 @include('shortcodes.plainhtml.contactformspecial')
   

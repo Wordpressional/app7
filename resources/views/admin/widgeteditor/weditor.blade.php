@@ -141,7 +141,7 @@ while (($file1 = readdir($dh1)) !== false)
             $arrayfile[$i] = htmlentities($arrayfile[$i]);
             ?>
            
-            <textarea rows="40" cols="100" class="{{$cc}} test" style="display:none;">{{ $arrayfile[$i]}}</textarea>
+            <textarea  rows="40" cols="100" class="{{$cc}} test myInputText" style="display:none;">{{ $arrayfile[$i]}}</textarea>
 
             <input type="text" style="display:none;" name="{{$cc}}" id="{{$cc}}" />
 
@@ -149,8 +149,9 @@ while (($file1 = readdir($dh1)) !== false)
         }
 	?>
 
- 
-<div onclick="writefiles('{{route('admin.widgetupdate')}}')" class="btn btn-primary btn-sm align-self-center writefile"><b>Update</b></div>
+<p class="writefile">Copy this code and paste it into custom widget editor file, customize it and drag that into widget form and then preview it.</p> 
+<!--<div onclick="writefiles('{{route('admin.widgetupdate')}}')" class="btn btn-primary btn-sm align-self-center writefile"><b>Update</b></div>-->
+ <button onclick="copyFunction()" class="btn btn-primary btn-sm align-self-center writefile" data-clipboard-target=".myInputText">Copy to clipboard</button>
 @endsection
 @section('scripts')
 <script type="text/javascript">
@@ -343,5 +344,17 @@ while (($file1 = readdir($dh1)) !== false)
     ?>
      });
    });
+
+    function copyFunction() {
+  
+  var copyText = $(".myInputText");
+  //alert(copyText);
+  copyText.select();
+
+  document.execCommand("copy");
+  alert("copied");
+
+  
+}
 </script>
 @endsection

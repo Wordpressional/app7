@@ -10,7 +10,7 @@
                         <div class="card border-primary rounded-0">
                             <div class="card-header p-0">
                                 <div class="bg-info text-white text-center py-2">
-                                    <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                                    <h3><i class="fa fa-envelope">&nbsp;</i> Contactanos</h3>
                                     <p class="m-0">Con gusto te ayudaremos</p>
                                 </div>
                             </div>
@@ -20,7 +20,7 @@
                                 <div class="form-group">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                            <div class="input-group-text"><i class="fa fa-user text-info">&nbsp;</i></div>
                                         </div>
                                         <input type="text" class="form-control" id="nombre" name="text1546942046490" id="text1546942046490" placeholder="Nombre y Apellido" required>
                                     </div>
@@ -28,7 +28,7 @@
                                 <div class="form-group">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info">&nbsp;</i></div>
                                         </div>
                                         <input type="email" class="form-control" id="nombre" name="text1546942049040" id="text1546942049040" placeholder="ejemplo@gmail.com" required>
                                     </div>
@@ -37,7 +37,7 @@
                                 <div class="form-group">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                            <div class="input-group-text"><i class="fa fa-comment text-info">&nbsp;</i></div>
                                         </div>
                                         <textarea class="form-control" placeholder="Envianos tu Mensaje" name="textarea1546942067049" id="textarea1546942067049" required></textarea>
                                     </div>

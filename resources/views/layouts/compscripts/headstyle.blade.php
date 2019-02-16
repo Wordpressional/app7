@@ -38,6 +38,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
 <link href="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.css') }}" rel="stylesheet">
 
+
 <link href="{{ asset('css/swiper.css')}}" rel="stylesheet">
 <link href="{{ asset('css/magnific-popup.css')}}" rel="stylesheet">
 

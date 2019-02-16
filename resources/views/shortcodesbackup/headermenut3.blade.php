@@ -18,22 +18,22 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="main.html#header">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#mlheader">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="main.html#approval">Approval</a>
+                    <a class="nav-link" href="#mlapproval">Approval</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="main.html#options">Options</a>
+                    <a class="nav-link" href="#mloptions">Options</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="main.html#description">Description</a>
+                    <a class="nav-link" href="#mldescription">Description</a>
                 </li>
                 
                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="main.html#contact">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
