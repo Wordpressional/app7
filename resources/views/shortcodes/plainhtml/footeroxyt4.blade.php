@@ -39,7 +39,7 @@
                               <i class="fa fa-edit">&nbsp;</i>
                             </span>
                     <a class="envelope" href="#" id="hrefchangemoxyenvelope72">
-                <i class="fa fa-envelope"></i>
+                <i class="fa fa-envelope">&nbsp;</i>
               </a>
             </span>
             </li>
