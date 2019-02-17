@@ -12,7 +12,7 @@
  
     <div class="moxytheme container">
       <div class="row">
-        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+        <div class="heading text-center col-md-8 offset-md-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
         
           <h2>The Team</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>

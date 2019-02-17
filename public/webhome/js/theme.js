@@ -371,7 +371,7 @@ jQuery(function($) {
         Scroll();
     });
 
-    $('.navbar-collapse ul li a').on('click', function() {  
+    $('.moxytheme .navbar-collapse ul li a').on('click', function() {  
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
         $('.navbar-collapse.collapse.in').removeClass('in');
         return false;
@@ -384,13 +384,13 @@ jQuery(function($) {
         var winTop      =   $(window).scrollTop();
         var rangeTop    =   200;
         var rangeBottom =   500;
-        $('.navbar-collapse').find('.scroll a').each(function(){
+        $('.moxytheme .navbar-collapse').find('.scroll a').each(function(){
             contentTop.push( $( $(this).attr('href') ).offset().top);
             contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
         })
         $.each( contentTop, function(i){
             if ( winTop > contentTop[i] - rangeTop ){
-                $('.navbar-collapse li.scroll')
+                $('.moxytheme .navbar-collapse li.scroll')
                 .removeClass('active')
                 .eq(i).addClass('active');          
             }

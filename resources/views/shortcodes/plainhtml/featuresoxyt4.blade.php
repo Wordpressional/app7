@@ -1,9 +1,9 @@
 
   <section id="moxyfeatures" class="moxytheme parallax boxmoxygentheme50 boxmoxygentheme50a">
      <span class="contmoxybg50">
-                        <input type="text" name="moxybg50"  class="inputmoxybg50" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"  style="color:black";><br>
+                        <input type="text" name="moxybg50"  class="inputmoxybg50" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"  style="color:black"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxybg50" style="color:black";>
+                     <input type="submit" value="Submit" class="submitmoxybg50" style="color:black">
                         </span>
                              <span class="bgmoxygentheme50">image
                              </span>

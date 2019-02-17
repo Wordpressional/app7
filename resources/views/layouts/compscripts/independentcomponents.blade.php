@@ -19582,7 +19582,7 @@ $(".savemoxygentheme88").click(function() {
 
 function moxyaddpresentationcolor88() {
 var inputpresentationcolormoxygentheme88 = $('.inputpresentationcolormoxygentheme88').val();
-  $('.moxypresentation88').css("background",inputpresentationcolormoxygentheme88);
+  $('section#moxyteam, section#moxyteam .moxytheme').css("background",inputpresentationcolormoxygentheme88);
 }
 
 
@@ -19651,7 +19651,7 @@ $(".savemoxygentheme89").click(function() {
 
 function moxyaddpresentationcolor89() {
 var inputpresentationcolormoxygentheme89 = $('.inputpresentationcolormoxygentheme89').val();
-  $('.moxypresentation89').css("background",inputpresentationcolormoxygentheme89);
+  $('section#moxyportfolio, section#moxyportfolio .moxytheme').css("background",inputpresentationcolormoxygentheme89);
 }
 
 
@@ -19787,7 +19787,7 @@ $(".savemoxygentheme91").click(function() {
 
 function moxyaddpresentationcolor91() {
 var inputpresentationcolormoxygentheme91 = $('.inputpresentationcolormoxygentheme91').val();
-  $('.moxypresentation91').css("background",inputpresentationcolormoxygentheme91);
+  $('section#moxypricing, section#moxypricing .moxytheme').css("background",inputpresentationcolormoxygentheme91);
 }
 
 
@@ -19855,7 +19855,7 @@ $(".savemoxygentheme92").click(function() {
 
 function moxyaddpresentationcolor92() {
 var inputpresentationcolormoxygentheme92 = $('.inputpresentationcolormoxygentheme92').val();
-  $('.moxypresentation92').css("background",inputpresentationcolormoxygentheme92);
+  $('section#moxyservices, section#moxyservices .moxytheme').css("background",inputpresentationcolormoxygentheme92);
 }
 
 
@@ -20421,7 +20421,7 @@ moxyaddpresentationcolor101();
 
 function moxyaddpresentationcolor101() {
 var inputpresentationcolormoxygentheme101 = $('.inputpresentationcolormoxygentheme101').val();
-  $('.moxypresentation101').css("background",inputpresentationcolormoxygentheme101);
+  $('.moxytheme.footer-top').css("background",inputpresentationcolormoxygentheme101);
 }
 
 

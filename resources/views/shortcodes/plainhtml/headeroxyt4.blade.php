@@ -85,13 +85,16 @@
 
     </div><!--/#moxyhome-slider-->
     <div class="moxytheme main-nav">
-      <div class="container">
+     <nav class="menuclr">
+      <div class="container ">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggler" data-toggle="collapse123" data-target=".navbar-collapse">
+          
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar">&nbsp;</span>
             <span class="icon-bar">&nbsp;</span>
             <span class="icon-bar">&nbsp;</span>
+
           </button>
            
            <div class="boxmoxygentheme7">
@@ -105,20 +108,24 @@
             <h1><img id="imagePreviewmoxygentheme7" class="img-responsive" src="{{asset('themes/oxyt4/logo.png')}}" alt="logo"></h1>
           </a> 
           </div>                   
-        </div>
+       </div>
 
 
-        <div class="collapse123 navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="#moxyhome">Home</a></li>
-            <li class="scroll"><a href="#moxyservices">Service</a></li> 
-            <li class="scroll"><a href="#moxyabout-us">About Us</a></li>                    <li class="scroll"><a href="#moxyportfolio">Portfolio</a></li>
-            <li class="scroll"><a href="#moxyteam">Team</a></li>
-            <li class="scroll"><a href="#moxyblog">Blog</a></li>
-            <li class="scroll"><a href="#moxycontact">Contact</a></li>       
+        <div class="collapse navbar-collapse" id="nav-content">
+          <ul class="nav navbar-nav navbar-right mr-auto">                 
+            <li class="nav-item scroll active"><a class="nav-link" href="#moxyhome">Home</a></li>
+            <li class="nav-item scroll"><a class="nav-link" href="#moxyservices">Service</a></li> 
+            <li class="nav-item scroll"><a class="nav-link" href="#moxyabout-us">About Us</a></li>
+            <li class="nav-item scroll"><a class="nav-link" href="#moxyportfolio">Portfolio</a></li>
+            <li class="nav-item scroll"><a class="nav-link" href="#moxyteam">Team</a></li>
+            <li class="nav-item scroll"><a class="nav-link" href="#moxyblog">Blog</a></li>
+            <li class="nav-item scroll"><a class="nav-link" href="#moxycontact">Contact</a></li>       
           </ul>
         </div>
-      </div>
+        
+      
+     </div>
+     </nav>
     </div><!--/#main-nav-->
   </header><!--/#home-->
 

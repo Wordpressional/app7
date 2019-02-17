@@ -13094,7 +13094,7 @@ label.imageUploadmoxygentheme24:after {
 span.contmoxyfacebook29 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13132,7 +13132,7 @@ span.contmoxyfacebook29 {
 span.contmoxyfacebook30 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 .editmoxygentheme31, .savemoxygentheme31 {
@@ -13168,7 +13168,7 @@ span.contmoxyfacebook30 {
 span.contmoxyfacebook31 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }  
 
 
@@ -13206,7 +13206,7 @@ span.contmoxyfacebook31 {
 span.contmoxyfacebook32 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 .editmoxygentheme33, .savemoxygentheme33 {
@@ -13242,7 +13242,7 @@ span.contmoxyfacebook32 {
 span.contmoxytwitter33 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13281,7 +13281,7 @@ span.contmoxytwitter33 {
 span.contmoxytwitter34 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13319,7 +13319,7 @@ span.contmoxytwitter34 {
 span.contmoxytwitter35 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13358,7 +13358,7 @@ span.contmoxytwitter35 {
 span.contmoxytwitter36 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13396,7 +13396,7 @@ span.contmoxytwitter36 {
 span.contmoxylinkedin37 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13433,7 +13433,7 @@ span.contmoxylinkedin37 {
 span.contmoxylinkedin38 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 .editmoxygentheme39, .savemoxygentheme39 {
@@ -13468,7 +13468,7 @@ span.contmoxylinkedin38 {
 span.contmoxylinkedin39 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 .editmoxygentheme40, .savemoxygentheme40 {
@@ -13503,7 +13503,7 @@ span.contmoxylinkedin39 {
 span.contmoxylinkedin40 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13539,7 +13539,7 @@ span.contmoxylinkedin40 {
 span.contmoxydribbble41 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13576,7 +13576,7 @@ span.contmoxydribbble41 {
 span.contmoxydribbble42 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 .editmoxygentheme43, .savemoxygentheme43 {
@@ -13612,7 +13612,7 @@ span.contmoxydribbble42 {
 span.contmoxydribbble43 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13648,7 +13648,7 @@ span.contmoxydribbble43 {
 span.contmoxydribbble44 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13684,7 +13684,7 @@ span.contmoxydribbble44 {
 span.contmoxyrss45 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13720,7 +13720,7 @@ span.contmoxyrss45 {
 span.contmoxyrss46 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13756,7 +13756,7 @@ span.contmoxyrss46 {
 span.contmoxyrss47 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
@@ -13793,7 +13793,7 @@ span.contmoxyrss47 {
 span.contmoxyrss48 {
     position: absolute;
     left: 0px;
-    bottom: -76px;
+    bottom: 0px;
 }
 
 
