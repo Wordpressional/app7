@@ -1722,3 +1722,9 @@ width:70% !important;
     z-index: 1030;
     top:0;
 }
+
+.adminltehs a:hover, .adminltehs a:active, .adminltehs a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #72afd2 !important;
+}
