@@ -73,7 +73,7 @@
           </div>
           <div class="col-sm-4 wow fadeInUp boxmoxygentheme84 textmoxygentheme84" data-wow-duration="1000ms" data-wow-delay="650ms">
             <div class="service-icon4">
-              <i id="purmoxy4" class="fa fa-coffee"></i>
+              <i id="purmoxy4" class="fa fa-coffee">&nbsp;</i>
             </div>
            
                 <span class="editcontpurmoxygentheme84">fontawesome</span>
