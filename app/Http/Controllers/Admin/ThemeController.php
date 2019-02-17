@@ -848,7 +848,7 @@ class ThemeController extends Controller
            //dd($vpath);
        
             //dd($vpath);
-            $html = File::put($vpath,htmlspecialchars_decode(htmlspecialchars($request->filew)));
+            $html = File::put($vpath,htmlspecialchars_decode($request->filew));
        
         return "success";
         } 
@@ -998,7 +998,11 @@ class ThemeController extends Controller
        
         $arrayfile[$i] =  view('shortcodes.custom.'.$cc1[$i])->render();
         //dd($imgslider);
-        
+         //dd($arrayfile[$i].replace('/\s/g', '&nbsp;'));
+        $arrayfile[$i] = preg_replace('/(>*<\/i>)/', '&amp;nbsp;</i>', $arrayfile[$i]); 
+        $arrayfile[$i] = preg_replace('/(>*<\/label>)/', '&amp;nbsp;</label>', $arrayfile[$i]); 
+       
+            //dd($arrayfile[$i]);
         }
 
         //dd($arrayfile);

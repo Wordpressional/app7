@@ -29,7 +29,7 @@
                            <input type='file' id="imageUploadmlthemeone17" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone17" for="imageUploadmlthemeone17">&nbsp;</label>
 
-                                <img id="imagePreviewmlthemeone17" class="card-image rounded-circle" src="http://via.placeholder.com/260x260/7a2874/fff" alt="description">
+                                <img id="imagePreviewmlthemeone17" class="card-image rounded-circle" src=" //via.placeholder.com/260x260/7a2874/fff" alt="description">
                             </div>
                                 <div class="card-body">
                                     <div class="boxmlthemeone69">
@@ -54,7 +54,7 @@
                            <input type='file' id="imageUploadmlthemeone18" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone18" for="imageUploadmlthemeone18">&nbsp;</label>
 
-                                <img id="imagePreviewmlthemeone18" class="card-image rounded-circle" src="http://via.placeholder.com/260x260/7a2874/fff" alt="description">
+                                <img id="imagePreviewmlthemeone18" class="card-image rounded-circle" src=" //via.placeholder.com/260x260/7a2874/fff" alt="description">
                             </div>
                                 <div class="card-body">
                                      <div class="boxmlthemeone71">
@@ -80,7 +80,7 @@
                            <input type='file' id="imageUploadmlthemeone19" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone19" for="imageUploadmlthemeone19">&nbsp;</label>
 
-                                <img id="imagePreviewmlthemeone19" class="card-image rounded-circle" src="http://via.placeholder.com/260x260/7a2874/fff" alt="description">
+                                <img id="imagePreviewmlthemeone19" class="card-image rounded-circle" src=" //via.placeholder.com/260x260/7a2874/fff" alt="description">
                             </div>
                                 <div class="card-body">
                                      <div class="boxmlthemeone72">
@@ -104,7 +104,7 @@
                            <span class="savemlthemeone20">save</span>
                            <input type='file' id="imageUploadmlthemeone20" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone20" for="imageUploadmlthemeone20">&nbsp;</label>
-                                <img id="imagePreviewmlthemeone20" class="card-image rounded-circle" src="http://via.placeholder.com/260x260/7a2874/fff" alt="description">
+                                <img id="imagePreviewmlthemeone20" class="card-image rounded-circle" src=" //via.placeholder.com/260x260/7a2874/fff" alt="description">
                             </div>
                                 <div class="card-body">
                                       <div class="boxmlthemeone73">
@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                         </div> <!-- end of swiper-slide -->
-                        <!-- end of slide -->
+                        <!-- end of slide --> 
 
                         <!-- Slide -->
                         <div class="swiper-slide">
@@ -128,7 +128,7 @@
                            <span class="savemlthemeone21">save</span>
                            <input type='file' id="imageUploadmlthemeone21" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone21" for="imageUploadmlthemeone21">&nbsp;</label>
-                                <img id="imagePreviewmlthemeone21" class="card-image rounded-circle" src="http://via.placeholder.com/260x260/7a2874/fff" alt="description">
+                                <img id="imagePreviewmlthemeone21" class="card-image rounded-circle" src=" //via.placeholder.com/260x260/7a2874/fff" alt="description">
                             </div>
                                 <div class="card-body">
                                     <div class="boxmlthemeone74">
@@ -152,7 +152,7 @@
                            <span class="savemlthemeone22">save</span>
                            <input type='file' id="imageUploadmlthemeone22" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmlthemeone22" for="imageUploadmlthemeone22">&nbsp;</label>
-                                <img id="imagePreviewmlthemeone22" class="card-image rounded-circle" src="http://via.placeholder.com/260x260/7a2874/fff" alt="description">
+                                <img id="imagePreviewmlthemeone22" class="card-image rounded-circle" src=" //via.placeholder.com/260x260/7a2874/fff" alt="description">
                             </div>
                                 <div class="card-body">
                                      <div class="boxmlthemeone75">

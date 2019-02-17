@@ -25,9 +25,9 @@
                
                <div class="navbar-right">
                   <ul class="nav navbar-nav">
-                     <li class=""><a href="#one_page" class="scroll">one page</a></li>
-                     <li class=""><a href="#multi_page" class="scroll">multi page</a></li>
-                     <li class=""><a href="#elements" class="scroll">elements</a></li>
+                     <li class=""><a href="#mmultione_page" class="scroll">one page</a></li>
+                     <li class=""><a href="#mmultimulti_page" class="scroll">multi page</a></li>
+                     <li class=""><a href="#mmultielements" class="scroll">elements</a></li>
                   </ul>
                </div>
           
@@ -40,11 +40,11 @@
 
 <!-- Main-Navigation ends -->
 <!--Banner-->
-<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url(&quot;http://www.themesindustry.com/html/synx-demo/demos/images/demo-header.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
+<div class="mmultithemeone demo-banner parallaxie boxmmultithemeone60" id="demos" style="height: 623px; background-image: url('{{asset('themes/t2/p2.jpg')}}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 0px;">
     <span class="editmmultithemeone60">edit</span>
   
                            <span class="savemmultithemeone60">save</span>
-                       <span class="labelmmultithemeone60"><label class="imageUploadmmultithemeone60" for="imageUploadmmultithemeone60"></label></span>
+                       <span class="labelmmultithemeone60"><label class="imageUploadmmultithemeone60" for="imageUploadmmultithemeone60">&nbsp;</label></span>
 
                         <input type='file' id="imageUploadmmultithemeone60" accept=".png, .jpg, .jpeg" />
    <div class="container-fluid">
@@ -67,7 +67,7 @@
                            <span class="savemmultithemeone3">save</span>
          <h2 class="default_section_heading "> Create Better Websites with Synx. </h2>
          <p class="open_sans">You will get 100+ elements and 50+ truly unique pre-made templates.  </p>
-         <a class="button raleway bg_before_pink scroll" href=#one_page">View Demos</a>
+         <a class="button raleway bg_before_pink scroll" href=#mmultione_page">View Demos</a>
       </div>
       </div>
    </div>

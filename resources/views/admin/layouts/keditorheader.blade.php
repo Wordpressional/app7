@@ -37,6 +37,13 @@
 @include('admin.layouts.compscripts.generalk')
 
 @include('admin.layouts.compscripts.serviceworker')
+<script>
+$(document).ready(function(){
+
+$('.thumbnail').removeAttr('data-toggle');
+
+});
+</script>
 @yield('scripts')
 
 </style>

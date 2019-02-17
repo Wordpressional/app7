@@ -49,6 +49,10 @@
 
 <script src="{{ asset('js/adminlte.min.js') }}"></script>
 
+<script type="text/javascript" src="{{ asset('js/jquery.inview.min.js') }}"></script>
+ <script type="text/javascript" src="{{ asset('js/smoothscroll.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/mousescroll.js') }}"></script>
+  
 
 <script src="{{ asset('webhome/js/form-builder.min.js') }}"></script>
 
@@ -85,7 +89,7 @@
 
 });     
  </script>   
-   
+<script src="{{ asset('js/nextgallery.js') }}"></script>   
 <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
 
             <script>

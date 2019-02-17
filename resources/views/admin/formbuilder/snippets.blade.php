@@ -228,7 +228,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.jpg')}}" data-keditor-title="FAQ" data-keditor-categories=" FAQ">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/faq.jpg')}}" data-keditor-title="FAQ" data-keditor-categories=" Accordion">
 
 @include('shortcodes.plainhtml.faq')
 
@@ -419,7 +419,7 @@
 @include('shortcodes.plainhtml.headert3')
  
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/quotet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Contact Forms">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/quotet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Forms">
 
 @include('shortcodes.plainhtml.getquoteformt3')
 
@@ -486,6 +486,68 @@
 @include('shortcodes.plainhtml.footer2t3')
 
 </div>
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.headeroxyt4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/servicest4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.servicesoxyt4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutt4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.aboutusoxyt4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.portfoliooxyt4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/teamt4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.teamoxyt4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/featurest4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.featuresoxyt4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/pricingt4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.pricingoxyt4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/slidert4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.slideroxyt4')
+
+</div>
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blogt4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.blogoxyt4')
+
+</div>
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/contactt4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.contactoxyt4')
+
+</div>
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="In-built Business Theme One">
+
+@include('shortcodes.plainhtml.footeroxyt4')
+
+</div>
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/contspecial.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Contact Forms">
 @include('shortcodes.plainhtml.contactformspecial')
   
@@ -524,6 +586,38 @@
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/accordion.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Accordion">
 
 @include('shortcodes.plainhtml.accordion3')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/comptabs.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Tabs">
+
+@include('shortcodes.plainhtml.bluetabs')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/gallery.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Gallery">
+
+@include('shortcodes.plainhtml.nextgallery')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/roundtext.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Text">
+
+@include('shortcodes.plainhtml.roundtext')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/imagesnippet.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Snippets">
+
+@include('shortcodes.plainhtml.imagesnippet')
   
 
 

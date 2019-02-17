@@ -56,3 +56,1664 @@ section.main_slider_area {
 .logo-lg img {
     height: 50px;
 }
+.anuhow-section1{
+    padding: 30px;
+}
+.anuhow-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+  .anuhow-section1  .text-muted{
+  text-align: justify;
+}
+.anuhow-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.anuhow-section1 .row
+{
+    margin-top: 10%;
+}
+.anuhow-img 
+{
+    text-align: center;
+    margin:auto;
+}
+.anuhow-img img{
+    width: 50% !important;
+}
+@media only screen and (max-width: 1200px) { 
+ .anuhow-img img { 
+width:70% !important;
+} 
+}
+
+
+.anucontainer {
+    position:relative;
+    width:100%;
+    height:auto;
+    margin:80px auto;
+}
+.anucontainer .box {
+    position:relative;
+    width:calc(400px - 60px);
+    height:calc(320px - 30px);
+    background:#000;
+    float:left;
+    margin:15px 15px 15px 25px;
+    box-sizing:border-box;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(0,0,0,.8);
+}
+.anucontainer .box:before {
+    content:'';
+    position:absolute;
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    box-sizing:border-box;
+    transition:0.5s;
+    transform: scaleX(0);
+    opacity:0;
+}
+.anucontainer .box:hover:before {
+    transform:scaleX(1);
+    opacity:1;
+}
+.anucontainer .box:after {
+    content:'';
+    position:absolute;
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+    box-sizing:border-box;
+    transition:0.5s;
+    transform: scaleY(0);
+    opacity:0;
+}
+.anucontainer .box:hover:after {
+    transform:scaleY(1);
+    opacity:1;
+}
+.anucontainer .box .imgBox {
+    position:relative;
+}
+
+.anucontainer .box .imgBox img {
+    width:100%;
+    transition:0.5s;
+}
+
+.anucontainer .box:hover .imgBox img {
+    opacity:.2;
+    transform:scale(1.2);
+}
+
+.anucontainer .box .content {
+    position:absolute;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:2;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.anucontainer .box .content h2 {
+    margin: 0 0 10px;
+    padding:0;
+    color:#fff;
+    transition:0.5s;
+    transform:translateY(-50px);
+    opacity:0;
+    visibility:hidden;
+}
+.anucontainer .box .content p {
+    margin:0;
+    padding:0;
+    color:#fff;
+    transform:translateY(50px);
+    opacity:0;
+    visibility:hidden;
+}
+.anucontainer .box:hover .content h2,
+.anucontainer .box:hover .content P {
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0px);
+}
+
+
+/*
+  Theme Name: Oxygen
+  Theme Uri: http://www.themeum.com
+  Author: Themeum
+  Author Uri: http://www.themeum.com
+  Description: Onepage Site Template
+  Version: 1.0
+*/
+
+/*************************
+*******Typography******
+**************************/
+
+.moxytheme {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  background-color: #fff;
+  
+
+}
+
+.moxytheme h1, .moxytheme h2, .moxytheme h3, .moxytheme h4, .moxytheme h5, .moxytheme h6 {
+  color: #333;
+}
+
+.moxytheme h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.moxytheme h3 {
+  font-size: 18px;
+}
+
+.moxytheme.parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.moxytheme.parallax,
+.moxytheme .parallax h1,
+.moxytheme.parallax h2,
+.moxytheme.parallax h3,
+.moxytheme.parallax h4,
+.moxytheme.parallax h5,
+.moxytheme.parallax h6 {
+  color: #fff;
+}
+
+.moxytheme.parallax input[type="text"],
+.moxytheme.parallax input[type="text"]:hover,
+.moxytheme.parallax input[type="email"],
+.moxytheme.parallax input[type="email"]:hover,
+.moxytheme.parallax input[type="url"],
+.moxytheme.parallax input[type="url"]:hover,
+.moxytheme.parallax input[type="password"],
+.moxytheme.parallax input[type="password"]:hover,
+.moxytheme.parallax textarea,
+.moxytheme.parallax textarea:hover {
+  font-weight: 300;
+  color: #fff;
+}
+
+.moxytheme .btn {
+  border: 0;
+  border-radius: 0;
+}
+
+.moxytheme .btn.btn-primary:hover {
+  background-color: #017fb5;
+}
+
+.moxytheme .navbar-nav li a:hover, 
+.moxytheme .navbar-nav li a:focus {
+  outline:none;
+  outline-offset: 0;
+  text-decoration:none;  
+  background: transparent;
+}
+
+.moxytheme a {
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.moxytheme a:focus, 
+.moxytheme a:hover {
+  text-decoration: none;
+  outline: none
+}
+
+
+
+.moxytheme .heading {
+  padding-bottom:90px;
+}
+
+.moxytheme.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: #fff;
+}
+
+.moxytheme.preloader > i {
+  position: absolute;
+  font-size: 36px;
+  line-height: 36px;
+  top: 50%;
+  left: 50%;
+  height: 36px;
+  width: 36px;
+  margin-top: -15px;
+  margin-left: -15px;
+  display: inline-block;
+}
+
+
+/*************************
+********Home CSS**********
+**************************/
+#moxyhome-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+#moxyhome-slider .caption {
+  position: absolute;
+  top: 50%;
+  margin-top: -104px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 15;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 1 !important;
+}
+
+#moxyhome-slider .caption h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.moxytheme .caption .btn-start {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding:14px 40px;
+  border: 1px solid #6e6d6c;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.moxytheme .caption .btn-start:hover {
+  color: #fff
+}
+
+.moxytheme.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2037px;
+}
+
+.moxytheme.carousel-fade .carousel-inner .carousel-item:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.7);
+}
+
+.moxytheme.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.moxytheme.carousel-fade .carousel-inner .active.left,
+.moxytheme.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.moxytheme.carousel-fade .carousel-inner .next.left,
+.moxytheme.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.moxytheme.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.moxytheme .left-control, .moxytheme .right-control {
+  position: absolute;
+  top: 50%;
+  height: 51px;
+  width: 51px;
+  line-height: 48px;
+  border-radius: 50%;
+  border:1px solid #fff;  
+  z-index: 20;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.moxytheme .left-control {
+  left: -51px
+} 
+
+.moxytheme .right-control {
+  right: -51px;
+}
+
+.moxytheme .left-control:hover, 
+.moxytheme .right-control:hover {
+  color: #fff;
+}
+
+#moxyhome-slider:hover .left-control {
+  left:30px
+} 
+
+#moxyhome-slider:hover .right-control {
+  right:30px
+}
+
+#moxyhome-slider .fa-angle-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  color: #fff;
+  display: inline-block;
+  width: 24px;
+  margin-left: -12px;
+  font-size: 24px;
+  line-height: 24px;
+  z-index: 999;
+  -webkit-animation: bounce 3000ms infinite;
+  animation: bounce 3000ms infinite;
+}
+
+.moxytheme .navbar-right li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.moxytheme .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 38px 15px;
+}
+
+.moxytheme.main-nav{
+    width: 100%;
+    min-height:100px;
+}
+
+@media (min-width: 768px){
+.moxytheme .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+.moxytheme .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+}
+.moxytheme .navbar-nav>li {
+    float: left;
+}
+.moxytheme .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.moxytheme .navbar-nav{
+    display: block !important;
+}
+.navbar-brand {
+    float: left;
+    
+    padding: 5px 15px 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-header {
+    display: inline-flex;
+    float: left;
+    
+    width: 366px;
+}
+}
+
+.moxytheme .navbar-right li.active a {
+  background-color: rgba(0,0,0,.2);
+}
+
+.moxytheme .navbar-brand h1 {
+  margin-top: 5px;
+}
+
+/*************************
+********Service CSS*******
+**************************/
+
+ .moxytheme .service-icon1 {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.moxytheme .our-services .col-sm-4:hover .service-icon1 {
+  background-color: #333;
+}
+
+ .moxytheme .service-icon2 {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.moxytheme .our-services .col-sm-4:hover .service-icon2 {
+  background-color: #333;
+}
+
+
+ .moxytheme .service-icon3 {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.moxytheme .our-services .col-sm-4:hover .service-icon3 {
+  background-color: #333;
+}
+
+
+ .moxytheme .service-icon4 {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.moxytheme .our-services .col-sm-4:hover .service-icon4 {
+  background-color: #333;
+}
+
+
+ .moxytheme .service-icon5 {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.moxytheme .our-services .col-sm-4:hover .service-icon5 {
+  background-color: #333;
+}
+
+
+ .moxytheme .service-icon6 {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.moxytheme .our-services .col-sm-4:hover .service-icon6 {
+  background-color: #333;
+}
+
+
+
+
+.moxytheme .our-services .col-sm-4 {
+  border-right:1px solid #f2f2f2;
+  border-bottom:1px solid #f2f2f2;
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+.moxytheme .our-services .col-sm-4:nth-child(4), 
+.moxytheme .our-services .col-sm-4:nth-child(5), 
+.moxytheme .our-services .col-sm-4:nth-child(6) {
+  border-bottom:0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  padding-top: 60px;
+}
+
+.moxytheme .our-services .col-sm-4:nth-child(3), 
+.moxytheme .our-services .col-sm-4:nth-child(6) {
+  border-right:0;
+}
+
+.moxytheme .service-info h3 {
+  margin-top: 35px;
+}
+
+/*************************
+********About CSS*******
+**************************/
+#moxyabout-us {
+  background-image: url(../themes/oxyt4/about-bg.jpg);
+  padding: 60px 0;
+  min-height: 450px;
+  height: 550px;
+}
+
+#moxyabout-us h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+#moxyabout-us .lead {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#moxyabout-us h1 {
+  margin-bottom: 30px;
+}
+
+.moxytheme .progress{
+  height: 20px;
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  margin-bottom: 25px;
+}
+
+.moxytheme .progress-bar{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-align: right;
+  padding-right: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.moxytheme .progress .progress-bar.six-sec-ease-in-out {
+  -webkit-transition: width 2s ease-in-out;
+  transition:  width 2s ease-in-out;
+}
+
+/*************************
+********portfolio CSS*****
+**************************/
+
+#moxyportfolio .container-fluid, 
+#moxyportfolio .col-sm-3  {
+  overflow: hidden;
+  padding: 0;
+}
+
+#moxyportfolio .folio-item {
+  position: relative;
+}
+
+#moxyportfolio .overlay {
+  background-color: #000;
+  color: #fff; 
+  left: 0;
+  right:0;
+  bottom:-100%;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  opacity:0;  
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.moxytheme .overlay .overlay-content {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.moxytheme .overlay .overlay-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.moxytheme .overlay .folio-info {
+  opacity: 0;
+  margin-bottom: 75px;
+  margin-top: -75px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.moxytheme .overlay .folio-info h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.moxytheme .folio-overview a {
+  font-size: 18px;
+  color: #333;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.moxytheme .folio-overview a:hover {
+  color: #fff;
+}
+
+.moxytheme .folio-overview .folio-expand {
+  margin-top: -500px;
+  margin-left: -500px;
+}
+
+.moxytheme .folio-image, .folio-overview .folio-expand {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+#moxyportfolio .folio-item:hover .folio-image {
+  -webkit-transform: scale(1.5) rotate(-15deg);
+  transform: scale(1.5) rotate(-15deg);
+}
+
+.moxytheme .folio-image img {
+  width: 100%;
+}
+
+#moxyportfolio .folio-item:hover .overlay {
+  opacity: 0.8;
+  bottom: 0;
+  height: 100%;
+}
+
+#moxyportfolio .folio-item:hover .folio-overview .folio-expand {
+  margin-top: 0;
+  margin-left:0;
+}
+
+#moxyportfolio .folio-item:hover .overlay .folio-info {
+  opacity: 1;  
+  margin-bottom:0;
+  margin-top:0;
+}
+
+
+#moxysingle-portfolio {
+  padding: 90px 0;
+  background: #f5f5f5;
+  position: relative;
+
+}
+
+#moxysingle-portfolio img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#moxysingle-portfolio .close-folio-item {
+  position: absolute;
+  top: 30px;
+  font-size: 34px;
+  width: 34px;
+  height: 34px;
+  left: 50%;
+  color: #999;
+  margin-left: -17px;
+}
+
+/*************************
+*********Team CSS*********
+**************************/
+#moxyteam {
+  padding-top: 0;
+}
+
+.moxytheme .team-members {
+  margin-bottom: 25px;
+}
+
+.moxytheme .social-icons {
+  margin-top:30px;
+  text-align: center;
+}
+
+.moxytheme .social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.moxytheme .social-icons ul li {
+  float: left;
+  margin-right: 8px;
+}
+
+.moxytheme .social-icons ul li:last-child {
+  margin-right: 0;
+}
+
+.moxytheme .social-icons ul li a {
+  color:#fff;
+  background-color: #d9d9d9;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  display: block;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.moxytheme .social-icons ul li a:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.moxytheme .team-member {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+}
+
+.moxytheme .team-member:hover .social-icons ul li a.facebook {
+  background-color: #3b5999;
+}
+.moxytheme .team-member:hover .social-icons ul li a.twitter {
+  background-color: #2ac6f7;
+}
+.moxytheme .team-member:hover .social-icons ul li a.dribbble {
+  background-color: #ff5b92;
+}
+.moxytheme .team-member:hover .social-icons ul li a.linkedin {
+  background-color: #036dc0;
+}
+.moxytheme .team-member:hover .social-icons ul li a.rss {
+  background-color: #ff6b00;
+}
+
+#moxyteam .img-responsive {
+  width: 100%;
+}
+
+.moxytheme .member-info h3 {
+  margin-top: 35px;
+}
+
+.moxytheme .member-info h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #999;
+}
+
+
+/*************************
+*******Features CSS*******
+**************************/
+
+#moxyfeatures {
+    padding: 90px 0;
+    margin-bottom: 40px;
+    min-height: 300px;
+    height: 300px;
+}
+
+#moxyfeatures {
+  text-align: center;
+  background-image: url(../themes/oxyt4/features-bg.jpg);
+}
+
+#moxyfeatures i {
+  font-size: 48px;
+}
+
+
+#moxyfeatures i {
+  font-size: 48px;
+}
+
+
+#moxyfeatures i {
+  font-size: 48px;
+}
+
+#moxyfeatures i {
+  font-size: 48px;
+}
+
+#moxyfeatures h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#moxyfeatures .slider-overlay {
+  opacity: 0.8;
+}
+
+
+/*************************
+*****Pricing Table CSS****
+**************************/
+.moxytheme .pricing-table {
+  text-align: center;
+}
+
+.moxytheme .single-table {
+  padding: 30px 20px 20px;
+  border:1px solid #f2f2f2;
+}
+
+.moxytheme .single-table h3 {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.moxytheme .price {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.moxytheme .price span {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.moxytheme .single-table ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.moxytheme .single-table ul li {
+  line-height: 30px;
+}
+
+.moxytheme .single-table.featured {  
+  color: #fff;
+}
+
+.moxytheme .single-table.featured h3 { 
+  color: #fff;
+}
+
+.moxytheme .single-table.featured .btn.btn-primary {
+  background-color: #fff;
+}
+
+/*************************
+********Twitter CSS*******
+**************************/
+#moxytwitter {
+  background-image: url(../themes/oxyt4/twitter-bg.jpg);
+  min-height: 300px;
+  height: 300px;
+}
+
+#moxytwitter > div {
+  text-align: center;
+  position: relative;
+}
+
+#moxytwitter-carousel {
+  position: relative;
+  z-index: 15
+}
+
+.moxytheme .twitter-icon {
+  position: relative;
+  z-index: 15;
+  color: #fff;
+}
+
+.moxytheme .twitter-icon .fa-twitter {
+  font-size: 24px;
+  height: 64px;
+  width: 64px;
+  line-height: 65px;
+  border-radius: 50%; 
+  position: relative;
+}
+
+.moxytheme .twitter-icon .fa-twitter:after {
+  position: absolute;
+  content: "";
+  border-width: 8px;
+  border-style: solid;
+  left: 24px;
+  bottom: -14px;
+}
+
+
+
+
+
+#moxytwitter-carousel .carousel-item {
+  padding: 0 55px;
+}
+
+#moxytwitter-carousel .carousel-item a {
+  color: #fff;
+}
+
+.moxytheme .twitter-icon h4 {
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.moxytheme .twitter-left-control, 
+.moxytheme .twitter-right-control {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  border: 1px solid #fafafa;
+  height:34px;
+  width: 34px;
+  line-height: 31px;
+  margin-top: -17px;
+  font-size: 18px;
+  border-radius: 50%;
+  z-index: 15
+}
+
+.moxytheme .twitter-left-control {
+  left: 80px;
+} 
+
+.moxytheme .twitter-right-control {
+  right: 80px
+}
+
+.moxytheme .twitter-left-control:hover, .moxytheme .twitter-right-control:hover {
+  color: #fff;
+}
+
+
+/*************************
+**********Blog CSS********
+**************************/
+
+.moxytheme .post-thumb {
+  position: relative;
+}
+
+.moxytheme .post-icon {
+  position: absolute;
+  top:10px;
+  right:10px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius:4px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.moxytheme .post-meta {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.moxytheme .post-meta span {
+  margin-right: 16px;
+}
+
+#moxypost-carousel .carousel-indicators {
+  bottom: 3px;
+  left: 90%;
+}
+
+.moxytheme .blog-left-control, .moxytheme .blog-right-control {
+  position: absolute;
+  top: 45%;
+  width: 30px;
+  text-align: center;
+  color: rgba(255,255,255,.7);
+  font-size: 36px;
+}
+
+.moxytheme .blog-left-control {
+  left: 0;
+}
+
+.moxytheme .blog-right-control {
+  right: 0;
+}
+
+.moxytheme .blog-left-control:hover, .moxytheme .blog-right-control:hover {
+  color: #fff;  
+}
+
+.moxytheme .entry-header h3 a {
+  line-height: 30px;
+}
+
+.moxytheme .entry-header .date, 
+.moxytheme .entry-header .cetagory {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.moxytheme .entry-header .date:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom:-22px;
+  width: 20px;
+  height: 3px;
+}
+
+.moxytheme .entry-content {
+  font-size: 14px;
+}
+
+.moxytheme .load-more {
+  display:block;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.moxytheme .btn-loadmore {
+  border: 1px solid #f2f2f2;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 125px;
+  text-transform: uppercase;
+}
+
+.moxytheme .btn-loadmore:hover {
+  color:#fff;
+}
+
+/*************************
+**********Contact CSS*****
+**************************/
+
+#moxycontact {
+  padding-top: 0px;
+  padding-bottom: 0;
+}
+
+#moxygoogle-map {
+  height: 350px;
+}
+
+#moxycontact-us {
+  background-image:url(../themes/oxyt4/contact-bg.jpg);
+  padding-bottom: 90px; 
+}
+
+#moxycontact-us .heading {
+  padding-top: 95px;
+}
+
+.moxytheme .form-control {
+  background-color: transparent;
+  border-color: rgba(255,255,255,.1);
+  height: 50px;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 10px;
+}
+
+.moxytheme textarea.form-control {
+  min-height: 180px;
+  resize:none;
+}
+
+.moxytheme .form-group {
+  margin-bottom: 30px;
+}
+
+.moxytheme .contact-info {
+  padding-left:70px;
+  font-weight: 300;
+}
+
+.moxytheme ul.address {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.moxytheme .contact-info ul li {
+  margin-bottom: 8px;
+}
+
+.moxytheme .contact-info ul li a {
+  color: #fff;
+}
+
+.moxytheme .btn-submit {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  color: #fff;
+  border:0;
+  margin-top: 40px;
+}
+
+#moxyfooter {
+  color:#fff;
+}
+
+.moxytheme.footer-top {
+  position: relative;
+  padding:30px 0
+}
+
+#moxyfooter .footer-bottom {
+  background-color: #fff;
+  padding: 0px 0 0px;
+}
+
+#moxyfooter.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.moxytheme .footer-logo {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#moxyfooter .social-icons {
+  margin-top: 15px;
+}
+
+#moxyfooter .social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#moxyfooter .social-icons ul li a {
+  background-color: rgba(0,0,0,.2);
+  border-radius: 4px;
+  line-height: 33px;
+}
+
+#moxyfooter .social-icons ul li a:hover {
+  color: #fff
+}
+
+#moxyfooter .social-icons ul li a.envelope:hover {
+  background-color: #CECB26;
+}
+
+#moxyfooter .social-icons ul li a.facebook:hover {
+  background-color: #3b5999;
+}
+#moxyfooter .social-icons ul li a.twitter:hover {
+  background-color: #2ac6f7;
+}
+#moxyfooter .social-icons ul li a.dribbble:hover {
+  background-color: #ff5b92;
+}
+#moxyfooter .social-icons ul li a.linkedin:hover {
+  background-color: #036dc0;
+}
+#moxyfooter .social-icons ul li a.tumblr:hover {
+  background-color: #ff6b00;
+}
+
+
+/* moxy responsive css */
+/* lg */ 
+@media (min-width: 1200px) {
+
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    .moxytheme .navbar-right li a {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .moxytheme .social-icons ul li {
+        margin-bottom: 10px;
+    }
+    .moxytheme .price {
+        font-size: 16px;
+        line-height: 30px;
+        width: 100%;
+    }
+    .moxytheme .price span {
+        font-size: 10px;
+        margin-top: 27px;
+    }
+    .moxytheme .btn-signup {
+        padding: 10px 20px;
+    }
+}
+
+/* xs */
+@media (max-width: 767px) {
+   .moxytheme .project-details{
+        margin: 15px;
+    }
+    .moxytheme {
+        font-size: 14px;
+    }
+    .moxytheme #home-slider .caption h1 {
+        font-size: 40px;
+    }
+    .moxytheme #home-slider .caption {
+        font-size: 15px;
+        padding: 0 30px;
+    }
+    .moxytheme .left-control, .right-control {
+        font-size: 20px;
+        height: 30px;
+        line-height: 25px;
+        width: 30px;
+    }
+    .moxytheme #home-slider:hover .right-control {
+        right: 15px;
+    }
+    .moxytheme #home-slider:hover .left-control {
+        left: 15px;
+    }
+    .moxytheme .caption .btn-start {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+    .moxytheme .navbar-brand {
+        padding: 0 15px 15px;
+    }
+    .moxytheme .navbar-toggler {
+      border:1px solid #fff;
+    }
+
+    .moxytheme .navbar-toggler .icon-bar {
+      background-color: #fff;
+    }
+    .moxytheme .navbar-right li a {
+        font-size: 13px;
+        padding-bottom: 8px;
+        padding-top: 10px;
+    }
+
+    /*services*/
+    
+    .moxytheme .heading {
+        font-size: 14px;
+        padding-bottom: 45px;
+    }
+    .moxytheme .heading h2 {
+        font-size: 26px;
+    }
+    .moxytheme .service-info h3 {
+        font-size: 20px;
+    }
+    .moxytheme .our-services .col-sm-4 {
+        margin-bottom: 32px;
+        padding-bottom: 20px;
+    }
+    .moxytheme .our-services .col-sm-4:nth-child(4), 
+    .moxytheme .our-services .col-sm-4:nth-child(5), 
+    .moxytheme .our-services .col-sm-4:nth-child(6) {
+        padding-top: 0;
+    }
+    .moxytheme .service-icon {
+        font-size: 30px;
+        height: 65px;
+        line-height: 62px;
+        width: 65px;
+    }
+    .moxytheme .our-services .col-sm-4:hover .service-icon:before {
+        height: 90px;
+        width: 90px;
+    }
+    .moxytheme .about-info {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .moxytheme .team-member {
+        margin-bottom: 50px;
+    }
+    .moxytheme .team-members .col-sm-3, 
+    .moxytheme .pricing-table .col-sm-3, 
+    #portfolio .col-sm-3, 
+    .moxytheme .blog-posts .col-sm-4  {
+        width: 50%;
+        float: left;
+    }
+    .moxytheme .social-icons ul li a {
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+    }   
+    .moxytheme .count .col-xs-6 {
+        margin-bottom: 35px;
+    }
+    #moxyfeatures {
+        min-height: 330px;
+    }
+    #moxyfeatures i {
+        font-size: 35px;
+    }
+    #moxyfeatures h3 {
+        font-size: 25px;
+    }
+    .moxytheme .price span {
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    .moxytheme .price {
+        font-size: 18px;
+        line-height: 35px;
+        width: auto;
+    }
+    .moxytheme .single-table ul {
+        margin-top: 22px;
+    }
+    .moxytheme .single-table ul li {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .moxytheme .btn-signup {
+        font-size: 12px;
+        margin-top: 25px;
+        padding: 10px 35px;
+    }
+    .moxytheme .single-table{
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+    #moxytwitter {
+        padding-bottom: 75px;
+    }
+    .twitter-left-control, 
+    .twitter-right-control {
+        top: inherit;
+        bottom: 30px;
+        height: 25px;
+        width: 25px;
+        line-height: 23px;
+        font-size: 14px;
+    }
+    .moxytheme .twitter-left-control {
+        left: 30px;
+        z-index: 16
+    } 
+    .moxytheme .twitter-right-control {
+        right: 30px;
+        z-index: 16
+    }
+    #moxyblog {
+        overflow: hidden;
+    }
+    .moxytheme .entry-header h2 {
+        line-height: 20px;
+    }
+    .moxytheme .blog-posts .col-sm-4 {
+        margin-bottom: 35px;
+    }
+    .moxytheme .load-more {
+        margin-top: 35px;
+    }
+    .moxytheme .btn-loadmore {
+        font-size: 12px;
+        padding: 15px 75px;
+    }
+    #moxycontact-us .heading {
+        padding-top: 35px;
+    }
+    .moxytheme .contact-info {
+        padding-left: 0;
+    }
+    #moxyfooter .footer-bottom {
+        text-align: center;
+    }
+    .moxytheme .footer-bottom p.pull-right {
+        float: none !important;
+    }
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+  
+    .moxytheme .team-members .col-sm-3, 
+    .moxytheme .pricing-table .col-sm-3, 
+    #moxyportfolio .col-sm-3, 
+    .moxytheme .blog-posts .col-sm-4 {
+        width:100%;
+        float: none;
+    }
+
+    #moxyfeatures, #moxytwitter, #moxyabout-us  {
+        min-height: 800px !important;
+    }
+   #moxycontact .parallax {
+        min-height: 1300px !important;
+    }
+
+    .navbar-header {
+    height: 46px;
+    }
+
+    .navbar-toggler
+    {
+        margin:15px;
+        float:right;
+    }
+    .moxytheme .navbar-nav{
+        margin-top: 40px !important;
+    }
+}
+
+
+/*Presets*/
+.moxytheme a,
+#moxyhome-slider .caption h1 span, 
+#moxytwitter-carousel .carousel-item span, 
+#moxyfooter .footer-bottom, 
+#moxysingle-portfolio .close-folio-item:hover, 
+.moxytheme .single-table.featured .btn.btn-primary, 
+.moxytheme .contact-info ul li a:hover, 
+#moxyfooter .footer-bottom a  {
+  color: #028fcc;
+}
+
+.moxytheme .btn.btn-primary:hover,
+.moxytheme .btn-submit:hover {
+  background-color: #027db3
+}
+
+.moxytheme a:hover, .moxytheme a:focus {
+    color: #027db3;
+}
+
+.moxytheme.main-nav, 
+.moxytheme .service-icon1,
+.moxytheme .service-icon2, 
+.moxytheme .service-icon3, 
+.moxytheme .service-icon4, 
+.moxytheme .service-icon5, 
+.moxytheme .service-icon6, 
+.moxytheme .progress-bar.progress-bar-primary, 
+.moxytheme .single-table.featured, 
+.btn.btn-primary, 
+.moxytheme .twitter-icon .fa-twitter,
+.moxytheme .twitter-left-control:hover, .twitter-right-control:hover, 
+.moxytheme .post-icon, 
+.moxytheme .entry-header .date:after, 
+.moxytheme .btn-loadmore:hover, 
+.moxytheme .btn-submit,
+#moxyfooter, 
+.moxytheme .caption .btn-start:hover, 
+.moxytheme .left-control:hover, 
+.moxytheme .right-control:hover, 
+.moxytheme .folio-overview a:hover,
+.moxytheme .menuclr {
+  background-color:#028fcc;
+}
+
+.moxytheme .twitter-left-control:hover, 
+.moxytheme .twitter-right-control:hover, 
+.moxytheme .btn-loadmore:hover  {
+    border: 1px solid #028fcc;
+}
+
+.moxytheme .caption .btn-start:hover, 
+.moxytheme .left-control:hover, 
+.moxytheme .right-control:hover {
+    border-color: #028fcc;
+}
+
+.moxytheme .twitter-icon .fa-twitter:after {
+    border-color: #028fcc transparent transparent;
+}
+
+.moxytheme .fa-twitter, .moxytheme .fa-facebook, .moxytheme .fa-linkedin, .moxytheme .fa-rss
+{
+    background: transparent !important;
+}
+.moxytheme .single-table a{
+    color: #ffffff;
+}
+#moxypricing{
+    margin-bottom: 40px;
+}
+
+#moxypricing input, #moxypricing button, #moxyteam input, #moxyteam button, #moxyportfolio input, #moxyportfolio button
+, #moxyservices input, #moxyservices button, #moxyblog button,  #moxyblog input
+, #moxyfooter input, #moxyfooter button
+{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.moxytheme.footer-top {
+    background-color: #028fcc;
+}
+
+#moxycontact .contact-form {
+     background: transparent; 
+     margin-top: 0; 
+     margin-bottom: 0; 
+     width: 100%; 
+}
+
+#moxycontact .parallax {
+    min-height: 900px;
+    height: 900px;
+}
+
+#moxycontact .contact-form form {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+#moxyblog .blog-posts {
+    margin-bottom: 30px;
+}
+.moxytheme .fl
+{
+  float: left;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top:0;
+}

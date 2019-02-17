@@ -18,7 +18,7 @@
                                       <span class="editmlbannertheme1">edit</span>
   
                            <span class="savemlbannertheme1">save</span>
-                      <h1 class="tagline">I'm <span id="typed">PPP.</span><span class="typed-cursor">|</span></h1>
+                      <h1 class="tagline">I'm <span id="typed">PPP.</span></h1>
                       <p class="sub-tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       <a href="#portofolio" class="cta-button">view portofolio </a>
                   </div>

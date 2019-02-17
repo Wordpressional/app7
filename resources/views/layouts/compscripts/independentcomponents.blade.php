@@ -12222,4 +12222,8855 @@ var inputmlthemeone27 = $('.inputmlthemeone27').val();
   $('.hrefchangemllinkedin27').attr("src",inputmlthemeone27);
 }
 
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage1").hide();
+
+$( ".boxsnipetimage1" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage1").hasClass("editable")) {
+    $(".editsnipetimage1").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage1").hide();
+
+});
+
+ $(".editsnipetimage1").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage1").addClass("editable");
+   $(".editsnipetimage1").hide();
+  $(".savesnipetimage1").show();
+  $(".imageUploadsnipetimage1").show();
+});
+
+$(".savesnipetimage1").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage1").removeClass("editable");
+ 
+  $(".editsnipetimage1").hide();
+  $(".imageUploadsnipetimage1").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage1").change(function() {
+
+    readURLsnipetimg1(this);
+});
+
+});
+function readURLsnipetimg1(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage1').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage1a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage2").hide();
+
+$( ".boxsnipetimage2" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage2").hasClass("editable")) {
+    $(".editsnipetimage2").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage2").hide();
+
+});
+
+ $(".editsnipetimage2").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage2").addClass("editable");
+   $(".editsnipetimage2").hide();
+  $(".savesnipetimage2").show();
+  $(".imageUploadsnipetimage2").show();
+});
+
+$(".savesnipetimage2").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage2").removeClass("editable");
+ 
+  $(".editsnipetimage2").hide();
+  $(".imageUploadsnipetimage2").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage2").change(function() {
+
+    readURLsnipetimg2(this);
+});
+
+});
+function readURLsnipetimg2(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage2').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage2a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage3").hide();
+
+$( ".boxsnipetimage3" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage3").hasClass("editable")) {
+    $(".editsnipetimage3").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage3").hide();
+
+});
+
+ $(".editsnipetimage3").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage3").addClass("editable");
+   $(".editsnipetimage3").hide();
+  $(".savesnipetimage3").show();
+  $(".imageUploadsnipetimage3").show();
+});
+
+$(".savesnipetimage3").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage3").removeClass("editable");
+ 
+  $(".editsnipetimage3").hide();
+  $(".imageUploadsnipetimage3").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage3").change(function() {
+
+    readURLsnipetimg3(this);
+});
+
+});
+function readURLsnipetimg3(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage3').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage3a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage4").hide();
+
+$( ".boxsnipetimage4" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage4").hasClass("editable")) {
+    $(".editsnipetimage4").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage4").hide();
+
+});
+
+ $(".editsnipetimage4").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage4").addClass("editable");
+   $(".editsnipetimage4").hide();
+  $(".savesnipetimage4").show();
+  $(".imageUploadsnipetimage4").show();
+});
+
+$(".savesnipetimage4").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage4").removeClass("editable");
+ 
+  $(".editsnipetimage4").hide();
+  $(".imageUploadsnipetimage4").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage4").change(function() {
+
+    readURLsnipetimg4(this);
+});
+
+});
+function readURLsnipetimg4(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage4').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage4a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage5").hide();
+
+$( ".boxsnipetimage5" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage5").hasClass("editable")) {
+    $(".editsnipetimage5").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage5").hide();
+
+});
+
+ $(".editsnipetimage5").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage5").addClass("editable");
+   $(".editsnipetimage5").hide();
+  $(".savesnipetimage5").show();
+  $(".imageUploadsnipetimage5").show();
+});
+
+$(".savesnipetimage5").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage5").removeClass("editable");
+ 
+  $(".editsnipetimage5").hide();
+  $(".imageUploadsnipetimage5").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage5").change(function() {
+
+    readURLsnipetimg5(this);
+});
+
+});
+function readURLsnipetimg5(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage5').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage5a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage6").hide();
+
+$( ".boxsnipetimage6" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage6").hasClass("editable")) {
+    $(".editsnipetimage6").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage6").hide();
+
+});
+
+ $(".editsnipetimage6").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage6").addClass("editable");
+   $(".editsnipetimage6").hide();
+  $(".savesnipetimage6").show();
+  $(".imageUploadsnipetimage6").show();
+});
+
+$(".savesnipetimage6").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage6").removeClass("editable");
+ 
+  $(".editsnipetimage6").hide();
+  $(".imageUploadsnipetimage6").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage6").change(function() {
+
+    readURLsnipetimg6(this);
+});
+
+});
+function readURLsnipetimg6(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage6').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage6a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage7").hide();
+
+$( ".boxsnipetimage7" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage7").hasClass("editable")) {
+    $(".editsnipetimage7").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage7").hide();
+
+});
+
+ $(".editsnipetimage7").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage7").addClass("editable");
+   $(".editsnipetimage7").hide();
+  $(".savesnipetimage7").show();
+  $(".imageUploadsnipetimage7").show();
+});
+
+$(".savesnipetimage7").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage7").removeClass("editable");
+ 
+  $(".editsnipetimage7").hide();
+  $(".imageUploadsnipetimage7").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage7").change(function() {
+
+    readURLsnipetimg7(this);
+});
+
+});
+function readURLsnipetimg7(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage7').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage7a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage8").hide();
+
+$( ".boxsnipetimage8" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage8").hasClass("editable")) {
+    $(".editsnipetimage8").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage8").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage8").hide();
+
+});
+
+ $(".editsnipetimage8").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage8").addClass("editable");
+   $(".editsnipetimage8").hide();
+  $(".savesnipetimage8").show();
+  $(".imageUploadsnipetimage8").show();
+});
+
+$(".savesnipetimage8").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage8").removeClass("editable");
+ 
+  $(".editsnipetimage8").hide();
+  $(".imageUploadsnipetimage8").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage8").change(function() {
+
+    readURLsnipetimg8(this);
+});
+
+});
+function readURLsnipetimg8(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage8').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage8a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage9").hide();
+
+$( ".boxsnipetimage9" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage9").hasClass("editable")) {
+    $(".editsnipetimage9").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage9").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage9").hide();
+
+});
+
+ $(".editsnipetimage9").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage9").addClass("editable");
+   $(".editsnipetimage9").hide();
+  $(".savesnipetimage9").show();
+  $(".imageUploadsnipetimage9").show();
+});
+
+$(".savesnipetimage9").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage9").removeClass("editable");
+ 
+  $(".editsnipetimage9").hide();
+  $(".imageUploadsnipetimage9").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage9").change(function() {
+
+    readURLsnipetimg9(this);
+});
+
+});
+function readURLsnipetimg9(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage9').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage9a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage10").hide();
+
+$( ".boxsnipetimage10" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage10").hasClass("editable")) {
+    $(".editsnipetimage10").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage10").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage10").hide();
+
+});
+
+ $(".editsnipetimage10").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage10").addClass("editable");
+   $(".editsnipetimage10").hide();
+  $(".savesnipetimage10").show();
+  $(".imageUploadsnipetimage10").show();
+});
+
+$(".savesnipetimage10").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage10").removeClass("editable");
+ 
+  $(".editsnipetimage10").hide();
+  $(".imageUploadsnipetimage10").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage10").change(function() {
+
+    readURLsnipetimg10(this);
+});
+
+});
+function readURLsnipetimg10(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage10').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage10a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadsnipetimage11").hide();
+
+$( ".boxsnipetimage11" )
+ .on("mouseenter", function() {
+   if ($(".boxsnipetimage11").hasClass("editable")) {
+    $(".editsnipetimage11").hide();
+
+   } 
+   else
+   {
+    $(".editsnipetimage11").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editsnipetimage11").hide();
+
+});
+
+ $(".editsnipetimage11").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage11").addClass("editable");
+   $(".editsnipetimage11").hide();
+  $(".savesnipetimage11").show();
+  $(".imageUploadsnipetimage11").show();
+});
+
+$(".savesnipetimage11").click(function() {
+  $(this).hide();
+  $(".boxsnipetimage11").removeClass("editable");
+ 
+  $(".editsnipetimage11").hide();
+  $(".imageUploadsnipetimage11").hide();
+  
+});
+
+
+
+
+$("#imageUploadsnipetimage11").change(function() {
+
+    readURLsnipetimg11(this);
+});
+
+});
+function readURLsnipetimg11(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewsnipetimage11').attr('src', e.target.result);
+                 $('.imagePreviewsnipetimage11a').attr('data-image', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadgallerytheme1").hide();
+
+$( ".boxgallerytheme1" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme1").hasClass("editable")) {
+    $(".editgallerytheme1").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme1").hide();
+
+});
+
+ $(".editgallerytheme1").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme1").addClass("editable");
+   $(".editgallerytheme1").hide();
+  $(".savegallerytheme1").show();
+  $(".imageUploadgallerytheme1").show();
+});
+
+$(".savegallerytheme1").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme1").removeClass("editable");
+ 
+  $(".editgallerytheme1").hide();
+  $(".imageUploadgallerytheme1").hide();
+  
+});
+
+
+
+
+$("#imageUploadgallerytheme1").change(function() {
+
+    readURLgallery1(this);
+});
+
+});
+function readURLgallery1(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewgallerytheme1').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadgallerytheme2").hide();
+
+$( ".boxgallerytheme2" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme2").hasClass("editable")) {
+    $(".editgallerytheme2").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme2").hide();
+
+});
+
+ $(".editgallerytheme2").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme2").addClass("editable");
+   $(".editgallerytheme2").hide();
+  $(".savegallerytheme2").show();
+  $(".imageUploadgallerytheme2").show();
+});
+
+$(".savegallerytheme2").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme2").removeClass("editable");
+ 
+  $(".editgallerytheme2").hide();
+  $(".imageUploadgallerytheme2").hide();
+  
+});
+
+
+
+
+$("#imageUploadgallerytheme2").change(function() {
+
+    readURLgallery2(this);
+});
+
+});
+function readURLgallery2(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewgallerytheme2').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+$( ".boxgallerytheme3" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme3").hasClass("editable")) {
+    $(".editgallerytheme3").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme3").hide();
+
+});
+
+ $(".editgallerytheme3").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme3").addClass("editable");
+  $(".textgallerytheme3").attr("contenteditable", "true");
+   $(".editgallerytheme3").hide();
+  $(".savegallerytheme3").show();
+ 
+});
+
+$(".savegallerytheme3").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme3").removeClass("editable");
+ $(".textgallerytheme3").removeAttr("contenteditable");
+  $(".editgallerytheme3").hide();
+
+  
+});
+})
+
+
+$(document).ready(function(){
+
+   $(".imageUploadgallerytheme4").hide();
+
+$( ".boxgallerytheme4" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme4").hasClass("editable")) {
+    $(".editgallerytheme4").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme4").hide();
+
+});
+
+ $(".editgallerytheme4").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme4").addClass("editable");
+   $(".editgallerytheme4").hide();
+  $(".savegallerytheme4").show();
+  $(".imageUploadgallerytheme4").show();
+});
+
+$(".savegallerytheme4").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme4").removeClass("editable");
+ 
+  $(".editgallerytheme4").hide();
+  $(".imageUploadgallerytheme4").hide();
+  
+});
+
+
+
+
+$("#imageUploadgallerytheme4").change(function() {
+
+    readURLgallery4(this);
+});
+
+});
+function readURLgallery4(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewgallerytheme4').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadgallerytheme5").hide();
+
+$( ".boxgallerytheme5" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme5").hasClass("editable")) {
+    $(".editgallerytheme5").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme5").hide();
+
+});
+
+ $(".editgallerytheme5").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme5").addClass("editable");
+   $(".editgallerytheme5").hide();
+  $(".savegallerytheme5").show();
+  $(".imageUploadgallerytheme5").show();
+});
+
+$(".savegallerytheme5").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme5").removeClass("editable");
+ 
+  $(".editgallerytheme5").hide();
+  $(".imageUploadgallerytheme5").hide();
+  
+});
+
+
+
+
+$("#imageUploadgallerytheme5").change(function() {
+
+    readURLgallery5(this);
+});
+
+});
+function readURLgallery5(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewgallerytheme5').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadgallerytheme6").hide();
+
+$( ".boxgallerytheme6" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme6").hasClass("editable")) {
+    $(".editgallerytheme6").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme6").hide();
+
+});
+
+ $(".editgallerytheme6").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme6").addClass("editable");
+   $(".editgallerytheme6").hide();
+  $(".savegallerytheme6").show();
+  $(".imageUploadgallerytheme6").show();
+});
+
+$(".savegallerytheme6").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme6").removeClass("editable");
+ 
+  $(".editgallerytheme6").hide();
+  $(".imageUploadgallerytheme6").hide();
+  
+});
+
+
+
+
+$("#imageUploadgallerytheme6").change(function() {
+
+    readURLgallery6(this);
+});
+
+});
+function readURLgallery6(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewgallerytheme6').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadgallerytheme7").hide();
+
+$( ".boxgallerytheme7" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme7").hasClass("editable")) {
+    $(".editgallerytheme7").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme7").hide();
+
+});
+
+ $(".editgallerytheme7").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme7").addClass("editable");
+   $(".editgallerytheme7").hide();
+  $(".savegallerytheme7").show();
+  $(".imageUploadgallerytheme7").show();
+});
+
+$(".savegallerytheme7").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme7").removeClass("editable");
+ 
+  $(".editgallerytheme7").hide();
+  $(".imageUploadgallerytheme7").hide();
+  
+});
+
+
+
+
+$("#imageUploadgallerytheme7").change(function() {
+
+    readURLgallery7(this);
+});
+
+});
+function readURLgallery7(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewgallerytheme7').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+$( ".boxgallerytheme8" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme8").hasClass("editable")) {
+    $(".editgallerytheme8").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme8").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme8").hide();
+
+});
+
+ $(".editgallerytheme8").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme8").addClass("editable");
+  $(".textgallerytheme8").attr("contenteditable", "true");
+   $(".editgallerytheme8").hide();
+  $(".savegallerytheme8").show();
+ 
+});
+
+$(".savegallerytheme8").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme8").removeClass("editable");
+ $(".textgallerytheme8").removeAttr("contenteditable");
+  $(".editgallerytheme8").hide();
+  
+});
+})
+
+
+$(document).ready(function(){
+$( ".boxgallerytheme9" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme9").hasClass("editable")) {
+    $(".editgallerytheme9").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme9").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme9").hide();
+
+});
+
+ $(".editgallerytheme9").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme9").addClass("editable");
+  $(".textgallerytheme9").attr("contenteditable", "true");
+   $(".editgallerytheme9").hide();
+  $(".savegallerytheme9").show();
+ 
+});
+
+$(".savegallerytheme9").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme9").removeClass("editable");
+ $(".textgallerytheme9").removeAttr("contenteditable");
+  $(".editgallerytheme9").hide();
+  
+});
+})
+
+
+
+$(document).ready(function(){
+$( ".boxgallerytheme10" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme10").hasClass("editable")) {
+    $(".editgallerytheme10").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme10").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme10").hide();
+
+});
+
+ $(".editgallerytheme10").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme10").addClass("editable");
+  $(".textgallerytheme10").attr("contenteditable", "true");
+   $(".editgallerytheme10").hide();
+  $(".savegallerytheme10").show();
+ 
+});
+
+$(".savegallerytheme10").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme10").removeClass("editable");
+ $(".textgallerytheme10").removeAttr("contenteditable");
+  $(".editgallerytheme10").hide();
+  
+});
+})
+
+
+
+$(document).ready(function(){
+$( ".boxgallerytheme11" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme11").hasClass("editable")) {
+    $(".editgallerytheme11").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme11").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme11").hide();
+
+});
+
+ $(".editgallerytheme11").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme11").addClass("editable");
+  $(".textgallerytheme11").attr("contenteditable", "true");
+   $(".editgallerytheme11").hide();
+  $(".savegallerytheme11").show();
+ 
+});
+
+$(".savegallerytheme11").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme11").removeClass("editable");
+ $(".textgallerytheme11").removeAttr("contenteditable");
+  $(".editgallerytheme11").hide();
+  
+});
+})
+
+
+
+$(document).ready(function(){
+$( ".boxgallerytheme12" )
+ .on("mouseenter", function() {
+   if ($(".boxgallerytheme12").hasClass("editable")) {
+    $(".editgallerytheme12").hide();
+
+   } 
+   else
+   {
+    $(".editgallerytheme12").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editgallerytheme12").hide();
+
+});
+
+ $(".editgallerytheme12").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme12").addClass("editable");
+  $(".textgallerytheme12").attr("contenteditable", "true");
+   $(".editgallerytheme12").hide();
+  $(".savegallerytheme12").show();
+ 
+});
+
+$(".savegallerytheme12").click(function() {
+  $(this).hide();
+  $(".boxgallerytheme12").removeClass("editable");
+ $(".textgallerytheme12").removeAttr("contenteditable");
+  $(".editgallerytheme12").hide();
+  
+});
+})
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme1").hide();
+
+$( ".boxmoxygentheme1" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme1").hasClass("editable")) {
+    $(".editmoxygentheme1").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmoxygentheme1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme1").hide();
+ 
+
+});
+
+ $(".editmoxygentheme1").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme1").addClass("editable");
+   $(".editmoxygentheme1").hide();
+  $(".savemoxygentheme1").show();
+  $(".imageUploadmoxygentheme1").show();
+});
+
+$(".savemoxygentheme1").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme1").removeClass("editable");
+ 
+  $(".editmoxygentheme1").hide();
+  $(".imageUploadmoxygentheme1").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme1").change(function() {
+
+    readURLoxy1(this);
+});
+
+});
+function readURLoxy1(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.boxmoxygentheme1').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme2").hide();
+
+$( ".boxmoxygentheme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme2").hasClass("editable")) {
+    $(".editmoxygentheme2").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmoxygentheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme2").hide();
+ 
+
+});
+
+ $(".editmoxygentheme2").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme2").addClass("editable");
+   $(".editmoxygentheme2").hide();
+  $(".savemoxygentheme2").show();
+  $(".imageUploadmoxygentheme2").show();
+});
+
+$(".savemoxygentheme2").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme2").removeClass("editable");
+ 
+  $(".editmoxygentheme2").hide();
+  $(".imageUploadmoxygentheme2").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme2").change(function() {
+
+    readURLoxy2(this);
+});
+
+});
+function readURLoxy2(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.boxmoxygentheme2').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme3").hide();
+
+$( ".boxmoxygentheme3" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme3").hasClass("editable")) {
+    $(".editmoxygentheme3").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmoxygentheme3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme3").hide();
+ 
+
+});
+
+ $(".editmoxygentheme3").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme3").addClass("editable");
+   $(".editmoxygentheme3").hide();
+  $(".savemoxygentheme3").show();
+  $(".imageUploadmoxygentheme3").show();
+});
+
+$(".savemoxygentheme3").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme3").removeClass("editable");
+ 
+  $(".editmoxygentheme3").hide();
+  $(".imageUploadmoxygentheme3").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme3").change(function() {
+
+    readURLoxy3(this);
+});
+
+});
+function readURLoxy3(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.boxmoxygentheme3').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme4" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme4").hasClass("editable")) {
+    $(".editmoxygentheme4").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme4").hide();
+
+});
+
+ $(".editmoxygentheme4").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme4").addClass("editable");
+  $(".textmoxygentheme4").attr("contenteditable", "true");
+   $(".editmoxygentheme4").hide();
+  $(".savemoxygentheme4").show();
+ 
+});
+
+$(".savemoxygentheme4").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme4").removeClass("editable");
+ $(".textmoxygentheme4").removeAttr("contenteditable");
+  $(".editmoxygentheme4").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme5" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme5").hasClass("editable")) {
+    $(".editmoxygentheme5").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme5").hide();
+
+});
+
+ $(".editmoxygentheme5").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme5").addClass("editable");
+  $(".textmoxygentheme5").attr("contenteditable", "true");
+   $(".editmoxygentheme5").hide();
+  $(".savemoxygentheme5").show();
+ 
+});
+
+$(".savemoxygentheme5").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme5").removeClass("editable");
+ $(".textmoxygentheme5").removeAttr("contenteditable");
+  $(".editmoxygentheme5").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme6" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme6").hasClass("editable")) {
+    $(".editmoxygentheme6").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme6").hide();
+
+});
+
+ $(".editmoxygentheme6").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme6").addClass("editable");
+  $(".textmoxygentheme6").attr("contenteditable", "true");
+   $(".editmoxygentheme6").hide();
+  $(".savemoxygentheme6").show();
+ 
+});
+
+$(".savemoxygentheme6").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme6").removeClass("editable");
+ $(".textmoxygentheme6").removeAttr("contenteditable");
+  $(".editmoxygentheme6").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme7").hide();
+
+$( ".boxmoxygentheme7" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme7").hasClass("editable")) {
+    $(".editmoxygentheme7").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme7").hide();
+
+});
+
+ $(".editmoxygentheme7").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme7").addClass("editable");
+   $(".editmoxygentheme7").hide();
+  $(".savemoxygentheme7").show();
+  $(".imageUploadmoxygentheme7").show();
+});
+
+$(".savemoxygentheme7").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme7").removeClass("editable");
+ 
+  $(".editmoxygentheme7").hide();
+  $(".imageUploadmoxygentheme7").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme7").change(function() {
+
+    readURLoxy7(this);
+});
+
+});
+function readURLoxy7(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme7').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme9" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme9").hasClass("editable")) {
+    $(".editmoxygentheme9").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme9").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme9").hide();
+
+});
+
+ $(".editmoxygentheme9").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme9").addClass("editable");
+  $(".textmoxygentheme9").attr("contenteditable", "true");
+   $(".editmoxygentheme9").hide();
+  $(".savemoxygentheme9").show();
+ 
+});
+
+$(".savemoxygentheme9").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme9").removeClass("editable");
+ $(".textmoxygentheme9").removeAttr("contenteditable");
+  $(".editmoxygentheme9").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme10").hide();
+
+$( ".boxmoxygentheme10" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme10").hasClass("editable")) {
+    $(".editmoxygentheme10").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme10").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme10").hide();
+
+});
+
+ $(".editmoxygentheme10").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme10").addClass("editable");
+   $(".editmoxygentheme10").hide();
+  $(".savemoxygentheme10").show();
+  $(".imageUploadmoxygentheme10").show();
+});
+
+$(".savemoxygentheme10").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme10").removeClass("editable");
+ 
+  $(".editmoxygentheme10").hide();
+  $(".imageUploadmoxygentheme10").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme10").change(function() {
+
+    readURLoxy10(this);
+});
+
+});
+function readURLoxy10(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme10').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme12").hide();
+
+$( ".boxmoxygentheme12" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme12").hasClass("editable")) {
+    $(".editmoxygentheme12").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme12").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme12").hide();
+
+});
+
+ $(".editmoxygentheme12").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme12").addClass("editable");
+   $(".editmoxygentheme12").hide();
+  $(".savemoxygentheme12").show();
+  $(".imageUploadmoxygentheme12").show();
+});
+
+$(".savemoxygentheme12").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme12").removeClass("editable");
+ 
+  $(".editmoxygentheme12").hide();
+  $(".imageUploadmoxygentheme12").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme12").change(function() {
+
+    readURLoxy12(this);
+});
+
+});
+function readURLoxy12(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme12').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme13").hide();
+
+$( ".boxmoxygentheme13" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme13").hasClass("editable")) {
+    $(".editmoxygentheme13").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme13").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme13").hide();
+
+});
+
+ $(".editmoxygentheme13").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme13").addClass("editable");
+   $(".editmoxygentheme13").hide();
+  $(".savemoxygentheme13").show();
+  $(".imageUploadmoxygentheme13").show();
+});
+
+$(".savemoxygentheme13").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme13").removeClass("editable");
+ 
+  $(".editmoxygentheme13").hide();
+  $(".imageUploadmoxygentheme13").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme13").change(function() {
+
+    readURLoxy13(this);
+});
+
+});
+function readURLoxy13(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme13').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme14").hide();
+
+$( ".boxmoxygentheme14" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme14").hasClass("editable")) {
+    $(".editmoxygentheme14").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme14").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme14").hide();
+
+});
+
+ $(".editmoxygentheme14").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme14").addClass("editable");
+   $(".editmoxygentheme14").hide();
+  $(".savemoxygentheme14").show();
+  $(".imageUploadmoxygentheme14").show();
+});
+
+$(".savemoxygentheme14").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme14").removeClass("editable");
+ 
+  $(".editmoxygentheme14").hide();
+  $(".imageUploadmoxygentheme14").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme14").change(function() {
+
+    readURLoxy14(this);
+});
+
+});
+function readURLoxy14(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme14').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme15").hide();
+
+$( ".boxmoxygentheme15" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme15").hasClass("editable")) {
+    $(".editmoxygentheme15").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme15").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme15").hide();
+
+});
+
+ $(".editmoxygentheme15").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme15").addClass("editable");
+   $(".editmoxygentheme15").hide();
+  $(".savemoxygentheme15").show();
+  $(".imageUploadmoxygentheme15").show();
+});
+
+$(".savemoxygentheme15").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme15").removeClass("editable");
+ 
+  $(".editmoxygentheme15").hide();
+  $(".imageUploadmoxygentheme15").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme15").change(function() {
+
+    readURLoxy15(this);
+});
+
+});
+function readURLoxy15(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme15').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme16").hide();
+
+$( ".boxmoxygentheme16" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme16").hasClass("editable")) {
+    $(".editmoxygentheme16").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme16").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme16").hide();
+
+});
+
+ $(".editmoxygentheme16").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme16").addClass("editable");
+   $(".editmoxygentheme16").hide();
+  $(".savemoxygentheme16").show();
+  $(".imageUploadmoxygentheme16").show();
+});
+
+$(".savemoxygentheme16").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme16").removeClass("editable");
+ 
+  $(".editmoxygentheme16").hide();
+  $(".imageUploadmoxygentheme16").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme16").change(function() {
+
+    readURLoxy16(this);
+});
+
+});
+function readURLoxy16(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme16').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme17").hide();
+
+$( ".boxmoxygentheme17" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme17").hasClass("editable")) {
+    $(".editmoxygentheme17").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme17").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme17").hide();
+
+});
+
+ $(".editmoxygentheme17").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme17").addClass("editable");
+   $(".editmoxygentheme17").hide();
+  $(".savemoxygentheme17").show();
+  $(".imageUploadmoxygentheme17").show();
+});
+
+$(".savemoxygentheme17").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme17").removeClass("editable");
+ 
+  $(".editmoxygentheme17").hide();
+  $(".imageUploadmoxygentheme17").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme17").change(function() {
+
+    readURLoxy17(this);
+});
+
+});
+function readURLoxy17(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme17').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme18").hide();
+
+$( ".boxmoxygentheme18" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme18").hasClass("editable")) {
+    $(".editmoxygentheme18").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme18").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme18").hide();
+
+});
+
+ $(".editmoxygentheme18").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme18").addClass("editable");
+   $(".editmoxygentheme18").hide();
+  $(".savemoxygentheme18").show();
+  $(".imageUploadmoxygentheme18").show();
+});
+
+$(".savemoxygentheme18").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme18").removeClass("editable");
+ 
+  $(".editmoxygentheme18").hide();
+  $(".imageUploadmoxygentheme18").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme18").change(function() {
+
+    readURLoxy18(this);
+});
+
+});
+function readURLoxy18(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme18').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme19").hide();
+
+$( ".boxmoxygentheme19" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme19").hasClass("editable")) {
+    $(".editmoxygentheme19").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme19").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme19").hide();
+
+});
+
+ $(".editmoxygentheme19").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme19").addClass("editable");
+   $(".editmoxygentheme19").hide();
+  $(".savemoxygentheme19").show();
+  $(".imageUploadmoxygentheme19").show();
+});
+
+$(".savemoxygentheme19").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme19").removeClass("editable");
+ 
+  $(".editmoxygentheme19").hide();
+  $(".imageUploadmoxygentheme19").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme19").change(function() {
+
+    readURLoxy19(this);
+});
+
+});
+function readURLoxy19(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme19').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme21").hide();
+
+$( ".boxmoxygentheme21" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme21").hasClass("editable")) {
+    $(".editmoxygentheme21").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme21").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme21").hide();
+
+});
+
+ $(".editmoxygentheme21").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme21").addClass("editable");
+   $(".editmoxygentheme21").hide();
+  $(".savemoxygentheme21").show();
+  $(".imageUploadmoxygentheme21").show();
+});
+
+$(".savemoxygentheme21").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme21").removeClass("editable");
+ 
+  $(".editmoxygentheme21").hide();
+  $(".imageUploadmoxygentheme21").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme21").change(function() {
+
+    readURLoxy21(this);
+});
+
+});
+function readURLoxy21(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme21').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme22").hide();
+
+$( ".boxmoxygentheme22" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme22").hasClass("editable")) {
+    $(".editmoxygentheme22").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme22").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme22").hide();
+
+});
+
+ $(".editmoxygentheme22").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme22").addClass("editable");
+   $(".editmoxygentheme22").hide();
+  $(".savemoxygentheme22").show();
+  $(".imageUploadmoxygentheme22").show();
+});
+
+$(".savemoxygentheme22").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme22").removeClass("editable");
+ 
+  $(".editmoxygentheme22").hide();
+  $(".imageUploadmoxygentheme22").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme22").change(function() {
+
+    readURLoxy22(this);
+});
+
+});
+function readURLoxy22(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme22').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme23").hide();
+
+$( ".boxmoxygentheme23" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme23").hasClass("editable")) {
+    $(".editmoxygentheme23").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme23").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme23").hide();
+
+});
+
+ $(".editmoxygentheme23").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme23").addClass("editable");
+   $(".editmoxygentheme23").hide();
+  $(".savemoxygentheme23").show();
+  $(".imageUploadmoxygentheme23").show();
+});
+
+$(".savemoxygentheme23").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme23").removeClass("editable");
+ 
+  $(".editmoxygentheme23").hide();
+  $(".imageUploadmoxygentheme23").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme23").change(function() {
+
+    readURLoxy23(this);
+});
+
+});
+function readURLoxy23(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme23').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme24").hide();
+
+$( ".boxmoxygentheme24" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme24").hasClass("editable")) {
+    $(".editmoxygentheme24").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme24").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme24").hide();
+
+});
+
+ $(".editmoxygentheme24").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme24").addClass("editable");
+   $(".editmoxygentheme24").hide();
+  $(".savemoxygentheme24").show();
+  $(".imageUploadmoxygentheme24").show();
+});
+
+$(".savemoxygentheme24").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme24").removeClass("editable");
+ 
+  $(".editmoxygentheme24").hide();
+  $(".imageUploadmoxygentheme24").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme24").change(function() {
+
+    readURLoxy24(this);
+});
+
+});
+function readURLoxy24(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme24').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme25" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme25").hasClass("editable")) {
+    $(".editmoxygentheme25").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme25").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme25").hide();
+
+});
+
+ $(".editmoxygentheme25").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme25").addClass("editable");
+  $(".textmoxygentheme25").attr("contenteditable", "true");
+   $(".editmoxygentheme25").hide();
+  $(".savemoxygentheme25").show();
+ 
+});
+
+$(".savemoxygentheme25").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme25").removeClass("editable");
+ $(".textmoxygentheme25").removeAttr("contenteditable");
+  $(".editmoxygentheme25").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme26" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme26").hasClass("editable")) {
+    $(".editmoxygentheme26").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme26").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme26").hide();
+
+});
+
+ $(".editmoxygentheme26").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme26").addClass("editable");
+  $(".textmoxygentheme26").attr("contenteditable", "true");
+   $(".editmoxygentheme26").hide();
+  $(".savemoxygentheme26").show();
+ 
+});
+
+$(".savemoxygentheme26").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme26").removeClass("editable");
+ $(".textmoxygentheme26").removeAttr("contenteditable");
+  $(".editmoxygentheme26").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme27" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme27").hasClass("editable")) {
+    $(".editmoxygentheme27").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme27").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme27").hide();
+
+});
+
+ $(".editmoxygentheme27").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme27").addClass("editable");
+  $(".textmoxygentheme27").attr("contenteditable", "true");
+   $(".editmoxygentheme27").hide();
+  $(".savemoxygentheme27").show();
+ 
+});
+
+$(".savemoxygentheme27").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme27").removeClass("editable");
+ $(".textmoxygentheme27").removeAttr("contenteditable");
+  $(".editmoxygentheme27").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme28" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme28").hasClass("editable")) {
+    $(".editmoxygentheme28").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme28").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme28").hide();
+
+});
+
+ $(".editmoxygentheme28").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme28").addClass("editable");
+  $(".textmoxygentheme28").attr("contenteditable", "true");
+   $(".editmoxygentheme28").hide();
+  $(".savemoxygentheme28").show();
+ 
+});
+
+$(".savemoxygentheme28").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme28").removeClass("editable");
+ $(".textmoxygentheme28").removeAttr("contenteditable");
+  $(".editmoxygentheme28").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyfacebook29").hide();
+
+   $( ".boxmoxygentheme29" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme29").hasClass("editable")) {
+    $(".editmoxygentheme29").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme29").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme29").hide();
+
+});
+
+
+$(".editmoxygentheme29").click(function(e) {
+ $(".boxmoxygentheme29").addClass("editable");
+
+  
+  
+  $(".contmoxyfacebook29").show();
+
+ 
+  
+   //$(".boxmoxygentheme29").removeClass("editable");
+   //$(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+$(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+});
+
+$(".submitmoxyfacebook29").click(function() {
+  $(".boxmoxygentheme29").removeClass("editable");
+  $(".contmoxyfacebook29").hide();
+addHrefoxy29();
+  
+});
+
+ 
+});
+
+function addHrefoxy29() {
+var inputmoxyfacebook29 = $('.inputmoxyfacebook29').val();
+  $('#hrefchangemoxyfacebook29').attr("href",inputmoxyfacebook29);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyfacebook30").hide();
+
+   $( ".boxmoxygentheme30" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme30").hasClass("editable")) {
+    $(".editmoxygentheme30").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme30").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme30").hide();
+
+});
+
+
+$(".editmoxygentheme30").click(function(e) {
+ $(".boxmoxygentheme30").addClass("editable");
+
+  
+  
+  $(".contmoxyfacebook30").show();
+
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   //$(".boxmoxygentheme30").removeClass("editable");
+   //$(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+$(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+ 
+});
+
+$(".submitmoxyfacebook30").click(function() {
+  $(".boxmoxygentheme30").removeClass("editable");
+  $(".contmoxyfacebook30").hide();
+addHrefoxy30();
+  
+});
+
+ 
+});
+
+function addHrefoxy30() {
+var inputmoxyfacebook30 = $('.inputmoxyfacebook30').val();
+  $('#hrefchangemoxyfacebook30').attr("href",inputmoxyfacebook30);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyfacebook31").hide();
+
+   $( ".boxmoxygentheme31" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme31").hasClass("editable")) {
+    $(".editmoxygentheme31").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme31").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme31").hide();
+
+});
+
+
+$(".editmoxygentheme31").click(function(e) {
+ $(".boxmoxygentheme31").addClass("editable");
+
+  
+  
+  $(".contmoxyfacebook31").show();
+
+ 
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  //$(".boxmoxygentheme31").removeClass("editable");
+   //$(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+  $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+});
+
+$(".submitmoxyfacebook31").click(function() {
+  $(".boxmoxygentheme31").removeClass("editable");
+  $(".contmoxyfacebook31").hide();
+addHrefoxy31();
+  
+});
+
+ 
+});
+
+function addHrefoxy31() {
+var inputmoxyfacebook31 = $('.inputmoxyfacebook31').val();
+  $('#hrefchangemoxyfacebook31').attr("href",inputmoxyfacebook31);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyfacebook32").hide();
+
+   $( ".boxmoxygentheme32" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme32").hasClass("editable")) {
+    $(".editmoxygentheme32").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme32").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme32").hide();
+
+});
+
+
+$(".editmoxygentheme32").click(function(e) {
+ $(".boxmoxygentheme32").addClass("editable");
+
+  
+  
+  $(".contmoxyfacebook32").show();
+
+ 
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+  //$(".boxmoxygentheme32").removeClass("editable");
+   //$(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+});
+
+$(".submitmoxyfacebook32").click(function() {
+  $(".boxmoxygentheme32").removeClass("editable");
+  $(".contmoxyfacebook32").hide();
+addHrefoxy32();
+  
+});
+
+ 
+});
+
+function addHrefoxy32() {
+var inputmoxyfacebook32 = $('.inputmoxyfacebook32').val();
+  $('#hrefchangemoxyfacebook32').attr("href",inputmoxyfacebook32);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxytwitter33").hide();
+
+   $( ".boxmoxygentheme33" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme33").hasClass("editable")) {
+    $(".editmoxygentheme33").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme33").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme33").hide();
+
+});
+
+
+$(".editmoxygentheme33").click(function(e) {
+ $(".boxmoxygentheme33").addClass("editable");
+
+  
+  
+  $(".contmoxytwitter33").show();
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   //$(".boxmoxygentheme33").removeClass("editable");
+   //$(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+ 
+});
+
+$(".submitmoxytwitter33").click(function() {
+  $(".boxmoxygentheme33").removeClass("editable");
+  $(".contmoxytwitter33").hide();
+addHrefoxy33();
+  
+});
+
+ 
+});
+
+function addHrefoxy33() {
+var inputmoxytwitter33 = $('.inputmoxytwitter33').val();
+  $('#hrefchangemoxytwitter33').attr("href",inputmoxytwitter33);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxytwitter34").hide();
+
+   $( ".boxmoxygentheme34" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme34").hasClass("editable")) {
+    $(".editmoxygentheme34").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme34").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme34").hide();
+
+});
+
+
+$(".editmoxygentheme34").click(function(e) {
+ $(".boxmoxygentheme34").addClass("editable");
+
+  
+  
+  $(".contmoxytwitter34").show();
+
+ 
+
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   //$(".boxmoxygentheme34").removeClass("editable");
+   //$(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+});
+
+$(".submitmoxytwitter34").click(function() {
+  $(".boxmoxygentheme34").removeClass("editable");
+  $(".contmoxytwitter34").hide();
+addHrefoxy34();
+  
+});
+
+ 
+});
+
+function addHrefoxy34() {
+var inputmoxytwitter34 = $('.inputmoxytwitter34').val();
+  $('#hrefchangemoxytwitter34').attr("href",inputmoxytwitter34);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxytwitter35").hide();
+
+   $( ".boxmoxygentheme35" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme35").hasClass("editable")) {
+    $(".editmoxygentheme35").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme35").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme35").hide();
+
+});
+
+
+$(".editmoxygentheme35").click(function(e) {
+ $(".boxmoxygentheme35").addClass("editable");
+
+  
+  
+  $(".contmoxytwitter35").show();
+
+ 
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   //$(".boxmoxygentheme35").removeClass("editable");
+   //$(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+});
+
+$(".submitmoxytwitter35").click(function() {
+  $(".boxmoxygentheme35").removeClass("editable");
+  $(".contmoxytwitter35").hide();
+addHrefoxy35();
+  
+});
+
+ 
+});
+
+function addHrefoxy35() {
+var inputmoxytwitter35 = $('.inputmoxytwitter35').val();
+  $('#hrefchangemoxytwitter35').attr("href",inputmoxytwitter35);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxytwitter36").hide();
+
+   $( ".boxmoxygentheme36" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme36").hasClass("editable")) {
+    $(".editmoxygentheme36").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme36").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme36").hide();
+
+});
+
+
+$(".editmoxygentheme36").click(function(e) {
+ $(".boxmoxygentheme36").addClass("editable");
+
+  
+  
+  $(".contmoxytwitter36").show();
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   //$(".boxmoxygentheme36").removeClass("editable");
+   //$(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+ 
+});
+
+$(".submitmoxytwitter36").click(function() {
+  $(".boxmoxygentheme36").removeClass("editable");
+  $(".contmoxytwitter36").hide();
+addHrefoxy36();
+  
+});
+
+ 
+});
+
+function addHrefoxy36() {
+var inputmoxytwitter36 = $('.inputmoxytwitter36').val();
+  $('#hrefchangemoxytwitter36').attr("href",inputmoxytwitter36);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxylinkedin37").hide();
+
+   $( ".boxmoxygentheme37" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme37").hasClass("editable")) {
+    $(".editmoxygentheme37").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme37").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme37").hide();
+
+});
+
+
+$(".editmoxygentheme37").click(function(e) {
+ $(".boxmoxygentheme37").addClass("editable");
+
+  
+  
+  $(".contmoxylinkedin37").show();
+
+ 
+
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+  //$(".boxmoxygentheme37").removeClass("editable");
+   //$(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+});
+
+$(".submitmoxylinkedin37").click(function() {
+  $(".boxmoxygentheme37").removeClass("editable");
+  $(".contmoxylinkedin37").hide();
+addHrefoxy37();
+  
+});
+
+ 
+});
+
+function addHrefoxy37() {
+var inputmoxylinkedin37 = $('.inputmoxylinkedin37').val();
+  $('#hrefchangemoxylinkedin37').attr("href",inputmoxylinkedin37);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxylinkedin38").hide();
+
+   $( ".boxmoxygentheme38" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme38").hasClass("editable")) {
+    $(".editmoxygentheme38").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme38").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme38").hide();
+
+});
+
+
+$(".editmoxygentheme38").click(function(e) {
+ $(".boxmoxygentheme38").addClass("editable");
+
+  
+  
+  $(".contmoxylinkedin38").show();
+
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+   //$(".boxmoxygentheme38").removeClass("editable");
+  //$(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+ 
+});
+
+$(".submitmoxylinkedin38").click(function() {
+  $(".boxmoxygentheme38").removeClass("editable");
+  $(".contmoxylinkedin38").hide();
+addHrefoxy38();
+  
+});
+
+ 
+});
+
+function addHrefoxy38() {
+var inputmoxylinkedin38 = $('.inputmoxylinkedin38').val();
+  $('#hrefchangemoxylinkedin38').attr("href",inputmoxylinkedin38);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxylinkedin39").hide();
+
+   $( ".boxmoxygentheme39" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme39").hasClass("editable")) {
+    $(".editmoxygentheme39").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme39").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme39").hide();
+
+});
+
+
+$(".editmoxygentheme39").click(function(e) {
+ $(".boxmoxygentheme39").addClass("editable");
+
+  
+  
+  $(".contmoxylinkedin39").show();
+
+
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    //$(".boxmoxygentheme39").removeClass("editable");
+   //$(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+ 
+});
+
+$(".submitmoxylinkedin39").click(function() {
+  $(".boxmoxygentheme39").removeClass("editable");
+  $(".contmoxylinkedin39").hide();
+addHrefoxy39();
+  
+});
+
+ 
+});
+
+function addHrefoxy39() {
+var inputmoxylinkedin39 = $('.inputmoxylinkedin39').val();
+  $('#hrefchangemoxylinkedin39').attr("href",inputmoxylinkedin39);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxylinkedin40").hide();
+
+   $( ".boxmoxygentheme40" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme40").hasClass("editable")) {
+    $(".editmoxygentheme40").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme40").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme40").hide();
+
+});
+
+
+$(".editmoxygentheme40").click(function(e) {
+ $(".boxmoxygentheme40").addClass("editable");
+
+  
+  
+  $(".contmoxylinkedin40").show();
+
+ 
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    //$(".boxmoxygentheme40").removeClass("editable");
+   //$(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+});
+
+$(".submitmoxylinkedin40").click(function() {
+  $(".boxmoxygentheme40").removeClass("editable");
+  $(".contmoxylinkedin40").hide();
+addHrefoxy40();
+  
+});
+
+ 
+});
+
+function addHrefoxy40() {
+var inputmoxylinkedin40 = $('.inputmoxylinkedin40').val();
+  $('#hrefchangemoxylinkedin40').attr("href",inputmoxylinkedin40);
+}
+
+
+$(document).ready(function(){
+
+   $(".contmoxydribbble41").hide();
+
+   $( ".boxmoxygentheme41" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme41").hasClass("editable")) {
+    $(".editmoxygentheme41").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme41").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme41").hide();
+
+});
+
+
+$(".editmoxygentheme41").click(function(e) {
+ $(".boxmoxygentheme41").addClass("editable");
+
+  
+  
+  $(".contmoxydribbble41").show();
+
+ 
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   //$(".boxmoxygentheme41").removeClass("editable");
+   //$(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+});
+
+$(".submitmoxydribbble41").click(function() {
+  $(".boxmoxygentheme41").removeClass("editable");
+  $(".contmoxydribbble41").hide();
+addHrefoxy41();
+  
+});
+
+ 
+});
+
+function addHrefoxy41() {
+var inputmoxydribbble41 = $('.inputmoxydribbble41').val();
+  $('#hrefchangemoxydribbble41').attr("href",inputmoxydribbble41);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxydribbble42").hide();
+
+   $( ".boxmoxygentheme42" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme42").hasClass("editable")) {
+    $(".editmoxygentheme42").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme42").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme42").hide();
+
+});
+
+
+$(".editmoxygentheme42").click(function(e) {
+ $(".boxmoxygentheme42").addClass("editable");
+
+  
+  
+  $(".contmoxydribbble42").show();
+
+ 
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   //$(".boxmoxygentheme42").removeClass("editable");
+   //$(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+});
+
+$(".submitmoxydribbble42").click(function() {
+  $(".boxmoxygentheme42").removeClass("editable");
+  $(".contmoxydribbble42").hide();
+addHrefoxy42();
+  
+});
+
+ 
+});
+
+function addHrefoxy42() {
+var inputmoxydribbble42 = $('.inputmoxydribbble42').val();
+  $('#hrefchangemoxydribbble42').attr("href",inputmoxydribbble42);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxydribbble43").hide();
+
+   $( ".boxmoxygentheme43" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme43").hasClass("editable")) {
+    $(".editmoxygentheme43").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme43").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme43").hide();
+
+});
+
+
+$(".editmoxygentheme43").click(function(e) {
+ $(".boxmoxygentheme43").addClass("editable");
+
+  
+  
+  $(".contmoxydribbble43").show();
+
+
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   //$(".boxmoxygentheme43").removeClass("editable");
+   //$(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+ 
+});
+
+$(".submitmoxydribbble43").click(function() {
+  $(".boxmoxygentheme43").removeClass("editable");
+  $(".contmoxydribbble43").hide();
+addHrefoxy43();
+  
+});
+
+ 
+});
+
+function addHrefoxy43() {
+var inputmoxydribbble43 = $('.inputmoxydribbble43').val();
+  $('#hrefchangemoxydribbble43').attr("href",inputmoxydribbble43);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxydribbble44").hide();
+
+   $( ".boxmoxygentheme44" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme44").hasClass("editable")) {
+    $(".editmoxygentheme44").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme44").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme44").hide();
+
+});
+
+
+$(".editmoxygentheme44").click(function(e) {
+ $(".boxmoxygentheme44").addClass("editable");
+
+  
+  
+  $(".contmoxydribbble44").show();
+
+ 
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   //$(".boxmoxygentheme44").removeClass("editable");
+   //$(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+});
+
+$(".submitmoxydribbble44").click(function() {
+  $(".boxmoxygentheme44").removeClass("editable");
+  $(".contmoxydribbble44").hide();
+addHrefoxy44();
+  
+});
+
+ 
+});
+
+function addHrefoxy44() {
+var inputmoxydribbble44 = $('.inputmoxydribbble44').val();
+  $('#hrefchangemoxydribbble44').attr("href",inputmoxydribbble44);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyrss45").hide();
+
+   $( ".boxmoxygentheme45" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme45").hasClass("editable")) {
+    $(".editmoxygentheme45").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme45").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme45").hide();
+
+});
+
+
+$(".editmoxygentheme45").click(function(e) {
+ $(".boxmoxygentheme45").addClass("editable");
+
+  
+  
+  $(".contmoxyrss45").show();
+
+ 
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   //$(".boxmoxygentheme45").removeClass("editable");
+   //$(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+});
+
+$(".submitmoxyrss45").click(function() {
+  $(".boxmoxygentheme45").removeClass("editable");
+  $(".contmoxyrss45").hide();
+addHrefoxy45();
+  
+});
+
+ 
+});
+
+function addHrefoxy45() {
+var inputmoxyrss45 = $('.inputmoxyrss45').val();
+  $('#hrefchangemoxyrss45').attr("href",inputmoxyrss45);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyrss46").hide();
+
+   $( ".boxmoxygentheme46" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme46").hasClass("editable")) {
+    $(".editmoxygentheme46").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme46").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme46").hide();
+
+});
+
+
+$(".editmoxygentheme46").click(function(e) {
+ $(".boxmoxygentheme46").addClass("editable");
+
+  
+  
+  $(".contmoxyrss46").show();
+
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   //$(".boxmoxygentheme46").removeClass("editable");
+   //$(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+ 
+});
+
+$(".submitmoxyrss46").click(function() {
+  $(".boxmoxygentheme46").removeClass("editable");
+  $(".contmoxyrss46").hide();
+addHrefoxy46();
+  
+});
+
+ 
+});
+
+function addHrefoxy46() {
+var inputmoxyrss46 = $('.inputmoxyrss46').val();
+  $('#hrefchangemoxyrss46').attr("href",inputmoxyrss46);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyrss47").hide();
+
+   $( ".boxmoxygentheme47" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme47").hasClass("editable")) {
+    $(".editmoxygentheme47").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme47").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme47").hide();
+
+});
+
+
+$(".editmoxygentheme47").click(function(e) {
+ $(".boxmoxygentheme47").addClass("editable");
+
+  
+  
+  $(".contmoxyrss47").show();
+
+ 
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   //$(".boxmoxygentheme47").removeClass("editable");
+  // $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   $(".boxmoxygentheme48").removeClass("editable");
+   $(".contmoxyrss48").hide();
+
+
+
+
+});
+
+$(".submitmoxyrss47").click(function() {
+  $(".boxmoxygentheme47").removeClass("editable");
+  $(".contmoxyrss47").hide();
+addHrefoxy47();
+  
+});
+
+ 
+});
+
+function addHrefoxy47() {
+var inputmoxyrss47 = $('.inputmoxyrss47').val();
+  $('#hrefchangemoxyrss47').attr("href",inputmoxyrss47);
+}
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyrss48").hide();
+
+   $( ".boxmoxygentheme48" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme48").hasClass("editable")) {
+    $(".editmoxygentheme48").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme48").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme48").hide();
+
+});
+
+
+$(".editmoxygentheme48").click(function(e) {
+ $(".boxmoxygentheme48").addClass("editable");
+
+  
+  
+  $(".contmoxyrss48").show();
+
+ 
+
+
+   $(".boxmoxygentheme29").removeClass("editable");
+   $(".contmoxyfacebook29").hide();
+
+
+   $(".boxmoxygentheme33").removeClass("editable");
+   $(".contmoxytwitter33").hide();
+
+    $(".boxmoxygentheme37").removeClass("editable");
+   $(".contmoxylinkedin37").hide();
+
+   $(".boxmoxygentheme41").removeClass("editable");
+   $(".contmoxydribbble41").hide();
+
+   $(".boxmoxygentheme45").removeClass("editable");
+   $(".contmoxyrss45").hide();
+
+
+
+   $(".boxmoxygentheme30").removeClass("editable");
+   $(".contmoxyfacebook30").hide();
+
+
+   $(".boxmoxygentheme34").removeClass("editable");
+   $(".contmoxytwitter34").hide();
+
+    $(".boxmoxygentheme38").removeClass("editable");
+   $(".contmoxylinkedin38").hide();
+
+   $(".boxmoxygentheme42").removeClass("editable");
+   $(".contmoxydribbble42").hide();
+
+   $(".boxmoxygentheme46").removeClass("editable");
+   $(".contmoxyrss46").hide();
+
+
+
+
+  $(".boxmoxygentheme31").removeClass("editable");
+   $(".contmoxyfacebook31").hide();
+
+
+   $(".boxmoxygentheme35").removeClass("editable");
+   $(".contmoxytwitter35").hide();
+
+    $(".boxmoxygentheme39").removeClass("editable");
+   $(".contmoxylinkedin39").hide();
+
+   $(".boxmoxygentheme43").removeClass("editable");
+   $(".contmoxydribbble43").hide();
+
+   $(".boxmoxygentheme47").removeClass("editable");
+   $(".contmoxyrss47").hide();
+
+
+
+
+   $(".boxmoxygentheme32").removeClass("editable");
+   $(".contmoxyfacebook32").hide();
+
+
+   $(".boxmoxygentheme36").removeClass("editable");
+   $(".contmoxytwitter36").hide();
+
+    $(".boxmoxygentheme40").removeClass("editable");
+   $(".contmoxylinkedin40").hide();
+
+   $(".boxmoxygentheme44").removeClass("editable");
+   $(".contmoxydribbble44").hide();
+
+   //$(".boxmoxygentheme48").removeClass("editable");
+   //$(".contmoxyrss48").hide();
+
+
+
+
+
+});
+
+$(".submitmoxyrss48").click(function() {
+  $(".boxmoxygentheme48").removeClass("editable");
+  $(".contmoxyrss48").hide();
+addHrefoxy48();
+  
+});
+
+ 
+});
+
+function addHrefoxy48() {
+var inputmoxyrss48 = $('.inputmoxyrss48').val();
+  $('#hrefchangemoxyrss48').attr("href",inputmoxyrss48);
+}
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme49" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme49").hasClass("editable")) {
+    $(".editmoxygentheme49").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme49").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme49").hide();
+
+});
+
+ $(".editmoxygentheme49").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme49").addClass("editable");
+  $(".textmoxygentheme49").attr("contenteditable", "true");
+   $(".editmoxygentheme49").hide();
+  $(".savemoxygentheme49").show();
+ 
+});
+
+$(".savemoxygentheme49").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme49").removeClass("editable");
+ $(".textmoxygentheme49").removeAttr("contenteditable");
+  $(".editmoxygentheme49").hide();
+
+  
+});
+});
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme50").hide();
+
+$( ".boxmoxygentheme50" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme50").hasClass("editable")) {
+    $(".editmoxygentheme50").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmoxygentheme50").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme50").hide();
+ 
+
+});
+
+ $(".editmoxygentheme50").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme50").addClass("editable");
+   $(".editmoxygentheme50").hide();
+  $(".savemoxygentheme50").show();
+  $(".imageUploadmoxygentheme50").show();
+});
+
+$(".savemoxygentheme50").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme50").removeClass("editable");
+ 
+  $(".editmoxygentheme50").hide();
+  $(".imageUploadmoxygentheme50").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme50").change(function() {
+
+    readURLoxy50(this);
+});
+
+});
+function readURLoxy50(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.boxmoxygentheme50').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme52" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme52").hasClass("editable")) {
+    $(".editmoxygentheme52").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme52").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme52").hide();
+
+});
+
+ $(".editmoxygentheme52").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme52").addClass("editable");
+  $(".textmoxygentheme52").attr("contenteditable", "true");
+   $(".editmoxygentheme52").hide();
+  $(".savemoxygentheme52").show();
+ 
+});
+
+$(".savemoxygentheme52").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme52").removeClass("editable");
+ $(".textmoxygentheme52").removeAttr("contenteditable");
+  $(".editmoxygentheme52").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme53" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme53").hasClass("editable")) {
+    $(".editmoxygentheme53").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme53").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme53").hide();
+
+});
+
+ $(".editmoxygentheme53").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme53").addClass("editable");
+  $(".textmoxygentheme53").attr("contenteditable", "true");
+   $(".editmoxygentheme53").hide();
+  $(".savemoxygentheme53").show();
+ 
+});
+
+$(".savemoxygentheme53").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme53").removeClass("editable");
+ $(".textmoxygentheme53").removeAttr("contenteditable");
+  $(".editmoxygentheme53").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme54" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme54").hasClass("editable")) {
+    $(".editmoxygentheme54").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme54").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme54").hide();
+
+});
+
+ $(".editmoxygentheme54").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme54").addClass("editable");
+  $(".textmoxygentheme54").attr("contenteditable", "true");
+   $(".editmoxygentheme54").hide();
+  $(".savemoxygentheme54").show();
+ 
+});
+
+$(".savemoxygentheme54").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme54").removeClass("editable");
+ $(".textmoxygentheme54").removeAttr("contenteditable");
+  $(".editmoxygentheme54").hide();
+
+  
+});
+});
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme55" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme55").hasClass("editable")) {
+    $(".editmoxygentheme55").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme55").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme55").hide();
+
+});
+
+ $(".editmoxygentheme55").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme55").addClass("editable");
+  $(".textmoxygentheme55").attr("contenteditable", "true");
+   $(".editmoxygentheme55").hide();
+  $(".savemoxygentheme55").show();
+ 
+});
+
+$(".savemoxygentheme55").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme55").removeClass("editable");
+ $(".textmoxygentheme55").removeAttr("contenteditable");
+  $(".editmoxygentheme55").hide();
+
+  
+});
+});
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme57").hide();
+
+$( ".boxmoxygentheme57" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme57").hasClass("editable")) {
+    $(".editmoxygentheme57").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme57").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme57").hide();
+
+});
+
+ $(".editmoxygentheme57").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme57").addClass("editable");
+   $(".editmoxygentheme57").hide();
+  $(".savemoxygentheme57").show();
+  $(".imageUploadmoxygentheme57").show();
+});
+
+$(".savemoxygentheme57").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme57").removeClass("editable");
+ 
+  $(".editmoxygentheme57").hide();
+  $(".imageUploadmoxygentheme57").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme57").change(function() {
+    
+    readURLoxy57(this);
+});
+
+});
+function readURLoxy57(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme57').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme58").hide();
+
+$( ".boxmoxygentheme58" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme58").hasClass("editable")) {
+    $(".editmoxygentheme58").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme58").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme58").hide();
+
+});
+
+ $(".editmoxygentheme58").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme58").addClass("editable");
+   $(".editmoxygentheme58").hide();
+  $(".savemoxygentheme58").show();
+  $(".imageUploadmoxygentheme58").show();
+});
+
+$(".savemoxygentheme58").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme58").removeClass("editable");
+ 
+  $(".editmoxygentheme58").hide();
+  $(".imageUploadmoxygentheme58").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme58").change(function() {
+
+    readURLoxy58(this);
+});
+
+});
+function readURLoxy58(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme58').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme59").hide();
+
+$( ".boxmoxygentheme59" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme59").hasClass("editable")) {
+    $(".editmoxygentheme59").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme59").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme59").hide();
+
+});
+
+ $(".editmoxygentheme59").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme59").addClass("editable");
+   $(".editmoxygentheme59").hide();
+  $(".savemoxygentheme59").show();
+  $(".imageUploadmoxygentheme59").show();
+});
+
+$(".savemoxygentheme59").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme59").removeClass("editable");
+ 
+  $(".editmoxygentheme59").hide();
+  $(".imageUploadmoxygentheme59").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme59").change(function() {
+
+    readURLoxy59(this);
+});
+
+});
+function readURLoxy59(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme59').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme60").hide();
+
+$( ".boxmoxygentheme60" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme60").hasClass("editable")) {
+    $(".editmoxygentheme60").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme60").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme60").hide();
+
+});
+
+ $(".editmoxygentheme60").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme60").addClass("editable");
+   $(".editmoxygentheme60").hide();
+  $(".savemoxygentheme60").show();
+  $(".imageUploadmoxygentheme60").show();
+});
+
+$(".savemoxygentheme60").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme60").removeClass("editable");
+ 
+  $(".editmoxygentheme60").hide();
+  $(".imageUploadmoxygentheme60").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme60").change(function() {
+
+    readURLoxy60(this);
+});
+
+});
+function readURLoxy60(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme60').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme61").hide();
+
+$( ".boxmoxygentheme61" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme61").hasClass("editable")) {
+    $(".editmoxygentheme61").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme61").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme61").hide();
+
+});
+
+ $(".editmoxygentheme61").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme61").addClass("editable");
+   $(".editmoxygentheme61").hide();
+  $(".savemoxygentheme61").show();
+  $(".imageUploadmoxygentheme61").show();
+});
+
+$(".savemoxygentheme61").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme61").removeClass("editable");
+ 
+  $(".editmoxygentheme61").hide();
+  $(".imageUploadmoxygentheme61").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme61").change(function() {
+
+    readURLoxy61(this);
+});
+
+});
+function readURLoxy61(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme61').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme62" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme62").hasClass("editable")) {
+    $(".editmoxygentheme62").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme62").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme62").hide();
+
+});
+
+ $(".editmoxygentheme62").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme62").addClass("editable");
+  $(".textmoxygentheme62").attr("contenteditable", "true");
+   $(".editmoxygentheme62").hide();
+  $(".savemoxygentheme62").show();
+ 
+});
+
+$(".savemoxygentheme62").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme62").removeClass("editable");
+ $(".textmoxygentheme62").removeAttr("contenteditable");
+  $(".editmoxygentheme62").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme63" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme63").hasClass("editable")) {
+    $(".editmoxygentheme63").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme63").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme63").hide();
+
+});
+
+ $(".editmoxygentheme63").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme63").addClass("editable");
+  $(".textmoxygentheme63").attr("contenteditable", "true");
+   $(".editmoxygentheme63").hide();
+  $(".savemoxygentheme63").show();
+ 
+});
+
+$(".savemoxygentheme63").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme63").removeClass("editable");
+ $(".textmoxygentheme63").removeAttr("contenteditable");
+  $(".editmoxygentheme63").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme64" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme64").hasClass("editable")) {
+    $(".editmoxygentheme64").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme64").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme64").hide();
+
+});
+
+ $(".editmoxygentheme64").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme64").addClass("editable");
+  $(".textmoxygentheme64").attr("contenteditable", "true");
+   $(".editmoxygentheme64").hide();
+  $(".savemoxygentheme64").show();
+ 
+});
+
+$(".savemoxygentheme64").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme64").removeClass("editable");
+ $(".textmoxygentheme64").removeAttr("contenteditable");
+  $(".editmoxygentheme64").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme65" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme65").hasClass("editable")) {
+    $(".editmoxygentheme65").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme65").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme65").hide();
+
+});
+
+ $(".editmoxygentheme65").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme65").addClass("editable");
+  $(".textmoxygentheme65").attr("contenteditable", "true");
+   $(".editmoxygentheme65").hide();
+  $(".savemoxygentheme65").show();
+ 
+});
+
+$(".savemoxygentheme65").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme65").removeClass("editable");
+ $(".textmoxygentheme65").removeAttr("contenteditable");
+  $(".editmoxygentheme65").hide();
+
+  
+});
+});
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme66" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme66").hasClass("editable")) {
+    $(".editmoxygentheme66").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme66").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme66").hide();
+
+});
+
+ $(".editmoxygentheme66").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme66").addClass("editable");
+  $(".textmoxygentheme66").attr("contenteditable", "true");
+   $(".editmoxygentheme66").hide();
+  $(".savemoxygentheme66").show();
+ 
+});
+
+$(".savemoxygentheme66").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme66").removeClass("editable");
+ $(".textmoxygentheme66").removeAttr("contenteditable");
+  $(".editmoxygentheme66").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme67" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme67").hasClass("editable")) {
+    $(".editmoxygentheme67").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme67").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme67").hide();
+
+});
+
+ $(".editmoxygentheme67").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme67").addClass("editable");
+  $(".textmoxygentheme67").attr("contenteditable", "true");
+   $(".editmoxygentheme67").hide();
+  $(".savemoxygentheme67").show();
+ 
+});
+
+$(".savemoxygentheme67").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme67").removeClass("editable");
+ $(".textmoxygentheme67").removeAttr("contenteditable");
+  $(".editmoxygentheme67").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme68" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme68").hasClass("editable")) {
+    $(".editmoxygentheme68").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme68").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme68").hide();
+
+});
+
+ $(".editmoxygentheme68").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme68").addClass("editable");
+  $(".textmoxygentheme68").attr("contenteditable", "true");
+   $(".editmoxygentheme68").hide();
+  $(".savemoxygentheme68").show();
+ 
+});
+
+$(".savemoxygentheme68").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme68").removeClass("editable");
+ $(".textmoxygentheme68").removeAttr("contenteditable");
+  $(".editmoxygentheme68").hide();
+
+  
+});
+});
+
+
+
+
+$(document).ready(function(){
+
+  
+
+$( ".boxmoxygentheme69" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme69").hasClass("editable")) {
+    $(".editmoxygentheme69").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme69").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme69").hide();
+
+});
+
+ $(".editmoxygentheme69").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme69").addClass("editable");
+  $(".textmoxygentheme69").attr("contenteditable", "true");
+   $(".editmoxygentheme69").hide();
+  $(".savemoxygentheme69").show();
+ 
+});
+
+$(".savemoxygentheme69").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme69").removeClass("editable");
+ $(".textmoxygentheme69").removeAttr("contenteditable");
+  $(".editmoxygentheme69").hide();
+
+  
+});
+});
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme70").hide();
+
+$( ".boxmoxygentheme70" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme70").hasClass("editable")) {
+    $(".editmoxygentheme70").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmoxygentheme70").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme70").hide();
+ 
+
+});
+
+ $(".editmoxygentheme70").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme70").addClass("editable");
+   $(".editmoxygentheme70").hide();
+  $(".savemoxygentheme70").show();
+  $(".imageUploadmoxygentheme70").show();
+});
+
+$(".savemoxygentheme70").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme70").removeClass("editable");
+ 
+  $(".editmoxygentheme70").hide();
+  $(".imageUploadmoxygentheme70").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme70").change(function() {
+
+    readURLoxy70(this);
+});
+
+});
+function readURLoxy70(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('#contact-us').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme71").hide();
+
+$( ".boxmoxygentheme71" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme71").hasClass("editable")) {
+    $(".editmoxygentheme71").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme71").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme71").hide();
+
+});
+
+ $(".editmoxygentheme71").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme71").addClass("editable");
+   $(".editmoxygentheme71").hide();
+  $(".savemoxygentheme71").show();
+  $(".imageUploadmoxygentheme71").show();
+});
+
+$(".savemoxygentheme71").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme71").removeClass("editable");
+ 
+  $(".editmoxygentheme71").hide();
+  $(".imageUploadmoxygentheme71").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme71").change(function() {
+
+    readURLoxy71(this);
+});
+
+});
+function readURLoxy71(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            //console.log(input.files[0]);
+            reader.onload = function (e) {
+                $('#imagePreviewmoxygentheme71').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyenvelope72").hide();
+
+   $( ".boxmoxygentheme72" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme72").hasClass("editable")) {
+    $(".editmoxygentheme72").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme72").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme72").hide();
+
+});
+
+
+$(".editmoxygentheme72").click(function(e) {
+ $(".boxmoxygentheme72").addClass("editable");
+
+  
+  
+  $(".contmoxyenvelope72").show();
+  //$(".boxmoxygentheme72").removeClass("editable");
+  // $(".contmoxyenvelope72").hide();
+   $(".boxmoxygentheme73").removeClass("editable");
+   $(".contmoxytwitter73").hide();
+   $(".boxmoxygentheme74").removeClass("editable");
+   $(".contmoxydribbble74").hide();
+   $(".boxmoxygentheme75").removeClass("editable");
+   $(".contmoxyfacebook75").hide();
+   $(".boxmoxygentheme76").removeClass("editable");
+   $(".contmoxylinkedin76").hide();
+   $(".boxmoxygentheme77").removeClass("editable");
+   $(".contmoxytumblrsquare77").hide();
+ 
+});
+
+$(".submitmoxyenvelope72").click(function() {
+  $(".boxmoxygentheme72").removeClass("editable");
+  $(".contmoxyenvelope72").hide();
+addHrefoxy72();
+  
+});
+
+ 
+});
+
+function addHrefoxy72() {
+var inputmoxyenvelope72 = $('.inputmoxyenvelope72').val();
+  $('#hrefchangemoxyenvelope72').attr("href",inputmoxyenvelope72);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxytwitter73").hide();
+
+   $( ".boxmoxygentheme73" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme73").hasClass("editable")) {
+    $(".editmoxygentheme73").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme73").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme73").hide();
+
+});
+
+
+$(".editmoxygentheme73").click(function(e) {
+ $(".boxmoxygentheme73").addClass("editable");
+
+  
+  
+  $(".contmoxytwitter73").show();
+  $(".boxmoxygentheme72").removeClass("editable");
+   $(".contmoxyenvelope72").hide();
+   //$(".boxmoxygentheme73").removeClass("editable");
+   //$(".contmoxytwitter73").hide();
+   $(".boxmoxygentheme74").removeClass("editable");
+   $(".contmoxydribbble74").hide();
+   $(".boxmoxygentheme75").removeClass("editable");
+   $(".contmoxyfacebook75").hide();
+   $(".boxmoxygentheme76").removeClass("editable");
+   $(".contmoxylinkedin76").hide();
+   $(".boxmoxygentheme77").removeClass("editable");
+   $(".contmoxytumblrsquare77").hide();
+ 
+});
+
+$(".submitmoxytwitter73").click(function() {
+  $(".boxmoxygentheme73").removeClass("editable");
+  $(".contmoxytwitter73").hide();
+addHrefoxy73();
+  
+});
+
+ 
+});
+
+function addHrefoxy73() {
+var inputmoxytwitter73 = $('.inputmoxytwitter73').val();
+  $('#hrefchangemoxytwitter73').attr("href",inputmoxytwitter73);
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxydribbble74").hide();
+
+   $( ".boxmoxygentheme74" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme74").hasClass("editable")) {
+    $(".editmoxygentheme74").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme74").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme74").hide();
+
+});
+
+
+$(".editmoxygentheme74").click(function(e) {
+ $(".boxmoxygentheme74").addClass("editable");
+
+  
+  $(".contmoxydribbble74").show();
+
+  $(".boxmoxygentheme72").removeClass("editable");
+   $(".contmoxyenvelope72").hide();
+   $(".boxmoxygentheme73").removeClass("editable");
+   $(".contmoxytwitter73").hide();
+   //$(".boxmoxygentheme74").removeClass("editable");
+  // $(".contmoxydribbble74").hide();
+   $(".boxmoxygentheme75").removeClass("editable");
+   $(".contmoxyfacebook75").hide();
+   $(".boxmoxygentheme76").removeClass("editable");
+   $(".contmoxylinkedin76").hide();
+   $(".boxmoxygentheme77").removeClass("editable");
+   $(".contmoxytumblrsquare77").hide();
+
+ 
+});
+
+$(".submitmoxydribbble74").click(function() {
+  $(".boxmoxygentheme74").removeClass("editable");
+  $(".contmoxydribbble74").hide();
+
+addHrefoxy74();
+  
+});
+
+ 
+});
+
+function addHrefoxy74() {
+var inputmoxydribbble74 = $('.inputmoxydribbble74').val();
+  $('#hrefchangemoxydribbble74').attr("href",inputmoxydribbble74);
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxyfacebook75").hide();
+
+   $( ".boxmoxygentheme75" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme75").hasClass("editable")) {
+    $(".editmoxygentheme75").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme75").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme75").hide();
+
+});
+
+
+$(".editmoxygentheme75").click(function(e) {
+ $(".boxmoxygentheme75").addClass("editable");
+
+  
+  
+  $(".contmoxyfacebook75").show();
+$(".boxmoxygentheme72").removeClass("editable");
+   $(".contmoxyenvelope72").hide();
+   $(".boxmoxygentheme73").removeClass("editable");
+   $(".contmoxytwitter73").hide();
+   $(".boxmoxygentheme74").removeClass("editable");
+   $(".contmoxydribbble74").hide();
+   //$(".boxmoxygentheme75").removeClass("editable");
+   //$(".contmoxyfacebook75").hide();
+   $(".boxmoxygentheme76").removeClass("editable");
+   $(".contmoxylinkedin76").hide();
+   $(".boxmoxygentheme77").removeClass("editable");
+   $(".contmoxytumblrsquare77").hide();
+ 
+});
+
+$(".submitmoxyfacebook75").click(function() {
+  $(".boxmoxygentheme75").removeClass("editable");
+  $(".contmoxyfacebook75").hide();
+addHrefoxy75();
+  
+});
+
+ 
+});
+
+function addHrefoxy75() {
+var inputmoxyfacebook75 = $('.inputmoxyfacebook75').val();
+  $('#hrefchangemoxyfacebook75').attr("href",inputmoxyfacebook75);
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxylinkedin76").hide();
+
+   $( ".boxmoxygentheme76" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme76").hasClass("editable")) {
+    $(".editmoxygentheme76").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme76").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme76").hide();
+
+});
+
+
+$(".editmoxygentheme76").click(function(e) {
+ $(".boxmoxygentheme76").addClass("editable");
+
+  
+  
+  $(".contmoxylinkedin76").show();
+  $(".boxmoxygentheme72").removeClass("editable");
+   $(".contmoxyenvelope72").hide();
+   $(".boxmoxygentheme73").removeClass("editable");
+   $(".contmoxytwitter73").hide();
+   $(".boxmoxygentheme74").removeClass("editable");
+   $(".contmoxydribbble74").hide();
+   $(".boxmoxygentheme75").removeClass("editable");
+   $(".contmoxyfacebook75").hide();
+  // $(".boxmoxygentheme76").removeClass("editable");
+   //$(".contmoxylinkedin76").hide();
+   $(".boxmoxygentheme77").removeClass("editable");
+   $(".contmoxytumblrsquare77").hide();
+ 
+});
+
+$(".submitmoxylinkedin76").click(function() {
+  $(".boxmoxygentheme76").removeClass("editable");
+  $(".contmoxylinkedin76").hide();
+addHrefoxy76();
+  
+});
+
+ 
+});
+
+function addHrefoxy76() {
+var inputmoxylinkedin76 = $('.inputmoxylinkedin76').val();
+  $('#hrefchangemoxylinkedin76').attr("href",inputmoxylinkedin76);
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxytumblrsquare77").hide();
+
+   $( ".boxmoxygentheme77" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme77").hasClass("editable")) {
+    $(".editmoxygentheme77").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme77").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme77").hide();
+
+});
+
+
+$(".editmoxygentheme77").click(function(e) {
+ $(".boxmoxygentheme77").addClass("editable");
+
+  
+  
+  $(".contmoxytumblrsquare77").show();
+$(".boxmoxygentheme72").removeClass("editable");
+   $(".contmoxyenvelope72").hide();
+   $(".boxmoxygentheme73").removeClass("editable");
+   $(".contmoxytwitter73").hide();
+   $(".boxmoxygentheme74").removeClass("editable");
+   $(".contmoxydribbble74").hide();
+   $(".boxmoxygentheme75").removeClass("editable");
+   $(".contmoxyfacebook75").hide();
+   $(".boxmoxygentheme76").removeClass("editable");
+   $(".contmoxylinkedin76").hide();
+   //$(".boxmoxygentheme77").removeClass("editable");
+   //$(".contmoxytumblrsquare77").hide();
+ 
+});
+
+$(".submitmoxytumblrsquare77").click(function() {
+  $(".boxmoxygentheme77").removeClass("editable");
+  $(".contmoxytumblrsquare77").hide();
+addHrefoxy77();
+  
+});
+
+ 
+});
+
+function addHrefoxy77() {
+var inputmoxytumblrsquare77 = $('.inputmoxytumblrsquare77').val();
+  $('#hrefchangemoxytumblrsquare77').attr("href",inputmoxytumblrsquare77);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme79").hide();
+
+$( ".boxmoxygentheme79" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme79").hasClass("editable")) {
+    $(".editmoxygentheme79").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmoxygentheme79").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme79").hide();
+ 
+
+});
+
+ $(".editmoxygentheme79").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme79").addClass("editable");
+   $(".editmoxygentheme79").hide();
+  $(".savemoxygentheme79").show();
+  $(".imageUploadmoxygentheme79").show();
+});
+
+$(".savemoxygentheme79").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme79").removeClass("editable");
+ 
+  $(".editmoxygentheme79").hide();
+  $(".imageUploadmoxygentheme79").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme79").change(function() {
+
+    readURLoxy79(this);
+});
+
+});
+function readURLoxy79(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.boxmoxygentheme79').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".imageUploadmoxygentheme80").hide();
+
+$( ".boxmoxygentheme80" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme80").hasClass("editable")) {
+    $(".editmoxygentheme80").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmoxygentheme80").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme80").hide();
+ 
+
+});
+
+ $(".editmoxygentheme80").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme80").addClass("editable");
+   $(".editmoxygentheme80").hide();
+  $(".savemoxygentheme80").show();
+  $(".imageUploadmoxygentheme80").show();
+});
+
+$(".savemoxygentheme80").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme80").removeClass("editable");
+ 
+  $(".editmoxygentheme80").hide();
+  $(".imageUploadmoxygentheme80").hide();
+  
+});
+
+
+
+
+
+$("#imageUploadmoxygentheme80").change(function() {
+
+    readURLoxy80(this);
+});
+
+});
+function readURLoxy80(input) {
+if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0]);
+            reader.onload = function (e) {
+               $('.boxmoxygentheme80').css('background-image', 'url('+e.target.result +')');
+               
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+  
+}
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme81").hide(); 
+
+$( ".boxmoxygentheme81" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme81").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme81").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurmoxygentheme81").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurmoxygentheme81").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurmoxygentheme81").click(function() {
+   $(".boxmoxygentheme81").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme81").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme81").click(function() {
+  
+  $(".contpurmoxygentheme81").hide();
+   $(".boxmoxygentheme81").removeClass("editable");
+addmoxyfontawesomecontpur81();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur81() {
+var inputcontpurmoxygentheme81 = $('.inputcontpurmoxygentheme81').val();
+ $('#purmoxy1').removeClass();
+  $('#purmoxy1').addClass(inputcontpurmoxygentheme81);
+  if(inputcontpurmoxygentheme81 == "")
+  {
+    $('.service-icon1').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon1').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme82").hide(); 
+
+$( ".boxmoxygentheme82" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme82").hasClass("editable")) {
+    
+    $(".editcontpurmoxygentheme82").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme82").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  
+   $(".editcontpurmoxygentheme82").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurmoxygentheme82").click(function() {
+   $(".boxmoxygentheme82").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme82").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme82").click(function() {
+  
+  $(".contpurmoxygentheme82").hide();
+   $(".boxmoxygentheme82").removeClass("editable");
+addmoxyfontawesomecontpur82();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur82() {
+var inputcontpurmoxygentheme82 = $('.inputcontpurmoxygentheme82').val();
+ $('#purmoxy2').removeClass();
+ $('#purmoxy2').addClass(inputcontpurmoxygentheme82);
+  if(inputcontpurmoxygentheme82 == "")
+  {
+    $('.service-icon2').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon2').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme83").hide(); 
+
+$( ".boxmoxygentheme83" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme83").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme83").hide();
+   } 
+   else
+   {
+   
+    $(".editcontpurmoxygentheme83").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  
+   $(".editcontpurmoxygentheme83").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme83").click(function() {
+   $(".boxmoxygentheme83").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme83").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme83").click(function() {
+  
+  $(".contpurmoxygentheme83").hide();
+   $(".boxmoxygentheme83").removeClass("editable");
+addmoxyfontawesomecontpur83();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur83() {
+var inputcontpurmoxygentheme83 = $('.inputcontpurmoxygentheme83').val();
+ $('#purmoxy3').removeClass();
+  $('#purmoxy3').addClass(inputcontpurmoxygentheme83);
+  if(inputcontpurmoxygentheme83 == "")
+  {
+    $('.service-icon3').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon3').css('font-size','36px');
+  }
+}
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme84").hide(); 
+
+$( ".boxmoxygentheme84" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme84").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme84").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurmoxygentheme84").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurmoxygentheme84").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme84").click(function() {
+   $(".boxmoxygentheme84").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme84").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme84").click(function() {
+  
+  $(".contpurmoxygentheme84").hide();
+   $(".boxmoxygentheme84").removeClass("editable");
+addmoxyfontawesomecontpur84();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur84() {
+var inputcontpurmoxygentheme84 = $('.inputcontpurmoxygentheme84').val();
+ $('#purmoxy4').removeClass();
+  $('#purmoxy4').addClass(inputcontpurmoxygentheme84);
+  if(inputcontpurmoxygentheme84 == "")
+  {
+    $('.service-icon4').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon4').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme85").hide(); 
+
+$( ".boxmoxygentheme85" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme85").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme85").hide();
+   } 
+   else
+   {
+   
+    $(".editcontpurmoxygentheme85").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  
+   $(".editcontpurmoxygentheme85").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme85").click(function() {
+   $(".boxmoxygentheme85").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme85").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme85").click(function() {
+  
+  $(".contpurmoxygentheme85").hide();
+   $(".boxmoxygentheme85").removeClass("editable");
+addmoxyfontawesomecontpur85();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur85() {
+var inputcontpurmoxygentheme85 = $('.inputcontpurmoxygentheme85').val();
+ $('#purmoxy5').removeClass();
+  $('#purmoxy5').addClass(inputcontpurmoxygentheme85);
+  if(inputcontpurmoxygentheme85 == "")
+  {
+    $('.service-icon5').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon5').css('font-size','36px');
+  }
+}
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme86").hide(); 
+
+$( ".boxmoxygentheme86" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme86").hasClass("editable")) {
+  
+    $(".editcontpurmoxygentheme86").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme86").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  
+   $(".editcontpurmoxygentheme86").hide();
+
+});
+
+ 
+
+ $(".editcontpurmoxygentheme86").click(function() {
+   $(".boxmoxygentheme86").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme86").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme86").click(function() {
+  
+  $(".contpurmoxygentheme86").hide();
+   $(".boxmoxygentheme86").removeClass("editable");
+addmoxyfontawesomecontpur86();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur86() {
+var inputcontpurmoxygentheme86 = $('.inputcontpurmoxygentheme86').val();
+ $('#purmoxy6').removeClass();
+  $('#purmoxy6').addClass(inputcontpurmoxygentheme86);
+  if(inputcontpurmoxygentheme86 == "")
+  {
+    $('.service-icon6').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon6').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme87").hide(); 
+
+$( ".boxmoxygentheme87" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme87").hasClass("editable")) {
+  
+    $(".editcontpurmoxygentheme87").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme87").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurmoxygentheme87").hide();
+
+});
+
+
+
+
+ $(".editcontpurmoxygentheme87").click(function() {
+   $(".boxmoxygentheme87").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme87").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme87").click(function() {
+  
+  $(".contpurmoxygentheme87").hide();
+   $(".boxmoxygentheme87").removeClass("editable");
+addmoxyfontawesomecontpur87();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur87() {
+var inputcontpurmoxygentheme87 = $('.inputcontpurmoxygentheme87').val();
+ $('#purmoxy7').removeClass();
+  $('#purmoxy7').addClass(inputcontpurmoxygentheme87);
+  if(inputcontpurmoxygentheme87 == "")
+  {
+    $('.icon1').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon1').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolormoxygentheme88").hide(); 
+
+$( ".boxmoxygentheme88" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme88").hasClass("editable")) {
+    $(".editmoxygentheme88").hide();
+    $(".editpresentationcolormoxygentheme88").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme88").show();
+    $(".editpresentationcolormoxygentheme88").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme88").hide();
+   $(".editpresentationcolormoxygentheme88").hide();
+});
+
+ $(".editmoxygentheme88").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme88").addClass("editable");
+  $(".textmoxygentheme88").attr("contenteditable", "true");
+   $(".editmoxygentheme88").hide();
+  $(".savemoxygentheme88").show();
+ 
+});
+
+  $(".editpresentationcolormoxygentheme88").click(function() {
+    $(".boxmoxygentheme88").addClass("editable");
+  $(".editpresentationcolormoxygentheme88").hide();
+  $(".contpresentationcolormoxygentheme88").show(); 
+
+
+});
+
+  $(".submitpresentationcolormoxygentheme88").click(function() {
+  
+  $(".contpresentationcolormoxygentheme88").hide();
+   $(".boxmoxygentheme88").removeClass("editable");
+moxyaddpresentationcolor88();
+  
+});
+
+$(".savemoxygentheme88").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme88").removeClass("editable");
+ $(".textmoxygentheme88").removeAttr("contenteditable");
+  $(".editmoxygentheme88").hide();
+  
+});
+});
+
+function moxyaddpresentationcolor88() {
+var inputpresentationcolormoxygentheme88 = $('.inputpresentationcolormoxygentheme88').val();
+  $('section#moxyteam, section#moxyteam .moxytheme').css("background",inputpresentationcolormoxygentheme88);
+}
+
+
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolormoxygentheme89").hide(); 
+
+$( ".boxmoxygentheme89" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme89").hasClass("editable")) {
+    $(".editmoxygentheme89").hide();
+    $(".editpresentationcolormoxygentheme89").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme89").show();
+    $(".editpresentationcolormoxygentheme89").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme89").hide();
+   $(".editpresentationcolormoxygentheme89").hide();
+});
+
+ $(".editmoxygentheme89").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme89").addClass("editable");
+  $(".textmoxygentheme89").attr("contenteditable", "true");
+   $(".editmoxygentheme89").hide();
+  $(".savemoxygentheme89").show();
+ 
+});
+
+  $(".editpresentationcolormoxygentheme89").click(function() {
+    $(".boxmoxygentheme89").addClass("editable");
+  $(".editpresentationcolormoxygentheme89").hide();
+  $(".contpresentationcolormoxygentheme89").show(); 
+
+
+});
+
+  $(".submitpresentationcolormoxygentheme89").click(function() {
+  
+  $(".contpresentationcolormoxygentheme89").hide();
+   $(".boxmoxygentheme89").removeClass("editable");
+moxyaddpresentationcolor89();
+  
+});
+
+$(".savemoxygentheme89").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme89").removeClass("editable");
+ $(".textmoxygentheme89").removeAttr("contenteditable");
+  $(".editmoxygentheme89").hide();
+  
+});
+});
+
+function moxyaddpresentationcolor89() {
+var inputpresentationcolormoxygentheme89 = $('.inputpresentationcolormoxygentheme89').val();
+  $('section#moxyportfolio, section#moxyportfolio .moxytheme').css("background",inputpresentationcolormoxygentheme89);
+}
+
+
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolormoxygentheme90").hide(); 
+
+$( ".boxmoxygentheme90" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme90").hasClass("editable")) {
+    $(".editmoxygentheme90").hide();
+    $(".editpresentationcolormoxygentheme90").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme90").show();
+    $(".editpresentationcolormoxygentheme90").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme90").hide();
+   $(".editpresentationcolormoxygentheme90").hide();
+});
+
+ $(".editmoxygentheme90").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme90").addClass("editable");
+  $(".textmoxygentheme90").attr("contenteditable", "true");
+   $(".editmoxygentheme90").hide();
+  $(".savemoxygentheme90").show();
+ 
+});
+
+  $(".editpresentationcolormoxygentheme90").click(function() {
+    $(".boxmoxygentheme90").addClass("editable");
+  $(".editpresentationcolormoxygentheme90").hide();
+  $(".contpresentationcolormoxygentheme90").show(); 
+
+
+});
+
+  $(".submitpresentationcolormoxygentheme90").click(function() {
+  
+  $(".contpresentationcolormoxygentheme90").hide();
+   $(".boxmoxygentheme90").removeClass("editable");
+moxyaddpresentationcolor90();
+  
+});
+
+$(".savemoxygentheme90").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme90").removeClass("editable");
+ $(".textmoxygentheme90").removeAttr("contenteditable");
+  $(".editmoxygentheme90").hide();
+  
+});
+});
+
+function moxyaddpresentationcolor90() {
+var inputpresentationcolormoxygentheme90 = $('.inputpresentationcolormoxygentheme90').val();
+  $('.moxypresentation90').css("background",inputpresentationcolormoxygentheme90);
+}
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolormoxygentheme91").hide(); 
+
+$( ".boxmoxygentheme91" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme91").hasClass("editable")) {
+    $(".editmoxygentheme91").hide();
+    $(".editpresentationcolormoxygentheme91").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme91").show();
+    $(".editpresentationcolormoxygentheme91").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme91").hide();
+   $(".editpresentationcolormoxygentheme91").hide();
+});
+
+ $(".editmoxygentheme91").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme91").addClass("editable");
+  $(".textmoxygentheme91").attr("contenteditable", "true");
+   $(".editmoxygentheme91").hide();
+  $(".savemoxygentheme91").show();
+ 
+});
+
+  $(".editpresentationcolormoxygentheme91").click(function() {
+    $(".boxmoxygentheme91").addClass("editable");
+  $(".editpresentationcolormoxygentheme91").hide();
+  $(".contpresentationcolormoxygentheme91").show(); 
+
+
+});
+
+  $(".submitpresentationcolormoxygentheme91").click(function() {
+  
+  $(".contpresentationcolormoxygentheme91").hide();
+   $(".boxmoxygentheme91").removeClass("editable");
+moxyaddpresentationcolor91();
+  
+});
+
+$(".savemoxygentheme91").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme91").removeClass("editable");
+ $(".textmoxygentheme91").removeAttr("contenteditable");
+  $(".editmoxygentheme91").hide();
+  
+});
+});
+
+function moxyaddpresentationcolor91() {
+var inputpresentationcolormoxygentheme91 = $('.inputpresentationcolormoxygentheme91').val();
+  $('section#moxypricing, section#moxypricing .moxytheme').css("background",inputpresentationcolormoxygentheme91);
+}
+
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolormoxygentheme92").hide(); 
+
+$( ".boxmoxygentheme92" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme92").hasClass("editable")) {
+    $(".editmoxygentheme92").hide();
+    $(".editpresentationcolormoxygentheme92").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme92").show();
+    $(".editpresentationcolormoxygentheme92").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme92").hide();
+   $(".editpresentationcolormoxygentheme92").hide();
+});
+
+ $(".editmoxygentheme92").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme92").addClass("editable");
+  $(".textmoxygentheme92").attr("contenteditable", "true");
+   $(".editmoxygentheme92").hide();
+  $(".savemoxygentheme92").show();
+ 
+});
+
+  $(".editpresentationcolormoxygentheme92").click(function() {
+    $(".boxmoxygentheme92").addClass("editable");
+  $(".editpresentationcolormoxygentheme92").hide();
+  $(".contpresentationcolormoxygentheme92").show(); 
+
+
+});
+
+  $(".submitpresentationcolormoxygentheme92").click(function() {
+  
+  $(".contpresentationcolormoxygentheme92").hide();
+   $(".boxmoxygentheme92").removeClass("editable");
+moxyaddpresentationcolor92();
+  
+});
+
+$(".savemoxygentheme92").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme92").removeClass("editable");
+ $(".textmoxygentheme92").removeAttr("contenteditable");
+  $(".editmoxygentheme92").hide();
+  
+});
+});
+
+function moxyaddpresentationcolor92() {
+var inputpresentationcolormoxygentheme92 = $('.inputpresentationcolormoxygentheme92').val();
+  $('section#moxyservices, section#moxyservices .moxytheme').css("background",inputpresentationcolormoxygentheme92);
+}
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme93").hide(); 
+
+$( ".boxmoxygentheme93" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme93").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme93").hide();
+   } 
+   else
+   {
+   
+    $(".editcontpurmoxygentheme93").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+
+   $(".editcontpurmoxygentheme93").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme93").click(function() {
+   $(".boxmoxygentheme93").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme93").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme93").click(function() {
+  
+  $(".contpurmoxygentheme93").hide();
+   $(".boxmoxygentheme93").removeClass("editable");
+addmoxyfontawesomecontpur93();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur93() {
+var inputcontpurmoxygentheme93 = $('.inputcontpurmoxygentheme93').val();
+ $('#purmoxy8').removeClass();
+  $('#purmoxy8').addClass(inputcontpurmoxygentheme93);
+  if(inputcontpurmoxygentheme93 == "")
+  {
+    $('.icon2').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon2').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme94").hide(); 
+
+$( ".boxmoxygentheme94" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme94").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme94").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme94").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  
+   $(".editcontpurmoxygentheme94").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme94").click(function() {
+   $(".boxmoxygentheme94").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme94").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme94").click(function() {
+  
+  $(".contpurmoxygentheme94").hide();
+   $(".boxmoxygentheme94").removeClass("editable");
+addmoxyfontawesomecontpur94();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur94() {
+var inputcontpurmoxygentheme94 = $('.inputcontpurmoxygentheme94').val();
+ $('#purmoxy9').removeClass();
+  $('#purmoxy9').addClass(inputcontpurmoxygentheme94);
+  if(inputcontpurmoxygentheme94 == "")
+  {
+    $('.icon3').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon3').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme95").hide(); 
+
+$( ".boxmoxygentheme95" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme95").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme95").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme95").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  
+   $(".editcontpurmoxygentheme95").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme95").click(function() {
+   $(".boxmoxygentheme95").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme95").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme95").click(function() {
+  
+  $(".contpurmoxygentheme95").hide();
+   $(".boxmoxygentheme95").removeClass("editable");
+addmoxyfontawesomecontpur95();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur95() {
+var inputcontpurmoxygentheme95 = $('.inputcontpurmoxygentheme95').val();
+ $('#purmoxy10').removeClass();
+  $('#purmoxy10').addClass(inputcontpurmoxygentheme95);
+  if(inputcontpurmoxygentheme95 == "")
+  {
+    $('.icon4').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon4').css('font-size','36px');
+  }
+}
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme96").hide(); 
+
+$( ".boxmoxygentheme96" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme96").hasClass("editable")) {
+  
+    $(".editcontpurmoxygentheme96").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme96").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurmoxygentheme96").hide();
+
+});
+
+ 
+
+ $(".editcontpurmoxygentheme96").click(function() {
+   $(".boxmoxygentheme96").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme96").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme96").click(function() {
+  
+  $(".contpurmoxygentheme96").hide();
+   $(".boxmoxygentheme96").removeClass("editable");
+addmoxyfontawesomecontpur96();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur96() {
+var inputcontpurmoxygentheme96 = $('.inputcontpurmoxygentheme96').val();
+ $('#purmoxy11').removeClass();
+  $('#purmoxy11').addClass(inputcontpurmoxygentheme96);
+  if(inputcontpurmoxygentheme96 == "")
+  {
+    $('.icon5').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon5').css('font-size','36px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme97").hide(); 
+
+$( ".boxmoxygentheme97" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme97").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme97").hide();
+   } 
+   else
+   {
+   
+    $(".editcontpurmoxygentheme97").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurmoxygentheme97").hide();
+
+});
+
+
+
+ $(".editcontpurmoxygentheme97").click(function() {
+   $(".boxmoxygentheme97").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme97").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme97").click(function() {
+  
+  $(".contpurmoxygentheme97").hide();
+   $(".boxmoxygentheme97").removeClass("editable");
+addmoxyfontawesomecontpur97();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur97() {
+var inputcontpurmoxygentheme97 = $('.inputcontpurmoxygentheme97').val();
+ $('#purmoxy12').removeClass();
+  $('#purmoxy12').addClass(inputcontpurmoxygentheme97);
+  if(inputcontpurmoxygentheme97 == "")
+  {
+    $('.icon6').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon6').css('font-size','14px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme98").hide(); 
+
+$( ".boxmoxygentheme98" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme98").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme98").hide();
+   } 
+   else
+   {
+   
+    $(".editcontpurmoxygentheme98").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurmoxygentheme98").hide();
+
+});
+
+ 
+
+ $(".editcontpurmoxygentheme98").click(function() {
+   $(".boxmoxygentheme98").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme98").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme98").click(function() {
+  
+  $(".contpurmoxygentheme98").hide();
+   $(".boxmoxygentheme98").removeClass("editable");
+addmoxyfontawesomecontpur98();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur98() {
+var inputcontpurmoxygentheme98 = $('.inputcontpurmoxygentheme98').val();
+ $('#purmoxy13').removeClass();
+  $('#purmoxy13').addClass(inputcontpurmoxygentheme98);
+  if(inputcontpurmoxygentheme98 == "")
+  {
+    $('.icon7').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon7').css('font-size','14px');
+  }
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme99").hide(); 
+
+$( ".boxmoxygentheme99" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme99").hasClass("editable")) {
+    
+    $(".editcontpurmoxygentheme99").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme99").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  
+   $(".editcontpurmoxygentheme99").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme99").click(function() {
+   $(".boxmoxygentheme99").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme99").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme99").click(function() {
+  
+  $(".contpurmoxygentheme99").hide();
+   $(".boxmoxygentheme99").removeClass("editable");
+addmoxyfontawesomecontpur99();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur99() {
+var inputcontpurmoxygentheme99 = $('.inputcontpurmoxygentheme99').val();
+ $('#purmoxy14').removeClass();
+  $('#purmoxy14').addClass(inputcontpurmoxygentheme99);
+  if(inputcontpurmoxygentheme99 == "")
+  {
+    $('.icon8').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon8').css('font-size','14px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurmoxygentheme100").hide(); 
+
+$( ".boxmoxygentheme100" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme100").hasClass("editable")) {
+   
+    $(".editcontpurmoxygentheme100").hide();
+   } 
+   else
+   {
+    
+    $(".editcontpurmoxygentheme100").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurmoxygentheme100").hide();
+
+});
+
+ 
+
+
+ $(".editcontpurmoxygentheme100").click(function() {
+   $(".boxmoxygentheme100").addClass("editable");
+  $(this).hide();
+  $(".contpurmoxygentheme100").show(); 
+ 
+});
+
+  $(".submitcontpurmoxygentheme100").click(function() {
+  
+  $(".contpurmoxygentheme100").hide();
+   $(".boxmoxygentheme100").removeClass("editable");
+addmoxyfontawesomecontpur100();
+
+});
+
+});
+
+
+function addmoxyfontawesomecontpur100() {
+var inputcontpurmoxygentheme100 = $('.inputcontpurmoxygentheme100').val();
+ $('#purmoxy15').removeClass();
+  $('#purmoxy15').addClass(inputcontpurmoxygentheme100);
+  if(inputcontpurmoxygentheme100 == "")
+  {
+    $('.icon9').css('font-size','0px');
+  }
+  else
+  {
+    $('.icon9').css('font-size','14px');
+  }
+}
+
+
+
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolormoxygentheme101").hide(); 
+
+$( ".boxmoxygentheme101" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme101").hasClass("editable")) {
+    
+    $(".editpresentationcolormoxygentheme101").hide();
+
+   } 
+   else
+   {
+   
+    $(".editpresentationcolormoxygentheme101").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editpresentationcolormoxygentheme101").hide();
+});
+
+ 
+
+  $(".editpresentationcolormoxygentheme101").click(function() {
+    $(".boxmoxygentheme101").addClass("editable");
+  $(".editpresentationcolormoxygentheme101").hide();
+  $(".contpresentationcolormoxygentheme101").show(); 
+
+
+});
+
+  $(".submitpresentationcolormoxygentheme101").click(function() {
+  
+  $(".contpresentationcolormoxygentheme101").hide();
+   $(".boxmoxygentheme101").removeClass("editable");
+moxyaddpresentationcolor101();
+  
+});
+
+
+});
+
+function moxyaddpresentationcolor101() {
+var inputpresentationcolormoxygentheme101 = $('.inputpresentationcolormoxygentheme101').val();
+  $('.moxytheme.footer-top').css("background",inputpresentationcolormoxygentheme101);
+}
+
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolormoxygentheme102").hide(); 
+
+$( ".boxmoxygentheme102" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme102").hasClass("editable")) {
+    $(".editmoxygentheme102").hide();
+    $(".editpresentationcolormoxygentheme102").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme102").show();
+    $(".editpresentationcolormoxygentheme102").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme102").hide();
+   $(".editpresentationcolormoxygentheme102").hide();
+});
+
+ $(".editmoxygentheme102").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme102").addClass("editable");
+  $(".textmoxygentheme102").attr("contenteditable", "true");
+   $(".editmoxygentheme102").hide();
+  $(".savemoxygentheme102").show();
+ 
+});
+
+  $(".editpresentationcolormoxygentheme102").click(function() {
+    $(".boxmoxygentheme102").addClass("editable");
+  $(".editpresentationcolormoxygentheme102").hide();
+  $(".contpresentationcolormoxygentheme102").show(); 
+
+
+});
+
+  $(".submitpresentationcolormoxygentheme102").click(function() {
+  
+  $(".contpresentationcolormoxygentheme102").hide();
+   $(".boxmoxygentheme102").removeClass("editable");
+moxyaddpresentationcolor102();
+  
+});
+
+$(".savemoxygentheme102").click(function() {
+  $(this).hide();
+  $(".boxmoxygentheme102").removeClass("editable");
+ $(".textmoxygentheme102").removeAttr("contenteditable");
+  $(".editmoxygentheme102").hide();
+  
+});
+});
+
+function moxyaddpresentationcolor102() {
+var inputpresentationcolormoxygentheme102 = $('.inputpresentationcolormoxygentheme102').val();
+  $('.moxypresentation102').css("background",inputpresentationcolormoxygentheme102);
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxybg1").hide();
+
+   $( ".boxmoxygentheme111" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme111").hasClass("editable")) {
+    $(".bgmoxygentheme1").hide();
+
+   } 
+   else
+   {
+    $(".bgmoxygentheme1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmoxygentheme1").hide();
+
+});
+
+
+$(".bgmoxygentheme1").click(function(e) {
+ $(".boxmoxygentheme111").addClass("editable");
+
+  
+  
+  $(".contmoxybg1").show();
+
+
+});
+
+$(".submitmoxybg1").click(function() {
+  $(".boxmoxygentheme111").removeClass("editable");
+  $(".contmoxybg1").hide();
+  addHrefoxy1();
+});
+
+ 
+});
+
+function addHrefoxy1() {
+var inputmoxybg1 = $('.inputmoxybg1').val();
+  $('.boxmoxygentheme111').css('background-image', 'url('+inputmoxybg1 +')');
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxybg2").hide();
+
+   $( ".boxmoxygentheme222" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme222").hasClass("editable")) {
+    $(".bgmoxygentheme2").hide();
+
+   } 
+   else
+   {
+    $(".bgmoxygentheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmoxygentheme2").hide();
+
+});
+
+
+$(".bgmoxygentheme2").click(function(e) {
+ $(".boxmoxygentheme222").addClass("editable");
+
+  
+  
+  $(".contmoxybg2").show();
+
+
+});
+
+$(".submitmoxybg2").click(function() {
+  $(".boxmoxygentheme222").removeClass("editable");
+  $(".contmoxybg2").hide();
+  addHrefoxy2();
+});
+
+ 
+});
+
+function addHrefoxy2() {
+var inputmoxybg2 = $('.inputmoxybg2').val();
+  $('.boxmoxygentheme222').css('background-image', 'url('+inputmoxybg2 +')');
+}
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxybg3").hide();
+
+   $( ".boxmoxygentheme333" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme333").hasClass("editable")) {
+    $(".bgmoxygentheme3").hide();
+
+   } 
+   else
+   {
+    $(".bgmoxygentheme3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmoxygentheme3").hide();
+
+});
+
+
+$(".bgmoxygentheme3").click(function(e) {
+ $(".boxmoxygentheme333").addClass("editable");
+
+  
+  
+  $(".contmoxybg3").show();
+
+
+});
+
+$(".submitmoxybg3").click(function() {
+  $(".boxmoxygentheme333").removeClass("editable");
+  $(".contmoxybg3").hide();
+  addHrefoxy3();
+});
+
+ 
+});
+
+function addHrefoxy3() {
+var inputmoxybg3 = $('.inputmoxybg3').val();
+  $('.boxmoxygentheme333').css('background-image', 'url('+inputmoxybg3 +')');
+}
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxybg80").hide();
+
+   $( ".boxmoxygentheme80a" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme80a").hasClass("editable")) {
+    $(".bgmoxygentheme80").hide();
+
+   } 
+   else
+   {
+    $(".bgmoxygentheme80").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmoxygentheme80").hide();
+
+});
+
+
+$(".bgmoxygentheme80").click(function(e) {
+ $(".boxmoxygentheme80a").addClass("editable");
+
+  
+  
+  $(".contmoxybg80").show();
+
+
+});
+
+$(".submitmoxybg80").click(function() {
+  $(".boxmoxygentheme80a").removeClass("editable");
+  $(".contmoxybg80").hide();
+  addHrefoxy80();
+});
+
+ 
+});
+
+function addHrefoxy80() {
+var inputmoxybg80 = $('.inputmoxybg80').val();
+  $('.boxmoxygentheme80a').css('background-image', 'url('+inputmoxybg80 +')');
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxybg50").hide();
+
+   $( ".boxmoxygentheme50a" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme50a").hasClass("editable")) {
+    $(".bgmoxygentheme50").hide();
+
+   } 
+   else
+   {
+    $(".bgmoxygentheme50").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmoxygentheme50").hide();
+
+});
+
+
+$(".bgmoxygentheme50").click(function(e) {
+ $(".boxmoxygentheme50a").addClass("editable");
+
+  
+  
+  $(".contmoxybg50").show();
+
+
+});
+
+$(".submitmoxybg50").click(function() {
+  $(".boxmoxygentheme50a").removeClass("editable");
+  $(".contmoxybg50").hide();
+  addHrefoxy50();
+});
+
+ 
+});
+
+function addHrefoxy50() {
+var inputmoxybg50 = $('.inputmoxybg50').val();
+  $('.boxmoxygentheme50a').css('background-image', 'url('+inputmoxybg50 +')');
+}
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxybg79").hide();
+
+   $( ".boxmoxygentheme79a" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme79a").hasClass("editable")) {
+    $(".bgmoxygentheme79").hide();
+
+   } 
+   else
+   {
+    $(".bgmoxygentheme79").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmoxygentheme79").hide();
+
+});
+
+
+$(".bgmoxygentheme79").click(function(e) {
+ $(".boxmoxygentheme79a").addClass("editable");
+
+  
+  
+  $(".contmoxybg79").show();
+
+
+});
+
+$(".submitmoxybg79").click(function() {
+  $(".boxmoxygentheme79a").removeClass("editable");
+  $(".contmoxybg79").hide();
+  addHrefoxy79();
+});
+
+ 
+});
+
+function addHrefoxy79() {
+var inputmoxybg79 = $('.inputmoxybg79').val();
+  $('.boxmoxygentheme79a').css('background-image', 'url('+inputmoxybg79 +')');
+}
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxybg70").hide();
+
+   $( ".boxmoxygentheme70a" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme70a").hasClass("editable")) {
+    $(".bgmoxygentheme70").hide();
+
+   } 
+   else
+   {
+    $(".bgmoxygentheme70").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmoxygentheme70").hide();
+
+});
+
+
+$(".bgmoxygentheme70").click(function(e) {
+ $(".boxmoxygentheme70a").addClass("editable");
+
+  
+  
+  $(".contmoxybg70").show();
+
+
+});
+
+$(".submitmoxybg70").click(function() {
+  $(".boxmoxygentheme70a").removeClass("editable");
+  $(".contmoxybg70").hide();
+  addHrefoxy70();
+});
+
+ 
+});
+
+function addHrefoxy70() {
+var inputmoxybg70 = $('.inputmoxybg70').val();
+  $('.boxmoxygentheme70a').css('background-image', 'url('+inputmoxybg70 +')');
+}
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxysingup103").hide();
+
+   $( ".boxmoxygentheme103" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme103").hasClass("editable")) {
+    $(".editmoxygentheme103").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme103").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme103").hide();
+
+});
+
+
+$(".editmoxygentheme103").click(function(e) {
+ $(".boxmoxygentheme103").addClass("editable");
+
+  
+  
+  $(".contmoxysingup103").show();
+  
+ 
+});
+
+$(".submitmoxysingup103").click(function() {
+  $(".boxmoxygentheme103").removeClass("editable");
+  $(".contmoxysingup103").hide();
+addHrefoxy103();
+  
+});
+
+ 
+});
+
+function addHrefoxy103() {
+var inputmoxysingup103 = $('.inputmoxysingup103').val();
+  $('#hrefchangemoxysingup103').attr("href",inputmoxysingup103);
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxysingup104").hide();
+
+   $( ".boxmoxygentheme104" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme104").hasClass("editable")) {
+    $(".editmoxygentheme104").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme104").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme104").hide();
+
+});
+
+
+$(".editmoxygentheme104").click(function(e) {
+ $(".boxmoxygentheme104").addClass("editable");
+
+  
+  
+  $(".contmoxysingup104").show();
+  
+ 
+});
+
+$(".submitmoxysingup104").click(function() {
+  $(".boxmoxygentheme104").removeClass("editable");
+  $(".contmoxysingup104").hide();
+addHrefoxy104();
+  
+});
+
+ 
+});
+
+function addHrefoxy104() {
+var inputmoxysingup104 = $('.inputmoxysingup104').val();
+  $('#hrefchangemoxysingup104').attr("href",inputmoxysingup104);
+}
+
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxysingup105").hide();
+
+   $( ".boxmoxygentheme105" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme105").hasClass("editable")) {
+    $(".editmoxygentheme105").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme105").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme105").hide();
+
+});
+
+
+$(".editmoxygentheme105").click(function(e) {
+ $(".boxmoxygentheme105").addClass("editable");
+
+  
+  
+  $(".contmoxysingup105").show();
+  
+ 
+});
+
+$(".submitmoxysingup105").click(function() {
+  $(".boxmoxygentheme105").removeClass("editable");
+  $(".contmoxysingup105").hide();
+addHrefoxy105();
+  
+});
+
+ 
+});
+
+function addHrefoxy105() {
+var inputmoxysingup105 = $('.inputmoxysingup105').val();
+  $('#hrefchangemoxysingup105').attr("href",inputmoxysingup105);
+}
+
+
+
+
+$(document).ready(function(){
+
+   $(".contmoxysingup106").hide();
+
+   $( ".boxmoxygentheme106" )
+ .on("mouseenter", function() {
+   if ($(".boxmoxygentheme106").hasClass("editable")) {
+    $(".editmoxygentheme106").hide();
+
+   } 
+   else
+   {
+    $(".editmoxygentheme106").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmoxygentheme106").hide();
+
+});
+
+
+$(".editmoxygentheme106").click(function(e) {
+ $(".boxmoxygentheme106").addClass("editable");
+
+  
+  
+  $(".contmoxysingup106").show();
+  
+ 
+});
+
+$(".submitmoxysingup106").click(function() {
+  $(".boxmoxygentheme106").removeClass("editable");
+  $(".contmoxysingup106").hide();
+addHrefoxy106();
+  
+});
+
+ 
+});
+
+function addHrefoxy106() {
+var inputmoxysingup106 = $('.inputmoxysingup106').val();
+  $('#hrefchangemoxysingup106').attr("href",inputmoxysingup106);
+}
 </script>
+
