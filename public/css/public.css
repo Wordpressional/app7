@@ -1673,12 +1673,17 @@ width:70% !important;
     margin-bottom: 40px;
 }
 
-#moxypricing input, #moxypricing button, #moxyteam input, #moxyteam button, #moxyportfolio input, #moxyportfolio button
+#moxypricing input, #moxypricing button,  #moxyportfolio input, #moxyportfolio button
 , #moxyservices input, #moxyservices button, #moxyblog button,  #moxyblog input
 , #moxyfooter input, #moxyfooter button
 {
     margin-left: 70px;
     margin-top: 30px;
+}
+
+#moxyteam input, #moxyteam button
+{
+     margin-top: 3px;
 }
 
 .moxytheme.footer-top {
