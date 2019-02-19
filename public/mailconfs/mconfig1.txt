@@ -1,0 +1,1 @@
+authu='pyrumas2019@gmail.com'&authp='SHDY7Nmg'&frome='Sender Name <pyrumas2019@gmail.com>'&toe='"Receiver Name" <pyrumas2019@gmail.com>'&texte='Hello, everyone!'&sube='How to send mail in nodejs ✔'&wele='Hi Admin, <br> Someone left a message!<br />'&htmle="name=dfcz<br />email=zxc%40gmail.com<br />message=dfsdf<br />terms=Agreed-to-Terms<br />"
