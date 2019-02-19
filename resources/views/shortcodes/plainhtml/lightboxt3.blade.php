@@ -8,7 +8,7 @@
   
                           
                            <span class="savemlthemeone34">save</span>
-                    <h2 class="text-center">Loan mloptions</h2>
+                    <h2 class="text-center">Loan options</h2>
                     <p class="p-heading p-large text-center">Need money for your next awesome project? Our product development team has assembled the following loan packages you can choose from. Click on details</p>
                </div>
                 </div> <!-- end of col --> 

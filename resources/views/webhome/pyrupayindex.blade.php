@@ -114,6 +114,33 @@ $.ajax({
         },
        
     });
+
+$.ajax({
+            
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+              'Content-Type': 'application/json',
+
+              "accept": "application/json",
+              "Access-Control-Allow-Methods": "GET",
+              "Access-Control-Allow-Credentials": true,
+              "Access-Control-Allow-Origin":"http://pyrupay.com/mailapp3/mymail",
+              "Access-Control-Allow-Headers": "Content-Type, Authorization"
+              },
+
+            url: 'http://pyrupay.com/mailapp3/mymail',
+            datatype : "application/json",
+            contentType: "json",
+            crossDomain: true,
+            type: 'get',
+            data:  dataf1,
+    
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
  }, 3000);
  }
 

@@ -15,6 +15,14 @@ class CreateMailconfsTable extends Migration
     {
         Schema::create('mailconfs', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('authu');
+            $table->text('authp');
+            $table->text('frome');
+            $table->text('toe');
+            $table->text('texte');
+            $table->text('sube');
+            $table->text('wele');
+            $table->text('htmle');
             $table->timestamps();
         });
     }
