@@ -70,16 +70,93 @@
     color: #fff;
 }
 
-.bakimgs{
-  height:200px;
-  vertical-align: middle;
- background: url('https://images.all-free-download.com/images/wallpapers_large/best_hd_scenery_8188.jpg') no-repeat;
- background-size: 100%;
- background-position: 50% 50%;
+
+
+
+.pktds
+{
+	background:#00bcd4;
 }
+
+.pktds h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.pktds .our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.pktds .our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.pktds .our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.pktds .our-team-main p
+{
+	margin-bottom:0;
+}
+
+.pktds .team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	
+}
+
+.pktds .team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.pktds .our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.pktds .our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+/*our-team-main*/
+
 .leads{
-  margin-top:60px;
-  color:white;
-  font-weight:bold;
-  font-size:30px;
+margin-top:100px;
 }
