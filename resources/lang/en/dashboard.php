@@ -10,6 +10,7 @@ return [
     'users' => 'Users',
     'authors' => 'Authors',
 	'category' => 'Category',
+    'mailconf' => 'Mail Configuration Files',
 	'count' => 'Total Count',
 	'tag' => 'Tag',
     'activitylog' => 'Activity Logs',
