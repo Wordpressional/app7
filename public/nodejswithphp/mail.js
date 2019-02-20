@@ -9,11 +9,15 @@ var nodemailer = require('nodemailer');
 //             pass: "cpzlwcxtaluakomb"
 //         }
 //     });
+
+const args = process.argv;
+
+
 var transporter = nodemailer.createTransport({
  service: 'gmail',
  auth: {
-            user: "pyrumas2019@gmail.com",
-            pass: "SHDY7Nmg"
+            user: args[2],
+            pass: args[3]
         }
 });
 
@@ -23,20 +27,19 @@ console.log('SMTP Configured');
 var message = {
 
     // sender info
-    from: 'Sender Name <pyrumas2019@gmail.com>',
+    from: args[4],
 
     // Comma separated list of recipients
-    to: '"Receiver Name" <pyrumas2019@gmail.com>',
+    to: args[5],
 
     // Subject of the message
-    subject: 'How to send mail in nodejs ✔', 
+    subject: args[6], 
 
     // plaintext body
-    text: 'Hello, everyone!',
+    text: args[7],
 
     // HTML body
-    html:'<p>s<b>sLook this</b>s  <img src=""/>s</p>s'+
-         '<p>sHere i am send my picture attachment:<br/>s</p>s'
+    html: args[8]+args[9]
 };
 
 console.log('Sending Mail');
@@ -47,6 +50,7 @@ transporter.sendMail(message, function(error){
       return;
   }
   console.log('Message sent successfully!');
+  console.log(args);
 
   // if you don't want to use this transport object anymore, uncomment following line
   //transport.close(); // close the connection pool

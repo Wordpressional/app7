@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\User;
 use App\Brand;
+use App\Mailconf;
 use Session;
 use File;
 
@@ -91,9 +92,118 @@ EOF;
     	$vpath = public_path('jsonfiles/testurl.txt'); // path to your JSON file
     	$html = File::put($vpath, htmlspecialchars_decode($filedata));
         Session::flash('success', 'You succesfully Saved the URLs.');
-         return redirect()->back();
+         return redirect()->route('admin.static.starterform');
+    }
+
+
+    public function indexmailconfig()
+    {
+
+       
+
+         $data = $this->brandsAll();
+        return view('admin.mailconfigs.index')->with(['mailconfs' => Mailconf::withTrashed()->latest()->paginate(10),'data' => $data]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createmailconfig()
+    {
+        $data = $this->brandsAll();
+        return view('admin.mailconfigs.create',compact('data'));
     }
 
     
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function storemailconfig(Request $request)
+    {
+        $this->validate($request,[
+
+                'name' => 'required'
+
+
+        ]);
+
+        $mailconf = new Mailconf();
+        $mailconf->name = $request->name;
+        $mailconf->save();
+        Session::flash('success', 'You succesfully created a category.');
+        return redirect()->back();
+
+
+    }
+
     
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function editmailconfig($id)
+    {
+        $data = $this->brandsAll();
+        $mailconf = Mailconf::find($id);
+       
+    
+        return view('admin.mailconfigs.edit')->with(['category' => $category, 'data' => $data]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function updatemailconfig(Request $request, $id)
+    {
+        $mailconf = Mailconf::find($id);
+        $mailconf->name = $request->name;
+        $mailconf->save();
+        Session::flash('success', 'You succesfully updated a Mail Configuration File.');
+        return redirect()->route('admin.static.mailconfigs');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroymailconfig($id)
+    {
+        $mailconf = Mailconf::withTrashed()->where('id',$id)->first();
+        if($mailconf->trashed()){
+            $mailconf->forceDelete();
+            
+          } else {
+            $mailconf->delete();
+            
+            
+          }
+
+        
+      Session::flash('success', 'You succesfully deleted a Mail Configuration File.');
+        return redirect()->back();
+    }
+
+    public function restoremailconfig($id)
+    {
+        $mailconf = Mailconf::withTrashed()->where('id',$id)->first();
+        if($mailconf->trashed()){
+            $mailconf->restore();
+        }
+        Session::flash('success', 'You succesfully restored a Mail Configuration File.');
+         return redirect()->back();
+    }
 }

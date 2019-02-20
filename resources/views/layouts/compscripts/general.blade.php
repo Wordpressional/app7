@@ -76,7 +76,7 @@
   <!-- WOW JS -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
   
-<script src="//smtpjs.com/v2/smtp.js"></script>
+
 <script src="{{ asset('webhome/js/theme.js') }}"></script>
 
 

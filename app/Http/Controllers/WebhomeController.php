@@ -140,7 +140,35 @@ class WebhomeController extends Controller
         return "success";
     }
 
+    
 
+    public function updatemailconfig(Request $request)
+    {
+        //dd($request->imgsliderw);
+        //dd("ggg");
+
+        //dd(htmlspecialchars_decode($request->imgsliderw));
+        //dd($request->mfileconfname);
+        if($request->mfileconfname != "undefined")
+        {
+        
+            
+            $mpath = base_path().'/public/mailconfs/'.$request->mfileconfname;
+           //dd($vpath);
+       
+            //dd($vpath);
+            //File::delete($mpath);
+            $html = File::put($mpath,$request->dataf);
+       
+        return "success";
+        } 
+        else
+        {
+            return "false";
+        }
+     
+    
+    }
     
 
    

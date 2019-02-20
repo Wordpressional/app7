@@ -520,39 +520,3 @@ resizebanner();
    
 })(jQuery);
 
-$( document ).ready(function() {
-$('#testmail').click(function(){
-  
-//alert("clicked");
-    $.ajax({
-        url: "http://139.59.47.15:8123/mymail",
-        dataType: "text",
-         success: function(data) {
-          alert("Sent email successfully");
-           
-        },
-       
-    });
-    
-
- });
-});
-
-$( document ).ready(function() {
-$('#testmail').click(function(){
-  
-//alert("clicked");
-    $.ajax({
-        url: "https://pyrupay.com/mailapp3/mymail",
-        dataType: "text",
-         success: function(data) {
-          //alert("Sent email successfully using pyrupay");
-           
-        },
-       
-    });
-    
-
- });
-});
-

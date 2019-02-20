@@ -9,7 +9,7 @@
                
         <div class="header-content mlthemeone header">
 
-            <div class="container">
+            <div class="container-fluid">
 
                 <div class="row">
 

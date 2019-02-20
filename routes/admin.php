@@ -120,6 +120,13 @@ Route::post('/static/savestarter',[
 'as' => 'static.savestarter'
 
 ]);
+Route::get('/static/savestarter',[
+
+
+'uses' => 'StaticController@SaveStarterStatic',
+'as' => 'static.savestarter'
+
+]);
 
 
 Route::get('/cforms/preview/{id}',[
@@ -1099,3 +1106,55 @@ Route::patch('/task/update/{id}',[
 
 ]);
 
+
+
+Route::get('/static/createmailconfig',[
+
+
+'uses' => 'StaticController@createmailconfig',
+'as' => 'mailconfig.createmailconfig'
+
+]);
+
+Route::post('/static/storemailconfig',[
+
+
+'uses' => 'StaticController@storemailconfig',
+'as' => 'mailconfig.storemailconfig'
+
+]);
+Route::get('/static/indexmailconfig',[
+
+
+'uses' => 'StaticController@indexmailconfig',
+'as' => 'mailconfig.indexmailconfig'
+
+]);
+Route::get('/static/editmailconfig/{id}',[
+
+
+'uses' => 'StaticController@editmailconfig',
+'as' => 'mailconfig.editmailconfig'
+
+]);
+Route::get('/static/deletemailconfig/{id}',[
+
+
+'uses' => 'StaticController@deletemailconfig',
+'as' => 'mailconfig.deletemailconfig'
+
+]);
+Route::get('/static/restoremailconfig/{id}',[
+
+
+'uses' => 'StaticController@restoremailconfig',
+'as' => 'mailconfig.restoremailconfig'
+
+]);
+Route::post('/static/updatemailconfig/{id}',[
+
+
+'uses' => 'StaticController@updatemailconfig',
+'as' => 'mailconfig.updatemailconfig'
+
+]);

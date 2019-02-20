@@ -31,30 +31,31 @@
                 </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
-                    
+                    <meta name="csrf-token" content="{{ csrf_token() }}">
                     <!-- Contact Form -->
-                    <form id="ContactForm" data-toggle="validator" data-focus="false">
+                    <form id="ContactForm" data-toggle="validator" data-focus="false" class="cfs">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
+                            <input type="text" class="form-control-input" name="name" id="cname" required>
                             <label class="label-control" for="cname">Name</label>
                             <div class="help-block with-errors">&nbsp;</div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
+                            <input type="email" class="form-control-input" name="email" id="cemail" required>
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors">&nbsp;</div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <textarea class="form-control-textarea" name="message"  id="cmessage" required></textarea>
                             <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors">&nbsp;</div>
                         </div>
                         <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Ciel's <a class="underline" href="privacy-policy.html">Privacy Policy</a> and <a class="underline" href="terms-conditions.html">Terms Conditions</a> 
+                            <input type="checkbox" name="terms" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Ciel's <a class="underline" href="privacy-policy.html">Privacy Policy</a> and <a class="underline" href="terms-conditions.html">Terms Conditions</a> 
                             <div class="help-block with-errors">&nbsp;</div>
                         </div>
                         <div class="form-group">
                             <input type="button" class="form-control-submit-button" id="testmail" value="Submit">
+                            <input type="hidden" name="mfileconfname" class="mfileconfname" value="mconfig1.txt" />
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden">&nbsp;</div>

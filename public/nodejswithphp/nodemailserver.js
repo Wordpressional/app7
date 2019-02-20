@@ -13,6 +13,9 @@ var express     =    require('express'),
 
 const path = require('path');
 const router = express.Router();
+var cors = require('cors');
+
+app.use(cors()); // Use this after the variable declaration
 /*app.get('/', function (req, res) {
   res.send('hello world')
 });*/
@@ -22,7 +25,7 @@ app.get('/',function(req,res) {
   res.sendFile(path.join(__dirname+'/index.html'));
 });
 
-app.get('/mymail', function(req, res){exec("node mail.js", function (error, stdout, stderr) {res.send(stdout);});});
+app.get('/mymail', function(req, res){ var authu = req.query.authu; var authp = req.query.authp; var frome = req.query.frome; var toe = req.query.toe;  var sube = req.query.sube; var texte = req.query.texte; var wele = req.query.wele; var htmle = req.query.htmle;   exec("node mail.js "+authu+" "+authp+" "+ frome +" "+toe+" "+ sube+" "+ texte+" "+ wele +" "+ htmle , function (error, stdout, stderr) {res.send(stdout);});});
 
 
 /*app.post('/wc',[
