@@ -27,7 +27,7 @@ class PostsRequest extends FormRequest
     protected function prepareForValidation()
     {
         $this->merge([
-            'slug' => str_slug($this->input('title'))
+            'slug' => str_slug($this->input('slug1'))
         ]);
 
         $this->merge([
@@ -43,6 +43,7 @@ class PostsRequest extends FormRequest
     public function rules()
     {
         return [
+            'slug1' => 'required',
             'title' => 'required',
             'content' => 'required',
             'posted_at' => 'required|date',

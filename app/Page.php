@@ -22,6 +22,7 @@ class Page extends Model
      * @var array
      */
     protected $fillable = [
+        'name1',
         'display_name',
         'name',
         'content',

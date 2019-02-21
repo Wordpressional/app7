@@ -120,13 +120,7 @@ Route::post('/static/savestarter',[
 'as' => 'static.savestarter'
 
 ]);
-Route::get('/static/savestarter',[
 
-
-'uses' => 'StaticController@SaveStarterStatic',
-'as' => 'static.savestarter'
-
-]);
 
 
 Route::get('/cforms/preview/{id}',[

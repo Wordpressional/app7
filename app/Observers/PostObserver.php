@@ -14,6 +14,6 @@ class PostObserver
      */
     public function saving(Post $post)
     {
-        $post->slug = str_slug($post->title, '-');
+        $post->slug = str_slug($post->slug1, '-');
     }
 }
