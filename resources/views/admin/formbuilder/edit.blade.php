@@ -25,7 +25,12 @@
 <br><br>
     <div class="form-group">
           <label for="tag">Form Name :</label>
+          @if($form->formname == "Home_Page" || $form->formname == "Front_Page")
+          <input type="text" name="formname" id="formname" placeholder="Enter Form Name" value="{{ $form->formname }}"  class="form-control" readonly="readonly">
+          @else
           <input type="text" name="formname" id="formname" placeholder="Enter Form Name" value="{{ $form->formname }}"  class="form-control">
+          @endif
+
           
       </div>
 <br>

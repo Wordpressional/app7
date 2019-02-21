@@ -48,7 +48,7 @@ class FormbuilderController extends Controller
         {
             $formshortcode = new Form();
             $formshortcode->formname = "Front_Page";
-            $formshortcode->shortcode = "frontpage";
+            $formshortcode->shortcode = "-";
             $formshortcode->save();
         }
         }
@@ -86,7 +86,7 @@ class FormbuilderController extends Controller
         {
             $formshortcode = new Form();
             $formshortcode->formname = "Front_Page";
-            $formshortcode->shortcode = "frontpage";
+            $formshortcode->shortcode = "-";
             $formshortcode->save();
         }
         }
