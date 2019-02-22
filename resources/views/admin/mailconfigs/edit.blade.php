@@ -3,37 +3,70 @@
 
 @section('content')
 
-     
-     @include('admin.includes.errors')
 
-
-       <div class="page-header">
-      	<h1>@lang('category.catupdate'):{{$category->name}}</h1>
-      </div>
+ <div class="page-header">
+      <h1>@lang('mailconfig.mcreate')</h1>
+    </div>
 <div class="panel panel-default">
       <div class="panel-body">
-      	<form action="{{ route('admin.category.update', ['id'=>$category->id]) }}" method="POST">
-      		
-      		{{ csrf_field() }}
+        <form action="{{ route('admin.mailconfig.updatemailconfig', $mailconf->id) }}" method="POST">
+          
+          {{ csrf_field() }}
 
             <div class="form-group">
-            	<label for="name">Category Name</label>
-            	<input type="text" name="name" value="{{ $category->name }}" placeholder="Enter Your Blog Category Name" class="form-control"><br>
-              <p>@lang('posts.link') : {{ link_to_route('webhome.cattype', route('webhome.cattype', $category->name), $category->name) }}</p>
+              <label for="mailfname">Mail Config Filename</label>
+              <input type="text" name="mailfname" value="{{ $mailconf->mailfname }}" class="form-control" readonly="readonly">
+            </div>
+
+            <div class="form-group">
+                  <label for="authu">Auth Username</label>
+                  <input type="text" name="authu" value="{{ $mailconf->authu }}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                  <label for="authp">Auth Password</label>
+                  <input type="text" name="authp" value="{{ $mailconf->authp }}" class="form-control">
+            </div>
+
+           
+
+            <div class="form-group">
+                  <label for="frome">From Mail Address</label>
+                  <input type="text" name="frome" value="{{ $mailconf->frome }}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                  <label for="toe">To Mail Address</label>
+                  <input type="text" name="toe" value="{{ $mailconf->toe }}" class="form-control">
+            </div>
+
+             <div class="form-group">
+                  <label for="texte">Plain Text Message</label>
+                  <textarea name="texte" class="form-control">{{ $mailconf->texte }}</textarea>
+            </div>
+
+            <div class="form-group">
+                  <label for="sube">Subject</label>
+                  <input type="text" name="sube" value="{{ $mailconf->sube }}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                  <label for="wele">Message Body</label>
+                  <textarea name="wele" class="form-control">{{ $mailconf->wele }}</textarea>
             </div>
 
             <div class="from-group">
-            	 <div class="text-right">
-            	 	<button class="btn btn-success" type="submit">Update Category</button>
-                 {{ link_to_route('admin.categories', __('forms.actions.back'), [], ['class' => 'btn btn-secondary pull-left']) }}
-            	 </div>
+               <div class="text-right">
+                <button class="btn btn-success" type="submit">Update Mail Config File</button>
+                        {{ link_to_route('admin.mailconfig.indexmailconfig', __('forms.actions.back'), [], ['class' => 'btn btn-secondary pull-left']) }}
+               </div>
             </div>
 
 
 
-      	</form>
+        </form>
       </div>
 
-  </div>
+ </div> 
 
 @stop

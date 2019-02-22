@@ -1134,10 +1134,18 @@ Route::get('/static/editmailconfig/{id}',[
 Route::get('/static/deletemailconfig/{id}',[
 
 
-'uses' => 'StaticController@deletemailconfig',
+'uses' => 'StaticController@destroymailconfig',
 'as' => 'mailconfig.deletemailconfig'
 
 ]);
+Route::get('/static/viewmailconfig/{id}',[
+
+
+'uses' => 'StaticController@viewmailconfig',
+'as' => 'mailconfig.viewmailconfig'
+
+]);
+
 Route::get('/static/restoremailconfig/{id}',[
 
 
