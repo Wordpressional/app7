@@ -1,5 +1,5 @@
 [
-"http://example.com/foldername",
+"https://templates.bwlthemes.com/political_buddies/about-us.html",
 {
 "url": "http://example.com/foldername/page1",
 "filename": "page1.html"
