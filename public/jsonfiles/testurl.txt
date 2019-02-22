@@ -1,9 +1,5 @@
 [
-<<<<<<< HEAD
-"https://templates.bwlthemes.com/political_buddies/about-us.html",
-=======
 "http://domainame.com/dynamic",
->>>>>>> 4c6ebe86012cb2317e79ccb4a558c72097edc64c
 {
 "url": "http://localhost/dynamic/staticpage/team-of-dev",
 "filename": "team.html"
