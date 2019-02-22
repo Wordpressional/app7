@@ -5342,7 +5342,7 @@ section.presentation .side.left {
   background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../themes/t3/header-background.jpg') center top no-repeat;
   background-size: cover; 
   padding-top: 150px;
-    margin-top: -50px;
+  
 }
 
 .mlthemeone.header .header-content {
