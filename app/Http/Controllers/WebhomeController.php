@@ -159,8 +159,12 @@ class WebhomeController extends Controller
             //dd($vpath);
             //File::delete($mpath);
             $html = File::put($mpath,$request->dataf);
-       
-        return "success";
+        
+        $conread = File::get($mpath);
+
+        Session::flash('success', 'You succesfully updated a mail config file.');
+        return $conread;
+        
         } 
         else
         {
