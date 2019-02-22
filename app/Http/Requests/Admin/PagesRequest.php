@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Admin;
 
-use App\Rules\CanBeAuthor;
+use App\Rules\CanBePoster;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
@@ -27,7 +27,7 @@ class PagesRequest extends FormRequest
     protected function prepareForValidation()
     {
         $this->merge([
-            'name' => str_slug($this->input('display_name'))
+            'name' => str_slug($this->input('name1'))
         ]);
 
         
@@ -41,10 +41,11 @@ class PagesRequest extends FormRequest
     public function rules()
     {
         return [
+            'name1' => 'required',
             'display_name' => 'required',
             'content' => 'required',
            
-            'author_id' => ['required', 'exists:users,id', new CanBeAuthor],
+            'author_id' => ['required', 'exists:users,id', new CanBePoster],
             'name' => 'unique:pages,name,' . (optional($this->page)->id ?: 'NULL'),
             
         ];

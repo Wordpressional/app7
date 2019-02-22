@@ -220,7 +220,7 @@ class PostController extends Controller
      */
     public function store(PostsRequest $request)
     {
-        $post = Post::create($request->only([addslashes('title'), 'excerpt', htmlentities('content'), 'posted_at', 'author_id', 'category_id', 'template', 'pubyear']));
+        $post = Post::create($request->only([addslashes('title'), 'excerpt', htmlentities('content'), 'posted_at', 'author_id', 'category_id', 'template', 'pubyear','slug1']));
 
         if ($request->hasFile('thumbnail')) {
             $post->storeAndSetThumbnail($request->file('thumbnail'));
@@ -239,7 +239,7 @@ class PostController extends Controller
     {
         
        
-        $post->update($request->only([addslashes('title'), 'excerpt', htmlentities(addslashes('content')), 'posted_at', 'author_id', 'category_id', 'template','pubyear']));
+        $post->update($request->only([addslashes('title'), 'excerpt', htmlentities(addslashes('content')), 'posted_at', 'author_id', 'category_id', 'template','pubyear','slug1']));
 
         if ($request->hasFile('thumbnail')) {
             $post->storeAndSetThumbnail($request->file('thumbnail'));

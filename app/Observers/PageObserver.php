@@ -14,6 +14,6 @@ class PageObserver
      */
     public function saving(Page $page)
     {
-        $page->name = str_slug($page->display_name, '-');
+        $page->name = str_slug($page->name1, '-');
     }
 }

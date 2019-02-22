@@ -33,10 +33,10 @@
 			              	<td>
 			              		@if($mconf->trashed())
 			              		<strike style='color:red'>
-								<p style='color:blue'>{{ $mconf->name }}<p>
+								<p style='color:blue'>{{ $mconf->mailfname }}<p>
 								</strike>
 			              		@else
-								{{ $mconf->name }}
+								{{ $mconf->mailfname }}
 			              		@endif
 			              	</td>
 
@@ -49,32 +49,32 @@
 			              
 			              	</td>
 			              	<td>
-			              		<a class="btn btn-warning" href="{{ route('webhome.cattype', $mconf->name) }}" target="_blank">
+			              		<a class="btn btn-warning" href="{{ route('admin.mailconfig.viewmailconfig' ,['id'=>$mconf->id]) }}" target="_blank">
 			              	
 			              			<span><i class="fa fa-eye" aria-hidden="true"></i></span>
 			              	</a>
 			              </td>
 			              	<td>
 			              	@if($mconf->trashed())
-			              	<a class="btn btn-warning" href="{{ route('admin.mailconf.restoremailconfig',['id'=>$mconf->id]) }}">
+			              	<a class="btn btn-warning" href="{{ route('admin.mailconfig.restoremailconfig',['id'=>$mconf->id]) }}">
 			              	
 			              			<i class="fa fa-repeat" aria-hidden="true"></i>
 			              	</a>
-			              	<a class="btn btn-danger" href="{{ route('admin.mailconf.deletemailconfig',['id'=>$mconf->id]) }}">
+			              	<a class="btn btn-danger" href="{{ route('admin.mailconfig.deletemailconfig',['id'=>$mconf->id]) }}">
 			              	
 			              			<i class="fa fa-trash" aria-hidden="true"></i>
 			              	</a>
-			              	
-			              	<a class="btn btn-danger" href="{{ route('admin.mailconf.deletemailconfig',['id'=>$mconf->id]) }}">
+			              	 @else
+			              	<a class="btn btn-danger" href="{{ route('admin.mailconfig.deletemailconfig',['id'=>$mconf->id]) }}">
 			              	
 			              			<i class="fa fa-trash" aria-hidden="true"></i>
 			              	</a>
-			              	
+			              	@endif
 			              	</td>
 
 			              </tr>
 			             
-			              @endif
+			             
 						 @endforeach
 
 						 @else 

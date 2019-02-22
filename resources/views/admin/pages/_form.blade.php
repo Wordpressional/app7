@@ -3,6 +3,15 @@
 @endphp
 
 <div class="form-group">
+    {!! Form::label('slugp', __('pages.attributes.slugp')) !!}
+    {!! Form::text('name1', null, ['class' => 'form-control' . ($errors->has('name1') ? ' is-invalid' : ''), 'required']) !!}
+
+    @if ($errors->has('name1'))
+        <span class="invalid-feedback">{{ $errors->first('name1') }}</span>
+    @endif
+</div>
+
+<div class="form-group">
     {!! Form::label('title', __('pages.attributes.title')) !!}
     {!! Form::text('display_name', null, ['class' => 'form-control' . ($errors->has('display_name') ? ' is-invalid' : ''), 'required']) !!}
 

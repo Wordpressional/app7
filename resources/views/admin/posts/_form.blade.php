@@ -2,6 +2,16 @@
     $posted_at = old('posted_at') ?? (isset($post) ? $post->posted_at->format('Y-m-d\TH:i') : null);
 @endphp
 <span style="color:red"> * marked fields are required</span>
+
+<div class="form-group">
+    {!! Form::label('slugp', __('posts.attributes.slugp')) !!}<span style="color:red"> * </span>
+    {!! Form::text('slug1', null, ['class' => 'form-control' . ($errors->has('slug1') ? ' is-invalid' : ''), 'required']) !!}
+
+    @if ($errors->has('slug1'))
+        <span class="invalid-feedback">{{ $errors->first('slug1') }}</span>
+    @endif
+</div>
+
 <div class="form-group">
     {!! Form::label('title', __('posts.attributes.title')) !!}<span style="color:red"> * </span>
     {!! Form::text('title', null, ['class' => 'form-control' . ($errors->has('title') ? ' is-invalid' : ''), 'required']) !!}

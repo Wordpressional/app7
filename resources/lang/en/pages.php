@@ -21,6 +21,7 @@ return [
   'link' => "Link",
   
   'attributes' => [
+    'slugp' => 'Slug',
     'title' => 'Title',
     'content' => 'Content',
     'excerpt' => 'Excerpt',

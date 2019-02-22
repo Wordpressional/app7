@@ -128,16 +128,47 @@ EOF;
     {
         $this->validate($request,[
 
-                'name' => 'required'
+                'mailfname' => 'required|unique:mailconfs',
+                'authu' => 'required',
+                'authp' => 'required',
+                'frome' => 'required',
+                'toe' => 'required',
+                'texte' => 'required',
+                'sube' => 'required',
+                'wele' => 'required',
 
 
         ]);
 
         $mailconf = new Mailconf();
-        $mailconf->name = $request->name;
+        $mailconf->mailfname = $request->mailfname;
+        $mailconf->authu = $request->authu;
+        $mailconf->authp = $request->authp;
+        $mailconf->frome = $request->frome;
+        $mailconf->toe = $request->toe;
+        $mailconf->texte = $request->texte;
+        $mailconf->sube = $request->sube;
+        $mailconf->wele = $request->wele;
+
         $mailconf->save();
-        Session::flash('success', 'You succesfully created a category.');
-        return redirect()->back();
+
+        $filedata = <<<EOF
+authu='$request->authu'&authp='$request->authp'&frome='$request->frome'&toe='$request->toe'&texte='$request->texte'&sube='$request->sube'&wele='$request->wele'
+EOF;
+
+
+    
+        $fname = public_path('/mailconfs/').$request->mailfname;
+        //dd($zipf);
+        $outp = shell_exec('sudo cat /dev/null > '.$fname);
+    
+        $vpath = $fname; // path to your JSON file
+        $con = File::put($vpath, $filedata);
+        
+
+
+        Session::flash('success', 'You succesfully created a mail config file.');
+        return redirect()->route('admin.static.indexmailconfig');
 
 
     }
@@ -155,7 +186,16 @@ EOF;
         $mailconf = Mailconf::find($id);
        
     
-        return view('admin.mailconfigs.edit')->with(['category' => $category, 'data' => $data]);
+        return view('admin.mailconfigs.edit')->with(['mailconf' => $mailconf, 'data' => $data]);
+    }
+
+    public function viewmailconfig($id)
+    {
+        $data = $this->brandsAll();
+        $mailconf = Mailconf::find($id);
+        $fname = public_path('/mailconfs/').$mailconf->mailfname;
+        $content = File::get($fname);
+        return view('admin.mailconfigs.viewm')->with(['mailconf' => $mailconf, 'data' => $data, 'content' => $content]);
     }
 
     /**
@@ -167,11 +207,51 @@ EOF;
      */
     public function updatemailconfig(Request $request, $id)
     {
-        $mailconf = Mailconf::find($id);
-        $mailconf->name = $request->name;
+        
+
+        $this->validate($request,[
+
+                'mailfname' => 'required',
+                'authu' => 'required',
+                'authp' => 'required',
+                'frome' => 'required',
+                'toe' => 'required',
+                'texte' => 'required',
+                'sube' => 'required',
+                'wele' => 'required',
+
+
+        ]);
+
+       $mailconf = Mailconf::find($id);
+        $mailconf->mailfname = $request->mailfname;
+        $mailconf->authu = $request->authu;
+        $mailconf->authp = $request->authp;
+        $mailconf->frome = $request->frome;
+        $mailconf->toe = $request->toe;
+        $mailconf->texte = $request->texte;
+        $mailconf->sube = $request->sube;
+        $mailconf->wele = $request->wele;
+
         $mailconf->save();
-        Session::flash('success', 'You succesfully updated a Mail Configuration File.');
-        return redirect()->route('admin.static.mailconfigs');
+
+        $filedata = <<<EOF
+authu='$request->authu'&authp='$request->authp'&frome='$request->frome'&toe='$request->toe'&texte='$request->texte'&sube='$request->sube'&wele='$request->wele'
+EOF;
+
+
+    
+        $fname = public_path('/mailconfs/').$request->mailfname;
+        //dd($zipf);
+        $outp = shell_exec('sudo cat /dev/null > '.$fname);
+    
+        $vpath = $fname; // path to your JSON file
+        $con = File::put($vpath, $filedata);
+        
+
+
+        Session::flash('success', 'You succesfully updated a mail config file.');
+        return redirect()->back();
     }
 
     /**
@@ -192,7 +272,9 @@ EOF;
             
           }
 
-        
+        $fname = public_path('/mailconfs/').$mailconf->mailfname;  
+        $outp = shell_exec('sudo rm -rf '.$fname);
+
       Session::flash('success', 'You succesfully deleted a Mail Configuration File.');
         return redirect()->back();
     }
