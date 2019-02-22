@@ -162,7 +162,7 @@ class WebhomeController extends Controller
         
         $conread = File::get($mpath);
 
-        Session::flash('success', 'You succesfully updated a mail config file.');
+        
         return $conread;
         
         } 
