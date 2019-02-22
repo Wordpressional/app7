@@ -145,10 +145,10 @@
 
 if( "{{$cform->cstatus}}"  == "Table_Created")
 {
-    var trash = document.getElementById('trash');
-    trash.onclick = function(){
-    formBuilder.actions.clearFields();
-  };
+    //var trash = document.getElementById('trash');
+    //trash.onclick = function(){
+    //formBuilder.actions.clearFields();
+  //};
 }
 
 });
