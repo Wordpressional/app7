@@ -19,6 +19,10 @@
  @include('layouts.compscripts.contactcustformscript')
  <script>
  $( document ).ready(function() {
+
+  $("#mycElement").click(function() {
+        your_ajax_function(); 
+   });
   //alert("hi");
 $('#testmail').click(function(){
 

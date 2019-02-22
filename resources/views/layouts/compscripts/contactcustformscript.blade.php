@@ -87,7 +87,7 @@ for(i=0; i<file_data.length; i++)
             });
 
      console.log(data);
-        alert(data);
+        //alert(data);
    
             $.ajax({
             
@@ -166,7 +166,7 @@ upload = function(img, filename)
     if(file_data){
     var fileName = file_data.name;
     var fileSize = file_data.size;
-    alert("Uploading: "+fileName+" @ "+fileSize+"bytes");
+    //alert("Uploading: "+fileName+" @ "+fileSize+"bytes");
     }
     var table_name = $('.table_name').val();
 
@@ -244,7 +244,7 @@ console.log("json",json);
 
             },
              error: function (jqXHR, textStatus, errorThrown) {
-              alert("hi++++++");
+              //alert("hi++++++");
                   if (jqXHR.status == 500) {
                       alert('Internal error: ' + jqXHR.responseText);
                   } else {
