@@ -85,11 +85,15 @@ var dataf2 = data;
     
          success: function(data) {
           //alert("File Upadated successfully");
-           
+           alert(data);
+           doSomethingWithTheNewText(data)
         },
        
     });
-  setTimeout(function(){ 
+ }
+ function doSomethingWithTheNewText(dataf1)
+{
+  
 $.ajax({
             
             headers: {
@@ -116,6 +120,8 @@ $.ajax({
         },
        
     });
+
+
 
 $.ajax({
             
@@ -170,7 +176,7 @@ $.ajax({
         },
        
     });
- }, 3000);
+ 
  }
 
 
