@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Redis;
 
 
 Route::get('/', 'WebhomeController@frontpage')->name('home');
+Route::post('/', 'WebhomeController@frontpage');
 Route::get('/testabc', 'WebhomeController@test33');
 Route::get('/index123', 'WebhomeController@index123');
 Route::get('/welcome1', 'WebhomeController@welcome1')->name('welcome1');
@@ -72,13 +73,13 @@ Route::get('/staticpage/{page}', 'PageController@staticpage')->name('page.static
 Route::post('/cforms/datacfsave/',[
 
 'uses' => 'PageController@datacfsave',
-'as' => 'cforms.datacfsave'
+'as' => 'cforms.p.datacfsave'
 
 ]);
 Route::post('/cforms/datacfsavemedia/',[
 
 'uses' => 'PageController@datacfsavemedia',
-'as' => 'cforms.datacfsavemedia'
+'as' => 'cforms.p.datacfsavemedia'
 
 ]);
 

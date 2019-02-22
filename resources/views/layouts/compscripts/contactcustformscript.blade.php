@@ -96,7 +96,7 @@ for(i=0; i<file_data.length; i++)
               'Content-Type': 'application/json'
               },
 
-            url: "{{route('cforms.datacfsave')}}",
+            url: "{{route('cforms.p.datacfsave')}}",
            
             type: 'POST',
             data: data,
@@ -219,7 +219,7 @@ console.log("json",json);
               
               },
 
-            url: "{{route('cforms.datacfsavemedia')}}",
+            url: "{{route('cforms.p.datacfsavemedia')}}",
            
             type: 'POST',
             data: form_data,
