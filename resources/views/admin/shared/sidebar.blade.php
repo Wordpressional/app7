@@ -146,6 +146,14 @@
                         <span class="nav-link-text">Tables Management</span>
                     </a>
                 </li>
+
+            <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Mail Configuration">
+                <a class="nav-link {{ Request::is('admin/static/indexmailconfig') || Request::is('admin/static/*') ? 'active' : '' }}" href="{{ route('admin.mailconfig.indexmailconfig') }}">
+                <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                <span class="nav-link-text">Mail Configuration</span>
+                </a>
+            </li>
+
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Rename Shortcodes">
                     <a class="nav-link {{ Request::is('admin/stables') || Request::is('admin/stables/*') ? 'active' : '' }}" href="{{ route('admin.forms.smanagement') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
