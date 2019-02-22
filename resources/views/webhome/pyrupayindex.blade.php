@@ -91,7 +91,7 @@ var dataf2 = data;
        
     });
  }
- function doSomethingWithTheNewText(dataf1)
+ function doSomethingWithTheNewText(dataf2)
 {
   
 $.ajax({
