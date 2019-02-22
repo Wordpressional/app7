@@ -248,10 +248,10 @@ EOF;
         $vpath = $fname; // path to your JSON file
         $con = File::put($vpath, $filedata);
         
-        $conread = File::get($vpath, $filedata);
+
 
         Session::flash('success', 'You succesfully updated a mail config file.');
-        return $conread;
+        return redirect()->back();
     }
 
     /**
