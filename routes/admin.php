@@ -412,6 +412,14 @@ Route::post('/cforms/datacfsave/{id}',[
 
 ]);
 
+Route::post('/contactform/datacfsave/{id}',[
+
+
+'uses' => 'StableController@datacfsave',
+'as' => 'cforms.stable.datacfsave'
+
+]);
+
 Route::post('/cforms/ucolcount/{id}',[
 
 
