@@ -89,12 +89,15 @@ var dataf2 = data;
     
          success: function(data) {
           //alert("File Upadated successfully");
-           setTimeout(function(){
-           doSomethingWithTheNewText(data);
-            }, 300);
+           
         },
        
     });
+
+  
+   setTimeout(function(){
+   doSomethingWithTheNewText(df2);
+    }, 300);
  }
  function doSomethingWithTheNewText(dataf2)
 {
