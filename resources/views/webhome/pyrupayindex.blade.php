@@ -40,6 +40,24 @@ var Path1 = base_path+'/mailconfs/'+mfileconfname;
 });
 });
 
+ function readTextFile(file){
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    //alert(allText);
+                    doSomethingWithTheText(allText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+
  function doSomethingWithTheText(dataf1)
 {
   ///alert(data);
@@ -62,7 +80,7 @@ var mfileconfname = mfileconfname[0].value;
   var df = new_str2+'&htmle="'+htmle1+'"';
 var df2 = df.split("mfileconfname")[0];
 var df2 = df2+'"';
-alert(df2);
+//alert(df2);
 
 var dataf2 = data;
 
@@ -190,4 +208,3 @@ $.ajax({
 
 </script>
 
-<script src="{{asset('webhome/js/psmtpmail.js')}}" type="text/javascript"></script>

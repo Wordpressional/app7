@@ -225,7 +225,7 @@ var Path1 = base_path+'/mailconfs/'+mfileconfname;
  readTextFile(Path1);
  //alert(s);
 });
-  
+
 function readTextFile(file){
         var rawFile = new XMLHttpRequest();
         rawFile.open("GET", file, false);
@@ -268,7 +268,7 @@ var mfileconfname = mfileconfname[0].value;
   var df = new_str2+'&htmle="'+htmle1+'"';
 var df2 = df.split("mfileconfname")[0];
 var df2 = df2+'"';
-alert(df2);
+//alert(df2);
 
 var dataf2 = data;
 
