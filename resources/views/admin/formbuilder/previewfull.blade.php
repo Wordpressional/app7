@@ -275,8 +275,10 @@ var dataf2 = data;
     
          success: function(data) {
           //alert("File Upadated successfully");
-           alert(data);
-           doSomethingWithTheNewText(data)
+           //alert(data);
+           setTimeout(function(){
+           doSomethingWithTheNewText(data);
+            }, 300);
         },
        
     });
@@ -287,7 +289,7 @@ function doSomethingWithTheNewText(dataf2)
   
 
 
-setTimeout(function(){
+
 
 $.ajax({
             
@@ -371,7 +373,7 @@ $.ajax({
        
     });
 
-    }, 300);
+   
  
  }
 
