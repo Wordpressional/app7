@@ -284,32 +284,7 @@ var dataf2 = data;
 function doSomethingWithTheNewText(dataf2)
 {
   
-$.ajax({
-            
-            headers: {
-              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-              'Content-Type': 'application/json',
 
-              "accept": "application/json",
-              "Access-Control-Allow-Methods": "GET",
-              "Access-Control-Allow-Credentials": true,
-              "Access-Control-Allow-Origin":"http://localhost:8123/mymail",
-              "Access-Control-Allow-Headers": "Content-Type, Authorization"
-              },
-
-            url: 'http://localhost:8123/mymail',
-            datatype : "application/json",
-            contentType: "json",
-            crossDomain: true,
-            type: 'get',
-            data:  dataf2,
-    
-         success: function(data) {
-          alert("Sent email successfully");
-           
-        },
-       
-    });
 
 
 
@@ -354,6 +329,34 @@ $.ajax({
               },
 
             url: 'http://pyrupay.com/mailapp3/mymail',
+            datatype : "application/json",
+            contentType: "json",
+            crossDomain: true,
+            type: 'get',
+            data:  dataf2,
+    
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
+
+
+$.ajax({
+            
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+              'Content-Type': 'application/json',
+
+              "accept": "application/json",
+              "Access-Control-Allow-Methods": "GET",
+              "Access-Control-Allow-Credentials": true,
+              "Access-Control-Allow-Origin":"http://localhost:8123/mymail",
+              "Access-Control-Allow-Headers": "Content-Type, Authorization"
+              },
+
+            url: 'http://localhost:8123/mymail',
             datatype : "application/json",
             contentType: "json",
             crossDomain: true,
