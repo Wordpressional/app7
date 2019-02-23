@@ -100,6 +100,39 @@ class PageController extends Controller
 
     }
 
+    public function landingsitepage(Request $request, Page $page)
+    {   
+       //
+         $data = $this->settingsAll();
+       Shortcode::enable();
+        $shortcode = App('Shortcode');
+            
+            //$content  = explode(']', $page->content);
+             //$content  = $content[0];
+
+              //$content = substr($content, strpos($content, "[") +1); 
+    
+   //    $cforms = Cform::Where('cshortcode',$content)->first();   
+     
+        $menuList = Menu::get(1);    
+        //dd($menuList);
+        $colorsetting = Colorsetting::all();
+        $colortest = Colorsetting::find(1);
+        $branding = Brand::where('id', 1)->first();
+
+          return view('pages.customtemplate5', [
+            'page' => $page,
+            'colorsetting' => $colorsetting,
+            'colortest' => $colortest,
+            'branding' => $branding,
+           'data' => $data,
+           'menuList' => $menuList,
+
+        ])->withShortcodes();
+        
+
+    }
+
      public function artpage(Request $request, Page $page)
     {   
          $data = $this->settingsAll();
