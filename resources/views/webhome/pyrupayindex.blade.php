@@ -89,8 +89,9 @@ var dataf2 = data;
     
          success: function(data) {
           //alert("File Upadated successfully");
-           alert(data);
-           doSomethingWithTheNewText(data)
+           setTimeout(function(){
+           doSomethingWithTheNewText(data);
+            }, 300);
         },
        
     });
