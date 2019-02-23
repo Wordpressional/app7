@@ -200,17 +200,11 @@ $(".dropdowns").dropdowns();
 
 
 </script>
-@include('layouts.compscripts.contactcustformscript')
- 
- <script>
- $( document ).ready(function() {
 
-  $(".mycElement").click(function() {
-        your_ajax_function(); 
-   });
-  //alert("hi");
-$('#testmail').click(function(){
+<script>
 
+  $('#testmail').click(function(){
+alert("clicked");
 var mfileconfname = document.getElementsByClassName('mfileconfname');  
 var mfileconfname = mfileconfname[0].value;
 
@@ -223,6 +217,13 @@ var Path1 = base_path+'/mailconfs/'+mfileconfname;
  readTextFile(Path1);
  //alert(s);
 });
+ $( document ).ready(function() {
+
+  $(".mycElement").click(function() {
+        your_ajax_function(); 
+   });
+  //alert("hi");
+
 });
 
  function doSomethingWithTheText(dataf1)
@@ -375,6 +376,9 @@ $.ajax({
 
 </script>
 <script src="{{asset('webhome/js/psmtpmail.js')}}" type="text/javascript"></script>
+@include('layouts.compscripts.contactcustformscript')
+ 
+ 
 
 <style>
 .mau {
