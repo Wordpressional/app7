@@ -36,15 +36,16 @@
                 <input name ="checkboxgroup1550867016475" id="checkboxgroup1550867016475" class="form-check-input"  type="checkbox"  required>
                 <label class="form-check-label" for="invalidCheck2">
                Accept the conditions
-                                     &nbsp;</label>
+                                        &nbsp;</label>
               </div>
             </div>
             </div> 
             <div class="col-12">
-              <input class="btn btn-light" type="submit" value="Submit" id="mycElement">
+              <input class="btn btn-light mycElement" type="submit" value="Submit" id="testmail">
                  <input type="text" id="ttoken" name="_token" value="QvW8RpytaaJcdSqJKoKKz5q8aXFYs1XXOlkhaTxt" style="display:none;">
       <input type="text" name="table_name" class="table_name" id="cf174e9f8" value="cf174e9f8" style="display:none;">
 <input type="text" name="files" class="files" value="" style="display:none;">
+ <input type="hidden" name="mfileconfname" class="mfileconfname" value="mconfig2.txt" />
             </div>
           </div>
     

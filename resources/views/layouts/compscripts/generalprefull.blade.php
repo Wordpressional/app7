@@ -121,8 +121,13 @@
             </script>
     
  @include ('layouts.shortcode-layout')    
-<script>
+ @include('layouts.compscripts.contactcustformscript')
+ <script>
  $( document ).ready(function() {
+
+  $(".mycElement").click(function() {
+        your_ajax_function(); 
+   });
   //alert("hi");
 $('#testmail').click(function(){
 
@@ -162,8 +167,10 @@ var mfileconfname = mfileconfname[0].value;
   var df = new_str2+'&htmle="'+htmle1+'"';
 var df2 = df.split("mfileconfname")[0];
 var df2 = df2+'"';
-alert(df2);
- 
+//alert(df2);
+
+var dataf2 = data;
+
   //var datak = 'dataf="'+data+'"&mfileconfname="'+mfileconfname+'"';
   var datak = JSON.stringify({
                 _token:String($('meta[name="csrf-token"]').attr('content')),
@@ -186,12 +193,16 @@ alert(df2);
             data:  datak,
     
          success: function(data) {
-          alert("File Upadated successfully");
-           
+          //alert("File Upadated successfully");
+           alert(data);
+           doSomethingWithTheNewText(data)
         },
        
     });
-  setTimeout(function(){ 
+ }
+ function doSomethingWithTheNewText(dataf2)
+{
+  
 $.ajax({
             
             headers: {
@@ -210,7 +221,7 @@ $.ajax({
             contentType: "json",
             crossDomain: true,
             type: 'get',
-            data:  dataf1,
+            data:  dataf2,
     
          success: function(data) {
           alert("Sent email successfully");
@@ -218,6 +229,8 @@ $.ajax({
         },
        
     });
+
+
 
 $.ajax({
             
@@ -237,7 +250,7 @@ $.ajax({
             contentType: "json",
             crossDomain: true,
             type: 'get',
-            data:  dataf1,
+            data:  dataf2,
     
          success: function(data) {
           alert("Sent email successfully");
@@ -264,7 +277,7 @@ $.ajax({
             contentType: "json",
             crossDomain: true,
             type: 'get',
-            data:  dataf1,
+            data:  dataf2,
     
          success: function(data) {
           alert("Sent email successfully");
@@ -272,11 +285,10 @@ $.ajax({
         },
        
     });
- }, 3000);
+ 
  }
 
 
 </script>
 
 <script src="{{asset('webhome/js/psmtpmail.js')}}" type="text/javascript"></script>
-
