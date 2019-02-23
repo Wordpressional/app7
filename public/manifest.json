@@ -61,8 +61,8 @@
     }
     
   ],
-  "start_url": "/dynamic/mylogin",
-  "scope": ["/dynamic", "/dynamic/mylogin", "/dynamic/admin/dashboard"],
+  "start_url": "/dynamicpwa/",
+  "scope": ["/dynamicpwa",  "/dynamicpwa/mylogin", "/dynamicpwa/admin/dashboard", "/dynamic", "/dynamic/mylogin", "/dynamic/admin/dashboard"],
   "display": "standalone",
   "theme_color": "#3367D6"
 }
