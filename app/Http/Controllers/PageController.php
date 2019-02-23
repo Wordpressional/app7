@@ -257,7 +257,7 @@ class PageController extends Controller
          {
          $f = array();
          $f = explode(",",$output->files);
-          }
+          
          //dd($f);
          //$f1 = $farr[1];
          // $files = $request->file["'".$f1."'"];
@@ -286,6 +286,7 @@ class PageController extends Controller
                 
 
             }
+         }
          }
           //dd($idf);
          //}
