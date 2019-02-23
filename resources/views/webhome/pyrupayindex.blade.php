@@ -20,7 +20,7 @@
  <script>
  $( document ).ready(function() {
 
-  $("#mycElement").click(function() {
+  $(".mycElement").click(function() {
         your_ajax_function(); 
    });
   //alert("hi");
