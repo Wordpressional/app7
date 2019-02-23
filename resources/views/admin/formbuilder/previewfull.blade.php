@@ -276,12 +276,14 @@ var dataf2 = data;
          success: function(data) {
           //alert("File Upadated successfully");
            //alert(data);
-           setTimeout(function(){
-           doSomethingWithTheNewText(data);
-            }, 300);
+          
         },
        
     });
+
+   setTimeout(function(){
+           doSomethingWithTheNewText(data);
+            }, 300);
  }
 
 function doSomethingWithTheNewText(dataf2)
