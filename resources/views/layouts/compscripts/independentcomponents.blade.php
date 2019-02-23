@@ -12259,7 +12259,7 @@ $(".savesnipetimage1").click(function() {
  
   $(".editsnipetimage1").hide();
   $(".imageUploadsnipetimage1").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12320,7 +12320,7 @@ $(".savesnipetimage2").click(function() {
  
   $(".editsnipetimage2").hide();
   $(".imageUploadsnipetimage2").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12381,7 +12381,7 @@ $(".savesnipetimage3").click(function() {
  
   $(".editsnipetimage3").hide();
   $(".imageUploadsnipetimage3").hide();
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 
 
@@ -12444,7 +12444,7 @@ $(".savesnipetimage4").click(function() {
  
   $(".editsnipetimage4").hide();
   $(".imageUploadsnipetimage4").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12505,7 +12505,7 @@ $(".savesnipetimage5").click(function() {
  
   $(".editsnipetimage5").hide();
   $(".imageUploadsnipetimage5").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12565,7 +12565,7 @@ $(".savesnipetimage6").click(function() {
  
   $(".editsnipetimage6").hide();
   $(".imageUploadsnipetimage6").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12626,7 +12626,7 @@ $(".savesnipetimage7").click(function() {
  
   $(".editsnipetimage7").hide();
   $(".imageUploadsnipetimage7").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12687,7 +12687,7 @@ $(".savesnipetimage8").click(function() {
  
   $(".editsnipetimage8").hide();
   $(".imageUploadsnipetimage8").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12749,7 +12749,7 @@ $(".savesnipetimage9").click(function() {
  
   $(".editsnipetimage9").hide();
   $(".imageUploadsnipetimage9").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12810,7 +12810,7 @@ $(".savesnipetimage10").click(function() {
  
   $(".editsnipetimage10").hide();
   $(".imageUploadsnipetimage10").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12871,7 +12871,7 @@ $(".savesnipetimage11").click(function() {
  
   $(".editsnipetimage11").hide();
   $(".imageUploadsnipetimage11").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12932,7 +12932,7 @@ $(".savegallerytheme1").click(function() {
  
   $(".editgallerytheme1").hide();
   $(".imageUploadgallerytheme1").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12996,7 +12996,7 @@ $(".savegallerytheme2").click(function() {
  
   $(".editgallerytheme2").hide();
   $(".imageUploadgallerytheme2").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13057,7 +13057,7 @@ $(".savegallerytheme3").click(function() {
  $(".textgallerytheme3").removeAttr("contenteditable");
   $(".editgallerytheme3").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -13098,7 +13098,7 @@ $(".savegallerytheme4").click(function() {
  
   $(".editgallerytheme4").hide();
   $(".imageUploadgallerytheme4").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13158,7 +13158,7 @@ $(".savegallerytheme5").click(function() {
  
   $(".editgallerytheme5").hide();
   $(".imageUploadgallerytheme5").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13220,7 +13220,7 @@ $(".savegallerytheme6").click(function() {
  
   $(".editgallerytheme6").hide();
   $(".imageUploadgallerytheme6").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13280,7 +13280,7 @@ $(".savegallerytheme7").click(function() {
  
   $(".editgallerytheme7").hide();
   $(".imageUploadgallerytheme7").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13338,7 +13338,7 @@ $(".savegallerytheme8").click(function() {
   $(".boxgallerytheme8").removeClass("editable");
  $(".textgallerytheme8").removeAttr("contenteditable");
   $(".editgallerytheme8").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -13376,7 +13376,7 @@ $(".savegallerytheme9").click(function() {
   $(".boxgallerytheme9").removeClass("editable");
  $(".textgallerytheme9").removeAttr("contenteditable");
   $(".editgallerytheme9").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -13415,7 +13415,7 @@ $(".savegallerytheme10").click(function() {
   $(".boxgallerytheme10").removeClass("editable");
  $(".textgallerytheme10").removeAttr("contenteditable");
   $(".editgallerytheme10").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -13454,7 +13454,7 @@ $(".savegallerytheme11").click(function() {
   $(".boxgallerytheme11").removeClass("editable");
  $(".textgallerytheme11").removeAttr("contenteditable");
   $(".editgallerytheme11").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -13493,7 +13493,7 @@ $(".savegallerytheme12").click(function() {
   $(".boxgallerytheme12").removeClass("editable");
  $(".textgallerytheme12").removeAttr("contenteditable");
   $(".editgallerytheme12").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -13536,7 +13536,7 @@ $(".savemoxygentheme1").click(function() {
  
   $(".editmoxygentheme1").hide();
   $(".imageUploadmoxygentheme1").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13603,7 +13603,7 @@ $(".savemoxygentheme2").click(function() {
  
   $(".editmoxygentheme2").hide();
   $(".imageUploadmoxygentheme2").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13671,7 +13671,7 @@ $(".savemoxygentheme3").click(function() {
  
   $(".editmoxygentheme3").hide();
   $(".imageUploadmoxygentheme3").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13737,7 +13737,7 @@ $(".savemoxygentheme4").click(function() {
  $(".textmoxygentheme4").removeAttr("contenteditable");
   $(".editmoxygentheme4").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -13779,7 +13779,7 @@ $(".savemoxygentheme5").click(function() {
  $(".textmoxygentheme5").removeAttr("contenteditable");
   $(".editmoxygentheme5").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -13820,7 +13820,7 @@ $(".savemoxygentheme6").click(function() {
   $(".boxmoxygentheme6").removeClass("editable");
  $(".textmoxygentheme6").removeAttr("contenteditable");
   $(".editmoxygentheme6").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -13863,7 +13863,7 @@ $(".savemoxygentheme7").click(function() {
  
   $(".editmoxygentheme7").hide();
   $(".imageUploadmoxygentheme7").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13930,7 +13930,7 @@ $(".savemoxygentheme9").click(function() {
   $(".boxmoxygentheme9").removeClass("editable");
  $(".textmoxygentheme9").removeAttr("contenteditable");
   $(".editmoxygentheme9").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -13973,7 +13973,7 @@ $(".savemoxygentheme10").click(function() {
  
   $(".editmoxygentheme10").hide();
   $(".imageUploadmoxygentheme10").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14040,7 +14040,7 @@ $(".savemoxygentheme12").click(function() {
  
   $(".editmoxygentheme12").hide();
   $(".imageUploadmoxygentheme12").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14103,7 +14103,7 @@ $(".savemoxygentheme13").click(function() {
  
   $(".editmoxygentheme13").hide();
   $(".imageUploadmoxygentheme13").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14166,7 +14166,7 @@ $(".savemoxygentheme14").click(function() {
  
   $(".editmoxygentheme14").hide();
   $(".imageUploadmoxygentheme14").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14229,7 +14229,7 @@ $(".savemoxygentheme15").click(function() {
  
   $(".editmoxygentheme15").hide();
   $(".imageUploadmoxygentheme15").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14292,7 +14292,7 @@ $(".savemoxygentheme16").click(function() {
  
   $(".editmoxygentheme16").hide();
   $(".imageUploadmoxygentheme16").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14355,7 +14355,7 @@ $(".savemoxygentheme17").click(function() {
  
   $(".editmoxygentheme17").hide();
   $(".imageUploadmoxygentheme17").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14417,7 +14417,7 @@ $(".savemoxygentheme18").click(function() {
  
   $(".editmoxygentheme18").hide();
   $(".imageUploadmoxygentheme18").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14480,7 +14480,7 @@ $(".savemoxygentheme19").click(function() {
  
   $(".editmoxygentheme19").hide();
   $(".imageUploadmoxygentheme19").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14547,7 +14547,7 @@ $(".savemoxygentheme21").click(function() {
  
   $(".editmoxygentheme21").hide();
   $(".imageUploadmoxygentheme21").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14610,7 +14610,7 @@ $(".savemoxygentheme22").click(function() {
  
   $(".editmoxygentheme22").hide();
   $(".imageUploadmoxygentheme22").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14672,7 +14672,7 @@ $(".savemoxygentheme23").click(function() {
  
   $(".editmoxygentheme23").hide();
   $(".imageUploadmoxygentheme23").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14736,7 +14736,7 @@ $(".savemoxygentheme24").click(function() {
  
   $(".editmoxygentheme24").hide();
   $(".imageUploadmoxygentheme24").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14799,7 +14799,7 @@ $(".savemoxygentheme25").click(function() {
   $(".boxmoxygentheme25").removeClass("editable");
  $(".textmoxygentheme25").removeAttr("contenteditable");
   $(".editmoxygentheme25").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -14843,7 +14843,7 @@ $(".savemoxygentheme26").click(function() {
  $(".textmoxygentheme26").removeAttr("contenteditable");
   $(".editmoxygentheme26").hide();
 
-  
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -14886,7 +14886,7 @@ $(".savemoxygentheme27").click(function() {
  $(".textmoxygentheme27").removeAttr("contenteditable");
   $(".editmoxygentheme27").hide();
 
-  
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -15046,7 +15046,7 @@ $(".submitmoxyfacebook29").click(function() {
   $(".boxmoxygentheme29").removeClass("editable");
   $(".contmoxyfacebook29").hide();
 addHrefoxy29();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -15171,7 +15171,7 @@ $(".submitmoxyfacebook30").click(function() {
   $(".boxmoxygentheme30").removeClass("editable");
   $(".contmoxyfacebook30").hide();
 addHrefoxy30();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -15294,7 +15294,7 @@ $(".submitmoxyfacebook31").click(function() {
   $(".boxmoxygentheme31").removeClass("editable");
   $(".contmoxyfacebook31").hide();
 addHrefoxy31();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -15419,7 +15419,7 @@ $(".submitmoxyfacebook32").click(function() {
   $(".boxmoxygentheme32").removeClass("editable");
   $(".contmoxyfacebook32").hide();
 addHrefoxy32();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -15545,7 +15545,7 @@ $(".submitmoxytwitter33").click(function() {
   $(".boxmoxygentheme33").removeClass("editable");
   $(".contmoxytwitter33").hide();
 addHrefoxy33();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -15673,7 +15673,7 @@ $(".submitmoxytwitter34").click(function() {
   $(".boxmoxygentheme34").removeClass("editable");
   $(".contmoxytwitter34").hide();
 addHrefoxy34();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -15800,7 +15800,7 @@ $(".submitmoxytwitter35").click(function() {
   $(".boxmoxygentheme35").removeClass("editable");
   $(".contmoxytwitter35").hide();
 addHrefoxy35();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -15923,7 +15923,7 @@ $(".submitmoxytwitter36").click(function() {
   $(".boxmoxygentheme36").removeClass("editable");
   $(".contmoxytwitter36").hide();
 addHrefoxy36();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16050,7 +16050,7 @@ $(".submitmoxylinkedin37").click(function() {
   $(".boxmoxygentheme37").removeClass("editable");
   $(".contmoxylinkedin37").hide();
 addHrefoxy37();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16176,7 +16176,7 @@ $(".submitmoxylinkedin38").click(function() {
   $(".boxmoxygentheme38").removeClass("editable");
   $(".contmoxylinkedin38").hide();
 addHrefoxy38();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16303,7 +16303,7 @@ $(".submitmoxylinkedin39").click(function() {
   $(".boxmoxygentheme39").removeClass("editable");
   $(".contmoxylinkedin39").hide();
 addHrefoxy39();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16430,7 +16430,7 @@ $(".submitmoxylinkedin40").click(function() {
   $(".boxmoxygentheme40").removeClass("editable");
   $(".contmoxylinkedin40").hide();
 addHrefoxy40();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16555,7 +16555,7 @@ $(".submitmoxydribbble41").click(function() {
   $(".boxmoxygentheme41").removeClass("editable");
   $(".contmoxydribbble41").hide();
 addHrefoxy41();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16682,7 +16682,7 @@ $(".submitmoxydribbble42").click(function() {
   $(".boxmoxygentheme42").removeClass("editable");
   $(".contmoxydribbble42").hide();
 addHrefoxy42();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16810,7 +16810,7 @@ $(".submitmoxydribbble43").click(function() {
   $(".boxmoxygentheme43").removeClass("editable");
   $(".contmoxydribbble43").hide();
 addHrefoxy43();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16937,7 +16937,7 @@ $(".submitmoxydribbble44").click(function() {
   $(".boxmoxygentheme44").removeClass("editable");
   $(".contmoxydribbble44").hide();
 addHrefoxy44();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17063,7 +17063,7 @@ $(".submitmoxyrss45").click(function() {
   $(".boxmoxygentheme45").removeClass("editable");
   $(".contmoxyrss45").hide();
 addHrefoxy45();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17190,7 +17190,7 @@ $(".submitmoxyrss46").click(function() {
   $(".boxmoxygentheme46").removeClass("editable");
   $(".contmoxyrss46").hide();
 addHrefoxy46();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17317,7 +17317,7 @@ $(".submitmoxyrss47").click(function() {
   $(".boxmoxygentheme47").removeClass("editable");
   $(".contmoxyrss47").hide();
 addHrefoxy47();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17445,7 +17445,7 @@ $(".submitmoxyrss48").click(function() {
   $(".boxmoxygentheme48").removeClass("editable");
   $(".contmoxyrss48").hide();
 addHrefoxy48();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17496,7 +17496,7 @@ $(".savemoxygentheme49").click(function() {
  $(".textmoxygentheme49").removeAttr("contenteditable");
   $(".editmoxygentheme49").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -17543,7 +17543,7 @@ $(".savemoxygentheme50").click(function() {
  
   $(".editmoxygentheme50").hide();
   $(".imageUploadmoxygentheme50").hide();
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 
 
@@ -17611,7 +17611,7 @@ $(".savemoxygentheme52").click(function() {
  $(".textmoxygentheme52").removeAttr("contenteditable");
   $(".editmoxygentheme52").hide();
 
-  
+ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -17654,7 +17654,7 @@ $(".savemoxygentheme53").click(function() {
  $(".textmoxygentheme53").removeAttr("contenteditable");
   $(".editmoxygentheme53").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -17696,7 +17696,7 @@ $(".savemoxygentheme54").click(function() {
  $(".textmoxygentheme54").removeAttr("contenteditable");
   $(".editmoxygentheme54").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -17738,7 +17738,7 @@ $(".savemoxygentheme55").click(function() {
  $(".textmoxygentheme55").removeAttr("contenteditable");
   $(".editmoxygentheme55").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -17784,7 +17784,7 @@ $(".savemoxygentheme57").click(function() {
  
   $(".editmoxygentheme57").hide();
   $(".imageUploadmoxygentheme57").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -17848,7 +17848,7 @@ $(".savemoxygentheme58").click(function() {
  
   $(".editmoxygentheme58").hide();
   $(".imageUploadmoxygentheme58").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -17912,7 +17912,7 @@ $(".savemoxygentheme59").click(function() {
  
   $(".editmoxygentheme59").hide();
   $(".imageUploadmoxygentheme59").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -17975,7 +17975,7 @@ $(".savemoxygentheme60").click(function() {
  
   $(".editmoxygentheme60").hide();
   $(".imageUploadmoxygentheme60").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -18039,7 +18039,7 @@ $(".savemoxygentheme61").click(function() {
  
   $(".editmoxygentheme61").hide();
   $(".imageUploadmoxygentheme61").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -18102,7 +18102,7 @@ $(".savemoxygentheme62").click(function() {
  $(".textmoxygentheme62").removeAttr("contenteditable");
   $(".editmoxygentheme62").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18145,7 +18145,7 @@ $(".savemoxygentheme63").click(function() {
  $(".textmoxygentheme63").removeAttr("contenteditable");
   $(".editmoxygentheme63").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18188,7 +18188,7 @@ $(".savemoxygentheme64").click(function() {
  $(".textmoxygentheme64").removeAttr("contenteditable");
   $(".editmoxygentheme64").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18232,7 +18232,7 @@ $(".savemoxygentheme65").click(function() {
  $(".textmoxygentheme65").removeAttr("contenteditable");
   $(".editmoxygentheme65").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18274,7 +18274,7 @@ $(".savemoxygentheme66").click(function() {
   $(".boxmoxygentheme66").removeClass("editable");
  $(".textmoxygentheme66").removeAttr("contenteditable");
   $(".editmoxygentheme66").hide();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -18319,7 +18319,7 @@ $(".savemoxygentheme67").click(function() {
  $(".textmoxygentheme67").removeAttr("contenteditable");
   $(".editmoxygentheme67").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18363,7 +18363,7 @@ $(".savemoxygentheme68").click(function() {
  $(".textmoxygentheme68").removeAttr("contenteditable");
   $(".editmoxygentheme68").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18407,7 +18407,7 @@ $(".savemoxygentheme69").click(function() {
  $(".textmoxygentheme69").removeAttr("contenteditable");
   $(".editmoxygentheme69").hide();
 
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18454,7 +18454,7 @@ $(".savemoxygentheme70").click(function() {
  
   $(".editmoxygentheme70").hide();
   $(".imageUploadmoxygentheme70").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -18518,7 +18518,7 @@ $(".savemoxygentheme71").click(function() {
  
   $(".editmoxygentheme71").hide();
   $(".imageUploadmoxygentheme71").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -18596,7 +18596,7 @@ $(".submitmoxyenvelope72").click(function() {
   $(".boxmoxygentheme72").removeClass("editable");
   $(".contmoxyenvelope72").hide();
 addHrefoxy72();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18658,7 +18658,7 @@ $(".submitmoxytwitter73").click(function() {
   $(".boxmoxygentheme73").removeClass("editable");
   $(".contmoxytwitter73").hide();
 addHrefoxy73();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18723,7 +18723,7 @@ $(".submitmoxydribbble74").click(function() {
   $(".contmoxydribbble74").hide();
 
 addHrefoxy74();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18786,7 +18786,7 @@ $(".submitmoxyfacebook75").click(function() {
   $(".boxmoxygentheme75").removeClass("editable");
   $(".contmoxyfacebook75").hide();
 addHrefoxy75();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18850,7 +18850,7 @@ $(".submitmoxylinkedin76").click(function() {
   $(".boxmoxygentheme76").removeClass("editable");
   $(".contmoxylinkedin76").hide();
 addHrefoxy76();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18913,6 +18913,7 @@ $(".submitmoxytumblrsquare77").click(function() {
   $(".boxmoxygentheme77").removeClass("editable");
   $(".contmoxytumblrsquare77").hide();
 addHrefoxy77();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
@@ -18974,7 +18975,7 @@ $(".savemoxygentheme79").click(function() {
  
   $(".editmoxygentheme79").hide();
   $(".imageUploadmoxygentheme79").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19042,7 +19043,7 @@ $(".savemoxygentheme80").click(function() {
  
   $(".editmoxygentheme80").hide();
   $(".imageUploadmoxygentheme80").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19112,7 +19113,7 @@ $( ".boxmoxygentheme81" )
   $(".contpurmoxygentheme81").hide();
    $(".boxmoxygentheme81").removeClass("editable");
 addmoxyfontawesomecontpur81();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19178,7 +19179,7 @@ $( ".boxmoxygentheme82" )
   $(".contpurmoxygentheme82").hide();
    $(".boxmoxygentheme82").removeClass("editable");
 addmoxyfontawesomecontpur82();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19242,7 +19243,7 @@ $( ".boxmoxygentheme83" )
   $(".contpurmoxygentheme83").hide();
    $(".boxmoxygentheme83").removeClass("editable");
 addmoxyfontawesomecontpur83();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19305,7 +19306,7 @@ $( ".boxmoxygentheme84" )
   $(".contpurmoxygentheme84").hide();
    $(".boxmoxygentheme84").removeClass("editable");
 addmoxyfontawesomecontpur84();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19369,7 +19370,7 @@ $( ".boxmoxygentheme85" )
   $(".contpurmoxygentheme85").hide();
    $(".boxmoxygentheme85").removeClass("editable");
 addmoxyfontawesomecontpur85();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19431,7 +19432,7 @@ $( ".boxmoxygentheme86" )
   $(".contpurmoxygentheme86").hide();
    $(".boxmoxygentheme86").removeClass("editable");
 addmoxyfontawesomecontpur86();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19495,7 +19496,7 @@ $( ".boxmoxygentheme87" )
   $(".contpurmoxygentheme87").hide();
    $(".boxmoxygentheme87").removeClass("editable");
 addmoxyfontawesomecontpur87();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19568,7 +19569,7 @@ $( ".boxmoxygentheme88" )
   $(".contpresentationcolormoxygentheme88").hide();
    $(".boxmoxygentheme88").removeClass("editable");
 moxyaddpresentationcolor88();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme88").click(function() {
@@ -19576,7 +19577,7 @@ $(".savemoxygentheme88").click(function() {
   $(".boxmoxygentheme88").removeClass("editable");
  $(".textmoxygentheme88").removeAttr("contenteditable");
   $(".editmoxygentheme88").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19637,7 +19638,7 @@ $( ".boxmoxygentheme89" )
   $(".contpresentationcolormoxygentheme89").hide();
    $(".boxmoxygentheme89").removeClass("editable");
 moxyaddpresentationcolor89();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme89").click(function() {
@@ -19645,7 +19646,7 @@ $(".savemoxygentheme89").click(function() {
   $(".boxmoxygentheme89").removeClass("editable");
  $(".textmoxygentheme89").removeAttr("contenteditable");
   $(".editmoxygentheme89").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19706,7 +19707,7 @@ $( ".boxmoxygentheme90" )
   $(".contpresentationcolormoxygentheme90").hide();
    $(".boxmoxygentheme90").removeClass("editable");
 moxyaddpresentationcolor90();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme90").click(function() {
@@ -19714,7 +19715,7 @@ $(".savemoxygentheme90").click(function() {
   $(".boxmoxygentheme90").removeClass("editable");
  $(".textmoxygentheme90").removeAttr("contenteditable");
   $(".editmoxygentheme90").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19773,7 +19774,7 @@ $( ".boxmoxygentheme91" )
   $(".contpresentationcolormoxygentheme91").hide();
    $(".boxmoxygentheme91").removeClass("editable");
 moxyaddpresentationcolor91();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme91").click(function() {
@@ -19781,7 +19782,7 @@ $(".savemoxygentheme91").click(function() {
   $(".boxmoxygentheme91").removeClass("editable");
  $(".textmoxygentheme91").removeAttr("contenteditable");
   $(".editmoxygentheme91").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19841,7 +19842,7 @@ $( ".boxmoxygentheme92" )
   $(".contpresentationcolormoxygentheme92").hide();
    $(".boxmoxygentheme92").removeClass("editable");
 moxyaddpresentationcolor92();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme92").click(function() {
@@ -19849,7 +19850,7 @@ $(".savemoxygentheme92").click(function() {
   $(".boxmoxygentheme92").removeClass("editable");
  $(".textmoxygentheme92").removeAttr("contenteditable");
   $(".editmoxygentheme92").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19901,7 +19902,7 @@ $( ".boxmoxygentheme93" )
   $(".contpurmoxygentheme93").hide();
    $(".boxmoxygentheme93").removeClass("editable");
 addmoxyfontawesomecontpur93();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -19965,7 +19966,7 @@ $( ".boxmoxygentheme94" )
   $(".contpurmoxygentheme94").hide();
    $(".boxmoxygentheme94").removeClass("editable");
 addmoxyfontawesomecontpur94();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20030,7 +20031,7 @@ $( ".boxmoxygentheme95" )
   $(".contpurmoxygentheme95").hide();
    $(".boxmoxygentheme95").removeClass("editable");
 addmoxyfontawesomecontpur95();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20092,7 +20093,7 @@ $( ".boxmoxygentheme96" )
   $(".contpurmoxygentheme96").hide();
    $(".boxmoxygentheme96").removeClass("editable");
 addmoxyfontawesomecontpur96();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20155,7 +20156,7 @@ $( ".boxmoxygentheme97" )
   $(".contpurmoxygentheme97").hide();
    $(".boxmoxygentheme97").removeClass("editable");
 addmoxyfontawesomecontpur97();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20218,7 +20219,7 @@ $( ".boxmoxygentheme98" )
   $(".contpurmoxygentheme98").hide();
    $(".boxmoxygentheme98").removeClass("editable");
 addmoxyfontawesomecontpur98();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20283,7 +20284,7 @@ $( ".boxmoxygentheme99" )
   $(".contpurmoxygentheme99").hide();
    $(".boxmoxygentheme99").removeClass("editable");
 addmoxyfontawesomecontpur99();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20347,7 +20348,7 @@ $( ".boxmoxygentheme100" )
   $(".contpurmoxygentheme100").hide();
    $(".boxmoxygentheme100").removeClass("editable");
 addmoxyfontawesomecontpur100();
-
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20413,7 +20414,7 @@ $( ".boxmoxygentheme101" )
   $(".contpresentationcolormoxygentheme101").hide();
    $(".boxmoxygentheme101").removeClass("editable");
 moxyaddpresentationcolor101();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -20475,6 +20476,8 @@ $( ".boxmoxygentheme102" )
   $(".contpresentationcolormoxygentheme102").hide();
    $(".boxmoxygentheme102").removeClass("editable");
 moxyaddpresentationcolor102();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+
   
 });
 
@@ -20483,7 +20486,7 @@ $(".savemoxygentheme102").click(function() {
   $(".boxmoxygentheme102").removeClass("editable");
  $(".textmoxygentheme102").removeAttr("contenteditable");
   $(".editmoxygentheme102").hide();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -20534,6 +20537,7 @@ $(".submitmoxybg1").click(function() {
   $(".boxmoxygentheme111").removeClass("editable");
   $(".contmoxybg1").hide();
   addHrefoxy1();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20585,6 +20589,7 @@ $(".submitmoxybg2").click(function() {
   $(".boxmoxygentheme222").removeClass("editable");
   $(".contmoxybg2").hide();
   addHrefoxy2();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20639,6 +20644,7 @@ $(".submitmoxybg3").click(function() {
   $(".boxmoxygentheme333").removeClass("editable");
   $(".contmoxybg3").hide();
   addHrefoxy3();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20693,6 +20699,7 @@ $(".submitmoxybg80").click(function() {
   $(".boxmoxygentheme80a").removeClass("editable");
   $(".contmoxybg80").hide();
   addHrefoxy80();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20745,6 +20752,7 @@ $(".submitmoxybg50").click(function() {
   $(".boxmoxygentheme50a").removeClass("editable");
   $(".contmoxybg50").hide();
   addHrefoxy50();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20799,6 +20807,7 @@ $(".submitmoxybg79").click(function() {
   $(".boxmoxygentheme79a").removeClass("editable");
   $(".contmoxybg79").hide();
   addHrefoxy79();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20853,6 +20862,7 @@ $(".submitmoxybg70").click(function() {
   $(".boxmoxygentheme70a").removeClass("editable");
   $(".contmoxybg70").hide();
   addHrefoxy70();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20907,7 +20917,7 @@ $(".submitmoxysingup103").click(function() {
   $(".boxmoxygentheme103").removeClass("editable");
   $(".contmoxysingup103").hide();
 addHrefoxy103();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20959,7 +20969,7 @@ $(".submitmoxysingup104").click(function() {
   $(".boxmoxygentheme104").removeClass("editable");
   $(".contmoxysingup104").hide();
 addHrefoxy104();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -21011,7 +21021,7 @@ $(".submitmoxysingup105").click(function() {
   $(".boxmoxygentheme105").removeClass("editable");
   $(".contmoxysingup105").hide();
 addHrefoxy105();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -21062,7 +21072,7 @@ $(".submitmoxysingup106").click(function() {
   $(".boxmoxygentheme106").removeClass("editable");
   $(".contmoxysingup106").hide();
 addHrefoxy106();
-  
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
