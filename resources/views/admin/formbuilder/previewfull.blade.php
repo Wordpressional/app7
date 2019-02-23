@@ -287,7 +287,7 @@ function doSomethingWithTheNewText(dataf2)
   
 
 
-
+setTimeout(function(){
 
 $.ajax({
             
@@ -370,6 +370,8 @@ $.ajax({
         },
        
     });
+
+    }, 300);
  
  }
 
