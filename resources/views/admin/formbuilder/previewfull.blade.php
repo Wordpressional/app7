@@ -212,7 +212,7 @@ $( document ).ready(function() {
 });
 
   $('#testmail').click(function(){
-alert("clicked");
+//alert("clicked");
 var mfileconfname = document.getElementsByClassName('mfileconfname');  
 var mfileconfname = mfileconfname[0].value;
 
