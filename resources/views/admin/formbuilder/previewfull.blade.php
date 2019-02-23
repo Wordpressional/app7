@@ -202,6 +202,14 @@ $(".dropdowns").dropdowns();
 </script>
 
 <script>
+$( document ).ready(function() {
+
+  $(".mycElement").click(function() {
+        your_ajax_function(); 
+   });
+  //alert("hi");
+
+});
 
   $('#testmail').click(function(){
 alert("clicked");
@@ -217,15 +225,27 @@ var Path1 = base_path+'/mailconfs/'+mfileconfname;
  readTextFile(Path1);
  //alert(s);
 });
- $( document ).ready(function() {
+  
+function readTextFile(file){
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    //alert(allText);
+                    doSomethingWithTheText(allText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
 
-  $(".mycElement").click(function() {
-        your_ajax_function(); 
-   });
-  //alert("hi");
 
-});
-
+ 
  function doSomethingWithTheText(dataf1)
 {
   ///alert(data);
