@@ -70,6 +70,9 @@ Route::get('/thispage/{page}', 'PageController@thispage')->name('page.custompage
 Route::post('/staticpage/{page}/', 'PageController@staticpage')->name('page.staticpage');
 Route::get('/staticpage/{page}', 'PageController@staticpage')->name('page.staticpage');
 
+Route::post('/landingsitepage/{page}/', 'PageController@landingsitepage')->name('page.landingsitepage');
+Route::get('/landingsitepage/{page}', 'PageController@landingsitepage')->name('page.landingsitepage');
+
 Route::post('/cforms/datacfsave/',[
 
 'uses' => 'PageController@datacfsave',
