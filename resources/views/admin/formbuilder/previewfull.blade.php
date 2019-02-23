@@ -248,7 +248,7 @@ var mfileconfname = mfileconfname[0].value;
   var df = new_str2+'&htmle="'+htmle1+'"';
 var df2 = df.split("mfileconfname")[0];
 var df2 = df2+'"';
-//alert(df2);
+alert(df2);
 
 var dataf2 = data;
 
@@ -281,9 +281,9 @@ var dataf2 = data;
        
     });
 
-   setTimeout(function(){
+   
    doSomethingWithTheNewText(df2);
-    }, 300);
+    
  }
 
 function doSomethingWithTheNewText(dataf2)
