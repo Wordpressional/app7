@@ -85,7 +85,7 @@ EOF;
 
 	
 		$zipf = public_path('/downloadedstatic/node_*');
-		//dd($zipf);
+		dd($zipf);
 		$outp = shell_exec('sudo rm -rf '.$zipf);
 	
     	$vpath = public_path('jsonfiles/testurl.txt'); // path to your JSON file
