@@ -3276,6 +3276,10 @@ section.presentation .side
     width: 95% !important;
 }
 
+.mmultithemeone .navbar-nav li{
+  float:left !important;
+}
+
 }
 
 
