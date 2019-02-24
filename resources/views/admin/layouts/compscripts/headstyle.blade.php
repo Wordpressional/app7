@@ -46,5 +46,5 @@
 <link rel="manifest" href="{{url('/manifest.json')}}">
 <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
 
-<link rel="manifest" href="/manifest.json">
-<link rel="manifest" href="/manifest.webmanifest">
+<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.webmanifest">
