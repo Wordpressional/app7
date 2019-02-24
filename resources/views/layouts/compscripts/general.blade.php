@@ -128,9 +128,13 @@ jssor_1_slider_init(); }</script>
         });
 
 
-       
+     $(".navbar-toggler").click(function(event) {
 
-        
+    $(".collapse").toggle('.show');
+    });  
+
+     
+  
 
     </script>
     

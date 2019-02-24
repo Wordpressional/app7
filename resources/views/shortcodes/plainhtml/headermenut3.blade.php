@@ -1,5 +1,5 @@
  <!-- Navbar -->
-<nav class="mlthemeone navbar navbar-expand-md navbar-dark  navbar-custom">
+<nav class="mlthemeone navbar navbar-expand-sm navbar-dark  navbar-custom">
 
 <!-- Image Logo -->
  <div class="boxmlthemeone1">
@@ -18,22 +18,22 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#mlheader">Home <span class="sr-only">(current)</span></a>
+                    <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="#mlheader">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#mlapproval">Approval</a>
+                    <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="#mlapproval">Approval</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#mloptions">Options</a>
+                    <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="#mloptions">Options</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#mldescription">Description</a>
+                    <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="#mldescription">Description</a>
                 </li>
                 
                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>

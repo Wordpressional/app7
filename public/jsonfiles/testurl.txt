@@ -1,5 +1,5 @@
 [
-"http://139.59.47.15/dynamic/landingsitepage/oxy",
+"http://example.com/foldername",
 {
 "url": "http://example.com/foldername/page1",
 "filename": "page1.html"

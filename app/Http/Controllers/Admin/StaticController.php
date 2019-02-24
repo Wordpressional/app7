@@ -53,6 +53,27 @@ class StaticController extends Controller
 
     }
 
+    public function rmdir_recursive($dir){
+        if(is_dir($dir)){
+        $files = scandir($dir);
+        if($files){
+        foreach ($files as $file) {
+        if ($file == '.' OR $file == '..') continue;
+        $file = "$dir/$file";
+        if (is_dir($file)) {
+        $this->rmdir_recursive($file);
+        
+        //rmdir($file);
+        
+        } else {
+        unlink($file);
+        }
+        }
+        rmdir($dir);
+        }
+      }
+    }
+
     public function SaveStarterStatic(Request $request)
     {
     	
@@ -83,12 +104,14 @@ $filedata = <<<EOF
 EOF;
 
 
-	if($request->filej)
-	{
-		$zipf = public_path('/downloadedstatic').'/node_*';
+	    $dirname = public_path('/downloadedstatic/node_website');
+		$zipf = public_path('/downloadedstatic/node_*');
 		//dd($zipf);
-		$outp = shell_exec('sudo rm -rf '.$zipf);
-	}
+		//exec('sudo rm -rf '.$zipf);
+        if($dirname){
+        File::delete(public_path('/downloadedstatic/node_website.tgz'));
+        $this->rmdir_recursive($dirname);
+	    }
     	$vpath = public_path('jsonfiles/testurl.txt'); // path to your JSON file
     	$html = File::put($vpath, htmlspecialchars_decode($filedata));
         Session::flash('success', 'You succesfully Saved the URLs.');
