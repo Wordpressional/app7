@@ -84,7 +84,7 @@ EOF;
 
 
 	
-		$zipf = public_path('/downloadedstatic').'/node_*';
+		$zipf = public_path('/downloadedstatic/node_*');
 		//dd($zipf);
 		$outp = shell_exec('sudo rm -rf '.$zipf);
 	
