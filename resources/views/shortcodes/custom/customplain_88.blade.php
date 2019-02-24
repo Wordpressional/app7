@@ -36,15 +36,16 @@
                 <input name ="checkboxgroup1550867016475" id="checkboxgroup1550867016475" class="form-check-input"  type="checkbox"  required>
                 <label class="form-check-label" for="invalidCheck2">
                Accept the conditions
-                               &nbsp;</label>
+                                     &nbsp;</label>
               </div>
             </div>
             </div> 
             <div class="col-12">
-              <input class="btn btn-light" type="submit" value="Submit" id="mycElement">
-                 <input type="text" id="ttoken" name="_token" value="YN8PMhhHpBUhoJz46ItAunl67QIkbmvZnRsgDjo1" style="display:none;">
+              <input class="btn btn-light mycElement" type="submit" value="Submit" >
+                 <input type="text" id="ttoken" name="_token" value="{{ csrf_token() }}" style="display:none;">
       <input type="text" name="table_name" class="table_name" id="cf174e9f8" value="cf174e9f8" style="display:none;">
 <input type="text" name="files" class="files" value="" style="display:none;">
+
             </div>
           </div>
     
