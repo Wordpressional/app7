@@ -1818,8 +1818,8 @@ Version      : 1.0
 
 .themeone .about-image {
     text-align: center;
-    width: 300px;
-    height: 328px;
+    width: 100%;
+    height: auto;
     float:left;
     margin-right: 40px;
 }
