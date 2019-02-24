@@ -3,17 +3,15 @@
 @section('contentfrontend')
 
 
+{!! html_entity_decode($page->content) !!}
 
-<div class="container-fluid">
-<div class="row">
 	
 			
-			{!! html_entity_decode($page->content) !!}
+			
 				
 		
 		
-</div>
-</div>
+
 
 @endsection
 @section('css')

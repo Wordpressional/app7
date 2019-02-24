@@ -1317,4 +1317,8 @@ display: none !important;
 {
   display: none !important;
 }  
+
+.labelmlthemeone70 {
+   display: none !important;
+}
 </style>

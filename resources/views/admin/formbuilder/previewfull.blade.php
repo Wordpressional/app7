@@ -22,17 +22,13 @@
    <i class="fa fa-tablet"></i></a> </span>
 
    </div>
-    <div class="mau" id="mau">
-     
-  
-   
-    <div class="precon">
 
+    <div class="mau" id="mau">
+        
+    <div class="precon">
     {!! $form->htmlcontent !!} 
     </div>
     
-  
- 
 </div>
 
 <div class="precon1">
