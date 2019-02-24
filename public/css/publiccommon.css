@@ -6523,3 +6523,6 @@ section.presentation .side.left {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.mlthemeone.pills img {
+    width: 88%;
+}
