@@ -1,8 +1,8 @@
 [
-"http://domainame.com/dynamic",
+"http://example.com/foldername",
 {
-"url": "http://localhost/dynamic/staticpage/team-of-dev",
-"filename": "team.html"
+"url": "http://example.com/foldername/page1",
+"filename": "page1.html"
 },
 {
 "url": "http://example.com/foldername/page2",
