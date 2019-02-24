@@ -83,12 +83,11 @@ $filedata = <<<EOF
 EOF;
 
 
-	if($request->filej)
-	{
+	
 		$zipf = public_path('/downloadedstatic').'/node_*';
 		//dd($zipf);
 		$outp = shell_exec('sudo rm -rf '.$zipf);
-	}
+	
     	$vpath = public_path('jsonfiles/testurl.txt'); // path to your JSON file
     	$html = File::put($vpath, htmlspecialchars_decode($filedata));
         Session::flash('success', 'You succesfully Saved the URLs.');
