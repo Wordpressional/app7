@@ -1728,3 +1728,12 @@ width:70% !important;
     text-decoration: none;
     color: #72afd2 !important;
 }
+
+.moxytheme i#purmoxy1, .moxytheme i#purmoxy2, .moxytheme i#purmoxy3, .moxytheme i#purmoxy4, .moxytheme i#purmoxy5, .moxytheme i#purmoxy6 {
+    margin-left: 10px !important;
+}
+
+.moxytheme .fa
+{
+  padding:10px 0px 0px 5px;
+}
