@@ -6526,3 +6526,13 @@ section.presentation .side.left {
 .mlthemeone.pills img {
     width: 88%;
 }
+
+#contact, #contact p, #contact h2{
+color: #864b82;
+}
+
+.mlthemeone iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
