@@ -4,7 +4,6 @@
 @section('content')
 
      
-     @include('admin.includes.errors')
 
 
        <div class="page-header">

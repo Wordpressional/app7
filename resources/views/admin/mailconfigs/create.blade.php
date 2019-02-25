@@ -4,7 +4,7 @@
 @section('content')
 
      
-      @include('admin.includes.errors')
+     
 
  <div class="page-header">
       <h1>@lang('mailconfig.mcreate')</h1>
