@@ -11,6 +11,7 @@
    @foreach($forms as $f)
       {!! $f->htmlcontent !!}  
    @endforeach
+    <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
   </div>   
 @endsection
 @section('scripts')

@@ -191,7 +191,7 @@ EOF;
 
 
         Session::flash('success', 'You succesfully created a mail config file.');
-        return redirect()->route('admin.static.indexmailconfig');
+        return redirect()->route('admin.mailconfig.indexmailconfig');
 
 
     }
