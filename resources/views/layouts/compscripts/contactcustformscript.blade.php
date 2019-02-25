@@ -1,5 +1,5 @@
    
- <input type="text" id="ttoken" name="_token" value="{{csrf-token()}}" style="display:none;">
+ 
 <script>
 
  
@@ -158,7 +158,11 @@ upload = function(img, filename)
     var fobject1 = [{}];
 
   var token = document.getElementById('ttoken').value;
-  //alert("img");
+  if(token == "")
+  {
+    token = "{{ csrf-token() }}";
+  }
+  alert(token);
             console.log("imgggg");
             console.log(img);
              //console.log(img.files);
