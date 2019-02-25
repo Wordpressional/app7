@@ -1,3 +1,4 @@
+ <meta name="csrf-token" content="{{ csrf_token() }}">
 @if($branding)
 
      {!! html_entity_decode($branding->homepage) !!}
