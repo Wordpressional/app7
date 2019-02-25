@@ -28,7 +28,7 @@
     <div class="precon">
     {!! $form->htmlcontent !!} 
     </div>
-    
+    <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
 </div>
 
 <div class="precon1">
