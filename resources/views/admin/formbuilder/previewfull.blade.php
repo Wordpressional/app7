@@ -24,7 +24,7 @@
    </div>
 
     <div class="mau" id="mau">
-     <meta name="csrf-token" content="{{ csrf_token() }}">   
+      
     <div class="precon">
     {!! $form->htmlcontent !!} 
     </div>
