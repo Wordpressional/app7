@@ -188,7 +188,7 @@ EOF;
         $vpath = $fname; // path to your JSON file
         $con = File::put($vpath, $filedata);
         
-
+        $outp = shell_exec('sudo chmod 777 '.$vpath);
 
         Session::flash('success', 'You succesfully created a mail config file.');
         return redirect()->route('admin.mailconfig.indexmailconfig');
