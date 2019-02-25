@@ -1,5 +1,5 @@
    
-
+ <input type="text" id="ttoken" name="_token" value="{{csrf-token()}}" style="display:none;">
 <script>
 
  
