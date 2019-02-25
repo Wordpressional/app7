@@ -24,9 +24,7 @@
    </div>
 
     <div class="mau" id="mau">
-    <form class="my-form" method="POST">
-    {!! csrf_field() !!}
-    </form>  
+      
     <div class="precon">
     {!! $form->htmlcontent !!} 
     </div>
