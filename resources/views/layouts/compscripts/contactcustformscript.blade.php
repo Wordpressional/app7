@@ -158,10 +158,9 @@ upload = function(img, filename)
     var fobject1 = [{}];
 
   var token = document.getElementById('ttoken').value;
-  if(token == "")
-  {
+  
     token = "{{ csrf_token() }}";
-  }
+  
   //alert("img");
             console.log("imgggg");
             console.log(img);
