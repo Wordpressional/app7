@@ -160,9 +160,9 @@ upload = function(img, filename)
   var token = document.getElementById('ttoken').value;
   if(token == "")
   {
-    token = $('meta[name="csrf-token"]').attr('content');
+    token = "{{ csrf_token() }}";
   }
-  alert(token);
+  //alert("img");
             console.log("imgggg");
             console.log(img);
              //console.log(img.files);
