@@ -71,7 +71,7 @@ for(i=0; i<file_data.length; i++)
     });
 
     console.log(result);
-
+$('.my-form').append('<input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}" />');
 
  var $form = $('.my-form');
 
