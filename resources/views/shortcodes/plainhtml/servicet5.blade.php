@@ -21,10 +21,10 @@
   
                            <span class="savempoltheme5">save</span>
                            <input type='file' id="imageUploadmpoltheme5" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmpoltheme5" for="imageUploadmpoltheme5"></label>
+                           <label class="imageUploadmpoltheme5" for="imageUploadmpoltheme5">&nbsp;</label>
         
 
-									<img id="imagePreviewmpoltheme5" src="img/o1.jpg" alt="">									
+									<img id="imagePreviewmpoltheme5" src="{{ asset('themes/politt5/o1.jpg')}}" alt="">									
 								</div>
 								<h4>Conduct Campaign</h4>
 								<p>
@@ -40,10 +40,10 @@
   
                            <span class="savempoltheme6">save</span>
                            <input type='file' id="imageUploadmpoltheme6" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmpoltheme6" for="imageUploadmpoltheme6"></label>
+                           <label class="imageUploadmpoltheme6" for="imageUploadmpoltheme6">&nbsp;</label>
         
 
-									<img id="imagePreviewmpoltheme6" src="img/o2.jpg" alt="">									
+									<img id="imagePreviewmpoltheme6" src="{{ asset('themes/politt5/o2.jpg')}}" alt="">									
 								</div>
 								<h4>Generate Member</h4>
 								<p>
@@ -59,10 +59,10 @@
   
                            <span class="savempoltheme7">save</span>
                            <input type='file' id="imageUploadmpoltheme7" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmpoltheme7" for="imageUploadmpoltheme7"></label>
+                           <label class="imageUploadmpoltheme7" for="imageUploadmpoltheme7">&nbsp;</label>
         
 
-									<img id="imagePreviewmpoltheme7" src="img/o3.jpg" alt="">									
+									<img id="imagePreviewmpoltheme7" src="{{ asset('themes/politt5/o3.jpg')}}" alt="">									
 								</div>
 								<h4>Energy Saving Policy</h4>
 								<p>

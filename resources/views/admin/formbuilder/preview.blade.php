@@ -271,6 +271,10 @@ $(".dropdowns").dropdowns();
    position: static;
 }
 
+#mpolheader{
+   position: static;
+}
+
 </style>
 
 </body>       

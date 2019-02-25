@@ -3,7 +3,7 @@
 	<div class="overlay overlay-bg boxmpoltheme16 boxmpoltheme16a">
 		
         <span class="contmpolbg16">
-            <input type="text" name="mpolbg16"  class="inputmpolbg16" placeholder="//images/slider/1.jpg"><br>
+            <input type="text" name="mpolbg16"  class="inputmpolbg16" ><br>
 
          <input type="submit" value="Submit" class="submitmpolbg16">
             </span>
@@ -12,7 +12,7 @@
 <span class="editmpoltheme16">edit</span>
               
                <span class="savempoltheme16">save</span>
-           <span class="labelmpoltheme16"><label class="imageUploadmpoltheme16" for="imageUploadmpoltheme16"></label>
+           <span class="labelmpoltheme16"><label class="imageUploadmpoltheme16" for="imageUploadmpoltheme16">&nbsp;</label>
 
             
            </span>

@@ -19,9 +19,9 @@
 
                <span class="savempoltheme18">save</span>
                <input type='file' id="imageUploadmpoltheme18" accept=".png, .jpg, .jpeg" />
-               <label class="imageUploadmpoltheme18" for="imageUploadmpoltheme18"></label>
+               <label class="imageUploadmpoltheme18" for="imageUploadmpoltheme18">&nbsp;</label>
 
-					<img id="imagePreviewmpoltheme18"class="img-fluid" src="img/b1.jpg" alt="">								
+					<img id="imagePreviewmpoltheme18"class="img-fluid" src="{{ asset('themes/politt5/b1.jpg')}}" alt="">								
 				</div>
 				
 				<a href="#"><h4>Addiction When Gambling
@@ -37,9 +37,9 @@
 
                <span class="savempoltheme19">save</span>
                <input type='file' id="imageUploadmpoltheme19" accept=".png, .jpg, .jpeg" />
-               <label class="imageUploadmpoltheme19" for="imageUploadmpoltheme19"></label>
+               <label class="imageUploadmpoltheme19" for="imageUploadmpoltheme19">&nbsp;</label>
 
-					<img id="imagePreviewmpoltheme19"class="img-fluid" src="img/b2.jpg" alt="">								
+					<img id="imagePreviewmpoltheme19"class="img-fluid" src="{{ asset('themes/politt5/b2.jpg')}}" alt="">								
 				</div>
 				
 				<a href="#"><h4>Addiction When Gambling
@@ -55,9 +55,9 @@
 
                <span class="savempoltheme20">save</span>
                <input type='file' id="imageUploadmpoltheme20" accept=".png, .jpg, .jpeg" />
-               <label class="imageUploadmpoltheme20" for="imageUploadmpoltheme20"></label>
+               <label class="imageUploadmpoltheme20" for="imageUploadmpoltheme20">&nbsp;</label>
 
-					<img id="imagePreviewmpoltheme20"class="img-fluid" src="img/b3.jpg" alt="">								
+					<img id="imagePreviewmpoltheme20"class="img-fluid" src="{{ asset('themes/politt5/b3.jpg')}}" alt="">								
 				</div>
 				
 				<a href="#"><h4>Addiction When Gambling
@@ -73,9 +73,9 @@
 
                <span class="savempoltheme21">save</span>
                <input type='file' id="imageUploadmpoltheme21" accept=".png, .jpg, .jpeg" />
-               <label class="imageUploadmpoltheme21" for="imageUploadmpoltheme21"></label>
+               <label class="imageUploadmpoltheme21" for="imageUploadmpoltheme21">&nbsp;</label>
 
-					<img id="imagePreviewmpoltheme21"class="img-fluid" src="img/b4.jpg" alt="">								
+					<img id="imagePreviewmpoltheme21"class="img-fluid" src="{{ asset('themes/politt5/b4.jpg')}}" alt="">								
 				</div>
 				
 				<a href="#"><h4>Addiction When Gambling

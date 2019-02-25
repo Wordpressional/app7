@@ -2,7 +2,7 @@
  <!-- start banner Area -->
 <section class="mpoltheme banner-area relative boxmpoltheme2 boxmpoltheme222" id="home">
 	   <span class="contmpolbg2">
-            <input type="text" name="mpolbg2"  class="inputmpolbg2" placeholder="//images/slider/1.jpg"><br>
+            <input type="text" name="mpolbg2"  class="inputmpolbg2" ><br>
 
          <input type="submit" value="Submit" class="submitmpolbg2">
             </span>
@@ -11,7 +11,7 @@
 <span class="editmpoltheme2">edit</span>
               
                <span class="savempoltheme2">save</span>
-           <span class="labelmpoltheme2"><label class="imageUploadmpoltheme2" for="imageUploadmpoltheme2"></label>
+           <span class="labelmpoltheme2"><label class="imageUploadmpoltheme2" for="imageUploadmpoltheme2">&nbsp;</label>
 
             
            </span>
