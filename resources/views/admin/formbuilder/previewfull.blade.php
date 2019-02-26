@@ -470,6 +470,9 @@ $.ajax({
 #mpolheader{
    position: static;
 }
+
+
+
 </style>
 
 </body>       

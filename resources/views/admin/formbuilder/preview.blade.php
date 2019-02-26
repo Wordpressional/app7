@@ -275,6 +275,11 @@ $(".dropdowns").dropdowns();
    position: static;
 }
 
+.navbar-fixed-top {
+    position: static;
+    
+}
+
 </style>
 
 </body>       
