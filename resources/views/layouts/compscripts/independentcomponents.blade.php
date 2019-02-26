@@ -625,7 +625,7 @@ $(".mcolorlibedit13").click(function() {
 
   
 
-function readURL1(input) {
+function readURL1N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -647,10 +647,10 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload1").change(function() {
 
-    readURL1(this);
+    readURL1N(this);
 });
 
-function readURL2(input) {
+function readURL2N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -672,12 +672,12 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload2").change(function() {
 
-    readURL2(this);
+    readURL2N(this);
 });
 
 
 
-function readURL3(input) {
+function readURL3N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -699,10 +699,10 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload3").change(function() {
 
-    readURL3(this);
+    readURL3N(this);
 });
 
-function readURL4(input) {
+function readURL4N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -724,12 +724,12 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload4").change(function() {
 
-    readURL4(this);
+    readURL4N(this);
 });
 
 
 
-function readURL5(input) {
+function readURL5N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -751,10 +751,10 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload5").change(function() {
 
-    readURL5(this);
+    readURL5N(this);
 });
 
-function readURL6(input) {
+function readURL6N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -776,12 +776,12 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload6").change(function() {
 
-    readURL6(this);
+    readURL6N(this);
 });
 
 
 
-function readURL7(input) {
+function readURL7N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -803,10 +803,10 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload7").change(function() {
 
-    readURL7(this);
+    readURL7N(this);
 });
 
-function readURL8(input) {
+function readURL8N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -828,10 +828,10 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload8").change(function() {
 
-    readURL8(this);
+    readURL8N(this);
 });
 
-function readURL9(input) {
+function readURL9N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -853,10 +853,10 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload9").change(function() {
 
-    readURL9(this);
+    readURL9N(this);
 });
 
-function readURL10(input) {
+function readURL10N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -878,11 +878,11 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload10").change(function() {
 
-    readURL10(this);
+    readURL10N(this);
 });
 
 
-function readURL11(input) {
+function readURL11N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -904,10 +904,10 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload11").change(function() {
 
-    readURL11(this);
+    readURL11N(this);
 });
 
-function readURL12(input) {
+function readURL12N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -929,11 +929,11 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload12").change(function() {
 
-    readURL12(this);
+    readURL12N(this);
 });
 
 
-function readURL13(input) {
+function readURL13N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -955,11 +955,11 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload13").change(function() {
 
-    readURL13(this);
+    readURL13N(this);
 });
 
 
-function readURL14(input) {
+function readURL14N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -973,11 +973,11 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload14").change(function() {
 
-    readURL14(this);
+    readURL14N(this);
 });
 
 
-function readURL15(input) {
+function readURL15N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -991,11 +991,11 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload15").change(function() {
 
-    readURL15(this);
+    readURL15N(this);
 });
 
 
-function readURL16(input) {
+function readURL16N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -1009,11 +1009,11 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload16").change(function() {
 
-    readURL16(this);
+    readURL16N(this);
 });
 
 
-function readURL17(input) {
+function readURL17N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -1027,12 +1027,12 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload17").change(function() {
 
-    readURL17(this);
+    readURL17N(this);
 });
 
 
 
-function readURL18(input) {
+function readURL18N(input) {
 if (input.files && input.files[0]) {
             var reader = new FileReader();
             
@@ -1046,7 +1046,7 @@ if (input.files && input.files[0]) {
 
 $("#mcolorlibimageUpload18").change(function() {
 
-    readURL18(this);
+    readURL18N(this);
 });
 
 
