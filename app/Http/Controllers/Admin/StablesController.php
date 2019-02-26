@@ -6,7 +6,7 @@ use Session;
 use App\Tag;
 use App\Page;
 use App\Cform;
-
+use Response;
 use App\General;
 
 use App\Http\Controllers\Controller;
@@ -170,14 +170,18 @@ class StablesController extends Controller
     {
         $stablescform = Cform::find($id);
         
-        
+        $tablename = $stablescform->cshortcode;
+        //dd($stablescform);
+
+       $tablecontents = DB::table($tablename)->select('*')->get();
+        //dd($tablecontents);
         //$stables = DB::table($stables->cshortcode)->select('*')->get();
         $stablesfields = $stablescform->tabfields;
 
         $stablef = explode(",", $stablesfields);
         
         $stables = Schema::getColumnListing($stablescform->cshortcode);
-        //dd($stables);
+        //dd($stablescform->cshortcode);
 
         if($stables)
         {
@@ -211,7 +215,7 @@ class StablesController extends Controller
         
         }
         $data = $this->brandsAll();
-        return view('admin.stables.edit')->with(['stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef, 'alldata' => $alldata,'data' => $data]);
+        return view('admin.stables.edit')->with(['tablecontents' => $tablecontents, 'stables' => $stables, 'stablescform' => $stablescform, 'stablef' => $stablef, 'alldata' => $alldata,'data' => $data]);
         
     }
 
@@ -540,5 +544,48 @@ class StablesController extends Controller
         return response()->json(['message' => 'Given table  already exists.'], 200);
     }
 
+       public function contexportcsv($id)
+       {
+        $stablescform = Cform::find($id);
+        
+        $tablename = $stablescform->cshortcode;
+        $alldata = DB::table($tablename)->select('*')->get();
+         $dataarrays = $alldata->toArray();
+        //dd($dataarrays[0][1]);
+         $r = $dataarrays;
+         //dd($r);
+         $csvpath = public_path('data.csv');
+         //dd($csvpath);
+        $this->data_to_csv($r, $csvpath);
 
+        $f = $this->getDownload();
+
+        return $f;
+
+       }
+
+
+
+        public function data_to_csv($data, $filename)
+        {
+            $fp = fopen($filename, 'w');
+
+            foreach ($data as $row) {
+                fputcsv($fp, (array) $row);
+            }
+
+            fclose($fp);
+        }
+
+        public function getDownload()
+        {
+            
+            $file= public_path(). "/data.csv";
+
+            $headers = array(
+                      'Content-Type: text/csv',
+                    );
+
+            return Response::download($file, 'data.csv', $headers);
+        }
 }
