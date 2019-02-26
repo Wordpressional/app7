@@ -5,7 +5,7 @@
 <span class="editmpoltheme9">edit</span>
               
                <span class="savempoltheme9">save</span>
-           <span class="labelmpoltheme9"><label class="imageUploadmpoltheme9" for="imageUploadmpoltheme9"></label>
+           <span class="labelmpoltheme9"><label class="imageUploadmpoltheme9" for="imageUploadmpoltheme9">&nbsp;</label>
 
             
            </span>
@@ -50,7 +50,7 @@
 		</div>
 
 	</div>	
-	<div class="myimg"></div>
+	<div class="myimg">&nbsp;</div>
 
 </section>
 <!-- End home-about Area -->

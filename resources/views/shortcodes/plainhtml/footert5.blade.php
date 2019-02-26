@@ -41,10 +41,10 @@
 											</div> 
 										
 											<div class="col-lg-4 col-md-12">
-												<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
+												<button class="nw-btn primCopyright nw-btn primCopyright primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
 											</div> 
 										</div>		
-										<div class="info"></div>
+										<div class="info">&nbsp;</div>
 									</form>
 								</div>		
 							</div>
@@ -54,7 +54,7 @@
 
 					<div class="row footer-bottom d-flex justify-content-between align-items-center">
 						<p class="col-lg-8 col-sm-12 footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="main.html" target="_blank">Colorlib</a>
+Copyright &copy; 2018. All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="main.html" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
 						<div class="col-lg-4 col-sm-12 footer-social">
@@ -71,7 +71,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                              <i class="fa fa-edit">&nbsp;</i>
                              </span>
 							<a href="#" id="hrefchangempolfacebook23">
-								<i class="fa fa-facebook"></i>
+								<i class="fa fa-facebook">&nbsp;</i>
 							</a>
 						</span>
 
@@ -87,7 +87,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                              <i class="fa fa-edit">&nbsp;</i>
                             </span>
 							<a href="#" id="hrefchangempoltwitter24">
-								<i class="fa fa-twitter"></i>
+								<i class="fa fa-twitter">&nbsp;</i>
 							</a>
 						</span>
 
@@ -104,7 +104,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                               <i class="fa fa-edit">&nbsp;</i>
                             </span>
 							<a href="#" id="hrefchangempoldribble25">
-								<i class="fa fa-dribbble"></i>
+								<i class="fa fa-dribbble">&nbsp;</i>
 							</a>
 						</span>
 
@@ -123,7 +123,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             </span>
 							<a href="#" id="hrefchangempolbehance26">
 						
-								<i class="fa fa-behance"></i>
+								<i class="fa fa-behance">&nbsp;</i>
 							</a>
 						</span>
 

@@ -1216,5 +1216,105 @@ display: none !important;
 .labelmlthemeone70 {
    display: none !important;
 }
+
+.editmpoltheme1, .savempoltheme1, #imageUploadmpoltheme1, .bgmpoltheme1, span.editmpoltheme1:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme2, .savempoltheme2, #imageUploadmpoltheme2, .bgmpoltheme2, span.editmpoltheme2:hover{
+  display: none !important;
+}
+.editmpoltheme3, .savempoltheme3, #imageUploadmpoltheme3, span.editmpoltheme3:hover{
+  display: none !important;
+} 
+.editmpoltheme4, .savempoltheme4, #imageUploadmpoltheme4, span.editmpoltheme4:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme5, .savempoltheme5, #imageUploadmpoltheme5, span.editmpoltheme5:hover{
+  display: none !important;
+}
+.editmpoltheme6, .savempoltheme6, #imageUploadmpoltheme6, span.editmpoltheme6:hover{
+  display: none !important;
+} 
+
+.editmpoltheme7, .savempoltheme7, #imageUploadmpoltheme7, span.editmpoltheme7:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme8, .savempoltheme8, #imageUploadmpoltheme8, span.editmpoltheme8:hover{
+  display: none !important;
+}
+.editmpoltheme9, .savempoltheme9, #imageUploadmpoltheme9, .bgmpoltheme9, span.editmpoltheme9:hover{
+  display: none !important;
+} 
+.editmpoltheme10, .savempoltheme10, #imageUploadmpoltheme10, span.editmpoltheme10:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme11, .savempoltheme11, #imageUploadmpoltheme11, span.editmpoltheme11:hover{
+  display: none !important;
+}
+.editmpoltheme12, .savempoltheme12, #imageUploadmpoltheme12, span.editmpoltheme12:hover{
+  display: none !important;
+} 
+.editmpoltheme13, .savempoltheme13, #imageUploadmpoltheme13, span.editmpoltheme13:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme14, .savempoltheme14, #imageUploadmpoltheme14, span.editmpoltheme14:hover{
+  display: none !important;
+}
+.editmpoltheme15, .savempoltheme15, #imageUploadmpoltheme15, span.editmpoltheme15:hover{
+  display: none !important;
+} 
+.editmpoltheme16, .savempoltheme16, #imageUploadmpoltheme16, .bgmpoltheme16, span.editmpoltheme16:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme17, .savempoltheme17, #imageUploadmpoltheme17, span.editmpoltheme17:hover{
+  display: none !important;
+}
+.editmpoltheme18, .savempoltheme18, #imageUploadmpoltheme18, span.editmpoltheme18:hover{
+  display: none !important;
+} 
+.editmpoltheme19, .savempoltheme19, #imageUploadmpoltheme19, span.editmpoltheme19:hover{
+  display: none !important;
+}
+
+.editmpoltheme20, .savempoltheme20, #imageUploadmpoltheme20, span.editmpoltheme20:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme21, .savempoltheme21, #imageUploadmpoltheme21, span.editmpoltheme2:hover{
+  display: none !important;
+}
+.editmpoltheme22, .savempoltheme22, #imageUploadmpoltheme22, span.editmpoltheme22:hover{
+  display: none !important;
+} 
+.editmpoltheme23, .savempoltheme23, #imageUploadmpoltheme23, span.editmpoltheme23:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme24, .savempoltheme24, #imageUploadmpoltheme24, span.editmpoltheme24:hover{
+  display: none !important;
+}
+.editmpoltheme25, .savempoltheme25, #imageUploadmpoltheme25, span.editmpoltheme25:hover{
+  display: none !important;
+} 
+
+.editmpoltheme26, .savempoltheme26, #imageUploadmpoltheme26, span.editmpoltheme26:hover{
+ 
+ display: none !important;
+}
+.editmpoltheme27, .savempoltheme27, #imageUploadmpoltheme27, .editpresentationcolormpoltheme27, span.editmpoltheme27:hover{
+  display: none !important;
+}
+#imageUploadmpoltheme1, #imageUploadmpoltheme2, .contmpolbg2, #imageUploadmpoltheme5, #imageUploadmpoltheme6, #imageUploadmpoltheme7, #imageUploadmpoltheme9, #imageUploadmpoltheme11
+, #imageUploadmpoltheme12, #imageUploadmpoltheme13, #imageUploadmpoltheme14, .contmpolbg16, #imageUploadmpoltheme16, #imageUploadmpoltheme18, #imageUploadmpoltheme19, #imageUploadmpoltheme20, .contpresentationcolormpoltheme27
+,.contmpolfacebook23,.contmpoltwitter24,.contmpoldribble25,.contmpolbehance26
+{
+  display: none !important;
+}
 }
 
