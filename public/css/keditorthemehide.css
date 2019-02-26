@@ -1420,5 +1420,5 @@ display: none !important;
   display: none !important;
 }
 .cbakimg{
-  background: none;
+  background: none !important;
 }
