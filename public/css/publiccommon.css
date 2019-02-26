@@ -787,6 +787,9 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
+  .wow{
+    visibility: visible;
+  }
 section.presentation .side {
     width: 350px;
   }
