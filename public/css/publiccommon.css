@@ -8451,3 +8451,121 @@ div#content-area {
     overflow-x: hidden;
     width:100%;
 }
+
+/*teamsnippet*/
+
+.nteamsnippet
+{
+  background:#00bcd4;
+  padding: 20px;
+}
+
+.nteamsnippet h1
+{
+  color:#fff;
+  margin:40px 0 60px 0;
+  font-weight:300;
+}
+
+.nteamsnippet .our-team-main
+{
+  width:100%;
+  height:auto;
+  border-bottom:5px #323233 solid;
+  background:#fff;
+  text-align:center;
+  border-radius:10px;
+  overflow:hidden;
+  position:relative;
+  transition:0.5s;
+  margin-bottom:28px;
+}
+
+
+.nteamsnippet .our-team-main img
+{
+  border-radius:50%;
+  margin-bottom:20px;
+  width: 90px;
+}
+
+.nteamsnippet .our-team-main h3
+{
+  font-size:20px;
+  font-weight:700;
+}
+
+.nteamsnippet .our-team-main p
+{
+  margin-bottom:0;
+}
+
+.nteamsnippet .team-back
+{
+  width:100%;
+  height:auto;
+  position:absolute;
+  top:0;
+  left:0;
+  padding:5px 15px 0 15px;
+  text-align:left;
+  background:#fff;
+  
+}
+
+.nteamsnippet .team-front
+{
+  width:100%;
+  height:auto;
+  position:relative;
+  z-index:10;
+  background:#fff;
+  padding:15px;
+  bottom:0px;
+  transition: all 0.5s ease;
+}
+
+.nteamsnippet .our-team-main:hover .team-front
+{
+  bottom:-200px;
+  transition: all 0.5s ease;
+}
+
+.nteamsnippet .our-team-main:hover
+{
+  border-color:#777;
+  transition:0.5s;
+}
+
+/*our-team-main*/
+
+.nnews ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+.nnews ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+.nnews ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 50px;
+}
+.nnews ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
