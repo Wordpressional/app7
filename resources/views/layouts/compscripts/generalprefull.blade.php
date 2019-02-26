@@ -65,7 +65,7 @@
   <!-- WOW JS -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
   
- 
+ <script src="{{ asset('js/superfish.min.js')}}"></script>
 
       
 

@@ -2332,7 +2332,7 @@ label.imageUploadmlactheme2:after {
   display: inline;
   position: relative;
   top: 5px;
-  right:0px;
+  right:130px;
   padding: 8px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
