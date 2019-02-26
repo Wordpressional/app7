@@ -1,6 +1,6 @@
 <div class="mlthemeone footer">
 <div class="copyright">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                  <div class="boxmlthemeone68 textmlthemeone68">

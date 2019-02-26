@@ -13,7 +13,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="text-container boxmlthemeone28 textmlthemeone28">
                             <span class="editmlthemeone28">edit</span>
   
@@ -24,7 +24,7 @@
                         </div>
                     </div> <!-- end of col -->
 
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-12">
 					<br>
 					<!-- Get Quote Form -->
 					<form id="GetQuoteForm" data-toggle="validator" data-focus="false">
