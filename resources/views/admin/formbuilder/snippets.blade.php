@@ -672,6 +672,22 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/teamsnippet.jpg')}}" data-keditor-title="Text" data-keditor-categories="Team">
+
+@include('shortcodes.plainhtml.teamsnippet')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/lnews.jpg')}}" data-keditor-title="Text" data-keditor-categories="Text">
+
+@include('shortcodes.plainhtml.latestnews')
+  
+
+
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="DynamicTemplates;Blog">
 
  [bloglist]Post Category Name Here[/bloglist]
