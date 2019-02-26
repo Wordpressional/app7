@@ -626,7 +626,7 @@
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/portfoliot1.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" Portfolio">
 
-@include('shortcodes.plainhtml.portfoliot2')
+@include('shortcodes.plainhtml.latestworks')
   
 
 

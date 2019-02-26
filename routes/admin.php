@@ -3,6 +3,24 @@
 
 Route::get('dashboard', 'ShowDashboard')->name('dashboard');
 
+
+Route::get('/stables/downloadcsv/{id}',[
+
+
+'uses' => 'StablesController@downloadcsv',
+'as' => 'stables.downloadcsv'
+
+]);
+
+Route::get('/stables/contexportcsv/{id}',[
+
+
+'uses' => 'StablesController@contexportcsv',
+'as' => 'stables.contexportcsv'
+
+]);
+
+
 Route::get('/forms/smanagement',[
 
 

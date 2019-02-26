@@ -13,6 +13,9 @@
   
    <a href="#" id="UpdateJSON1" class="btn btn-primary btn-sm align-self-center form-builder-save"><b>Update Table Name</b></a> 
 
+
+   <a href="{{route('admin.stables.contexportcsv',['id'=>$stablescform->id])}}" class="btn btn-primary btn-sm align-self-center somecsvfile"><b>Download CSV</b></a>
+
    
    <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -43,15 +46,19 @@
 
 @endif
 @endforeach
+<th> Timestamp </th>
 </tr>
 
 
 
-@foreach($alldata as $alld)
+
+
+@foreach($alldata as $m => $alld)
 <tr>
 @foreach($stablef as $key => $val)
 @if(substr( $val, 0, 6 ) === "header" || substr( $val, 0, 9 ) === "paragraph" || substr( $val, 0, 6 ) === "hidden")
 @else
+
 <td>
 @php $rest = substr($alld->$val, -4, 4) @endphp
 @if($rest == ".jpg" || $rest == ".gif" || $rest == ".png")
@@ -60,9 +67,21 @@
 
 {{ $alld->$val }}
 @endif
+
 </td>
 @endif
 @endforeach
+
+
+<td>
+
+@foreach($tablecontents as $key1 => $stfield)
+@if($m == $key1)
+{{ $stfield->created_at }}
+@endif
+
+@endforeach
+</td>
 </tr>
 @endforeach
 
@@ -101,6 +120,15 @@ $(function () {
     });
 });
 
+
+
+
+
+
+
+
+/*$('.somecsvfiled').attr({target: '_blank', 
+                    href  : "{{ url('data.csv') }}"});*/
 /*document.getElementById('UpdateJSON').addEventListener('click', function() {
 
   var fieldlen = $('#fieldlen').val();
