@@ -10370,6 +10370,7 @@ div#content-area {
   display: block;
   float: left;
   margin: 0;
+  height:50px;
   padding: 0 0 10px 0;
 }
 #cssmenug li a {
