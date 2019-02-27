@@ -688,10 +688,32 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Flat Menus">
+
+ @include('shortcodes.plainhtml.flattabbedmenu')
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Flat Menus">
+
+ @include('shortcodes.plainhtml.flatbubblemenu')
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Flat Menus">
+
+ @include('shortcodes.plainhtml.greenmenu')
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Flat Menus">
+
+ @include('shortcodes.plainhtml.cyanmenu')
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="DynamicTemplates;Blog">
 
  [bloglist]Post Category Name Here[/bloglist]
 </div>
+
+
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus">
 
