@@ -684,14 +684,19 @@ $(".mcolorlibedit13").click(function() {
   
 
 function readURL1N(input) {
-if (input.files && input.files[0]) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload3", "mcolorlibimageUpload3","#mcolorlibimagePreview3");
+
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview1').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -704,19 +709,24 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload1").change(function() {
+$("#mcolorlibimageUpload1").attr("name", "mcolorlibimageUpload1");
 
     readURL1N(this);
 });
 
 function readURL2N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload3", "mcolorlibimageUpload3","#mcolorlibimagePreview3");
+
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview2').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -729,6 +739,7 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload2").change(function() {
+$("#mcolorlibimageUpload2").attr("name", "mcolorlibimageUpload2");
 
     readURL2N(this);
 });
@@ -830,14 +841,18 @@ $("#mcolorlibimageUpload5").attr("name", "mcolorlibimageUpload5");
 });
 
 function readURL6N(input) {
-if (input.files && input.files[0]) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload6", "mcolorlibimageUpload6","#mcolorlibimagePreview6");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview6').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -850,21 +865,25 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload6").change(function() {
-
+$("#mcolorlibimageUpload6").attr("name", "mcolorlibimageUpload6");
     readURL6N(this);
 });
 
 
 
 function readURL7N(input) {
-if (input.files && input.files[0]) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload7", "mcolorlibimageUpload7","#mcolorlibimagePreview7");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview7').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -877,19 +896,22 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload7").change(function() {
-
+$("#mcolorlibimageUpload7").attr("name", "mcolorlibimageUpload7");
     readURL7N(this);
 });
 
 function readURL8N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload8", "mcolorlibimageUpload8","#mcolorlibimagePreview8");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview8').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -902,19 +924,22 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload8").change(function() {
-
+$("#mcolorlibimageUpload8").attr("name", "mcolorlibimageUpload8");
     readURL8N(this);
 });
 
 function readURL9N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload9", "mcolorlibimageUpload9","#mcolorlibimagePreview9");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview9').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -927,19 +952,22 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload9").change(function() {
-
+$("#mcolorlibimageUpload9").attr("name", "mcolorlibimageUpload9");
     readURL9N(this);
 });
 
 function readURL10N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload10", "mcolorlibimageUpload10","#mcolorlibimagePreview10");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview10').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -952,20 +980,23 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload10").change(function() {
-
+$("#mcolorlibimageUpload10").attr("name", "mcolorlibimageUpload10");
     readURL10N(this);
 });
 
 
 function readURL11N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload11", "mcolorlibimageUpload11","#mcolorlibimagePreview11");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview11').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -978,19 +1009,22 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload11").change(function() {
-
+$("#mcolorlibimageUpload11").attr("name", "mcolorlibimageUpload11");
     readURL11N(this);
 });
 
 function readURL12N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload12", "mcolorlibimageUpload12","#mcolorlibimagePreview12");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview12').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -1003,20 +1037,23 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload12").change(function() {
-
+$("#mcolorlibimageUpload12").attr("name", "mcolorlibimageUpload12");
     readURL12N(this);
 });
 
 
 function readURL13N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload13", "mcolorlibimageUpload13","#mcolorlibimagePreview13");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview13').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -1029,98 +1066,117 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload13").change(function() {
-
+$("#mcolorlibimageUpload13").attr("name", "mcolorlibimageUpload13");
     readURL13N(this);
 });
 
 
 function readURL14N(input) {
-if (input.files && input.files[0]) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload14", "mcolorlibimageUpload14","#mcolorlibimagePreview14");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview14').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     
 }
 
 $("#mcolorlibimageUpload14").change(function() {
-
+$("#mcolorlibimageUpload14").attr("name", "mcolorlibimageUpload14");
     readURL14N(this);
 });
 
 
 function readURL15N(input) {
-if (input.files && input.files[0]) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload15", "mcolorlibimageUpload15","#mcolorlibimagePreview15");
+
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview15').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
    
 }
 
 $("#mcolorlibimageUpload15").change(function() {
-
+$("#mcolorlibimageUpload15").attr("name", "mcolorlibimageUpload15");
     readURL15N(this);
 });
 
 
 function readURL16N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload16", "mcolorlibimageUpload16","#mcolorlibimagePreview16");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview16').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     
 }
 
 $("#mcolorlibimageUpload16").change(function() {
-
+$("#mcolorlibimageUpload16").attr("name", "mcolorlibimageUpload16");
     readURL16N(this);
 });
 
 
 function readURL17N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload17", "mcolorlibimageUpload17","#mcolorlibimagePreview17");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview17').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
    
 }
 
 $("#mcolorlibimageUpload17").change(function() {
-
+$("#mcolorlibimageUpload17").attr("name", "mcolorlibimageUpload17");
     readURL17N(this);
 });
 
 
 
 function readURL18N(input) {
-if (input.files && input.files[0]) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload18", "mcolorlibimageUpload18","#mcolorlibimagePreview18");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview18').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     
 }
 
 $("#mcolorlibimageUpload18").change(function() {
-
+$("#mcolorlibimageUpload18").attr("name", "mcolorlibimageUpload18");
     readURL18N(this);
 });
 
