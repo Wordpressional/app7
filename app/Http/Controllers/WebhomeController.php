@@ -174,6 +174,38 @@ class WebhomeController extends Controller
     
     }
     
+    public function uploadimgfromfe(Request $request)
+    {
+        //dd($request->file('filed')->getClientOriginalName());
+       if($request->hasFile('filed')){
 
+           $input = $request->file('filed');
+            //dd("hi");
+           //dd($input);
+            $extension3 = $request->file('filed')->getClientOriginalExtension(); // getting image extension
+
+            $fine3 = $request->file('filed')->getClientOriginalName();
+
+       
+
+            $dir3 = public_path(). '/frontendimgs/';
+
+             $newFileName = substr($request->file('filed')->getClientOriginalName(), 0 , (strrpos($request->file('filed')->getClientOriginalName(), ".")));
+             
+            $filename3 =  $newFileName."_".$request->input('imgid').".".$extension3;
+                   
+             $mime3 = $request->file('filed')->getMimeType();
+            
+            $path3 = $request->file('filed')->move($dir3, $filename3);
+            
+            $url = url('/frontendimgs')."/".$filename3;
+
+            return $url;
+        }
+        
+        
+        
+      
+    }
    
 }

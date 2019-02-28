@@ -112,7 +112,6 @@ function Uploadsavemone2(newLocation, id)
         {
 
            
-            
             var fileContent = $('.precon').html();
             var id = id;
             //var data = "_token="+$('meta[name="csrf-token"]').attr('content')+"&formname='test'&htmlcontent="+fileContent;
@@ -140,6 +139,65 @@ function Uploadsavemone2(newLocation, id)
             success: function(result) {
             
            
+            
+            },
+             error: function (jqXHR, textStatus, errorThrown) {
+                  if (jqXHR.status == 500) {
+                      alert('Internal error: ' + jqXHR.responseText);
+                  } else {
+                      alert('Unexpected error.'+errorThrown);
+                  }
+              }
+            });
+            
+        
+        }
+
+        function Uploadimgtoserver(file, imgid, imgidwithouthash, imgpreview)
+        {
+          console.log(file);
+
+
+          var file_data = $(imgid)[0].files[0];
+
+                if(file_data){
+          var fileName = file_data.name;
+          var fileSize = file_data.size;
+          alert("Uploading: "+fileName+" @ "+fileSize+"bytes");
+          }
+           var form_data = new FormData();
+        form_data.append('filed', file_data);
+        form_data.append('fname', file.name);
+        form_data.append('imgid', imgidwithouthash);
+        form_data.append('_token', String($('meta[name="csrf-token"]').attr('content')));
+        
+           console.log(form_data);
+
+            //var data = "_token="+$('meta[name="csrf-token"]').attr('content')+"&formname='test'&htmlcontent="+fileContent;
+          // alert(fileContent);
+
+             /*var data = JSON.stringify({
+                _token:String($('meta[name="csrf-token"]').attr('content')),
+                
+                imgf:file
+                
+            });*/
+             //alert(data);
+            $.ajax({
+            
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+             
+              },
+
+            url: "{{ route('uploadimgfromfe') }}",
+           
+            type: 'post',
+            data:  form_data,
+            contentType: false,
+            processData: false, 
+            success: function(result) {
+             relaceurl(imgpreview, result);
             
             },
              error: function (jqXHR, textStatus, errorThrown) {
@@ -678,14 +736,13 @@ $("#mcolorlibimageUpload2").change(function() {
 
 
 function readURL3N(input) {
-if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            
-            reader.onload = function (e) {
-                $('#mcolorlibimagePreview3').attr('src', e.target.result);
-            }
-            reader.readAsDataURL(input.files[0]);
-        }
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload3", "mcolorlibimageUpload3","#mcolorlibimagePreview3");
+
+     //alert("hi");
+
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -695,22 +752,37 @@ if (input.files && input.files[0]) {
         }
         reader.readAsDataURL(input.files[0]);
     }*/
+
 }
 
-$("#mcolorlibimageUpload3").change(function() {
+function relaceurl(imgpreview, result)
+{
+  //alert(imgpreview);
+  $(imgpreview).removeAttr('data-cke-saved-src');
+   $(imgpreview).attr('src', result);
+}
+          
 
-    readURL3N(this);
+$("#mcolorlibimageUpload3").change(function() {
+$("#mcolorlibimageUpload3").attr("name", "mcolorlibimageUpload3");
+   readURL3N(this);
 });
 
 function readURL4N(input) {
-if (input.files && input.files[0]) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload4", "mcolorlibimageUpload4","#mcolorlibimagePreview4");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview4').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
+
+
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -723,21 +795,24 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload4").change(function() {
-
+$("#mcolorlibimageUpload4").attr("name", "mcolorlibimageUpload4");
     readURL4N(this);
 });
 
 
 
 function readURL5N(input) {
-if (input.files && input.files[0]) {
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#mcolorlibimageUpload5", "mcolorlibimageUpload5","#mcolorlibimagePreview5");
+/*if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 $('#mcolorlibimagePreview5').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-        }
+        }*/
     /*if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
@@ -750,7 +825,7 @@ if (input.files && input.files[0]) {
 }
 
 $("#mcolorlibimageUpload5").change(function() {
-
+$("#mcolorlibimageUpload5").attr("name", "mcolorlibimageUpload5");
     readURL5N(this);
 });
 

@@ -136,3 +136,5 @@ Route::get('a',function(){
 Route::get('/sendmail', 'WebhomeController@sendMailfromNodemailer')->name('mail.sendmail');
 
 Route::post('/updatemailconfig', 'WebhomeController@updatemailconfig')->name('mail.updatemailconfig');
+
+Route::post('/uploadimgfromfe', 'WebhomeController@uploadimgfromfe')->name('uploadimgfromfe');
