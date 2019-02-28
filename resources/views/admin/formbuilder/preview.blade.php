@@ -23,19 +23,23 @@
    <br>
    <center><p>Upload images of size below 25 KB</p></center>
    <br>
+   <meta name="csrf-token" content="{{ csrf_token() }}">
+   <form method="POST" class="previewf" enctype="multipart/form-data">
     <div class="mau" id="mau">
      
-  <meta name="csrf-token" content="{{ csrf_token() }}">
+  
    
+
     <div class="precon">
 
     {!! $form->htmlcontent !!} 
     </div>
     
   
+
  
 </div>
-
+</form>
 <div class="precon1">
 </div>
 
