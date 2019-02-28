@@ -21,7 +21,7 @@
   
                            <span class="savemlaboutt1theme1">save</span>
                            <input type='file' id="imageUploadmlaboutt1theme1" accept=".png, .jpg, .jpeg" />
-                           <label class="imageUploadmlaboutt1theme1" for="imageUploadmlaboutt1theme1"></label>
+                           <label class="imageUploadmlaboutt1theme1" for="imageUploadmlaboutt1theme1">&nbsp;</label>
                     <img id="imagePreviewmlaboutt1theme1" src="{{asset('themes/t1/03_about.jpg')}}" alt="It's Me">
                   </div>
                 </div>

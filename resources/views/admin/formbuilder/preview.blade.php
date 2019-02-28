@@ -25,6 +25,7 @@
    <br>
    <meta name="csrf-token" content="{{ csrf_token() }}">
    <form method="POST" class="previewf" enctype="multipart/form-data">
+    {{ csrf_field() }}
     <div class="mau" id="mau">
      
   
