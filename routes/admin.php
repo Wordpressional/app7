@@ -61,6 +61,14 @@ Route::get('/forms/preview/{id}',[
 
 ]);
 
+Route::post('/forms/preview/{id}',[
+
+
+'uses' => 'FormbuilderController@preview',
+'as' => 'forms.preview'
+
+]);
+
 Route::get('/forms/previewfull/{id}',[
 
 
