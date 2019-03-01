@@ -34,7 +34,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/publiccommon.css')}}" />
  <link rel="stylesheet" href="{{asset('css/bootstrap-colorpicker.min.css')}}" />
-
+<link rel="stylesheet" href="{{asset('css/bootstrap-select.min.css')}}" />
     
 
 </head>
@@ -74,6 +74,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
     <script src="{{ asset('js/colorcommon.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
    
    
    

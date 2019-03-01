@@ -4,8 +4,8 @@
 @section('content')
     <h1>Widget Editor</h1>
 
- <select name="WidgetFile" id="dropdown_change">
-<option value="">- Select widget script file -
+ <select name="WidgetFile" id="dropdown_change" class="selectpicker" data-live-search="true">
+<option value="">-- Select widget script file (components) --
 <?php 
 $dirPath = base_path().'/resources/views/shortcodes/plainhtml/';
 if (is_dir($dirPath)){
@@ -43,7 +43,7 @@ while (($file1 = readdir($dh1)) !== false)
   }
   else
   {
-    echo "<option value=\"" . trim($file1) . "\">" . $file1 . "</option>\n";
+   echo "<option value=\"" . trim($file1) . "\">" . $file1 . "</option>\n";
   }
    
 }
@@ -303,7 +303,7 @@ while (($file1 = readdir($dh1)) !== false)
    });
 
     $(document).ready(function(){
-
+      
      $("#dropdown_changebak").change(function(){
       //alert("Selected value is : " + document.getElementById("dropdown_change").value);
       //var imgsliderw = $('#imgsliderw').html("k");
