@@ -1,5 +1,6 @@
 <div class="row" id="contatti">
 <div class="container mt-5" >
+ 
 <div class="col-md-6">
         <h2 class="text-uppercase mt-3 font-weight-bold text-white">Contact</h2>
  <form class="my-form" enctype="multipart/form-data" method="POST">
@@ -36,13 +37,12 @@
                 <input name ="checkboxgroup1550867016475" id="checkboxgroup1550867016475" class="form-check-input"  type="checkbox"  required>
                 <label class="form-check-label" for="invalidCheck2">
                Accept the conditions
-                                     &nbsp;</label>
+                                                &nbsp;</label>
               </div>
             </div>
             </div> 
             <div class="col-12">
               <input class="btn btn-light mycElement" type="submit" value="Submit" >
-                 <input type="text" id="ttoken" name="_token" value="{{ csrf_token() }}" style="display:none;">
       <input type="text" name="table_name" class="table_name" id="cf174e9f8" value="cf174e9f8" style="display:none;">
 <input type="text" name="files" class="files" value="" style="display:none;">
 

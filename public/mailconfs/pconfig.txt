@@ -1,0 +1,1 @@
+authu='pyrupay@gmail.com'&authp='SHDY7Nmg'&frome='Robo <pyrupay@gmail.com>'&toe='"Pradeep Chintamani" <pradeepc@pyrumas.com>'&texte='Test message'&sube='Test message'&wele='Hi Admin, <br> Someone left you a message!<br />'&htmle="name=suresh<br />address=balaji%20avenu<br />email=suresh%40gmail.com<br />phone=9700592944<br />message=Hi%20testing%20ya<br />agree=on<br />"

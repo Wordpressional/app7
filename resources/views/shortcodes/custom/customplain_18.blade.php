@@ -36,14 +36,14 @@
                 <input name ="agree"  class="form-check-input"  type="checkbox"  required>
                 <label class="form-check-label" for="invalidCheck2">
                Accept the conditions
-                                          &nbsp;</label>
+                                           &nbsp;</label>
               </div>
             </div>
             </div> 
             <div class="col-12">
               <input class="btn btn-light" type="submit" value="Submit" id="testmail">
               
-<input type="text" name="mfileconfname" class="mfileconfname" id="mfileconfname" value="mconfig1.txt" style="display:none;"/>
+<input type="text" name="mfileconfname" class="mfileconfname" id="mfileconfname" value="pconfig.txt" style="display:none;"/>
             </div>
           </div>
     
