@@ -122,7 +122,7 @@
 		   <span class="savesnipetimage9">save</span>
           <input type='file' id="imageUploadsnipetimage9" accept=".png, .jpg, .jpeg"/>
           <label class="imageUploadsnipetimage9" for="imageUploadsnipetimage9">&nbsp;</label>
-                <a class="thumbnail imagePreviewsnipetimage9a href="#" data-image-id="" data-toggle="modal" data-title=""
+                <a class="thumbnail imagePreviewsnipetimage9a" href="#" data-image-id="" data-toggle="modal" data-title=""
                    data-image="{{asset('img/photo4.jpg')}}"
                    data-target="#image-gallery">
                     <img id="imagePreviewsnipetimage9" class="img-thumbnail"

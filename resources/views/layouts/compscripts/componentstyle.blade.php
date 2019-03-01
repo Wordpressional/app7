@@ -11984,7 +11984,7 @@ label.imageUploadmoxygentheme3:after {
   display: none;
   position: relative;
   top: 20px;
-  right: 150px;
+  right: 50px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
@@ -12013,7 +12013,7 @@ label.imageUploadmoxygentheme3:after {
 
 img#imagePreviewmoxygentheme7 {
     display: inline;
-   
+   margin-top:15px;
 }
 
 
