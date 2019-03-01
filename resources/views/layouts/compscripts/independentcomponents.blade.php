@@ -22198,7 +22198,7 @@ function readURLmpol2(input) {
 
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserverbakimg(file, "#imageUploadmpoltheme2", "imageUploadmpoltheme2",".boxmpoltheme2");
+     Uploadimgtoserverbakimg(file, "#imageUploadmpoltheme2", "imageUploadmpoltheme2",".mpoltheme.banner-area");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
