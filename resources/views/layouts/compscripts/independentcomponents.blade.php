@@ -960,14 +960,16 @@ function readURL3N(input) {
 function relaceurl(imgpreview, result)
 {
   //alert(imgpreview);
-  $(imgpreview).removeAttr('data-cke-saved-src');
+  $(imgpreview).attr('data-cke-saved-src', result);
+ 
    $(imgpreview).attr('src', result);
 }
 
 function relaceurl1(imgpreview, imgpreview1, result)
 {
   //alert(imgpreview);
-  $(imgpreview).removeAttr('data-cke-saved-src');
+  $(imgpreview).attr('data-cke-saved-src', result);
+  
   $(imgpreview).attr('src', result);
   $(imgpreview1).attr('data-image', result);
 }
@@ -975,7 +977,8 @@ function relaceurl1(imgpreview, imgpreview1, result)
 function relaceurl2(imgpreview, imgpreview2, result)
 {
   //alert(imgpreview);
-  $(imgpreview).removeAttr('data-cke-saved-src');
+  $(imgpreview).attr('data-cke-saved-src', result);
+  
   $(imgpreview).attr('src', result);
   $(imgpreview2).attr('href', result);
 }
@@ -983,7 +986,7 @@ function relaceurl2(imgpreview, imgpreview2, result)
 function relaceurlbakimg(imgpreview, result)
 {
   //alert(imgpreview);
-  $(imgpreview).removeAttr('data-cke-saved-src');
+  
    $(imgpreview).css('background-image', 'url('+result+')');
 }
           
@@ -12935,6 +12938,7 @@ if(inputmlthemeone27 != ""){
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage1").hide();
+   $(".imagePreviewsnipetimage1a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage1" )
  .on("mouseenter", function() {
@@ -13002,6 +13006,7 @@ function readURLsnipetimg1(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage2").hide();
+   $(".imagePreviewsnipetimage2a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage2" )
  .on("mouseenter", function() {
@@ -13068,6 +13073,7 @@ function readURLsnipetimg2(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage3").hide();
+   $(".imagePreviewsnipetimage3a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage3" )
  .on("mouseenter", function() {
@@ -13136,6 +13142,7 @@ function readURLsnipetimg3(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage4").hide();
+   $(".imagePreviewsnipetimage4a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage4" )
  .on("mouseenter", function() {
@@ -13202,6 +13209,7 @@ function readURLsnipetimg4(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage5").hide();
+   $(".imagePreviewsnipetimage5a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage5" )
  .on("mouseenter", function() {
@@ -13267,6 +13275,7 @@ function readURLsnipetimg5(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage6").hide();
+   $(".imagePreviewsnipetimage6a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage6" )
  .on("mouseenter", function() {
@@ -13333,6 +13342,7 @@ function readURLsnipetimg6(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage7").hide();
+   $(".imagePreviewsnipetimage7a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage7" )
  .on("mouseenter", function() {
@@ -13399,6 +13409,7 @@ var file = input.files[0];
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage8").hide();
+   $(".imagePreviewsnipetimage8a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage8" )
  .on("mouseenter", function() {
@@ -13466,6 +13477,7 @@ function readURLsnipetimg8(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage9").hide();
+   $(".imagePreviewsnipetimage9a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage9" )
  .on("mouseenter", function() {
@@ -13532,6 +13544,7 @@ function readURLsnipetimg9(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage10").hide();
+    $(".imagePreviewsnipetimage10a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage10" )
  .on("mouseenter", function() {
@@ -13598,6 +13611,7 @@ function readURLsnipetimg10(input) {
 $(document).ready(function(){
 
    $(".imageUploadsnipetimage11").hide();
+    $(".imagePreviewsnipetimage11a").attr('data-toggle', "modal");
 
 $( ".boxsnipetimage11" )
  .on("mouseenter", function() {
@@ -17588,8 +17602,7 @@ var inputmoxydribbble42 = $('.inputmoxydribbble42').val();
 if(inputmoxydribbble42 != ""){
   $('#hrefchangemoxydribbble42').attr("href",inputmoxydribbble42);
 }
-
-
+}
 
 $(document).ready(function(){
 
