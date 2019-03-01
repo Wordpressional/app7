@@ -30,7 +30,7 @@
                       
                        <td>{{ $log->eventname }}</td>
                         <td>{{ $log->devicedetails }}</td>
-                         <td>{{ $log->timestamp }}</td>
+                         <td>{{ humanize_date_with_timezone(Carbon::parse($log->timestamp), 'd/m/Y H:i:s', $data['n_companyname']->timezone) }}</td>
                     
                   </tr>
                   @endforeach
