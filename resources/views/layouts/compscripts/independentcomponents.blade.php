@@ -96,7 +96,7 @@ $(".savemparallaxone2").click(function() {
 
 
 $("#imageUploadmparallaxone2").change(function() {
-$("#imageUploadmlbannertheme2").attr("name", "imageUploadmlbannertheme2");
+$("#imageUploadmparallaxone2").attr("name", "imageUploadmparallaxone2");
     readURLmone2(this);
 });
 
@@ -105,7 +105,7 @@ function readURLmone2(input) {
 
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserverbakimg(file, "#imageUploadmlbannertheme2", "imageUploadmlbannertheme2",".themeone .quote");
+     Uploadimgtoserverbakimg(file, "#imageUploadmparallaxone2", "imageUploadmparallaxone2",".themeone .quote");
  
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
