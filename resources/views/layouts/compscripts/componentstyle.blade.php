@@ -7,7 +7,7 @@
   position: static;
   
 }
-
+.mcolorlibedit1[contenteditable], .mcolorlibsave1[contenteditable] { } 
 
 
 .mcolorlibedit1, .mcolorlibsave1 {
@@ -269,6 +269,7 @@
   opacity: 1;
 }
 
+.mcolorlibedit9[contenteditable], .mcolorlibsave9[contenteditable] { } 
 
 .mcolorlibedit9, .mcolorlibsave9 {
   width: 90px;
@@ -16725,7 +16726,7 @@ label.imageUploadmpoltheme11:after {
   display: none;
   position: relative;
   top: 0px;
-  right: 0px;
+  right: -20px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
@@ -17093,7 +17094,7 @@ label.imageUploadmpoltheme16:after {
   display: none;
   position: relative;
   top: 20px;
-  right:-50px;
+  right:-60px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
@@ -17160,7 +17161,7 @@ label.imageUploadmpoltheme18:after {
   display: none;
   position: relative;
   top: 20px;
-  right:-50px;
+  right:-60px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
@@ -17227,7 +17228,7 @@ label.imageUploadmpoltheme19:after {
   display: none;
   position: relative;
   top: 20px;
-  right:-50px;
+  right:-60px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
@@ -17294,7 +17295,7 @@ label.imageUploadmpoltheme20:after {
   display: none;
   position: relative;
   top: 20px;
-  right:-50px;
+  right:-60px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;

@@ -661,7 +661,7 @@ $(document).ready(function() {
     });
 
     //------- Owl Carusel  js --------//  
-
+ if ( $('.active-testimonial').length ){
     $('.active-testimonial').owlCarousel({
         items: 2,
         loop: true,
@@ -684,6 +684,7 @@ $(document).ready(function() {
         }
     });
 
+
     $('.active-brand-carusel').owlCarousel({
         items: 5,
         loop: true,
@@ -704,7 +705,7 @@ $(document).ready(function() {
             }
         }
     });
-
+}
     //------- Timer Countdown  js --------//  
 
     if (document.getElementById("count")) {
