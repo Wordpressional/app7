@@ -2878,7 +2878,7 @@ $("#imageUploadmlfactsblabethemeone5").attr("name", "imageUploadmlfactsblabethem
 function readURLmthree1(input) {
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserver(file, "#imageUploadmlfactsblabethemeone5", "imageUploadmlfactsblabethemeone5","#mcolorlibimagePreview3");
+     Uploadimgtoserverbakimg(file, "#imageUploadmlfactsblabethemeone5", "imageUploadmlfactsblabethemeone5",".themeone .facts");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
@@ -14813,13 +14813,13 @@ function readURLoxy10(input) {
 
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#imagePreviewmoxygentheme10");
+     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#moxyabout-us");
 
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             //console.log(input.files[0]);
             reader.onload = function (e) {
-                $('#imagePreviewmoxygentheme10').attr('src', e.target.result);
+                $('#moxyabout-us').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }*/
@@ -18478,12 +18478,12 @@ $("#imageUploadmoxygentheme50").attr("name", "imageUploadmoxygentheme50");
 function readURLoxy50(input) {
    var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme50", "imageUploadmoxygentheme50",".boxmoxygentheme50");
+     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme50", "imageUploadmoxygentheme50","#moxyfeatures");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
             reader.onload = function (e) {
-               $('.boxmoxygentheme50').css('background-image', 'url('+e.target.result +')');
+               $('#moxyfeatures').css('background-image', 'url('+e.target.result +')');
                
             }
             reader.readAsDataURL(input.files[0]);

@@ -77,7 +77,7 @@
 
 @foreach($tablecontents as $key1 => $stfield)
 @if($m == $key1)
-{{ $stfield->created_at }}
+{{ humanize_date_with_timezone(Carbon::parse($stfield->created_at), 'd/m/Y H:i:s', $data['n_companyname']->timezone) }}
 @endif
 
 @endforeach
