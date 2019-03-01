@@ -14813,13 +14813,13 @@ function readURLoxy10(input) {
 
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#imagePreviewmoxygentheme10");
+     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#moxyabout-us");
 
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             //console.log(input.files[0]);
             reader.onload = function (e) {
-                $('#imagePreviewmoxygentheme10').attr('src', e.target.result);
+                $('#moxyabout-us').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }*/
