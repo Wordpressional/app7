@@ -227,7 +227,7 @@ function Uploadsavemone2(newLocation, id)
          function Uploadimgtoserver1(file, imgid, imgidwithouthash, imgpreview, imgpreview1)
         {
           console.log(file);
-
+          
 
           var file_data = $(imgid)[0].files[0];
 
