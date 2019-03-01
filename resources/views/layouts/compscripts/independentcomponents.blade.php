@@ -2878,7 +2878,7 @@ $("#imageUploadmlfactsblabethemeone5").attr("name", "imageUploadmlfactsblabethem
 function readURLmthree1(input) {
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserver(file, "#imageUploadmlfactsblabethemeone5", "imageUploadmlfactsblabethemeone5",".themeone .facts");
+     Uploadimgtoserverbakimg(file, "#imageUploadmlfactsblabethemeone5", "imageUploadmlfactsblabethemeone5",".themeone .facts");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
