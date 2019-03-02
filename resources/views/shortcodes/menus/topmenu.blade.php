@@ -1,14 +1,4 @@
-
-<header>
-
-
-<span class="logospan"><img src="{{ asset('webhome/img/logo.png') }}"  alt="" /></span>
-
-   
-       <ul id="nav">
+<ul id="nav" class="aboutnav">
  <!-- Apply the clearfix so we can remove the overflow:hidden; later on. -->
         {{ TopMenuItems($menuList) }}
-    </ul>
-</header>
-
-
+</ul>

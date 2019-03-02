@@ -222,7 +222,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/megamenu.jpg')}}" data-keditor-title="MegaMenu" data-keditor-categories="MegaMenu;Menus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/megamenu.jpg')}}" data-keditor-title="MegaMenu" data-keditor-categories="Mega Menus">
 
 @include('shortcodes.plainhtml.megamenu')
 
@@ -234,13 +234,23 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.jpg')}}" data-keditor-title="AMenu" data-keditor-categories="Menus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
+
+[aboutmenulist]Menu_Name_Here[/aboutmenulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
+
+[orangemenulist]Menu_Name_Here[/orangemenulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.jpg')}}" data-keditor-title="AMenu" data-keditor-categories="Diaplay Menus">
 
 @include('shortcodes.plainhtml.aboutmenu')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/topmenu.jpg')}}" data-keditor-title="TopMenu" data-keditor-categories="Menus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/topmenu.jpg')}}" data-keditor-title="TopMenu" data-keditor-categories="Display Menus">
 
 @include('shortcodes.plainhtml.topmenu')
 
@@ -269,13 +279,13 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.jpg')}}" data-keditor-title="Footerlinks" data-keditor-categories="Menus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks.jpg')}}" data-keditor-title="Footerlinks" data-keditor-categories="Footer links">
 
 @include('shortcodes.plainhtml.footerlinks')
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks12.jpg')}}" data-keditor-title="Footerlinks" data-keditor-categories="Menus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footerlinks12.jpg')}}" data-keditor-title="Footerlinks" data-keditor-categories="Footer links">
 
 @include('shortcodes.plainhtml.footerlinks2')
 
@@ -304,6 +314,11 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Developer Theme One">
+
+[stickymenulist]Menu_Name_Here[/stickymenulist]
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Stickymenut1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Developer Theme One">
 
 @include('shortcodes.plainhtml.stickymenu_c1_t1')
@@ -327,6 +342,8 @@
 
 
 </div>
+
+
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/Servicest1.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Developer Theme One">
 
@@ -366,6 +383,11 @@
 
 
 </div>
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Portfolio Theme Two">
+
+[multimenulist]Menu_Name_Here[/multimenulist]
+</div>
+
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio Theme Two">
 @include('shortcodes.plainhtml.header_c1_t2')
@@ -405,6 +427,11 @@
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Portfolio Theme Two">
 @include('shortcodes.plainhtml.footer_c8_t2')
   
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Loan Theme Three">
+
+[loanmenulist]Menu_Name_Here[/loanmenulist]
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/singlelevelmenut3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme Three">
@@ -486,6 +513,13 @@
 @include('shortcodes.plainhtml.footer2_c14_t3')
 
 </div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Business Theme Four">
+
+[oxygenmenulist]Menu_Name_Here[/oxygenmenulist]
+
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/headert4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Business Theme Four">
 
 @include('shortcodes.plainhtml.headeroxy_c1_t4')
@@ -546,6 +580,12 @@
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert4.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Business Theme Four">
 
 @include('shortcodes.plainhtml.footeroxy_c11_t4')
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Politics Theme Five">
+
+[politicsmenulist]Menu_Name_Here[/politicsmenulist]
 
 </div>
 
@@ -715,19 +755,15 @@
 
 
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
 
-[menulist]Menu Name Here[/menulist]
+[menulist]Menu_Name_Here[/menulist]
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2levelmenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus">
 
-[loanmenulist]Menu Name Here[/loanmenulist]
-</div>
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/3levelmenu11.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/3levelmenu11.jpg')}}" data-keditor-title="text" data-keditor-categories="DynamicMenus">
-
-[responsivemenulist]Menu Name Here[/responsivemenulist]
+[responsivemenulist]Menu_Name_Here[/responsivemenulist]
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/custom1.jpg')}}" data-keditor-title="Photo" data-keditor-categories=" CustomTemplates">

@@ -205,3 +205,260 @@ function loanmenuItemschild($items) {
 	}
 }
 
+function PoliticsMenuItems($items) {
+	//dd($items);
+	
+	foreach( $items as $item ) {
+		
+	
+	?>
+		
+		<?php if($item['child'] != []) {?>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		 <?php print_r( $item['label']); ?> </a>
+			
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		<?php politicsmenuItemschild( $item['child'] ) ?>
+		</div>
+		
+		</li>
+		<?php } else {?>
+		<li class="nav-item" >
+		<a class="nav-link" href="<?php print_r( $item['link']); ?>"  >
+		 <?php print_r( $item['label']); ?> </a>
+		 </li>
+	 <?php
+	}
+}
+}
+
+function politicsmenuItemschild($items) {
+
+	foreach( $items as $item ) {
+		
+	
+	?>
+
+
+			
+		<a  href="<?php print_r( $item['link']); ?>" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+		 <?php print_r( $item['label']); ?>   </a>
+		 
+	 <?php
+	}
+}
+
+function OxygenMenuItems($items) {
+	//dd($items);
+	
+	foreach( $items as $item ) {
+		
+	
+	?>
+		
+		<?php if($item['child'] != []) {?>
+		<li class="nav-item dropdown scroll">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		 <?php print_r( $item['label']); ?> </a>
+			
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		<?php oxygenmenuItemschild( $item['child'] ) ?>
+		</div>
+		
+		</li>
+		<?php } else {?>
+		<li class="nav-item scroll" >
+		<a class="nav-link" href="<?php print_r( $item['link']); ?>"  >
+		 <?php print_r( $item['label']); ?> </a>
+		 </li>
+	 <?php
+	}
+}
+}
+
+function oxygenmenuItemschild($items) {
+
+	foreach( $items as $item ) {
+		
+	
+	?>
+
+
+			
+		<a  href="<?php print_r( $item['link']); ?>" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+		 <?php print_r( $item['label']); ?>   </a>
+		 
+	 <?php
+	}
+}
+
+function AboutMenuItems($items) {
+	//dd($items);
+	
+	foreach( $items as $item ) {
+		
+	
+	?>
+		
+		<?php if($item['child'] != []) {?>
+		<li class="nav-item dropdown ">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		 <span class="icon-cog"><?php print_r( $item['label']); ?> </span></a>
+			
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		<?php aboutmenuItemschild( $item['child'] ) ?>
+		</div>
+		
+		</li>
+		<?php } else {?>
+		<li class="nav-item" >
+		<a class="nav-link" href="<?php print_r( $item['link']); ?>"  >
+		<span class="icon-cog"> <?php print_r( $item['label']); ?> </span></a>
+		 </li>
+	 <?php
+	}
+}
+}
+
+function aboutnmenuItemschild($items) {
+
+	foreach( $items as $item ) {
+		
+	
+	?>
+
+
+			
+		<a  href="<?php print_r( $item['link']); ?>" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+		 <?php print_r( $item['label']); ?>   </a>
+		 
+	 <?php
+	}
+}
+
+function OrangeMenuItems($items) {
+//dd($items[2]['child']);
+
+foreach( $items as $item ) {
+?>
+
+
+
+<li <?php if($item['child'] != []) {?> class="dropdown " <?php } ?>>
+  <a class="fly" href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+  <?php if($item['child']) {?>
+
+  <ul class="dd">
+   <?php olinks( $item['child'] ) ?>
+  </ul>
+</li>
+
+
+ <?php
+
+}
+}
+}
+
+function olinks($items) {
+
+
+foreach( $items as $item ) 
+{
+
+?>
+<li>
+	<a href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+</li>
+<?php
+}
+}
+
+function MultiMenuItems($items) {
+//dd($items[2]['child']);
+
+foreach( $items as $item ) {
+?>
+
+
+
+<li <?php if($item['child'] != []) {?> class="dropdown " <?php } ?>>
+  <a class="scroll" href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+  <?php if($item['child']) {?>
+
+  <ul class="dd">
+   <?php mlinks( $item['child'] ) ?>
+  </ul>
+</li>
+
+
+ <?php
+
+}
+}
+}
+
+function mlinks($items) {
+
+
+foreach( $items as $item ) 
+{
+
+?>
+<li>
+	<a class="scroll" href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+</li>
+<?php
+}
+}
+
+function StickyMenuItems($items) {
+//dd($items[2]['child']);
+
+foreach( $items as $item ) {
+?>
+
+
+
+<li <?php if($item['child'] != []) {?> class="dropdown " <?php } ?>>
+  <a href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+  <?php if($item['child']) {?>
+
+  <ul class="dd">
+   <?php stlinks( $item['child'] ) ?>
+  </ul>
+</li>
+
+
+ <?php
+
+}
+}
+}
+
+function stlinks($items) {
+
+
+foreach( $items as $item ) 
+{
+
+?>
+<li>
+	<a  href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+</li>
+<?php
+}
+}

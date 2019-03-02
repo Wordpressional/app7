@@ -1,10 +1,5 @@
- <!-- Navbar -->
     <nav class="mlthemeone navbar navbar-expand-md navbar-dark  navbar-custom">
-        
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="main.html">Cedo</a> -->
-
-        <!-- Image Logo -->
+ 
         <a class="navbar-brand logo-image page-scroll" href="main.html"><img src="images/logo.svg" alt="logo"></a>
         
         <!-- Mobile Menu Toggle Button -->
