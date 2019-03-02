@@ -770,7 +770,7 @@
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="DynamicTemplates;Blog">
 
- [bloglist]Post Category Name Here[/bloglist]
+ [bloglist]Post_Category_Name_Here[/bloglist]
 </div>
 
 

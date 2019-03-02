@@ -284,6 +284,10 @@ $(".dropdowns").dropdowns();
     position: static;
     
 }
+#navigation.scroling-menu
+{
+  position: static;
+}
 
 </style>
 
