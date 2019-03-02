@@ -470,8 +470,15 @@ $.ajax({
 #mpolheader{
    position: static;
 }
+.navbar-fixed-top {
+    position: static;
+    
+}
 
-
+#navigation.scroling-menu
+{
+  position: static;
+}
 
 </style>
 
