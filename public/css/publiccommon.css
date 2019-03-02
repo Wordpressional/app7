@@ -1,3 +1,9 @@
+.img-rounded {
+   
+  border-radius: 15px;
+}
+
+
 .template_faq {
     background: #edf3fe none repeat scroll 0 0;
 }
@@ -787,6 +793,20 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
+
+.pynav{
+  float: left;
+  position: relative; 
+  top: 10px !important;
+}
+
+.pynavul
+{
+  display: block !important;
+    float: right;
+    top: -54px;
+    position: relative;
+}
 
   #mc_embed_signup input[type="email"]{
     width: 260px;
@@ -3339,6 +3359,7 @@ section.presentation .side
   display: block;
   color: white;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+  text-decoration: none;
 }
 
 
@@ -8455,9 +8476,14 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
     opacity: 0.9;
 }
 
+div#content-area .row{
+   
+   margin-right: 0px;
+    margin-left: 0px;
+}
+
 div#content-area {
-    overflow-x: hidden;
-    width:100%;
+   width: 100%;
 }
 
 /*teamsnippet*/
@@ -10124,6 +10150,11 @@ div#content-area {
 }
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu{
+margin-left: 15px;
+margin-right: 15px;
+}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -10225,6 +10256,8 @@ div#content-area {
 #cssmenub
 {
   overflow-y: hidden;
+  margin-left: 15px;
+    margin-right: 15px;
 }
 
 #cssmenub,
@@ -10337,6 +10370,8 @@ div#content-area {
   width: auto;
   background: #000000;
   padding: 8px 0;
+  margin-left: 15px;
+    margin-right: 15px;
 }
 #cssmenug:before {
   content: '';
@@ -10398,7 +10433,9 @@ div#content-area {
 /*-------------------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
+#cssmenuc{
+  
+}
 /* Base Styles */
 #cssmenuc ul,
 #cssmenuc li,
@@ -10517,4 +10554,146 @@ div#content-area {
 .anusnippetgalley .thumb
 {
   margin-bottom:30px;
+}
+
+.aboutnav{
+  padding-left: 25px !important;
+}
+.pynav{
+  float: right;
+  position: relative; 
+  top: -24px;
+}
+
+.pynavul
+{
+  display: inline-flex;
+}
+
+span.icon-cog {
+    margin-right: 20px;
+    color: white !important;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#cssmenures {
+  background: transparent;
+  width: auto;
+  margin-left: 15px;
+    margin-right: 15px;
+}
+#cssmenures ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenures ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenures ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenures.align-right ul li {
+  float: right;
+}
+#cssmenures.align-center ul {
+  text-align: center;
+}
+#cssmenures ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenures ul li a:hover {
+  color: #333333;
+}
+#cssmenures ul li a:hover:before {
+  width: 100%;
+}
+#cssmenures ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: transparent;
+  opacity: .5;
+}
+#cssmenures ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenures ul li.last > a:after,
+#cssmenures ul li:last-child > a:after {
+  display: none;
+}
+#cssmenures ul li.active a {
+  color: #333333;
+}
+#cssmenures ul li.active a:before {
+  width: 100%;
+}
+#cssmenures.align-right li.last > a:after,
+#cssmenures.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenures.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenures ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenures ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+  }
+  #cssmenures ul li.last > a,
+  #cssmenures ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenures ul li a:after {
+    display: none;
+  }
+  #cssmenures ul li a:before {
+    display: none;
+  }
 }

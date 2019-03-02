@@ -64,9 +64,20 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('icohomelist', 'App\Shortcodes\ICOHomeShortcode@icohomelist');
         Shortcode::register('psubscribe', 'App\Shortcodes\PsubscribeShortcode@psubscribe');
         Shortcode::register('loanmenulist', 'App\Shortcodes\MenuShortcode@loanmenulist');
+        Shortcode::register('politicsmenulist', 'App\Shortcodes\MenuShortcode@politicsmenulist');
+        Shortcode::register('oxygenmenulist', 'App\Shortcodes\MenuShortcode@oxygenmenulist');
+        Shortcode::register('aboutmenulist', 'App\Shortcodes\MenuShortcode@aboutmenulist');
+        Shortcode::register('orangemenulist', 'App\Shortcodes\MenuShortcode@orangemenulist');
+        Shortcode::register('multimenulist', 'App\Shortcodes\MenuShortcode@multimenulist');
+        Shortcode::register('stickymenulist', 'App\Shortcodes\MenuShortcode@stickymenulist');
+        Shortcode::register('cyanmenulist', 'App\Shortcodes\MenuShortcode@cyanmenulist');
+        Shortcode::register('greenmenulist', 'App\Shortcodes\MenuShortcode@greenmenulist');
+
+        Shortcode::register('fbubblemenulist', 'App\Shortcodes\MenuShortcode@fbubblemenulist');
+        Shortcode::register('ftabbedmenulist', 'App\Shortcodes\MenuShortcode@ftabbedmenulist');
         
 
-        for($i=0;$i<110;$i++){
+        for($i=1;$i<110;$i++){
             $name = "customplain_".$i;
         Shortcode::register($name, 'App\Shortcodes\CustomplainShortcode@'.$name);
         }

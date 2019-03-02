@@ -23,9 +23,12 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
+use App\Http\Traits\ExcludableTrait;
+
 class StablesController extends Controller
 {
     use BrandsTrait;
+    use ExcludableTrait;
     public function index()
     {   
        $data = $this->brandsAll();
@@ -549,14 +552,24 @@ class StablesController extends Controller
         $stablescform = Cform::find($id);
         
         $tablename = $stablescform->cshortcode;
-        $alldata = DB::table($tablename)->select('*')->get();
+        //dd($this->getTableColumns($tablename));
+        //dd($this->exclude($tablename, 'created_at'));
+
+        $colnames = $this->exclude($tablename, 'created_at', 'updated_at');
+
+        $alldata = DB::table($tablename)->select($this->exclude($tablename, 'created_at', 'updated_at'))->get();
          $dataarrays = $alldata->toArray();
         //dd($dataarrays[0][1]);
+         //$first_line_parts = implode(',', $colnames); 
+         $col[0] = $colnames;
+        //dd($col);
+         
+        
          $r = $dataarrays;
          //dd($r);
          $csvpath = public_path('data.csv');
          //dd($csvpath);
-        $this->data_to_csv($r, $csvpath);
+        $this->data_to_csv($r, $csvpath, $col);
 
         $f = $this->getDownload();
 
@@ -566,10 +579,10 @@ class StablesController extends Controller
 
 
 
-        public function data_to_csv($data, $filename)
+        public function data_to_csv($data, $filename, $col)
         {
             $fp = fopen($filename, 'w');
-
+            fputcsv($fp, (array) $col[0]);
             foreach ($data as $row) {
                 fputcsv($fp, (array) $row);
             }

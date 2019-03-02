@@ -39,7 +39,7 @@
 @if($stablef)
 
 @foreach($stablef as $key => $val)
-@if(substr( $val, 0, 6 ) === "header" || substr( $val, 0, 9 ) === "paragraph" || substr( $val, 0, 6 ) === "hidden")
+@if(substr( $val, 0, 6 ) === "header" || substr( $val, 0, 9 ) === "paragraph" || substr( $val, 0, 6 ) === "hidden" || substr( $val, 0, 6 ) === "button" )
 @else
 
 <th> {{ $val }} </th>
@@ -56,7 +56,7 @@
 @foreach($alldata as $m => $alld)
 <tr>
 @foreach($stablef as $key => $val)
-@if(substr( $val, 0, 6 ) === "header" || substr( $val, 0, 9 ) === "paragraph" || substr( $val, 0, 6 ) === "hidden")
+@if(substr( $val, 0, 6 ) === "header" || substr( $val, 0, 9 ) === "paragraph" || substr( $val, 0, 6 ) === "hidden" || substr( $val, 0, 6 ) === "button")
 @else
 
 <td>

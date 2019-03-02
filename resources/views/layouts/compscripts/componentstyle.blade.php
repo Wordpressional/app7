@@ -16084,7 +16084,7 @@ label.imageUploadmoxygentheme80:after {
   display: none;
   position: relative;
   top: 20px;
-  right: -10px;
+  right: -80px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
@@ -16130,7 +16130,7 @@ label.imageUploadmpoltheme1:after {
   display: inline;
   position: relative;
   top: 20px;
-  right: 75px;
+  right: 25px;
   padding: 8px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;

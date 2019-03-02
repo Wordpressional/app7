@@ -11,11 +11,21 @@ class BlogShortcode {
   {
   	//dd($content);
   	$catid = Category::where('name', $content)->first();
-    $posts = Post::where('category_id', $catid->id)
-                            ->get();
+  	 //dd($catid);
+    
 
-    //dd($posts);
-    return view('shortcodes.blog')->with('posts', $posts);
+   
+    if($catid != null)
+    {
+    	$posts = Post::where('category_id', $catid->id)
+                            ->get();
+    	return view('shortcodes.blog')->with('posts', $posts);
+    }
+    else
+    {
+    	return "---------First create post category and menction the category name in widget inline editor---------";
+    }
+    
   }
 
    
