@@ -70,6 +70,11 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('orangemenulist', 'App\Shortcodes\MenuShortcode@orangemenulist');
         Shortcode::register('multimenulist', 'App\Shortcodes\MenuShortcode@multimenulist');
         Shortcode::register('stickymenulist', 'App\Shortcodes\MenuShortcode@stickymenulist');
+        Shortcode::register('cyanmenulist', 'App\Shortcodes\MenuShortcode@cyanmenulist');
+        Shortcode::register('greenmenulist', 'App\Shortcodes\MenuShortcode@greenmenulist');
+
+        Shortcode::register('fbubblemenulist', 'App\Shortcodes\MenuShortcode@fbubblemenulist');
+        Shortcode::register('ftabbedmenulist', 'App\Shortcodes\MenuShortcode@ftabbedmenulist');
         
 
         for($i=1;$i<110;$i++){

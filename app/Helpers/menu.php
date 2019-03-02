@@ -462,3 +462,173 @@ foreach( $items as $item )
 <?php
 }
 }
+
+function CyanMenuItems($items) {
+//dd($items[2]['child']);
+
+foreach( $items as $item ) {
+?>
+
+
+
+<li <?php if($item['child'] != []) {?> class="dropdown" <?php } ?>>
+  <a href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+  <?php if($item['child']) {?>
+
+  <ul class="dd">
+   <?php cylinks( $item['child'] ) ?>
+  </ul>
+</li>
+
+
+ <?php
+
+}
+}
+}
+
+function cylinks($items) {
+
+
+foreach( $items as $item ) 
+{
+
+?>
+<li>
+	<a  href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+</li>
+<?php
+}
+}
+
+function GreenMenuItems($items) {
+//dd($items[2]['child']);
+
+foreach( $items as $item ) {
+?>
+
+
+
+<li <?php if($item['child'] != []) {?> class="dropdown" <?php } ?>>
+  <a href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+  <?php if($item['child']) {?>
+
+  <ul class="dd">
+   <?php greenlinks( $item['child'] ) ?>
+  </ul>
+</li>
+
+
+ <?php
+
+}
+}
+}
+
+function greenlinks($items) {
+
+
+foreach( $items as $item ) 
+{
+
+?>
+<li>
+	<a  href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+</li>
+<?php
+}
+}
+
+function FbubbleMenuItems($items) {
+//dd($items[2]['child']);
+
+foreach( $items as $item ) {
+?>
+
+
+
+<li <?php if($item['child'] != []) {?> class="dropdown" <?php } ?>>
+  <a href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+  <?php if($item['child']) {?>
+
+  <ul class="dd">
+   <?php Fbubblelinks( $item['child'] ) ?>
+  </ul>
+</li>
+
+
+ <?php
+
+}
+}
+}
+
+function Fbubblelinks($items) {
+
+
+foreach( $items as $item ) 
+{
+
+?>
+<li>
+	<a  href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+</li>
+<?php
+}
+}
+
+function FtabbedMenuItems($items) {
+//dd($items[2]['child']);
+
+foreach( $items as $item ) {
+?>
+
+
+
+<li <?php if($item['child'] != []) {?> class="dropdown" <?php } ?>>
+  <a href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+  <?php if($item['child']) {?>
+
+  <ul class="dd">
+   <?php Ftabbedlinks( $item['child'] ) ?>
+  </ul>
+</li>
+
+
+ <?php
+
+}
+}
+}
+
+function Ftabbedlinks($items) {
+
+
+foreach( $items as $item ) 
+{
+
+?>
+<li>
+	<a  href="<?php print_r( $item['link']); ?>"><?php print_r( $item['label']); ?>
+		
+	</a>
+</li>
+<?php
+}
+}
+
+

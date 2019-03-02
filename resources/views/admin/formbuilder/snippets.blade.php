@@ -236,6 +236,26 @@
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
 
+[cyanmenulist]Menu_Name_Here[/cyanmenulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
+
+[greenmenulist]Menu_Name_Here[/greenmenulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
+
+[ftabbedmenulist]Menu_Name_Here[/ftabbedmenulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
+
+[fbubblemenulist]Menu_Name_Here[/fbubblemenulist]
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/1levelmenu2.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
+
 [aboutmenulist]Menu_Name_Here[/aboutmenulist]
 </div>
 
@@ -244,7 +264,7 @@
 [orangemenulist]Menu_Name_Here[/orangemenulist]
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.jpg')}}" data-keditor-title="AMenu" data-keditor-categories="Diaplay Menus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.jpg')}}" data-keditor-title="AMenu" data-keditor-categories="Display Menus">
 
 @include('shortcodes.plainhtml.aboutmenu')
 

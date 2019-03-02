@@ -1,3 +1,9 @@
+.img-rounded {
+   
+  border-radius: 15px;
+}
+
+
 .template_faq {
     background: #edf3fe none repeat scroll 0 0;
 }
@@ -3353,6 +3359,7 @@ section.presentation .side
   display: block;
   color: white;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+  text-decoration: none;
 }
 
 
@@ -8469,9 +8476,14 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
     opacity: 0.9;
 }
 
-div#content-area {
+div#content-area .row{
    
-    width:100%;
+   margin-right: 0px;
+    margin-left: 0px;
+}
+
+div#content-area {
+   width: 100%;
 }
 
 /*teamsnippet*/
@@ -10138,6 +10150,11 @@ div#content-area {
 }
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu{
+margin-left: 15px;
+margin-right: 15px;
+}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -10239,6 +10256,8 @@ div#content-area {
 #cssmenub
 {
   overflow-y: hidden;
+  margin-left: 15px;
+    margin-right: 15px;
 }
 
 #cssmenub,
@@ -10351,6 +10370,8 @@ div#content-area {
   width: auto;
   background: #000000;
   padding: 8px 0;
+  margin-left: 15px;
+    margin-right: 15px;
 }
 #cssmenug:before {
   content: '';
@@ -10412,7 +10433,9 @@ div#content-area {
 /*-------------------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
+#cssmenuc{
+  
+}
 /* Base Styles */
 #cssmenuc ul,
 #cssmenuc li,
@@ -10556,6 +10579,8 @@ span.icon-cog {
 #cssmenures {
   background: transparent;
   width: auto;
+  margin-left: 15px;
+    margin-right: 15px;
 }
 #cssmenures ul {
   list-style: none;

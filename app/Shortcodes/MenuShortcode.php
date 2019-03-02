@@ -87,4 +87,37 @@ class MenuShortcode {
     //dd($posts);
     return view('shortcodes.menus.stickymenu')->with('menuList', $menuList);
   }
+
+  public function cyanmenulist($shortcode, $content, $compiler, $name, $viewData)
+  {
+    $menuList = Menu::getByName($content);
+
+    //dd($posts);
+    return view('shortcodes.menus.cyanmenudynamic')->with('menuList', $menuList);
+  }
+
+  public function greenmenulist($shortcode, $content, $compiler, $name, $viewData)
+  {
+    $menuList = Menu::getByName($content);
+
+    //dd($posts);
+    return view('shortcodes.menus.greenmenudynamic')->with('menuList', $menuList);
+  }
+
+  public function ftabbedmenulist($shortcode, $content, $compiler, $name, $viewData)
+  {
+    $menuList = Menu::getByName($content);
+
+    //dd($posts);
+    return view('shortcodes.menus.flattabbedmenu')->with('menuList', $menuList);
+  }
+
+  public function fbubblemenulist($shortcode, $content, $compiler, $name, $viewData)
+  {
+    $menuList = Menu::getByName($content);
+
+    //dd($posts);
+    return view('shortcodes.menus.fbubblemenu')->with('menuList', $menuList);
+  }
+
 }
