@@ -11984,7 +11984,7 @@ label.imageUploadmoxygentheme3:after {
   display: none;
   position: relative;
   top: 20px;
-  right: 50px;
+  right: 20px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
@@ -17587,6 +17587,91 @@ span.contpresentationcolormpoltheme27{
    right: 50px;
    
 }
+
+
+.editlogolnndynamic, .savelogolnndynamic {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 20px;
+  right: -80px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+.editlogolnndynamic { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savelogolnndynamic {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+
+
+
+
+img.imagePreviewlogolnndynamic {
+    display: inline;
+   
+}
+
+
+
+#imageUploadlogonlnndynamic  {
+  display:none;
+}
+
+label.imageUploadlogonlnndynamic:after {
+  content: "\f093";
+  font-family: "FontAwesome";
+  color: black;
+  width: 30px;
+  display: inline;
+  position: relative;
+  top: 20px;
+  right: 25px;
+  padding: 8px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  margin: auto;
+  background-color: white;
+}
+
+.inputfile {
+  /* visibility: hidden etc. wont work */
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile:focus + label {
+  /* keyboard navigation */
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label * {
+  pointer-events: none;
+}
+
+
+
 
 }
 

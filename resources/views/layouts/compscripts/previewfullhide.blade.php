@@ -1421,4 +1421,11 @@ display: none !important;
 {
   display: none !important;
 }
+#imageUploadlogonlnndynamic{
+  display: none !important;
+}
+.editlogolnndynamic, .savelogolnndynamic{
+  display: none !important;
+}
+
 </style>

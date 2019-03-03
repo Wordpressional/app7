@@ -1422,3 +1422,9 @@ display: none !important;
 .cbakimg{
   background: none !important;
 }
+#imageUploadlogonlnndynamic{
+  display: none !important;
+}
+.editlogolnndynamic, .savelogolnndynamic{
+  display: none !important;
+}

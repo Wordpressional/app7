@@ -445,6 +445,8 @@ $.ajax({
     margin-top: 30px;
     height: 930px;
     padding-top:170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .iframecentmobi1
@@ -458,6 +460,8 @@ $.ajax({
     margin-top: 30px;
     height: 800px;
     padding-top:170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main_h {

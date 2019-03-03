@@ -1,3 +1,5 @@
+
+
 .img-rounded {
    
   border-radius: 15px;
@@ -795,25 +797,25 @@ div#demo {
 @media (max-width: 550px) and (min-width: 50px){
 
 .pynav{
-  float: left;
-  position: relative; 
-  top: 10px !important;
+float: left;
+position: relative; 
+top: 10px !important;
 }
 
 .pynavul
 {
-  display: block !important;
-    float: right;
-    top: -54px;
-    position: relative;
+display: block !important;
+  float: right;
+  top: -54px;
+  position: relative;
 }
 
-  #mc_embed_signup input[type="email"]{
-    width: 260px;
-  }
-  .wow{
-    visibility: visible;
-  }
+#mc_embed_signup input[type="email"]{
+  width: 260px;
+}
+.wow{
+  visibility: visible;
+}
 section.presentation .side {
     width: 350px;
   }
@@ -1418,17 +1420,19 @@ Version      : 1.0
 */
 .main_h {
     position: fixed;
-    max-height: 70px;
+   
     z-index: 999;
     width: 100%;
     background: none;
-    overflow: hidden;
+   
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 0;
-    top: -100px;
+    
     padding-bottom: 6px;
     font-family: "Lato", sans-serif;
+    min-height: 140px;
+    
 }
 
 .open-nav {
@@ -2829,9 +2833,7 @@ Version      : 1.0
 }
 
 @media only screen and (max-width: 766px) {
-  .main_h {
-    padding-top: 25px;
-  }
+  
 }
 
 @media only screen and (max-width: 766px) {
@@ -3276,6 +3278,12 @@ color: white;
 
 @media (max-width: 550px) and (min-width: 50px){
 
+.main_h{
+  max-height: none !important;
+}
+.themeone nav ul li{
+  text-align: left !important;
+}
 #nav li a.fly {
    
     margin: 5px;
@@ -10552,9 +10560,11 @@ margin-right: 15px;
   margin-bottom:30px;
 }
 
-.aboutnav{
-  padding-left: 25px !important;
+.aboutnav img {
+   
+    margin-top: 17px;
 }
+
 .pynav{
   float: right;
   position: relative; 
@@ -10585,6 +10595,8 @@ span.icon-cog {
   line-height: 1;
   display: block;
   zoom: 1;
+  width: 70%;
+  float: right;
 }
 #cssmenures ul:after {
   content: " ";
@@ -10692,4 +10704,15 @@ span.icon-cog {
   #cssmenures ul li a:before {
     display: none;
   }
+}
+.lnr-menu:before {
+  content: "\f0c9" !important;
+  font-family: FontAwesome !important;
+  font-style: normal;
+}
+
+.lnr-cross:before {
+    content: "\f057" !important;
+    font-family: FontAwesome !important;
+     font-style: normal;
 }

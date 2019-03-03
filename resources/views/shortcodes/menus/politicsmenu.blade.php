@@ -9,7 +9,7 @@
            <span class="savempoltheme1">save</span>
            <input type='file' id="imageUploadmpoltheme1" accept=".png, .jpg, .jpeg" />
            <label class="imageUploadmpoltheme1" for="imageUploadmpoltheme1">&nbsp;</label>
-        <a href="main.html">
+        <a href="{{url('/')}}">
         	<img id="imagePreviewmpoltheme1" src="{{ asset('themes/politt5/logo.png')}}" alt="" title="" />
         </a>
       </div>

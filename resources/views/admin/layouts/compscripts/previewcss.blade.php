@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 <link href="{{ asset('css/swiper.css')}}" rel="stylesheet">
 <link href="{{ asset('css/magnific-popup.css')}}" rel="stylesheet">
+
 <!-- Rev slider css -->
   <link href="{{ asset('webhome/vendors/revolution/css/settings.css') }}" rel="stylesheet">
   <link href="{{ asset('webhome/vendors/revolution/css/layers.css') }}" rel="stylesheet">

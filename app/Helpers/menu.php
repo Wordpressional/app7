@@ -214,18 +214,18 @@ function PoliticsMenuItems($items) {
 	?>
 		
 		<?php if($item['child'] != []) {?>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<li >
+			<a  href="#">
 		 <?php print_r( $item['label']); ?> </a>
 			
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<div>
 		<?php politicsmenuItemschild( $item['child'] ) ?>
 		</div>
 		
 		</li>
 		<?php } else {?>
-		<li class="nav-item" >
-		<a class="nav-link" href="<?php print_r( $item['link']); ?>"  >
+		<li  >
+		<a href="<?php print_r( $item['link']); ?>"  >
 		 <?php print_r( $item['label']); ?> </a>
 		 </li>
 	 <?php
@@ -242,7 +242,7 @@ function politicsmenuItemschild($items) {
 
 
 			
-		<a  href="<?php print_r( $item['link']); ?>" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+		<a  href="<?php print_r( $item['link']); ?>"  >
 		 <?php print_r( $item['label']); ?>   </a>
 		 
 	 <?php
