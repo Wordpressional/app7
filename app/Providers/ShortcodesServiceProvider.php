@@ -24,7 +24,7 @@ class ShortcodesServiceProvider extends ServiceProvider
     {
         //if(env('DB_DATABASE')!='')
            // {
-                //if (Schema::hasTable('forms')) {
+                if (Schema::hasTable('forms')) {
            
 
                 $forms = Form::all();
@@ -40,7 +40,7 @@ class ShortcodesServiceProvider extends ServiceProvider
                     Shortcode::register($cfo->cshortcode, 'App\Shortcodes\CFShortcode@cfcustp');
                 }
 
-            //}
+            }
         //}
     }
 
