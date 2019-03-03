@@ -24,6 +24,8 @@ class ShortcodesServiceProvider extends ServiceProvider
     {
         if(env('DB_DATABASE')!='')
             {
+        //if(env('DB_DATABASE')!='')
+           // {
                 if (Schema::hasTable('forms')) {
            
 
@@ -40,8 +42,9 @@ class ShortcodesServiceProvider extends ServiceProvider
                     Shortcode::register($cfo->cshortcode, 'App\Shortcodes\CFShortcode@cfcustp');
                 }
 
-           }
         }
+            }
+        //}
     }
 
     /**
@@ -77,7 +80,7 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('ftabbedmenulist', 'App\Shortcodes\MenuShortcode@ftabbedmenulist');
         
 
-        for($i=1;$i<110;$i++){
+        for($i=1;$i<=110;$i++){
             $name = "customplain_".$i;
         Shortcode::register($name, 'App\Shortcodes\CustomplainShortcode@'.$name);
         }
