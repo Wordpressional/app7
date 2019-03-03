@@ -1,34 +1,30 @@
 <!-- HEADER -->
-		<header class="main_h sticky">
-			<div class="themeone">
+<header class="main_h sticky">
+	<div class="themeone">
 
-		    <div class="row">
+    <div class="row">
+ 	
+ <nav class="navbar navbar-expand-sm">
+		<div  class="boxlogolnndynamic">
+        <span class="editlogolnndynamic">edit</span>
+        <span class="savelogolnndynamic">save</span>
+        <input type='file' id="imageUploadlogonlnndynamic" accept=".png, .jpg, .jpeg" />
+        <label class="imageUploadlogonlnndynamic" for="imageUploadlogonlnndynamic">&nbsp;</label>
+        
+        <span ><a href="{{url('/')}}"><img id="imagePreviewlogolnndynamic" src="{{asset('themes/t1/logo2.png')}}" alt="Logo"></a></span>
+        </div>
 
-		        <div  class="boxmpoltheme1">
-  <span class="editmpoltheme1">edit</span>
-           <span class="savempoltheme1">save</span>
-           <input type='file' id="imageUploadmpoltheme1" accept=".png, .jpg, .jpeg" />
-           <label class="imageUploadmpoltheme1" for="imageUploadmpoltheme1">&nbsp;</label>
-           <span ><img id="imagePreviewmpoltheme1" src="{{asset('themes/t1/logo2.png')}}" alt="Logo"></span>
- </div>
-					
-		        
-		        <div class="mobile-toggle">
-		            <span></span>
-		            <span></span>
-		            <span></span>
-		        </div>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr-menu"></span>
+        </button>
 
-		        <!-- NAVBAR -->
-		        <nav>
-		            <ul>
-		                  {{ StickyMenuItems($menuList) }}
-		            </ul>
-		        </nav>
-		        <!-- END NAVBAR -->
-		    </div> <!-- / row -->
-		</div>
-	
-		</header>
-	<!-- END HEADER -->
-
+		  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    		<ul class="navbar-nav mr-auto">
+              {{ StickyMenuItems($menuList) }}
+          </ul>
+		  </div> <!-- / row -->
+		
+	</nav>
+	</div>
+</div>
+</header>

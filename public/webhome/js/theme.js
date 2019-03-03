@@ -625,7 +625,7 @@ $(document).ready(function() {
     });
 
     $(document).ready(function() {
-
+        
         $('html, body').hide();
 
         if (window.location.hash) {

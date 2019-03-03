@@ -22074,7 +22074,7 @@ if(inputmoxysingup104 != ""){
 
 $(document).ready(function(){
 
-   $(".imageUploadmpoltheme1").hide();
+$(".imageUploadmpoltheme1").hide();
 
 $( ".boxmpoltheme1" )
  .on("mouseenter", function() {
@@ -23907,5 +23907,64 @@ var inputpresentationcolormpoltheme27 = $('.inputpresentationcolormpoltheme27').
   $('.mpolpresentation27').css("background",inputpresentationcolormpoltheme27);
 }
 
+
+
+$(document).ready(function(){
+
+$(".imageUploadlogonlnndynamic").hide();
+
+$( ".boxlogolnndynamic" )
+ .on("mouseenter", function() {
+   if ($(".boxlogolnndynamic").hasClass("editable")) {
+    $(".editlogolnndynamic").hide();
+
+   } 
+   else
+   {
+    $(".editlogolnndynamic").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editlogolnndynamic").hide();
+
+});
+
+ $(".editlogolnndynamic").click(function() {
+  $(this).hide();
+  $(".boxlogolnndynamic").addClass("editable");
+   $(".editlogolnndynamic").hide();
+  $(".savelogolnndynamic").show();
+  $(".imageUploadlogonlnndynamic").show();
+});
+
+$(".savelogolnndynamic").click(function() {
+  $(this).hide();
+  $(".boxlogolnndynamic").removeClass("editable");
+ 
+  $(".editlogolnndynamic").hide();
+  $(".imageUploadlogonlnndynamic").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+
+
+
+
+$("#imageUploadlogonlnndynamic").change(function() {
+$("#imageUploadlogonlnndynamic").attr("name", "imageUploadlogonlnndynamic");
+    readURLndylogo(this);
+});
+
+});
+function readURLndylogo(input) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserver(file, "#imageUploadlogonlnndynamic", "imageUploadlogonlnndynamic","#imagePreviewlogolnndynamic");
+
+  
+}
 </script>
 

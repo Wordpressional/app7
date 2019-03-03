@@ -25,9 +25,15 @@
 
 <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
 <script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
+<script src="{{ asset('js/superfish.min.js')}}"></script>
  <script src="{{ asset('js/swiper.min.js') }}"></script>
  <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
 <script src="{{ asset('js/validator.min.js') }}"></script>
+
+<script src="{{ asset('js/mn-accordion.js') }}"></script>
+<script src="{{ asset('js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+
 <script src="{{ asset('webhome/vendors/parallaxer/jquery.parallax-1.1.3.js') }}"></script>
 <!-- Rev slider js -->
   <script src="{{ asset('webhome/vendors/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
@@ -65,7 +71,7 @@
   <!-- WOW JS -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
   
- <script src="{{ asset('js/superfish.min.js')}}"></script>
+ 
 
       
 
@@ -115,7 +121,46 @@
 
 
                
+ $(document).ready(function() {
+  if($(".mlthemeone.navbar-custom").length != 0) {
+   $('.mlthemeone.navbar-custom').css('position', 'static');
+ }
+ if($(".main_h").length != 0 ) {
+  $('.main_h').css('position', 'relative');
+$('.main_h').css('top', '-15px');
+}
+  $( '.keditor-ui > p:empty' ).remove();
+
+});  
+
+
+$(window).scroll(function() {
+if($(".mlthemeone.navbar-custom").length != 0 ) {
+if ($(window).scrollTop() > 200) {
   
+    $('.mlthemeone.navbar-custom').css('position', 'fixed');
+} else {
+  
+  $('.mlthemeone.navbar-custom').css('position', 'static');
+
+}
+
+}
+
+
+if($(".main_h").length != 0 ) {
+if ($(window).scrollTop() > 100) {
+  
+    $('.main_h').css('position', 'fixed');
+    $('.main_h').css('top', '0px');
+} else {
+  
+  $('.main_h').css('position', 'relative');
+$('.main_h').css('top', '-15px');
+}
+
+}
+});
                 
 
             </script>

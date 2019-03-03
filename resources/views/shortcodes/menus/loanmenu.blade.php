@@ -1,6 +1,15 @@
     <nav class="mlthemeone navbar navbar-expand-md navbar-dark  navbar-custom">
- 
-        <a class="navbar-brand logo-image page-scroll" href="main.html"><img src="images/logo.svg" alt="logo"></a>
+        
+
+        
+       <div  class="boxlogolnndynamic">
+        <span class="editlogolnndynamic">edit</span>
+        <span class="savelogolnndynamic">save</span>
+        <input type='file' id="imageUploadlogonlnndynamic" accept=".png, .jpg, .jpeg" />
+        <label class="imageUploadlogonlnndynamic" for="imageUploadlogonlnndynamic">&nbsp;</label>
+        
+        <span ><a href="{{url('/')}}"><img id="imagePreviewlogolnndynamic" src="{{asset('themes/t1/logo2.png')}}" alt="Logo"></a></span>
+        </div>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,4 +23,4 @@
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
-    <div class="onmobile">&nbsp;</div>
+   
