@@ -77,7 +77,7 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('ftabbedmenulist', 'App\Shortcodes\MenuShortcode@ftabbedmenulist');
         
 
-        for($i=1;$i<110;$i++){
+        for($i=1;$i<=110;$i++){
             $name = "customplain_".$i;
         Shortcode::register($name, 'App\Shortcodes\CustomplainShortcode@'.$name);
         }
