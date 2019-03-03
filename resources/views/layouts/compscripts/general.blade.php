@@ -144,7 +144,7 @@ $(document).ready(function() {
  }
  if($(".main_h").length != 0 ) {
 $('.main_h').css('position', 'relative');
-$('.main_h').css('top', '-15px');
+
 
 }
   $( '.keditor-ui > p:empty' ).remove();
