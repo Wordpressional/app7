@@ -498,44 +498,106 @@ class ThemeController extends Controller
     public function loadthemes(Request $request)
     {
         //dd($request->themeone);
+       
+
         $theme = new Theme;
-        $theme->tname = "Portfolio Theme One";
+        $theme->tname = "Portfolio Theme - T1";
         $theme->tcontent = $request->themeone;
 
         $theme->tstatus = "inactive";
         $theme->save();
+
         $theme = new Theme;
-        $theme->tname = "Personal Theme One";
+        $theme->tname = "Personal Theme - T2";
         $theme->tcontent = $request->themetwo;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "Loan Theme One";
+        $theme->tname = "Loan Theme - T3";
         $theme->tcontent = $request->themethree;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "General Theme One";
+        $theme->tname = "Business Theme - T4";
         $theme->tcontent = $request->themefour;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "General Theme Two";
+        $theme->tname = "Politics Theme - T5";
         $theme->tcontent = $request->themefive;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "General Theme Three";
+        $theme->tname = "General Theme - T01";
         $theme->tcontent = $request->themesix;
 
         $theme->tstatus = "inactive";
         $theme->save();
         $theme = new Theme;
-        $theme->tname = "Basic Theme One";
+        $theme->tname = "Basic Theme One - T02";
+        $theme->tcontent = $request->themeseven;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+        
+
+        return "success";
+    }
+
+    public function Reloadthemes(Request $request)
+    {
+        //dd($request->themeone);
+        $theme = Theme::where('tname', "Portfolio Theme - T1")->first();
+        
+        //dd($request->themeone);
+        
+        $theme->tcontent = $request->themeone;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+
+        $theme = Theme::where('tname', "Personal Theme - T2")->first();
+        
+       
+        $theme->tcontent = $request->themetwo;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+
+        $theme = Theme::where('tname', "Loan Theme - T3")->first();
+      
+        $theme->tcontent = $request->themethree;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+
+        $theme = Theme::where('tname', "Business Theme - T4")->first();
+       
+        $theme->tcontent = $request->themefour;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+
+        $theme = Theme::where('tname', "Politics Theme - T5")->first();
+        
+        $theme->tcontent = $request->themefive;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+
+        $theme = Theme::where('tname', "General Theme - T01")->first();
+       
+        $theme->tcontent = $request->themesix;
+
+        $theme->tstatus = "inactive";
+        $theme->save();
+
+        $theme = Theme::where('tname', "Basic Theme One - T02")->first();
+        
         $theme->tcontent = $request->themeseven;
 
         $theme->tstatus = "inactive";
