@@ -124,7 +124,7 @@ class MenuShortcode {
     }
   }
 
-  public function aboutmenulist($shortcode, $content, $compiler, $name, $viewData)
+  public function aboutmenulist_transparent($shortcode, $content, $compiler, $name, $viewData)
   {
     $check = DB::table('admin_menus')->where('name', $content)->select('*')->get();
     
@@ -134,7 +134,7 @@ class MenuShortcode {
     }
     else
     {
-      return "-----------First build menu using menu builder and specify the menu name in the widget inline editor---------";
+      return "-----------First build menu using menu builder and specify the menu name in the widget inline editor and fill container with color---------";
     }
     
 
@@ -145,7 +145,7 @@ class MenuShortcode {
     }
   }
   
-  public function orangemenulist($shortcode, $content, $compiler, $name, $viewData)
+  public function orangemenulist_transparent($shortcode, $content, $compiler, $name, $viewData)
   {
     $check = DB::table('admin_menus')->where('name', $content)->select('*')->get();
     
@@ -155,7 +155,7 @@ class MenuShortcode {
     }
     else
     {
-      return "-----------First build menu using menu builder and specify the menu name in the widget inline editor---------";
+      return "-----------First build menu using menu builder and specify the menu name in the widget inline editor and fill container with color---------";
     }
     
 

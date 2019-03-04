@@ -69,8 +69,8 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('loanmenulist', 'App\Shortcodes\MenuShortcode@loanmenulist');
         Shortcode::register('politicsmenulist', 'App\Shortcodes\MenuShortcode@politicsmenulist');
         Shortcode::register('oxygenmenulist', 'App\Shortcodes\MenuShortcode@oxygenmenulist');
-        Shortcode::register('aboutmenulist', 'App\Shortcodes\MenuShortcode@aboutmenulist');
-        Shortcode::register('orangemenulist', 'App\Shortcodes\MenuShortcode@orangemenulist');
+        Shortcode::register('aboutmenulist_transparent', 'App\Shortcodes\MenuShortcode@aboutmenulist_transparent');
+        Shortcode::register('orangemenulist_transparent', 'App\Shortcodes\MenuShortcode@orangemenulist_transparent');
         Shortcode::register('multimenulist', 'App\Shortcodes\MenuShortcode@multimenulist');
         Shortcode::register('stickymenulist', 'App\Shortcodes\MenuShortcode@stickymenulist');
         Shortcode::register('cyanmenulist', 'App\Shortcodes\MenuShortcode@cyanmenulist');
