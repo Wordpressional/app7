@@ -95,6 +95,8 @@ function random_color() {
          
          alt="img" 
          class="screenshot img" />
+
+        <span class="tno" style="background-color:brown; color: white; border-radius: 50%; padding:10px; font-weight: bold;">t{{$theme->id}}</span>
 <input type="text" id="tid_{{$theme->id}}" value="{{$theme->id}}" style="display:none;">
 <h6 style="background:#000000; color:#E6E6E6; padding:5px; border-radius:5px; border: 2px solid #E6E6E6; margin-bottom: 60px;"> <i class="fa fa-adjust"></i>
  {{ $theme->tname }} </h6>
@@ -164,7 +166,7 @@ function random_color() {
 <div class="row">
 
 
-<div class="col-lg-11 col-md-11 bdstyle">
+<div class="col-lg-11 col-md-11 bdstyle1">
 
 <label>Theme Name</label>
 <input type="text" name="tname" id="tname" required="required">
@@ -193,12 +195,16 @@ function random_color() {
 @endif
  <script type="text/javascript">
   $(function() {
+        $('.tno').css('display', 'none');
+        $('.tno').css('z-index', 1000);
+         $('.tno').css('position', 'relative');
        $('.screenshot').css('display', 'none');
+       $('.screenshot').css('border', '3px solid #e2e2e2');
    
         $('.divthatholdstheimage').click(function() {
           
              $('.img').toggle();
-
+             $('.tno').toggle();
             
         });
       
