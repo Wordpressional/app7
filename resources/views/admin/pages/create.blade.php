@@ -2,7 +2,9 @@
 
 @section('content')
     <h1>@lang('pages.create')</h1>
-
+<br>
+<p style="color:blue;">Disable static page and enable only landing page link add "nil" to header and footer field.</p>
+<hr>
     {!! Form::open(['route' => ['admin.pages.store'], 'method' =>'POST', 'files' => true]) !!}
         @include('admin/pages/_form')
 

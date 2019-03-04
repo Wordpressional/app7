@@ -1,8 +1,14 @@
 @extends('admin.layouts.master')
 
 @section('content')
+ <h1>Edit Page</h1>
+<br>
+<p style="color:blue;">Disable static page link and enable only landing page link add "nil" to header and footer field.</p>
+<hr>
+@if($page->headercode != "nil")
     <p>@lang('pages.show') Link 1: {{ link_to_route('page.custompage', route('page.custompage', $page), $page) }}</p>
     <p>@lang('pages.show') Link 2: {{ link_to_route('page.staticpage', route('page.staticpage', $page), $page) }}</p>
+@endif
      <p>@lang('pages.show') Link 3: {{ link_to_route('page.landingsitepage', route('page.landingsitepage', $page), $page) }}</p>
 
     
