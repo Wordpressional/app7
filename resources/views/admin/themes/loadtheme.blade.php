@@ -91,12 +91,14 @@ function random_color() {
 @php $alteredstring = substr($theme->tname,0,8) @endphp
 
 <div class="col-lg-5 col-md-5 col-sm-12 bdstyle" style="background:#{{$tcolor}}; height:250px;">
+  @if($theme->id < 7)
    <img style="position:absolute; width:101%; margin:-16px; height:101%;" src="{{asset('themes/screenshots')}}/t{{$theme->id}}.jpg" 
          
          alt="img" 
          class="screenshot img" />
 
         <span class="tno" style="background-color:brown; color: white; border-radius: 50%; padding:10px; font-weight: bold;">t{{$theme->id}}</span>
+   @endif
 <input type="text" id="tid_{{$theme->id}}" value="{{$theme->id}}" style="display:none;">
 <h6 style="background:#000000; color:#E6E6E6; padding:5px; border-radius:5px; border: 2px solid #E6E6E6; margin-bottom: 60px;"> <i class="fa fa-adjust"></i>
  {{ $theme->tname }} </h6>
