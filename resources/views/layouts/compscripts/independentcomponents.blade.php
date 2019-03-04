@@ -4829,7 +4829,7 @@ $( ".boxmlservicetheme1" )
   $(".editpresentationcolor").hide();
   $(".contpresentationcolor").show(); 
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+ 
 });
 
   $(".submitpresentationcolor").click(function() {
@@ -4837,6 +4837,7 @@ $( ".boxmlservicetheme1" )
   $(".contpresentationcolor").hide();
    $(".boxmlservicetheme1").removeClass("editable");
 addpresentationcolor();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
