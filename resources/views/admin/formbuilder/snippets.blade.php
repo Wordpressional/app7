@@ -769,12 +769,12 @@
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/dymenu10.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
 
-[aboutmenulist]Menu_Name_Here[/aboutmenulist]
+[aboutmenulist_transparent]Menu_Name_Here_And_Add_Container_Color[/aboutmenulist_transparent]
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/dymenu11.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
 
-[orangemenulist]Menu_Name_Here[/orangemenulist]
+[orangemenulist_transparent]Menu_Name_Here_And_Add_Container_Color[/orangemenulist_transparent]
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/2leveldymenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus level 2">
