@@ -540,6 +540,13 @@ Route::post('/loadthemes/',[
 
 ]);
 
+Route::post('/reloadthemes/',[
+
+'uses' => 'ThemeController@reloadthemes',
+'as' => 'reloadthemes'
+
+]);
+
 Route::post('/installthemes/',[
 
 'uses' => 'ThemeController@installthemes',

@@ -1,60 +1,60 @@
 
 @extends('admin.layouts.master')
 @section('content')
-@if($themes == "empty")
 
+<div class="codefiles" style="display:none;">
 <h3> Pre Installed Themes </h3>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-  <h5> Portfolio Theme One </h5>
-<input type="text" id="themename0" name="themename0" value="BaseTheme" style="display:none;">
+  <h5> Portfolio Theme - T1 </h5>
+<input type="text" id="themename0" name="themename0" value="Portfolio Theme - T1" style="display:none;">
 <textarea rows="5" cols="70" id="theme0"  class="form-control fc" required="required" style="display:none;">{{ $themeone }}</textarea> 
  </div>  
 
 </div>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> Personal Theme One </h5>
-<input type="text" id="themename1" name="themename1" value="DarkTheme" style="display:none;">
+<h5> Personal Theme - T2 </h5>
+<input type="text" id="themename1" name="themename1" value="Personal Theme - T2 " style="display:none;">
 <textarea rows="5" cols="70" id="theme1"  class="form-control fc" required="required" style="display:none;">{{ $themetwo }}</textarea> 
    
 </div>
 
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> Loan Theme One </h5>
-<input type="text" id="themename2" name="themename2" value="CommingSoon" style="display:none;">
+<h5> Loan Theme - T3 </h5>
+<input type="text" id="themename2" name="themename2" value="Loan Theme - T3 " style="display:none;">
 <textarea rows="5" cols="70" id="theme2"  class="form-control fc" required="required" style="display:none;">{{ $themethree }}</textarea>
  
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> General Theme One </h5>
-<input type="text" id="themename3" name="themename3" value="BlueTheme" style="display:none;">
+<h5> Business Theme - T4 </h5>
+<input type="text" id="themename3" name="themename3" value="Business Theme - T4" style="display:none;">
 <textarea rows="5" cols="70" id="theme3"  class="form-control fc" required="required" style="display:none;">{{ $themefour }}</textarea>
 
 </div>
 </div>
 <div class="row">
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> General Theme Two </h5>
-<input type="text" id="themename4" name="themename4" value="PrinceTheme" style="display:none;">
+<h5> Politics Theme - T5 </h5>
+<input type="text" id="themename4" name="themename4" value="Politics Theme - T5" style="display:none;">
 <textarea rows="5" cols="70" id="theme4"  class="form-control fc" required="required" style="display:none;">{{ $themefive }}</textarea> 
 
 
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> General Theme Three </h5>
-<input type="text" id="themename5" name="themename5" value="QueenTheme" style="display:none;">
+<h5> General Theme - T01 </h5>
+<input type="text" id="themename5" name="themename5" value="General Theme - T01" style="display:none;">
 <textarea rows="5" cols="70" id="theme5"  class="form-control fc" required="required" style="display:none;">{{ $themesix }}</textarea>
 </div>
 <div class="col-lg-3 col-md-3 bdstyle preinstall">
-<h5> Basic Theme one </h5>
-<input type="text" id="themename6" name="themename6" value="LaunchingSoon" style="display:none;">
+<h5> Basic Theme - T02 </h5>
+<input type="text" id="themename6" name="themename6" value="Basic Theme - T02" style="display:none;">
 <textarea rows="5" cols="70" id="theme6"  class="form-control fc" required="required" style="display:none;">{{ $themeseven }}</textarea>
 
 </div>
 </div>
+</div>
 
-@endif
 
 <meta name="_token" content="{{ csrf_token() }}"/>
 <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
@@ -65,9 +65,13 @@
 
 @if($themes != "empty")
 <h3> Installed Themes </h3>
+ <button id="reload">Reload/Update Pre Installed Themes</button>
+
+ <button class="divthatholdstheimage"> Screenshots <i class="fa fa-image " style="font-size: 20px;">&nbsp;</i></button>
 
 <div  class="successealertone" style="color:red;"></div>
 <div class="row">
+
 @php 
 
 function random_color_part() {
@@ -87,11 +91,20 @@ function random_color() {
 @php $alteredstring = substr($theme->tname,0,8) @endphp
 
 <div class="col-lg-5 col-md-5 col-sm-12 bdstyle" style="background:#{{$tcolor}}; height:250px;">
+   <img style="position:absolute; width:101%; margin:-16px; height:101%;" src="{{asset('themes/screenshots')}}/t{{$theme->id}}.jpg" 
+         
+         alt="img" 
+         class="screenshot img" />
+
+        <span class="tno" style="background-color:brown; color: white; border-radius: 50%; padding:10px; font-weight: bold;">t{{$theme->id}}</span>
 <input type="text" id="tid_{{$theme->id}}" value="{{$theme->id}}" style="display:none;">
-<h6 style="background:#000000; color:#E6E6E6; padding:5px; border-radius:5px; border: 2px solid #E6E6E6; margin-bottom:80px;"> <i class="fa fa-adjust"></i>
+<h6 style="background:#000000; color:#E6E6E6; padding:5px; border-radius:5px; border: 2px solid #E6E6E6; margin-bottom: 60px;"> <i class="fa fa-adjust"></i>
  {{ $theme->tname }} </h6>
 
 <textarea rows="5" cols="70" id="theme_{{$theme->id}}"  class="form-control fc" required="required" style="display:none;">{{ $theme->tcontent }}</textarea>
+ 
+  
+   
 
 
 
@@ -140,7 +153,7 @@ function random_color() {
  <center><div  class=" successalert" style="color:green; background-color:white; border-radius:5px; padding:5px; margin-top:20px;"><a href="{{route('admin.themepreview')}}" target="_blank">Preview</a></div></center>
 
  @endif
-
+ 
 </div>
 
 @endforeach
@@ -153,7 +166,7 @@ function random_color() {
 <div class="row">
 
 
-<div class="col-lg-11 col-md-11 bdstyle">
+<div class="col-lg-11 col-md-11 bdstyle1">
 
 <label>Theme Name</label>
 <input type="text" name="tname" id="tname" required="required">
@@ -172,8 +185,31 @@ function random_color() {
 
 @endsection
 @section('scripts')
+@if($themes == "empty")
 
  <script type="text/javascript">
+  $(function() {
+    $(".codefiles").show();
+  });
+</script>
+@endif
+ <script type="text/javascript">
+  $(function() {
+        $('.tno').css('display', 'none');
+        $('.tno').css('z-index', 1000);
+         $('.tno').css('position', 'relative');
+       $('.screenshot').css('display', 'none');
+       $('.screenshot').css('border', '3px solid #e2e2e2');
+   
+        $('.divthatholdstheimage').click(function() {
+          
+             $('.img').toggle();
+             $('.tno').toggle();
+            
+        });
+      
+   });
+
   $(function() {
 
   	var arrasson = {};
@@ -477,6 +513,71 @@ function random_color() {
                 	//alert(result);
                 	//alert("pppp");
                 	$('html,body').scrollTop(0);
+                  $('.successalert').css("display", "block");
+
+                     $('.successalert').text("Successfully Saved");
+
+                     setTimeout(function(){ 
+
+                         window.location.reload();
+                      
+                       }, 300);
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+          
+
+    });
+
+
+    $("#reload").click(function(){
+        //alert("hi");
+         $(".codefiles").show();
+
+        var arrasso = {};
+        
+        var themeone = $('#theme0').val();
+        var themetwo = $('#theme1').val();
+        var themethree = $('#theme2').val();
+        var themefour = $('#theme3').val();
+        var themefive = $('#theme4').val();
+        var themesix = $('#theme5').val();
+        var themeseven = $('#theme6').val();
+        
+        
+        
+
+        arrasso =  {"themeone": themeone, "themetwo": themetwo, "themethree": themethree, "themefour": themefour, "themefive": themefive, "themesix": themesix, "themeseven":themeseven};
+
+        console.log(arrasso);
+     var token = document.getElementById('ttoken').value;
+
+    
+          $.ajax({
+                
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+
+                url: "{{route('admin.reloadthemes')}}",
+               
+                type: 'post',
+                data:  arrasso,
+                
+                success: function(result) {
+                  //alert(result);
+                  //alert("pppp");
+                   $(".codefiles").hide();
+                  $('html,body').scrollTop(0);
                   $('.successalert').css("display", "block");
 
                      $('.successalert').text("Successfully Saved");
