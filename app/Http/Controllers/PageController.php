@@ -54,9 +54,12 @@ class PageController extends Controller
         $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
 
-        if($page->headercode != "nil")
+        if($page->headercode == "nil")
         {
-          return view('pages.customtemplate1', [
+            return redirect()->route('page.landingsitepage', $page);
+        }
+        
+        return view('pages.customtemplate1', [
             'page' => $page,
             'colorsetting' => $colorsetting,
             'colortest' => $colortest,
@@ -65,11 +68,8 @@ class PageController extends Controller
            'menuList' => $menuList,
 
         ])->withShortcodes();
-        }
-        else
-        {
-            return redirect()->route('page.landingsitepage', $page);
-        }
+       
+        
 
     }
 
@@ -93,8 +93,10 @@ class PageController extends Controller
         $colortest = Colorsetting::find(1);
         $branding = Brand::where('id', 1)->first();
 
-        if($page->headercode != "nil")
+        if($page->headercode == "nil")
         {
+            return redirect()->route('page.landingsitepage', $page);
+        }
           return view('pages.customtemplate4', [
             'page' => $page,
             'colorsetting' => $colorsetting,
@@ -104,11 +106,7 @@ class PageController extends Controller
            'menuList' => $menuList,
 
         ])->withShortcodes();
-        }
-        else
-        {
-            return redirect()->route('page.landingsitepage', $page);
-        }
+        
 
     }
 
