@@ -6,12 +6,6 @@
 {!! html_entity_decode($page->content) !!}
 
 	
-			
-			
-				
-		
-		
-
 
 @endsection
 @section('css')
