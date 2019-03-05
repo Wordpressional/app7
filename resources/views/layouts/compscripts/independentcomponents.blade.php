@@ -21394,6 +21394,7 @@ moxyaddpresentationcolor101();
 function moxyaddpresentationcolor101() {
 var inputpresentationcolormoxygentheme101 = $('.inputpresentationcolormoxygentheme101').val();
   $('.moxytheme.footer-top').css("background",inputpresentationcolormoxygentheme101);
+  $('#moxyfooter').css("background",inputpresentationcolormoxygentheme101);
 }
 
 
