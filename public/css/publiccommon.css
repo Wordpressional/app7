@@ -795,6 +795,10 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
+.mnatheme.banner-area{
+  height:auto !important;
+}
+
 #cssmenures ul{
   width:100% !important;
 }
@@ -7533,6 +7537,18 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
   background:url(../themes/politt5/banner-bg.jpg) center;
   background-size:cover;
 }
+
+.mnatheme.banner-area{
+  background:url(../themes/politt5/banner-bg.jpg);
+  /* Full height */
+  height: 700px; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 767.98px){
   .mpoltheme.banner-area .fullscreen{
     height:700px !important;
@@ -10731,4 +10747,22 @@ span.icon-cog {
     content: "\f057" !important;
     font-family: FontAwesome !important;
      font-style: normal;
+}
+
+.nafooterl {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.nafooterl .foote_bottom_ul_amrc li {
+    display: inline-block;
+}
+.nafooterl .social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.nafooterl .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.nafooterl .social_footer_ul li a { color:#CCC; border:3px solid #CCC; padding:8px;border-radius:50%;}
+.nafooterl .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+.nafooterl .fa-linkedin, .nafooterl .fa-twitter{
+  padding: 0px;
+  background: none;
 }

@@ -722,6 +722,22 @@
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/photo2.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Photo">
+
+@include('shortcodes.plainhtml.simpleimage')
+  
+
+
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/socialfooter1.jpg')}}" data-keditor-title="Text" data-keditor-categories="Footer links">
+
+@include('shortcodes.plainhtml.socialfooter')
+  
+
+
+</div>
+
 <!--<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/dymenu1.jpg')}}" data-keditor-title="text" data-keditor-categories="Dynamic Menus">
 
  @include('shortcodes.plainhtml.flattabbedmenu')

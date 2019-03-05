@@ -22264,7 +22264,7 @@ function addHrefpol2() {
 var inputmpolbg2 = $('.inputmpolbg2').val();
 if(inputmpolbg2 != "")
 {
-  $('.boxmpoltheme222').css('background-image', 'url('+inputmpolbg2 +')');
+  $('.boxmpoltheme222').attr(src, inputmpolbg2);
 }
 }
 
@@ -23967,6 +23967,119 @@ function readURLndylogo(input) {
      Uploadimgtoserver(file, "#imageUploadlogonlnndynamic", "imageUploadlogonlnndynamic","#imagePreviewlogolnndynamic");
 
   
+}
+
+$(document).ready(function(){
+
+   $(".contmnabg2").hide();
+
+   $( ".boxmnatheme222" )
+ .on("mouseenter", function() {
+   if ($(".boxmnatheme222").hasClass("editable")) {
+    $(".bgmnatheme2").hide();
+
+   } 
+   else
+   {
+    $(".bgmnatheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".bgmnatheme2").hide();
+
+});
+
+
+$(".bgmnatheme2").click(function(e) {
+ $(".boxmnatheme222").addClass("editable");
+
+  
+  
+  $(".contmnabg2").show();
+
+
+});
+
+$(".submitmnabg2").click(function() {
+  $(".boxmnatheme222").removeClass("editable");
+  $(".contmpolbg2").hide();
+  addHrefna2();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+ 
+});
+
+function addHrefna2() {
+  
+var inputmnabg2 = $('.inputmnabg2').val();
+if(inputmnabg2 != "")
+{
+  //$('.boxmnatheme222').attr('src', inputmnabg2 );
+   $('.mnatheme.banner-area').css('background-image', 'url('+inputmnabg2 +')');
+}
+}
+
+$(document).ready(function(){
+
+   $(".imageUploadmnatheme2").hide();
+
+$( ".boxmnatheme2" )
+ .on("mouseenter", function() {
+   if ($(".boxmnatheme2").hasClass("editable")) {
+    $(".editmnatheme2").hide();
+
+   } 
+   else
+   {
+    
+   
+    $(".editmnatheme2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmnatheme2").hide();
+ 
+
+});
+
+ $(".editmnatheme2").click(function() {
+  $(this).hide();
+  $(".boxmnatheme2").addClass("editable");
+   $(".editmnatheme2").hide();
+  $(".savemnatheme2").show();
+  $(".imageUploadmnatheme2").show();
+});
+
+$(".savemnatheme2").click(function() {
+  $(this).hide();
+  $(".boxmnatheme2").removeClass("editable");
+ 
+  $(".editmnatheme2").hide();
+  $(".imageUploadmnatheme2").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+
+
+
+
+$("#imageUploadmnatheme2").change(function() {
+$("#imageUploadmnatheme2").attr("name", "imageUploadmnatheme2");
+    readURLmna2(this);
+});
+
+});
+function readURLmna2(input) {
+
+  var file = input.files[0];
+     console.log("name : " + file.name);
+     Uploadimgtoserverbakimg(file, "#imageUploadmnatheme2", "imageUploadmnatheme2",".mnatheme.banner-area");
+
 }
 </script>
 

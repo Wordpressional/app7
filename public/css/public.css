@@ -198,3 +198,13 @@ width:70% !important;
     position: static;
     
 }
+.mnatheme.banner-area{
+  background:url(../themes/politt5/banner-bg.jpg);
+  /* Full height */
+  height: 700px; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

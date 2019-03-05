@@ -17671,6 +17671,97 @@ label.imageUploadlogonlnndynamic:after {
 }
 
 
+.editmnatheme2, .savemnatheme2, .bgmnatheme2 {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 250px;
+  right: 0px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  float: right;
+  margin-right: 10px;
+}
+
+.contmnabg2 {
+  width: 90px;
+  display: none;
+  position: relative;
+  top: 150px;
+  right: 120px;
+  padding: 4px 10px;
+  
+  text-align: center;
+  cursor: pointer;
+  
+  z-index: 10000;
+  float: right;
+}
+
+.editmnatheme2, .bgmnatheme2 { 
+  background: blue;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.savemnatheme2 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+.labelmnatheme2
+{
+  
+  position: relative;
+  top: 120px;
+  right: 0px;
+ 
+  z-index: 10000;
+  float: right;
+}
+
+
+
+
+
+img#imagePreviewmnatheme2 {
+    display: inline;
+   
+}
+
+
+
+#imageUploadmnatheme2  {
+  display:none;
+}
+
+label.imageUploadmnatheme2:after {
+  content: "\f093";
+  font-family: "FontAwesome";
+  color: black;
+  width: 30px;
+  display: inline;
+  position: relative;
+  top:134px;
+  
+  padding: 8px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  margin: auto;
+  background-color: white;
+}
+
 
 
 }
