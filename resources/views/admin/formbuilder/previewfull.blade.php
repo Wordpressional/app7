@@ -429,8 +429,8 @@ $.ajax({
 }
 
 #mypreFrame1{
-  width:70%;
-   height:520px;
+  width:55%;
+   height:390px;
    
 }
 
@@ -439,12 +439,12 @@ $.ajax({
     background: url(../../../images/Phone.png);
     background-repeat: no-repeat;
     
-    background-size: 36%;
+    background-size: 37%;
     background-position: top center;
     padding-right: 1px;
     margin-top: 30px;
     height: 1930px;
-    padding-top:170px;
+    padding-top:145px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -454,12 +454,12 @@ $.ajax({
     background: url(../../../images/Tablet.png);
     background-repeat: no-repeat;
     
-    background-size: 88%;
+    background-size: 70%;
     background-position: top center;
     padding-right: 1px;
     margin-top: 30px;
     height: 1800px;
-    padding-top:170px;
+    padding-top:120px;
     margin-left: auto;
     margin-right: auto;
 }
