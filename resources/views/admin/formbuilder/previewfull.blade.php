@@ -438,12 +438,12 @@ $.ajax({
 {
     background: url(../../../images/Phone.png);
     background-repeat: no-repeat;
-    width: 1200px; 
+    
     background-size: 36%;
-    background-position: bottom center;
+    background-position: top center;
     padding-right: 1px;
     margin-top: 30px;
-    height: 930px;
+    height: 1930px;
     padding-top:170px;
     margin-left: auto;
     margin-right: auto;
@@ -453,12 +453,12 @@ $.ajax({
 {
     background: url(../../../images/Tablet.png);
     background-repeat: no-repeat;
-    width: 1200px; 
+    
     background-size: 88%;
-    background-position: bottom center;
+    background-position: top center;
     padding-right: 1px;
     margin-top: 30px;
-    height: 800px;
+    height: 1800px;
     padding-top:170px;
     margin-left: auto;
     margin-right: auto;
