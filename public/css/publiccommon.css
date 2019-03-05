@@ -8484,6 +8484,7 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
 .mpoltheme .img-fluid
 {
   width: 100% !important;
+  height: auto !important;
 }
 
 .mpoltheme .fa-twitter, .mpoltheme .fa-facebook
