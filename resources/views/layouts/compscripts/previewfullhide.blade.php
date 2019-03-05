@@ -1427,5 +1427,8 @@ display: none !important;
 .editlogolnndynamic, .savelogolnndynamic{
   display: none !important;
 }
+.contmnabg2, #imageUploadmnatheme2, .bgmnatheme2, .editmnatheme2, .savemnatheme2{
+  display: none !important;
+}
 
 </style>
