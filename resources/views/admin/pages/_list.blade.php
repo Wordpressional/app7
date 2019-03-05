@@ -25,7 +25,7 @@
                     {{ $page->display_name }}
                     @endif
                 </td>
-                <td>{{ link_to_route('admin.users.edit', $page->author->displayname, $page->author) }}</td>
+                <td>{{ link_to_route('admin.users.edit', $page->author->name, $page->author) }}</td>
                 
                 <td>{{ humanize_date_with_timezone($page->created_at, 'd/m/Y H:i:s', $data['n_companyname']->timezone) }}</td>
                 <td>
