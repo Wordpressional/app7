@@ -444,7 +444,7 @@ $.ajax({
     padding-right: 1px;
     margin-top: 30px;
     height: 1930px;
-    padding-top:145px;
+    padding-top:170px;
     margin-left: auto;
     margin-right: auto;
 }

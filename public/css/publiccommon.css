@@ -807,7 +807,7 @@ min-height: 200px;
 
 .pynavul
 {
-display: block !important;
+  display: block !important;
   float: right;
   width:100%;
   position: relative;
@@ -6922,7 +6922,7 @@ color: #864b82;
   padding-bottom:40px
 }
 .mpoltheme .pb-50{
-  padding-bottom:50px
+  padding-bottom:0px
 }
 .mpoltheme .pb-60{
   padding-bottom:60px
@@ -7453,19 +7453,19 @@ color: #864b82;
   left:0;
   position:fixed;
   background:rgba(0,0,0,0.7);
-  display:none
+  display:none;
 }
 body.mobile-nav-active{
-  overflow:hidden
+  overflow:hidden;
 }
 body.mobile-nav-active #muk-mobile-nav{
-  left:0
+  left:0;
 }
 body.mobile-nav-active #muk-mobile-nav-toggle{
-  color:#fff
+  color:#fff;
 }
 .mpoltheme.section-gap{
-  padding:80px 0
+  padding:50px 0px;
 }
 
 
@@ -7485,7 +7485,7 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
   -o-transition:all 0.3s ease 0s;
   transition:all 0.3s ease 0s;
   cursor:pointer;
-  position:relative
+  position:relative;
 }
 .mpoltheme .primary-btn:focus{
   outline:none
@@ -7499,28 +7499,28 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
   -webkit-transition:all 0.3s ease 0s;
   -moz-transition:all 0.3s ease 0s;
   -o-transition:all 0.3s ease 0s;
-  transition:all 0.3s ease 0s
+  transition:all 0.3s ease 0s;
 }
 .mpoltheme .primary-btn:hover{
-  color:#fff
+  color:#fff;
 }
 .mpoltheme .primary-btn:hover span{
   color:#fff;
-  right:20px
+  right:20px;
 }
 .mpoltheme .primary-btn.white{
   border:1px solid #fff;
-  color:#fff
+  color:#fff;
 }
 .mpoltheme .primary-btn.white span{
-  color:#fff
+  color:#fff;
 }
 .mpoltheme .primary-btn.white:hover{
   background:#fff;
-  color:#3898f8
+  color:#3898f8;
 }
 .mpoltheme .primary-btn.white:hover span{
-  color:#3898f8
+  color:#3898f8;
 }
 .mpoltheme .overlay{
   position:absolute;
@@ -7531,23 +7531,23 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
 }
 .mpoltheme.banner-area{
   background:url(../themes/politt5/banner-bg.jpg) center;
-  background-size:cover
+  background-size:cover;
 }
 @media (max-width: 767.98px){
   .mpoltheme.banner-area .fullscreen{
-    height:700px !important
+    height:700px !important;
 }
 }
 .mpoltheme.banner-area .overlay{
   background:#000;
-  opacity:.5
+  opacity:.5;
 }
 .mpoltheme.banner-area .primary-btn{
   padding-left:30px;
-  padding-right:30px
+  padding-right:30px;
 }
 .mpoltheme .banner-content{
-  text-align:center
+  text-align:center;
 }
 .mpoltheme .banner-content h1{
   color:#fff;
@@ -7555,36 +7555,36 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
   font-weight:700;
   line-height:1em;
   margin-top:20px;
-  margin-bottom:20px
+  margin-bottom:20px;
 }
 .mpoltheme .banner-content h1 span{
-  font-weight:700
+  font-weight:700;
 }
 @media (max-width: 991.98px){
   .mpoltheme .banner-content h1{
-    font-size:36px
+    font-size:36px;
 }
 }
 @media (max-width: 991.98px){
   .mpoltheme .banner-content h1 br{
-    display:none
+    display:none;
 }
 }
 @media (max-width: 1199.98px){
   .mpoltheme .banner-content h1{
-    font-size:45px
+    font-size:45px;
 }
 }
 @media (max-width: 414px){
   .mpoltheme .banner-content h1{
-    font-size:40px
+    font-size:40px;
 }
 }
 .mpoltheme .banner-content h6{
   font-weight:300;
   letter-spacing:2px;
   z-index:2;
-  color:#fff
+  color:#fff;
 }
 @media (max-width: 960px){
   .mpoltheme .banner-content br{
@@ -8484,6 +8484,7 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
 .mpoltheme .img-fluid
 {
   width: 100% !important;
+  height: auto !important;
 }
 
 .mpoltheme .fa-twitter, .mpoltheme .fa-facebook
@@ -10588,6 +10589,7 @@ margin-right: 15px;
 .pynavul
 {
   display: inline-flex;
+  float: right;
 }
 
 span.icon-cog {
