@@ -47,7 +47,6 @@
   <link href="{{ asset('webhome/vendors/revolution/css/layers.css') }}" rel="stylesheet">
   <link href="{{ asset('webhome/vendors/revolution/css/navigation.css') }}" rel="stylesheet">
   <link href="{{ asset('webhome/vendors/animate-css/animate.css') }}" rel="stylesheet">
-<script src="//smtpjs.com/v2/smtp.js"></script>
 
 <link href="{{ asset('webhome/css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/css/customstyle.css') }}" rel="stylesheet">
@@ -73,5 +72,4 @@
    <link rel="manifest" href="{{url('/manifest.json')}}">
    <link rel="manifest" href="{{url('/manifest.webmanifest')}}">
 
-   <link rel="manifest" href="manifest.json">
-<link rel="manifest" href="manifest.webmanifest">
+ 
