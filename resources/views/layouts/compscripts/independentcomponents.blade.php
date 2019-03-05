@@ -24081,5 +24081,457 @@ function readURLmna2(input) {
      Uploadimgtoserverbakimg(file, "#imageUploadmnatheme2", "imageUploadmnatheme2",".mnatheme.banner-area");
 
 }
+
+$(document).ready(function(){
+
+  $(".contpurpcservices1").hide(); 
+
+$( ".boxpcservices1" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices1").hasClass("editable")) {
+   
+    $(".editcontpurpcservices1").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcservices1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcservices1").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcservices1").click(function() {
+   $(".boxpcservices1").addClass("editable");
+  $(this).hide();
+  $(".contpurpcservices1").show(); 
+ 
+});
+
+  $(".submitcontpurpcservices1").click(function() {
+  
+  $(".contpurpcservices1").hide();
+   $(".boxpcservices1").removeClass("editable");
+addpcfontawesomecontpur1a();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur1a() {
+var inputcontpurpcservices1 = $('.inputcontpurpcservices1').val();
+ $('#purpcservices1').removeClass();
+  $('#purpcservices1').addClass(inputcontpurpcservices1);
+  if(inputcontpurpcservices1 == "")
+  {
+    $('.service-icon i').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon i').css('font-size','30px');
+  }
+}
+
+$(document).ready(function(){
+
+  $(".contpurpcservices2").hide(); 
+
+$( ".boxpcservices2" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices2").hasClass("editable")) {
+   
+    $(".editcontpurpcservices2").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcservices2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcservices2").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcservices2").click(function() {
+   $(".boxpcservices2").addClass("editable");
+  $(this).hide();
+  $(".contpurpcservices2").show(); 
+ 
+});
+
+  $(".submitcontpurpcservices2").click(function() {
+  
+  $(".contpurpcservices2").hide();
+   $(".boxpcservices2").removeClass("editable");
+addpcfontawesomecontpur2();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur2() {
+var inputcontpurpcservices2 = $('.inputcontpurpcservices2').val();
+ $('#purpcservices2').removeClass();
+  $('#purpcservices2').addClass(inputcontpurpcservices2);
+  if(inputcontpurpcservices2 == "")
+  {
+    $('.service-icon i').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon i').css('font-size','30px');
+  }
+}
+
+
+$(document).ready(function(){
+
+  $(".contpurpcservices3").hide(); 
+
+$( ".boxpcservices3" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices3").hasClass("editable")) {
+   
+    $(".editcontpurpcservices3").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcservices3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcservices3").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcservices3").click(function() {
+   $(".boxpcservices3").addClass("editable");
+  $(this).hide();
+  $(".contpurpcservices3").show(); 
+ 
+});
+
+  $(".submitcontpurpcservices3").click(function() {
+  
+  $(".contpurpcservices3").hide();
+   $(".boxpcservices3").removeClass("editable");
+addpcfontawesomecontpur3();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur3() {
+var inputcontpurpcservices3 = $('.inputcontpurpcservices3').val();
+ $('#purpcservices3').removeClass();
+  $('#purpcservices3').addClass(inputcontpurpcservices3);
+  if(inputcontpurpcservices3 == "")
+  {
+    $('.service-icon i').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon i').css('font-size','30px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolorpcservices4").hide(); 
+
+$( ".boxpcservices4" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices4").hasClass("editable")) {
+    $(".editpcservices4").hide();
+    $(".editpresentationcolorpcservices4").hide();
+
+   } 
+   else
+   {
+    $(".editpcservices4").show();
+    $(".editpresentationcolorpcservices4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editpcservices4").hide();
+   $(".editpresentationcolorpcservices4").hide();
+});
+
+ $(".editpcservices4").click(function() {
+  $(this).hide();
+  $(".boxpcservices4").addClass("editable");
+  $(".textpcservices4").attr("contenteditable", "true");
+   $(".editpcservices4").hide();
+  $(".savepcservices4").show();
+ 
+});
+
+  $(".editpresentationcolorpcservices4").click(function() {
+    $(".boxpcservices4").addClass("editable");
+  $(".editpresentationcolorpcservices4").hide();
+  $(".contpresentationcolorpcservices4").show(); 
+
+
+});
+
+  $(".submitpresentationcolorpcservices4").click(function() {
+  
+  $(".contpresentationcolorpcservices4").hide();
+   $(".boxpcservices4").removeClass("editable");
+addpcspresentationcolor4();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+
+$(".savepcservices4").click(function() {
+  $(this).hide();
+  $(".boxpcservices4").removeClass("editable");
+ $(".textpcservices4").removeAttr("contenteditable");
+  $(".editpcservices4").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addpcspresentationcolor4() {
+var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpcservices4').val();
+  $('.pcserviceypresentation4').css("background",inputpresentationcolorpcservices4);
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurpcservices5").hide(); 
+
+$( ".boxpcservices5" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices5").hasClass("editable")) {
+   
+    $(".editcontpurpcservices5").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcservices5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcservices5").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcservices5").click(function() {
+   $(".boxpcservices5").addClass("editable");
+  $(this).hide();
+  $(".contpurpcservices5").show(); 
+ 
+});
+
+  $(".submitcontpurpcservices5").click(function() {
+  
+  $(".contpurpcservices5").hide();
+   $(".boxpcservices5").removeClass("editable");
+addpcfontawesomecontpur1();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur1() {
+var inputcontpurpcservices5 = $('.inputcontpurpcservices5').val();
+ $('#purpcservices5').removeClass();
+  $('#purpcservices5').addClass(inputcontpurpcservices5);
+  if(inputcontpurpcservices5 == "")
+  {
+    $('.service-icon i').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon i').css('font-size','30px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurpcservices6").hide(); 
+
+$( ".boxpcservices6" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices6").hasClass("editable")) {
+   
+    $(".editcontpurpcservices6").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcservices6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcservices6").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcservices6").click(function() {
+   $(".boxpcservices6").addClass("editable");
+  $(this).hide();
+  $(".contpurpcservices6").show(); 
+ 
+});
+
+  $(".submitcontpurpcservices6").click(function() {
+  
+  $(".contpurpcservices6").hide();
+   $(".boxpcservices6").removeClass("editable");
+addpcfontawesomecontpur6();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur6() {
+var inputcontpurpcservices6 = $('.inputcontpurpcservices6').val();
+ $('#purpcservices6').removeClass();
+  $('#purpcservices6').addClass(inputcontpurpcservices6);
+  if(inputcontpurpcservices6 == "")
+  {
+    $('.service-icon i').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon i').css('font-size','30px');
+  }
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurpcservices7").hide(); 
+
+$( ".boxpcservices7" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices7").hasClass("editable")) {
+   
+    $(".editcontpurpcservices7").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcservices7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcservices7").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcservices7").click(function() {
+   $(".boxpcservices7").addClass("editable");
+  $(this).hide();
+  $(".contpurpcservices7").show(); 
+ 
+});
+
+  $(".submitcontpurpcservices7").click(function() {
+  
+  $(".contpurpcservices7").hide();
+   $(".boxpcservices7").removeClass("editable");
+addpcfontawesomecontpur7();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur7() {
+var inputcontpurpcservices7 = $('.inputcontpurpcservices7').val();
+ $('#purpcservices7').removeClass();
+  $('#purpcservices7').addClass(inputcontpurpcservices7);
+  if(inputcontpurpcservices7 == "")
+  {
+    $('.service-icon i').css('font-size','0px');
+  }
+  else
+  {
+    $('.service-icon i').css('font-size','30px');
+  }
+}
 </script>
 
