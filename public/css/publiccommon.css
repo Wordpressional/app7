@@ -797,6 +797,8 @@ div#demo {
 @media (max-width: 550px) and (min-width: 50px){
 .mnatheme.banner-area{
   height:auto !important;
+  background-size:cover;
+  min-height: auto;
 }
 
 #cssmenures ul{
@@ -7539,14 +7541,14 @@ body.mobile-nav-active #muk-mobile-nav-toggle{
 }
 
 .mnatheme.banner-area{
-  background:url(../themes/politt5/banner-bg.jpg);
-  /* Full height */
-  height: 700px; 
+ 
+background: url(../themes/politt5/banner-bg.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+min-height: 700px;
+position: relative;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media (max-width: 767.98px){
