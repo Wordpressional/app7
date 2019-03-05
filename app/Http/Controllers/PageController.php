@@ -65,7 +65,7 @@ class PageController extends Controller
             'colortest' => $colortest,
             'branding' => $branding,
            'data' => $data,
-           'menuList' => $menuList,
+           'menuList' => $menuList
 
         ])->withShortcodes();
        
@@ -103,7 +103,7 @@ class PageController extends Controller
             'colortest' => $colortest,
             'branding' => $branding,
            'data' => $data,
-           'menuList' => $menuList,
+           'menuList' => $menuList
 
         ])->withShortcodes();
         
@@ -136,7 +136,7 @@ class PageController extends Controller
             'colortest' => $colortest,
             'branding' => $branding,
            'data' => $data,
-           'menuList' => $menuList,
+           'menuList' => $menuList
 
         ])->withShortcodes();
         
