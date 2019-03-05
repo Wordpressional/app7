@@ -17,7 +17,7 @@
 
 <div class="container-fluid">
 <div class="row">
-	<div>
+	
 	   <div class="minh">
 		<h4 v-pre></h4>
 						
@@ -33,7 +33,7 @@
 			
 
 
-	</div>
+	
 </div>
 </div>
  

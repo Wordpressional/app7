@@ -2,7 +2,7 @@
   <span class="editmlbannertheme2">edit</span>
   
 <span class="savemlbannertheme2">save</span>
-<span class="labelmlbannertheme2"><label class="imageUploadmlbannertheme2" for="imageUploadmlbannertheme2"></label></span>
+<span class="labelmlbannertheme2"><label class="imageUploadmlbannertheme2" for="imageUploadmlbannertheme2">&nbsp;</label></span>
 
 <input type='file' id="imageUploadmlbannertheme2" accept=".png, .jpg, .jpeg" />
 <!-- BANNER -->
