@@ -3219,7 +3219,7 @@ color: white;
 }
 /* main menu styles */
 #nav,#nav ul {
-    background-image:url(../images/tr75.png);
+   
     list-style:none;
     margin:0;
     padding:0;
@@ -3269,7 +3269,7 @@ color: white;
     overflow:hidden;
 }
 #nav li a.fly {
-    background:#c1c1bf url(../images/arrow.gif) no-repeat right center;
+   
     padding-right:15px;
 }
 #nav ul li {
@@ -7159,10 +7159,7 @@ color: #864b82;
    
 }
 
-.mpoltheme.gallery-area
-{
-  padding-top:85% !important;
-}
+
 }
 .mpoltheme .row.no-margin{
   margin-left:0;
