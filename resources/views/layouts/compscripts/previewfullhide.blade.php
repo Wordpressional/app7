@@ -1430,5 +1430,7 @@ display: none !important;
 .contmnabg2, #imageUploadmnatheme2, .bgmnatheme2, .editmnatheme2, .savemnatheme2{
   display: none !important;
 }
-
+.editpcservices4, .savepcservices4, .contpurpcservices1, .contpurpcservices2, .contpurpcservices3, .contpurpcservices4, .contpurpcservices5, .contpurpcservices6, .contpurpcservices7{
+  display: none !important;
+}
 </style>

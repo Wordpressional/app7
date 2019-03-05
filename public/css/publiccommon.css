@@ -797,8 +797,10 @@ div#demo {
 @media (max-width: 550px) and (min-width: 50px){
 .mnatheme.banner-area{
   height:auto !important;
-  background-size:cover;
-  min-height: auto;
+  width: 100%;
+  top: 100px;
+  margin-bottom: 33%;
+  min-height: auto !important;
 }
 
 #cssmenures ul{
@@ -10767,4 +10769,8 @@ span.icon-cog {
 .nafooterl .fa-linkedin, .nafooterl .fa-twitter{
   padding: 0px;
   background: none;
+}
+.about {
+    padding-left: 30px;
+    padding-right: 30px;
 }
