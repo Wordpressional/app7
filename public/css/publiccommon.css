@@ -796,7 +796,7 @@ div#demo {
 
 @media (max-width: 550px) and (min-width: 50px){
 .mnatheme.banner-area{
-  height:auto;
+  height:auto !important;
 }
 
 #cssmenures ul{
