@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Shortcode;
 use App\Page;
 use App\Post;
 use App\Category;
@@ -11,7 +12,7 @@ use App\Cform;
 use Illuminate\Http\Request;
 use App\General;
 use App\Brand;
-use Shortcode;
+
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 
