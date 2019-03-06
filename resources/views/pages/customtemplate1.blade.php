@@ -2,7 +2,7 @@
 
 @section('contentfrontend')
 
-
+{!! \Shortcode::compile($branding->pagebanner) !!}
 {!! html_entity_decode($branding->pagebanner) !!}
  
 <div class="jumbotron jumbotron bg-cover">
