@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\Shortcodes\BoldShortcode;
-
+use App\Shortcodes\MenuShortcode;
 use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Schema;
@@ -83,11 +83,7 @@ class ShortcodesServiceProvider extends ServiceProvider
         for($i=1;$i<=110;$i++){
             $name = "customplain_".$i;
         Shortcode::register($name, 'App\Shortcodes\CustomplainShortcode@'.$name);
-        }
-         
-        
-        
-         
+        }    
         
 
     }
