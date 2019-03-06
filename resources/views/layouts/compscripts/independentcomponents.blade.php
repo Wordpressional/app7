@@ -20623,7 +20623,7 @@ $(".savemoxygentheme89").click(function() {
 
 function moxyaddpresentationcolor89() {
 var inputpresentationcolormoxygentheme89 = $('.inputpresentationcolormoxygentheme89').val();
-  $('section#moxyportfolio, section#moxyportfolio .moxytheme').css("background",inputpresentationcolormoxygentheme89);
+  $('#moxyportfolio, #moxyportfolio .moxytheme').css("background",inputpresentationcolormoxygentheme89);
 }
 
 
