@@ -43,7 +43,7 @@ class PageController extends Controller
        Shortcode::enable();
         $shortcode = App('Shortcode');
 
-        
+
             //dd($shortcode);
             //$content  = explode(']', $page->content);
              //$content  = $content[0];
@@ -63,7 +63,7 @@ class PageController extends Controller
         //     return redirect()->route('page.landingsitepage', $page);
         // }
         
-        return view('pages.customtemplate1', [
+        return view('pages.customtemplate1')->with([
             'page' => $page,
             'colorsetting' => $colorsetting,
             'colortest' => $colortest,
