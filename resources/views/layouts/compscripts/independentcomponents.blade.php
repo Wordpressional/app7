@@ -143,6 +143,7 @@ function Uploadsavemone2(newLocation, id)
               },
 
             url: newLocation,
+            dataType : "text",
            
             type: 'post',
             data:  data,
