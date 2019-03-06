@@ -65,7 +65,7 @@ Route::post('/forms/preview/{id}',[
 
 
 'uses' => 'FormbuilderController@preview',
-'as' => 'forms.preview'
+'as' => 'forms.ppreview'
 
 ]);
 

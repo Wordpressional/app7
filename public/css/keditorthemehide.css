@@ -1438,3 +1438,8 @@ display: none !important;
 {
    display: none !important;
 }
+
+.swiper-wrapper
+{
+transform: translate3d(0px, 0px, 0px) !important;
+}

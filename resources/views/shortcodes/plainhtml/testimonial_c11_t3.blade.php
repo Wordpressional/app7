@@ -1,5 +1,12 @@
     <!-- Testimonials -->
-    <div class="mlthemeone slider-2 text-center">
+    <div class="mlthemeone slider-2 text-center boxpcservices5 textpcservices5 pcserviceypresentation5">
+          <span class="savepcservices5">save</span>
+  <span class="editpresentationcolorpcservices5">Color</span> 
+  <span class="contpresentationcolorpcservices5">
+  <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolorpcservices5">
+  <br>
+  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorpcservices5">
+</span>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -14,7 +21,7 @@
         </div> <!-- end of container -->
         <div class="container">
             <div class="row">
-                
+                 <div class="col-md-12">
                 <!-- Card Slider -->
                 <div class="swiper-container card-slider">
                     <div class="swiper-wrapper">
@@ -33,11 +40,11 @@
                             </div>
                                 <div class="card-body">
                                     <div class="boxmlthemeone69">
-                          <span class="editmlthemeone69">edit</span>
+                          <!--<span class="editmlthemeone69">edit</span>-->
   
-                           <span class="savemlthemeone69">save</span> 
-                                    <p class="testimonial-text textmlthemeone69" onclick="$(this).focus();">Got a personal loan from Cedo and I am very happy with the conditions. I needed a good laptop for school and bought it on credit.</p>
-                                    <h5 class="testimonial-author textmlthemeone69" onclick="$(this).focus();">Jude Thorn</h5>
+                           <!--<span class="savemlthemeone69">save</span>--> 
+                                    <p class="testimonial-text textmlthemeone69"  >Got a personal loan from Cedo and I am very happy with the conditions. I needed a good laptop for school and bought it on credit.</p>
+                                    <h5 class="testimonial-author textmlthemeone69"  >Jude Thorn</h5>
                               </div>
                                 </div>
                             </div>
@@ -58,12 +65,12 @@
                             </div>
                                 <div class="card-body">
                                      <div class="boxmlthemeone71">
-                          <span class="editmlthemeone71">edit</span>
+                          <!--<span class="editmlthemeone71">edit</span>-->
   
-                           <span class="savemlthemeone71">save</span> 
+                           <!--<span class="savemlthemeone71">save</span>--> 
                                      
-                                    <p class="testimonial-text textmlthemeone71" onclick="$(this).focus();">Awesome conditions for the personal loan. I managed to buy the iPhone I always wanted with a credit from Cedo. Their staff is very kind.</p>
-                                    <h5 class="testimonial-author textmlthemeone71" onclick="$(this).focus();">Roy Smith</h5>
+                                    <p class="testimonial-text textmlthemeone71"  >Awesome conditions for the personal loan. I managed to buy the iPhone I always wanted with a credit from Cedo. Their staff is very kind.</p>
+                                    <h5 class="testimonial-author textmlthemeone71"  >Roy Smith</h5>
                             </div>
                             </div>
                             </div>        
@@ -84,11 +91,11 @@
                             </div>
                                 <div class="card-body">
                                      <div class="boxmlthemeone72">
-                          <span class="editmlthemeone72">edit</span>
+                          <!--<span class="editmlthemeone72">edit</span>-->
   
-                           <span class="savemlthemeone72">save</span> 
-                                    <p class="testimonial-text textmlthemeone72" onclick="$(this).focus();">I recommend Cedo's personal loan to everyone in need for some quick cash. I got out of a very tight situation thanks to their loans.</p>
-                                    <h5 class="testimonial-author textmlthemeone72" onclick="$(this).focus();">Marsha Singer</h5>
+                           <!--<span class="savemlthemeone72">save</span> -->
+                                    <p class="testimonial-text textmlthemeone72" >I recommend Cedo's personal loan to everyone in need for some quick cash. I got out of a very tight situation thanks to their loans.</p>
+                                    <h5 class="testimonial-author textmlthemeone72" >Marsha Singer</h5>
                                 </div>
                                 </div>
                             </div>        
@@ -108,11 +115,11 @@
                             </div>
                                 <div class="card-body">
                                       <div class="boxmlthemeone73">
-                          <span class="editmlthemeone73">edit</span>
+                          <!--<span class="editmlthemeone73">edit</span>-->
   
-                           <span class="savemlthemeone73">save</span> 
-                                    <p class="testimonial-text textmlthemeone73" onclick="$(this).focus();">It's been my life long dream to travel around the world but never had the financial resources to actually do it. Now it's possible!</p>
-                                    <h5 class="testimonial-author textmlthemeone73" onclick="$(this).focus();">Lindsay Rune</h5>
+                           <!--<span class="savemlthemeone73">save</span> -->
+                                    <p class="testimonial-text textmlthemeone73"  >It's been my life long dream to travel around the world but never had the financial resources to actually do it. Now it's possible!</p>
+                                    <h5 class="testimonial-author textmlthemeone73"  >Lindsay Rune</h5>
                                 </div>
                                 </div>
                             </div>
@@ -132,11 +139,11 @@
                             </div>
                                 <div class="card-body">
                                     <div class="boxmlthemeone74">
-                          <span class="editmlthemeone74">edit</span>
+                         <!-- <span class="editmlthemeone74">edit</span>-->
   
-                           <span class="savemlthemeone74">save</span>
-                                    <p class="testimonial-text textmlthemeone74" onclick="$(this).focus();">My car stopped working exactly when I needed it the most so I had to take some desperate measures. Now I've bought a new car.</p>
-                                    <h5 class="testimonial-author textmlthemeone74" onclick="$(this).focus();">Ronald Spice</h5>
+                          <!-- <span class="savemlthemeone74">save</span>-->
+                                    <p class="testimonial-text textmlthemeone74"  >My car stopped working exactly when I needed it the most so I had to take some desperate measures. Now I've bought a new car.</p>
+                                    <h5 class="testimonial-author textmlthemeone74"  >Ronald Spice</h5>
                                 </div>
                                 </div>
                             </div>        
@@ -156,11 +163,11 @@
                             </div>
                                 <div class="card-body">
                                      <div class="boxmlthemeone75">
-                          <span class="editmlthemeone75">edit</span>
+                          <!--<span class="editmlthemeone75">edit</span>-->
   
-                           <span class="savemlthemeone75">save</span>
-                                    <p class="testimonial-text textmlthemeone75" onclick="$(this).focus();">I've been looking for a new house for about 5 years and when I found the right home it was Cedo that supported my decision.</p>
-                                    <h5 class="testimonial-author textmlthemeone75" onclick="$(this).focus();">Ann Black</h5>
+                           <!--<span class="savemlthemeone75">save</span>-->
+                                    <p class="testimonial-text textmlthemeone75"  >I've been looking for a new house for about 5 years and when I found the right home it was Cedo that supported my decision.</p>
+                                    <h5 class="testimonial-author textmlthemeone75"  >Ann Black</h5>
                                 </div>
                                 </div>
                             </div>        
@@ -179,5 +186,6 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-2 -->
+  </div>
     <!-- end of testimonials -->
 
