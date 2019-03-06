@@ -42,7 +42,9 @@ class PageController extends Controller
          $data = $this->settingsAll();
        Shortcode::enable();
         $shortcode = App('Shortcode');
-            
+
+        Shortcode::compile($page);
+            //dd($shortcode);
             //$content  = explode(']', $page->content);
              //$content  = $content[0];
 
