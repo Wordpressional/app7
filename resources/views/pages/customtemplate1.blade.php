@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 
 @section('contentfrontend')
-
+[7f928533]7f928533[/7f928533]
 {!! \Shortcode::compile($branding->pagebanner) !!}
 {!! html_entity_decode($branding->pagebanner) !!}
  
