@@ -150,7 +150,7 @@ function Uploadsavemone2(newLocation, id)
             
             success: function(result) {
             
-           
+           location.reload();
             
             },
              error: function (jqXHR, textStatus, errorThrown) {
