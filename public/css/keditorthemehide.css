@@ -1434,3 +1434,7 @@ display: none !important;
 .editpresentationcolorpcservices4, #inputpresentationcolorpcservices4, .editpcservices4, .savepcservices4, .contpurpcservices1, .contpurpcservices2, .contpurpcservices3, .contpurpcservices4, .contpurpcservices5, .contpurpcservices6, .contpurpcservices7{
   display: none !important;
 }
+.contpresentationcolorpcservices4, .editcontpurpcservices1, .editcontpurpcservices2, .editcontpurpcservices3,.editcontpurpcservices4, .editcontpurpcservices5, .editcontpurpcservices6
+{
+   display: none !important;
+}
