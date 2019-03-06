@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Shortcode;
+
 use App\Page;
 use App\Post;
 use App\Category;
@@ -26,6 +26,7 @@ use Harimayco\Menu\Facades\Menu;
 
 use Harimayco\Menu\Models\Menus;
 use Harimayco\Menu\Models\MenuItems;
+use Shortcode;
 
 class PageController extends Controller
 {
