@@ -50,7 +50,7 @@ class PageController extends Controller
     
    //    $cforms = Cform::Where('cshortcode',$content)->first();   
      
-        $menuList = Menu::get(1);    
+        //$menuList = Menu::get(1);    
         //dd($menuList);
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
@@ -67,7 +67,7 @@ class PageController extends Controller
             'colortest' => $colortest,
             'branding' => $branding,
            'data' => $data,
-           'menuList' => $menuList
+           //'menuList' => $menuList
 
         ])->withShortcodes();
        
@@ -89,7 +89,7 @@ class PageController extends Controller
     
    //    $cforms = Cform::Where('cshortcode',$content)->first();   
      
-        $menuList = Menu::get(1);    
+        //$menuList = Menu::get(1);    
         //dd($menuList);
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
@@ -105,7 +105,7 @@ class PageController extends Controller
             'colortest' => $colortest,
             'branding' => $branding,
            'data' => $data,
-           'menuList' => $menuList
+           //'menuList' => $menuList
 
         ])->withShortcodes();
         
@@ -126,7 +126,7 @@ class PageController extends Controller
     
    //    $cforms = Cform::Where('cshortcode',$content)->first();   
      
-        $menuList = Menu::get(1);    
+        //$menuList = Menu::get(1);    
         //dd($menuList);
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
@@ -138,7 +138,7 @@ class PageController extends Controller
             'colortest' => $colortest,
             'branding' => $branding,
            'data' => $data,
-           'menuList' => $menuList
+           //'menuList' => $menuList
 
         ])->withShortcodes();
         
