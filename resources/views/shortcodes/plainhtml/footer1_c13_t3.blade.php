@@ -32,18 +32,18 @@
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
-                    <div class="footer-col float-lg-right">
+                    <div class="footer-col float-lg-left">
                         <div class="boxmlthemeone62 textmlthemeone62">
                                     <span class="editmlthemeone62">edit</span>
   
                                     <span class="savemlthemeone62">save</span>
                         <h4>Social Media</h4>
-                    </div>
+                    
                         <span class="contmlfacebook26">
                         <input type="text" name="mlfacebook" value="" class="inputmlfacebook26" placeholder="http://facebook.com"><br>
                         <input type="submit" value="Submit" class="submitmlfacebook26">
                         </span>
-                        
+                        <div class="fw">
                         <span class="fa-stack fa-lg boxmlthemeone26">
                              <span class="editmlthemeone26"> 
                               <i class="fa fa-edit">&nbsp;</i></span>
@@ -124,6 +124,8 @@
                                 <i class="fa fa-dribbble fa-stack-1x">&nbsp;</i>
                             </a>
                         </span>
+                    </div>
+                         </div>
                     </div> 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->

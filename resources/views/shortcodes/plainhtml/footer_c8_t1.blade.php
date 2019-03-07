@@ -1,6 +1,14 @@
 <div class="themeone">
 	<!-- CONTACT -->
-	<div class="container-fluid contact">
+	<div class="container-fluid contact boxpcservices4 textpcservices4 pcserviceypresentation4">
+    <span class="editpcservices4">edit</span>
+  <span class="savepcservices4">save</span>
+  <span class="editpresentationcolorpcservices4">Color</span> 
+  <span class="contpresentationcolorpcservices4">
+  <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolorpcservices4">
+  <br>
+  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorpcservices4">
+  </span>
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title text-center" id="contact">
@@ -8,6 +16,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="col-lg-12">
 				
@@ -119,7 +128,15 @@
 <div class="themeone">
 <!-- FOOTER -->
 	<div class="footer" id="footer">
-		<div class="container-fluid">
+		
+      <div class="container-fluid  boxcnfp1 textcnfp1 pcscnf1">
+
+<span class="editpresentationcolorcnfp1">Color</span> 
+  <span class="contpresentationcolorcnfp1">
+  <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolorcnfp1">
+  <br>
+  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorcnfp1">
+  </span>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="copyright text-center ">
