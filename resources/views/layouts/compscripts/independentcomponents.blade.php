@@ -150,12 +150,12 @@ function Uploadsavemone2(newLocation, id)
             
             success: function(result) {
             if(result == "success"){
-              //alert("updated");
+              alert("updated");
                 setTimeout(function(){ 
 
                   location.reload();
 
-              }, 3000);
+              }, 1000);
             }
           
             
@@ -24498,7 +24498,7 @@ $(".savepcservices4").click(function() {
 
 function addpcspresentationcolor4() {
 var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpcservices4').val();
-  $('.themeone .contact').css("background",inputpresentationcolorpcservices4);
+  $('.pcserviceypresentation4').css("background",inputpresentationcolorpcservices4);
 }
 
 
@@ -24972,66 +24972,66 @@ var inputpresentationcolormlthemeone80 = $('.inputpresentationcolormlthemeone80'
 $(document).ready(function(){
      
 
-  $(".contpresentationcolorpcservices4").hide(); 
+  $(".contpresentationcolorpccontact4").hide(); 
 
-$( ".boxpcservices4" )
+$( ".boxpccontact4" )
  .on("mouseenter", function() {
    if ($(".boxpcservices4").hasClass("editable")) {
-    $(".editpcservices4").hide();
-    $(".editpresentationcolorpcservices4").hide();
+    $(".editpccontact4").hide();
+    $(".editpresentationcolorpccontact4").hide();
 
    } 
    else
    {
-    $(".editpcservices4").show();
-    $(".editpresentationcolorpcservices4").show();
+    $(".editpccontact4").show();
+    $(".editpresentationcolorpccontact4").show();
    }
   
 })
 .on("mouseleave", function() {
   
-  $(".editpcservices4").hide();
-   $(".editpresentationcolorpcservices4").hide();
+  $(".editpccontact4").hide();
+   $(".editpresentationcolorpccontact4").hide();
 });
 
- $(".editpcservices4").click(function() {
+ $(".editpccontact4").click(function() {
   $(this).hide();
-  $(".boxpcservices4").addClass("editable");
-  $(".textpcservices4").attr("contenteditable", "true");
-   $(".editpcservices4").hide();
-  $(".savepcservices4").show();
+  $(".boxpccontact4").addClass("editable");
+  $(".textpccontact4").attr("contenteditable", "true");
+   $(".editpccontact4").hide();
+  $(".savepccontact4").show();
  
 });
 
-  $(".editpresentationcolorpcservices4").click(function() {
-    $(".boxpcservices4").addClass("editable");
-  $(".editpresentationcolorpcservices4").hide();
-  $(".contpresentationcolorpcservices4").show(); 
+  $(".editpresentationcolorpccontact4").click(function() {
+    $(".boxpccontact4").addClass("editable");
+  $(".editpresentationcolorpccontact4").hide();
+  $(".contpresentationcolorpccontact4").show(); 
 
 
 });
 
-  $(".submitpresentationcolorpcservices4").click(function() {
+  $(".submitpresentationcolorpccontact4").click(function() {
   
-  $(".contpresentationcolorpcservices4").hide();
-   $(".boxpcservices4").removeClass("editable");
+  $(".contpresentationcolorpccontact4").hide();
+   $(".boxpccontact4").removeClass("editable");
 addpcspresentationcolor4i();
 Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
-$(".savepcservices4").click(function() {
+$(".savepccontact4").click(function() {
   $(this).hide();
-  $(".boxpcservices4").removeClass("editable");
- $(".textpcservices4").removeAttr("contenteditable");
-  $(".editpcservices4").hide();
+  $(".boxpccontact4").removeClass("editable");
+ $(".textpccontact4").removeAttr("contenteditable");
+  $(".editpccontact4").hide();
   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
 function addpcspresentationcolor4i() {
-var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpcservices4').val();
-  $('.pcserviceypresentation4').css("background",inputpresentationcolorpcservices4);
+var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpccontact4').val();
+  $('.themeone .contact').css("background",inputpresentationcolorpcservices4);
 }
 
 
@@ -25096,7 +25096,7 @@ $(".savecnfp1").click(function() {
 
 function addcnfp1i() {
 var inputpresentationcolorcnfp1 = $('.inputpresentationcolorcnfp1').val();
-  $('.themeone .footer .container-fluid').css("background",inputpresentationcolorcnfp1);
+  $('.pcscnf1').css("background",inputpresentationcolorcnfp1);
 }
 
 

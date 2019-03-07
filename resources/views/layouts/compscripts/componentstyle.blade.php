@@ -18389,7 +18389,7 @@ span.contmldribbble67
 
 }
 
-.editpcservices4, .savepcservices4 {
+.editpccontact4, .savepccontact4 {
   width: 80px;
   height:30px;
   display: none;
@@ -18406,21 +18406,21 @@ span.contmldribbble67
   line-height: 1.3em;
 }
 
-.editpcservices4, .editpresentationcolorpcservices4 { 
+.editpccontact4, .editpresentationcolorpccontact4 { 
   background: #557a11;
   color: #f0f0f0;
   
   transition: opacity .2s ease-in-out;
 }
 
-.savepcservices4 {
+.savepccontact4 {
   display: none;
   background: #bd0f18;
   color: #f0f0f0;
 }
 
 
-.contpresentationcolorpcservices4{
+.contpresentationcolorpccontact4{
 
    width: 90px;
   display: none;
@@ -18437,7 +18437,7 @@ span.contmldribbble67
   float: left;
 }
 
-.editpresentationcolorpcservices4
+.editpresentationcolorpccontact4
 {
   width: 80px;
   height:30px;
