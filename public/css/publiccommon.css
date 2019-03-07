@@ -1,4 +1,4 @@
-#banner .col-sm-12:first-child{
+#banner > .col-sm-12:first-child{
   padding: 0px !important;
 }
 
