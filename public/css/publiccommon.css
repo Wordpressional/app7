@@ -1,4 +1,6 @@
-
+#banner .col-sm-12:first-child{
+  padding: 0px !important;
+}
 
 .img-rounded {
    
@@ -795,6 +797,11 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
+
+#moxyhome-slider .caption {
+  
+  margin-top: -128px !important;
+}
 .mnatheme.banner-area{
   height:auto !important;
   width: 100%;
@@ -8856,12 +8863,12 @@ div#content-area {
 
 .moxytheme .left-control, .moxytheme .right-control {
   position: absolute;
-  top: 50%;
-  height: 51px;
-  width: 51px;
-  line-height: 48px;
-  border-radius: 50%;
-  border:1px solid #fff;  
+  top: 50% !important;
+  height: 51px !important;
+  width: 51px !important;
+  line-height: 48px !important;
+  border-radius: 50% !important;
+  border:1px solid #fff !important;  
   z-index: 20;
   font-size: 24px;
   color: #fff;
@@ -10031,7 +10038,7 @@ div#content-area {
     }
 
     #moxyfeatures, #moxytwitter, #moxyabout-us  {
-        min-height: 800px !important;
+        min-height: 400px !important;
     }
    #moxycontact .parallax {
         min-height: 1300px !important;
