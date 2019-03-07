@@ -1338,5 +1338,8 @@ display: none !important;
 {
    display: none !important;
 }
+.wow {
+    visibility: visible !important;
+}
 }
 

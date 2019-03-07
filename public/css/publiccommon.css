@@ -1,4 +1,6 @@
-
+#banner .col-sm-12:first-child{
+  padding: 0px !important;
+}
 
 .img-rounded {
    
