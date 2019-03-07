@@ -798,6 +798,7 @@ div#demo {
 
 @media (max-width: 550px) and (min-width: 50px){
 
+
 #moxyhome-slider .caption {
   
   margin-top: -128px !important;
@@ -7247,6 +7248,8 @@ color: #864b82;
   .mpoltheme .progress-table-wrap{
     overflow-x:scroll
 }
+
+
 }
 
 @media (max-width: 991px){
@@ -8959,15 +8962,15 @@ div#content-area {
 .moxytheme .navbar-nav{
     display: block !important;
 }
-.navbar-brand {
+.moxytheme .navbar-brand {
     float: left;
     
     padding: 5px 15px 0;
     font-size: 18px;
     line-height: 20px;
 }
-.navbar-header {
-    display: inline-flex;
+.moxytheme .navbar-header {
+    display: inline-block;
     float: left;
     
     width: 366px;
@@ -9841,6 +9844,10 @@ div#content-area {
     .moxytheme .btn-signup {
         padding: 10px 20px;
     }
+    .moxytheme .nav>li>a {
+   
+    padding: 8px 15px;
+}
 }
 
 /* xs */
@@ -10830,4 +10837,7 @@ span.icon-cog {
 }
 .moxytheme .navbar-brand {
     padding-top: 12px;
+}
+.moxytheme .social-icons li{
+  height: 0px;
 }
