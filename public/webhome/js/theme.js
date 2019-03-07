@@ -367,9 +367,9 @@ jQuery(function($) {
    
 
     // Navigation Scroll
-    $(window).scroll(function(event) {
-        Scroll();
-    });
+    //$(window).scroll(function(event) {
+    //    Scroll();
+    //});
 
     $('.moxytheme .navbar-collapse ul li a').on('click', function() {  
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
@@ -378,7 +378,7 @@ jQuery(function($) {
     });
 
     // User define function
-    function Scroll() {
+    /*function Scroll() {
         var contentTop      =   [];
         var contentBottom   =   [];
         var winTop      =   $(window).scrollTop();
@@ -395,7 +395,7 @@ jQuery(function($) {
                 .eq(i).addClass('active');          
             }
         })
-    };
+    };*/
 
    
 

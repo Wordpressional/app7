@@ -1458,3 +1458,7 @@ transform: translate3d(0px, 0px, 0px) !important;
 {
   display: none !important;
 }
+.contpresentationcolorpccontact4, .editpresentationcolorpccontact4, .editpccontact4, .savepccontact4
+{
+  display: none !important;
+}
