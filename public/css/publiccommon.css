@@ -1,7 +1,13 @@
-#banner > .col-sm-12:first-child{
-  padding: 0px !important;
+#banner > .col-sm-12:first-child, .keditor-ui .row > .col-sm-12:first-child{
+  padding: 0px 0px 0px 0px !important;
 }
-
+div#content-area > .row, .keditor-ui  > .row{
+   
+   margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 .img-rounded {
    
   border-radius: 15px;
@@ -10850,11 +10856,4 @@ span.icon-cog {
 }
 .wow {
     visibility: visible !important;
-}
-div#content-area > .row, .keditor-ui  > .row{
-   
-   margin-right: 0px !important;
-    margin-left: 0px !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
 }
