@@ -10842,4 +10842,11 @@ span.icon-cog {
 .moxytheme .navbar-brand {
     padding-top: 12px;
 }
-
+.wow {
+    visibility: visible;
+}
+div#content-area > .row{
+   
+   margin-right: 0px;
+    margin-left: 0px;
+}
