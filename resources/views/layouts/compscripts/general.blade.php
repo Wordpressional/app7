@@ -8,9 +8,9 @@
 <!-- Bootstrap -->
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
-<script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
-<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
 
+<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
  
 
 <!-- Scripts -->

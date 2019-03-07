@@ -8,6 +8,7 @@
 <!-- Bootstrap -->
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
+<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
 <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
 <script src="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
 
