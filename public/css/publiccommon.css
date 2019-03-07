@@ -10843,10 +10843,10 @@ span.icon-cog {
     padding-top: 12px;
 }
 .wow {
-    visibility: visible;
+    visibility: visible !important;
 }
 div#content-area > .row{
    
-   margin-right: 0px;
-    margin-left: 0px;
+   margin-right: 0px !important;
+    margin-left: 0px !important;
 }
