@@ -6,21 +6,24 @@
 
 <!-- Bootstrap -->
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset(mix('js/app.js')) }}"></script>
+<script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>   
 <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
 
 <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
- <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
+<script src="{{ asset('js/effects.js') }}"></script>
+ <script src="{{ asset('js/easing.min.js') }}"></script>
 
 <!-- Scripts -->
 @if (Request::is('posts/*'))
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 @endif
 
-<script src="{{ asset(mix('js/app.js')) }}"></script>
+
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script> 
 
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
-<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+
 <script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
  <script src="{{ asset('js/superfish.min.js')}}"></script>
 <script src="{{ asset('js/swiper.min.js') }}"></script>
@@ -77,7 +80,7 @@
  <script src="{{ asset('webhome/js/theme.js') }}"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
        
-        
+     
         
         <script type="text/javascript"> if($("#jssor_1").length != 0) {
   jssor_1_slider_init(); }</script>

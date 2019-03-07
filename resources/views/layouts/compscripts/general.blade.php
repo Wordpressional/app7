@@ -7,9 +7,13 @@
 
 <!-- Bootstrap -->
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset(mix('js/app.js')) }}"></script>
+<script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>   
 <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
 
 <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/effects.js') }}"></script>
+ <script src="{{ asset('js/easing.min.js') }}"></script>
 <script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
  
 
@@ -17,7 +21,7 @@
 @if (Request::is('posts/*'))
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 @endif
-<script src="{{ asset(mix('js/app.js')) }}"></script>
+
 
 
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>

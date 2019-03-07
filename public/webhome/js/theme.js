@@ -591,7 +591,7 @@ $(document).ready(function() {
 
     //------- Smooth Scroll  js --------//  
 
-    $('.nav-menu a, #muk-mobile-nav a, .scrollto').on('click', function() {
+    /*$('.nav-menu a, #muk-mobile-nav a, .scrollto').on('click', function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             if (target.length) {
@@ -622,7 +622,7 @@ $(document).ready(function() {
                 return false;
             }
         }
-    });
+    });*/
 
     $(document).ready(function() {
         
