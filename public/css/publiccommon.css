@@ -9310,6 +9310,7 @@ div#content-area {
 .moxytheme .social-icons {
   margin-top:30px;
   text-align: center;
+
 }
 
 .moxytheme .social-icons ul {
@@ -9847,6 +9848,9 @@ div#content-area {
     .moxytheme .nav>li>a {
    
     padding: 8px 15px;
+  }
+.moxytheme .social-icons ul li{
+  float: none !important;
 }
 }
 
@@ -10838,6 +10842,4 @@ span.icon-cog {
 .moxytheme .navbar-brand {
     padding-top: 12px;
 }
-.moxytheme .social-icons li{
-  height: 0px;
-}
+
