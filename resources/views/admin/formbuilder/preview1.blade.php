@@ -9,7 +9,8 @@
    
 
     {!! $form->htmlcontent !!} 
-   
+    <div id="app">
+ </div>  
     
   
  

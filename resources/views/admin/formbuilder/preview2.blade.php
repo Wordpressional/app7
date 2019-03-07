@@ -29,23 +29,25 @@
 <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
 
       {!! $form->htmlcontent !!} 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="{{ asset('webhome/js/jquery-3.2.1.min.js') }}"></script>
+<!-- Bootstrap -->
+<script src="{{ asset('webhome/js/jquery-3.3.1.min.js') }}"></script>
+<!-- Popper JS -->
+<script src="{{ asset('webhome/js/popper.min.js') }}"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
-
-
-
+<!-- Bootstrap -->
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('webhome/js/theme.js') }}"></script>
+<script src="{{ asset(mix('js/app.js')) }}"></script>
+<script src="{{ asset('js/jquery-ui.min.js')}}"></script>
+
+<script src="{{ asset('js/easing.min.js') }}"></script>
+<script src="{{ asset('js/effects.js') }}"></script>
+
 <!-- Scripts -->
 @if (Request::is('posts/*'))
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 @endif
-<script src="{{ asset(mix('js/app.js')) }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
 
  <!-- Rev slider js -->
@@ -93,7 +95,7 @@
         <script src="{{ asset('js/adminlte.min.js') }}"></script>
         <script src="{{ asset('webhome/js/theme.js') }}"></script>
         <script src="{{ asset('webhome/js/responsiveslides.min.js') }}"></script>
-       <script src="{{ asset(mix('js/app.js')) }}"></script>
+       
        <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 <script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
         <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>

@@ -11,7 +11,7 @@
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
 <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
-
+ <script src="{{ asset('js/easing.min.js') }}"></script>
  <script src="{{ asset('js/swiper.min.js') }}"></script>
  <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
 <script src="{{ asset('js/validator.min.js') }}"></script>
