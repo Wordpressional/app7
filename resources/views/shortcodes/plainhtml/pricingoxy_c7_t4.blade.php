@@ -41,7 +41,7 @@
                              <span class="editmoxygentheme103">
                               <i class="fa fa-edit">&nbsp;</i>
                             </span>
-              <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup103">Contact-Us</a>
+              <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup103">Contact</a>
             </span>
             </div>
           </div>
@@ -72,7 +72,7 @@
                             </span>
 
 
-               <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup104">Contact-Us</a>
+               <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup104">Contact</a>
             </span>
             </div>
           </div>
@@ -106,7 +106,7 @@
                             </span>
 
 
-               <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup105">Contact-Us</a>
+               <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup105">Contact</a>
             </span>
 
 
@@ -142,7 +142,7 @@
                             </span>
 
 
-               <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup106">Contact-Us</a>
+               <a href="#" class="btn btn-lg btn-primary" id="hrefchangemoxysingup106">Contact</a>
             </span>
 
 
