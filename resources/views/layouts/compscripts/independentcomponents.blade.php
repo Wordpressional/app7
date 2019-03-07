@@ -149,8 +149,15 @@ function Uploadsavemone2(newLocation, id)
             data:  data,
             
             success: function(result) {
-            
-           location.reload();
+            if(result == "success"){
+              alert("updated");
+                setTimeout(function(){ 
+
+                  location.reload();
+
+              }, 1000);
+            }
+          
             
             },
              error: function (jqXHR, textStatus, errorThrown) {
@@ -3439,7 +3446,7 @@ function readURLmac2(input) {
 }
 
 $(document).ready(function(){
-
+$(".boxmlfooterbladethemeone2").removeClass("editable");
    $(".contmfooterfacebook2").hide();
 
    $( ".boxmlfooterbladethemeone2" )
@@ -3467,6 +3474,12 @@ $(".editmlfooterbladethemeone2").click(function(e) {
   
   
   $(".contmfooterfacebook2").show();
+  //$(".contmfooterfacebook2").hide();
+    $(".contmfootertwitter3").hide();
+    $(".contmfooterrss4").hide();
+    $(".contmfooteryoutube5").hide();
+     $(".contmfooterlinkedin6").hide();
+    $(".contmfootergoogleplus7").hide();
 
  
 });
@@ -3489,7 +3502,7 @@ if(inputmabouttelegram16 != ""){
 }
 
 $(document).ready(function(){
-
+$(".boxmlfooterbladethemeone3").removeClass("editable");
    $(".contmfootertwitter3").hide();
 
    $( ".boxmlfooterbladethemeone3" )
@@ -3517,6 +3530,13 @@ $(".editmlfooterbladethemeone3").click(function(e) {
   
   
   $(".contmfootertwitter3").show();
+  $(".contmfooterfacebook2").hide();
+    //$(".contmfootertwitter3").hide();
+    $(".contmfooterrss4").hide();
+    $(".contmfooteryoutube5").hide();
+    $(".contmfooterlinkedin6").hide();
+    $(".contmfootergoogleplus7").hide();
+
 
  
 });
@@ -3541,7 +3561,7 @@ if(inputmfootertwitter3 != ""){
 
 
 $(document).ready(function(){
-
+$(".boxmlfooterbladethemeone4").removeClass("editable");
    $(".contmfooterrss4").hide();
 
    $( ".boxmlfooterbladethemeone4" )
@@ -3570,6 +3590,14 @@ $(".editmlfooterbladethemeone4").click(function(e) {
   
   $(".contmfooterrss4").show();
 
+  $(".contmfooterfacebook2").hide();
+    $(".contmfootertwitter3").hide();
+    //$(".contmfooterrss4").hide();
+    $(".contmfooteryoutube5").hide();
+     $(".contmfooterlinkedin6").hide();
+    $(".contmfootergoogleplus7").hide();
+
+
  
 });
 
@@ -3594,7 +3622,7 @@ if(inputmfooterrss4 != ""){
 
 
 $(document).ready(function(){
-
+ $(".boxmlfooterbladethemeone5").removeClass("editable");
    $(".contmfooteryoutube5").hide();
 
    $( ".boxmlfooterbladethemeone5" )
@@ -3622,6 +3650,13 @@ $(".editmlfooterbladethemeone5").click(function(e) {
   
   
   $(".contmfooteryoutube5").show();
+  $(".contmfooterfacebook2").hide();
+    $(".contmfootertwitter3").hide();
+    $(".contmfooterrss4").hide();
+    //$(".contmfooteryoutube5").hide();
+     $(".contmfooterlinkedin6").hide();
+    $(".contmfootergoogleplus7").hide();
+
 
  
 });
@@ -3646,7 +3681,7 @@ if(inputmfooteryoutube5 != ""){
 
 
 $(document).ready(function(){
-
+ $(".boxmlfooterbladethemeone6").removeClass("editable");
    $(".contmfooterlinkedin6").hide();
 
    $( ".boxmlfooterbladethemeone6" )
@@ -3675,6 +3710,12 @@ $(".editmlfooterbladethemeone6").click(function(e) {
   
   $(".contmfooterlinkedin6").show();
 
+   $(".contmfooterfacebook2").hide();
+    $(".contmfootertwitter3").hide();
+    $(".contmfooterrss4").hide();
+    $(".contmfooteryoutube5").hide();
+     //$(".contmfooterlinkedin6").hide();
+    $(".contmfootergoogleplus7").hide();
  
 });
 
@@ -3699,7 +3740,7 @@ if(inputmfooterlinkedin6 != ""){
 
 
 $(document).ready(function(){
-
+ $(".boxmlfooterbladethemeone7").removeClass("editable");
    $(".contmfootergoogleplus7").hide();
 
    $( ".boxmlfooterbladethemeone7" )
@@ -3727,6 +3768,12 @@ $(".editmlfooterbladethemeone7").click(function(e) {
   
   
   $(".contmfootergoogleplus7").show();
+  $(".contmfooterfacebook2").hide();
+    $(".contmfootertwitter3").hide();
+    $(".contmfooterrss4").hide();
+    $(".contmfooteryoutube5").hide();
+     $(".contmfooterlinkedin6").hide();
+    //$(".contmfootergoogleplus7").hide();
 
  
 });
@@ -4793,7 +4840,7 @@ var file = input.files[0];
   
 }
 $(document).ready(function(){
-
+  $(".boxmlservicetheme1").removeClass("editable");
   $(".contpresentationcolor").hide(); 
 
 $( ".boxmlservicetheme1" )
@@ -10413,6 +10460,24 @@ $(".editmlthemeone26").click(function(e) {
   
   $(".contmlfacebook26").show();
 
+   $(".boxmlthemeone63").removeClass("editable");
+   $(".contmltwitter63").hide();
+
+   $(".boxmlthemeone64").removeClass("editable");
+   $(".contmlgoogleplus64").hide();
+
+   $(".boxmlthemeone65").removeClass("editable");
+   $(".contmlinstagram65").hide();
+
+
+
+   $(".boxmlthemeone66").removeClass("editable");
+   $(".contmllinkedin66").hide();
+
+
+   $(".boxmlthemeone67").removeClass("editable");
+   $(".contmldribbble67").hide();
+
  
 });
 
@@ -12017,9 +12082,30 @@ $(document).ready(function(){
 $(".editmlthemeone63").click(function(e) {
  $(".boxmlthemeone63").addClass("editable");
 
-  
-  
   $(".contmltwitter63").show();
+
+  $(".boxmlthemeone26").removeClass("editable");
+   $(".contmlfacebook26").hide();
+
+   // $(".boxmlthemeone63").removeClass("editable");
+   //$(".contmltwitter63").hide();
+
+   $(".boxmlthemeone64").removeClass("editable");
+   $(".contmlgoogleplus64").hide();
+
+   $(".boxmlthemeone65").removeClass("editable");
+   $(".contmlinstagram65").hide();
+
+
+
+   $(".boxmlthemeone66").removeClass("editable");
+   $(".contmllinkedin66").hide();
+
+
+   $(".boxmlthemeone67").removeClass("editable");
+   $(".contmldribbble67").hide();
+  
+  
 
  
 });
@@ -12071,6 +12157,27 @@ $(".editmlthemeone64").click(function(e) {
   
   
   $(".contmlgoogleplus64").show();
+
+  $(".boxmlthemeone26").removeClass("editable");
+   $(".contmlfacebook26").hide();
+
+    $(".boxmlthemeone63").removeClass("editable");
+   $(".contmltwitter63").hide();
+
+   //$(".boxmlthemeone64").removeClass("editable");
+   //$(".contmlgoogleplus64").hide();
+
+   $(".boxmlthemeone65").removeClass("editable");
+   $(".contmlinstagram65").hide();
+
+
+
+   $(".boxmlthemeone66").removeClass("editable");
+   $(".contmllinkedin66").hide();
+
+
+   $(".boxmlthemeone67").removeClass("editable");
+   $(".contmldribbble67").hide();
 
  
 });
@@ -12124,6 +12231,27 @@ $(".editmlthemeone65").click(function(e) {
   
   $(".contmlinstagram65").show();
 
+  $(".boxmlthemeone26").removeClass("editable");
+   $(".contmlfacebook26").hide();
+
+    $(".boxmlthemeone63").removeClass("editable");
+   $(".contmltwitter63").hide();
+
+   $(".boxmlthemeone64").removeClass("editable");
+   $(".contmlgoogleplus64").hide();
+
+  // $(".boxmlthemeone65").removeClass("editable");
+  // $(".contmlinstagram65").hide();
+
+
+
+   $(".boxmlthemeone66").removeClass("editable");
+   $(".contmllinkedin66").hide();
+
+
+   $(".boxmlthemeone67").removeClass("editable");
+   $(".contmldribbble67").hide();
+
  
 });
 
@@ -12174,6 +12302,25 @@ $(".editmlthemeone66").click(function(e) {
   
   
   $(".contmllinkedin66").show();
+
+  $(".boxmlthemeone63").removeClass("editable");
+   $(".contmltwitter63").hide();
+
+   $(".boxmlthemeone64").removeClass("editable");
+   $(".contmlgoogleplus64").hide();
+
+   $(".boxmlthemeone65").removeClass("editable");
+   $(".contmlinstagram65").hide();
+
+
+
+   //$(".boxmlthemeone66").removeClass("editable");
+   //$(".contmllinkedin66").hide();
+
+
+   $(".boxmlthemeone67").removeClass("editable");
+   $(".contmldribbble67").hide();
+
 
  
 });
@@ -12226,6 +12373,23 @@ $(".editmlthemeone67").click(function(e) {
   
   
   $(".contmldribbble67").show();
+
+  $(".boxmlthemeone26").removeClass("editable");
+   $(".contmlfacebook26").hide();
+
+    $(".boxmlthemeone63").removeClass("editable");
+   $(".contmltwitter63").hide();
+
+   $(".boxmlthemeone64").removeClass("editable");
+   $(".contmlgoogleplus64").hide();
+
+   $(".boxmlthemeone65").removeClass("editable");
+   $(".contmlinstagram65").hide();
+
+
+
+   $(".boxmlthemeone66").removeClass("editable");
+   $(".contmllinkedin66").hide();
 
  
 });
@@ -20496,7 +20660,7 @@ var inputcontpurmoxygentheme87 = $('.inputcontpurmoxygentheme87').val();
 
 $(document).ready(function(){
      
-
+ $(".boxmoxygentheme88").removeClass("editable");
   $(".contpresentationcolormoxygentheme88").hide(); 
 
 $( ".boxmoxygentheme88" )
@@ -20565,7 +20729,7 @@ var inputpresentationcolormoxygentheme88 = $('.inputpresentationcolormoxygenthem
 
 $(document).ready(function(){
      
-
+ $(".boxmoxygentheme89").removeClass("editable");
   $(".contpresentationcolormoxygentheme89").hide(); 
 
 $( ".boxmoxygentheme89" )
@@ -20634,7 +20798,7 @@ var inputpresentationcolormoxygentheme89 = $('.inputpresentationcolormoxygenthem
 
 $(document).ready(function(){
      
-
+ $(".boxmoxygentheme90").removeClass("editable");
   $(".contpresentationcolormoxygentheme90").hide(); 
 
 $( ".boxmoxygentheme90" )
@@ -20701,7 +20865,7 @@ var inputpresentationcolormoxygentheme90 = $('.inputpresentationcolormoxygenthem
 
 $(document).ready(function(){
      
-
+ $(".boxmoxygentheme91").removeClass("editable");
   $(".contpresentationcolormoxygentheme91").hide(); 
 
 $( ".boxmoxygentheme91" )
@@ -20769,7 +20933,7 @@ var inputpresentationcolormoxygentheme91 = $('.inputpresentationcolormoxygenthem
 
 $(document).ready(function(){
      
-
+ $(".boxmoxygentheme92").removeClass("editable");
   $(".contpresentationcolormoxygentheme92").hide(); 
 
 $( ".boxmoxygentheme92" )
@@ -21348,7 +21512,7 @@ var inputcontpurmoxygentheme100 = $('.inputcontpurmoxygentheme100').val();
 
 $(document).ready(function(){
      
-
+ $(".boxmoxygentheme101").removeClass("editable");
   $(".contpresentationcolormoxygentheme101").hide(); 
 
 $( ".boxmoxygentheme101" )
@@ -21404,7 +21568,7 @@ var inputpresentationcolormoxygentheme101 = $('.inputpresentationcolormoxygenthe
 
 $(document).ready(function(){
      
-
+ $(".boxmoxygentheme102").removeClass("editable");
   $(".contpresentationcolormoxygentheme102").hide(); 
 
 $( ".boxmoxygentheme102" )
@@ -23848,7 +24012,7 @@ if(inputmpolbehance26 != ""){
 
 $(document).ready(function(){
      
-
+ $(".boxmpoltheme27").removeClass("editable");
   $(".contpresentationcolormpoltheme27").hide(); 
 
 $( ".boxmpoltheme27" )
@@ -24274,7 +24438,7 @@ var inputcontpurpcservices3 = $('.inputcontpurpcservices3').val();
 
 $(document).ready(function(){
      
-
+ $(".boxpcservices4").removeClass("editable");
   $(".contpresentationcolorpcservices4").hide(); 
 
 $( ".boxpcservices4" )
@@ -24533,6 +24697,790 @@ var inputcontpurpcservices7 = $('.inputcontpurpcservices7').val();
   {
     $('.service-icon i').css('font-size','30px');
   }
+}
+
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolorpcservices5").hide(); 
+
+$( ".boxpcservices5" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices5").hasClass("editable")) {
+    $(".editpcservices5").hide();
+    $(".editpresentationcolorpcservices5").hide();
+
+   } 
+   else
+   {
+    $(".editpcservices5").show();
+    $(".editpresentationcolorpcservices5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editpcservices5").hide();
+   $(".editpresentationcolorpcservices5").hide();
+});
+
+ $(".editpcservices5").click(function() {
+  $(this).hide();
+  $(".boxpcservices5").addClass("editable");
+  $(".textpcservices5").attr("contenteditable", "true");
+   $(".editpcservices5").hide();
+  $(".savepcservices5").show();
+ 
+});
+
+  $(".editpresentationcolorpcservices5").click(function() {
+    $(".boxpcservices5").addClass("editable");
+  $(".editpresentationcolorpcservices5").hide();
+  $(".contpresentationcolorpcservices5").show(); 
+
+
+});
+
+  $(".submitpresentationcolorpcservices5").click(function() {
+  
+  $(".contpresentationcolorpcservices5").hide();
+   $(".boxpcservices5").removeClass("editable");
+addpcspresentationcolor5();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+
+$(".savepcservices5").click(function() {
+  $(this).hide();
+  $(".boxpcservices5").removeClass("editable");
+ $(".textpcservices5").removeAttr("contenteditable");
+  $(".editpcservices5").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addpcspresentationcolor5() {
+var inputpresentationcolorpcservices5 = $('.inputpresentationcolorpcservices5').val();
+  $('.mlthemeone.slider-2').css("background-color",inputpresentationcolorpcservices5);
+}
+
+$(document).ready(function(){
+     
+$(".boxpcservices7").removeClass("editable");
+  $(".contpresentationcolorpcservices7").hide(); 
+
+$( ".boxpcservices7" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices7").hasClass("editable")) {
+    $(".editpcservices7").hide();
+    $(".editpresentationcolorpcservices7").hide();
+
+   } 
+   else
+   {
+    $(".editpcservices7").show();
+    $(".editpresentationcolorpcservices7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editpcservices7").hide();
+   $(".editpresentationcolorpcservices7").hide();
+});
+
+ $(".editpcservices7").click(function() {
+  $(this).hide();
+  $(".boxpcservices7").addClass("editable");
+  $(".textpcservices7").attr("contenteditable", "true");
+   $(".editpcservices7").hide();
+  $(".savepcservices7").show();
+ 
+});
+
+  $(".editpresentationcolorpcservices7").click(function() {
+    $(".boxpcservices7").addClass("editable");
+  $(".editpresentationcolorpcservices7").hide();
+  $(".contpresentationcolorpcservices7").show(); 
+
+
+});
+
+  $(".submitpresentationcolorpcservices7").click(function() {
+  
+  $(".contpresentationcolorpcservices7").hide();
+   $(".boxpcservices7").removeClass("editable");
+addpcspresentationcolor7();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+$(".savepcservices7").click(function() {
+  $(this).hide();
+  $(".boxpcservices7").removeClass("editable");
+ $(".textpcservices7").removeAttr("contenteditable");
+  $(".editpcservices7").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addpcspresentationcolor7() {
+var inputpresentationcolorpcservices7 = $('.inputpresentationcolorpcservices5').val();
+  $('.pcserviceypresentation7').css("background",inputpresentationcolorpcservices7);
+}
+
+
+
+
+
+$(document).ready(function(){
+     
+$(".boxmlthemeone79").removeClass("editable");
+  $(".contpresentationcolormlthemeone79").hide(); 
+
+$( ".boxmlthemeone79" )
+ .on("mouseenter", function() {
+   if ($(".boxmlthemeone79").hasClass("editable")) {
+    $(".editmlthemeone79").hide();
+    $(".editpresentationcolormlthemeone79").hide();
+
+   } 
+   else
+   {
+    $(".editmlthemeone79").show();
+    $(".editpresentationcolormlthemeone79").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlthemeone79").hide();
+   $(".editpresentationcolormlthemeone79").hide();
+});
+
+ $(".editmlthemeone79").click(function() {
+  $(this).hide();
+  $(".boxmlthemeone79").addClass("editable");
+  $(".textmlthemeone79").attr("contenteditable", "true");
+   $(".editmlthemeone79").hide();
+  $(".savemlthemeone79").show();
+ 
+});
+
+  $(".editpresentationcolormlthemeone79").click(function() {
+    $(".boxmlthemeone79").addClass("editable");
+  $(".editpresentationcolormlthemeone79").hide();
+  $(".contpresentationcolormlthemeone79").show(); 
+
+
+});
+
+  $(".submitpresentationcolormlthemeone79").click(function() {
+  
+  $(".contpresentationcolormlthemeone79").hide();
+   $(".boxmlthemeone79").removeClass("editable");
+addmlpresentationcolor79();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+$(".savemlthemeone79").click(function() {
+  $(this).hide();
+
+  $(".boxmlthemeone79").removeClass("editable");
+ $(".textmlthemeone79").removeAttr("contenteditable");
+  $(".editmlthemeone79").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addmlpresentationcolor79() {
+var inputpresentationcolormlthemeone79 = $('.inputpresentationcolormlthemeone79').val();
+  $('.presentationml79').css("background",inputpresentationcolormlthemeone79);
+ 
+}
+
+
+
+
+$(document).ready(function(){
+
+     
+$(".boxmlthemeone80").removeClass("editable");
+  $(".contpresentationcolormlthemeone80").hide(); 
+
+$( ".boxmlthemeone80" )
+ .on("mouseenter", function() {
+   if ($(".boxmlthemeone80").hasClass("editable")) {
+    $(".editmlthemeone80").hide();
+    $(".editpresentationcolormlthemeone80").hide();
+
+   } 
+   else
+   {
+    $(".editmlthemeone80").show();
+    $(".editpresentationcolormlthemeone80").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editmlthemeone80").hide();
+   $(".editpresentationcolormlthemeone80").hide();
+});
+
+ $(".editmlthemeone80").click(function() {
+  $(this).hide();
+  $(".boxmlthemeone80").addClass("editable");
+  $(".textmlthemeone80").attr("contenteditable", "true");
+   $(".editmlthemeone80").hide();
+  $(".savemlthemeone80").show();
+ 
+});
+
+  $(".editpresentationcolormlthemeone80").click(function() {
+    $(".boxmlthemeone80").addClass("editable");
+  $(".editpresentationcolormlthemeone80").hide();
+  $(".contpresentationcolormlthemeone80").show(); 
+
+
+});
+
+  $(".submitpresentationcolormlthemeone80").click(function() {
+  
+  $(".contpresentationcolormlthemeone80").hide();
+   $(".boxmlthemeone80").removeClass("editable");
+addmlpresentationcolor80();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+$(".savemlthemeone80").click(function() {
+  $(this).hide();
+  $(".boxmlthemeone80").removeClass("editable");
+ $(".textmlthemeone80").removeAttr("contenteditable");
+  $(".editmlthemeone80").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addmlpresentationcolor80() {
+var inputpresentationcolormlthemeone80 = $('.inputpresentationcolormlthemeone80').val();
+  
+   $('.presentationml80').css("background-color",inputpresentationcolormlthemeone80);
+}
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolorpcservices4").hide(); 
+
+$( ".boxpcservices4" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservices4").hasClass("editable")) {
+    $(".editpcservices4").hide();
+    $(".editpresentationcolorpcservices4").hide();
+
+   } 
+   else
+   {
+    $(".editpcservices4").show();
+    $(".editpresentationcolorpcservices4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editpcservices4").hide();
+   $(".editpresentationcolorpcservices4").hide();
+});
+
+ $(".editpcservices4").click(function() {
+  $(this).hide();
+  $(".boxpcservices4").addClass("editable");
+  $(".textpcservices4").attr("contenteditable", "true");
+   $(".editpcservices4").hide();
+  $(".savepcservices4").show();
+ 
+});
+
+  $(".editpresentationcolorpcservices4").click(function() {
+    $(".boxpcservices4").addClass("editable");
+  $(".editpresentationcolorpcservices4").hide();
+  $(".contpresentationcolorpcservices4").show(); 
+
+
+});
+
+  $(".submitpresentationcolorpcservices4").click(function() {
+  
+  $(".contpresentationcolorpcservices4").hide();
+   $(".boxpcservices4").removeClass("editable");
+addpcspresentationcolor4i();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  
+});
+
+$(".savepcservices4").click(function() {
+  $(this).hide();
+  $(".boxpcservices4").removeClass("editable");
+ $(".textpcservices4").removeAttr("contenteditable");
+  $(".editpcservices4").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addpcspresentationcolor4i() {
+var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpcservices4').val();
+  $('.pcserviceypresentation4').css("background",inputpresentationcolorpcservices4);
+}
+
+
+$(document).ready(function(){
+     
+
+  $(".contpresentationcolorcnfp1").hide(); 
+
+$( ".boxcnfp1" )
+ .on("mouseenter", function() {
+   if ($(".boxcnfp1").hasClass("editable")) {
+    $(".editcnfp1").hide();
+    $(".editpresentationcolorcnfp1").hide();
+
+   } 
+   else
+   {
+    $(".editcnfp1").show();
+    $(".editpresentationcolorcnfp1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editcnfp1").hide();
+   $(".editpresentationcolorcnfp1").hide();
+});
+
+ $(".editcnfp1").click(function() {
+  $(this).hide();
+  $(".boxcnfp1").addClass("editable");
+  $(".textcnfp1").attr("contenteditable", "true");
+   $(".editcnfp1").hide();
+  $(".savecnfp1").show();
+ 
+});
+
+  $(".editpresentationcolorcnfp1").click(function() {
+    $(".boxcnfp1").addClass("editable");
+  $(".editpresentationcolorcnfp1").hide();
+  $(".contpresentationcolorcnfp1").show(); 
+
+
+});
+
+  $(".submitpresentationcolorcnfp1").click(function() {
+  
+  $(".contpresentationcolorcnfp1").hide();
+   $(".boxcnfp1").removeClass("editable");
+addcnfp1i();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+$(".savecnfp1").click(function() {
+  $(this).hide();
+  $(".boxcnfp1").removeClass("editable");
+ $(".textcnfp1").removeAttr("contenteditable");
+  $(".editcnfp1").hide();
+  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+});
+
+function addcnfp1i() {
+var inputpresentationcolorcnfp1 = $('.inputpresentationcolorcnfp1').val();
+  $('.pcscnf1').css("background",inputpresentationcolorcnfp1);
+}
+
+
+ 
+$(document).ready(function(){
+
+  $(".contpurpcservicest2").hide(); 
+
+$( ".boxpcservicest2" )
+ .on("mouseenter", function() {
+   if ($(".boxpcservicest2").hasClass("editable")) {
+   
+    $(".editcontpurpcservicest2").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcservicest2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcservicest2").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcservicest2").click(function() {
+   $(".boxpcservicest2").addClass("editable");
+  $(this).hide();
+  $(".contpurpcservicest2").show(); 
+ 
+});
+
+  $(".submitcontpurpcservicest2").click(function() {
+  
+  $(".contpurpcservicest2").hide();
+   $(".boxpcservicest2").removeClass("editable");
+addpcfontawesomecontpurt2ai();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpurt2ai() {
+var inputcontpurpcservicest2 = $('.inputcontpurpcservicest2').val();
+ $('#purpcservicest2').removeClass();
+  $('#purpcservicest2').addClass(inputcontpurpcservicest2);
+  
+}
+
+$(document).ready(function(){
+
+  $(".contpurpcfawe2").hide(); 
+
+$( ".boxpcfawe2" )
+ .on("mouseenter", function() {
+   if ($(".boxpcfawe2").hasClass("editable")) {
+   
+    $(".editcontpurpcfawe2").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcfawe2").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcfawe2").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcfawe2").click(function() {
+   $(".boxpcfawe2").addClass("editable");
+  $(this).hide();
+  $(".contpurpcfawe2").show(); 
+ 
+});
+
+  $(".submitcontpurpcfawe2").click(function() {
+  
+  $(".contpurpcfawe2").hide();
+   $(".boxpcfawe2").removeClass("editable");
+addpcfontawesomecontpur2ai2();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur2ai2() {
+var inputcontpurpcfawe2 = $('.inputcontpurpcfawe2').val();
+ $('#purpcfawe2').removeClass();
+  $('#purpcfawe2').addClass(inputcontpurpcfawe2);
+  
+}
+
+$(document).ready(function(){
+
+  $(".contpurpcfawe3").hide(); 
+
+$( ".boxpcfawe3" )
+ .on("mouseenter", function() {
+   if ($(".boxpcfawe3").hasClass("editable")) {
+   
+    $(".editcontpurpcfawe3").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcfawe3").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcfawe3").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcfawe3").click(function() {
+   $(".boxpcfawe3").addClass("editable");
+  $(this).hide();
+  $(".contpurpcfawe3").show(); 
+ 
+});
+
+  $(".submitcontpurpcfawe3").click(function() {
+  
+  $(".contpurpcfawe3").hide();
+   $(".boxpcfawe3").removeClass("editable");
+addpcfontawesomecontpur2i3();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur2i3() {
+var inputcontpurpcfawe3 = $('.inputcontpurpcfawe3').val();
+ $('#purpcfawe3').removeClass();
+  $('#purpcfawe3').addClass(inputcontpurpcfawe3);
+  
+}
+
+$(document).ready(function(){
+
+  $(".contpurpcfawe4").hide(); 
+
+$( ".boxpcfawe4" )
+ .on("mouseenter", function() {
+   if ($(".boxpcfawe4").hasClass("editable")) {
+   
+    $(".editcontpurpcfawe4").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcfawe4").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcfawe4").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcfawe4").click(function() {
+   $(".boxpcfawe4").addClass("editable");
+  $(this).hide();
+  $(".contpurpcfawe4").show(); 
+ 
+});
+
+  $(".submitcontpurpcfawe4").click(function() {
+  
+  $(".contpurpcfawe4").hide();
+   $(".boxpcfawe4").removeClass("editable");
+addpcfontawesomecontpur4qi4();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur4qi4() {
+var inputcontpurpcfawe4 = $('.inputcontpurpcfawe4').val();
+ $('#purpcfawe4').removeClass();
+  $('#purpcfawe4').addClass(inputcontpurpcfawe4);
+  
+}
+
+
+$(document).ready(function(){
+
+  $(".contpurpcfawe5").hide(); 
+
+$( ".boxpcfawe5" )
+ .on("mouseenter", function() {
+   if ($(".boxpcfawe5").hasClass("editable")) {
+   
+    $(".editcontpurpcfawe5").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcfawe5").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcfawe5").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcfawe5").click(function() {
+   $(".boxpcfawe5").addClass("editable");
+  $(this).hide();
+  $(".contpurpcfawe5").show(); 
+ 
+});
+
+  $(".submitcontpurpcfawe5").click(function() {
+  
+  $(".contpurpcfawe5").hide();
+   $(".boxpcfawe5").removeClass("editable");
+addpcfontawesomecontpur1i5();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur1i5() {
+var inputcontpurpcfawe5 = $('.inputcontpurpcfawe5').val();
+ $('#purpcfawe5').removeClass();
+  $('#purpcfawe5').addClass(inputcontpurpcfawe5);
+  
+}
+
+$(document).ready(function(){
+
+  $(".contpurpcfawe6").hide(); 
+
+$( ".boxpcfawe6" )
+ .on("mouseenter", function() {
+   if ($(".boxpcfawe6").hasClass("editable")) {
+   
+    $(".editcontpurpcfawe6").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcfawe6").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcfawe6").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcfawe6").click(function() {
+   $(".boxpcfawe6").addClass("editable");
+  $(this).hide();
+  $(".contpurpcfawe6").show(); 
+ 
+});
+
+  $(".submitcontpurpcfawe6").click(function() {
+  
+  $(".contpurpcfawe6").hide();
+   $(".boxpcfawe6").removeClass("editable");
+addpcfontawesomecontpur6i6();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur6i6() {
+var inputcontpurpcfawe6 = $('.inputcontpurpcfawe6').val();
+ $('#purpcfawe6').removeClass();
+  $('#purpcfawe6').addClass(inputcontpurpcfawe6);
+ 
+}
+
+
+
+
+$(document).ready(function(){
+
+  $(".contpurpcfawe7").hide(); 
+
+$( ".boxpcfawe7" )
+ .on("mouseenter", function() {
+   if ($(".boxpcfawe7").hasClass("editable")) {
+   
+    $(".editcontpurpcfawe7").hide();
+   } 
+   else
+   {
+  
+    $(".editcontpurpcfawe7").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+ 
+   $(".editcontpurpcfawe7").hide();
+
+});
+
+ 
+
+
+
+
+ $(".editcontpurpcfawe7").click(function() {
+   $(".boxpcfawe7").addClass("editable");
+  $(this).hide();
+  $(".contpurpcfawe7").show(); 
+ 
+});
+
+  $(".submitcontpurpcfawe7").click(function() {
+  
+  $(".contpurpcfawe7").hide();
+   $(".boxpcfawe7").removeClass("editable");
+addpcfontawesomecontpur7i7();
+Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+});
+
+});
+
+
+function addpcfontawesomecontpur7i7() {
+var inputcontpurpcfawe7 = $('.inputcontpurpcfawe7').val();
+ $('#purpcfawe7').removeClass();
+  $('#purpcfawe7').addClass(inputcontpurpcfawe7);
+  
 }
 </script>
 

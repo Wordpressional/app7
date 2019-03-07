@@ -5980,8 +5980,13 @@ section.presentation .side.left {
 /*     15. Footer     */
 /**********************/
 .mlthemeone.footer {
-  padding-top: 4rem;
+  
   background-color: #7a2874;
+}
+.mlthemeone.footer.presentationml79 .container
+{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
 }
 
 .mlthemeone.footer .footer-col {
@@ -10770,4 +10775,47 @@ span.icon-cog {
 .about {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.mlthemeone.footer .fa-google-plus{
+  padding:0px 0px 0px 6px !important;
+   
+  background-color: transparent !important;
+}
+.mlthemeone.footer .fa-twitter{
+  padding:0px 0px 0px 6px !important;
+   
+  background-color: transparent !important;
+}
+.mlthemeone.footer .fa-facebook{
+  padding:0px 0px 0px 6px !important;
+   
+  background-color: transparent !important;
+}
+.mlthemeone.footer .fa-linkedin{
+  padding:0px 0px 0px 6px !important;
+   
+  background-color: transparent !important;
+}
+.mlthemeone.footer .fa-instagram{
+  padding:0px 0px 0px 6px !important;
+   
+  background-color: transparent !important;
+}
+.mlthemeone.footer .fa-dribbble{
+  padding:0px 0px 0px 6px !important;
+   
+  background-color: transparent !important;
+}
+
+#mc_embed_signup input[type="email"]{
+      margin-top: 10px !important;
+}
+
+.mpoltheme.footer-area .primary-btn{
+  margin: 8px 50px 0px 53px !important; 
+}
+.fw
+{
+    width: 400px;
 }
