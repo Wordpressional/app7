@@ -9698,12 +9698,14 @@ div#content-area {
 
 .moxytheme .form-control {
   background-color: transparent;
-  border-color: rgba(255,255,255,.1);
+  border-color: #e2e2e2;
   height: 50px;
   border-radius: 0;
   box-shadow: none;
   margin: 10px;
 }
+
+.moxytheme input::placeholder, .moxytheme textarea::placeholder { color: white; }
 
 .moxytheme textarea.form-control {
   min-height: 180px;
@@ -10825,4 +10827,7 @@ span.icon-cog {
 .fw
 {
     width: 400px;
+}
+.moxytheme .navbar-brand {
+    padding-top: 12px;
 }

@@ -104,7 +104,7 @@
                            <span class="savemoxygentheme7">save</span>
                            <input type='file' id="imageUploadmoxygentheme7" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme7" for="imageUploadmoxygentheme7">&nbsp;</label>
-          <a class="navbar-brand" href="main.html">
+          <a class="navbar-brand" href="{{url('/')}}">
             <h1><img id="imagePreviewmoxygentheme7" class="img-responsive" src="{{asset('themes/oxyt4/logo.png')}}" alt="logo"></h1>
           </a> 
           </div>                   
