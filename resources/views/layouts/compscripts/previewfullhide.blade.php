@@ -1437,4 +1437,8 @@ display: none !important;
 {
    display: none !important;
 }
+.inputpresentationcolorcnfp1, .editpresentationcolorcnfp1, .contpresentationcolorcnfp1, .editpresentationcolormlthemeone79
+{
+   display: none !important;
+}
 </style>
