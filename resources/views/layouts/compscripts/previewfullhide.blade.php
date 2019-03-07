@@ -1443,7 +1443,7 @@ display: none !important;
 }
 .contpresentationcolormlthemeone79, .contpresentationcolormlthemeone80, .contpresentationcolorpcservices5, .savepcservices5, .editpresentationcolorpcservices5,
 .contpurpcservicest2, .contpurpcfawe2, .contpurpcfawe3, .contpurpcfawe4, .contpurpcfawe5, .contpurpcfawe6, 
-.editcontpurpcservicest2, .editcontpurpcfawe6, .editcontpurpcfawe1, .editcontpurpcfawe2, .editcontpurpcfawe3, .editcontpurpcfawe4, .editcontpurpcfawe5
+.editcontpurpcservicest2, .editcontpurpcfawe6, .editcontpurpcfawe1, .editcontpurpcfawe2, .editcontpurpcfawe3, .editcontpurpcfawe4, .editcontpurpcfawe5, .contpurpcfawe7, .editcontpurpcfawe7
 {
   display: none !important;
 }
