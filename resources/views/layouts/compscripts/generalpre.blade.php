@@ -143,6 +143,7 @@ if ($(window).scrollTop() > 200) {
 }
 
 }
+
 if($(".main_h").length != 0 ) {
 if ($(window).scrollTop() > 100) {
   
@@ -155,8 +156,21 @@ $('.main_h').css('top', '-15px');
 }
 
 }
-});       
+
+
+
+
+      
+});  
+$(window).resize(function(){
+ if($(window).width()<750){
   
+  
+  $('.moxytheme.main-nav').css('position', 'static');
+
+
+ }
+});
                 
 
             </script>

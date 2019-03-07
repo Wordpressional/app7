@@ -797,7 +797,9 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
-
+.moxytheme .navbar-brand {
+    margin-top: 15px !important;
+}
 
 #moxyhome-slider .caption {
   
@@ -10840,13 +10842,15 @@ span.icon-cog {
     width: 400px;
 }
 .moxytheme .navbar-brand {
-    padding-top: 12px;
+    margin-top: -20px;
 }
 .wow {
     visibility: visible !important;
 }
-div#content-area > .row{
+div#content-area > .row, .keditor-ui  > .row{
    
    margin-right: 0px !important;
     margin-left: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
