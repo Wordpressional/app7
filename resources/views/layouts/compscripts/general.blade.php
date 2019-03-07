@@ -201,14 +201,14 @@ $('.main_h').css('top', '-15px');
       
 });  
 
-$(window).resize(function(){
- if($(window).width()<750){
+// $(window).resize(function(){
+//  if($(window).width()<750){
   
-  $('.moxytheme.main-nav').css('position', 'static');
+//   $('.moxytheme.main-nav').css('position', 'static');
 
 
- }
-});
+//  }
+// });
 
     </script>
     

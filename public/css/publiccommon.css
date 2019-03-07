@@ -9854,6 +9854,10 @@ div#content-area {
 .moxytheme .social-icons ul li{
   float: none !important;
 }
+.moxytheme.main-nav{
+    width: 100%;
+    min-height:135px;
+}
 }
 
 /* xs */
@@ -10190,7 +10194,7 @@ div#content-area {
 }
 
 .navbar-fixed-top {
-    position: fixed;
+    position: fixed !important;
     right: 0;
     left: 0;
     z-index: 1030;
