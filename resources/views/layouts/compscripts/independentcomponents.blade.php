@@ -150,12 +150,12 @@ function Uploadsavemone2(newLocation, id)
             
             success: function(result) {
             if(result == "success"){
-              alert("updated");
+              //alert("updated");
                 setTimeout(function(){ 
 
                   location.reload();
 
-              }, 1000);
+              }, 3000);
             }
           
             
