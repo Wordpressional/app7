@@ -24498,7 +24498,7 @@ $(".savepcservices4").click(function() {
 
 function addpcspresentationcolor4() {
 var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpcservices4').val();
-  $('.pcserviceypresentation4').css("background",inputpresentationcolorpcservices4);
+  $('.themeone .contact').css("background",inputpresentationcolorpcservices4);
 }
 
 
@@ -25096,7 +25096,7 @@ $(".savecnfp1").click(function() {
 
 function addcnfp1i() {
 var inputpresentationcolorcnfp1 = $('.inputpresentationcolorcnfp1').val();
-  $('.pcscnf1').css("background",inputpresentationcolorcnfp1);
+  $('.themeone .footer .container-fluid').css("background",inputpresentationcolorcnfp1);
 }
 
 
