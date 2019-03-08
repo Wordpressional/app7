@@ -196,7 +196,17 @@ $('.main_h').css('top', '-15px');
 
 }
 
+if($(".header-scrolled").length != 0 ) {
+if ($(window).scrollTop() > 100) {
+  
+    $('.header-scrolled').css('position', 'fixed');
+    
+} else {
+  
+  $('.header-scrolled').css('position', 'static');
+}
 
+}
 
       
 });  
