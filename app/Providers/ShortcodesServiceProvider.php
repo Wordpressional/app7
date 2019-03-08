@@ -22,10 +22,6 @@ class ShortcodesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if(env('DB_DATABASE')!='')
-            {
-        //if(env('DB_DATABASE')!='')
-           // {
                 if (Schema::hasTable('forms')) {
            
 
@@ -43,8 +39,6 @@ class ShortcodesServiceProvider extends ServiceProvider
                 }
 
         }
-            }
-        //}
     }
 
     /**
