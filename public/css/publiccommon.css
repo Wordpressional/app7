@@ -814,7 +814,7 @@ div#demo {
 .mnatheme.banner-area{
   height:auto !important;
   width: 100%;
-  top: 100px;
+  top: 0px;
   margin-bottom: 33%;
   min-height: auto !important;
 }
