@@ -10857,3 +10857,6 @@ span.icon-cog {
 .wow {
     visibility: visible !important;
 }
+.header-scrolled{
+    position: static !important;
+}
