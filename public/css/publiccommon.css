@@ -10857,6 +10857,6 @@ span.icon-cog {
 .wow {
     visibility: visible !important;
 }
-.header-scrolled{
+#mpolheader{
     position: static !important;
 }
