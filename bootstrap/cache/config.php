@@ -9,12 +9,12 @@
   array (
     'name' => 'DynamicWeb',
     'env' => 'local',
-    'debug' => false,
+    'debug' => true,
     'url' => 'http://139.59.47.15/dynamic',
     'timezone' => 'Europe/Paris',
     'locale' => 'en',
     'fallback_locale' => 'en',
-    'key' => 'base64:8TFYJM36wdFuaEw8OBwqzekknjOQPsOIRkAzefJf6Fw=',
+    'key' => 'base64:AypmddyAFdzad+4AnNh0Dwe6Xq2RzyKPUYlGHdXnQAE=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
