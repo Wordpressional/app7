@@ -2767,8 +2767,8 @@ Version      : 1.0
   }
 
   .themeone .about-image img {
-    width: 200px;
-    height: 200px;
+    width: 100% !important;
+    height:auto !important;
     display: inline;
   }
   .themeone .about-text h2{
