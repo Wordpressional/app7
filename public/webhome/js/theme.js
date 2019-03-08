@@ -653,7 +653,7 @@ $(document).ready(function() {
     //------- Header Scroll Class  js --------//  
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 50) {
             $('#mpolheader').addClass('header-scrolled');
         } else {
             $('#mpolheader').removeClass('header-scrolled');
