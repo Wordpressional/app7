@@ -61,7 +61,7 @@
                   <li>
                      <div class="boxmoxygentheme97 textmoxygentheme97">
                      <span class="icon6">  
-                    <i id="purmoxy12" class="fa fa-map-marker">
+                    <i id="purmoxy12" class="fa fa-map-marker">&nbsp;
                     </i>
                   </span>
                       
@@ -100,7 +100,7 @@
                   <li>
                     <div class="boxmoxygentheme99 textmoxygentheme99">
                     <span class="icon8">
-                    <i id="purmoxy14" class="fa fa-envelope"></i>
+                    <i id="purmoxy14" class="fa fa-envelope">&nbsp;</i>
                   </span>
                    
                 <span class="editcontpurmoxygentheme99">fontawesome</span>

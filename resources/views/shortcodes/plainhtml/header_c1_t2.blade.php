@@ -16,7 +16,7 @@
                            <input type='file' id="imageUploadmmultithemeone1" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone1" for="imageUploadmmultithemeone1">&nbsp;</label>
 
-                  <a class="navbar-brand" href="main.html">
+                  <a class="navbar-brand" href="{{url('/')}}">
                         <img id="imagePreviewmmultithemeone1" src="{{asset('themes/t2/logo-demos.png')}}" alt="logo" class="logo">
                      </a>
                   </div>
