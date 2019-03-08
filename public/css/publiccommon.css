@@ -7176,7 +7176,8 @@ color: #864b82;
     width: 100% !important;
     top:auto !important;
     display: block;
-    height:100% !important;
+    min-height: 455px !important;
+    position: relative !important;
    
 }
 
@@ -10079,7 +10080,7 @@ div#content-area {
         float:right;
     }
     .moxytheme .navbar-nav{
-        margin-top: 40px !important;
+        margin-top: 90px !important;
     }
 }
 
