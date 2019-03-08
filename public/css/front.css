@@ -50,3 +50,13 @@ section.main_slider_area {
 {
     display: none;
 }
+.mnatheme.banner-area{
+ 
+background: url(../themes/politt5/banner-bg.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+min-height: 700px;
+position: relative;
+
+}
