@@ -60,3 +60,6 @@ min-height: 700px;
 position: relative;
 
 }
+.header-scrolled{
+    position: static !important;
+}

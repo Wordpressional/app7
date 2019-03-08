@@ -199,7 +199,7 @@ $('.main_h').css('top', '-15px');
 if($(".header-scrolled").length != 0 ) {
 if ($(window).scrollTop() > 100) {
   
-    $('.header-scrolled').css('position', 'fixed');
+    $('.header-scrolled').attr('style', 'position: fixed !important');
     
 } else {
   
@@ -219,6 +219,11 @@ if ($(window).scrollTop() > 100) {
 
 //  }
 // });
+//Javascript by Class:
+var divClass = document.getElementsByClassName('bg-light');
+var pomStringClass = encodeURI(divClass[0].innerHTML);
+pomStringClass = pomStringClass.replace(/%EF%BB%BF/g, '');
+divClass[0].innerHTML = decodeURI(pomStringClass);
 
     </script>
     
