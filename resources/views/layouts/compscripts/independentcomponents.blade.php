@@ -166,12 +166,7 @@ function Uploadsavemone2(newLocation, id)
                       alert('Internal error: ' + jqXHR.responseText);
                   } else {
                       alert('Unexpected error.'+errorThrown);
-                      setTimeout(function(){ 
-
-                        location.reload();
-                       
-
-                    }, 1000);
+                      console.log(jqXHR.status);
                   }
               }
             });
