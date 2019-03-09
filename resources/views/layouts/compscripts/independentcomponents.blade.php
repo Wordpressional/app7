@@ -150,13 +150,13 @@ function Uploadsavemone2(newLocation, id)
             
             success: function(result) {
             if(result == "success"){
-              alert("updated");
+             
                 setTimeout(function(){ 
-
+                   alert("updated");
                   location.reload();
                  
 
-              }, 1000);
+              }, 2000);
             }
           
             
@@ -25032,8 +25032,8 @@ $(".savepccontact4").click(function() {
 });
 
 function addpcspresentationcolor4i() {
-var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpccontact4').val();
-  $('.themeone .contact.pccontactpresentation4').css("background",inputpresentationcolorpcservices4);
+var inputpresentationcolorpccontact4 = $('.inputpresentationcolorpccontact4').val();
+  $('.themeone .contact.pccontactpresentation4').css("background",inputpresentationcolorpccontact4);
 }
 
 
