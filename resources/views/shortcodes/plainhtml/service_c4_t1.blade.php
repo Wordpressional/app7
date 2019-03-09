@@ -35,7 +35,7 @@
 
                 <span class="editcontpurpcservices1">fontawesome</span>
                  <span class="contpurpcservices1">
-                  <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices1">
+                  <input type="text" data-cke-saved-name="contpur1" name="contpur1" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices1">
                   <br>
                   <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices1">
                 </span>
@@ -58,7 +58,7 @@
                   
                    <span class="editcontpurpcservices2">fontawesome</span>
                  <span class="contpurpcservices2">
-                  <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices2">
+                  <input type="text" data-cke-saved-name="contpur2" name="contpur2" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices2">
                   <br>
                   <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices2">
                 </span>
@@ -80,7 +80,7 @@
                 </div>
                       <span class="editcontpurpcservices3">fontawesome</span>
                  <span class="contpurpcservices3">
-                  <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices3">
+                  <input type="text" data-cke-saved-name="contpur3" name="contpur3" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices3">
                   <br>
                   <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices3">
                 </span>
@@ -99,7 +99,7 @@
                     </div>
                      <span class="editcontpurpcservices5">fontawesome</span>
                  <span class="contpurpcservices5">
-                  <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices5">
+                  <input type="text" data-cke-saved-name="contpur4" name="contpur4" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices5">
                   <br>
                   <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices5">
                 </span>
@@ -121,7 +121,7 @@
                 </div>
                   <span class="editcontpurpcservices6">fontawesome</span>
                  <span class="contpurpcservices6">
-                  <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices6">
+                  <input type="text" data-cke-saved-name="contpur5" name="contpur5" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices6">
                   <br>
                   <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices6">
                 </span>
@@ -143,7 +143,7 @@
 
                   <span class="editcontpurpcservices7">fontawesome</span>
                  <span class="contpurpcservices7">
-                  <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices7">
+                  <input type="text" data-cke-saved-name="contpur6" name="contpur6" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices7">
                   <br>
                   <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices7">
                 </span>

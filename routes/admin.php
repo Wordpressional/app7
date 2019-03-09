@@ -449,7 +449,7 @@ Route::post('/cforms/datacfsave/{id}',[
 Route::post('/contactform/datacfsave/{id}',[
 
 
-'uses' => 'StableController@datacfsave',
+'uses' => 'StablesController@datacfsave',
 'as' => 'cforms.stable.datacfsave'
 
 ]);

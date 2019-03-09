@@ -7,14 +7,14 @@
   ),
   'app' => 
   array (
-    'name' => 'DynamicWeb',
+    'name' => 'DynamicApp',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://139.59.47.15/dynamic',
+    'url' => 'http://localhost/pull',
     'timezone' => 'Europe/Paris',
     'locale' => 'en',
     'fallback_locale' => 'en',
-    'key' => 'base64:AypmddyAFdzad+4AnNh0Dwe6Xq2RzyKPUYlGHdXnQAE=',
+    'key' => 'base64:lmlUuFiwX7+LGvRZnPmUQFtFe+XsMHIsyb/pvfJQ6S8=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -147,19 +147,19 @@
   array (
     'backup' => 
     array (
-      'name' => 'DynamicWeb',
+      'name' => 'DynamicApp',
       'source' => 
       array (
         'files' => 
         array (
           'include' => 
           array (
-            0 => '/var/www/html/staticweb',
+            0 => '/var/www/html/pull',
           ),
           'exclude' => 
           array (
-            0 => '/var/www/html/staticweb/vendor',
-            1 => '/var/www/html/staticweb/node_modules',
+            0 => '/var/www/html/pull/vendor',
+            1 => '/var/www/html/pull/node_modules',
           ),
           'followLinks' => false,
         ),
@@ -177,7 +177,7 @@
           0 => 'local',
         ),
       ),
-      'temporary_directory' => '/var/www/html/staticweb/storage/app/backup-temp',
+      'temporary_directory' => '/var/www/html/pull/storage/app/backup-temp',
     ),
     'notifications' => 
     array (
@@ -225,7 +225,7 @@
     array (
       0 => 
       array (
-        'name' => 'DynamicWeb',
+        'name' => 'DynamicApp',
         'disks' => 
         array (
           0 => 'local',
@@ -302,7 +302,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/var/www/html/staticweb/storage/framework/cache/data',
+        'path' => '/var/www/html/pull/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -332,7 +332,7 @@
         'connection' => 'default',
       ),
     ),
-    'prefix' => 'dynamicweb_cache',
+    'prefix' => 'dynamicapp_cache',
   ),
   'cors' => 
   array (
@@ -385,7 +385,7 @@
       'sqlite' => 
       array (
         'driver' => 'sqlite',
-        'database' => 'dynamicdb',
+        'database' => 'dynamicdb1',
         'prefix' => '',
       ),
       'mysql' => 
@@ -393,9 +393,9 @@
         'driver' => 'mysql',
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'dynamicdb',
+        'database' => 'dynamicdb1',
         'username' => 'nagashwini',
-        'password' => '2oUwr9R3ua2bYKIl',
+        'password' => 'nagashw1234',
         'charset' => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix' => '',
@@ -407,11 +407,11 @@
         'host' => '127.0.0.1',
         'port' => '27017',
         'database' => 'mongoelecrud',
-        'username' => 'adminnagashw',
-        'password' => 'adminte564yufjjfhw3',
+        'username' => '',
+        'password' => '',
         'options' => 
         array (
-          'database' => 'admin',
+          'database' => false,
         ),
       ),
       'testing' => 
@@ -419,9 +419,9 @@
         'driver' => 'mysql',
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'dynamicdb',
+        'database' => 'dynamicdb1',
         'username' => 'nagashwini',
-        'password' => '2oUwr9R3ua2bYKIl',
+        'password' => 'nagashw1234',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -433,10 +433,10 @@
       array (
         'driver' => 'pgsql',
         'host' => '127.0.0.1',
-        'port' => '5432',
-        'database' => 'dynamicdb',
+        'port' => '3306',
+        'database' => 'dynamicdb1',
         'username' => 'nagashwini',
-        'password' => '2oUwr9R3ua2bYKIl',
+        'password' => 'nagashw1234',
         'charset' => 'utf8',
         'prefix' => '',
         'schema' => 'public',
@@ -446,10 +446,10 @@
       array (
         'driver' => 'sqlsrv',
         'host' => '127.0.0.1',
-        'port' => '1433',
-        'database' => 'dynamicdb',
+        'port' => '3306',
+        'database' => 'dynamicdb1',
         'username' => 'nagashwini',
-        'password' => '2oUwr9R3ua2bYKIl',
+        'password' => 'nagashw1234',
         'charset' => 'utf8',
         'prefix' => '',
       ),
@@ -488,7 +488,7 @@
     array (
       'enabled' => true,
       'driver' => 'file',
-      'path' => '/var/www/html/staticweb/storage/debugbar',
+      'path' => '/var/www/html/pull/storage/debugbar',
       'connection' => NULL,
       'provider' => '',
     ),
@@ -576,13 +576,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/var/www/html/staticweb/storage/app',
+        'root' => '/var/www/html/pull/storage/app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/var/www/html/staticweb/storage/app/public',
-        'url' => 'http://139.59.47.15/dynamic/storage',
+        'root' => '/var/www/html/pull/storage/app/public',
+        'url' => 'http://localhost/pull/storage',
         'visibility' => 'public',
       ),
       's3' => 
@@ -887,13 +887,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/var/www/html/staticweb/storage/logs/laravel.log',
+        'path' => '/var/www/html/pull/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/var/www/html/staticweb/storage/logs/laravel.log',
+        'path' => '/var/www/html/pull/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 7,
       ),
@@ -936,7 +936,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/var/www/html/staticweb/resources/views/vendor/mail',
+        0 => '/var/www/html/pull/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -956,7 +956,7 @@
     'stubs' => 
     array (
       'enabled' => false,
-      'path' => '/var/www/html/staticweb/vendor/nwidart/laravel-modules/src/Commands/stubs',
+      'path' => '/var/www/html/pull/vendor/nwidart/laravel-modules/src/Commands/stubs',
       'files' => 
       array (
         'start' => 'start.php',
@@ -1020,9 +1020,9 @@
     ),
     'paths' => 
     array (
-      'modules' => '/var/www/html/staticweb/Modules',
-      'assets' => '/var/www/html/staticweb/public/modules',
-      'migration' => '/var/www/html/staticweb/database/migrations',
+      'modules' => '/var/www/html/pull/Modules',
+      'assets' => '/var/www/html/pull/public/modules',
+      'migration' => '/var/www/html/pull/database/migrations',
       'generator' => 
       array (
         'config' => 
@@ -1147,7 +1147,7 @@
       'enabled' => false,
       'paths' => 
       array (
-        0 => '/var/www/html/staticweb/vendor/*/*',
+        0 => '/var/www/html/pull/vendor/*/*',
       ),
     ),
     'composer' => 
@@ -1260,7 +1260,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/var/www/html/staticweb/storage/framework/sessions',
+    'files' => '/var/www/html/pull/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -1269,7 +1269,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'dynamicweb_session',
+    'cookie' => 'dynamicapp_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => false,
@@ -1280,9 +1280,9 @@
   array (
     'paths' => 
     array (
-      0 => '/var/www/html/staticweb/resources/views',
+      0 => '/var/www/html/pull/resources/views',
     ),
-    'compiled' => '/var/www/html/staticweb/storage/framework/views',
+    'compiled' => '/var/www/html/pull/storage/framework/views',
   ),
   'image' => 
   array (

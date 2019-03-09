@@ -1473,7 +1473,7 @@ Version      : 1.0
     
 }
 .themeone.boxmlbannertheme2 {
-    margin-top: -30px;
+    margin-top: -48px;
 }
 .open-nav {
     max-height: 400px !important;
@@ -2765,7 +2765,7 @@ Version      : 1.0
 }
   .themeone .about-image {
     text-align: center;
-    height: 208px;
+    min-height: 208px;
   }
 
   .themeone .about-image img {

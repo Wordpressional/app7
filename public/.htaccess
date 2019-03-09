@@ -5,10 +5,10 @@
 
     RewriteEngine On
 
-    RewriteBase /dynamic
+    RewriteBase /pull
 
     # Redirect Trailing Slashes...
-   RewriteRule ^dynamic/(.+)/$ staticweb/public/$1 [L]
+   RewriteRule ^pull/(.+)/$ pull/public/$1 [L]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
