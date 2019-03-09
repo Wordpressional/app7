@@ -153,8 +153,8 @@ function Uploadsavemone2(newLocation, id)
               alert("updated");
                 setTimeout(function(){ 
 
-                  location.reload();
-                  //window.location.href = "{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}";
+                  
+                  window.location.href = "{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}";
 
               }, 1000);
             }
@@ -166,7 +166,13 @@ function Uploadsavemone2(newLocation, id)
                       alert('Internal error: ' + jqXHR.responseText);
                   } else {
                       alert('Unexpected error.'+errorThrown);
-                      location.reload();
+                     setTimeout(function(){ 
+
+                        
+                        window.location.href = "{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}";
+
+                    }, 1000);
+                     
                   }
               }
             });
