@@ -135,6 +135,7 @@ function Uploadsavemone2(newLocation, id)
                 id: id
             });
              //alert(data);
+             setTimeout(function(){
             $.ajax({
             
             headers: {
@@ -170,7 +171,7 @@ function Uploadsavemone2(newLocation, id)
                   }
               }
             });
-            
+           }, 2000); 
         
         }
 
@@ -25018,7 +25019,9 @@ $( ".boxpccontact4" )
   $(".contpresentationcolorpccontact4").hide();
    $(".boxpccontact4").removeClass("editable");
 addpcspresentationcolor4i();
+ 
 Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+
   
 });
 
