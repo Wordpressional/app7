@@ -139,12 +139,12 @@ function Uploadsavemone2(newLocation, id)
             
             headers: {
               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-              'Content-Type': 'text/html'
+              'Content-Type': 'application/json'
               },
 
             url: newLocation,
             dataType : "text",
-           
+            contentType : "text/html",
             type: 'post',
             data:  data,
             
