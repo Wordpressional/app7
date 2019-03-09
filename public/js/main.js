@@ -298,7 +298,7 @@ Version      : 1.0
          * ----------------------------------------------------------------------------------------
          */
 
-			$("#typed").typed({
+		/*	$("#typed").typed({
 		        strings: ["a Web Developer.", "a Web Designer.", "a Graphic Designer.", "Developer."],
 		        typeSpeed: 50,
 		        callback: function(){
@@ -308,7 +308,7 @@ Version      : 1.0
 		    });
 		    function lift(){
 		        $(".head-text").addClass("lift-text");
-		    }
+		    }*/
 
 
 
