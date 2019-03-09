@@ -21,8 +21,7 @@
 		                <li><a href="#contact">Contact</a></li>
 		            </ul>
 		        </div>
-		        </nav>
-		        <!-- END NAVBAR -->
+		        </nav>	      
 		    </div> <!-- / row -->
 		</div>	
 		</header>
