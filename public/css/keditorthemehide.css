@@ -1,6 +1,27 @@
 .view-source{
   display:none;
 }
+
+.main_h {
+    position: static !important;
+}
+.mlthemeone.navbar-custom{
+   position: static !important;
+}
+
+#mpolheader{
+   position: static !important;
+}
+.navbar-fixed-top {
+    position: static !important;
+    
+}
+
+#navigation.scroling-menu
+{
+  position: static !important;
+}
+
 .mcolorlibedit1, .mcolorlibsave1, #mcolorlibimageUpload1 {
  
  display: none !important;
