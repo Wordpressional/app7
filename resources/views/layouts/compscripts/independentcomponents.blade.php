@@ -25019,10 +25019,15 @@ $( ".boxpccontact4" )
   $(".contpresentationcolorpccontact4").hide();
    $(".boxpccontact4").removeClass("editable");
 addpcspresentationcolor4i();
- $(".savepccontact4").show();
 
   
-     
+    Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+
+   
+
+
+
+  
 });
 
 $(".savepccontact4").click(function() {
