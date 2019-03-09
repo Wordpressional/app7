@@ -157,7 +157,7 @@ function Uploadsavemone2(newLocation, id)
                   location.reload();
                  
 
-              }, 2000);
+              }, 500);
             }
           
             
