@@ -135,7 +135,7 @@ function Uploadsavemone2(newLocation, id)
                 id: id
             });
              //alert(data);
-             setTimeout(function(){
+
             $.ajax({
             
             headers: {
@@ -171,7 +171,7 @@ function Uploadsavemone2(newLocation, id)
                   }
               }
             });
-           }, 2000); 
+         
         
         }
 
