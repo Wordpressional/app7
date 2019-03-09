@@ -25019,8 +25019,12 @@ $( ".boxpccontact4" )
   $(".contpresentationcolorpccontact4").hide();
    $(".boxpccontact4").removeClass("editable");
 addpcspresentationcolor4i();
- 
-//Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+ setTimeout(function(){ 
+    Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+
+   
+
+}, 2000);
 
   
 });
@@ -25037,8 +25041,6 @@ $(".savepccontact4").click(function() {
 function addpcspresentationcolor4i() {
 var inputpresentationcolorpccontact4 = $('.inputpresentationcolorpccontact4').val();
   $('.themeone .contact.pccontactpresentation4').css("background",inputpresentationcolorpccontact4);
-
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 }
 
 
