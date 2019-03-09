@@ -154,6 +154,7 @@ function Uploadsavemone2(newLocation, id)
                 setTimeout(function(){ 
 
                   location.reload();
+                  //window.location.href = "{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}";
 
               }, 1000);
             }
@@ -165,6 +166,7 @@ function Uploadsavemone2(newLocation, id)
                       alert('Internal error: ' + jqXHR.responseText);
                   } else {
                       alert('Unexpected error.'+errorThrown);
+                      location.reload();
                   }
               }
             });
@@ -25031,7 +25033,7 @@ $(".savepccontact4").click(function() {
 
 function addpcspresentationcolor4i() {
 var inputpresentationcolorpcservices4 = $('.inputpresentationcolorpccontact4').val();
-  $('.themeone .contact').css("background",inputpresentationcolorpcservices4);
+  $('.themeone .contact.pccontactpresentation4').css("background",inputpresentationcolorpcservices4);
 }
 
 
