@@ -153,8 +153,8 @@ function Uploadsavemone2(newLocation, id)
               alert("updated");
                 setTimeout(function(){ 
 
-                  
-                  window.location.href = "{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}";
+                  location.reload();
+                 
 
               }, 1000);
             }
@@ -166,13 +166,12 @@ function Uploadsavemone2(newLocation, id)
                       alert('Internal error: ' + jqXHR.responseText);
                   } else {
                       alert('Unexpected error.'+errorThrown);
-                     setTimeout(function(){ 
+                      setTimeout(function(){ 
 
-                        
-                        window.location.href = "{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}";
+                        location.reload();
+                       
 
                     }, 1000);
-                     
                   }
               }
             });
