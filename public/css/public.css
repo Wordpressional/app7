@@ -209,3 +209,8 @@ position: relative;
 
 }
 
+.themeone nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+}
