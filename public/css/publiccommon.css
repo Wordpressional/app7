@@ -1465,7 +1465,7 @@ Version      : 1.0
    
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    opacity: 0;
+    opacity: 1;
     
     padding-bottom: 6px;
     font-family: "Lato", sans-serif;
