@@ -6,7 +6,7 @@
   <span class="contpresentationcolorpcservices4">
   <input type="text" data-cke-saved-name="spresentationcolor" name="spresentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolorpcservices4">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorpcservices4">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorpcservices4">
   </span>
 
 <div class="themeone">
@@ -37,7 +37,7 @@
                  <span class="contpurpcservices1">
                   <input type="text" data-cke-saved-name="contpur1" name="contpur1" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices1">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices1">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices1">
                 </span>
 
                   </div>
@@ -60,7 +60,7 @@
                  <span class="contpurpcservices2">
                   <input type="text" data-cke-saved-name="contpur2" name="contpur2" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices2">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices2">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices2">
                 </span>
 
 
@@ -82,7 +82,7 @@
                  <span class="contpurpcservices3">
                   <input type="text" data-cke-saved-name="contpur3" name="contpur3" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices3">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices3">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices3">
                 </span>
                </div>
                 <h4>photoshop</h4>
@@ -101,7 +101,7 @@
                  <span class="contpurpcservices5">
                   <input type="text" data-cke-saved-name="contpur4" name="contpur4" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices5">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices5">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices5">
                 </span>
 
                 </div>
@@ -123,7 +123,7 @@
                  <span class="contpurpcservices6">
                   <input type="text" data-cke-saved-name="contpur5" name="contpur5" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices6">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices6">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices6">
                 </span>
             </div>
                 
@@ -145,7 +145,7 @@
                  <span class="contpurpcservices7">
                   <input type="text" data-cke-saved-name="contpur6" name="contpur6" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservices7">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices7">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservices7">
                 </span>
             </div>
                
