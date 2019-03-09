@@ -1461,7 +1461,7 @@ Version      : 1.0
    
     z-index: 999;
     width: 100%;
-    background: none;
+    background: white;
    
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -1472,7 +1472,9 @@ Version      : 1.0
     min-height: 90px;
     
 }
-
+.themeone.boxmlbannertheme2 {
+    margin-top: -30px;
+}
 .open-nav {
     max-height: 400px !important;
 }

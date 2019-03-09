@@ -184,7 +184,7 @@ if ($(window).scrollTop() > 200) {
 }
 
 if($(".main_h").length != 0 ) {
-if ($(window).scrollTop() > 100) {
+if ($(window).scrollTop() > 50) {
   
     $('.main_h').css('position', 'fixed');
     $('.main_h').css('top', '0px');
