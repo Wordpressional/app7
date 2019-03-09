@@ -133,7 +133,7 @@
 
 <span class="editpresentationcolorcnfp1">Color</span> 
   <span class="contpresentationcolorcnfp1">
-  <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolorcnfp1">
+  <input type="text" data-cke-saved-name="c2presentationcolor" name="c2presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolorcnfp1">
   <br>
   <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorcnfp1">
   </span>
