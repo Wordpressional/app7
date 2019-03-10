@@ -8685,7 +8685,7 @@ div#content-area {
   line-height: 24px;
   color: #666;
   background-color: #fff;
-  padding-bottom: 20px;
+  
 
 }
 
@@ -8711,7 +8711,7 @@ div#content-area {
 }
 
 .moxytheme.parallax,
-.moxytheme .parallax h1,
+.moxytheme.parallax h1,
 .moxytheme.parallax h2,
 .moxytheme.parallax h3,
 .moxytheme.parallax h4,
