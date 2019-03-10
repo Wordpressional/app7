@@ -4,7 +4,7 @@
   <span class="contpresentationcolormoxygentheme101">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormoxygentheme101" style="color:black;">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme101" style="color:black;">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme101" style="color:black;">
   </span>
     <div class="moxytheme footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
@@ -31,7 +31,7 @@
                         <input type="text" name="moxyenvelope" value="" class="inputmoxyenvelope72" 
                         placeholder="http://envelope.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyenvelope72" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxyenvelope72" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme72">
@@ -50,7 +50,7 @@
                         <input type="text" name="moxytwitter" value="" class="inputmoxytwitter73" 
                         placeholder="http://twitter.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxytwitter73" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxytwitter73" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme73">
@@ -70,7 +70,7 @@
                         <input type="text" name="moxydribbble" value="" class="inputmoxydribbble74" 
                         placeholder="http://dribbble.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxydribbble74" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxydribbble74" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme74">
@@ -90,7 +90,7 @@
                     <span class="contmoxyfacebook75">
                         <input type="text" name="moxyfacebook" value="" class="inputmoxyfacebook75" placeholder="http://facebook.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyfacebook75" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxyfacebook75" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme75">
@@ -112,7 +112,7 @@
                     <span class="contmoxylinkedin76">
                         <input type="text" name="moxylinkedin" value="" class="inputmoxylinkedin76" placeholder="http://linkedin.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxylinkedin76" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxylinkedin76" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme76">
@@ -132,7 +132,7 @@
                     <span class="contmoxytumblrsquare77">
                         <input type="text" name="moxylinkedin" value="" class="inputmoxytumblrsquare77" placeholder="http://tumblrsquare.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxytumblrsquare77" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxytumblrsquare77" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme77">
@@ -165,7 +165,7 @@
   <span class="contpresentationcolormoxygentheme102">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormoxygentheme102">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme102">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme102">
   </span>
       <div class="container">
         

@@ -22,7 +22,7 @@
                         </div>
                     
                         <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                            <input type="button" name="btnSubmit" class="btnContact" value="Send Message" />
                         </div>
                     </div>
 

@@ -103,7 +103,7 @@
 
       <span class="contmservice1facebook7">
                   <input type="text" name="mservice1facebook" value="" class="inputmservice1facebook7" placeholder="http://facebook.com"><br>
-                  <input type="submit" value="Submit" class="submitmservice1facebook7">
+                  <input type="button" value="Submit" class="submitmservice1facebook7">
                     </span>
     <span class="boxmlservice1theme7">
            <span class="editmlservice1theme7">edit</span>
@@ -114,7 +114,7 @@
 
      <span class="contmservice1twitter8">
                   <input type="text" name="mservice1twitter" value="" class="inputmservice1twitter8" placeholder="http://twitter.com"><br>
-                  <input type="submit" value="Submit" class="submitmservice1twitter8">
+                  <input type="button" value="Submit" class="submitmservice1twitter8">
                     </span>
     <span class="boxmlservice1theme8">
            <span class="editmlservice1theme8">edit</span>
@@ -125,7 +125,7 @@
 
      <span class="contmservice1telegram9">
                   <input type="text" name="mservice1telegram" value="" class="inputmservice1telegram9" placeholder="http://twitter.com"><br>
-                  <input type="submit" value="Submit" class="submitmservice1telegram9">
+                  <input type="button" value="Submit" class="submitmservice1telegram9">
                     </span>
     <span class="boxmlservice1theme9">
            <span class="editmlservice1theme9">edit</span>

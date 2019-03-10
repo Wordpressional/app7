@@ -7,7 +7,7 @@
                          <span class="contmoxybg1">
                         <input type="text" name="moxybg1"  class="inputmoxybg1" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxybg1">
+                     <input type="button" value="Submit" class="submitmoxybg1">
                         </span>
                              <span class="bgmoxygentheme1">image
                              </span>
@@ -34,7 +34,7 @@
             <span class="contmoxybg2">
                         <input type="text" name="moxybg2"  class="inputmoxybg2" placeholder="{{asset('themes/oxyt4/slider/2.jpg')}}"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxybg2">
+                     <input type="button" value="Submit" class="submitmoxybg2">
                         </span>
                              <span class="bgmoxygentheme2">image
                              </span>
@@ -58,7 +58,7 @@
           <span class="contmoxybg3">
                         <input type="text" name="moxybg3"  class="inputmoxybg3" placeholder="{{asset('themes/oxyt4/slider/3.jpg')}}"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxybg3">
+                     <input type="button" value="Submit" class="submitmoxybg3">
                         </span>
                              <span class="bgmoxygentheme3">image
                              </span>
@@ -104,7 +104,7 @@
                            <span class="savemoxygentheme7">save</span>
                            <input type='file' id="imageUploadmoxygentheme7" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme7" for="imageUploadmoxygentheme7">&nbsp;</label>
-          <a class="navbar-brand" href="main.html">
+          <a class="navbar-brand" href="{{url('/')}}">
             <h1><img id="imagePreviewmoxygentheme7" class="img-responsive" src="{{asset('themes/oxyt4/logo.png')}}" alt="logo"></h1>
           </a> 
           </div>                   

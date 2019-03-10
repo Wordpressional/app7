@@ -7,7 +7,7 @@
   <span class="contpresentationcolormoxygentheme90">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormoxygentheme90">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme90">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme90">
   </span>
     <div class="moxytheme container">
       <div class="row">

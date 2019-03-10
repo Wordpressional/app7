@@ -55,7 +55,7 @@
 
            <span class="contmaboutfacebook4">
                   <input type="text" name="maboutfacebook" value="" class="inputmaboutfacebook4" placeholder="http://facebook.com"><br>
-                  <input type="submit" value="Submit" class="submitmaboutfacebook4">
+                  <input type="button" value="Submit" class="submitmaboutfacebook4">
                     </span>
         <span class="boxmlaboutspathemeone4">
            <span class="editmlaboutspathemeone4">edit</span>
@@ -66,7 +66,7 @@
  
            <span class="contmabouttwitter5">
                   <input type="text" name="mabouttwitter" value="" class="inputmabouttwitter5" placeholder="http://twitter.com"><br>
-                  <input type="submit" value="Submit" class="submitmabouttwitter5">
+                  <input type="button" value="Submit" class="submitmabouttwitter5">
                     </span>
         <span class="boxmlaboutspathemeone5">
           <span class="editmlaboutspathemeone5">edit</span>
@@ -77,7 +77,7 @@
           
          <span class="contmabouttelegram6">
                   <input type="text" name="mabouttelegram" value="" class="inputmabouttelegram6" placeholder="http://telegram.com"><br>
-                  <input type="submit" value="Submit" class="submitmabouttelegram6">
+                  <input type="button" value="Submit" class="submitmabouttelegram6">
                     </span>
         <span class="boxmlaboutspathemeone6">
            <span class="editmlaboutspathemeone6">edit</span>
@@ -128,7 +128,7 @@
 
          <span class="contmaboutfacebook9">
                   <input type="text" name="maboutfacebook" value="" class="inputmaboutfacebook9" placeholder="http://facebook.com"><br>
-                  <input type="submit" value="Submit" class="submitmaboutfacebook9">
+                  <input type="button" value="Submit" class="submitmaboutfacebook9">
                     </span>   
        <span class="boxmlaboutspathemeone9">
            <span class="editmlaboutspathemeone9">edit</span>
@@ -139,7 +139,7 @@
 
          <span class="contmabouttwitter10">
                   <input type="text" name="mabouttwitter" value="" class="inputmabouttwitter10" placeholder="http://twitter.com"><br>
-                  <input type="submit" value="Submit" class="submitmabouttwitter10">
+                  <input type="button" value="Submit" class="submitmabouttwitter10">
                     </span>
         <span class="boxmlaboutspathemeone10">
           <span class="editmlaboutspathemeone10">edit</span>
@@ -151,7 +151,7 @@
 
          <span class="contmabouttelegram11">
                   <input type="text" name="mabouttelegram" value="" class="inputmabouttelegram11" placeholder="http://telegram.com"><br>
-                  <input type="submit" value="Submit" class="submitmabouttelegram11">
+                  <input type="button" value="Submit" class="submitmabouttelegram11">
                     </span>
       <span class="boxmlaboutspathemeone11">
           <span class="editmlaboutspathemeone11">edit</span>
@@ -201,7 +201,7 @@
 
         <span class="contmaboutfacebook14">
                   <input type="text" name="maboutfacebook" value="" class="inputmaboutfacebook14" placeholder="http://facebook.com"><br>
-                  <input type="submit" value="Submit" class="submitmaboutfacebook14">
+                  <input type="button" value="Submit" class="submitmaboutfacebook14">
                     </span>   
        <span class="boxmlaboutspathemeone14">
            <span class="editmlaboutspathemeone14">edit</span>
@@ -212,7 +212,7 @@
 
         <span class="contmabouttwitter15">
                   <input type="text" name="mabouttwitter" value="" class="inputmabouttwitter15" placeholder="http://twitter.com"><br>
-                  <input type="submit" value="Submit" class="submitmabouttwitter15">
+                  <input type="button" value="Submit" class="submitmabouttwitter15">
                     </span>
        <span class="boxmlaboutspathemeone15">
           <span class="editmlaboutspathemeone15">edit</span>
@@ -225,7 +225,7 @@
 
         <span class="contmabouttelegram16">
                   <input type="text" name="mabouttelegram" value="" class="inputmabouttelegram16" placeholder="http://telegram.com"><br>
-                  <input type="submit" value="Submit" class="submitmabouttelegram16">
+                  <input type="button" value="Submit" class="submitmabouttelegram16">
                     </span>
          <span class="boxmlaboutspathemeone16">
           <span class="editmlaboutspathemeone16">edit</span>

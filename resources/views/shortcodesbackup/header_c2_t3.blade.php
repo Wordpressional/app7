@@ -60,7 +60,7 @@
 					<div class="help-block with-errors"></div>
 					</div>
 					<div class="form-group">
-					<button type="submit" class="form-control-submit-button">Get Quote</button>
+					<button type="button" class="form-control-submit-button">Get Quote</button>
 					</div>
 					<div class="form-message">
 					<div id="gmsgSubmit" class="h3 text-center hidden"></div>

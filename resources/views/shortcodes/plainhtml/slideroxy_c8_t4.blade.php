@@ -5,7 +5,7 @@
       <span class="contmoxybg79">
                         <input type="text" name="moxybg79"  class="inputmoxybg79" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"  style="color:black"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxybg79" style="color:black">
+                     <input type="button" value="Submit" class="submitmoxybg79" style="color:black">
                         </span>
                              <span class="bgmoxygentheme79">image
                              </span>
@@ -33,7 +33,7 @@
                  <span class="contpurmoxygentheme96">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme96" style="color:black;">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme96" style="color:black;">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme96" style="color:black;">
                 </span>  
                 </div>      
               <h4>Themeum</h4>

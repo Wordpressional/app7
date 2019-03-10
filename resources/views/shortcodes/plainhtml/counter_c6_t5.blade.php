@@ -5,7 +5,7 @@
         <span class="contmpolbg16">
             <input type="text" name="mpolbg16"  class="inputmpolbg16" ><br>
 
-         <input type="submit" value="Submit" class="submitmpolbg16">
+         <input type="button" value="Submit" class="submitmpolbg16">
             </span>
                  <span class="bgmpoltheme16">image
                  </span>

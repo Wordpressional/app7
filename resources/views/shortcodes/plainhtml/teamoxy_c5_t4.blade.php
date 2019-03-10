@@ -7,7 +7,7 @@
   <span class="contpresentationcolormoxygentheme88">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormoxygentheme88">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme88">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme88">
   </span>
  
     <div class="moxytheme container">
@@ -46,7 +46,7 @@
                     <span class="contmoxyfacebook29">
                         <input type="text" name="moxyfacebook" value="" class="inputmoxyfacebook29" placeholder="http://facebook.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyfacebook29">
+                     <input type="button" value="Submit" class="submitmoxyfacebook29">
                         </span>
                         
                         <span class="boxmoxygentheme29">
@@ -64,7 +64,7 @@
                     <span class="contmoxytwitter33">
                         <input type="text" name="moxytwitter" value="" class="inputmoxytwitter33" placeholder="http://twitter.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxytwitter33">
+                     <input type="button" value="Submit" class="submitmoxytwitter33">
                         </span>
                         
                         <span class="boxmoxygentheme33">
@@ -82,7 +82,7 @@
                     <span class="contmoxylinkedin37">
                         <input type="text" name="moxylinkedin" value="" class="inputmoxylinkedin37" placeholder="http://linkedin.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxylinkedin37">
+                     <input type="button" value="Submit" class="submitmoxylinkedin37">
                         </span>
                         
                         <span class="boxmoxygentheme37">
@@ -100,7 +100,7 @@
                     <span class="contmoxydribbble41">
                         <input type="text" name="moxydribbble" value="" class="inputmoxydribbble41" placeholder="http://dribbble.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxydribbble41">
+                     <input type="button" value="Submit" class="submitmoxydribbble41">
                         </span>
                         
                         <span class="boxmoxygentheme41">
@@ -118,7 +118,7 @@
                     <span class="contmoxyrss45">
                         <input type="text" name="moxyrss" value="" class="inputmoxyrss45" placeholder="http://rss.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyrss45">
+                     <input type="button" value="Submit" class="submitmoxyrss45">
                         </span>
                         
                         <span class="boxmoxygentheme45">
@@ -162,7 +162,7 @@
                     <span class="contmoxyfacebook30">
                         <input type="text" name="moxyfacebook" value="" class="inputmoxyfacebook30" placeholder="http://facebook.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyfacebook30">
+                     <input type="button" value="Submit" class="submitmoxyfacebook30">
                         </span>
                         
                         <span class="boxmoxygentheme30">
@@ -180,7 +180,7 @@
                     <span class="contmoxytwitter34">
                         <input type="text" name="moxytwitter" value="" class="inputmoxytwitter34" placeholder="http://twitter.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxytwitter34">
+                     <input type="button" value="Submit" class="submitmoxytwitter34">
                         </span>
                         
                         <span class="boxmoxygentheme34">
@@ -200,7 +200,7 @@
                     <span class="contmoxylinkedin38">
                         <input type="text" name="moxylinkedin" value="" class="inputmoxylinkedin38" placeholder="http://linkedin.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxylinkedin38">
+                     <input type="button" value="Submit" class="submitmoxylinkedin38">
                         </span>
                         
                         <span class="boxmoxygentheme38">
@@ -218,7 +218,7 @@
                     <span class="contmoxydribbble42">
                         <input type="text" name="moxydribbble" value="" class="inputmoxydribbble42" placeholder="http://dribbble.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxydribbble42">
+                     <input type="button" value="Submit" class="submitmoxydribbble42">
                         </span>
                         
                         <span class="boxmoxygentheme42">
@@ -237,7 +237,7 @@
                     <span class="contmoxyrss46">
                         <input type="text" name="moxyrss" value="" class="inputmoxyrss46" placeholder="http://rss.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyrss46">
+                     <input type="button" value="Submit" class="submitmoxyrss46">
                         </span>
                         
                         <span class="boxmoxygentheme46">
@@ -282,7 +282,7 @@
                     <span class="contmoxyfacebook31">
                         <input type="text" name="moxyfacebook" value="" class="inputmoxyfacebook31" placeholder="http://facebook.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyfacebook31">
+                     <input type="button" value="Submit" class="submitmoxyfacebook31">
                         </span>
                         
                         <span class="boxmoxygentheme31">
@@ -300,7 +300,7 @@
                     <span class="contmoxytwitter35">
                         <input type="text" name="moxytwitter" value="" class="inputmoxytwitter35" placeholder="http://twitter.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxytwitter35">
+                     <input type="button" value="Submit" class="submitmoxytwitter35">
                         </span>
                         
                         <span class="boxmoxygentheme35">
@@ -319,7 +319,7 @@
                     <span class="contmoxylinkedin39">
                         <input type="text" name="moxylinkedin" value="" class="inputmoxylinkedin39" placeholder="http://linkedin.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxylinkedin39">
+                     <input type="button" value="Submit" class="submitmoxylinkedin39">
                         </span>
                         
                         <span class="boxmoxygentheme39">
@@ -338,7 +338,7 @@
                     <span class="contmoxydribbble43">
                         <input type="text" name="moxydribbble" value="" class="inputmoxydribbble43" placeholder="http://dribbble.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxydribbble43">
+                     <input type="button" value="Submit" class="submitmoxydribbble43">
                         </span>
                         
                         <span class="boxmoxygentheme43">
@@ -357,7 +357,7 @@
                     <span class="contmoxyrss47">
                         <input type="text" name="moxyrss" value="" class="inputmoxyrss47" placeholder="http://rss.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyrss47">
+                     <input type="button" value="Submit" class="submitmoxyrss47">
                         </span>
                         
                         <span class="boxmoxygentheme47">
@@ -401,7 +401,7 @@
                     <span class="contmoxyfacebook32">
                         <input type="text" name="moxyfacebook" value="" class="inputmoxyfacebook32" placeholder="http://facebook.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyfacebook32">
+                     <input type="button" value="Submit" class="submitmoxyfacebook32">
                         </span>
                         
                         <span class="boxmoxygentheme32">
@@ -419,7 +419,7 @@
                     <span class="contmoxytwitter36">
                         <input type="text" name="moxytwitter" value="" class="inputmoxytwitter36" placeholder="http://twitter.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxytwitter36">
+                     <input type="button" value="Submit" class="submitmoxytwitter36">
                         </span>
                         
                         <span class="boxmoxygentheme36">
@@ -439,7 +439,7 @@
                     <span class="contmoxylinkedin40">
                         <input type="text" name="moxylinkedin" value="" class="inputmoxylinkedin40" placeholder="http://linkedin.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxylinkedin40">
+                     <input type="button" value="Submit" class="submitmoxylinkedin40">
                         </span>
                         
                         <span class="boxmoxygentheme40">
@@ -457,7 +457,7 @@
                     <span class="contmoxydribbble44">
                         <input type="text" name="moxydribbble" value="" class="inputmoxydribbble44" placeholder="http://dribbble.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxydribbble44">
+                     <input type="button" value="Submit" class="submitmoxydribbble44">
                         </span>
                         
                         <span class="boxmoxygentheme44">
@@ -476,7 +476,7 @@
                     <span class="contmoxyrss48">
                         <input type="text" name="moxyrss" value="" class="inputmoxydribbble48" placeholder="http://rss.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxyrss48">
+                     <input type="button" value="Submit" class="submitmoxyrss48">
                         </span>
                         
                         <span class="boxmoxygentheme48">

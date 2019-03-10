@@ -5,7 +5,7 @@
   <span class="contpresentationcolorpcservices5">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolorpcservices5">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorpcservices5">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolorpcservices5">
 </span>
         <div class="container">
             <div class="row">

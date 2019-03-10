@@ -2,7 +2,7 @@
       <span class="contmoxybg80">
                         <input type="text" name="moxybg80"  class="inputmoxybg80" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxybg80" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxybg80" style="color:black;">
                         </span>
                              <span class="bgmoxygentheme80">image
                              </span>

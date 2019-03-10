@@ -44,7 +44,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2" name="button1546942091640"  id="button1546942091640">
+                                    <input type="button" value="Enviar" class="btn btn-info btn-block rounded-0 py-2" name="button1546942091640"  id="button1546942091640">
                                 </div>
                             </div>
 

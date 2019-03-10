@@ -6,7 +6,7 @@
                  <span class="contpurpcservicest2">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcservicest2">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservicest2">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcservicest2">
                 </span>
 
       <div class="heading_icon default_section_heading text-center">
@@ -26,7 +26,7 @@
                  <span class="contpurpcfawe2">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcfawe2">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe2">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe2">
                 </span>
                <div class="features_outer all_big_padding" style="padding-bottom: 0;">
                   <i id="purpcfawe2" class="fa fa-rocket text-center pink_color" style="margin-bottom: 15px;">&nbsp;</i>
@@ -42,7 +42,7 @@
                  <span class="contpurpcfawe3">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcfawe3">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe3">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe3">
                 </span>
                <div class="features_outer all_big_padding" style="padding-bottom: 0;">
                   <i id="purpcfawe3" class="fa fa-desktop text-center pink_color" style="margin-bottom: 15px;">&nbsp;</i>
@@ -58,7 +58,7 @@
                  <span class="contpurpcfawe4">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcfawe4">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe4">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe4">
                 </span>
                <div class="features_outer all_big_padding" style="padding-bottom: 0;">
                   <i id="purpcfawe4" class="fa fa-image text-center pink_color" style="margin-bottom: 15px;">&nbsp;</i>
@@ -74,7 +74,7 @@
                  <span class="contpurpcfawe5">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcfawe5">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe5">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe5">
                 </span>
                <div class="features_outer all_big_padding" style="padding-bottom: 0;">
                   <i id="purpcfawe5" class="fa fa-eye text-center pink_color" style="margin-bottom: 15px;">&nbsp;</i>
@@ -90,7 +90,7 @@
                  <span class="contpurpcfawe6">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcfawe6">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe6">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe6">
                 </span>
              
                <div class="features_outer all_big_padding" style="padding-bottom: 0;">
@@ -107,7 +107,7 @@
                  <span class="contpurpcfawe7">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurpcfawe7">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe7">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurpcfawe7">
                 </span>
             
                <div class="features_outer all_big_padding" style="padding-bottom: 0;">

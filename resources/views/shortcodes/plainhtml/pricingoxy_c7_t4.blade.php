@@ -6,7 +6,7 @@
   <span class="contpresentationcolormoxygentheme91">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormoxygentheme91">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme91">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme91">
   </span>
     <div class="moxytheme container">
      
@@ -34,7 +34,7 @@
               <span class="contmoxysingup103">
                         <input type="text" name="singup103" value="" class="inputmoxysingup103" placeholder="//tumblrsquare.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxysingup103" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxysingup103" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme103">
@@ -63,7 +63,7 @@
               <span class="contmoxysingup104">
                         <input type="text" name="singup104" value="" class="inputmoxysingup104" placeholder="//tumblrsquare.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxysingup104" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxysingup104" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme104">
@@ -97,7 +97,7 @@
              <span class="contmoxysingup105">
                         <input type="text" name="singup105" value="" class="inputmoxysingup105" placeholder="//tumblrsquare.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxysingup105" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxysingup105" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme105">
@@ -133,7 +133,7 @@
                <span class="contmoxysingup106">
                         <input type="text" name="singup106" value="" class="inputmoxysingup106" placeholder="//tumblrsquare.com" style="color:black;"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxysingup106" style="color:black;">
+                     <input type="button" value="Submit" class="submitmoxysingup106" style="color:black;">
                         </span>
                         
                         <span class="boxmoxygentheme106">

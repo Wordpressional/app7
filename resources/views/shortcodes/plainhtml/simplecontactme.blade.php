@@ -16,7 +16,7 @@
 
 
 <div class="submit">
-<input type="submit" value="SEND" id="button-blue"/>
+<input type="button" value="SEND" id="button-blue"/>
 <div class="ease"></div>
 </div>
 </form>

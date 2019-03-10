@@ -3,7 +3,7 @@
       <span class="contmoxybg70">
                         <input type="text" name="moxybg70"  class="inputmoxybg70" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"  style="color:black"><br>
 
-                     <input type="submit" value="Submit" class="submitmoxybg70" style="color:black">
+                     <input type="button" value="Submit" class="submitmoxybg70" style="color:black">
                         </span>
                              <span class="bgmoxygentheme70">image
                              </span>
@@ -46,7 +46,7 @@
                   <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
                 </div>                        
                 <div class="form-group">
-                  <button type="submit" class="btn-submit">Send Now</button>
+                  <button type="button" class="btn-submit">Send Now</button>
                 </div>
               </form>   
             </div>
@@ -69,7 +69,7 @@
                  <span class="contpurmoxygentheme97">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme97" style="color:black;">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme97" style="color:black;">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme97" style="color:black;">
                  </span>
                    
                    <span> Address:</span> 2400 South Avenue A 
@@ -88,7 +88,7 @@
                  <span class="contpurmoxygentheme98">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme98" style="color:black;">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme98" style="color:black;">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme98" style="color:black;">
                  </span>
 
 
@@ -107,7 +107,7 @@
                  <span class="contpurmoxygentheme99">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme99" style="color:black;">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme99" style="color:black;">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme99" style="color:black;">
                  </span>
 
 
@@ -127,7 +127,7 @@
                  <span class="contpurmoxygentheme100">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme100" style="color:black;">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme100" style="color:black;">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme100" style="color:black;">
                  </span>
                     <span> Website:</span> 
                     <a href="#">www.sitename.com</a>

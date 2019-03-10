@@ -8,7 +8,7 @@
    <span class="contpresentationcolor">
    
     <input type="text" name="presentationcolor" value="" class="inputpresentationcolor" placeholder="rgb(91, 22, 22, 1)"><br>
-    <input type="submit" value="Submit" class="submitpresentationcolor">
+    <input type="button" value="Submit" class="submitpresentationcolor">
     </span>
 </div>
 <section class="presentation">
@@ -27,7 +27,7 @@
 
                       <span class="contpur">
                       <input type="text" name="contpur" value="" class="inputcontpur" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur">
+                      <input type="button" value="Submit" class="submitcontpur">
                       </span>
                     <h4 class="trusted">Trusted worldwide</h4>
                   
@@ -47,7 +47,7 @@
                         
                       <span class="contpur2">
                       <input type="text" name="contpur2" value="" class="inputcontpur2" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur2">
+                      <input type="button" value="Submit" class="submitcontpur2">
                       </span>
                     <h4 class="dev">Secure and Decentralized</h4>
                     
@@ -76,7 +76,7 @@
 
                       <span class="contpur3">
                       <input type="text" name="contpur3" value="" class="inputcontpur3" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur3">
+                      <input type="button" value="Submit" class="submitcontpur3">
                       </span>
                           <div class="heading">ICO MARKETING</div>
                             <p>Social media management and cryptocurrency community management are very important to the success of an ICO. The crypto community is knowledgeable, vast, and expanding, and must be tapped into in order to achieve the results you want for your ICO. Getting the trust of the community must be treated as a priority. How the ICO is presented will determine the levels of trust within the community, and ultimately can be the deciding factor between success and failure for your ICO project.</p>
@@ -92,7 +92,7 @@
 
                       <span class="contpur4">
                       <input type="text" name="contpur4" value="" class="inputcontpur4" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur4">
+                      <input type="button" value="Submit" class="submitcontpur4">
                       </span>
                           <div class="heading">ICO LAUNCH</div>
                             <p>All-inclusive Development support for your ICO Launch. Get Free Quote Now! ICO Consulting. Fast Delivery. Pre ICO Services. Competitive Prices. Whitepaper Drafting. 24 *7 Help & Support.</p>
@@ -108,7 +108,7 @@
 
                       <span class="contpur5">
                       <input type="text" name="contpur5" value="" class="inputcontpur5" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur5">
+                      <input type="button" value="Submit" class="submitcontpur5">
                       </span>
                           <div class="heading">ICO LAUNCH</div>
                             <p>All-inclusive Development support for your ICO Launch. Get Free Quote Now! ICO Consulting. Fast Delivery. Pre ICO Services. Competitive Prices. Whitepaper Drafting. 24 *7 Help & Support.All-inclusive Development support for your ICO Launch. Get Free Quote Now! ICO Consulting. Fast Delivery. Pre ICO Services. Competitive Prices. Whitepaper Drafting. 24 *7 Help & Support.</p>
@@ -131,7 +131,7 @@
 
                       <span class="contpur6">
                       <input type="text" name="contpur6" value="" class="inputcontpur6" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur6">
+                      <input type="button" value="Submit" class="submitcontpur6">
                       </span>
                           <div class="heading">SMART CONTRACT </div>
                             <p>Smart contracts go beyond the vending machine in proposing to embed contracts in all sorts of property that is valuable and controlled by digital means. Smart contracts reference that property in a dynamic, often proactively enforced form, and provide much better observation and verification where proactive measures must fall short.proactively enforced form, and provide much better observation and verification where proactive measures must fall short.</p>
@@ -147,7 +147,7 @@
 
                       <span class="contpur7">
                       <input type="text" name="contpur7" value="" class="inputcontpur7" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur7">
+                      <input type="button" value="Submit" class="submitcontpur7">
                       </span>
                           <div class="heading">DAPP DEVELOPMENT</div>
                             <p>Dapp abbreviated as Decentralized Application used to Develope Applications using Front-end(HTML+CSS+JS) Web page + Back-end(Solidity Smart contract) Programming code in Ethereum platform. Decentralization allows for independent verification and makes it harder to commit fraud.</p>
@@ -164,7 +164,7 @@
 
                       <span class="contpur8">
                       <input type="text" name="contpur8" value="" class="inputcontpur8" placeholder="fa fa-desktop"><br>
-                      <input type="submit" value="Submit" class="submitcontpur8">
+                      <input type="button" value="Submit" class="submitcontpur8">
                       </span>
                           <div class="heading">DAPP DEVELOPMENT</div>
                             <p>Dapp abbreviated as Decentralized Application used to Develope Applications using Front-end(HTML+CSS+JS) Web page + Back-end(Solidity Smart contract) Programming code in Ethereum platform. Decentralization allows for independent verification and makes it harder to commit fraud.</p>

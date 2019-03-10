@@ -7,7 +7,7 @@
   <span class="contpresentationcolormoxygentheme92">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormoxygentheme92">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme92">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormoxygentheme92">
   </span>
    <div class="moxytheme container">
        
@@ -30,7 +30,7 @@
                  <span class="contpurmoxygentheme81">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme81">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme81">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme81">
                 </span>
 
 
@@ -48,7 +48,7 @@
                  <span class="contpurmoxygentheme82">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme82">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme82">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme82">
                 </span>
             <div class="service-info">
               <h3>Creative Idea</h3>
@@ -64,7 +64,7 @@
                  <span class="contpurmoxygentheme83">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme83">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme83">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme83">
                 </span>
             <div class="service-info">
               <h3>Awesome Support</h3>
@@ -80,7 +80,7 @@
                  <span class="contpurmoxygentheme84">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme84">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme84">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme84">
                 </span>
             <div class="service-info">
               <h3>Professional Design</h3>
@@ -96,7 +96,7 @@
                  <span class="contpurmoxygentheme85">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme85">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme85">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme85">
                 </span>
             <div class="service-info">
               <h3>App Development</h3>
@@ -112,7 +112,7 @@
                  <span class="contpurmoxygentheme86">
                   <input type="text" data-cke-saved-name="contpur" name="contpur" value="" placeholder="fa fa-desktop" data-cke-editable="1" contenteditable="false" class="inputcontpurmoxygentheme86">
                   <br>
-                  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme86">
+                  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitcontpurmoxygentheme86">
                 </span>
             <div class="service-info">
               <h3>Clean Code</h3>

@@ -4,7 +4,7 @@
 	   <span class="contmpolbg2">
             <input type="text" name="mpolbg2"  class="inputmpolbg2" ><br>
 
-         <input type="submit" value="Submit" class="submitmpolbg2">
+         <input type="button" value="Submit" class="submitmpolbg2">
             </span>
                  <span class="bgmpoltheme2">image
                  </span>

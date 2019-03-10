@@ -3,7 +3,7 @@
   <span class="contpresentationcolormlthemeone79">
   <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormlthemeone79" style="color:black;">
   <br>
-  <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormlthemeone79" style="color:black;">
+  <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormlthemeone79" style="color:black;">
   </span>
          
         <div class="container">
@@ -41,7 +41,7 @@
                     
                         <span class="contmlfacebook26">
                         <input type="text" name="mlfacebook" value="" class="inputmlfacebook26" placeholder="http://facebook.com"><br>
-                        <input type="submit" value="Submit" class="submitmlfacebook26">
+                        <input type="button" value="Submit" class="submitmlfacebook26">
                         </span>
                         <div class="fw">
                         <span class="fa-stack fa-lg boxmlthemeone26">
@@ -56,7 +56,7 @@
                         </span>
                            <span class="contmltwitter63">
                         <input type="text" name="mltwitter" value="" class="inputmltwitter63" placeholder="http://twitter.com"><br>
-                        <input type="submit" value="Submit" class="submitmltwitter63">
+                        <input type="button" value="Submit" class="submitmltwitter63">
                         </span>
 
 
@@ -71,7 +71,7 @@
 
                              <span class="contmlgoogleplus64">
                         <input type="text" name="mlgoogleplus" value="" class="inputmlgoogleplus64" placeholder="http://googlrplus.com"><br>
-                        <input type="submit" value="Submit" class="submitmlgoogleplus64">
+                        <input type="button" value="Submit" class="submitmlgoogleplus64">
                         </span>
  
 
@@ -87,7 +87,7 @@
                            
                             <span class="contmlinstagram65">
                         <input type="text" name="mlinstagram" value="" class="inputmlinstagram65" placeholder="http://instagram.com"><br>
-                        <input type="submit" value="Submit" class="submitmlinstagram65">
+                        <input type="button" value="Submit" class="submitmlinstagram65">
                         </span>
 
                         <span class="fa-stack fa-lg boxmlthemeone65">
@@ -101,7 +101,7 @@
 
                          <span class="contmllinkedin66">
                         <input type="text" name="mllinkedin" value="" class="inputmllinkedin66" placeholder="http://linkedin.com"><br>
-                        <input type="submit" value="Submit" class="submitmllinkedin66">
+                        <input type="button" value="Submit" class="submitmllinkedin66">
                         </span>
                         <span></span><span class="fa-stack fa-lg boxmlthemeone66">
                              <span class="editmlthemeone66"> 
@@ -114,7 +114,7 @@
 
                            <span class="contmldribbble67">
                         <input type="text" name="mldribbble" value="" class="inputmldribbble67" placeholder="http://dribble.com"><br>
-                        <input type="submit" value="Submit" class="submitmldribbble67">
+                        <input type="button" value="Submit" class="submitmldribbble67">
                         </span>
                         <span class="fa-stack fa-lg boxmlthemeone67">
                             <span class="editmlthemeone67">  

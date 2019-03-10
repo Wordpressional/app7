@@ -9,7 +9,7 @@
                <span class="contpresentationcolormpoltheme27">
             <input type="text" data-cke-saved-name="presentationcolor" name="presentationcolor" value="" placeholder="rgb(91, 22, 22, 1)" data-cke-editable="1" contenteditable="false" class="inputpresentationcolormpoltheme27">
                 <br>
-                 <input type="submit" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormpoltheme27">
+                 <input type="button" value="Submit" data-cke-editable="1" contenteditable="false" class="submitpresentationcolormpoltheme27">
                  </span>
 				<div class="container fttop">
 					
@@ -63,7 +63,7 @@ Copyright &copy; 2018. All rights reserved | This template is made with <i class
                             <span class="contmpolfacebook23">
                         <input type="text" name="mpolfacebook" value="" class="inputmpolfacebook23" placeholder="http://facebook.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmpolfacebook23">
+                     <input type="button" value="Submit" class="submitmpolfacebook23">
                         </span>
                         
                         <span class="boxmpoltheme23">
@@ -79,7 +79,7 @@ Copyright &copy; 2018. All rights reserved | This template is made with <i class
                              <span class="contmpoltwitter24">
                         <input type="text" name="mpoltwitter" value="" class="inputmpoltwitter24" placeholder="http://twitter.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmpoltwitter24">
+                     <input type="button" value="Submit" class="submitmpoltwitter24">
                         </span>
                         
                         <span class="boxmpoltheme24">
@@ -96,7 +96,7 @@ Copyright &copy; 2018. All rights reserved | This template is made with <i class
                              <span class="contmpoldribble25">
                         <input type="text" name="mpoldribble" value="" class="inputmpoldribble25" placeholder="http://dribbble.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmpoldribble25">
+                     <input type="button" value="Submit" class="submitmpoldribble25">
                         </span>
                         
                         <span class="boxmpoltheme25">
@@ -114,7 +114,7 @@ Copyright &copy; 2018. All rights reserved | This template is made with <i class
                               <span class="contmpolbehance26">
                         <input type="text" name="mpolbehance" value="" class="inputmpolbehance26" placeholder="http://behance.com"><br>
 
-                     <input type="submit" value="Submit" class="submitmpolbehance26">
+                     <input type="button" value="Submit" class="submitmpolbehance26">
                         </span>
                         
                         <span class="boxmpoltheme26">
