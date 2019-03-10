@@ -7,7 +7,7 @@
         <span class="savelogolnndynamic">save</span>
         <input type='file' id="imageUploadlogonlnndynamic" accept=".png, .jpg, .jpeg" />
         <label class="imageUploadlogonlnndynamic" for="imageUploadlogonlnndynamic">&nbsp;</label>        
-        <span ><a href="{{url('/')}}"><img id="imagePreviewlogolnndynamic" src="{{asset('themes/t1/logo2.png')}}" alt="Logo"></a></span>
+        <span ><a href="{{url('/')}}"><img id="imagePreviewlogolnndynamic" src="{{url('themes/t1/logo2.png')}}" alt="Logo"></a></span>
         </div>		     
 		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr-menu">&nbsp;</span>

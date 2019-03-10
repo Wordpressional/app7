@@ -1,7 +1,7 @@
 <div class=" container anuhow-section1">
                     <div class="row">
                         <div class="col-md-6 anuhow-img">
-                            <img src="{{ asset('themes/comp/Work_Section2_freelance_img2.png') }}" class="rounded-circle img-fluid" alt=""/>
+                            <img src="{{ url('themes/comp/Work_Section2_freelance_img2.png') }}" class="rounded-circle img-fluid" alt=""/>
                         </div>
                         <div class="col-md-6">
                             <h4>Find rewarding projects</h4>
@@ -20,17 +20,17 @@
                                             Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
                         </div>
                         <div class="col-md-6 anuhow-img">
-                            <img src="{{ asset('themes/comp/Work_Section2_freelance_img2.png') }}" class="rounded-circle img-fluid" alt=""/>
+                            <img src="{{ url('themes/comp/Work_Section2_freelance_img2.png') }}" class="rounded-circle img-fluid" alt=""/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 anuhow-img">
-                             <img src="{{ asset('themes/comp/Work_Section2_freelance_img3.png') }}" class="rounded-circle img-fluid" alt=""/>
+                             <img src="{{ url('themes/comp/Work_Section2_freelance_img3.png') }}" class="rounded-circle img-fluid" alt=""/>
                         </div>
                         <div class="col-md-6">
                             <h4>Work efficiently, effectively.</h4>
                                         <h4 class="subheading">With GetLance, you have the freedom and flexibility to control when, where, and how you work. Each project includes an online workspace shared by you and your client, allowing you to:</h4>
-                                        <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                                        <p class="text-muted">Send and receive files. Deliver digital urls in a secure environment.
                                             Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
                                             Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
                         </div>
@@ -44,7 +44,7 @@
                                             Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
                         </div>
                         <div class="col-md-6 anuhow-img">
-                            <img src="{{ asset('themes/comp/Work_Section2_freelance_img3.png') }}" class="rounded-circle img-fluid" alt=""/>
+                            <img src="{{ url('themes/comp/Work_Section2_freelance_img3.png') }}" class="rounded-circle img-fluid" alt=""/>
                         </div>
                     </div>
                 </div>

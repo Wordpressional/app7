@@ -3,7 +3,7 @@
   
     <div>
       <span class="contmoxybg79">
-                        <input type="text" name="moxybg79"  class="inputmoxybg79" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"  style="color:black"><br>
+                        <input type="text" name="moxybg79"  class="inputmoxybg79"  style="color:black"><br>
 
                      <input type="button" value="Submit" class="submitmoxybg79" style="color:black">
                         </span>
@@ -12,7 +12,7 @@
        <span class="editmoxygentheme79">edit</span>
   
                            <span class="savemoxygentheme79">save</span>
-                       <span class="labelmoxygentheme79"><label class="imageUploadmoxygentheme79" for="imageUploadmoxygentheme79">&nbsp;</label></span>
+                       <span class="labelmoxygentheme79"><label class="imageUploadmoxygentheme79" for="imageUploadmoxygentheme79">&nbsp;</label>&nbsp;</span>
 
                         <input type='file' id="imageUploadmoxygentheme79" accept=".png, .jpg, .jpeg" />
       <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left">&nbsp;</i></a>

@@ -22,7 +22,7 @@
                            <label class="imageUploadmmultithemeone5" for="imageUploadmmultithemeone5">&nbsp;</label>
 
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone5" src="{{asset('themes/t2/index1.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone5" src="{{url('themes/t2/index1.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -45,7 +45,7 @@
                            <input type='file' id="imageUploadmmultithemeone7" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone7" for="imageUploadmmultithemeone7">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                    <img id="imagePreviewmmultithemeone7" src="{{asset('themes/t2/index2.jpg')}}" alt="demo_preview">
+                    <img id="imagePreviewmmultithemeone7" src="{{url('themes/t2/index2.jpg')}}" alt="demo_preview">
                   </a>
               
                </div>
@@ -69,7 +69,7 @@
                            <input type='file' id="imageUploadmmultithemeone9" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone9" for="imageUploadmmultithemeone9">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                    <img id="imagePreviewmmultithemeone9" src="{{asset('themes/t2/index3.jpg')}}" alt="demo_preview">
+                    <img id="imagePreviewmmultithemeone9" src="{{url('themes/t2/index3.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -93,7 +93,7 @@
                            <input type='file' id="imageUploadmmultithemeone10" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone10" for="imageUploadmmultithemeone10">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                    <img id="imagePreviewmmultithemeone10" src="{{asset('themes/t2/index4.jpg')}}" alt="demo_preview">
+                    <img id="imagePreviewmmultithemeone10" src="{{url('themes/t2/index4.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -116,7 +116,7 @@
                            <input type='file' id="imageUploadmmultithemeone11" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone11" for="imageUploadmmultithemeone11">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone11" src="{{asset('themes/t2/index5.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone11" src="{{url('themes/t2/index5.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -139,7 +139,7 @@
                            <input type='file' id="imageUploadmmultithemeone12" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone12" for="imageUploadmmultithemeone12">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                       <img id="imagePreviewmmultithemeone12" src="{{asset('themes/t2/index6.jpg')}}" alt="demo_preview">
+                       <img id="imagePreviewmmultithemeone12" src="{{url('themes/t2/index6.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>

@@ -46,7 +46,7 @@
 						<span class="mcolorlibsave3">save</span>
 						<input type='file' id="mcolorlibimageUpload3" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload3" for="mcolorlibimageUpload3">&nbsp;</label>
-						<img id="mcolorlibimagePreview3" class="img-fluid w-100 zebig" src="{{asset('themes/comp/work1.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview3" class="img-fluid w-100 zebig" src="{{url('themes/comp/work1.jpg')}}" alt="">
 						
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 						<span class="mcolorlibsave4">save</span>
 						<input type='file' id="mcolorlibimageUpload4" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload4" for="mcolorlibimageUpload4">&nbsp;</label>
-						<img id="mcolorlibimagePreview4"class="img-fluid w-100 zea" src="{{asset('themes/comp/work2.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview4"class="img-fluid w-100 zea" src="{{url('themes/comp/work2.jpg')}}" alt="">
 						
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 						<span class="mcolorlibsave5">save</span>
 						<input type='file' id="mcolorlibimageUpload5" accept=".png, .jpg, .jpeg" />
                        <label class="mcolorlibimageUpload5" for="mcolorlibimageUpload5">&nbsp;</label>
-						<img id="mcolorlibimagePreview5" class="img-fluid w-100 zea" src="{{asset('themes/comp/work3.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview5" class="img-fluid w-100 zea" src="{{url('themes/comp/work3.jpg')}}" alt="">
 						
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 						<span class="mcolorlibsave11">save</span>
 						<input type='file' id="mcolorlibimageUpload11" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload11" for="mcolorlibimageUpload11">&nbsp;</label>
-						<img id="mcolorlibimagePreview11" class="img-fluid w-100 zel" src="{{asset('themes/comp/work5.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview11" class="img-fluid w-100 zel" src="{{url('themes/comp/work5.jpg')}}" alt="">
 						
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 						<span class="mcolorlibsave6">save</span>
 						<input type='file' id="mcolorlibimageUpload6" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload6" for="mcolorlibimageUpload6">&nbsp;</label>
-						<img  id="mcolorlibimagePreview6" class="img-fluid w-100 zel" src="{{asset('themes/comp/work4.jpg')}}" alt="">
+						<img  id="mcolorlibimagePreview6" class="img-fluid w-100 zel" src="{{url('themes/comp/work4.jpg')}}" alt="">
 						
 					</div>
 				</div>
@@ -125,7 +125,7 @@
 						<span class="mcolorlibsave7">save</span>
 						<input type='file' id="mcolorlibimageUpload7" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload7" for="mcolorlibimageUpload7">&nbsp;</label>
-						<img  id="mcolorlibimagePreview7" class="img-fluid w-100 zebig" src="{{asset('themes/comp/work8.jpg')}}" alt="">
+						<img  id="mcolorlibimagePreview7" class="img-fluid w-100 zebig" src="{{url('themes/comp/work8.jpg')}}" alt="">
 						
 					</div>
 				</div>
@@ -139,7 +139,7 @@
 						<span class="mcolorlibsave8">save</span>
 						<input type='file' id="mcolorlibimageUpload8" accept=".png, .jpg, .jpeg" />
                         <label class="mcolorlibimageUpload8" for="mcolorlibimageUpload8">&nbsp;</label>
-						<img  id="mcolorlibimagePreview8" class="img-fluid w-100 zea" src="{{asset('themes/comp/work6.jpg')}}" alt="">
+						<img  id="mcolorlibimagePreview8" class="img-fluid w-100 zea" src="{{url('themes/comp/work6.jpg')}}" alt="">
 						
 					</div>
 				</div>
@@ -153,7 +153,7 @@
 						<span class="mcolorlibsave9">save</span>
 						<input type='file' id="mcolorlibimageUpload9" accept=".png, .jpg, .jpeg" />
                        <label class="mcolorlibimageUpload9" for="mcolorlibimageUpload9">&nbsp;</label>
-						<img id="mcolorlibimagePreview9" class="img-fluid w-100 zea " src="{{asset('themes/comp/work7.jpg')}}" alt="">
+						<img id="mcolorlibimagePreview9" class="img-fluid w-100 zea " src="{{url('themes/comp/work7.jpg')}}" alt="">
 						
 					</div>
 				</div>

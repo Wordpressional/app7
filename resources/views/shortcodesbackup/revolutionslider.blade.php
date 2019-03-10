@@ -4,7 +4,7 @@
                 <ul>
                     <li data-index="rs-2946" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                        <img src="{{ asset('webhome/img/home-slider/slider-1.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <img src="{{ url('webhome/img/home-slider/slider-1.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                         <!-- LAYER NR. 1 -->
                         <div class="slider_text_box">
                             <!--<div class="tp-caption tp-resizeme rev-btn first_text"
@@ -107,7 +107,7 @@
                      
                     <li data-index="rs-2947" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="4000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="4500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                        <img src="{{ asset('webhome/img/home-slider/slider-2.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <img src="{{ url('webhome/img/home-slider/slider-2.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                         <!-- LAYER NR. 1 -->
                         <div class="slider_text_box">
                             <div class="tp-caption tp-resizeme secand_text"
@@ -148,7 +148,7 @@
                     </li>
                     <li data-index="rs-2948" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="4000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="4500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                        <img src="{{ asset('webhome/img/home-slider/slider-3.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <img src="{{ url('webhome/img/home-slider/slider-3.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                         <!-- LAYER NR. 1 -->
                         <div class="slider_text_box">
                             <div class="tp-caption tp-resizeme secand_text"
@@ -189,7 +189,7 @@
                     </li>
                     <li data-index="rs-2949" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="4000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="4500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                        <img src="{{ asset('webhome/img/home-slider/slider-4.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <img src="{{ url('webhome/img/home-slider/slider-4.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                         <!-- LAYER NR. 1 -->
                         <div class="slider_text_box">
                             <div class="tp-caption tp-resizeme secand_text"

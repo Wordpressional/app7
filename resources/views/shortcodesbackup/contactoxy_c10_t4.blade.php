@@ -1,7 +1,7 @@
 <section id="moxycontact">
     <div id="moxycontact-us" class="moxytheme parallax boxmoxygentheme70 boxmoxygentheme70a">
       <span class="contmoxybg70">
-                        <input type="text" name="moxybg70"  class="inputmoxybg70" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"  style="color:black"><br>
+                        <input type="text" name="moxybg70"  class="inputmoxybg70"  style="color:black"><br>
 
                      <input type="button" value="Submit" class="submitmoxybg70" style="color:black">
                         </span>

@@ -39,7 +39,7 @@
 								<li class="mix color-1 check1 radio2 option3" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 								<div class="container-porto">
-									<img src="{{asset('themes/t1/06_porto.jpg')}}" alt="Image 1"   data-target="#porto-1">
+									<img src="{{url('themes/t1/06_porto.jpg')}}" alt="Image 1"   data-target="#porto-1">
 										<div class="overlay"   data-target="#porto-1"></div>
 	    								<span>Portofolio Title</span>
 								</div>
@@ -47,7 +47,7 @@
 								<li class="mix color-2 check2 radio2 option2" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 								<div class="container-porto"   >
-									<img src="{{asset('themes/t1/07_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/07_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-2"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -55,7 +55,7 @@
 								<li class="mix color-1 check3 radio3 option1" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 								<div class="container-porto">
-									<img src="{{asset('themes/t1/08_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/08_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-3"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -63,7 +63,7 @@
 								<li class="mix color-1 check3 radio2 option4" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 								<div class="container-porto">
-									<img src="{{asset('themes/t1/09_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/09_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-4"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -71,7 +71,7 @@
 								<li class="mix color-1 check1 radio3 option2" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 								<div class="container-porto">
-									<img src="{{asset('themes/t1/10_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/10_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-5"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -79,7 +79,7 @@
 								<li class="mix color-2 check2 radio3 option3" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 									<div class="container-porto">
-									<img src="{{asset('themes/t1/11_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/11_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-6"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -87,7 +87,7 @@
 								<li class="mix color-2 check2 radio2 option1" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 									<div class="container-porto">
-									<img src="{{asset('themes/t1/12_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/12_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-7"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -95,7 +95,7 @@
 								<li class="mix color-1 check1 radio3 option4" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 									<div class="container-porto">
-									<img src="{{asset('themes/t1/13_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/13_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-8"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -103,7 +103,7 @@
 								<li class="mix color-2 check1 radio2 option3" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 									<div class="container-porto">
-									<img src="{{asset('themes/t1/14_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/14_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-9"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -111,7 +111,7 @@
 								<li class="mix color-1 check3 radio2 option4" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 									<div class="container-porto">
-									<img src="{{asset('themes/t1/06_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/06_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-10"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -119,7 +119,7 @@
 								<li class="mix color-1 check3 radio3 option2" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 									<div class="container-porto">
-									<img src="{{asset('themes/t1/07_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/07_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-11"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
@@ -127,7 +127,7 @@
 								<li class="mix color-2 check1 radio3 option1" style="display:inline-block;">
 								<!-- PORTFOLIO/WORK GALLERY -->
 									<div class="container-porto">
-									<img src="{{asset('themes/t1/08_porto.jpg')}}" alt="Image 2">
+									<img src="{{url('themes/t1/08_porto.jpg')}}" alt="Image 2">
 									 	<div class="overlay"   data-target="#porto-12"></div>
 	    								<span>Portofolio Title</span>
 	    						</div>
