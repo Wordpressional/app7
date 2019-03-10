@@ -15040,18 +15040,11 @@ span.contmoxytumblrsquare77 {
 }
 
 
-
-
-
-
-
-
-
 .editmoxygentheme79, .savemoxygentheme79, .bgmoxygentheme79 {
   width: 90px;
   display: none;
   position: relative;
-  top: -80px;
+  top: 10px;
   right: 0px;
   padding: 4px 10px;
   border-top-right-radius: 2px;

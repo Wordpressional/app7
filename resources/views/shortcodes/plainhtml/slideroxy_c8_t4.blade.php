@@ -12,7 +12,7 @@
        <span class="editmoxygentheme79">edit</span>
   
                            <span class="savemoxygentheme79">save</span>
-                       <span class="labelmoxygentheme79"><label class="imageUploadmoxygentheme79" for="imageUploadmoxygentheme79">&nbsp;</label></span>
+                       <span class="labelmoxygentheme79"><label class="imageUploadmoxygentheme79" for="imageUploadmoxygentheme79">&nbsp;</label>&nbsp;</span>
 
                         <input type='file' id="imageUploadmoxygentheme79" accept=".png, .jpg, .jpeg" />
       <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left">&nbsp;</i></a>

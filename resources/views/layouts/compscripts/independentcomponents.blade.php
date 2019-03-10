@@ -21632,7 +21632,7 @@ $(".savemoxygentheme102").click(function() {
 
 function moxyaddpresentationcolor102() {
 var inputpresentationcolormoxygentheme102 = $('.inputpresentationcolormoxygentheme102').val();
-  $('.moxypresentation102').css("background",inputpresentationcolormoxygentheme102);
+  $('.#moxyfooter .footer-bottom').css("background",inputpresentationcolormoxygentheme102);
 }
 
 
