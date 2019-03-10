@@ -1451,4 +1451,8 @@ display: none !important;
 {
   display: none !important;
 }
+.editpresentationcolormlthemeone80
+{
+  display: none !important;
+}
 </style>
