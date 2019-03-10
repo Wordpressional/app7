@@ -23,7 +23,7 @@
    </div>
    <br>
    <center><p>Upload images of size below 200 KB</p></center>
-   <br>
+   <br><br><br>
    <meta name="csrf-token" content="{{ csrf_token() }}">
    <form method="POST" class="previewf" enctype="multipart/form-data">
     {{ csrf_field() }}
