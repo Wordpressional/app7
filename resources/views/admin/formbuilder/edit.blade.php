@@ -34,7 +34,7 @@
           
       </div>
 <br>
-<p> Delete Dummy Container and components and Drag and Drop the Container and then place Components of your wish inside it.</p>
+<p> Delete Dummy Container and components and Drag and Drop the Container and then place Components of your choice inside it.</p>
 <br>
 @if($form->formname == "Home_Page")
 

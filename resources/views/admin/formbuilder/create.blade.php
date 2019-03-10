@@ -19,7 +19,7 @@
                 <input type="text" name="formname" id="formname" placeholder="Enter Form Name" class="form-control">
             </div>
 <br>
-<p> Delete Dummy Container and components and Drag and Drop the Container and then place Components of your wish inside it.</p>
+<p> Delete Dummy Container and components and Drag and Drop the Container and then place Components of your choice inside it.</p>
 <br>
 <div id="testcreate">
    
