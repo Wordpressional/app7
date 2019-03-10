@@ -18647,7 +18647,7 @@ $("#imageUploadmoxygentheme50").attr("name", "imageUploadmoxygentheme50");
 function readURLoxy50(input) {
    var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme50", "imageUploadmoxygentheme50","#moxyfeatures");
+     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme50", "imageUploadmoxygentheme50",".boxmoxygentheme50a");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
