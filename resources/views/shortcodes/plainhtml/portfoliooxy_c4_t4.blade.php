@@ -28,7 +28,7 @@
                            <span class="savemoxygentheme12">save</span>
                            <input type='file' id="imageUploadmoxygentheme12" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme12" for="imageUploadmoxygentheme12">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme12" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/1.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme12" class="img-responsive" src="{{url('themes/oxyt4/portfolio/1.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
                            <span class="savemoxygentheme13">save</span>
                            <input type='file' id="imageUploadmoxygentheme13" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme13" for="imageUploadmoxygentheme13">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme13" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/2.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme13" class="img-responsive" src="{{url('themes/oxyt4/portfolio/2.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
                            <span class="savemoxygentheme14">save</span>
                            <input type='file' id="imageUploadmoxygentheme14" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme14" for="imageUploadmoxygentheme14">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme14" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/3.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme14" class="img-responsive" src="{{url('themes/oxyt4/portfolio/3.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
                            <span class="savemoxygentheme15">save</span>
                            <input type='file' id="imageUploadmoxygentheme15" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme15" for="imageUploadmoxygentheme15">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme15" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/4.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme15" class="img-responsive" src="{{url('themes/oxyt4/portfolio/4.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
                            <span class="savemoxygentheme16">save</span>
                            <input type='file' id="imageUploadmoxygentheme16" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme16" for="imageUploadmoxygentheme16">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme16" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/5.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme16" class="img-responsive" src="{{url('themes/oxyt4/portfolio/5.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
                            <span class="savemoxygentheme17">save</span>
                            <input type='file' id="imageUploadmoxygentheme17" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme17" for="imageUploadmoxygentheme17">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme17" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/6.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme17" class="img-responsive" src="{{url('themes/oxyt4/portfolio/6.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
                            <span class="savemoxygentheme18">save</span>
                            <input type='file' id="imageUploadmoxygentheme18" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme18" for="imageUploadmoxygentheme18">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme18" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/7.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme18" class="img-responsive" src="{{url('themes/oxyt4/portfolio/7.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@
                            <span class="savemoxygentheme19">save</span>
                            <input type='file' id="imageUploadmoxygentheme19" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme19" for="imageUploadmoxygentheme19">&nbsp;</label>
-              <img id="imagePreviewmoxygentheme19" class="img-responsive" src="{{asset('themes/oxyt4/portfolio/8.jpg')}}" alt="">
+              <img id="imagePreviewmoxygentheme19" class="img-responsive" src="{{url('themes/oxyt4/portfolio/8.jpg')}}" alt="">
             </div>
           </div>
         </div>

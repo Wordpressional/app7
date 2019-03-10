@@ -1,6 +1,6 @@
 <section id="moxyabout-us" class="moxytheme parallax boxmoxygentheme80 boxmoxygentheme80a">
       <span class="contmoxybg80">
-                        <input type="text" name="moxybg80"  class="inputmoxybg80" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}" style="color:black;"><br>
+                        <input type="text" name="moxybg80"  class="inputmoxybg80" placeholder="{{url('themes/oxyt4/slider/1.jpg')}}" style="color:black;"><br>
 
                      <input type="button" value="Submit" class="submitmoxybg80" style="color:black;">
                         </span>
@@ -32,7 +32,7 @@
                            <span class="savemoxygentheme10">save</span>
                            <input type='file' id="imageUploadmoxygentheme10" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme10" for="imageUploadmoxygentheme10">&nbsp;</label>
-         <img id="imagePreviewmoxygentheme10" class="img-responsive" src="{{asset('themes/oxyt4/blog/1.jpg')}}" alt="">
+         <img id="imagePreviewmoxygentheme10" class="img-responsive" src="{{url('themes/oxyt4/blog/1.jpg')}}" alt="">
         </div>
       </div>
     </div>

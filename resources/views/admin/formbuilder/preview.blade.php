@@ -8,6 +8,7 @@
  </head>
     <body>
    <div id="app">
+    <center><h3> Edit Mode </h3></center>
      <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
       <span><a style="font-size:30px; color:red; padding:20px;" class="requestEditSite">
    <i class="fa fa-edit"></i></a> </span>

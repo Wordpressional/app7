@@ -16,7 +16,7 @@
                            <input type='file' id="imageUploadmoxygentheme71" accept=".png, .jpg, .jpeg"/>
                            <label class="imageUploadmoxygentheme71" for="imageUploadmoxygentheme71">&nbsp;</label> 
           <a href="main.html">
-            <img id="imagePreviewmoxygentheme71" class="img-responsive" src="{{asset('themes/oxyt4/logo.png')}}" alt="">
+            <img id="imagePreviewmoxygentheme71" class="img-responsive" src="{{url('themes/oxyt4/logo.png')}}" alt="">
           </a>
           </div>
         </div>

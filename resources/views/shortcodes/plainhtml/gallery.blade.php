@@ -4,35 +4,35 @@
 <div class="row"> 
 
 <div class="col-sm-12 col-md-12">
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 <div class="col-sm-12 col-md-12">
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 <div class="col-sm-12 col-md-12">
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 <div class="col-sm-12 col-md-12">
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set"><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 </div>
@@ -46,35 +46,35 @@
   
 <div class="col-sm-12 col-md-12">
 
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 <div class="col-sm-12 col-md-12">
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 <div class="col-sm-12 col-md-12">
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 <div class="col-sm-12 col-md-12">
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
-<a class="example-image-link" href="{{asset('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{asset('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
+<a class="example-image-link" href="{{url('webhome/gallery/2-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/2-thumb.jpeg')}}" alt="image-1" /></a>
+<a class="example-image-link" href="{{url('webhome/gallery/1-large.jpeg')}}" data-lightbox="example-set" data-title=""><img class="example-image" src="{{url('webhome/gallery/1-thumb.jpeg')}}" alt="image-1"/></a>
 
 </div>
 

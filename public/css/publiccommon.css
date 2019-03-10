@@ -1,4 +1,4 @@
-#banner > .col-sm-12:first-child, .keditor-ui .row > .col-sm-12:first-child{
+#banner > .col-sm-12:first-child, .keditor-ui > .row > .col-sm-12:first-child{
   padding: 0px 0px 0px 0px !important;
 }
 div#content-area > .row, .keditor-ui  > .row{

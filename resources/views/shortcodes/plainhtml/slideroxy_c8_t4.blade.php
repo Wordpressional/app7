@@ -3,7 +3,7 @@
   
     <div>
       <span class="contmoxybg79">
-                        <input type="text" name="moxybg79"  class="inputmoxybg79" placeholder="{{asset('themes/oxyt4/slider/1.jpg')}}"  style="color:black"><br>
+                        <input type="text" name="moxybg79"  class="inputmoxybg79"  style="color:black"><br>
 
                      <input type="button" value="Submit" class="submitmoxybg79" style="color:black">
                         </span>

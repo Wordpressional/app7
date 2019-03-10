@@ -5,6 +5,7 @@
 <div class="page-header">
         <h2>Create Widget Form </h2>
             <hr>
+
       </div>
 
 <a href="{{route('admin.forms.index')}}" class="btn btn-primary btn-sm align-self-center"><b>Back</b></a>
@@ -17,7 +18,9 @@
                 <label for="tag">Form Name :</label>
                 <input type="text" name="formname" id="formname" placeholder="Enter Form Name" class="form-control">
             </div>
-
+<br>
+<p> Delete Dummy Container and components and Drag and Drop the Container and then place Components of your wish inside it.</p>
+<br>
 <div id="testcreate">
    
    <div id="content-area">

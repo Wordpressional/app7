@@ -21,7 +21,7 @@
                            <input type='file' id="imageUploadmmultithemeone47" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone47" for="imageUploadmmultithemeone47">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone47" src="{{asset('themes/t2/blog.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone47" src="{{url('themes/t2/blog.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -43,7 +43,7 @@
                            <input type='file' id="imageUploadmmultithemeone48" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone48" for="imageUploadmmultithemeone48">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone48" src="{{asset('themes/t2/blog2.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone48" src="{{url('themes/t2/blog2.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -65,7 +65,7 @@
                            <input type='file' id="imageUploadmmultithemeone49" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone49" for="imageUploadmmultithemeone49">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone49" src="{{asset('themes/t2/blog-leftsidebar.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone49" src="{{url('themes/t2/blog-leftsidebar.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -93,7 +93,7 @@
                            <input type='file' id="imageUploadmmultithemeone50" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone50" for="imageUploadmmultithemeone50">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone50" src="{{asset('themes/t2/blog-detail.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone50" src="{{url('themes/t2/blog-detail.jpg')}}" alt="demo_preview">
                   </a>
                </div>
             </div>
@@ -116,7 +116,7 @@
                            <input type='file' id="imageUploadmmultithemeone51" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone51" for="imageUploadmmultithemeone51">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone51" src="{{asset('themes/t2/error.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone51" src="{{url('themes/t2/error.jpg')}}" alt="demo_preview">
                   </a>
                </div>
             </div>
@@ -140,7 +140,7 @@
                            <input type='file' id="imageUploadmmultithemeone52" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone52" for="imageUploadmmultithemeone52">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone52" src="{{asset('themes/t2/faq.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone52" src="{{url('themes/t2/faq.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -167,7 +167,7 @@
                            <input type='file' id="imageUploadmmultithemeone53" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone53" for="imageUploadmmultithemeone53">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                     <img id="imagePreviewmmultithemeone53" src="{{asset('themes/t2/faq2.jpg')}}" alt="demo_preview">
+                     <img id="imagePreviewmmultithemeone53" src="{{url('themes/t2/faq2.jpg')}}" alt="demo_preview">
                   </a>
                </div>
                </div>
@@ -190,7 +190,7 @@
                            <input type='file' id="imageUploadmmultithemeone54" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone54" for="imageUploadmmultithemeone54">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                              <img id="imagePreviewmmultithemeone54" src="{{asset('themes/t2/counter.jpg')}}" alt="demo_preview">
+                              <img id="imagePreviewmmultithemeone54" src="{{url('themes/t2/counter.jpg')}}" alt="demo_preview">
                            </a>
                         </div>
                </div>
@@ -213,7 +213,7 @@
                            <input type='file' id="imageUploadmmultithemeone55" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmmultithemeone55" for="imageUploadmmultithemeone55">&nbsp;</label>
                   <a href="#" class="demo_link" target="_blank">
-                              <img id="imagePreviewmmultithemeone55" src="{{asset('themes/t2/services.jpg')}}" alt="demo_preview">
+                              <img id="imagePreviewmmultithemeone55" src="{{url('themes/t2/services.jpg')}}" alt="demo_preview">
                            </a>
                         </div>
                </div>

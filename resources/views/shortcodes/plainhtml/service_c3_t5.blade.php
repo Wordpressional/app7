@@ -24,7 +24,7 @@
                            <label class="imageUploadmpoltheme5" for="imageUploadmpoltheme5">&nbsp;</label>
         
 
-									<img id="imagePreviewmpoltheme5" src="{{ asset('themes/politt5/o1.jpg')}}" alt="">									
+									<img id="imagePreviewmpoltheme5" src="{{ url('themes/politt5/o1.jpg')}}" alt="">									
 								</div>
 								<h4>Conduct Campaign</h4>
 								<p>
@@ -43,7 +43,7 @@
                            <label class="imageUploadmpoltheme6" for="imageUploadmpoltheme6">&nbsp;</label>
         
 
-									<img id="imagePreviewmpoltheme6" src="{{ asset('themes/politt5/o2.jpg')}}" alt="">									
+									<img id="imagePreviewmpoltheme6" src="{{ url('themes/politt5/o2.jpg')}}" alt="">									
 								</div>
 								<h4>Generate Member</h4>
 								<p>
@@ -62,7 +62,7 @@
                            <label class="imageUploadmpoltheme7" for="imageUploadmpoltheme7">&nbsp;</label>
         
 
-									<img id="imagePreviewmpoltheme7" src="{{ asset('themes/politt5/o3.jpg')}}" alt="">									
+									<img id="imagePreviewmpoltheme7" src="{{ url('themes/politt5/o3.jpg')}}" alt="">									
 								</div>
 								<h4>Energy Saving Policy</h4>
 								<p>

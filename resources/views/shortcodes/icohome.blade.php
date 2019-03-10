@@ -30,7 +30,7 @@
     <div class="col-md-4">
       <div class="ani">
         <span class="premium">Premium</span>
-      <img class="circleimg" src="{{ asset('img/photo2.png') }}" />
+      <img class="circleimg" src="{{ url('img/photo2.png') }}" />
       <div> Token Name: {{ $ico->tokenname }} </div>
       
       <p>Token Symbol: {{ $ico->tokensymbol }}</p>
@@ -62,7 +62,7 @@
 			<div class="ani">
         <span class="premium">Premium</span>
         
-			<img class="circleimg" src="{{ asset('img/photo2.png') }}" />
+			<img class="circleimg" src="{{ url('img/photo2.png') }}" />
 			<div> Token Name: {{ $ico->tokenname }} </div>
       
       <p>Token Symbol: {{ $ico->tokensymbol }}</p>

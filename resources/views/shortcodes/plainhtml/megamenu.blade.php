@@ -11,7 +11,7 @@
 						<div class="row">
 						<div class="col-md-4">
 							<h4 class="row mega-title">Feature</h4>
-								<img class="img-responsive" src="{{asset('webhome/gallery/2-large.jpeg')}}">
+								<img class="img-responsive" src="{{url('webhome/gallery/2-large.jpeg')}}">
 							</div>
 							<div class="col-md-2">
 									<h4 class="row mega-title">Standers</h4>
@@ -65,7 +65,7 @@
 				<div class="Blog animated fadeIn">
 					<div class="row">
 					<div class="col-md-4">
-						<img class="img-responsive" src="{{asset('webhome/gallery/2-large.jpeg')}}">
+						<img class="img-responsive" src="{{url('webhome/gallery/2-large.jpeg')}}">
 						<div class="blog-des">
 					<h4 class="blog-title">Lorem ipsum dolor sit amet</h4>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
@@ -74,7 +74,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<img class="img-responsive" src="{{asset('webhome/gallery/2-large.jpeg')}}">
+						<img class="img-responsive" src="{{url('webhome/gallery/2-large.jpeg')}}">
 						<div class="blog-des">
 						<h4 class="blog-title">Lorem ipsum dolor sit amet</h4>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
@@ -84,7 +84,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<img class="img-responsive" src="{{asset('webhome/gallery/2-large.jpeg')}}">
+						<img class="img-responsive" src="{{url('webhome/gallery/2-large.jpeg')}}">
 						<div class="blog-des">
 						<h4 class="blog-title">Lorem ipsum dolor sit amet</h4>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 

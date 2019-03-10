@@ -28,7 +28,7 @@
                            <input type='file' id="imageUploadmoxygentheme57" accept=".png, .jpg, .jpeg"/>
                            <label class="imageUploadmoxygentheme57" for="imageUploadmoxygentheme57">&nbsp;</label>
               <a href="#">
-                <img id="imagePreviewmoxygentheme57" class="img-responsive" src="{{asset('themes/oxyt4/blog/1.jpg')}}" alt="">
+                <img id="imagePreviewmoxygentheme57" class="img-responsive" src="{{url('themes/oxyt4/blog/1.jpg')}}" alt="">
               </a> 
             </div>
             </div>
@@ -64,7 +64,7 @@
                            <input type='file' id="imageUploadmoxygentheme58" accept=".png, .jpg, .jpeg"/>
                            <label class="imageUploadmoxygentheme58" for="imageUploadmoxygentheme58">&nbsp;</label>
                     <a href="#">
-                      <img id="imagePreviewmoxygentheme58" class="img-responsive" src="{{asset('themes/oxyt4/blog/1.jpg')}}" alt="">
+                      <img id="imagePreviewmoxygentheme58" class="img-responsive" src="{{url('themes/oxyt4/blog/1.jpg')}}" alt="">
                     </a>
                   </div>
                 </div>
@@ -76,7 +76,7 @@
                            <input type='file' id="imageUploadmoxygentheme59" accept=".png, .jpg, .jpeg"/>
                            <label class="imageUploadmoxygentheme59" for="imageUploadmoxygentheme59">&nbsp;</label>
                     <a href="#">
-                      <img id="imagePreviewmoxygentheme59" class="img-responsive" src="{{asset('themes/oxyt4/blog/2.jpg')}}" alt="">
+                      <img id="imagePreviewmoxygentheme59" class="img-responsive" src="{{url('themes/oxyt4/blog/2.jpg')}}" alt="">
                     </a>
                   </div>
                   </div>
@@ -88,7 +88,7 @@
                            <input type='file' id="imageUploadmoxygentheme60" accept=".png, .jpg, .jpeg"/>
                            <label class="imageUploadmoxygentheme60" for="imageUploadmoxygentheme60">&nbsp;</label>
                     <a href="#">
-                      <img id="imagePreviewmoxygentheme60" class="img-responsive" src="{{asset('themes/oxyt4/blog/3.jpg')}}" alt="">
+                      <img id="imagePreviewmoxygentheme60" class="img-responsive" src="{{url('themes/oxyt4/blog/3.jpg')}}" alt="">
                     </a>
                   </div>
                   </div>
@@ -121,7 +121,7 @@
                            <input type='file' id="imageUploadmoxygentheme61" accept=".png, .jpg, .jpeg"/>
                            <label class="imageUploadmoxygentheme61" for="imageUploadmoxygentheme61">&nbsp;</label>
               <a href="#">
-                <img id="imagePreviewmoxygentheme61" class="img-responsive" src="{{asset('themes/oxyt4/blog/3.jpg')}}" alt="">
+                <img id="imagePreviewmoxygentheme61" class="img-responsive" src="{{url('themes/oxyt4/blog/3.jpg')}}" alt="">
               </a>
             </div>
           </div>
