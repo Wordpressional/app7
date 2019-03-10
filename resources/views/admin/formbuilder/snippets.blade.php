@@ -440,71 +440,67 @@
 @include('shortcodes.plainhtml.header_c2_t3')
  
 </div>
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/quotet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.getquoteform_c3_t3')
-
-</div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/accordiont3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.approval_c4_t3')
+@include('shortcodes.plainhtml.approval_c3_t3')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/optionst3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.options_c5_t3')
+@include('shortcodes.plainhtml.options_c4_t3')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/pricetablet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.pricetable_c6_t3')
+@include('shortcodes.plainhtml.pricetable_c5_t3')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/smallslidert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.description1_c7_t3')
+@include('shortcodes.plainhtml.description1_c6_t3')
 
 </div>
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/questiontabst3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.description_c8_t3')
+@include('shortcodes.plainhtml.description_c7_t3')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/questiont3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.questions_c9_t3')
+@include('shortcodes.plainhtml.questions_c8_t3')
 
 </div>
 
 <div data-type="component-youtube" data-preview="{{asset('examples/snippets/preview/aboutt3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.about_c10_t3')
+@include('shortcodes.plainhtml.about_c9_t3')
 
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/roundslidert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.testimonial_c11_t3')
+@include('shortcodes.plainhtml.testimonial_c10_t3')
 
 </div>
 <div data-type="component-video" data-preview="{{asset('examples/snippets/preview/contactt3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.contactinfo_c12_t3')
+@include('shortcodes.plainhtml.contactinfo_c11_t3')
 
 </div>
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footert3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.footer1_c13_t3')
+@include('shortcodes.plainhtml.footer1_c12_t3')
 
 </div>
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footer2t3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
 
-@include('shortcodes.plainhtml.footer2_c14_t3')
+@include('shortcodes.plainhtml.footer2_c13_t3')
 
 </div>
 
