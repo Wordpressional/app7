@@ -803,6 +803,17 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
+
+.moxytheme.parallax {
+  -moz-background-size: auto !important;
+    -webkit-background-size: auto !important;
+    background-attachment: scroll !important;
+    background-position: top !important;
+    background-size: auto !important;
+    height: auto !important;
+
+}
+
 #moxyteam {
   
   padding-bottom: 0px !important;
