@@ -14982,7 +14982,7 @@ function readURLoxy10(input) {
 
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#imageUploadmoxygentheme10");
+     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#imagePreviewmoxygentheme10");
 
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
