@@ -9145,8 +9145,7 @@ div#content-area {
 #moxyabout-us {
   background-image: url(../themes/oxyt4/about-bg.jpg);
   padding: 60px 0;
-  min-height: 450px;
-  height: 550px;
+  
 }
 
 #moxyabout-us h2 {
@@ -9411,8 +9410,7 @@ div#content-area {
 #moxyfeatures {
     padding: 90px 0;
     padding-bottom: 40px;
-    min-height: 300px;
-    height: 300px;
+    
 }
 
 #moxyfeatures {
