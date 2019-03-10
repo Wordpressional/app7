@@ -14982,7 +14982,7 @@ function readURLoxy10(input) {
 
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#moxyabout-us");
+     Uploadimgtoserver(file, "#imageUploadmoxygentheme10", "imageUploadmoxygentheme10","#imageUploadmoxygentheme10");
 
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -21632,7 +21632,7 @@ $(".savemoxygentheme102").click(function() {
 
 function moxyaddpresentationcolor102() {
 var inputpresentationcolormoxygentheme102 = $('.inputpresentationcolormoxygentheme102').val();
-  $('.#moxyfooter .footer-bottom').css("background",inputpresentationcolormoxygentheme102);
+  $('#moxyfooter .footer-bottom').css("background",inputpresentationcolormoxygentheme102);
 }
 
 

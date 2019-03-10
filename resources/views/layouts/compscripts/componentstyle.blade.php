@@ -15091,7 +15091,7 @@ span.contmoxytumblrsquare77 {
 {
   
   position: relative;
-  top: -80px;
+  top: 10px;
   right: 0px;
  
   z-index: 10000;
