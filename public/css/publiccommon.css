@@ -9312,6 +9312,7 @@ div#content-area {
 **************************/
 #moxyteam {
   padding-top: 0;
+  padding-bottom: 20px;
 }
 
 .moxytheme .team-members {
@@ -9585,7 +9586,10 @@ div#content-area {
 /*************************
 **********Blog CSS********
 **************************/
-
+section#moxyblog
+{
+  padding-bottom: 20px;
+}
 .moxytheme .post-thumb {
   position: relative;
 }
@@ -9771,7 +9775,8 @@ div#content-area {
 
 #moxyfooter .footer-bottom {
   background-color: #fff;
-  padding: 0px 0 0px;
+  padding-bottom: 41px;
+    padding-top: 20px;
 }
 
 #moxyfooter.footer-bottom a:hover {
