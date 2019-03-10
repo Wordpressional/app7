@@ -28,7 +28,7 @@
                            <span class="savemoxygentheme21">save</span>
                            <input type='file' id="imageUploadmoxygentheme21" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme21" for="imageUploadmoxygentheme21">&nbsp;</label>
-                <img id="imagePreviewmoxygentheme21" class="img-responsive" src="{{asset('themes/oxyt4/team/1.jpg')}}" alt="">
+                <img id="imagePreviewmoxygentheme21" class="img-responsive" src="{{url('themes/oxyt4/team/1.jpg')}}" alt="">
               </div>
               <div class="member-info boxmoxygentheme25 textmoxygentheme25">
                 <span class="editmoxygentheme25">edit</span>
@@ -144,7 +144,7 @@
                            <span class="savemoxygentheme22">save</span>
                            <input type='file' id="imageUploadmoxygentheme22" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme22" for="imageUploadmoxygentheme22">&nbsp;</label>
-                <img id="imagePreviewmoxygentheme22" class="img-responsive" src="{{asset('themes/oxyt4/team/2.jpg')}}" alt="">
+                <img id="imagePreviewmoxygentheme22" class="img-responsive" src="{{url('themes/oxyt4/team/2.jpg')}}" alt="">
               </div>
               <div class="member-info boxmoxygentheme26 textmoxygentheme26">
                 <span class="editmoxygentheme26">edit</span>
@@ -262,7 +262,7 @@
                            <span class="savemoxygentheme23">save</span>
                            <input type='file' id="imageUploadmoxygentheme23" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme23" for="imageUploadmoxygentheme23">&nbsp;</label>
-                <img id="imagePreviewmoxygentheme23" class="img-responsive" src="{{asset('themes/oxyt4/team/3.jpg')}}" alt="">
+                <img id="imagePreviewmoxygentheme23" class="img-responsive" src="{{url('themes/oxyt4/team/3.jpg')}}" alt="">
               </div>
               <div class="member-info boxmoxygentheme27 textmoxygentheme27">
                 <span class="editmoxygentheme27">edit</span>
@@ -383,7 +383,7 @@
                            <span class="savemoxygentheme24">save</span>
                            <input type='file' id="imageUploadmoxygentheme24" accept=".png, .jpg, .jpeg" />
                            <label class="imageUploadmoxygentheme24" for="imageUploadmoxygentheme24">&nbsp;</label>
-                <img id="imagePreviewmoxygentheme24" class="img-responsive" src="{{asset('themes/oxyt4/team/4.jpg')}}" alt="">
+                <img id="imagePreviewmoxygentheme24" class="img-responsive" src="{{url('themes/oxyt4/team/4.jpg')}}" alt="">
               </div>
               <div class="member-info boxmoxygentheme28 textmoxygentheme28">
                 <span class="editmoxygentheme28">edit</span>
