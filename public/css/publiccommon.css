@@ -803,6 +803,14 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
+#moxyteam {
+  
+  padding-bottom: 0px !important;
+}
+#moxyblog .blog-posts {
+    margin-bottom: 30px !important;
+}
+
 .moxytheme .navbar-brand {
     margin-top: 15px !important;
 }
@@ -845,9 +853,7 @@ min-height: 200px;
 #mc_embed_signup input[type="email"]{
   width: 260px;
 }
-.wow{
-  visibility: visible;
-}
+
 section.presentation .side {
     width: 350px;
   }
@@ -3317,7 +3323,10 @@ color: white;
 }
 
 @media (max-width: 550px) and (min-width: 50px){
-
+section#moxyblog
+{
+  padding-bottom: 0px;
+}
 .main_h{
   max-height: none !important;
 }
