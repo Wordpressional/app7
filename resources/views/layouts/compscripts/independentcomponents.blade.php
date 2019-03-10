@@ -19586,7 +19586,7 @@ $("#imageUploadmoxygentheme70").attr("name", "imageUploadmoxygentheme70");
 function readURLoxy70(input) {
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme70", "imageUploadmoxygentheme70","#moxycontact-us");
+     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme70", "imageUploadmoxygentheme70",".boxmoxygentheme70a");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
@@ -20124,7 +20124,7 @@ function readURLoxy79(input) {
 
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme79", "imageUploadmoxygentheme79",".boxmoxygentheme79");
+     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme79", "imageUploadmoxygentheme79",".boxmoxygentheme79a");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
@@ -20195,7 +20195,7 @@ $("#imageUploadmoxygentheme80").attr("name", "imageUploadmoxygentheme80");
 function readURLoxy80(input) {
   var file = input.files[0];
      console.log("name : " + file.name);
-     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme80", "imageUploadmoxygentheme80",".boxmoxygentheme80");
+     Uploadimgtoserverbakimg(file, "#imageUploadmoxygentheme80", "imageUploadmoxygentheme80",".boxmoxygentheme80a");
 /*if (input.files && input.files[0]) {
             var reader = new FileReader();
             console.log(input.files[0]);
