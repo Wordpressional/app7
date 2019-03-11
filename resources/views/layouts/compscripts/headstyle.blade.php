@@ -28,13 +28,13 @@
       <!-- Icon css link -->
 
 
-     
+<!-- Bootstrap -->
+<link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">     
     
 <link href="{{ asset('webhome/css/font-awesome.min.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/elegant-icon/style.css') }}" rel="stylesheet">
 <link href="{{ asset('webhome/vendors/themify-icon/themify-icons.css') }}" rel="stylesheet">
-<!-- Bootstrap -->
-<link href="{{ asset('webhome/css/bootstrap.min.css') }}" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="{{asset('dist/css/lightbox.min.css')}}" />
 <link href="{{ asset('webhome/vendors/owl-carousel/owl.carousel.min.css') }}" rel="stylesheet">
 

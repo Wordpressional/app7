@@ -22,7 +22,7 @@
 <script src="//{{ Request::getHost() }}:8888/socket.io/socket.io.js"></script>
 @endif
 
-
+<script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
 
 <script src="{{ asset('webhome/js/form-render.min.js') }}"></script>
 
@@ -33,17 +33,6 @@
   
  
 
-<script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>
-<!--Tweets-->
-<script src="{{ asset('js/jssor.slider.min.js')}}" type="text/javascript"></script>
-<script src="{{ asset('js/adminlte.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('js/jquery.inview.min.js') }}"></script>
- 
-  <script type="text/javascript" src="{{ asset('js/mousescroll.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/smoothscroll.js') }}"></script>
- 
-<script src="{{ asset('webhome/js/form-builder.min.js') }}"></script>
 
 <script src="{{ asset('js/superfish.min.js')}}"></script>
 
@@ -72,9 +61,19 @@
 <script src="{{ asset('webhome/vendors/counterup/apear.js') }}"></script>
 <script src="{{ asset('webhome/vendors/counterup/countto.js') }}"></script>
 
+<!--Tweets-->
 
-<!-- TYPED JS -->
-  <script src="{{ asset('js/typed-custom.js') }}"></script>
+<script src="{{ asset('js/adminlte.min.js') }}"></script>
+
+<script type="text/javascript" src="{{ asset('js/jquery.inview.min.js') }}"></script>
+ 
+  <script type="text/javascript" src="{{ asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/smoothscroll.js') }}"></script>
+
+
+
+ 
+<script src="{{ asset('webhome/js/form-builder.min.js') }}"></script>
   <!-- WOW JS -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
   <!-- scripts js -->
@@ -84,7 +83,7 @@
   <!-- WOW JS -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
   
-
+<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 <script src="{{ asset('webhome/js/theme.js') }}"></script>
 
 
@@ -92,7 +91,7 @@
 
 <script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
 
-<script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
+
 
  
 
@@ -220,10 +219,10 @@ if ($(window).scrollTop() > 100) {
 //  }
 // });
 //Javascript by Class:
-var divClass = document.getElementsByClassName('bg-light');
-var pomStringClass = encodeURI(divClass[0].innerHTML);
-pomStringClass = pomStringClass.replace(/%EF%BB%BF/g, '');
-divClass[0].innerHTML = decodeURI(pomStringClass);
+// var divClass = document.getElementsByClassName('bg-light');
+// var pomStringClass = encodeURI(divClass[0].innerHTML);
+// pomStringClass = pomStringClass.replace(/%EF%BB%BF/g, '');
+// divClass[0].innerHTML = decodeURI(pomStringClass);
 
     </script>
     

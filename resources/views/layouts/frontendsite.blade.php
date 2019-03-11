@@ -5,20 +5,20 @@
         @yield('css')
  </head>
     <body class="bg-light">
-        
-       @yield('contentfrontend')
-		<div id="app">
+        <div id="app">
+       @yield('contentfrontendsite')
+		
          </div>    
       
     @include('layouts.compscripts.general')
  
 
     @include('layouts.compscripts.themeone')
-    @yield('scripts')
+    
     @include('layouts.compscripts.serviceworker')
-        
-         
+    @yield('scripts')    
+    @yield('menuscripts')    
     @stack('inline-scripts')
-   
+  
     </body>      
 </html>

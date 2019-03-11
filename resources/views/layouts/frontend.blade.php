@@ -14,9 +14,9 @@
  
 
     @include('layouts.compscripts.themeone')
-    @yield('scripts')
+    
     @include('layouts.compscripts.serviceworker')
-        
+    @yield('scripts')
          
     @stack('inline-scripts')
    

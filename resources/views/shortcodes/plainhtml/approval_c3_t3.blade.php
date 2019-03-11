@@ -44,7 +44,7 @@
                         <div class="item">
                             <div class="boxmlthemeone31 textmlthemeone31">
                             <a data-toggle="collapse" href="#detailsAccordion2" aria-expanded="false">
-                                <span class="circle-numbering">2</span><span class="accordion-title">It Will Take Up To 3 Days To Qualify Your Loan Request</span>
+                                <b class="circle-numbering">2</b><b class="accordion-title">It Will Take Up To 3 Days To Qualify Your Loan Request</b>
                                 <span class="editmlthemeone31">edit</span>
   
                           
@@ -60,7 +60,7 @@
                         <div class="item">
                               <div class="boxmlthemeone32 textmlthemeone32">
                             <a data-toggle="collapse" href="#detailsAccordion3" aria-expanded="false">
-                                <span class="circle-numbering">3</span><span class="accordion-title">We'll Call You With The Answer From The Analysis Team</span>
+                                <b class="circle-numbering">3</b><b class="accordion-title">We'll Call You With The Answer From The Analysis Team</b>
                                 <span class="editmlthemeone32">edit</span>
   
                           
@@ -77,7 +77,7 @@
                         <div class="item">
                            <div class="boxmlthemeone33 textmlthemeone33">
                             <a data-toggle="collapse" href="#detailsAccordion4" aria-expanded="false">
-                                <span class="circle-numbering">4</span><span class="accordion-title">You Enjoy The Money Submitted To Your Bank Account</span>
+                                <b class="circle-numbering">4</b><b class="accordion-title">You Enjoy The Money Submitted To Your Bank Account</b>
                                  <span class="editmlthemeone33">edit</span>
   
                           
