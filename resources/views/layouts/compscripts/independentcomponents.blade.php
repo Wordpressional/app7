@@ -6977,7 +6977,7 @@ $( ".boxmmultithemeone28" )
   $(".savemmultithemeone28").show();
   $(".imageUploadmmultithemeone28").show();
   $('.preview_outer').removeClass('fadeInUp');
-  
+
 });
 
 $(".savemmultithemeone28").click(function() {
@@ -22505,7 +22505,7 @@ function addHrefpol2() {
 var inputmpolbg2 = $('.inputmpolbg2').val();
 if(inputmpolbg2 != "")
 {
-  $('.boxmpoltheme222').attr(src, inputmpolbg2);
+  $('.boxmpoltheme222').attr('src', inputmpolbg2);
 }
 }
 
