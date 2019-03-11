@@ -3,7 +3,7 @@
 $(document).ready(function(){ 
 
   $('span').attr('contenteditable', false);
-
+  
 });
 
 $(document).ready(function(){  
@@ -6698,6 +6698,7 @@ $( ".boxmmultithemeone24" )
    $(".editmmultithemeone24").hide();
   $(".savemmultithemeone24").show();
   $(".imageUploadmmultithemeone24").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone24").click(function() {
@@ -6767,6 +6768,7 @@ $( ".boxmmultithemeone25" )
    $(".editmmultithemeone25").hide();
   $(".savemmultithemeone25").show();
   $(".imageUploadmmultithemeone25").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone25").click(function() {
@@ -6836,6 +6838,7 @@ $( ".boxmmultithemeone26" )
    $(".editmmultithemeone26").hide();
   $(".savemmultithemeone26").show();
   $(".imageUploadmmultithemeone26").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone26").click(function() {
@@ -6904,6 +6907,7 @@ $( ".boxmmultithemeone27" )
    $(".editmmultithemeone27").hide();
   $(".savemmultithemeone27").show();
   $(".imageUploadmmultithemeone27").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone27").click(function() {
@@ -6972,6 +6976,8 @@ $( ".boxmmultithemeone28" )
    $(".editmmultithemeone28").hide();
   $(".savemmultithemeone28").show();
   $(".imageUploadmmultithemeone28").show();
+  $('.preview_outer').removeClass('fadeInUp');
+  
 });
 
 $(".savemmultithemeone28").click(function() {
@@ -6980,6 +6986,7 @@ $(".savemmultithemeone28").click(function() {
  
   $(".editmmultithemeone28").hide();
   $(".imageUploadmmultithemeone28").hide();
+
   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
@@ -7039,6 +7046,7 @@ $( ".boxmmultithemeone29" )
    $(".editmmultithemeone29").hide();
   $(".savemmultithemeone29").show();
   $(".imageUploadmmultithemeone29").show();
+   $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone29").click(function() {
@@ -7106,7 +7114,7 @@ $( ".boxmmultithemeone30" )
   $(".textmmultithemeone30").attr("contenteditable", "true");
    $(".editmmultithemeone30").hide();
   $(".savemmultithemeone30").show();
- 
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone30").click(function() {
@@ -7148,7 +7156,7 @@ $( ".boxmmultithemeone31" )
   $(".textmmultithemeone31").attr("contenteditable", "true");
    $(".editmmultithemeone31").hide();
   $(".savemmultithemeone31").show();
- 
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone31").click(function() {
@@ -7190,7 +7198,7 @@ $( ".boxmmultithemeone32" )
   $(".textmmultithemeone32").attr("contenteditable", "true");
    $(".editmmultithemeone32").hide();
   $(".savemmultithemeone32").show();
- 
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone32").click(function() {
@@ -7232,7 +7240,7 @@ $( ".boxmmultithemeone33" )
   $(".textmmultithemeone33").attr("contenteditable", "true");
    $(".editmmultithemeone33").hide();
   $(".savemmultithemeone33").show();
- 
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone33").click(function() {
@@ -7343,6 +7351,7 @@ $( ".boxmmultithemeone35" )
    $(".editmmultithemeone35").hide();
   $(".savemmultithemeone35").show();
   $(".imageUploadmmultithemeone35").show();
+   $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone35").click(function() {
@@ -7411,6 +7420,7 @@ $( ".boxmmultithemeone36" )
    $(".editmmultithemeone36").hide();
   $(".savemmultithemeone36").show();
   $(".imageUploadmmultithemeone36").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone36").click(function() {
@@ -7479,6 +7489,7 @@ $( ".boxmmultithemeone37" )
   $(".textmmultithemeone37").attr("contenteditable", "true");
    $(".editmmultithemeone37").hide();
   $(".savemmultithemeone37").show();
+  $('.preview_outer').removeClass('fadeInUp');
  
 });
 
@@ -7521,6 +7532,7 @@ $( ".boxmmultithemeone38" )
   $(".textmmultithemeone38").attr("contenteditable", "true");
    $(".editmmultithemeone38").hide();
   $(".savemmultithemeone38").show();
+  $('.preview_outer').removeClass('fadeInUp');
  
 });
 
@@ -7563,6 +7575,7 @@ $( ".boxmmultithemeone39" )
   $(".textmmultithemeone39").attr("contenteditable", "true");
    $(".editmmultithemeone39").hide();
   $(".savemmultithemeone39").show();
+  $('.preview_outer').removeClass('fadeInUp');
  
 });
 
@@ -7605,7 +7618,7 @@ $( ".boxmmultithemeone40" )
   $(".textmmultithemeone40").attr("contenteditable", "true");
    $(".editmmultithemeone40").hide();
   $(".savemmultithemeone40").show();
- 
+   $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone40").click(function() {
@@ -7647,6 +7660,7 @@ $( ".boxmmultithemeone41" )
   $(".textmmultithemeone41").attr("contenteditable", "true");
    $(".editmmultithemeone41").hide();
   $(".savemmultithemeone41").show();
+  $('.preview_outer').removeClass('fadeInUp');
  
 });
 
@@ -7689,6 +7703,7 @@ $( ".boxmmultithemeone42" )
   $(".textmmultithemeone42").attr("contenteditable", "true");
    $(".editmmultithemeone42").hide();
   $(".savemmultithemeone42").show();
+  $('.preview_outer').removeClass('fadeInUp');
  
 });
 
@@ -7731,7 +7746,7 @@ $( ".boxmmultithemeone43" )
   $(".textmmultithemeone43").attr("contenteditable", "true");
    $(".editmmultithemeone43").hide();
   $(".savemmultithemeone43").show();
- 
+ $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone43").click(function() {
@@ -7773,7 +7788,7 @@ $( ".boxmmultithemeone44" )
   $(".textmmultithemeone44").attr("contenteditable", "true");
    $(".editmmultithemeone44").hide();
   $(".savemmultithemeone44").show();
- 
+ $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone44").click(function() {
@@ -7815,7 +7830,7 @@ $( ".boxmmultithemeone45" )
   $(".textmmultithemeone45").attr("contenteditable", "true");
    $(".editmmultithemeone45").hide();
   $(".savemmultithemeone45").show();
- 
+ $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone45").click(function() {
@@ -7857,7 +7872,7 @@ $( ".boxmmultithemeone46" )
   $(".textmmultithemeone46").attr("contenteditable", "true");
    $(".editmmultithemeone46").hide();
   $(".savemmultithemeone46").show();
- 
+ $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone46").click(function() {
@@ -7900,6 +7915,7 @@ $( ".boxmmultithemeone47" )
    $(".editmmultithemeone47").hide();
   $(".savemmultithemeone47").show();
   $(".imageUploadmmultithemeone47").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone47").click(function() {
@@ -7967,6 +7983,7 @@ $( ".boxmmultithemeone48" )
    $(".editmmultithemeone48").hide();
   $(".savemmultithemeone48").show();
   $(".imageUploadmmultithemeone48").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone48").click(function() {
@@ -8034,6 +8051,7 @@ $( ".boxmmultithemeone49" )
    $(".editmmultithemeone49").hide();
   $(".savemmultithemeone49").show();
   $(".imageUploadmmultithemeone49").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone49").click(function() {
@@ -8101,6 +8119,7 @@ $( ".boxmmultithemeone50" )
    $(".editmmultithemeone50").hide();
   $(".savemmultithemeone50").show();
   $(".imageUploadmmultithemeone50").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone50").click(function() {
@@ -8169,6 +8188,7 @@ $( ".boxmmultithemeone51" )
    $(".editmmultithemeone51").hide();
   $(".savemmultithemeone51").show();
   $(".imageUploadmmultithemeone51").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone51").click(function() {
@@ -8237,6 +8257,7 @@ $( ".boxmmultithemeone52" )
    $(".editmmultithemeone52").hide();
   $(".savemmultithemeone52").show();
   $(".imageUploadmmultithemeone52").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone52").click(function() {
@@ -8304,6 +8325,7 @@ $( ".boxmmultithemeone53" )
    $(".editmmultithemeone53").hide();
   $(".savemmultithemeone53").show();
   $(".imageUploadmmultithemeone53").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone53").click(function() {
@@ -8371,6 +8393,7 @@ $( ".boxmmultithemeone54" )
    $(".editmmultithemeone54").hide();
   $(".savemmultithemeone54").show();
   $(".imageUploadmmultithemeone54").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone54").click(function() {
@@ -8438,6 +8461,7 @@ $( ".boxmmultithemeone55" )
    $(".editmmultithemeone55").hide();
   $(".savemmultithemeone55").show();
   $(".imageUploadmmultithemeone55").show();
+  $('.preview_outer').removeClass('fadeInUp');
 });
 
 $(".savemmultithemeone55").click(function() {
