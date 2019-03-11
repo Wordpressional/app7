@@ -16960,7 +16960,7 @@ label.imageUploadmpoltheme14:after {
   width: 90px;
   display: none;
   position: relative;
-  top: 50px;
+  top: -10px;
   right: 0px;
   padding: 4px 10px;
   border-top-right-radius: 2px;
@@ -17035,8 +17035,8 @@ label.imageUploadmpoltheme16:after {
   width: 30px;
   display: inline;
   position: relative;
-  top:-65px;
-  right:-10px;
+  top:-125px;
+  right:0px;
   padding: 8px 10px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 10px;
