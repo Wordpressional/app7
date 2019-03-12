@@ -588,7 +588,7 @@ function random_color() {
 
                          window.location.reload();
                       
-                       }, 300);
+                       }, 3000);
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {

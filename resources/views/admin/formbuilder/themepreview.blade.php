@@ -27,7 +27,7 @@
    
     <div class="precon">
 
-    {!! $form->htmlcontent !!} 
+    {!! html_entity_decode($form->htmlcontent) !!} 
     </div>
     
   

@@ -1,1 +1,1 @@
-Portfolio Theme - T1 test
+<label class="imageUploadlogonlnndynamic" for="imageUploadlogonlnndynamic">&nbsp;</label> <span><a data-cke-saved-href="<?php echo url('/'); ?>" href="<?php echo url('/'); ?>"><img id="imagePreviewlogolnndynamic" data-cke-saved-src="<?php echo url('themes/t1/logo2.png'); ?>" src="<?php echo url('themes/t1/logo2.png'); ?>" alt="Logo"></a>
