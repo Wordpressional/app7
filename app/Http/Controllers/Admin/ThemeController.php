@@ -610,7 +610,7 @@ class ThemeController extends Controller
         $theme1->save();
         }
 
-        if($request->themetwo){
+        else if($request->themetwo){
         $theme2 = Theme::where('tname', "Personal Theme - T2")->first();
         
        
@@ -620,7 +620,7 @@ class ThemeController extends Controller
         $theme2->save();
         }
 
-        if($request->themethree){
+        else if($request->themethree){
         $theme3 = Theme::where('tname', "Loan Theme - T3")->first();
       
         $theme3->tcontent = $request->themethree;
@@ -629,7 +629,7 @@ class ThemeController extends Controller
         $theme3->save();
         }
 
-        if($request->themefour){
+        else if($request->themefour){
         $theme4 = Theme::where('tname', "Business Theme - T4")->first();
        
         $theme4->tcontent = $request->themefour;
@@ -638,7 +638,7 @@ class ThemeController extends Controller
         $theme4->save();
         }
 
-        if($request->themefive){
+        else if($request->themefive){
         $theme5 = Theme::where('tname', "Politics Theme - T5")->first();
         
         $theme5->tcontent = $request->themefive;
@@ -647,7 +647,7 @@ class ThemeController extends Controller
         $theme5->save();
         }
 
-        if($request->themesix){
+        else if($request->themesix){
         $theme6 = Theme::where('tname', "General Theme - T01")->first();
        
         $theme6->tcontent = $request->themesix;
@@ -656,7 +656,7 @@ class ThemeController extends Controller
         $theme6->save();
         }
 
-        if($request->themeseven){
+        else if($request->themeseven){
         $theme7 = Theme::where('tname', "Basic Theme One - T02")->first();
         
         $theme7->tcontent = $request->themeseven;
@@ -665,7 +665,7 @@ class ThemeController extends Controller
         $theme7->save();
         }
 
-        if($request->themeeight){
+        else if($request->themeeight){
         $theme8 = Theme::where('tname', "BJP Theme One - TP2")->first();
         
         $theme8->tcontent = $request->themeeight;
@@ -674,7 +674,7 @@ class ThemeController extends Controller
         $theme8->save();
         }
 
-        if($request->themenine){
+        else if($request->themenine){
         $theme9 = Theme::where('tname', "BJP Theme Two - TP2")->first();
         
         $theme9->tcontent = $request->themenine;
@@ -683,13 +683,17 @@ class ThemeController extends Controller
         $theme9->save();
         }
 
-        if($request->themeten){
+        else if($request->themeten){
         $theme10 = Theme::where('tname', "BJP Theme Three - TP3")->first();
         
         $theme10->tcontent = $request->themeten;
 
         $theme10->tstatus = "inactive";
         $theme10->save();
+        }
+
+        else {
+            
         }
 
         return "success";
