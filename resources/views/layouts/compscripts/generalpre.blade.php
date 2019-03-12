@@ -72,7 +72,7 @@
   <!-- WOW JS -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
  
-     
+     <script src="{{ asset('js/parallaxie.js') }}"></script>
  <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 
       

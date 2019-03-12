@@ -82,6 +82,7 @@
   <script src="{{ asset('js/typed-custom.js') }}"></script>
   <!-- WOW JS -->
   <script src="{{ asset('js/wow.min.js') }}"></script>
+  <script src="{{ asset('js/parallaxie.js') }}"></script>
   
 <script src="{{ asset('webhome/editjs/editablejs.js') }}" type="text/javascript">      </script> 
 <script src="{{ asset('webhome/js/theme.js') }}"></script>
