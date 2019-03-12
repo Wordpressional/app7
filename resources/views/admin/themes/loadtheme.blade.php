@@ -509,18 +509,15 @@ function random_color() {
         
         
         
+        setTimeout(function(){ 
 
-        arrasso =  {"themeone": themeone, "themetwo": themetwo, "themethree": themethree, "themefour": themefour, "themefive": themefive, "themesix": themesix, "themeseven":themeseven, "themeeight":themeeight, "themenine":themenine, "themeten":themeten};
+                        
+        arrasso =  {"themeone": themeone, "themetwo": themetwo, "themethree": themethree, "themefour": themefour};
 
         console.log(arrasso);
      var token = document.getElementById('ttoken').value;
 
-      // var data = JSON.stringify({
-      //               _token: token,
-      //               arrasso: arrasso
-
-      //           });
- //alert(data);
+     
           $.ajax({
                 
                 headers: {
@@ -556,6 +553,106 @@ function random_color() {
                   }
 
                 });
+
+
+          }, 3000);
+
+         setTimeout(function(){ 
+
+                        
+        arrasso =  { "themefive": themefive, "themesix": themesix, "themeseven":themeseven};
+
+        console.log(arrasso);
+     var token = document.getElementById('ttoken').value;
+
+     
+          $.ajax({
+                
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+
+                url: "{{route('admin.loadthemes')}}",
+               
+                type: 'post',
+                data:  arrasso,
+                
+                success: function(result) {
+                  //alert(result);
+                  //alert("pppp");
+                  $('html,body').scrollTop(0);
+                  $('.successalert').css("display", "block");
+
+                     $('.successalert').text("Successfully Saved");
+
+                     setTimeout(function(){ 
+
+                         window.location.reload();
+                      
+                       }, 300);
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 3000);
+
+          setTimeout(function(){ 
+
+                        
+        arrasso =  { "themeeight":themeeight, "themenine":themenine, "themeten":themeten};
+
+        console.log(arrasso);
+     var token = document.getElementById('ttoken').value;
+
+     
+          $.ajax({
+                
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+
+                url: "{{route('admin.loadthemes')}}",
+               
+                type: 'post',
+                data:  arrasso,
+                
+                success: function(result) {
+                  //alert(result);
+                  //alert("pppp");
+                  $('html,body').scrollTop(0);
+                  $('.successalert').css("display", "block");
+
+                     $('.successalert').text("Successfully Saved");
+
+                     setTimeout(function(){ 
+
+                         window.location.reload();
+                      
+                       }, 300);
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 3000);
+
 
           
 
