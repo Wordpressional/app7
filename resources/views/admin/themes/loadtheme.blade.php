@@ -535,11 +535,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                     
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -583,11 +579,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                     
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -631,11 +623,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                     
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -679,11 +667,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                    
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -727,11 +711,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                     
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -775,11 +755,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                    
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -823,11 +799,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                    
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -871,11 +843,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                    
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
@@ -919,11 +887,7 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
+                     
 
                 },
                  error: function (jqXHR, textStatus, errorThrown) {
