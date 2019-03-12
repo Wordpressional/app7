@@ -502,57 +502,79 @@ class ThemeController extends Controller
     {
         //dd($request->themeone);
        
-
+        if($request->themeone){
         $theme = new Theme;
         $theme->tname = "Portfolio Theme - T1";
         $theme->tcontent = $request->themeone;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
 
+        if($request->themetwo){
         $theme = new Theme;
         $theme->tname = "Personal Theme - T2";
         $theme->tcontent = $request->themetwo;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
+
+        if($request->themethree){
         $theme = new Theme;
         $theme->tname = "Loan Theme - T3";
         $theme->tcontent = $request->themethree;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
+
+        if($request->themefour){
         $theme = new Theme;
         $theme->tname = "Business Theme - T4";
         $theme->tcontent = $request->themefour;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
+
+        if($request->themefive){
         $theme = new Theme;
         $theme->tname = "Politics Theme - T5";
         $theme->tcontent = $request->themefive;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
+
+        if($request->themesix){
         $theme = new Theme;
         $theme->tname = "General Theme - T01";
         $theme->tcontent = $request->themesix;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
+
+        if($request->themeseven){
         $theme = new Theme;
         $theme->tname = "Basic Theme One - T02";
         $theme->tcontent = $request->themeseven;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
 
+        if($request->themeeight){
         $theme = new Theme;
         $theme->tname = "BJP Theme One - TP1";
         $theme->tcontent = $request->themeeight;
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
+
+        if($request->themenine){
 
         $theme = new Theme;
         $theme->tname = "BJP Theme Two - TP2";
@@ -560,14 +582,16 @@ class ThemeController extends Controller
 
         $theme->tstatus = "inactive";
         $theme->save();
+        }
 
+        if($request->themeten){
         $theme = new Theme;
         $theme->tname = "BJP Theme Three - TP3";
         $theme->tcontent = $request->themeten;
 
         $theme->tstatus = "inactive";
         $theme->save();
-        
+        }
 
         return "success";
     }
@@ -575,6 +599,7 @@ class ThemeController extends Controller
     public function Reloadthemes(Request $request)
     {
         //dd($request->themeone);
+        if($request->themeone){
         $theme1 = Theme::where('tname', "Portfolio Theme - T1")->first();
         
         //dd($request->themeone);
@@ -583,7 +608,9 @@ class ThemeController extends Controller
 
         $theme1->tstatus = "inactive";
         $theme1->save();
+        }
 
+        if($request->themetwo){
         $theme2 = Theme::where('tname', "Personal Theme - T2")->first();
         
        
@@ -591,65 +618,79 @@ class ThemeController extends Controller
 
         $theme2->tstatus = "inactive";
         $theme2->save();
+        }
 
+        if($request->themethree){
         $theme3 = Theme::where('tname', "Loan Theme - T3")->first();
       
         $theme3->tcontent = $request->themethree;
 
         $theme3->tstatus = "inactive";
         $theme3->save();
+        }
 
+        if($request->themefour){
         $theme4 = Theme::where('tname', "Business Theme - T4")->first();
        
         $theme4->tcontent = $request->themefour;
 
         $theme4->tstatus = "inactive";
         $theme4->save();
+        }
 
+        if($request->themefive){
         $theme5 = Theme::where('tname', "Politics Theme - T5")->first();
         
         $theme5->tcontent = $request->themefive;
 
         $theme5->tstatus = "inactive";
         $theme5->save();
+        }
 
+        if($request->themesix){
         $theme6 = Theme::where('tname', "General Theme - T01")->first();
        
         $theme6->tcontent = $request->themesix;
 
         $theme6->tstatus = "inactive";
         $theme6->save();
+        }
 
+        if($request->themeseven){
         $theme7 = Theme::where('tname', "Basic Theme One - T02")->first();
         
         $theme7->tcontent = $request->themeseven;
 
         $theme7->tstatus = "inactive";
         $theme7->save();
+        }
 
-         $theme8 = Theme::where('tname', "BJP Theme One - TP2")->first();
+        if($request->themeeight){
+        $theme8 = Theme::where('tname', "BJP Theme One - TP2")->first();
         
         $theme8->tcontent = $request->themeeight;
 
         $theme8->tstatus = "inactive";
         $theme8->save();
+        }
 
-
+        if($request->themenine){
         $theme9 = Theme::where('tname', "BJP Theme Two - TP2")->first();
         
         $theme9->tcontent = $request->themenine;
 
         $theme9->tstatus = "inactive";
         $theme9->save();
+        }
 
-
+        if($request->themeten){
         $theme10 = Theme::where('tname', "BJP Theme Three - TP3")->first();
         
         $theme10->tcontent = $request->themeten;
 
         $theme10->tstatus = "inactive";
         $theme10->save();
-        
+        }
 
         return "success";
     }
