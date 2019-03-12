@@ -549,7 +549,7 @@ function random_color() {
                 });
 
 
-          }, 36000 );
+          }, 360 );
 
           
         
@@ -919,7 +919,7 @@ function random_color() {
 
           }, 36000 );
 
-           
+
 
 
            setTimeout(function(){ 
