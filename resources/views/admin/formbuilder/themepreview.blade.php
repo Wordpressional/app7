@@ -78,7 +78,7 @@ $(".requestEditSite").click(function(){
 });
 $(".requestDesktopSite").click(function(){
 //alert("desktop");
-window.location.href = "{{ url('/admin/forms/previewfull')}}"+"/"+"{{$form->id}}";
+window.location.href = "{{ url('/admin/themepreview')}}"+"/"+"{{$form->id}}";
   
 // vpw = 100;
 // vph = 'auto';
