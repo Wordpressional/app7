@@ -436,7 +436,7 @@ $.ajax({
 
 .iframecentmobi
 {
-    background: url(../../../images/Phone.png);
+    background: url(../images/Phone.png);
     background-repeat: no-repeat;
     
     background-size: 37%;
@@ -451,7 +451,7 @@ $.ajax({
 
 .iframecentmobi1
 {
-    background: url(../../../images/Tablet.png);
+    background: url(../images/Tablet.png);
     background-repeat: no-repeat;
     
     background-size: 70%;
