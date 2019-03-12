@@ -53,19 +53,19 @@
 
 </div>
 <div class="col-lg-3 col-md-3 bdstyle1 preinstall">
-<h5> BJP Theme One- TP1 </h5>
+<h5> BJP Theme One - TP1 </h5>
 <input type="text" id="themename7" name="themename7" value="BJP Theme - TP1" style="display:none;">
 <textarea rows="5" cols="70" id="theme7"  class="form-control fc" required="required" style="display:none;">{{ $themebjpone }}</textarea>
 
 </div>
 <div class="col-lg-3 col-md-3 bdstyle1 preinstall">
-<h5> BJP Theme Two- TP2 </h5>
+<h5> BJP Theme Two - TP2 </h5>
 <input type="text" id="themename8" name="themename8" value="BJP Theme - TP2" style="display:none;">
 <textarea rows="5" cols="70" id="theme8"  class="form-control fc" required="required" style="display:none;">{{ $themebjptwo }}</textarea>
 
 </div>
 <div class="col-lg-3 col-md-3 bdstyle1 preinstall">
-<h5> BJP Theme Three- TP3 </h5>
+<h5> BJP Theme Three - TP3 </h5>
 <input type="text" id="themename9" name="themename9" value="BJP Theme - TP3" style="display:none;">
 <textarea rows="5" cols="70" id="theme9"  class="form-control fc" required="required" style="display:none;">{{ $themebjpthree }}</textarea>
 

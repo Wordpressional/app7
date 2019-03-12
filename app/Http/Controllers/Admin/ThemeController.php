@@ -575,80 +575,80 @@ class ThemeController extends Controller
     public function Reloadthemes(Request $request)
     {
         //dd($request->themeone);
-        $theme = Theme::where('tname', "Portfolio Theme - T1")->first();
+        $theme1 = Theme::where('tname', "Portfolio Theme - T1")->first();
         
         //dd($request->themeone);
         
-        $theme->tcontent = $request->themeone;
+        $theme1->tcontent = $request->themeone;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme1->tstatus = "inactive";
+        $theme1->save();
 
-        $theme = Theme::where('tname', "Personal Theme - T2")->first();
+        $theme2 = Theme::where('tname', "Personal Theme - T2")->first();
         
        
-        $theme->tcontent = $request->themetwo;
+        $theme2->tcontent = $request->themetwo;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme2->tstatus = "inactive";
+        $theme2->save();
 
-        $theme = Theme::where('tname', "Loan Theme - T3")->first();
+        $theme3 = Theme::where('tname', "Loan Theme - T3")->first();
       
-        $theme->tcontent = $request->themethree;
+        $theme3->tcontent = $request->themethree;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme3->tstatus = "inactive";
+        $theme3->save();
 
-        $theme = Theme::where('tname', "Business Theme - T4")->first();
+        $theme4 = Theme::where('tname', "Business Theme - T4")->first();
        
-        $theme->tcontent = $request->themefour;
+        $theme4->tcontent = $request->themefour;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme4->tstatus = "inactive";
+        $theme4->save();
 
-        $theme = Theme::where('tname', "Politics Theme - T5")->first();
+        $theme5 = Theme::where('tname', "Politics Theme - T5")->first();
         
-        $theme->tcontent = $request->themefive;
+        $theme5->tcontent = $request->themefive;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme5->tstatus = "inactive";
+        $theme5->save();
 
-        $theme = Theme::where('tname', "General Theme - T01")->first();
+        $theme6 = Theme::where('tname', "General Theme - T01")->first();
        
-        $theme->tcontent = $request->themesix;
+        $theme6->tcontent = $request->themesix;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme6->tstatus = "inactive";
+        $theme6->save();
 
-        $theme = Theme::where('tname', "Basic Theme One - T02")->first();
+        $theme7 = Theme::where('tname', "Basic Theme One - T02")->first();
         
-        $theme->tcontent = $request->themeseven;
+        $theme7->tcontent = $request->themeseven;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme7->tstatus = "inactive";
+        $theme7->save();
 
-         $theme = Theme::where('tname', "BJP Theme One - TP2")->first();
+         $theme8 = Theme::where('tname', "BJP Theme One - TP2")->first();
         
-        $theme->tcontent = $request->themeeight;
+        $theme8->tcontent = $request->themeeight;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme8->tstatus = "inactive";
+        $theme8->save();
 
 
-        $theme = Theme::where('tname', "BJP Theme Two - TP2")->first();
+        $theme9 = Theme::where('tname', "BJP Theme Two - TP2")->first();
         
-        $theme->tcontent = $request->themenine;
+        $theme9->tcontent = $request->themenine;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme9->tstatus = "inactive";
+        $theme9->save();
 
 
-        $theme = Theme::where('tname', "BJP Theme Three - TP3")->first();
+        $theme10 = Theme::where('tname', "BJP Theme Three - TP3")->first();
         
-        $theme->tcontent = $request->themeten;
+        $theme10->tcontent = $request->themeten;
 
-        $theme->tstatus = "inactive";
-        $theme->save();
+        $theme10->tstatus = "inactive";
+        $theme10->save();
         
 
         return "success";
