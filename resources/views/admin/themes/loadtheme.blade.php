@@ -507,12 +507,58 @@ function random_color() {
         var themenine = $('#theme8').val();
         var themeten = $('#theme9').val();
         
-        
+        setTimeout(function(){ 
+
+                        
+        arrasso =  {"themeone": themeone, "themetwo": themetwo};
+
+        console.log(arrasso);
+     var token = document.getElementById('ttoken').value;
+
+     
+          $.ajax({
+                
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+
+                url: "{{route('admin.loadthemes')}}",
+               
+                type: 'post',
+                data:  arrasso,
+                
+                success: function(result) {
+                  //alert(result);
+                  //alert("pppp");
+                  $('html,body').scrollTop(0);
+                  $('.successalert').css("display", "block");
+
+                     $('.successalert').text("Successfully Saved");
+
+                     setTimeout(function(){ 
+
+                         window.location.reload();
+                      
+                       }, 300);
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 3000);
         
         setTimeout(function(){ 
 
                         
-        arrasso =  {"themeone": themeone, "themetwo": themetwo, "themethree": themethree, "themefour": themefour};
+        arrasso =  {"themethree": themethree, "themefour": themefour};
 
         console.log(arrasso);
      var token = document.getElementById('ttoken').value;
@@ -608,7 +654,7 @@ function random_color() {
           setTimeout(function(){ 
 
                         
-        arrasso =  { "themeeight":themeeight, "themenine":themenine, "themeten":themeten};
+        arrasso =  { "themeeight":themeeight, "themenine":themenine};
 
         console.log(arrasso);
      var token = document.getElementById('ttoken').value;
@@ -653,6 +699,53 @@ function random_color() {
 
           }, 3000);
 
+           setTimeout(function(){ 
+
+                        
+        arrasso =  { "themeten":themeten};
+
+        console.log(arrasso);
+     var token = document.getElementById('ttoken').value;
+
+     
+          $.ajax({
+                
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+
+                url: "{{route('admin.loadthemes')}}",
+               
+                type: 'post',
+                data:  arrasso,
+                
+                success: function(result) {
+                  //alert(result);
+                  //alert("pppp");
+                  $('html,body').scrollTop(0);
+                  $('.successalert').css("display", "block");
+
+                     $('.successalert').text("Successfully Saved");
+
+                     setTimeout(function(){ 
+
+                         window.location.reload();
+                      
+                       }, 300);
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 3000);
 
           
 
