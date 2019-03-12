@@ -9,8 +9,10 @@
  </head>
     <body>
    <div id="app">
+    <center><h3> View Mode </h3></center>
      <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
-     
+   <span><a style="font-size:30px; color:red; padding:20px;" class="requestEditSite">
+   <i class="fa fa-edit"></i></a> </span>
    <span><a style="font-size:30px; color:red; padding:20px;" class="requestDesktopSite">
    <i class="fa fa-desktop"></i></a> </span>
 
@@ -20,18 +22,13 @@
    <i class="fa fa-tablet"></i></a> </span>
 
    </div>
-  
+ <br><br><br>
     <div class="mau" id="mau">
-     
-  
-   
+      
     <div class="precon">
-
-    {!! html_entity_decode($form->htmlcontent) !!} 
+    {!! $form->htmlcontent !!} 
     </div>
-    
-  
- 
+     
 </div>
 
 <div class="precon1">
@@ -40,21 +37,19 @@
 
 </div>
      
-     @include('layouts.compscripts.generalprefull')
+    @include('layouts.compscripts.generalprefull')
 
     @include('layouts.compscripts.themeone')
-    
+     @include ('layouts.shortcode-layout')
+         @stack('inline-scripts')
     @include('layouts.compscripts.serviceworker')
        
-         @include ('layouts.shortcode-layout')
-         @stack('inline-scripts')
+        
 
 <script>
 
 $(document).ready(function(){
 $(".requestMobileSite").click(function(){
-
-
 //alert("mobile");
 if(detectmob()){
   alert("This function works only on desktop");
@@ -70,11 +65,21 @@ $('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("admin.f
  
  
 });
-
-
+$(".requestEditSite").click(function(){
+//alert("desktop");
+//location.reload();
+  window.location.href = "{{ url('/admin/forms/preview')}}"+"/"+"{{$form->id}}";
+// vpw = 100;
+// vph = 'auto';
+// $('.mau').css({'width': vpw + '%'});
+// $('.mau').css({'height': vph});
+// $('.mau').css({'height': vph + 'px'});
+// $('.mau').css({'margin': 'auto'});
+// $('.mau').css({'overflow': 'unset'});
+});
 $(".requestDesktopSite").click(function(){
 //alert("desktop");
-window.location.href = "{{ url('/admin/themepreview')}}";
+window.location.href = "{{ url('/admin/forms/previewfull')}}"+"/"+"{{$form->id}}";
   
 // vpw = 100;
 // vph = 'auto';
@@ -86,8 +91,6 @@ window.location.href = "{{ url('/admin/themepreview')}}";
 });
 
 $(".requestTabletSite").click(function(){
-
- 
 /*  if(detectmob()){
   alert("This function works only on desktop");
 } else {
@@ -194,6 +197,211 @@ $(".dropdowns").dropdowns();
 
 </script>
 
+<script>
+$( document ).ready(function() {
+
+  $(".mycElement").click(function() {
+        your_ajax_function(); 
+   });
+  //alert("hi");
+
+});
+
+  $('#testmail').click(function(){
+//alert("clicked");
+var mfileconfname = document.getElementsByClassName('mfileconfname');  
+var mfileconfname = mfileconfname[0].value;
+
+  var base_path = "{{url('/')}}"; 
+  //alert(base_path);
+var Path1 = base_path+'/mailconfs/'+mfileconfname;
+//alert(Path1);
+  
+ 
+ readTextFile(Path1);
+ //alert(s);
+});
+
+function readTextFile(file){
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    //alert(allText);
+                    doSomethingWithTheText(allText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+
+
+ 
+ function doSomethingWithTheText(dataf1)
+{
+  ///alert(data);
+
+  var mfileconfname = document.getElementsByClassName('mfileconfname');  
+var mfileconfname = mfileconfname[0].value;
+
+  var queryString = $('.cfs').serialize();
+  //alert(queryString);
+ var htmle= queryString.split("&");
+ var htmle1= htmle.join("<br />");
+
+ 
+  //alert(htmle1);
+  var data = dataf1+'&htmle="'+htmle1+'"';
+
+  //var new_str1 = dataf1.split("&");
+  var new_str2 = dataf1.split("&htmle=")[0];
+   
+  var df = new_str2+'&htmle="'+htmle1+'"';
+var df2 = df.split("mfileconfname")[0];
+var df2 = df2+'"';
+//alert(df2);
+
+var dataf2 = data;
+
+  //var datak = 'dataf="'+data+'"&mfileconfname="'+mfileconfname+'"';
+  var datak = JSON.stringify({
+                _token:String($('meta[name="csrf-token"]').attr('content')),
+                dataf:String(df2),
+                mfileconfname:String(mfileconfname)
+                
+            });
+//alert(datak);
+  $.ajax({
+            headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                  'Content-Type': 'application/json'
+                  },
+
+                url: "{{route('mail.updatemailconfig')}}",
+            datatype : "application/json",
+            contentType: "json",
+            
+            type: 'post',
+            data:  datak,
+    
+         success: function(data) {
+          //alert("File Upadated successfully");
+           //alert(data);
+         
+        },
+       
+    });
+
+   
+   doSomethingWithTheNewText(df2);
+    
+ }
+
+function doSomethingWithTheNewText(dataf2)
+{
+  
+
+
+
+
+$.ajax({
+            
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+              'Content-Type': 'application/json',
+
+              "accept": "application/json",
+              "Access-Control-Allow-Methods": "GET",
+              "Access-Control-Allow-Credentials": true,
+              "Access-Control-Allow-Origin":"http://139.59.47.15:8123/mymail",
+              "Access-Control-Allow-Headers": "Content-Type, Authorization"
+              },
+
+            url: 'http://139.59.47.15:8123/mymail',
+            datatype : "application/json",
+            contentType: "json",
+            crossDomain: true,
+            type: 'get',
+            data:  dataf2,
+    
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
+
+$.ajax({
+            
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+              'Content-Type': 'application/json',
+
+              "accept": "application/json",
+              "Access-Control-Allow-Methods": "GET",
+              "Access-Control-Allow-Credentials": true,
+              "Access-Control-Allow-Origin":"http://pyrupay.com/mailapp3/mymail",
+              "Access-Control-Allow-Headers": "Content-Type, Authorization"
+              },
+
+            url: 'http://pyrupay.com/mailapp3/mymail',
+            datatype : "application/json",
+            contentType: "json",
+            crossDomain: true,
+            type: 'get',
+            data:  dataf2,
+    
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
+
+
+$.ajax({
+            
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+              'Content-Type': 'application/json',
+
+              "accept": "application/json",
+              "Access-Control-Allow-Methods": "GET",
+              "Access-Control-Allow-Credentials": true,
+              "Access-Control-Allow-Origin":"http://localhost:8123/mymail",
+              "Access-Control-Allow-Headers": "Content-Type, Authorization"
+              },
+
+            url: 'http://localhost:8123/mymail',
+            datatype : "application/json",
+            contentType: "json",
+            crossDomain: true,
+            type: 'get',
+            data:  dataf2,
+    
+         success: function(data) {
+          alert("Sent email successfully");
+           
+        },
+       
+    });
+
+   
+ 
+ }
+
+
+</script>
+<script src="{{asset('webhome/js/psmtpmail.js')}}" type="text/javascript"></script>
+@include('layouts.compscripts.contactcustformscript')
+ 
+ 
+
 <style>
 .mau {
     margin: auto !important;
@@ -221,35 +429,39 @@ $(".dropdowns").dropdowns();
 }
 
 #mypreFrame1{
-  width:70%;
-   height:520px;
+  width:55%;
+   height:390px;
    
 }
 
 .iframecentmobi
 {
-    background: url(../images/Phone.png);
+    background: url(../../../images/Phone.png);
     background-repeat: no-repeat;
-    width: 1200px; 
-    background-size: 36%;
-    background-position: bottom center;
+    
+    background-size: 37%;
+    background-position: top center;
     padding-right: 1px;
     margin-top: 30px;
-    height: 930px;
+    height: 1930px;
     padding-top:170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .iframecentmobi1
 {
-    background: url(../images/Tablet.png);
+    background: url(../../../images/Tablet.png);
     background-repeat: no-repeat;
-    width: 1200px; 
-    background-size: 88%;
-    background-position: bottom center;
+    
+    background-size: 70%;
+    background-position: top center;
     padding-right: 1px;
     margin-top: 30px;
-    height: 800px;
-    padding-top:170px;
+    height: 1800px;
+    padding-top:120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main_h {
@@ -261,6 +473,15 @@ $(".dropdowns").dropdowns();
 
 #mpolheader{
    position: static;
+}
+.navbar-fixed-top {
+    position: static;
+    
+}
+
+#navigation.scroling-menu
+{
+  position: static;
 }
 
 </style>
