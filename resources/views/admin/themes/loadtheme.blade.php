@@ -549,7 +549,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
         
         setTimeout(function(){ 
 
@@ -593,7 +593,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
         setTimeout(function(){ 
 
@@ -637,7 +637,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
         
         setTimeout(function(){ 
 
@@ -681,7 +681,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
         setTimeout(function(){ 
 
@@ -725,7 +725,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
          setTimeout(function(){ 
 
@@ -769,7 +769,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
           setTimeout(function(){ 
 
@@ -813,7 +813,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
           setTimeout(function(){ 
 
@@ -857,7 +857,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
             setTimeout(function(){ 
 
@@ -901,7 +901,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
 
            setTimeout(function(){ 
@@ -950,7 +950,7 @@ function random_color() {
                 });
 
 
-          }, 9000);
+          }, 16000);
 
           
 
