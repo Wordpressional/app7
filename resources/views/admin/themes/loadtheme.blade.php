@@ -510,7 +510,7 @@ function random_color() {
          setTimeout(function(){ 
 
                         
-        arrasso =  {"themeone": themeone, "themetwo": themetwo};
+        arrasso =  {"themeone": themeone};
 
         console.log(arrasso);
      var token = document.getElementById('ttoken').value;
@@ -730,7 +730,7 @@ function random_color() {
          setTimeout(function(){ 
 
                         
-        arrasso =  {  "themesix": themesix, "themeseven":themeseven};
+        arrasso =  {  "themesix": themesix};
 
         console.log(arrasso);
      var token = document.getElementById('ttoken').value;
