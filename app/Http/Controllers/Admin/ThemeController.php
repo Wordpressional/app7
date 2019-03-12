@@ -60,13 +60,13 @@ class ThemeController extends Controller
         $themefive = view('admin.themes.themefive')->render();
         $themesix = view('admin.themes.themesix')->render();
         $themeseven = view('admin.themes.themeseven')->render();
-        $themeeight = view('admin.themes.themeeight')->render();
-        $themenine = view('admin.themes.themenine')->render();
-        $themeten = view('admin.themes.themeten')->render();
+        $themebjpone = view('admin.themes.bjpthemeonem')->render();
+        $themebjptwo = view('admin.themes.bjpthemetwoa')->render();
+        $themebjpthree = view('admin.themes.bjpthemethreepk')->render();
         
         
 
-        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themeseven','themeeight','themenine','themeten','themes','data','user'));
+        return view('admin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themeseven','themebjpone','themebjptwo','themebjpthree','themes','data','user'));
     }
      /**
      * Show the form for creating a new resource.
