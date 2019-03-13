@@ -538,9 +538,11 @@ function random_color() {
           xyz++;
           }
         
+        }else {
+          return false;
         }
         
-        else if(defCalls2)
+        if(defCalls2)
         {
           //alert(defCalls2);
           //alert(xyz);
@@ -548,10 +550,12 @@ function random_color() {
           var defCalls3 = setajax(arrasso3);
           xyz++;
           }
+        }else {
+          return false;
         }
         
        
-       else if(defCalls3)
+       if(defCalls3)
         {
           //alert(defCalls3);
           //alert(xyz);
@@ -559,10 +563,12 @@ function random_color() {
           var defCalls4 = setajax(arrasso4);
           xyz++;
           }
+        }else {
+          return false;
         }
         
        
-        else if(defCalls4)
+        if(defCalls4)
         {
           //alert(defCalls4);
           //alert(xyz);
@@ -570,10 +576,12 @@ function random_color() {
           var defCalls5 = setajax(arrasso5);
           xyz++;
           }
+        }else {
+          return false;
         }
         
        
-        else if(defCalls5)
+        if(defCalls5)
         {
           //alert(defCalls5);
           //alert(xyz);
@@ -581,10 +589,12 @@ function random_color() {
           var defCalls6 = setajax(arrasso6);
           xyz++;
          }
+        }else {
+          return false;
         }
         
        
-        else if(defCalls6)
+        if(defCalls6)
         {
           //alert(defCalls6);
           //alert(xyz);
@@ -592,10 +602,12 @@ function random_color() {
           var defCalls7 = setajax(arrasso7);
           xyz++;
           }
+        }else {
+          return false;
         }
         
        
-        else if(defCalls7)
+        if(defCalls7)
         {
           //alert(defCalls7);
           //alert(xyz);
@@ -603,10 +615,12 @@ function random_color() {
           var defCalls8 = setajax(arrasso8);
           xyz++;
           }
+        }else {
+          return false;
         }
         
        
-        else if(defCalls8)
+        if(defCalls8)
         {
           //alert(defCalls8);
           //alert(xyz);
@@ -614,10 +628,12 @@ function random_color() {
           var defCalls9 = setajax(arrasso9);
           xyz++;
           }
+        }else {
+          return false;
         }
         
        
-        else if(defCalls9)
+        if(defCalls9)
         {
           //alert(defCalls9);
           //alert(xyz);
@@ -625,10 +641,12 @@ function random_color() {
           var defCalls10 = setajax(arrasso10);
           xyz++;
           }
+        }else {
+          return false;
         }
         
        
-        else if(defCalls10)
+        if(defCalls10)
         {
           
           
