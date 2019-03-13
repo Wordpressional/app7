@@ -511,13 +511,13 @@ function random_color() {
         arrasso1 =  {"themeone": themeone};
         arrasso2 =  {"themetwo": themetwo};
         arrasso3 =  {"themethree": themethree};
-        arrasso4 =  {"themethree": themefour};
-        arrasso5 =  {"themethree": themefive};
-        arrasso6 =  {"themethree": themesix};
-        arrasso7 =  {"themethree": themeseven};
-        arrasso8 =  {"themethree": themeeight};
-        arrasso9 =  {"themethree": themenine};
-        arrasso10 =  {"themethree": themeten};
+        arrasso4 =  {"themefour": themefour};
+        arrasso5 =  {"themefive": themefive};
+        arrasso6 =  {"themesix": themesix};
+        arrasso7 =  {"themeseven": themeseven};
+        arrasso8 =  {"themeeight": themeeight};
+        arrasso9 =  {"themenine": themenine};
+        arrasso10 =  {"themeten": themeten};
 
 
         defCalls(arrasso1, arrasso2, arrasso3, arrasso4, arrasso5, arrasso6, arrasso7, arrasso8, arrasso9, arrasso10);
