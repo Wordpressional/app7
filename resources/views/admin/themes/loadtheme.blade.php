@@ -1,7 +1,9 @@
 
 @extends('admin.layouts.master')
 @section('content')
-<p id="HttpStatus" style="display:none;"></p>
+
+<input type="text" id="HttpStatus" style="display:none;">
+
 <div class="codefiles" style="display:none;">
 <h3> Pre Installed Themes </h3>
 <div class="row">
@@ -1270,7 +1272,7 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
-            $("#HttpStatus").text(xhr.status);
+            $("#HttpStatus").val(xhr.status);
      
              
 
