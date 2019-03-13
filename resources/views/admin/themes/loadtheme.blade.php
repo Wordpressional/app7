@@ -531,7 +531,7 @@ function random_color() {
         }
         if(defCalls1)
         {
-          alert(defCalls1);
+          alert(http_status(defCalls1));
           //alert(xyz);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
@@ -542,7 +542,7 @@ function random_color() {
         
         if(defCalls2)
         {
-          alert(defCalls2);
+          alert(http_status(defCalls2));
           //alert(xyz);
           if(xyz == 3){ 
           var defCalls3 = setajax(arrasso3);
