@@ -523,56 +523,101 @@ function random_color() {
         
 
         //promise = defCalls1(arrasso1).then(defCalls2(arrasso2)).then(defCalls3(arrasso3)).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
-        interval = setInterval(function(){
+       
 
         var defCalls1 =  setajax(arrasso1);
 
         if(defCalls1)
         {
-          
+           interval = setInterval(function(){
           var defCalls2 = setajax(arrasso2);
+           }, 6000);
         
-        }  
-        else if(defCalls2)
+        } else {
+          return false;
+        }
+        
+        if(defCalls2)
         {
+          interval = setInterval(function(){
           var defCalls3 = setajax(arrasso3);
+           }, 6000);
         }
-        else if(defCalls3)
+        else {
+          return false;
+        }
+       
+       if(defCalls3)
         {
-         
+         interval = setInterval(function(){
           var defCalls4 = setajax(arrasso4);
+          }, 6000);
         }
-        else if(defCalls4)
+        else {
+          return false;
+        }
+       
+        if(defCalls4)
         {
-         
+         interval = setInterval(function(){
           var defCalls5 = setajax(arrasso5);
+          }, 6000);
         }
-        else if(defCalls5)
+        else {
+          return false;
+        }
+       
+        if(defCalls5)
         {
-         
+         interval = setInterval(function(){
           var defCalls6 = setajax(arrasso6);
+          }, 6000);
         }
-        else if(defCalls6)
+        else {
+          return false;
+        }
+       
+        if(defCalls6)
         {
-          
+          interval = setInterval(function(){
           var defCalls7 = setajax(arrasso7);
+          }, 6000);
         }
-        else if(defCalls7)
+        else {
+          return false;
+        }
+       
+        if(defCalls7)
         {
-          
+          interval = setInterval(function(){
           var defCalls8 = setajax(arrasso8);
+          }, 6000);
         }
-        else if(defCalls8)
+        else {
+          return false;
+        }
+       
+        if(defCalls8)
         {
-          
+          interval = setInterval(function(){
           var defCalls9 = setajax(arrasso9);
+          }, 6000);
         }
-        else if(defCalls9)
+        else {
+          return false;
+        }
+       
+        if(defCalls9)
         {
-          
+          interval = setInterval(function(){
           var defCalls10 = setajax(arrasso10);
+          }, 6000);
         }
-        else if(defCalls10)
+        else {
+          return false;
+        }
+       
+        if(defCalls10)
         {
           
           clearInterval(interval);
@@ -585,7 +630,7 @@ function random_color() {
         } else {
           return false;
         }
-        }, 6000);
+       
         
         //setajax(arrasso1);
 
