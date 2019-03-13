@@ -538,11 +538,9 @@ function random_color() {
           xyz++;
           }
         
-        } else {
-          return false;
         }
         
-        if(defCalls2)
+        else if(defCalls2)
         {
           alert(defCalls2);
           alert(xyz);
@@ -551,11 +549,9 @@ function random_color() {
           xyz++;
           }
         }
-        else {
-          return false;
-        }
+        
        
-       if(defCalls3)
+       else if(defCalls3)
         {
           alert(defCalls3);
           alert(xyz);
@@ -564,11 +560,9 @@ function random_color() {
           xyz++;
           }
         }
-        else {
-          return false;
-        }
+        
        
-        if(defCalls4)
+        else if(defCalls4)
         {
           alert(defCalls4);
           alert(xyz);
@@ -577,11 +571,9 @@ function random_color() {
           xyz++;
           }
         }
-        else {
-          return false;
-        }
+        
        
-        if(defCalls5)
+        else if(defCalls5)
         {
           alert(defCalls5);
           alert(xyz);
@@ -590,11 +582,9 @@ function random_color() {
           xyz++;
          }
         }
-        else {
-          return false;
-        }
+        
        
-        if(defCalls6)
+        else if(defCalls6)
         {
           alert(defCalls6);
           alert(xyz);
@@ -603,11 +593,9 @@ function random_color() {
           xyz++;
           }
         }
-        else {
-          return false;
-        }
+        
        
-        if(defCalls7)
+        else if(defCalls7)
         {
           alert(defCalls7);
           alert(xyz);
@@ -616,11 +604,9 @@ function random_color() {
           xyz++;
           }
         }
-        else {
-          return false;
-        }
+        
        
-        if(defCalls8)
+        else if(defCalls8)
         {
           alert(defCalls8);
           alert(xyz);
@@ -629,11 +615,9 @@ function random_color() {
           xyz++;
           }
         }
-        else {
-          return false;
-        }
+        
        
-        if(defCalls9)
+        else if(defCalls9)
         {
           alert(defCalls9);
           alert(xyz);
@@ -642,11 +626,9 @@ function random_color() {
           xyz++;
           }
         }
-        else {
-          return false;
-        }
+        
        
-        if(defCalls10)
+        else if(defCalls10)
         {
           
           
