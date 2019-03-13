@@ -614,7 +614,7 @@ function random_color() {
           }, 300);
 
         }
-        }, 300);
+        }, 16000);
         
         //setajax(arrasso1);
 
