@@ -531,7 +531,7 @@ function random_color() {
         }
         if(defCalls1)
         {
-          alert(http_status(defCalls1));
+          alert($http_response_header[0]);
           //alert(xyz);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
