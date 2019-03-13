@@ -531,6 +531,7 @@ function random_color() {
         }
         if(defCalls1)
         {
+          alert(xyz);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
           xyz++;
@@ -631,7 +632,7 @@ function random_color() {
         if(defCalls10)
         {
           
-          clearInterval(interval);
+          
           setTimeout(function(){ 
 
            window.location.reload();
@@ -1282,7 +1283,7 @@ var token = document.getElementById('ttoken').value;
 
         });
 
-
+return true;
  
 }
 
