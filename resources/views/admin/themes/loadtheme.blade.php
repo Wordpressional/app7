@@ -531,6 +531,7 @@ function random_color() {
         }
         if(defCalls1)
         {
+          alert(defCalls1);
           alert(xyz);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
@@ -543,6 +544,7 @@ function random_color() {
         
         if(defCalls2)
         {
+          alert(defCalls2);
           alert(xyz);
           if(xyz == 3){ 
           var defCalls3 = setajax(arrasso3);
@@ -555,6 +557,7 @@ function random_color() {
        
        if(defCalls3)
         {
+          alert(defCalls3);
           alert(xyz);
           if(xyz == 4){ 
           var defCalls4 = setajax(arrasso4);
@@ -567,6 +570,7 @@ function random_color() {
        
         if(defCalls4)
         {
+          alert(defCalls4);
           alert(xyz);
           if(xyz == 5){ 
           var defCalls5 = setajax(arrasso5);
@@ -579,6 +583,7 @@ function random_color() {
        
         if(defCalls5)
         {
+          alert(defCalls5);
           alert(xyz);
          if(xyz == 6){ 
           var defCalls6 = setajax(arrasso6);
@@ -591,6 +596,7 @@ function random_color() {
        
         if(defCalls6)
         {
+          alert(defCalls6);
           alert(xyz);
           if(xyz == 7){ 
           var defCalls7 = setajax(arrasso7);
@@ -603,6 +609,7 @@ function random_color() {
        
         if(defCalls7)
         {
+          alert(defCalls7);
           alert(xyz);
           if(xyz == 8){ 
           var defCalls8 = setajax(arrasso8);
@@ -615,6 +622,7 @@ function random_color() {
        
         if(defCalls8)
         {
+          alert(defCalls8);
           alert(xyz);
           if(xyz == 9){ 
           var defCalls9 = setajax(arrasso9);
@@ -627,6 +635,7 @@ function random_color() {
        
         if(defCalls9)
         {
+          alert(defCalls9);
           alert(xyz);
           if(xyz == 10){ 
           var defCalls10 = setajax(arrasso10);
@@ -1278,7 +1287,7 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
 
-             
+             return "200 Success";
 
         },
          error: function (jqXHR, textStatus, errorThrown) {
@@ -1291,7 +1300,7 @@ var token = document.getElementById('ttoken').value;
 
         });
 
-return true;
+
  
 }
 
