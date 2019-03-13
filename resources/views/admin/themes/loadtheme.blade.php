@@ -1269,7 +1269,7 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
 
-             return "200 Success";
+             
 
         },
          error: function (jqXHR, textStatus, errorThrown) {
@@ -1282,7 +1282,7 @@ var token = document.getElementById('ttoken').value;
 
         });
 
-
+return "200 Success";
  
 }
 
