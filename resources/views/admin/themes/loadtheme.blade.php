@@ -1244,10 +1244,7 @@ function random_color() {
 
 function setajax(arrasso)
 {
-
-
-
-                        
+                     
         //arrasso =  {"themeone": themeone};
 
 console.log(arrasso);
@@ -1273,8 +1270,8 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
-            $("#HttpStatus").val(xhr.status);
-     
+           
+            myfunc(xhr.status);
              
 
         },
@@ -1292,6 +1289,11 @@ return "200 Success";
  
 }
 
+function myfunc(s)
+{
+   var status = $("#HttpStatus").val(s);
+   alert(status);
+}
 /*function defCalls1(arrasso1){
    var def = $.Deferred();
    $.when(setajax(arrasso1)).done(function(r1){
