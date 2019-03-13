@@ -543,6 +543,7 @@ function random_color() {
         
         if(defCalls2)
         {
+          alert(xyz);
           if(xyz == 3){ 
           var defCalls3 = setajax(arrasso3);
           xyz++;
@@ -554,6 +555,7 @@ function random_color() {
        
        if(defCalls3)
         {
+          alert(xyz);
           if(xyz == 4){ 
           var defCalls4 = setajax(arrasso4);
           xyz++;
@@ -565,6 +567,7 @@ function random_color() {
        
         if(defCalls4)
         {
+          alert(xyz);
           if(xyz == 5){ 
           var defCalls5 = setajax(arrasso5);
           xyz++;
@@ -576,6 +579,7 @@ function random_color() {
        
         if(defCalls5)
         {
+          alert(xyz);
          if(xyz == 6){ 
           var defCalls6 = setajax(arrasso6);
           xyz++;
@@ -587,6 +591,7 @@ function random_color() {
        
         if(defCalls6)
         {
+          alert(xyz);
           if(xyz == 7){ 
           var defCalls7 = setajax(arrasso7);
           xyz++;
@@ -598,6 +603,7 @@ function random_color() {
        
         if(defCalls7)
         {
+          alert(xyz);
           if(xyz == 8){ 
           var defCalls8 = setajax(arrasso8);
           xyz++;
@@ -609,6 +615,7 @@ function random_color() {
        
         if(defCalls8)
         {
+          alert(xyz);
           if(xyz == 9){ 
           var defCalls9 = setajax(arrasso9);
           xyz++;
@@ -620,6 +627,7 @@ function random_color() {
        
         if(defCalls9)
         {
+          alert(xyz);
           if(xyz == 10){ 
           var defCalls10 = setajax(arrasso10);
           xyz++;
