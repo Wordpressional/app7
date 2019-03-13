@@ -2,7 +2,7 @@
 @extends('admin.layouts.master')
 @section('content')
 
-<input type="text" id="HttpStatus" style="display:none;">
+
 
 <div class="codefiles" style="display:none;">
 <h3> Pre Installed Themes </h3>
@@ -78,6 +78,7 @@
 
 <meta name="_token" content="{{ csrf_token() }}"/>
 <input type="hidden" id="ttoken" name="_token" value="{{ csrf_token() }}">
+<input type="text" id="HttpStatus" style="display:none;">
 @if($themes == "empty")
 
 <button id="load">Load Pre Installed Themes</button>
