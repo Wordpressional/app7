@@ -641,11 +641,11 @@ function random_color() {
         {
           
           
-          setTimeout(function(){ 
+          //setTimeout(function(){ 
 
-           window.location.reload();
+          // window.location.reload();
         
-          }, 300);
+          //}, 300);
 
         } else {
           return false;
