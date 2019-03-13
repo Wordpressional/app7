@@ -531,105 +531,89 @@ function random_color() {
         }
         if(defCalls1)
         {
-          //alert(defCalls1);
+          alert(defCalls1);
           //alert(xyz);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
           xyz++;
           }
         
-        }else {
-          return false;
         }
         
         if(defCalls2)
         {
-          //alert(defCalls2);
+          alert(defCalls2);
           //alert(xyz);
           if(xyz == 3){ 
           var defCalls3 = setajax(arrasso3);
           xyz++;
           }
-        }else {
-          return false;
         }
         
        
        if(defCalls3)
         {
-          //alert(defCalls3);
+          alert(defCalls3);
           //alert(xyz);
           if(xyz == 4){ 
           var defCalls4 = setajax(arrasso4);
           xyz++;
           }
-        }else {
-          return false;
         }
         
        
         if(defCalls4)
         {
-          //alert(defCalls4);
+          alert(defCalls4);
           //alert(xyz);
           if(xyz == 5){ 
           var defCalls5 = setajax(arrasso5);
           xyz++;
           }
-        }else {
-          return false;
         }
         
        
         if(defCalls5)
         {
-          //alert(defCalls5);
+          alert(defCalls5);
           //alert(xyz);
          if(xyz == 6){ 
           var defCalls6 = setajax(arrasso6);
           xyz++;
          }
-        }else {
-          return false;
         }
         
        
         if(defCalls6)
         {
-          //alert(defCalls6);
+          alert(defCalls6);
           //alert(xyz);
           if(xyz == 7){ 
           var defCalls7 = setajax(arrasso7);
           xyz++;
           }
-        }else {
-          return false;
         }
         
        
         if(defCalls7)
         {
-          //alert(defCalls7);
+          alert(defCalls7);
           //alert(xyz);
           if(xyz == 8){ 
           var defCalls8 = setajax(arrasso8);
           xyz++;
           }
-        }else {
-          return false;
         }
         
        
         if(defCalls8)
         {
-          //alert(defCalls8);
+          alert(defCalls8);
           //alert(xyz);
           if(xyz == 9){ 
           var defCalls9 = setajax(arrasso9);
           xyz++;
           }
-        }else {
-          return false;
         }
         
        
@@ -641,8 +625,6 @@ function random_color() {
           var defCalls10 = setajax(arrasso10);
           xyz++;
           }
-        }else {
-          return false;
         }
         
        
@@ -656,9 +638,7 @@ function random_color() {
         
           //}, 300);
 
-        } else {
-          return false;
-        }
+        } 
         }
         
         //setajax(arrasso1);
@@ -1287,7 +1267,7 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
 
-             
+             return true;
 
         },
          error: function (jqXHR, textStatus, errorThrown) {
@@ -1300,7 +1280,7 @@ var token = document.getElementById('ttoken').value;
 
         });
 
-return "200 Success";
+return false;
  
 }
 
