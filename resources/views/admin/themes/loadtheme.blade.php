@@ -520,7 +520,16 @@ function random_color() {
         arrasso10 =  {"themeten": themeten};
 
 
-        promise = defCalls1(arrasso1).then(defCalls2(arrasso2)).then(defCalls3(arrasso3)).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
+        promise = defCalls1(arrasso1).
+        then(setTimeout(function(){ defCalls2(arrasso2) }, 6000)).
+          then(setTimeout(function(){defCalls3(arrasso3) }, 6000)).
+          then(setTimeout(function(){defCalls4(arrasso4) }, 6000)).
+          then(setTimeout(function(){defCalls5(arrasso5) }, 6000)).
+          then(setTimeout(function(){defCalls6(arrasso6) }, 6000)).
+          then(setTimeout(function(){defCalls7(arrasso7) }, 6000)).
+          then(setTimeout(function(){defCalls8(arrasso8) }, 6000)).
+          then(setTimeout(function(){defCalls9(arrasso9) }, 6000)).
+          then(setTimeout(function(){defCalls10(arrasso10) }, 6000));
 
         
 
