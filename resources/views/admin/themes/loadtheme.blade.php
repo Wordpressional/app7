@@ -1,7 +1,7 @@
 
 @extends('admin.layouts.master')
 @section('content')
-
+<p id="HttpStatus" style="display:none;"></p>
 <div class="codefiles" style="display:none;">
 <h3> Pre Installed Themes </h3>
 <div class="row">
@@ -533,7 +533,8 @@ function random_color() {
         {
           
           // retrieve the pending request from the context variable
-                   
+          var showStatus = document.getElementById("HttpStatus"); 
+          alert(showStatus);        
           //alert(xyz);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
@@ -1269,6 +1270,10 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
+             var showStatus = document.getElementById("HttpStatus");
+    
+              showStatus.innerHTML = xhr.status;
+     
              
 
         },
