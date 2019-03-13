@@ -533,7 +533,7 @@ function random_color() {
         {
           
           // retrieve the pending request from the context variable
-          var showStatus = document.getElementById("HttpStatus"); 
+          var showStatus = $("#HttpStatus").val(); 
           alert(showStatus);        
           //alert(xyz);
           if(xyz == 2){ 
