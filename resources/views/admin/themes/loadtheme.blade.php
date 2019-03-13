@@ -1270,9 +1270,7 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
-             var showStatus = document.getElementById("HttpStatus");
-    
-              showStatus.innerHTML = xhr.status;
+            $("#HttpStatus").text(xhr.status);
      
              
 
