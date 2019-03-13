@@ -523,15 +523,18 @@ function random_color() {
         
 
         //promise = defCalls1(arrasso1).then(defCalls2(arrasso2)).then(defCalls3(arrasso3)).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
-       
-
+        var xyz = 1;
+        interval = setInterval(function(){
+        if(xyz == 1){
         var defCalls1 =  setajax(arrasso1);
-
+        xyz++;
+        }
         if(defCalls1)
         {
-           interval = setInterval(function(){
+          if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
-           }, 6000);
+          xyz++;
+          }
         
         } else {
           return false;
@@ -539,9 +542,10 @@ function random_color() {
         
         if(defCalls2)
         {
-          interval = setInterval(function(){
+          if(xyz == 3){ 
           var defCalls3 = setajax(arrasso3);
-           }, 6000);
+          xyz++;
+          }
         }
         else {
           return false;
@@ -549,9 +553,10 @@ function random_color() {
        
        if(defCalls3)
         {
-         interval = setInterval(function(){
+          if(xyz == 4){ 
           var defCalls4 = setajax(arrasso4);
-          }, 6000);
+          xyz++;
+          }
         }
         else {
           return false;
@@ -559,9 +564,10 @@ function random_color() {
        
         if(defCalls4)
         {
-         interval = setInterval(function(){
+          if(xyz == 5){ 
           var defCalls5 = setajax(arrasso5);
-          }, 6000);
+          xyz++;
+          }
         }
         else {
           return false;
@@ -569,9 +575,10 @@ function random_color() {
        
         if(defCalls5)
         {
-         interval = setInterval(function(){
+         if(xyz == 6){ 
           var defCalls6 = setajax(arrasso6);
-          }, 6000);
+          xyz++;
+         }
         }
         else {
           return false;
@@ -579,9 +586,10 @@ function random_color() {
        
         if(defCalls6)
         {
-          interval = setInterval(function(){
+          if(xyz == 7){ 
           var defCalls7 = setajax(arrasso7);
-          }, 6000);
+          xyz++;
+          }
         }
         else {
           return false;
@@ -589,9 +597,10 @@ function random_color() {
        
         if(defCalls7)
         {
-          interval = setInterval(function(){
+          if(xyz == 8){ 
           var defCalls8 = setajax(arrasso8);
-          }, 6000);
+          xyz++;
+          }
         }
         else {
           return false;
@@ -599,9 +608,10 @@ function random_color() {
        
         if(defCalls8)
         {
-          interval = setInterval(function(){
+          if(xyz == 9){ 
           var defCalls9 = setajax(arrasso9);
-          }, 6000);
+          xyz++;
+          }
         }
         else {
           return false;
@@ -609,9 +619,10 @@ function random_color() {
        
         if(defCalls9)
         {
-          interval = setInterval(function(){
+          if(xyz == 10){ 
           var defCalls10 = setajax(arrasso10);
-          }, 6000);
+          xyz++;
+          }
         }
         else {
           return false;
@@ -630,7 +641,7 @@ function random_color() {
         } else {
           return false;
         }
-       
+        }, 6000);
         
         //setajax(arrasso1);
 
