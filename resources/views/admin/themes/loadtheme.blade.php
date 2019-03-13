@@ -507,7 +507,16 @@ function random_color() {
         var themenine = $('#theme8').val();
         var themeten = $('#theme9').val();
 
-         setTimeout(function(){ 
+
+        arrasso1 =  {"themeone": themeone};
+        arrasso2 =  {"themetwo": themetwo};
+        arrasso3 =  {"themethree": themethree};
+
+        defCalls(arrasso1, arrasso2, arrasso3);
+
+        //setajax(arrasso1);
+
+         /*setTimeout(function(){ 
 
                         
         arrasso =  {"themeone": themeone};
@@ -535,7 +544,23 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                    setTimeout(function(){ 
+                     
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+        
+        setTimeout(function(){ 
 
                         
         arrasso =  {"themetwo": themetwo};
@@ -563,7 +588,23 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                       setTimeout(function(){ 
+                     
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+
+        setTimeout(function(){ 
 
                         
         arrasso =  {"themethree": themethree};
@@ -591,7 +632,23 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
+                     
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+        
+        setTimeout(function(){ 
 
                         
         arrasso =  {"themefour": themefour};
@@ -612,14 +669,30 @@ function random_color() {
                 data:  arrasso,
                 
                 success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
+                	//alert(result);
+                	//alert("pppp");
+                	$('html,body').scrollTop(0);
                   $('.successalert').css("display", "block");
 
                      $('.successalert').text("Successfully Saved");
 
-                    setTimeout(function(){ 
+                    
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+
+        setTimeout(function(){ 
 
                         
         arrasso =  { "themefive": themefive};
@@ -647,7 +720,23 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
+                     
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+
+         setTimeout(function(){ 
 
                         
         arrasso =  {  "themesix": themesix};
@@ -689,83 +778,7 @@ function random_color() {
                 });
 
 
-          }, 6000 );
-
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 6000 );
-
-         
-
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 6000 );
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 6000 );
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 6000 ); 
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 360 );
-
-        
+          }, 16000);
 
           setTimeout(function(){ 
 
@@ -795,7 +808,23 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                     setTimeout(function(){ 
+                    
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+
+          setTimeout(function(){ 
 
                         
         arrasso =  { "themeeight":themeeight};
@@ -823,7 +852,23 @@ function random_color() {
 
                      $('.successalert').text("Successfully Saved");
 
-                      setTimeout(function(){ 
+                    
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+
+            setTimeout(function(){ 
 
                         
         arrasso =  {"themenine":themenine};
@@ -852,6 +897,22 @@ function random_color() {
                      $('.successalert').text("Successfully Saved");
 
                      
+
+                },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                      if (jqXHR.status == 500) {
+                          alert('Internal error: ' + jqXHR.responseText);
+                      } else {
+                          alert('Unexpected error.'+errorThrown);
+                      }
+                  }
+
+                });
+
+
+          }, 16000);
+
+
            setTimeout(function(){ 
 
                         
@@ -898,53 +959,8 @@ function random_color() {
                 });
 
 
-          }, 6000 );
+          }, 16000);*/
 
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 6000 );
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 6000 );
-
-           
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 600 );
-
-  
           
 
     });
@@ -1092,6 +1108,69 @@ function random_color() {
 });
 
 });
+
+function setajax(arrasso)
+{
+
+setTimeout(function(){ 
+
+                        
+        //arrasso =  {"themeone": themeone};
+
+console.log(arrasso);
+var token = document.getElementById('ttoken').value;
+
+
+  $.ajax({
+        
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          },
+
+        url: "{{route('admin.loadthemes')}}",
+       
+        type: 'post',
+        data:  arrasso,
+        
+        success: function(result) {
+          //alert(result);
+          //alert("pppp");
+          $('html,body').scrollTop(0);
+          $('.successalert').css("display", "block");
+
+             $('.successalert').text("Successfully Saved");
+
+             
+
+        },
+         error: function (jqXHR, textStatus, errorThrown) {
+              if (jqXHR.status == 500) {
+                  alert('Internal error: ' + jqXHR.responseText);
+              } else {
+                  alert('Unexpected error.'+errorThrown);
+              }
+          }
+
+        });
+
+
+  }, 16000);
+}
+
+function defCalls(arrasso1, arrasso2, arrasso3){
+   var def = $.Deferred();
+   $.when(setajax(arrasso1),setajax(arrasso2),setajax(arrasso3)).done(function(r1,r2,r3){
+     def.resolve(r1,r2,r3);
+   })
+   return def.promise();
+}
+ 
+defCalls().done(function(d1,d2,d3){
+   //now we have access to data...
+})
+
+
+
 </script>
 
 @endsection
