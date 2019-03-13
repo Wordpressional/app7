@@ -544,7 +544,7 @@ function random_color() {
         
         if(defCalls2)
         {
-          alert(http_status(defCalls2));
+          alert(defCalls2);
           //alert(xyz);
           if(xyz == 3){ 
           var defCalls3 = setajax(arrasso3);
@@ -1268,7 +1268,7 @@ var token = document.getElementById('ttoken').value;
           $('.successalert').css("display", "block");
 
              $('.successalert').text("Successfully Saved");
-             alert(xhr.status);
+             //alert(xhr.status);
              
 
         },
