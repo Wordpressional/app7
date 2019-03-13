@@ -520,7 +520,9 @@ function random_color() {
         arrasso10 =  {"themeten": themeten};
 
 
-        defCalls(arrasso1, arrasso2, arrasso3, arrasso4, arrasso5, arrasso6, arrasso7, arrasso8, arrasso9, arrasso10);
+        promise = defCalls2(arrasso2).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
+
+        
 
         //setajax(arrasso1);
 
@@ -1165,17 +1167,95 @@ var token = document.getElementById('ttoken').value;
   }, 16000);
 }
 
-function defCalls(arrasso1, arrasso2, arrasso3, arrasso4, arrasso5, arrasso6, arrasso7, arrasso8, arrasso9, arrasso10){
+function defCalls1(arrasso1){
    var def = $.Deferred();
-   $.when(setajax(arrasso1),setajax(arrasso2),setajax(arrasso3),setajax(arrasso4),setajax(arrasso5),setajax(arrasso6),setajax(arrasso7),setajax(arrasso8),setajax(arrasso9),setajax(arrasso10)).done(function(r1,r2,r3,r4,r5,r6,r7,r8,r9,r10){
-     def.resolve(r1,r2,r3,r4,r5,r6,r7,r8,r9,r10);
+   $.when(setajax(arrasso1)).done(function(r1){
+     def.resolve(r1);
    })
    return def.promise();
 }
  
-defCalls().done(function(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10){
-   
-})
+
+
+function defCalls2(arrasso2){
+   var def = $.Deferred();
+   $.when(setajax(arrasso2)).done(function(r2){
+     def.resolve(r2);
+   })
+   return def.promise();
+}
+ 
+
+
+function defCalls3(arrasso3){
+   var def = $.Deferred();
+   $.when(setajax(arrasso3)).done(function(r3){
+     def.resolve(r3);
+   })
+   return def.promise();
+}
+ 
+
+
+function defCalls4(arrasso4){
+   var def = $.Deferred();
+   $.when(setajax(arrasso4)).done(function(r4){
+     def.resolve(r4);
+   })
+   return def.promise();
+}
+ 
+
+
+function defCalls5(arrasso5){
+   var def = $.Deferred();
+   $.when(setajax(arrasso5)).done(function(r5){
+     def.resolve(r5);
+   })
+   return def.promise();
+}
+
+function defCalls6(arrasso6){
+   var def = $.Deferred();
+   $.when(setajax(arrasso6)).done(function(r6){
+     def.resolve(r6);
+   })
+   return def.promise();
+}
+
+function defCalls7(arrasso7){
+   var def = $.Deferred();
+   $.when(setajax(arrasso7)).done(function(r7){
+     def.resolve(r7);
+   })
+   return def.promise();
+}
+
+function defCalls8(arrasso8){
+   var def = $.Deferred();
+   $.when(setajax(arrasso8)).done(function(r8){
+     def.resolve(r8);
+   })
+   return def.promise();
+}
+
+function defCalls9(arrasso9){
+   var def = $.Deferred();
+   $.when(setajax(arrasso9)).done(function(r9){
+     def.resolve(r9);
+   })
+   return def.promise();
+}
+
+function defCalls10(arrasso10){
+   var def = $.Deferred();
+   $.when(setajax(arrasso10)).done(function(r10){
+     def.resolve(r10);
+   })
+   return def.promise();
+}
+ 
+
 
 
 
