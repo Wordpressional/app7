@@ -520,19 +520,102 @@ function random_color() {
         arrasso10 =  {"themeten": themeten};
 
 
-        promise = defCalls1(arrasso1).
-        then(setTimeout(function(){ defCalls2(arrasso2) }, 6000)).
-          then(setTimeout(function(){defCalls3(arrasso3) }, 6000)).
-          then(setTimeout(function(){defCalls4(arrasso4) }, 6000)).
-          then(setTimeout(function(){defCalls5(arrasso5) }, 6000)).
-          then(setTimeout(function(){defCalls6(arrasso6) }, 6000)).
-          then(setTimeout(function(){defCalls7(arrasso7) }, 6000)).
-          then(setTimeout(function(){defCalls8(arrasso8) }, 6000)).
-          then(setTimeout(function(){defCalls9(arrasso9) }, 6000)).
-          then(setTimeout(function(){defCalls10(arrasso10) }, 6000));
-
         
 
+        //promise = defCalls1(arrasso1).then(defCalls2(arrasso2)).then(defCalls3(arrasso3)).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
+        interval = setInterval(function(){
+        var defCalls1 = defCalls1(arrasso1);
+
+        if(!defCalls1)
+        {
+
+          return false;
+        }
+        else
+        {
+          var defCalls2 = defCalls2(arrasso2);
+        }
+
+        if(!defCalls2)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls3 = defCalls3(arrasso3);
+        }
+        if(!defCalls3)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls4 = defCalls4(arrasso4);
+        }
+        if(!defCalls4)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls5 = defCalls5(arrasso5);
+        }
+        if(!defCalls5)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls6 = defCalls6(arrasso6);
+        }
+        if(!defCalls6)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls7 = defCalls7(arrasso7);
+        }
+        if(!defCalls7)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls8 = defCalls8(arrasso8);
+        }
+        if(!defCalls8)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls9 = defCalls9(arrasso9);
+        }
+        if(!defCalls9)
+        {
+          return false;
+        }
+        else
+        {
+          var defCalls10 = defCalls10(arrasso10);
+        }
+        if(!defCalls10)
+        {
+          return false;
+        }
+        else
+        {
+          clearInterval(interval);
+          setTimeout(function(){ 
+
+           window.location.reload();
+        
+          }, 300);
+
+        }
+        }, 300);
+        
         //setajax(arrasso1);
 
          /*setTimeout(function(){ 
