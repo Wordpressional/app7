@@ -523,9 +523,9 @@ function random_color() {
         
 
         //promise = defCalls1(arrasso1).then(defCalls2(arrasso2)).then(defCalls3(arrasso3)).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
-        
+       
 
-        var defCalls1 = setTimeout(function(){ setajax(arrasso1) }, 1300);
+        var defCalls1 =  setajax(arrasso1);
 
         if(!defCalls1)
         {
@@ -607,7 +607,7 @@ function random_color() {
         }
         else
         {
-          
+          clearInterval(interval);
           setTimeout(function(){ 
 
            window.location.reload();
