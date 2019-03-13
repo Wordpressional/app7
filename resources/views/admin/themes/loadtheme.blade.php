@@ -531,7 +531,9 @@ function random_color() {
         }
         if(defCalls1)
         {
-          alert($http_response_header[0]);
+          
+          // retrieve the pending request from the context variable
+                   
           //alert(xyz);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2);
@@ -1259,14 +1261,14 @@ var token = document.getElementById('ttoken').value;
         type: 'post',
         data:  arrasso,
         
-        success: function(result) {
+        success: function(result, textStatus, xhr) {
           //alert(result);
           //alert("pppp");
           $('html,body').scrollTop(0);
           $('.successalert').css("display", "block");
 
              $('.successalert').text("Successfully Saved");
-
+             alert(xhr.status);
              
 
         },
