@@ -1122,7 +1122,7 @@ function random_color() {
 function setajax(arrasso)
 {
 
-setTimeout(function(){ 
+
 
                         
         //arrasso =  {"themeone": themeone};
@@ -1164,13 +1164,15 @@ var token = document.getElementById('ttoken').value;
         });
 
 
-  }, 16000);
+ 
 }
 
 function defCalls1(arrasso1){
    var def = $.Deferred();
    $.when(setajax(arrasso1)).done(function(r1){
+    setTimeout(function(){ 
      def.resolve(r1);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1180,7 +1182,9 @@ function defCalls1(arrasso1){
 function defCalls2(arrasso2){
    var def = $.Deferred();
    $.when(setajax(arrasso2)).done(function(r2){
+     setTimeout(function(){ 
      def.resolve(r2);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1190,7 +1194,9 @@ function defCalls2(arrasso2){
 function defCalls3(arrasso3){
    var def = $.Deferred();
    $.when(setajax(arrasso3)).done(function(r3){
+     setTimeout(function(){ 
      def.resolve(r3);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1200,7 +1206,9 @@ function defCalls3(arrasso3){
 function defCalls4(arrasso4){
    var def = $.Deferred();
    $.when(setajax(arrasso4)).done(function(r4){
+     setTimeout(function(){ 
      def.resolve(r4);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1210,7 +1218,9 @@ function defCalls4(arrasso4){
 function defCalls5(arrasso5){
    var def = $.Deferred();
    $.when(setajax(arrasso5)).done(function(r5){
+     setTimeout(function(){ 
      def.resolve(r5);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1218,7 +1228,9 @@ function defCalls5(arrasso5){
 function defCalls6(arrasso6){
    var def = $.Deferred();
    $.when(setajax(arrasso6)).done(function(r6){
+     setTimeout(function(){ 
      def.resolve(r6);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1226,7 +1238,9 @@ function defCalls6(arrasso6){
 function defCalls7(arrasso7){
    var def = $.Deferred();
    $.when(setajax(arrasso7)).done(function(r7){
+     setTimeout(function(){ 
      def.resolve(r7);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1234,7 +1248,9 @@ function defCalls7(arrasso7){
 function defCalls8(arrasso8){
    var def = $.Deferred();
    $.when(setajax(arrasso8)).done(function(r8){
+     setTimeout(function(){ 
      def.resolve(r8);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1242,7 +1258,9 @@ function defCalls8(arrasso8){
 function defCalls9(arrasso9){
    var def = $.Deferred();
    $.when(setajax(arrasso9)).done(function(r9){
+     setTimeout(function(){ 
      def.resolve(r9);
+      }, 16000);
    })
    return def.promise();
 }
@@ -1250,7 +1268,9 @@ function defCalls9(arrasso9){
 function defCalls10(arrasso10){
    var def = $.Deferred();
    $.when(setajax(arrasso10)).done(function(r10){
+     setTimeout(function(){ 
      def.resolve(r10);
+      }, 16000);
    })
    return def.promise();
 }
