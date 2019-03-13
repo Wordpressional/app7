@@ -1174,13 +1174,7 @@ function defCalls(arrasso1, arrasso2, arrasso3, arrasso4, arrasso5, arrasso6, ar
 }
  
 defCalls().done(function(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10){
-   //now we have access to data...
-
-   setTimeout(function(){ 
-
-     window.location.reload();
-  
-   }, 300);
+   
 })
 
 
