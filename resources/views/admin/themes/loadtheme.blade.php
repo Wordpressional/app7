@@ -511,8 +511,16 @@ function random_color() {
         arrasso1 =  {"themeone": themeone};
         arrasso2 =  {"themetwo": themetwo};
         arrasso3 =  {"themethree": themethree};
+        arrasso4 =  {"themethree": themefour};
+        arrasso5 =  {"themethree": themefive};
+        arrasso6 =  {"themethree": themesix};
+        arrasso7 =  {"themethree": themeseven};
+        arrasso8 =  {"themethree": themeeight};
+        arrasso9 =  {"themethree": themenine};
+        arrasso10 =  {"themethree": themeten};
 
-        defCalls(arrasso1, arrasso2, arrasso3);
+
+        defCalls(arrasso1, arrasso2, arrasso3, arrasso4, arrasso5, arrasso6, arrasso7, arrasso8, arrasso9, arrasso10);
 
         //setajax(arrasso1);
 
@@ -1157,15 +1165,15 @@ var token = document.getElementById('ttoken').value;
   }, 16000);
 }
 
-function defCalls(arrasso1, arrasso2, arrasso3){
+function defCalls(arrasso1, arrasso2, arrasso3, arrasso4, arrasso5, arrasso6, arrasso7, arrasso8, arrasso9, arrasso10){
    var def = $.Deferred();
-   $.when(setajax(arrasso1),setajax(arrasso2),setajax(arrasso3)).done(function(r1,r2,r3){
-     def.resolve(r1,r2,r3);
+   $.when(setajax(arrasso1),setajax(arrasso2),setajax(arrasso3),setajax(arrasso4),setajax(arrasso5),setajax(arrasso6),setajax(arrasso7),setajax(arrasso8),setajax(arrasso9),setajax(arrasso10)).done(function(r1,r2,r3,r4,r5,r6,r7,r8,r9,r10){
+     def.resolve(r1,r2,r3,r4,r5,r6,r7,r8,r9,r10);
    })
    return def.promise();
 }
  
-defCalls().done(function(d1,d2,d3){
+defCalls().done(function(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10){
    //now we have access to data...
 })
 
