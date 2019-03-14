@@ -1235,8 +1235,7 @@ function random_color() {
 function setajax(arrasso, no)
 {
                      
-        //arrasso =  {"themeone": themeone};
-setTimeout(function(){ 
+ 
 console.log(arrasso);
 var token = document.getElementById('ttoken').value;
 
@@ -1274,7 +1273,7 @@ var token = document.getElementById('ttoken').value;
           }
 
         });
- }, 3000);
+ 
 return no;
  
 }
