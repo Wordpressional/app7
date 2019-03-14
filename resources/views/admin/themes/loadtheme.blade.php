@@ -536,7 +536,7 @@ function random_color() {
         if(defCalls1 == 1)
         {
                 
-          
+          alert(defCalls1);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2, 2);
           xyz++;
@@ -546,7 +546,7 @@ function random_color() {
         
         if(defCalls2 == 2)
         {
-          
+          alert(defCalls2);
           if(xyz == 3){ 
           var defCalls3 = setajax(arrasso3, 3);
           xyz++;
@@ -556,7 +556,7 @@ function random_color() {
        
        if(defCalls3 == 3)
         {
-         
+         alert(defCalls3);
           if(xyz == 4){ 
           var defCalls4 = setajax(arrasso4, 4);
           xyz++;
@@ -566,7 +566,7 @@ function random_color() {
        
         if(defCalls4 == 4)
         {
-          
+          alert(defCalls4);
           if(xyz == 5){ 
           var defCalls5 = setajax(arrasso5, 5);
           xyz++;
@@ -576,7 +576,7 @@ function random_color() {
        
         if(defCalls5 == 5)
         {
-          
+          alert(defCalls5);
          if(xyz == 6){ 
           var defCalls6 = setajax(arrasso6, 6);
           xyz++;
@@ -586,7 +586,7 @@ function random_color() {
        
         if(defCalls6 == 6)
         {
-          
+          alert(defCalls6);
           if(xyz == 7){ 
           var defCalls7 = setajax(arrasso7, 7);
           xyz++;
@@ -596,7 +596,7 @@ function random_color() {
        
         if(defCalls7 == 7)
         {
-          
+          alert(defCalls7);
           if(xyz == 8){ 
           var defCalls8 = setajax(arrasso8, 8);
           xyz++;
@@ -606,7 +606,7 @@ function random_color() {
        
         if(defCalls8 == 8)
         {
-          
+          alert(defCalls8);
           if(xyz == 9){ 
           var defCalls9 = setajax(arrasso9, 9);
           xyz++;
@@ -616,7 +616,7 @@ function random_color() {
        
         if(defCalls9 == 9)
         {
-          
+          alert(defCalls9);
           if(xyz == 10){ 
           var defCalls10 = setajax(arrasso10, 10);
           xyz++;
@@ -627,7 +627,7 @@ function random_color() {
         if(defCalls10 == 10)
         {
           
-          
+          alert(defCalls10);
           //setTimeout(function(){ 
 
           // window.location.reload();
