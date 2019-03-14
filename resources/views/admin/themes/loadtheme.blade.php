@@ -689,7 +689,7 @@ function random_color() {
         if(defCalls1 == 1)
         {
                 
-          alert("Load Theme" +defCalls1);
+          alert("Reload Theme" +defCalls1);
           if(xyz == 2){ 
           var defCalls2 = setajax1(arrasso2, 2);
           xyz++;
@@ -699,7 +699,7 @@ function random_color() {
         
         if(defCalls2 == 2)
         {
-          alert("Load Theme" +defCalls2);
+          alert("Reload Theme" +defCalls2);
           if(xyz == 3){ 
           var defCalls3 = setajax1(arrasso3, 3);
           xyz++;
@@ -709,7 +709,7 @@ function random_color() {
        
        if(defCalls3 == 3)
         {
-        alert("Load Theme" +defCalls3);
+        alert("Reload Theme" +defCalls3);
           if(xyz == 4){ 
           var defCalls4 = setajax1(arrasso4, 4);
           xyz++;
@@ -719,7 +719,7 @@ function random_color() {
        
         if(defCalls4 == 4)
         {
-          alert("Load Theme" +defCalls4);
+          alert("Reload Theme" +defCalls4);
           if(xyz == 5){ 
           var defCalls5 = setajax1(arrasso5, 5);
           xyz++;
@@ -729,7 +729,7 @@ function random_color() {
        
         if(defCalls5 == 5)
         {
-        alert("Load Theme" +defCalls5);
+        alert("Reload Theme" +defCalls5);
          if(xyz == 6){ 
           var defCalls6 = setajax1(arrasso6, 6);
           xyz++;
@@ -739,7 +739,7 @@ function random_color() {
        
         if(defCalls6 == 6)
         {
-         alert("Load Theme" +defCalls6);
+         alert("Reload Theme" +defCalls6);
           if(xyz == 7){ 
           var defCalls7 = setajax1(arrasso7, 7);
           xyz++;
@@ -749,7 +749,7 @@ function random_color() {
        
         if(defCalls7 == 7)
         {
-          alert("Load Theme" +defCalls7);
+          alert("Reload Theme" +defCalls7);
           if(xyz == 8){ 
           var defCalls8 = setajax1(arrasso8, 8);
           xyz++;
@@ -759,7 +759,7 @@ function random_color() {
        
         if(defCalls8 == 8)
         {
-          alert("Load Theme" +defCalls8);
+          alert("Reload Theme" +defCalls8);
           if(xyz == 9){ 
           var defCalls9 = setajax1(arrasso9, 9);
           xyz++;
@@ -769,7 +769,7 @@ function random_color() {
        
         if(defCalls9 == 9)
         {
-          alert("Load Theme" +defCalls9);
+          alert("Reload Theme" +defCalls9);
           if(xyz == 10){ 
           var defCalls10 = setajax1(arrasso10, 10);
           xyz++;
@@ -780,7 +780,7 @@ function random_color() {
         if(defCalls10 == 10)
         {
           
-          alert("Load Theme" +defCalls10);
+          alert("Reload Theme" +defCalls10);
           setTimeout(function(){ 
 
            window.location.reload();
