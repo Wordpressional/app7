@@ -536,7 +536,7 @@ function random_color() {
         if(defCalls1)
         {
                 
-          //alert(xyz);
+          alert(defCalls1);
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2, 2);
           xyz++;
@@ -1236,7 +1236,7 @@ function setajax(arrasso, no)
 {
                      
         //arrasso =  {"themeone": themeone};
-
+setTimeout(function(){ 
 console.log(arrasso);
 var token = document.getElementById('ttoken').value;
 
@@ -1274,7 +1274,7 @@ var token = document.getElementById('ttoken').value;
           }
 
         });
-
+ }, 3000);
 return no;
  
 }
