@@ -533,10 +533,10 @@ function random_color() {
                            
          xyz++;
         }
-        if(defCalls1)
+        if(defCalls1 == 1)
         {
                 
-          alert(defCalls1);
+          
           if(xyz == 2){ 
           var defCalls2 = setajax(arrasso2, 2);
           xyz++;
@@ -544,7 +544,7 @@ function random_color() {
         
         }
         
-        if(defCalls2)
+        if(defCalls2 == 2)
         {
           
           if(xyz == 3){ 
@@ -554,7 +554,7 @@ function random_color() {
         }
         
        
-       if(defCalls3)
+       if(defCalls3 == 3)
         {
          
           if(xyz == 4){ 
@@ -564,7 +564,7 @@ function random_color() {
         }
         
        
-        if(defCalls4)
+        if(defCalls4 == 4)
         {
           
           if(xyz == 5){ 
@@ -574,7 +574,7 @@ function random_color() {
         }
         
        
-        if(defCalls5)
+        if(defCalls5 == 5)
         {
           
          if(xyz == 6){ 
@@ -584,7 +584,7 @@ function random_color() {
         }
         
        
-        if(defCalls6)
+        if(defCalls6 == 6)
         {
           
           if(xyz == 7){ 
@@ -594,7 +594,7 @@ function random_color() {
         }
         
        
-        if(defCalls7)
+        if(defCalls7 == 7)
         {
           
           if(xyz == 8){ 
@@ -604,7 +604,7 @@ function random_color() {
         }
         
        
-        if(defCalls8)
+        if(defCalls8 == 8)
         {
           
           if(xyz == 9){ 
@@ -614,7 +614,7 @@ function random_color() {
         }
         
        
-        if(defCalls9)
+        if(defCalls9 == 9)
         {
           
           if(xyz == 10){ 
@@ -624,7 +624,7 @@ function random_color() {
         }
         
        
-        if(defCalls10)
+        if(defCalls10 == 10)
         {
           
           
