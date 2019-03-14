@@ -637,452 +637,7 @@ function random_color() {
         } 
         }
         
-        //setajax(arrasso1);
-
-         /*setTimeout(function(){ 
-
-                        
-        arrasso =  {"themeone": themeone};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                     
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
         
-        setTimeout(function(){ 
-
-                        
-        arrasso =  {"themetwo": themetwo};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                     
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-
-        setTimeout(function(){ 
-
-                        
-        arrasso =  {"themethree": themethree};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                     
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-        
-        setTimeout(function(){ 
-
-                        
-        arrasso =  {"themefour": themefour};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                	//alert(result);
-                	//alert("pppp");
-                	$('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                    
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-
-        setTimeout(function(){ 
-
-                        
-        arrasso =  { "themefive": themefive};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                     
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-
-         setTimeout(function(){ 
-
-                        
-        arrasso =  {  "themesix": themesix};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                    
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-
-          setTimeout(function(){ 
-
-                        
-        arrasso =  {"themeseven":themeseven};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                    
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-
-          setTimeout(function(){ 
-
-                        
-        arrasso =  { "themeeight":themeeight};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                    
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-
-            setTimeout(function(){ 
-
-                        
-        arrasso =  {"themenine":themenine};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                     
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);
-
-
-           setTimeout(function(){ 
-
-                        
-        arrasso =  { "themeten":themeten};
-
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
-
-     
-          $.ajax({
-                
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.loadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 300);
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
-
-          }, 16000);*/
 
           
 
@@ -1108,50 +663,133 @@ function random_color() {
         
         
 
-        arrasso =  {"themeone": themeone, "themetwo": themetwo, "themethree": themethree, "themefour": themefour, "themefive": themefive, "themesix": themesix, "themeseven":themeseven, "themeeight":themeeight, "themenine":themenine, "themeten":themeten};
 
-        console.log(arrasso);
-     var token = document.getElementById('ttoken').value;
+       arrasso1 =  {"themeone": themeone};
+        arrasso2 =  {"themetwo": themetwo};
+        arrasso3 =  {"themethree": themethree};
+        arrasso4 =  {"themefour": themefour};
+        arrasso5 =  {"themefive": themefive};
+        arrasso6 =  {"themesix": themesix};
+        arrasso7 =  {"themeseven": themeseven};
+        arrasso8 =  {"themeeight": themeeight};
+        arrasso9 =  {"themenine": themenine};
+        arrasso10 =  {"themeten": themeten};
 
-    
-          $.ajax({
+
+        
+
+        
+        var xyz = 1;
+        while(xyz < 11){
+        if(xyz == 1){
+        var defCalls1 =  setajax1(arrasso1, 1);
+                           
+         xyz++;
+        }
+        if(defCalls1 == 1)
+        {
                 
-                headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-
-                url: "{{route('admin.reloadthemes')}}",
-               
-                type: 'post',
-                data:  arrasso,
-                
-                success: function(result) {
-                  //alert(result);
-                  //alert("pppp");
-                   $(".codefiles").hide();
-                  $('html,body').scrollTop(0);
-                  $('.successalert').css("display", "block");
-
-                     $('.successalert').text("Successfully Saved");
-
-                     setTimeout(function(){ 
-
-                         window.location.reload();
-                      
-                       }, 3000);
-
-                },
-                 error: function (jqXHR, textStatus, errorThrown) {
-                      if (jqXHR.status == 500) {
-                          alert('Internal error: ' + jqXHR.responseText);
-                      } else {
-                          alert('Unexpected error.'+errorThrown);
-                      }
-                  }
-
-                });
-
+          alert("Load Theme" +defCalls1);
+          if(xyz == 2){ 
+          var defCalls2 = setajax1(arrasso2, 2);
+          xyz++;
+          }
+        
+        }
+        
+        if(defCalls2 == 2)
+        {
+          alert("Load Theme" +defCalls2);
+          if(xyz == 3){ 
+          var defCalls3 = setajax1(arrasso3, 3);
+          xyz++;
+          }
+        }
+        
+       
+       if(defCalls3 == 3)
+        {
+        alert("Load Theme" +defCalls3);
+          if(xyz == 4){ 
+          var defCalls4 = setajax1(arrasso4, 4);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls4 == 4)
+        {
+          alert("Load Theme" +defCalls4);
+          if(xyz == 5){ 
+          var defCalls5 = setajax1(arrasso5, 5);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls5 == 5)
+        {
+        alert("Load Theme" +defCalls5);
+         if(xyz == 6){ 
+          var defCalls6 = setajax1(arrasso6, 6);
+          xyz++;
+         }
+        }
+        
+       
+        if(defCalls6 == 6)
+        {
+         alert("Load Theme" +defCalls6);
+          if(xyz == 7){ 
+          var defCalls7 = setajax1(arrasso7, 7);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls7 == 7)
+        {
+          alert("Load Theme" +defCalls7);
+          if(xyz == 8){ 
+          var defCalls8 = setajax1(arrasso8, 8);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls8 == 8)
+        {
+          alert("Load Theme" +defCalls8);
+          if(xyz == 9){ 
+          var defCalls9 = setajax1(arrasso9, 9);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls9 == 9)
+        {
+          alert("Load Theme" +defCalls9);
+          if(xyz == 10){ 
+          var defCalls10 = setajax1(arrasso10, 10);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls10 == 10)
+        {
           
+          alert("Load Theme" +defCalls10);
+          setTimeout(function(){ 
+
+           window.location.reload();
+        
+          }, 300);
+
+        } 
+        }
+   
 
     });
 
@@ -1278,11 +916,46 @@ return no;
  
 }
 
+function setajax1(arrasso, no)
+{
+  
+console.log(arrasso);
+var token = document.getElementById('ttoken').value; 
 
+ $.ajax({
+                
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
 
+      url: "{{route('admin.reloadthemes')}}",
+     
+      type: 'post',
+      data:  arrasso,
+      
+      success: function(result) {
+        //alert(result);
+        //alert("pppp");
+         $(".codefiles").hide();
+        $('html,body').scrollTop(0);
+        $('.successalert').css("display", "block");
 
+           $('.successalert').text("Successfully Saved");
 
+           
+      },
+       error: function (jqXHR, textStatus, errorThrown) {
+            if (jqXHR.status == 500) {
+                alert('Internal error: ' + jqXHR.responseText);
+            } else {
+                alert('Unexpected error.'+errorThrown);
+            }
+        }
 
+      });
+
+return no;
+}
 
 
 </script>
