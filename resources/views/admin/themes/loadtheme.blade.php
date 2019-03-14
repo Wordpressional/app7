@@ -529,7 +529,10 @@ function random_color() {
         var xyz = 1;
         while(xyz < 11){
         if(xyz == 1){
-        var vdefCalls1 =  defCalls1(arrasso1);
+        var vdefCalls1 =  defCalls1(arrasso1).done(function(result, textStatus, xhr){
+                              //do something else with data here
+                              alert(result, textStatus, xhr.status);
+                            });;
          xyz++;
         }
         if(vdefCalls1)
@@ -1297,10 +1300,7 @@ function defCalls1(arrasso1){
    return def.promise();
 }
  
-defCalls1().done(function(result, textStatus, xhr){
-  //do something else with data here
-  alert(result, textStatus, xhr.status);
-});
+
 
 function defCalls2(arrasso2){
    var def = $.Deferred();
