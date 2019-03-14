@@ -529,10 +529,9 @@ function random_color() {
         var xyz = 1;
         while(xyz < 11){
         if(xyz == 1){
-        var vdefCalls1 =  defCalls1(arrasso1).done(function(result){
-                              //do something else with data here
-                              alert(result);
-                            });;
+        var vdefCalls1 =  defCalls1(arrasso1, function(output){
+                            alert(output);
+                          });
          xyz++;
         }
         if(vdefCalls1)
@@ -540,13 +539,15 @@ function random_color() {
                 
           //alert(xyz);
           if(xyz == 2){ 
-          var defCalls2 = setajax(arrasso2);
+          var vdefCalls2 = defCalls2(arrasso2, function(output){
+                            alert(output);
+                          });
           xyz++;
           }
         
         }
         
-        if(defCalls2)
+        if(vdefCalls2)
         {
           alert(defCalls2);
           //alert(xyz);
@@ -1242,7 +1243,7 @@ function random_color() {
 
 });
 
-function setajax(arrasso)
+function setajax(arrasso, handleData)
 {
                      
         //arrasso =  {"themeone": themeone};
@@ -1271,6 +1272,7 @@ var token = document.getElementById('ttoken').value;
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
            var st = xhr.status;
+            handleData(st);
            
              
 
@@ -1285,7 +1287,7 @@ var token = document.getElementById('ttoken').value;
 
         });
 
-return st;
+
  
 }
 
