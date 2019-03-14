@@ -1268,7 +1268,7 @@ var token = document.getElementById('ttoken').value;
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
            
-            myfunc(xhr.status);
+           
              
 
         },
