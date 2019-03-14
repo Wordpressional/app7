@@ -529,9 +529,9 @@ function random_color() {
         var xyz = 1;
         while(xyz < 11){
         if(xyz == 1){
-        var vdefCalls1 =  defCalls1(arrasso1).done(function(result, textStatus, xhr){
+        var vdefCalls1 =  defCalls1(arrasso1).done(function(result){
                               //do something else with data here
-                              alert(result, textStatus, xhr.status);
+                              alert(result);
                             });;
          xyz++;
         }
