@@ -526,13 +526,116 @@ function random_color() {
         
 
         //promise = defCalls1(arrasso1).then(defCalls2(arrasso2)).then(defCalls3(arrasso3)).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
-       
-       
-       
-        setajax(arrasso1, 1);
+        var xyz = 1;
+        while(xyz < 11){
+        if(xyz == 1){
+        var defCalls1 =  setajax(arrasso1, 1);
                            
-         
+         xyz++;
+        }
+        if(defCalls1)
+        {
+                
+          //alert(xyz);
+          if(xyz == 2){ 
+          var defCalls2 = setajax(arrasso2, 2);
+          xyz++;
+          }
+        
+        }
+        
+        if(defCalls2)
+        {
+          
+          if(xyz == 3){ 
+          var defCalls3 = setajax(arrasso3, 3);
+          xyz++;
+          }
+        }
+        
        
+       if(defCalls3)
+        {
+         
+          if(xyz == 4){ 
+          var defCalls4 = setajax(arrasso4, 4);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls4)
+        {
+          
+          if(xyz == 5){ 
+          var defCalls5 = setajax(arrasso5, 5);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls5)
+        {
+          
+         if(xyz == 6){ 
+          var defCalls6 = setajax(arrasso6, 6);
+          xyz++;
+         }
+        }
+        
+       
+        if(defCalls6)
+        {
+          
+          if(xyz == 7){ 
+          var defCalls7 = setajax(arrasso7, 7);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls7)
+        {
+          
+          if(xyz == 8){ 
+          var defCalls8 = setajax(arrasso8, 8);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls8)
+        {
+          
+          if(xyz == 9){ 
+          var defCalls9 = setajax(arrasso9, 9);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls9)
+        {
+          
+          if(xyz == 10){ 
+          var defCalls10 = setajax(arrasso10, 10);
+          xyz++;
+          }
+        }
+        
+       
+        if(defCalls10)
+        {
+          
+          
+          //setTimeout(function(){ 
+
+          // window.location.reload();
+        
+          //}, 300);
+
+        } 
+        }
         
         //setajax(arrasso1);
 
@@ -1158,10 +1261,10 @@ var token = document.getElementById('ttoken').value;
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
            var st = xhr.status;
-
-           if(st == 200){
-            handleData(no);
-          }
+           if(st == 200)
+           {
+            handleData(st, no);
+           }
            
              
 
@@ -1182,8 +1285,7 @@ var token = document.getElementById('ttoken').value;
 
 function handleData(data, no)
 {
-
-  var arrasso = {};
+   var arrasso = {};
         
         var themeone = $('#theme0').val();
         var themetwo = $('#theme1').val();
@@ -1249,8 +1351,6 @@ function handleData(data, no)
        
           
           
-         
-        
 }
 
 function defCalls1(arrasso1){
