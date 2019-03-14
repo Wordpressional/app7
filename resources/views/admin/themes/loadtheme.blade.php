@@ -529,7 +529,7 @@ function random_color() {
         var xyz = 1;
         while(xyz < 11){
         if(xyz == 1){
-        var vdefCalls1 =  defCalls1(arrasso1, function(output){
+        var vdefCalls1 =  setajax(arrasso1, function(output){
                             alert(output);
                           });
          xyz++;
@@ -539,7 +539,7 @@ function random_color() {
                 
           //alert(xyz);
           if(xyz == 2){ 
-          var vdefCalls2 = defCalls2(arrasso2, function(output){
+          var vdefCalls2 = setajax(arrasso2, function(output){
                             alert(output);
                           });
           xyz++;
