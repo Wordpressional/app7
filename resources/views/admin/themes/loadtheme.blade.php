@@ -1270,7 +1270,7 @@ var token = document.getElementById('ttoken').value;
 
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
-           
+           var st = xhr.status;
            
              
 
@@ -1285,7 +1285,7 @@ var token = document.getElementById('ttoken').value;
 
         });
 
-return "200 Success";
+return st;
  
 }
 
