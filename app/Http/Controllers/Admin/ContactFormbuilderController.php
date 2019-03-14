@@ -6,7 +6,7 @@ use Session;
 use App\Tag;
 use App\Page;
 use App\Cform;
-
+use App\User;
 use App\General;
 
 use App\Http\Controllers\Controller;
@@ -29,7 +29,22 @@ class ContactFormbuilderController extends Controller
     public function index()
     {   
         $data = $this->brandsAll();
-        $cforms = Cform::withTrashed()->latest()->paginate(50);
+        $thisuser = User::where('email', Auth::user()->email)->first();
+         //dd($thisuser);
+         if($thisuser->isSuperadministrator() == "yes") {
+            $cforms = Cform::withTrashed()->latest()->paginate(50);
+           
+         } 
+         else 
+         {
+            if($thisuser)
+            {
+               $cforms = Cform::where('createdby', $thisuser->id)->withTrashed()->latest()->paginate(50);
+            } 
+
+            
+         }
+        
         return view('admin.cforms.index',compact('cforms', 'data'));
     }
      /**
@@ -71,13 +86,15 @@ class ContactFormbuilderController extends Controller
 
      public function fsave(Request $request)
     {
-         $pwd = bin2hex(openssl_random_pseudo_bytes(4));
+         $thisuser = User::where('email', Auth::user()->email)->first();
+        $pwd = bin2hex(openssl_random_pseudo_bytes(4));
         $cform = new Cform;
         $cform->cformname = $request->cformname;
         $cform->htmlelements = $request->htmlelement;
         $cform->htmlcontents = "nil";
         $cform->colcount = $request->colcount;
-         $cform->cshortcode = "c".$pwd;
+        $cform->cshortcode = "c".$pwd;
+        $cform->createdby = $thisuser->id;
 
           $obj = json_decode($request->htmlelement);
         $cc = array();

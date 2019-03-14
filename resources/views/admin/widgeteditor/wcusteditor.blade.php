@@ -4,7 +4,7 @@
 @section('content')
     <h1>Custom Widget Editor</h1>
 
- <select name="WidgetcFile" id="dropdown_change">
+ <select name="WidgetcFile" id="dropdown_change" class="selectpicker" data-live-search="true">
 <option value="">- Select widget script file -
 <?php 
 $dirPath = base_path().'/resources/views/shortcodes/custom/';

@@ -22,7 +22,8 @@ class Form extends Model
         'htmlcontent',
         'shortcode',
         'status',
-        'ispublic'
+        'ispublic',
+        'createdby'
     ];
 
     /**

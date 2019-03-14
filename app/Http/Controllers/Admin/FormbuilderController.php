@@ -7,6 +7,7 @@ use App\Tag;
 use App\Page;
 use App\Form;
 use App\Theme;
+use App\User;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use Illuminate\Support\Facades\Auth;
@@ -53,7 +54,23 @@ class FormbuilderController extends Controller
         }
         }
          $data = $this->brandsAll();
-        $forms = Form::withTrashed()->latest()->paginate(10);
+
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         //dd($thisuser);
+         if($thisuser->isSuperadministrator() == "yes") {
+            $forms = Form::withTrashed()->latest()->paginate(10);
+           
+         } 
+         else 
+         {
+            if($thisuser)
+            {
+                $forms = Form::where('createdby', $thisuser->id)->withTrashed()->latest()->paginate(10);
+            } 
+
+            
+         }
+    
         return view('admin.formbuilder.index',compact('forms','data'));
     }
 
@@ -159,11 +176,13 @@ class FormbuilderController extends Controller
 
      public function fsave(Request $request)
     {
-         $pwd = bin2hex(openssl_random_pseudo_bytes(4));
+        $thisuser = User::where('email', Auth::user()->email)->first();
+        $pwd = bin2hex(openssl_random_pseudo_bytes(4));
         $form = new Form;
         $form->formname = $request->formname;
         $form->htmlcontent = $request->htmlcontent;
         $form->shortcode = $pwd;
+        $form->createdby = $thisuser->id;
         $form->save();
         //Session::flash('success','Form saved successfully');
         return "success";

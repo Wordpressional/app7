@@ -110,7 +110,7 @@ class BrandingController extends Controller
             $fine3 = $request->file('filed3')->getClientOriginalName();
 
         //dd($fine);
-            $newFileName3 = $fine2;
+            $newFileName3 = $fine3;
 
             $dir3 = public_path(). '/uploads/cmp/';
             $filename3 =  $fine3;

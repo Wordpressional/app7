@@ -238,6 +238,11 @@ function format_timezone_name($name) {
  img2 = $("#favicon")[0].files[0];
  img3 = $("#pimg")[0].files[0];
 
+ if(!img && !img2 && !img3)
+ {
+   alert("Upload All Images");
+ }
+
     var file_data = img;
     var file_data2 = img2;
     var file_data3 = img3;
@@ -296,12 +301,13 @@ function format_timezone_name($name) {
               console.log("result");
               console.log(result);
                   $('.successalert').css("display", "block");
-
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
                      $('.successalert').text("Successfully Saved");
 
                      setTimeout(function(){ 
 
                       window.location.reload();
+
                       $('.successalert').css("display", "none"); }, 3000);
 
             },
