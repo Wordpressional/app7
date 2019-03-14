@@ -526,127 +526,13 @@ function random_color() {
         
 
         //promise = defCalls1(arrasso1).then(defCalls2(arrasso2)).then(defCalls3(arrasso3)).then(defCalls4(arrasso4)).then(defCalls5(arrasso5)).then(defCalls6(arrasso6)).then(defCalls7(arrasso7)).then(defCalls8(arrasso8)).then(defCalls9(arrasso9)).then(defCalls10(arrasso10));
-        var xyz = 1;
-        while(xyz < 11){
-        if(xyz == 1){
-        var vdefCalls1 =  setajax(arrasso1, function(output){
-                            alert(output);
-                          });
-         xyz++;
-        }
-        if(vdefCalls1)
-        {
-                
-          //alert(xyz);
-          if(xyz == 2){ 
-          var vdefCalls2 = setajax(arrasso2, function(output){
-                            alert(output);
-                          });
-          xyz++;
-          }
-        
-        }
-        
-        if(vdefCalls2)
-        {
-          alert(defCalls2);
-          //alert(xyz);
-          if(xyz == 3){ 
-          var defCalls3 = setajax(arrasso3);
-          xyz++;
-          }
-        }
-        
        
-       if(defCalls3)
-        {
-          alert(defCalls3);
-          //alert(xyz);
-          if(xyz == 4){ 
-          var defCalls4 = setajax(arrasso4);
-          xyz++;
-          }
-        }
-        
        
-        if(defCalls4)
-        {
-          alert(defCalls4);
-          //alert(xyz);
-          if(xyz == 5){ 
-          var defCalls5 = setajax(arrasso5);
-          xyz++;
-          }
-        }
-        
        
-        if(defCalls5)
-        {
-          alert(defCalls5);
-          //alert(xyz);
-         if(xyz == 6){ 
-          var defCalls6 = setajax(arrasso6);
-          xyz++;
-         }
-        }
-        
+        setajax(arrasso1, 1);
+                           
+         
        
-        if(defCalls6)
-        {
-          alert(defCalls6);
-          //alert(xyz);
-          if(xyz == 7){ 
-          var defCalls7 = setajax(arrasso7);
-          xyz++;
-          }
-        }
-        
-       
-        if(defCalls7)
-        {
-          alert(defCalls7);
-          //alert(xyz);
-          if(xyz == 8){ 
-          var defCalls8 = setajax(arrasso8);
-          xyz++;
-          }
-        }
-        
-       
-        if(defCalls8)
-        {
-          alert(defCalls8);
-          //alert(xyz);
-          if(xyz == 9){ 
-          var defCalls9 = setajax(arrasso9);
-          xyz++;
-          }
-        }
-        
-       
-        if(defCalls9)
-        {
-          //alert(defCalls9);
-          //alert(xyz);
-          if(xyz == 10){ 
-          var defCalls10 = setajax(arrasso10);
-          xyz++;
-          }
-        }
-        
-       
-        if(defCalls10)
-        {
-          
-          
-          //setTimeout(function(){ 
-
-          // window.location.reload();
-        
-          //}, 300);
-
-        } 
-        }
         
         //setajax(arrasso1);
 
@@ -1243,7 +1129,7 @@ function random_color() {
 
 });
 
-function setajax(arrasso, handleData)
+function setajax(arrasso, no)
 {
                      
         //arrasso =  {"themeone": themeone};
@@ -1272,7 +1158,10 @@ var token = document.getElementById('ttoken').value;
              $('.successalert').text("Successfully Saved");
              //alert(xhr.status);
            var st = xhr.status;
-            handleData(st);
+
+           if(st == 200){
+            handleData(no);
+          }
            
              
 
@@ -1291,6 +1180,78 @@ var token = document.getElementById('ttoken').value;
  
 }
 
+function handleData(data, no)
+{
+
+  var arrasso = {};
+        
+        var themeone = $('#theme0').val();
+        var themetwo = $('#theme1').val();
+        var themethree = $('#theme2').val();
+        var themefour = $('#theme3').val();
+        var themefive = $('#theme4').val();
+        var themesix = $('#theme5').val();
+        var themeseven = $('#theme6').val();
+        var themeeight = $('#theme7').val();
+        var themenine = $('#theme8').val();
+        var themeten = $('#theme9').val();
+
+
+        arrasso1 =  {"themeone": themeone};
+        arrasso2 =  {"themetwo": themetwo};
+        arrasso3 =  {"themethree": themethree};
+        arrasso4 =  {"themefour": themefour};
+        arrasso5 =  {"themefive": themefive};
+        arrasso6 =  {"themesix": themesix};
+        arrasso7 =  {"themeseven": themeseven};
+        arrasso8 =  {"themeeight": themeeight};
+        arrasso9 =  {"themenine": themenine};
+        arrasso10 =  {"themeten": themeten};
+    
+
+        if(no == 2)
+        {
+          setajax(arrasso2, 2);
+        }
+        if(no == 3)
+        {
+          setajax(arrasso3, 3);
+        }
+        if(no == 4)
+        {
+          setajax(arrasso4, 4);
+        }
+        if(no == 5)
+        {
+          setajax(arrasso5, 5);
+        }
+        if(no == 6)
+        {
+          setajax(arrasso6, 6);
+        }
+        if(no == 7)
+        {
+          setajax(arrasso7, 7);
+        }
+        if(no == 8)
+        {
+          setajax(arrasso8, 8);
+        }
+        if(no == 9)
+        {
+          setajax(arrasso9, 9);
+        }
+        if(no == 10)
+        {
+          setajax(arrasso10, 10);
+        }
+        
+       
+          
+          
+         
+        
+}
 
 function defCalls1(arrasso1){
    var def = $.Deferred();
