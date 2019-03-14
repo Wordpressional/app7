@@ -628,11 +628,11 @@ function random_color() {
         {
           
           alert("Load Theme" +defCalls10);
-          //setTimeout(function(){ 
+          setTimeout(function(){ 
 
-          // window.location.reload();
+           window.location.reload();
         
-          //}, 300);
+          }, 300);
 
         } 
         }
