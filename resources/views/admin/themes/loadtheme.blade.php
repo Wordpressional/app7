@@ -1285,70 +1285,8 @@ var token = document.getElementById('ttoken').value;
 
 function handleData(data, no)
 {
-   var arrasso = {};
-        
-        var themeone = $('#theme0').val();
-        var themetwo = $('#theme1').val();
-        var themethree = $('#theme2').val();
-        var themefour = $('#theme3').val();
-        var themefive = $('#theme4').val();
-        var themesix = $('#theme5').val();
-        var themeseven = $('#theme6').val();
-        var themeeight = $('#theme7').val();
-        var themenine = $('#theme8').val();
-        var themeten = $('#theme9').val();
-
-
-        arrasso1 =  {"themeone": themeone};
-        arrasso2 =  {"themetwo": themetwo};
-        arrasso3 =  {"themethree": themethree};
-        arrasso4 =  {"themefour": themefour};
-        arrasso5 =  {"themefive": themefive};
-        arrasso6 =  {"themesix": themesix};
-        arrasso7 =  {"themeseven": themeseven};
-        arrasso8 =  {"themeeight": themeeight};
-        arrasso9 =  {"themenine": themenine};
-        arrasso10 =  {"themeten": themeten};
-    
-
-        if(no == 2)
-        {
-          setajax(arrasso2, 2);
-        }
-        if(no == 3)
-        {
-          setajax(arrasso3, 3);
-        }
-        if(no == 4)
-        {
-          setajax(arrasso4, 4);
-        }
-        if(no == 5)
-        {
-          setajax(arrasso5, 5);
-        }
-        if(no == 6)
-        {
-          setajax(arrasso6, 6);
-        }
-        if(no == 7)
-        {
-          setajax(arrasso7, 7);
-        }
-        if(no == 8)
-        {
-          setajax(arrasso8, 8);
-        }
-        if(no == 9)
-        {
-          setajax(arrasso9, 9);
-        }
-        if(no == 10)
-        {
-          setajax(arrasso10, 10);
-        }
-        
-       
+   
+   alert(no);    
           
           
 }
