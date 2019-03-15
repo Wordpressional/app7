@@ -83,6 +83,7 @@ class PostController extends Controller
             'data' => $data,
             'posts' => $post,
             'tuser' => $tuser,
+            'thisuser' => $thisuser
         ]);
     }
 
@@ -132,6 +133,13 @@ class PostController extends Controller
                                         })->pluck('name', 'id');
          }
          if($thisuser->isCMSAdmin() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+
+         }
+
+         if($thisuser->isCMSEditor() == "yes") {
            $userauthor = User::whereHas('roles', function($q){
             $q->where('name', 'like', 'cms_' . '%');
                                         })->pluck('name', 'id');
@@ -198,6 +206,12 @@ class PostController extends Controller
                                         })->pluck('name', 'id');
          }
 
+         if($thisuser->isCMSEditor() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+         }
+
          //dd($userauthor);
         
         return view('admin.posts.create', [
@@ -221,6 +235,12 @@ class PostController extends Controller
     public function store(PostsRequest $request)
     {
         $post = Post::create($request->only([addslashes('title'), 'excerpt', htmlentities('content'), 'posted_at', 'author_id', 'category_id', 'template', 'pubyear','slug1']));
+
+        $thisuser = User::where('email', Auth::user()->email)->first();    
+        $postup = Post::find($post->id);
+        $postup->createdby = $thisuser->id;
+          
+        $postup->save();
 
         if ($request->hasFile('thumbnail')) {
             $post->storeAndSetThumbnail($request->file('thumbnail'));

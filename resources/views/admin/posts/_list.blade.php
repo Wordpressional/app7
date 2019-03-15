@@ -57,12 +57,23 @@
                     </a>
 
                     @else
+                    @if($thisuser->isCMSEditor() == "yes")
+                    @if($post->createdby == $thisuser->id)
 
                      <a class="btn btn-danger" href="{{ route('admin.posts.delete', ['id' => $post->id]) }}">
                     
                             <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
-
+                    @else
+                    
+                    @endif
+                    
+                    @else
+                    <a class="btn btn-danger" href="{{ route('admin.posts.delete', ['id' => $post->id]) }}">
+                    
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                    @endif
                     @endif
                 </td>
             </tr>
