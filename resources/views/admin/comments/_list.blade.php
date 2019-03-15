@@ -14,15 +14,19 @@
             <tr>
                 <td>{{ str_limit($comment->content, 50) }}</td>
                 <td>{{ link_to_route('admin.posts.edit', $comment->post->title, $comment->post) }}</td>
-                <td>{{ link_to_route('admin.authors.edita', $comment->author->fullname, $comment->author) }}</td>
+                <td>@if($thisuser->isCMSAdmin() == "yes") {{ link_to_route('admin.authors.edita', $comment->author->fullname, $comment->author) }} @else {{ $comment->author->fullname }} @endif</td>
                 <td>{{ humanize_date_with_timezone($comment->posted_at,'d F Y, H:i') }}</td>
                 <td>
+                     @if($thisuser->isCMSAdmin() == "yes")
                     <a href="{{ route('admin.comments.edit', $comment) }}" class="btn btn-primary btn-sm">
                         <i class="fa fa-pencil" aria-hidden="true"></i>
                     </a>
-
+                   
                     {!! Form::model($comment, ['method' => 'DELETE', 'route' => ['admin.comments.destroy', $comment], 'class' => 'form-inline', 'data-confirm' => __('forms.comments.delete')]) !!}
-                        {!! Form::button('<i class="fa fa-trash" aria-hidden="true"></i>', ['class' => 'btn btn-danger btn-sm', 'name' => 'submit', 'type' => 'submit']) !!}
+                    {!! Form::button('<i class="fa fa-trash" aria-hidden="true"></i>', ['class' => 'btn btn-danger btn-sm', 'name' => 'submit', 'type' => 'submit']) !!}
+                    @endif
+
+                        
                     {!! Form::close() !!}
                 </td>
             </tr>

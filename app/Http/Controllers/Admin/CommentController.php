@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use App\Http\Requests\Admin\CommentsRequest;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
@@ -19,9 +20,11 @@ class CommentController extends Controller
     public function index()
     {
         $data = $this->brandsAll();
+        $thisuser = User::where('email', Auth::user()->email)->first();
         return view('admin.comments.index', [
             'comments' => Comment::with(['post','author'])->latest()->paginate(50),
             'data' =>  $data,
+            'thisuser' => $thisuser,
         ]);
     }
 
