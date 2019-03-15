@@ -82,6 +82,7 @@ class UserController extends Controller
         $user = User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
+            'displayname' => $request->input('name'),
            // 'password' => bcrypt($request->input('password')),
             'password' => $request->input('password'),
         ]);
@@ -148,6 +149,18 @@ class UserController extends Controller
             }
 
             if($particularuser->isCMSAdmin() == "yes") {
+            if($user->roles === null)
+            {
+                 $roles = Role::with('permissions')->where('name', 'like', 'cms_' . '%')->get();
+            }
+            else
+            {   
+                $roles = Role::with('permissions')->where('name', 'like', 'cms_' . '%')->get();
+                $rolesempty = "";
+            }
+            }
+
+             if($particularuser->isCMSEditor() == "yes") {
             if($user->roles === null)
             {
                  $roles = Role::with('permissions')->where('name', 'like', 'cms_' . '%')->get();

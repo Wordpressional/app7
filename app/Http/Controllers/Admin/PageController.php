@@ -26,8 +26,15 @@ class PageController extends Controller
     public function index()
     {
          $data = $this->brandsAll();
-		$pages = Page::with('author')->withTrashed()->latest()->paginate(10);
-        return view('admin.pages.index',compact('pages', 'data'));
+
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         //dd($thisuser);
+         
+            $pages = Page::with('author')->withTrashed()->latest()->paginate(10);
+           
+        
+		
+        return view('admin.pages.index',compact('pages', 'data', 'thisuser'));
         
     }
 
@@ -59,6 +66,13 @@ class PageController extends Controller
                                         })->pluck('name', 'id');
          }
          if($thisuser->isCMSAdmin() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+
+         }
+
+         if($thisuser->isCMSEditor() == "yes") {
            $userauthor = User::whereHas('roles', function($q){
             $q->where('name', 'like', 'cms_' . '%');
                                         })->pluck('name', 'id');
@@ -109,6 +123,12 @@ class PageController extends Controller
                                         })->pluck('name', 'id');
          }
 
+         if($thisuser->isCMSEditor() == "yes") {
+           $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->pluck('name', 'id');
+         }
+
         return view('admin.pages.create', [
             'users' => $userauthor,
             'data'=>$data,
@@ -124,7 +144,12 @@ class PageController extends Controller
     public function store(PagesRequest $request)
     {
         $page = Page::create($request->only(['display_name', 'content', 'author_id','ptitlecolor', 'ptitlebgcolor', 'pcontbgcolor', 'headercode', 'footercode','name1']));
-  
+            
+        $thisuser = User::where('email', Auth::user()->email)->first();    
+        $pageup = Page::find($page->id);
+        $pageup->createdby = $thisuser->id;
+          
+        $pageup->save();
 
         return redirect()->route('admin.pages.edit', $page)->withSuccess(__('pages.created'));
     }

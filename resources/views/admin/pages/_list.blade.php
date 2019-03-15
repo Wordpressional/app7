@@ -25,7 +25,7 @@
                     {{ $page->display_name }}
                     @endif
                 </td>
-                <td>{{ link_to_route('admin.users.edit', $page->author->name, $page->author) }}</td>
+                <td>{{ link_to_route('admin.authors.edita', $page->author->name, $page->author) }}</td>
                 
                 <td>{{ humanize_date_with_timezone($page->created_at, 'd/m/Y H:i:s', $data['n_companyname']->timezone) }}</td>
                 <td>
@@ -49,12 +49,15 @@
                     </a>
 
                     @else
+                    @if($page->createdby == $thisuser->id)
 
                      <a class="btn btn-danger" href="{{ route('admin.pages.delete', ['id' => $page->id]) }}">
                     
                             <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
-
+                    @else
+                    
+                    @endif
                     @endif
                 </td>
             </tr>
