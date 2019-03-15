@@ -49,7 +49,7 @@
                     </a>
 
                     @else
-                    @if($thisuser->isCMSEditor() == "yes")
+                    @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
                     @if($page->createdby == $thisuser->id)
 
                      <a class="btn btn-danger" href="{{ route('admin.pages.delete', ['id' => $page->id]) }}">

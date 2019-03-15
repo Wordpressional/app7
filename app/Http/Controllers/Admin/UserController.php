@@ -447,7 +447,7 @@ class UserController extends Controller
         
         $thisuser = User::where('email', Auth::user()->email)->first();
          
-          $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+          $roles = Role::where('name', 'like', 'cms_' . '%')->where('name','!=','cms_administrator')->get();
          
        
         $data = $this->brandsAll();
