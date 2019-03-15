@@ -6,6 +6,7 @@ use Session;
 use App\Tag;
 use App\Page;
 use App\Cform;
+use App\User;
 use Response;
 use App\General;
 
@@ -32,7 +33,22 @@ class StablesController extends Controller
     public function index()
     {   
        $data = $this->brandsAll();
-        $stables = Cform::withTrashed()->latest()->paginate(50);
+        $thisuser = User::where('email', Auth::user()->email)->first();
+       if($thisuser->isSuperadministrator() == "yes") {
+             $stables = Cform::withTrashed()->latest()->paginate(50);
+           
+         } 
+         else 
+         {
+            if($thisuser)
+            {
+               
+                $stables = Cform::where('createdby', $thisuser->id)->withTrashed()->latest()->paginate(50);
+            } 
+
+            
+         }
+       
         return view('admin.stables.index',compact('stables','data'));
     }
      /**
@@ -80,6 +96,7 @@ class StablesController extends Controller
 
      public function fsave(Request $request)
     {
+         $thisuser = User::where('email', Auth::user()->email)->first();
          $pwd = bin2hex(openssl_random_pseudo_bytes(4));
         $cform = new Cform;
         $cform->cformname = $request->cformname;
@@ -87,6 +104,7 @@ class StablesController extends Controller
         $cform->htmlcontents = "nil";
         $cform->colcount = $request->colcount;
          $cform->cshortcode = "c".$pwd;
+         $cform->createdby = $thisuser->id;
         $cform->save();
         //Session::flash('success','Form saved successfully');
         return $cform->id;

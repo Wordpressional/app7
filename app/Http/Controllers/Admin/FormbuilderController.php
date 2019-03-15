@@ -108,7 +108,22 @@ class FormbuilderController extends Controller
         }
         }
          $data = $this->brandsAll();
-        $forms = Form::withTrashed()->latest()->paginate(50);
+        
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         //dd($thisuser);
+         if($thisuser->isSuperadministrator() == "yes") {
+            $forms = Form::withTrashed()->latest()->paginate(10);
+           
+         } 
+         else 
+         {
+            if($thisuser)
+            {
+                $forms = Form::where('createdby', $thisuser->id)->withTrashed()->latest()->paginate(10);
+            } 
+
+            
+         }
         return view('admin.formbuilder.management',compact('forms','data'));
     }
 
