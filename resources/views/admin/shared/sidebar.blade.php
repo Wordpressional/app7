@@ -282,7 +282,9 @@
                 <span class="nav-link-text">Activity Logs</span>
             </a>
         </li>
+        @endrole
 
+        @role(['cms_administrator', 'cms_editor'] )
           <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Downloads</span>
@@ -316,8 +318,8 @@
              
         </ul>
     </li>
-     
-        @endrole
+     @endrole
+        
 
          @role(['cms_administrator', 'cms_editor', 'cms_author', 'cms_subscriber'] )
         <li> 

@@ -57,7 +57,7 @@ class FormbuilderController extends Controller
 
          $thisuser = User::where('email', Auth::user()->email)->first();
          //dd($thisuser);
-         if($thisuser->isSuperadministrator() == "yes") {
+         if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin()) {
             $forms = Form::withTrashed()->latest()->paginate(10);
            
          } 
@@ -111,7 +111,7 @@ class FormbuilderController extends Controller
         
          $thisuser = User::where('email', Auth::user()->email)->first();
          //dd($thisuser);
-         if($thisuser->isSuperadministrator() == "yes") {
+         if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin()) {
             $forms = Form::withTrashed()->latest()->paginate(10);
            
          } 

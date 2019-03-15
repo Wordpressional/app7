@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\User;
 use App\Brand;
+use Illuminate\Support\Facades\Auth;
 use App\Mailconf;
 use Session;
 use File;
@@ -122,10 +123,25 @@ EOF;
     public function indexmailconfig()
     {
 
-       
-
          $data = $this->brandsAll();
-        return view('admin.mailconfigs.index')->with(['mailconfs' => Mailconf::withTrashed()->latest()->paginate(10),'data' => $data]);
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         //dd($thisuser);
+         if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin()) {
+           $nmailconf = Mailconf::withTrashed()->latest()->paginate(10);
+           
+         } 
+         else 
+         {
+            if($thisuser)
+            {
+                
+                $nmailconf = Mailconf::where('createdby', $thisuser->id)->withTrashed()->latest()->paginate(10);
+            } 
+
+            
+         }
+         
+        return view('admin.mailconfigs.index')->with(['mailconfs' => $nmailconf,'data' => $data]);
     }
 
     /**
@@ -163,6 +179,8 @@ EOF;
 
         ]);
 
+        $thisuser = User::where('email', Auth::user()->email)->first();
+
         $mailconf = new Mailconf();
         $mailconf->mailfname = $request->mailfname;
         $mailconf->authu = $request->authu;
@@ -172,6 +190,7 @@ EOF;
         $mailconf->texte = $request->texte;
         $mailconf->sube = $request->sube;
         $mailconf->wele = $request->wele;
+        $mailconf->createdby = $thisuser->id;
 
         $mailconf->save();
 

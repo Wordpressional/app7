@@ -34,7 +34,7 @@ class StablesController extends Controller
     {   
        $data = $this->brandsAll();
         $thisuser = User::where('email', Auth::user()->email)->first();
-       if($thisuser->isSuperadministrator() == "yes") {
+       if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin()) {
              $stables = Cform::withTrashed()->latest()->paginate(50);
            
          } 

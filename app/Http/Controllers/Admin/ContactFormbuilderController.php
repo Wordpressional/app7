@@ -31,7 +31,7 @@ class ContactFormbuilderController extends Controller
         $data = $this->brandsAll();
         $thisuser = User::where('email', Auth::user()->email)->first();
          //dd($thisuser);
-         if($thisuser->isSuperadministrator() == "yes") {
+         if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin()) {
             $cforms = Cform::withTrashed()->latest()->paginate(50);
            
          } 
