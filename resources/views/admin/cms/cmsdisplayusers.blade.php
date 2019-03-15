@@ -9,7 +9,7 @@
 
 
       <div class="container">
-        <form action="{{ url('/admin/usersearch')}}" method="POST" role="search">
+        <form action="{{ url('/admin/cmsuserSearch')}}" method="POST" role="search">
             {{ csrf_field() }}
             <div class="input-group">
                 <input type="text" class="form-control" name="q"
@@ -33,7 +33,7 @@
               <th data-priority="2">Name</th>
               <th data-priority="3">Email</th>
               <th data-priority="4">Role</th>
-              
+              <th data-priority="5">Actions</th>
               <th data-priority="6">Switch User</th>
             </tr>
           </thead>
@@ -48,6 +48,13 @@
                     
                      <td>{{ $user->roles[0]->display_name}}</td>
                    
+                     <td>
+                      <div class="btn-group">
+                        <a class="btn btn-primary" href="{{ route('admin.authors.edita', ['id' => $user->id]) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Role"></i> </a>
+                        
+
+                      </div>
+                    </td>
                    
                       <td><form action="{{ route('admin.dashboard.cmsswitchuser') }}" method="POST">
                     <input type="hidden" name="new_user_id" value="{{ $user->id }}">

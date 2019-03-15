@@ -244,4 +244,38 @@ class ShowDashboard extends Controller
          return redirect()->to($url);
      }
 
+     public function cmsuserSearch(Request $request){
+    //dd("ko");
+     $q =  Input::get ( 'q' );
+    
+    //dd($q);
+     $data = $this->accountsAll();
+     //dd($data);
+     $roles = Role::with('permissions')->get();
+  //dd("kk"); 
+    if($q != ""){
+        
+        
+    $users = User::where ( 'name', 'LIKE', '%' . $q . '%' )->orWhere ( 'email', 'LIKE', '%' . $q . '%' )->paginate (5)->setPath('');
+    $pagination = $users->appends ( array (
+                'q' => Input::get ( 'q' ) 
+        ) );
+    //dd($users);
+     $params = [
+                'title' => 'Users List',
+                'users' => $users,
+                'roles' => $roles,
+               'data' => $data,
+                
+            ];
+    if (count ( $users ) > 0) {
+        return view ( 'admin.cms.cmsdisplayusers' )->with($params)->withQuery ( $q );
+    }
+    }
+        return view ( 'admin.cms.cmsdisplayusers' )->withMessage ( 'No Details found. Try to search again !' );
+
+
+    
+    }
+
 }

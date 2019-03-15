@@ -983,6 +983,15 @@ Route::post('/usersearch',[
 
 ]);
 
+Route::post('/cmsusersearch',[
+
+
+'uses' => 'ShowDashboard@cmsuserSearch',
+'as' => 'cms.cmsuserSearch'
+
+]);
+
+
 Route::post('/blosearch',[
 
 
