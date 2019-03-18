@@ -130,6 +130,8 @@ class User extends Authenticatable
          return $this->isSAdmin();
      }
 
+     
+
     // /**
     //  * Check if the user has a role
     //  *
@@ -162,6 +164,11 @@ class User extends Authenticatable
      public function isSAdmin(): bool
      {
          return $this->checkHasRole("cms_superadministrator");
+     }
+
+     public function isGeneralAdmin(): bool
+     {
+         return $this->checkHasRole("administrator");
      }
 
     

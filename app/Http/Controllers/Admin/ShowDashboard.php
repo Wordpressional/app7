@@ -137,13 +137,40 @@ class ShowDashboard extends Controller
     public function cmsdisplayusers(){
          $data = $this->brandsAll();
         //$users = User::paginate(10);
+          $thisuser = User::where('email', Auth::user()->email)->first();
+
+         $tusers = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->get();
         $users = User::whereHas('roles', function($q){
             $q->where('name', 'like', 'cms_' . '%');
-                                        })->paginate(50);
+                                        })->paginate(10);
         $params = [
             'title' => 'Users Login List',
             'users' => $users,
             'data' => $data,
+            'totalusers' => count($tusers),
+            'thisuser' => $thisuser,
+        ];
+
+       // dd($users[0]->roles[0]->name);
+        return view('admin.cms.cmsdisplayusers')->with($params);
+    }
+
+     public function displayallusers(){
+         $data = $this->brandsAll();
+        //$users = User::paginate(10);
+          $thisuser = User::where('email', Auth::user()->email)->first();
+
+         $totalusers = User::all();
+
+        $users = User::paginate(10);
+        $params = [
+            'title' => 'Users Login List',
+            'users' => $users,
+            'data' => $data,
+            'totalusers' => count($totalusers),
+            'thisuser' => $thisuser,
         ];
 
        // dd($users[0]->roles[0]->name);
@@ -152,6 +179,9 @@ class ShowDashboard extends Controller
 
      public function cmsSwitchUser(Request $request)
     {
+
+        $user = User::where('email', Auth::user()->email)->first();
+        
          $request->session()->put('existing_user_id', Auth::user()->id);
          $request->session()->put('user_is_switched', true);
 
@@ -179,6 +209,9 @@ class ShowDashboard extends Controller
         $nrole = Role::where( 'id', (int) $newuserId)->first();
         
         //dd($elemblodetails);
+        if($user->isSuperadministrator() == "yes") {
+
+        } else {
         $Cmsactivitylog = new Cmsactivitylog;
         $Cmsactivitylog->setConnection('mongodb');
 
@@ -194,16 +227,18 @@ class ShowDashboard extends Controller
 
             $Cmsactivitylog->save();
 
-
+        }
 
          //$my_selected_job_id = $request->input('my_selected_job_id');
          $url = '/admin/dashboard/';
          Auth::loginUsingId($newuserId);
          return redirect()->to($url);
+         
      }
 
      public function cmsRestoreUser(Request $request) {
   
+        $user = User::where('email', Auth::user()->email)->first();
 
          $oldUserId = $request->session()->get('existing_user_id');
          $newUserId = $request->session()->get('user_is_switched_with_id');
@@ -227,6 +262,9 @@ class ShowDashboard extends Controller
         //dd($role);
        
         //dd($Elemblo);
+         if($user->isSuperadministrator() == "yes") {
+
+        } else {
         $Cmsactivitylog = new Cmsactivitylog;
         $Cmsactivitylog->setConnection('mongodb');
 
@@ -241,6 +279,7 @@ class ShowDashboard extends Controller
             $Cmsactivitylog->timestamp = $timestamp;
 
             $Cmsactivitylog->save();
+        }
 
          $url = '/admin/dashboard/';
          return redirect()->to($url);
@@ -279,6 +318,15 @@ class ShowDashboard extends Controller
 
 
     
+    }
+
+    public function commactivitylogs(Request $request){
+        $data = $this->brandsAll();
+        $Cmsactivitylog = new Cmsactivitylog;
+        $Cmsactivitylog->setConnection('mongodb');
+        $cmsactivitylogdetails = $Cmsactivitylog->all();
+        //dd($elemactivitylogdetails[0]);
+         return view('admin.cms.cmsactivitylogs', compact('cmsactivitylogdetails', 'data'));
     }
 
 }

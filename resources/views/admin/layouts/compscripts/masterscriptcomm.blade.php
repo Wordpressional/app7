@@ -5,6 +5,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script> 
     <script src="{{ asset('js/bootstrap-colorpicker.js') }}"></script>
     <script src="{{ asset('js/colorcommon.js') }}"></script>
+     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ asset('js/dataTables.responsive.js') }}"></script>
+
     <script type="text/javascript">
         
 

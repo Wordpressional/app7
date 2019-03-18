@@ -408,6 +408,18 @@ class UserController extends Controller
                                         })->latest()->paginate(10);
          }
 
+         if($user->isSAdmin() == "yes") {
+          $users = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->latest()->paginate(10);
+         }
+
+         if($user->isGeneralAdmin() == "yes") {
+          $users = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cms_' . '%');
+                                        })->latest()->paginate(10);
+         }
+
         return view('admin.authors.index', [
             'data' => $data,
             'users' => $users,
@@ -428,11 +440,19 @@ class UserController extends Controller
             $roles =  Role::whereIn('name', ['cms_editor', 'cms_author', 'cms_subscriber'])->get();
          }
          if($thisuser->isSuperadministrator() == "yes") {
-          $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+          $roles = Role::all();
          }
          if($thisuser->isCMSAdmin() == "yes") {
           $roles = Role::where('name', 'like', 'cms_' . '%')->get();
          }
+
+         if($thisuser->isSAdmin() == "yes") {
+          $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+         }
+         if($thisuser->isGeneralAdmin() == "yes") {
+          $roles = Role::all();
+         }
+
        
         $data = $this->brandsAll();
         return view('admin.authors.edit', [

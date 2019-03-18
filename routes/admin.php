@@ -896,6 +896,14 @@ Route::get('/activitylogs',[
 
 ]);
 
+route::get('/commactivitylogs',[
+
+
+'uses' => 'ShowDashboard@commactivitylogs',
+'as' => 'commactivitylogs'
+
+]);
+
 Route::get('/showpollingform',[
 
 
@@ -964,7 +972,13 @@ Route::get('/displayusers',[
 
 ]);
 
+Route::get('/displayallusers',[
 
+
+'uses' => 'ShowDashboard@displayallusers',
+'as' => 'cms.displayallusers'
+
+]);
 
 
 Route::post('/createusersfromceo',[

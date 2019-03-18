@@ -8,7 +8,7 @@
       <h2>Activity Logs</h2>
 
       <div class="table-responsive" style="padding:15px;">
-        <table class="table table-striped table-bordered" id="example3">
+        <table class="table table-striped table-bordered" id="example4">
           <thead>
             <tr>
               <th data-priority="1">Sl.no.</th>
@@ -40,14 +40,13 @@
       </div>
     
     </main>
-  </div>
-</div>
+ 
 @endsection
 @section('scripts')
 <script type="text/javascript" language="javascript" >
 
 $(document).ready(function() {
-    $('#example3').DataTable({
+    $('#example4').DataTable({
        "paging": true,
        "language": {
     "search": "Search"

@@ -253,7 +253,7 @@
             </ul>
         </li>
          @endrole
-          @role('cms_administrator')
+          @role(['cms_administrator','cms_superadministrator'])
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>User Management</span>
@@ -278,6 +278,37 @@
 
             <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.activitylog')">
         <a class="nav-link {{ Request::is('admin/activitylogs') ? 'active' : '' }}" href="{{ route('admin.cms.cmsactivitylogs') }}">
+            <i class="fa fa-history" aria-hidden="true"></i>&nbsp;
+                <span class="nav-link-text">Activity Logs</span>
+            </a>
+        </li>
+        @endrole
+
+        @role('superadministrator')
+             <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>User Management</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+            
+           
+            <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="UsersLoginList">
+                <a class="nav-link {{ Request::is('admin/users') ? ' active' : null }}" href="{{ route('admin.cms.displayallusers') }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                 Users Login List
+                </a>
+            </li>   
+          
+           
+            
+            </ul>
+        </li>
+
+            <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.activitylog')">
+        <a class="nav-link {{ Request::is('admin/activitylogs') ? 'active' : '' }}" href="{{ route('admin.commactivitylogs') }}">
             <i class="fa fa-history" aria-hidden="true"></i>&nbsp;
                 <span class="nav-link-text">Activity Logs</span>
             </a>
@@ -321,7 +352,7 @@
      @endrole
         
 
-         @role(['cms_administrator', 'cms_editor', 'cms_author', 'cms_subscriber'] )
+         @role(['cms_administrator', 'cms_editor', 'cms_author', 'cms_subscriber', 'superadministrator', 'cms_superadministrator'] )
         <li> 
         @if(session('user_is_switched'))
         
