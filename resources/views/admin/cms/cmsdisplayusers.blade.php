@@ -4,12 +4,16 @@
 @section('content')
    
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
-   
+      
+    
       <h2>{{$title}}</h2>
 
+      @if (Session::has('message'))
+         <div class="alert alert-info">{{ Session::get('message') }}</div>
+      @endif
 
       <div class="container">
-        <form action="{{ url('/admin/cmsuserSearch')}}" method="POST" role="search">
+        <form action="{{ url('/admin/cmsusersearch')}}" method="POST" role="search">
             {{ csrf_field() }}
             <div class="input-group">
                 <input type="text" class="form-control" name="q"
@@ -24,7 +28,7 @@
     </div>
 
     <br>
-
+     
       <div class="table-responsive">
         <table class="table table-striped table-bordered" id="example1">
           <thead>
@@ -69,6 +73,8 @@
         </table>
         {{ $users->links() }}
       </div>
+     
+
     </main>
   </div>
 </div>

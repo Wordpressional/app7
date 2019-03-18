@@ -20,6 +20,8 @@ use App\Cmsactivitylog;
 use Illuminate\Http\Request;
 use Auth;
 
+use Illuminate\Support\Facades\Input;
+
 class ShowDashboard extends Controller
 {
     use BrandsTrait;
@@ -272,7 +274,8 @@ class ShowDashboard extends Controller
         return view ( 'admin.cms.cmsdisplayusers' )->with($params)->withQuery ( $q );
     }
     }
-        return view ( 'admin.cms.cmsdisplayusers' )->withMessage ( 'No Details found. Try to search again !' );
+   
+        return back()->with('message', 'No Details found. Try to search again !' );
 
 
     
