@@ -39,6 +39,8 @@
                         <i class="fa fa-pencil" aria-hidden="true"></i>
                     </a>
                     @if($page->trashed())
+                    @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
+                    @if($page->createdby == $thisuser->id)
                     <a class="btn btn-warning" href="{{ route('admin.pages.restore', ['id' => $page->id]) }}">
                             
                             <i class="fa fa-repeat" aria-hidden="true"></i>
@@ -47,7 +49,8 @@
                     
                             <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
-
+                    @endif
+                    @endif
                     @else
                     @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
                     @if($page->createdby == $thisuser->id)
@@ -60,7 +63,7 @@
                     
                     @endif
                     @else
-                    <a class="btn btn-danger" href="{{ route('admin.posts.delete', ['id' => $post->id]) }}">
+                    <a class="btn btn-danger" href="{{ route('admin.pages.delete', ['id' => $page->id]) }}">
                     
                             <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>

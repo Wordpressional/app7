@@ -47,6 +47,8 @@
                     </a>
 
                     @if($post->trashed())
+                    @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
+                    @if($post->createdby == $thisuser->id)
                     <a class="btn btn-warning" href="{{ route('admin.posts.restore', ['id' => $post->id]) }}">
                             
                             <i class="fa fa-repeat" aria-hidden="true"></i>
@@ -55,7 +57,8 @@
                     
                             <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
-
+                    @endif
+                    @endif
                     @else
                     @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
                     @if($post->createdby == $thisuser->id)
