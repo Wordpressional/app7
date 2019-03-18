@@ -13,7 +13,7 @@
         @foreach($comments as $comment)
             <tr>
                 <td>{{ str_limit($comment->content, 50) }}</td>
-                <td>{{ link_to_route('admin.posts.edit', $comment->post->title, $comment->post) }}</td>
+                <td>{{ link_to_route('admin.posts.edit', $comment->post->title, $comment->post->id) }}</td>
                 <td>@if($thisuser->isCMSAdmin() == "yes") {{ link_to_route('admin.authors.edita', $comment->author->fullname, $comment->author) }} @else {{ $comment->author->fullname }} @endif</td>
                 <td>{{ humanize_date_with_timezone($comment->posted_at,'d F Y, H:i') }}</td>
                 <td>

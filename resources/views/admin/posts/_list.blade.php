@@ -29,7 +29,7 @@
                     {{ $post->title }} 
                     @endif</td>
                 <td>{{ $post->category['name'] }}</td>
-                <td>{{ link_to_route('admin.authors.edita', $post->author->name, $post->author) }}</td>
+                <td>@if($thisuser->isCMSAdmin() == "yes"){{ link_to_route('admin.authors.edita', $post->author->name, $post->author) }} @else {{ $post->author->name }} @endif</td>
                 
                 <td>{{ humanize_date($post->posted_at, 'd/m/Y H:i:s') }}</td>
                 <td><span class="badge badge-pill badge-secondary">{{ $post->comments_count }}</span></td>

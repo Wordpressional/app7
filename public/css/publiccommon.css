@@ -10897,3 +10897,7 @@ span.icon-cog {
 #mpolheader{
     position: static !important;
 }
+.sidebar-menu>li:first-child 
+{
+  padding-top: 30px !important;
+}

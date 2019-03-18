@@ -25,7 +25,7 @@
                     {{ $page->display_name }}
                     @endif
                 </td>
-                <td>{{ link_to_route('admin.authors.edita', $page->author->name, $page->author) }}</td>
+                <td>@if($thisuser->isCMSAdmin() == "yes"){{ link_to_route('admin.authors.edita', $page->author->name, $page->author) }} @else {{ $page->author->name }} @endif</td>
                 
                 <td>{{ humanize_date_with_timezone($page->created_at, 'd/m/Y H:i:s', $data['n_companyname']->timezone) }}</td>
                 <td>
