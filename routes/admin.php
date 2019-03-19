@@ -1232,3 +1232,5 @@ Route::post('/static/updatemailconfig/{id}',[
 'as' => 'mailconfig.updatemailconfig'
 
 ]);
+
+

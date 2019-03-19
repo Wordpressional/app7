@@ -9,9 +9,11 @@ use App\Brand;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Validator;
 use Illuminate\Support\Facades\Schema;
+use App\Http\Traits\SettingsTrait;
 
 class RegisterController extends Controller
 {
+    use SettingsTrait;
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -74,6 +76,7 @@ class RegisterController extends Controller
 
     public function signup()
     {
+        $data = $this->settingsAll();
         $colorsetting = Colorsetting::all();
         $brand = Brand::where('id',1)->first();
         //dd($colorsetting);
@@ -93,7 +96,11 @@ class RegisterController extends Controller
          return view('auth.register', [
             'brand' => $brand,
             'colorsetting' => $colorsetting,
+            'data' => $data,
         ]);
        
     }
+
+    
+   
 }

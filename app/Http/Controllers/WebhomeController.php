@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Form;
 use App\Brand;
+use App\User;
+use App\Role;
 use App\Colorsetting;
 use Illuminate\Http\Request;
 use Imagecow\Image;
@@ -13,6 +15,7 @@ use File;
 use Illuminate\Support\Facades\DB;
 use App\Events\TestEvent;
 use App\Http\Traits\SettingsTrait;
+use Auth;
 
 class WebhomeController extends Controller
 {
@@ -204,8 +207,59 @@ class WebhomeController extends Controller
         }
         
         
-        
+
       
     }
+
+    public function subscribersignup(Request $request)
+    {
+        $data = $this->settingsAll();
+        $colorsetting = Colorsetting::all();
+        $brand = Brand::where('id',1)->first();
+        //dd($colorsetting);
+        if($colorsetting->count() > 0)
+        {  
+            
+         
+         
+        } 
+        else
+        {
+            $colorsetting = 'empty';
+            $brand = '';
+        }
+
+        
+         return view('signup.subscribersignup', [
+            'brand' => $brand,
+            'colorsetting' => $colorsetting,
+            'data' => $data,
+        ]);
+       
+    }
+
+    public function store_registration(Request $request)
+    {
+         $this->validate($request, [
+
+            'name'     => 'required|string|max:255',
+            'email'    => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+
+        ]);
+
+        $user = User::create($request->all());
+
+        //dd($user);
+        $subrole = Role::where('name', 'cms_subscriber')->first();
+
+        $user->roles()->attach($subrole, ['user_type'=>'App/User']);
+
+    
+        Auth::login($user);
+        return redirect()->to('/admin/dashboard');
+    }
+
+   
    
 }

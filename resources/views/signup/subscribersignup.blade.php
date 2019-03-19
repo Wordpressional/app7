@@ -5,7 +5,7 @@
     <div class="col-md-6">
          
 
-        {!! Form::open(['route' => 'registration', 'role' => 'form', 'method' => 'POST']) !!}
+        {!! Form::open(['route' => 'signup.registration', 'role' => 'form', 'method' => 'POST']) !!}
         <h2><span class="entypo-login"><i class="fa fa-pencil-square-o"></i></span>  @lang('auth.register')</h2>
             <div class="form-group">
                 <span class="entypo-user inputUserIcon1">

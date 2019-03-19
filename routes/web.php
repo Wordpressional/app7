@@ -138,3 +138,15 @@ Route::get('/sendmail', 'WebhomeController@sendMailfromNodemailer')->name('mail.
 Route::post('/updatemailconfig', 'WebhomeController@updatemailconfig')->name('mail.updatemailconfig');
 
 Route::post('/uploadimgfromfe', 'WebhomeController@uploadimgfromfe')->name('uploadimgfromfe');
+
+
+
+Route::get('/subscribersignup', 'WebhomeController@subscribersignup')->name('subscribersignup');
+
+Route::post('/registration',[
+
+
+'uses' => 'WebhomeController@store_registration',
+'as' => 'signup.registration'
+
+]);
