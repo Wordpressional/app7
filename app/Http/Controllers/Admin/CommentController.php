@@ -21,11 +21,22 @@ class CommentController extends Controller
     {
         $data = $this->brandsAll();
         $thisuser = User::where('email', Auth::user()->email)->first();
+
+         if($thisuser->isCMSSubscriber() == "yes") {
         return view('admin.comments.index', [
-            'comments' => Comment::with(['post','author'])->latest()->paginate(50),
+            'comments' => Comment::where('author_id', $thisuser->id)->with(['post','author'])->latest()->paginate(10),
             'data' =>  $data,
             'thisuser' => $thisuser,
         ]);
+    }
+    else
+    {
+        return view('admin.comments.index', [
+            'comments' => Comment::with(['post','author'])->latest()->paginate(10),
+            'data' =>  $data,
+            'thisuser' => $thisuser,
+        ]);
+    }
     }
 
     /**

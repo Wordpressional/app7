@@ -26,6 +26,11 @@
                     </a>
                 </li>
        
+            
+                   
+                    
+ @role(['superadministrator','administrator','cms_administrator','cms_editor'])
+
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>CMS</span>
@@ -34,9 +39,7 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                   
-                    
- @role(['superadministrator','administrator','cms_administrator','cms_editor'])
+
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
         <a class="nav-link {{ Request::is('admin/categories') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.categories') }}">
             <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
@@ -50,16 +53,15 @@
             <span class="nav-link-text">@lang('dashboard.tag')</span>
         </a>
     </li>
-     @endrole
-    @role(['superadministrator','administrator','cms_administrator','cms_editor','cms_author'])
+    
+    
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.posts')">
         <a class="nav-link {{ Request::is('admin/posts') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.posts.index') }}">
             <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">@lang('dashboard.posts')</span>
         </a>
     </li>
-     @endrole
-     @role(['superadministrator','administrator','cms_administrator','cms_editor'])
+     
      <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.pages')">
         <a class="nav-link {{ Request::is('admin/pages') || Request::is('admin/pages/*') ? 'active' : '' }}" href="{{ route('admin.pages.index') }}">
             <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
@@ -82,11 +84,52 @@
     </li> 
                
 
-            @endrole
+           
 
              </ul>
             </li>
+            @endrole
 
+            @role('cms_subscriber')
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>CMS</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+
+     
+
+     
+    
+    
+    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.posts')">
+        <a class="nav-link {{ Request::is('admin/posts') || Request::is('admin/posts/*') ? 'active' : '' }}" href="{{ route('admin.posts.index') }}">
+            <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.posts')</span>
+        </a>
+    </li>
+     
+     
+   
+    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.comments')">
+        <a class="nav-link {{ Request::is('admin/comments') || Request::is('admin/comments/*') ? 'active' : '' }}" href="{{ route('admin.comments.index') }}">
+            <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.comments')</span>
+        </a>
+    </li>
+
+   
+               
+
+           
+
+             </ul>
+            </li>
+            @endrole
             @role(['superadministrator','administrator','cms_administrator','cms_editor'])
              <li class="treeview">
                 <a href="#">

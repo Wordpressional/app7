@@ -10,7 +10,11 @@
             <th><i class="fa fa-comments" aria-hidden="true"></i></th>
             <th><i class="fa fa-heart" aria-hidden="true"></i></th>
             <th>View</th>
+             @if($thisuser->isCMSSubscriber() == "yes")
+             <th></th>
+             @else
             <th>Actions</th>
+             @endif
         </tr>
     </thead>
     <tbody>
@@ -37,6 +41,10 @@
                 </a>
 
                 </td>
+                @if($thisuser->isCMSSubscriber() == "yes")
+                <td></td>
+                @else
+
                 <td>
                     <a href="{{ route('admin.posts.edit', $post->id) }}" class="btn btn-primary">
                         <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -75,6 +83,7 @@
                     @endif
                     @endif
                 </td>
+                @endif
             </tr>
            
            

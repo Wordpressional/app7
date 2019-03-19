@@ -162,9 +162,11 @@ class ShowDashboard extends Controller
         //$users = User::paginate(10);
           $thisuser = User::where('email', Auth::user()->email)->first();
 
-         $totalusers = User::all();
+         $totalusers = User::with('roles')->get();
 
-        $users = User::paginate(10);
+        $users = User::with('roles')->paginate(10);
+
+        //dd($users[0]->roles[0]->display_name);
         $params = [
             'title' => 'Users Login List',
             'users' => $users,

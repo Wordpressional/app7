@@ -75,6 +75,22 @@ class PostController extends Controller
         
             $post = Post::withCount('comments', 'likes')->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(10);
          }
+
+
+          if($thisuser->isCMSSubscriber() == "yes") {
+             
+       $users = User::with('roles')->get();
+        //dd($users);
+            foreach($users as $user)
+            {
+                array_push($author_ids, $user->id);
+            }
+        //dd($thisuser->id);
+            $post = Post::withCount('comments', 'likes')->whereHas('likes', function($q){
+                $thisuser = User::where('email', Auth::user()->email)->first();
+            $q->where('author_id',  $thisuser->id);
+                                        })->with('author','category')->whereIn('author_id', $author_ids)->withTrashed()->latest()->paginate(10);
+         }
          //dd($author_ids);
         //dd($post[0]->author->name);
         //dd($post[0]->author());
