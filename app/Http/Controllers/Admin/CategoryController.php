@@ -5,7 +5,7 @@ use Session;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
-use App\Category;
+use App\Blogcategory;
 use App\Brand;
 
 
@@ -20,7 +20,7 @@ class CategoryController extends Controller
     public function index()
     {
 
-        $category_def = Category::where('name', 'Default_Cat')->first();
+        $category_def = Blogcategory::where('name', 'Default_Cat')->first();
         if($category_def != "")
         {
         } 
@@ -28,7 +28,7 @@ class CategoryController extends Controller
         {
         if($category_def['name'] != 'Default_Cat')
         {
-            $category = new Category();
+            $category = new Blogcategory();
             $category->name = "Default_Cat";
             $category->save();
         }
@@ -66,7 +66,7 @@ class CategoryController extends Controller
 
         ]);
 
-        $category = new Category();
+        $category = new Blogcategory();
         $category->name = $request->name;
         $category->save();
         Session::flash('success', 'You succesfully created a category.');
@@ -95,7 +95,7 @@ class CategoryController extends Controller
     public function edit($id)
     {
         $data = $this->brandsAll();
-        $category = Category::find($id);
+        $category = Blogcategory::find($id);
        
     
         return view('admin.categories.edit')->with(['category' => $category, 'data' => $data]);
@@ -110,7 +110,7 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $category = Category::find($id);
+        $category = Blogcategory::find($id);
         $category->name = $request->name;
         $category->save();
         Session::flash('success', 'You succesfully updated a category.');
@@ -125,9 +125,9 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        $category = Category::withTrashed()->where('id',$id)->first();
+        $category = Blogcategory::withTrashed()->where('id',$id)->first();
         if($category->trashed()){
-            $category_def = Category::where('name', 'Default_Cat')->first();
+            $category_def = Blogcategory::where('name', 'Default_Cat')->first();
             //echo $category_def;
             foreach ($category->posts as $post) {
                 $post->where('id', $post->id)->update(['category_id' => $category_def->id]);
@@ -145,7 +145,7 @@ class CategoryController extends Controller
     }
      public function restore($id)
     {
-        $category = Category::withTrashed()->where('id',$id)->first();
+        $category = Blogcategory::withTrashed()->where('id',$id)->first();
         if($category->trashed()){
             $category->restore();
         }

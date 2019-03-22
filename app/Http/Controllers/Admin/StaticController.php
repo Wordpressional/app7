@@ -6,7 +6,7 @@ use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
 use App\Post;
 use App\User;
-use App\Brand;
+use App\Compbrand;
 use Illuminate\Support\Facades\Auth;
 use App\Mailconf;
 use Session;

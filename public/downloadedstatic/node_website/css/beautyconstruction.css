@@ -1,0 +1,252 @@
+/* ================================ */
+/* Dynamic Styles */
+/* ================================ */
+
+
+
+	::-webkit-scrollbar{
+	  width: 5px;
+	  background: #272627;
+	}
+	::-webkit-scrollbar-thumb{background: #efbb20;} 
+	
+	
+
+	::selection {
+		background-color: #efbb20;
+		color: #fff;
+	}
+
+	::-moz-selection {
+		background-color: #efbb20;
+		color: #fff;
+	}
+
+	 ::-webkit-scrollbar-thumb {
+		background-color: #efbb20;
+	 }
+
+	mark {
+		background-color: #efbb20;
+		color: #fff;
+	} 
+
+	ins {
+		color: #fff;
+	} 
+	
+	body {
+		color: #818190;
+		font-size: 16px;
+	}
+
+	body { background: #fff; }
+	
+	#header.header_3, #header.header_2 .mad_top_header, #header.header-main { background: #272627; }
+	#footer  a { color: #fff; }
+	#footer  a:hover { color: #fff; }
+	.mad_contact_items .mad_contact_item a, .c_info_list .contact_item p a, a.mad_link { color: #efbb20; }
+	
+
+
+	#header .logo {
+		font-size: 40px;
+	}
+
+	#header .logo a {
+		color: #fff;
+	}
+
+	h1 {
+		color: #272627;
+		font-size: 62px;
+	}
+	h2 {
+		color: #272627;
+		font-size: 60px;
+	}
+	h3 {
+		color: #272627;
+		font-size: 40px;
+	}
+	h4 {
+		color: #272627;
+		font-size: 30px;
+	}
+	h5 {
+		color: #272627;
+		font-size: 20px;
+	}
+	h6 {
+		color: #272627;
+		font-size: 18px;
+	}
+
+
+	.woocommerce-info.full_width_bg_pattern, .woocommerce-message.full_width_bg_pattern, .woocommerce-MyAccount-content .woocommerce-info.woocommerce-Message--info
+	{
+		background-color: #efbb20;
+	}
+
+	.woocommerce-info.full_width_bg_pattern:before, .woocommerce-message.full_width_bg_pattern:before
+	{
+		background: url(  );
+		background-repeat: no-repeat !important;
+	}
+
+
+	.mad_item_hover .item_overlay
+	{
+		background-color: rgba(239,187,32,0.9);
+	}
+
+
+	.mad_pagination_section a.selected, 
+	#gallery .owl_custom_buttons button:hover, .ui-slider-handle, body .product_label, body span.onfeatured, .mad_post_nav [class*='mad_post_'] a:hover, .widget_link .icon_link, .widget_calendar table tbody tr td#today, .widget_calendar table tbody tr td a:hover, .widget_product_tag_cloud a:hover, .widget_tags a.tag:hover, .widget_tag_cloud  a:hover, 
+	.carousel_type_3 .owl-carousel .owl-nav > [class*='owl-']:hover, .tabs_sort #options button.is-checked:after, .tabs_sort #options button:hover:after, .tooltip, span.pointed, 
+	.vc_tta-tabs:not([class*='vc_tta-gap']):not(.vc_tta-o-no-fill).vc_tta-tabs-position-top .vc_tta-tab > a::before, .vc_tta-tabs:not([class*='vc_tta-gap']):not(.vc_tta-o-no-fill).vc_tta-tabs-position-left .vc_tta-tab > a:before, 
+	.vc_tta-color-black.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading, .tabs.vertical > .tabs_nav > li.ui-tabs-active a, 
+	.tabs.vertical.vertical_style2 .tabs_nav li.ui-tabs-active a, .owl_custom_buttons .button_text_title:hover [class*='mad_owl_'], .wpcf7-form .wpcf7-submit, 
+	.vc_tta-container .vc_tta-style-flat .vc_tta-tab.vc_active > a, .tabs.style2 .tabs_nav > li > a:before, .tabs.vertical.style2 .tabs_nav > li > a:before, 
+	#main_navigation > ul > li.current:after, #main_navigation > ul > li:hover:after, .mad_button, .go-to-top:hover, body .owl-carousel .owl-nav > [class*='owl-']:hover, 
+	body .owl_custom_buttons button:hover, .mad_pagination_section a:hover, .quantity button:hover, .mad_button_red_hover:hover,
+	.mad_item_hover.style2:hover .mad_item_desc, .carousel_type_1 .owl-dot.active, .mad_blog_post .mad_post_date, .mad_logo_container, .p_table .price
+	{
+		background-color: #efbb20;
+	}
+	body #advanced-menu-hide, #header .responsive-nav-button:hover, .mad_pagination_section a.selected, #gallery .owl_custom_buttons button:hover, .mad_post_nav [class*='mad_post_'] a:hover, .widget_link:hover, .carousel_type_3 .owl-carousel .owl-nav > [class*='owl-']:hover, .owl_custom_buttons .button_text_title:hover [class*='mad_owl_'], body .owl-carousel .owl-nav > [class*='owl-']:hover, .owl_custom_buttons button:hover, 
+	.mad_pagination_section a:hover, .quantity button:hover, .mad_button_red_hover:hover
+	{
+		border-color: #efbb20;
+	}
+	body .c_info_list .contact_item i, .mad_tag_list a:hover, .post_like .icon-heart-empty, 
+	body .mad_layout_buttons .black_button_active i, .mad_blog_category a:hover, .widget_quote blockquote, .widget_search form button, a.top_tooltip, a.left_tooltip, a.right_tooltip, 
+	.woocommerce .star-rating span:before, a.bottom_tooltip, ol > li:before, .page_404 p b, .bookly-form .ab-row  b, 
+	.section-main .bookly-form .ab-week-days .ab-bold, .section-main .ab-label, 
+	.vc_tta-style-default .vc_tta-panel.vc_active .vc_tta-panel-title > a, .mad_smooth_list .smooth_item .smooth_item_details .item_title > div a, 
+	.mad_member_section .member_secription span a, .mad_member_section .member_secription span, #footer .widget_latest_tweets_widget .latest-tweets a:hover, 
+	.mad_gallery_item .mad_gallery_text a:hover h5, .mad_gallery_item .mad_gallery_text a:hover h4, #footer .mad_top_footer  .widget_latest_tweets_widget .latest-tweets a:hover, 
+	#footer .widget.widget_work_time .mad_justify_list ul > li:last-child, .searchform_wrap form button:hover, .products_list ul li .product_description a:hover, 
+	.products_list ul li .product_description > div, .products_list ul li .close_product:hover, 
+	.a_title.active, .numbered_list li::before, [class*='vr_list']:not(.with_links) > li > i[class^='fa '], 
+	.mad_post_content .mad_post_action a:before, .mad_blog_post .mad_post_content .mad_post_info a:hover, .mad_title_style1, .mad_contact_items .mad_contact_item > h4:before, 
+	.mad_contact_items .mad_contact_item > a, .header_info_section > [class*='head_'] p[class*='icon']:before, .mad_page_title .mad_breadcrumbs, [class*='default_list_'] li:before, 
+	blockquote p:before, .default_list_numb li span, .p_table_stat h2, .mad_page_options .mad_option_button .login_button:hover
+	{
+		color: #efbb20;
+	}
+
+
+	.closePopup:hover, .single-product .product_description   ul li:before, .single-product #tab-description   ul li:before, ul.product_list_widget > li .product_desc a:hover, .woocommerce p.stars a:hover, 
+	.woocommerce p.stars a.active, body .mad_tag_list .stButton:hover .stMainServices:before, body .mad_tag_list .stButton:hover  .stBubble_count, .mad_tag_list .stButton_gradient:before, .mad_tag_list .stMainServices:before, 
+	.mad_tag_list .stButton:hover .stMainServices:before, .single-product .product_description  .price, .single-product .product_description  .price ins, .woocommerce .star-rating span:before, .mad_price, .mad_price ins span, 
+	#countdown .count_item dt.main_title, .mad_page_options .mad_option_button > button:hover, .mad_page_options .mad_option_button .serch_button_wrap button:hover, 
+	.social_icon_list.style2 ul li a:hover, #main_navigation > ul > li.current > a, #main_navigation > ul > li:hover > a
+	{
+		color: #efbb20 !important;
+	}
+	#services .owl-carousel .owl-nav > [class*='owl-']:hover, .woocommerce div.mad_pagination_section span.current, 
+	.mad_gallery_nav .owl_custom_buttons .mad_button:hover, a.bottom_tooltip .tooltip:after, .owl_custom_buttons .button_text_title:hover [class*='mad_owl_'], #main_navigation > ul > li:hover, #main_navigation > ul > li.current, .widget_title
+	{
+		border-bottom-color: #efbb20 !important;
+	}
+	body #advanced-menu-hide:hover, #header .responsive-nav-button:hover, .woocommerce-account .woocommerce-MyAccount-navigation ul  li.is-active a, .woocommerce-account .woocommerce-MyAccount-navigation ul  li:hover a, .woocommerce div.mad_pagination_section span.current, body .vc_images_carousel .vc_carousel-control .icon-prev:hover, body .vc_images_carousel .vc_carousel-control .icon-next:hover, 
+	.mad_gallery_nav .owl_custom_buttons .mad_owl_prev:hover, .mad_gallery_nav .owl_custom_buttons .mad_owl_next:hover, .mad_gallery_nav .owl_custom_buttons .mad_button:hover, body .section-main .bookly-form .ab-btn:hover {
+		background-color: #efbb20 !important;
+	}
+	#services .owl-carousel .owl-nav > [class*='owl-']:hover, .woocommerce div.mad_pagination_section span.current, body .vc_images_carousel .vc_carousel-control .icon-prev:hover, body .vc_images_carousel .vc_carousel-control .icon-next:hover, 
+	.mad_gallery_nav .owl_custom_buttons .mad_owl_prev:hover, .mad_gallery_nav .owl_custom_buttons .mad_owl_next:hover, body .section-main .bookly-form .ab-btn:hover{
+		border-color: #efbb20 !important;
+	}
+	.ui-slider-handle:after, .tabs_sort #options button:hover, .tabs_sort #options button.is-checked, a.top_tooltip .tooltip:after{
+		border-top-color: #efbb20 !important;
+	}
+	a.left_tooltip .tooltip:after{
+		border-left-color: #efbb20 !important;
+	}
+	a.right_tooltip .tooltip:after{
+		border-right-color: #efbb20 !important;
+	}
+	.close_search_form{
+		color: #7f7f7f !important;
+	}
+	
+
+
+	@media only screen and (max-width: 992px) {
+
+		.mobile-advanced ul ul li.current-menu-item > a,
+		.mobile-advanced ul ul li.current-menu-parent > a,
+		.mobile-advanced ul ul li.current-menu-ancestor > a,
+		.mobile-advanced ul ul li.current_page_item > a,
+		.mobile-advanced ul ul li.current_page_parent > a,
+		.mobile-advanced ul ul li.current_page_ancestor > a
+		{
+			color: #efbb20;
+		}
+		.mobile-advanced ul li.current-menu-item > a,
+		.mobile-advanced ul ul li.current_page_item > a,
+		.mobile-advanced > ul > li:hover > a
+		{
+			background-color: #efbb20;
+			color: #fff;
+		}
+
+	}
+
+
+
+	[class*='page_wrapper']
+	{
+		background-color: #fff;
+	}
+
+
+
+	#footer.footer .mad_top_footer
+	{
+		background-color: #272627;
+	}
+
+	#footer.footer .mad_logo_container
+	{
+		background-color: #efbb20;
+	}
+	
+	#footer.footer .paralax_image_bg5
+	{
+		background-color: #f6f6f6;
+	}
+	
+body {
+   font-family: 'Raleway';
+} 
+
+#header .logo {
+   font-family: 'Raleway';
+} 
+
+h1 {
+   font-family: 'Raleway';
+} 
+
+h2 {
+   font-family: 'Raleway';
+} 
+
+h3 {
+   font-family: 'Raleway';
+} 
+
+h4 {
+   font-family: 'Raleway';
+} 
+
+h5 {
+   font-family: 'Raleway';
+} 
+
+h6 {
+   font-family: 'Raleway';
+} 
+

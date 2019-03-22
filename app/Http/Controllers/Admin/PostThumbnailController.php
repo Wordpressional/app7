@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use App\Post;
 
-use App\Brand;
+use App\Compbrand;
 use App\Role;
 use App\Permission;
 

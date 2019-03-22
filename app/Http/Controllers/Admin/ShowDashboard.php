@@ -8,7 +8,7 @@ use App\Http\Traits\BrandsTrait;
 use App\Http\Traits\AccountsTrait;
 use App\Post;
 use App\User;
-use App\Brand;
+use App\Compbrand;
 use App\Role;
 use App\Permission;
 

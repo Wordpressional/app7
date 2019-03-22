@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Traits;
 
-use App\Brand;
+use App\Compbrand;
 
 
 
@@ -12,7 +12,7 @@ trait SettingsTrait {
        
         $data = [];
         
-         $n_companyname = Brand::where('id',1)->first();
+         $n_companyname = Compbrand::where('id',1)->first();
         $data = [
            
             'n_companyname' => $n_companyname,

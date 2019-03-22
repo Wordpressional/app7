@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en-US">  <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+    ==================================================== -->
+	<meta charset="UTF-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/xmlrpc.php">
+
+	<!-- Favicons
+	==================================================== -->
+			<link rel="icon" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/wp-content/uploads/2016/11/fav_icon.png" sizes="32x32">
+<link rel="icon" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/wp-content/uploads/2016/11/fav_icon.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/wp-content/uploads/2016/11/fav_icon.png">
+<meta name="msapplication-TileImage" content="http://velikorodnov.com/wordpress/beauty-construction/construction-one/wp-content/uploads/2016/11/fav_icon.png">
+	
+	<!-- Mobile Specific Metas
+	==================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Page not found &#8211; Construction One-Page</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//cdn.linearicons.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Construction One-Page &raquo; Feed" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/feed/">
+<link rel="alternate" type="application/rss+xml" title="Construction One-Page &raquo; Comments Feed" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/comments/feed/">
+<link rel="stylesheet" id="beautyconstruction-google-webfonts" href="../css/css.css" type="text/css" media="all"> 
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.13"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="beautyconstruction-style-css" href="../css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-css_composer_front-css" href="../css/css_composer_front.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-fonts-css" href="../css/css_1.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-bootstrap-css" href="../css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-animation-css" href="../css/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontello-css" href="../css/fontello.css" type="text/css" media="all">
+<link rel="stylesheet" id="linearicons-css" href="../css/icon-font.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-owlcarousel-css" href="../css/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-flexslider-css" href="../css/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-css" href="../css/jquery.fancybox.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-style1-css" href="../css/style1.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-responsive-css" href="../css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="beautyconstruction-dynamic-styles-css" href="../css/beautyconstruction.css" type="text/css" media="all">
+<link rel="stylesheet" id="ab-intlTelInput-css" href="../css/intlTelInput.css" type="text/css" media="all">
+<link rel="stylesheet" id="ab-ladda-min-css" href="../css/ladda.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ab-picker-css" href="../css/picker.classic.css" type="text/css" media="all">
+<link rel="stylesheet" id="ab-picker-date-css" href="../css/picker.classic.date.css" type="text/css" media="all">
+<link rel="stylesheet" id="ab-main-css" href="../css/bookly-main.css" type="text/css" media="all">
+<link rel="stylesheet" id="ab-customer-profile-css" href="../css/customer_profile.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="../css/style-contact-form-7.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="../css/settings.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="beautyconstruction-woocommerce-mod-css" href="../css/woocommerce-mod.css" type="text/css" media="all">
+<link rel="stylesheet" id="bsf-Defaults-css" href="../css/Defaults.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var beautyconstruction_global = {"template_directory":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-content\/themes\/beautyconstruction\/","site_url":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one","ajax_nonce":"2f4f40b180","ajaxurl":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-admin\/admin-ajax.php","paththeme":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-content\/themes\/beautyconstruction","smooth_scroll":"1","primary_color":"#efbb20","ajax_loader_url":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-content\/themes\/beautyconstruction\/images\/ajax-loader@2x.gif"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="../js/jquery.modernizr.js"></script>
+<script type="text/javascript" src="../js/spin.min.js"></script>
+<script type="text/javascript" src="../js/ladda.min.js"></script>
+<script type="text/javascript" src="../js/hammer.min.js"></script>
+<script type="text/javascript" src="../js/jquery.hammer.min.js"></script>
+<script type="text/javascript" src="../js/picker.js"></script>
+<script type="text/javascript" src="../js/picker.date.js"></script>
+<script type="text/javascript" src="../js/intlTelInput.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var BooklyL10n = {"today":"Today","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"days":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"daysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"nextMonth":"Next month","prevMonth":"Previous month","show_more":"Show more"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/bookly.js"></script>
+<script type="text/javascript" src="../js/customer_profile.js"></script>
+<script type="text/javascript" src="../js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="../js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="../js/jquery.blockUI.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wordpress\/beauty-construction\/construction-one\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/beauty-construction\/construction-one\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/add-to-cart.min.js"></script>
+<script type="text/javascript" src="../js/woocommerce-add-to-cart.js"></script>
+<link rel="https://api.w.org/" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.7.13">
+<meta name="generator" content="WooCommerce 3.5.5">
+		
+        
+        
+		<style type="text/css">
+		body {  } 
+		body .paralax_image_bg1 { background-position: center !important; background-repeat: no-repeat !important; background-color: #fff; background-image: url('http://velikorodnov.com/wordpress/beauty-construction/construction-multi/wp-content/uploads/2016/07/bg_image_1920x1110.jpg'); } 
+		#header.header_3:before, #header.header_2 .mad_top_header:before, #header.header-main:before { background-position: top left !important; background-repeat: repeat !important; background-color: #272627; background-image: url('http://velikorodnov.com/wordpress/beauty-construction/construction-multi/wp-content/uploads/2016/08/pattern.png'); } 
+		#footer.footer .mad_top_footer:before { background-position: top left !important; background-repeat: repeat !important; background-image: url('http://velikorodnov.com/wordpress/beauty-construction/construction-multi/wp-content/uploads/2016/08/pattern.png'); } 
+		</style>
+		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+</head>
+
+
+<body class="error404 mad__queryloader sticky_menu wide_layout woocommerce-no-js wpb-js-composer js-comp-ver-5.1 vc_responsive">
+
+<div id="wrapper" class="wrapper_container">
+
+<div class="layout">
+<div id="content" class="page_wrapper">
+<div class="content-holder">
+<div class="row">
+<div class="col-sm-12">
+
+
+<div class="page_404 paralax_image_bg6">
+
+          <div class="page_404_section">
+            
+            <h3 class="mad_title_style1">Oops!</h3>
+<h2>404</h2>
+ <h5 class="mad_separator_bottom">SORRY! PAGE NOT FOUND!</h5>
+<p class="mad_text_style1">You can also go back to the<a href="http://velikorodnov.com/wordpress/beauty-construction/construction-one"> <b>Constuction site</b> </a><br> 
+            and start browsing from here</p>            
+           
+          
+          </div>
+
+          <svg class="separator_type_5_path" preserveaspectratio="none" viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0 L70 100 L100 0 L100 100 L0 100 Z" fill="#fff"/>
+            <path d="M0 -1 L0 0 L50 100 L100 0 L100 -1 Z" fill="rgba(255,255,255,0.01)"/>
+            <path d="M0 0 L50 100 L100 0" fill="none" stroke="" stroke-width="0"/>
+          </svg>
+
+</div>
+
+
+	
+	
+
+			
+			
+				<!--/ #main-->
+
+				
+					</div><!--/ .row-->
+				</div><!--/ .container-->
+
+			
+		</div><!--/ .page_wrapper -->
+
+		<!-- - - - - - - - - - - -/ Page Content - - - - - - - - - - - - - - -->
+
+			
+
+		<!-- - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
+					<footer id="footer" class="footer  footer_1  ">
+
+			
+
+		
+			<section class="footer_section footer_section_1 mad_section paralax_image_bg5">
+
+				<div class="container">
+					<div class="row">
+
+						
+							
+								<div class="col-md-3 col-sm-6">
+									
+						<div class="mad_contact_items">
+			<div class="mad_contact_item m_bottom_0 ">
+				<h4 class="lnr lnr-location">
+				Contact Us				</h4>
+				<p>121 King Street, Melbourne<br> 
+Victoria 3000 Australia<br>  
+<a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
+			</div>
+			</div>
+			
+			
+											</div>
+
+							
+								<div class="col-md-3 col-sm-6">
+									
+						<div class="mad_contact_items">
+			<div class="mad_contact_item m_bottom_0 ">
+				<h4 class="lnr lnr-clock">
+				Opening Times				</h4>
+				<p>Mon - Thu 11:30 - 22:00 clock<br> 
+Fri - Sat 11:30 - 24:00 clock</p>
+			</div>
+			</div>
+			
+			
+											</div>
+
+							
+								<div class="col-md-3 col-sm-6">
+									
+						<div class="mad_contact_items">
+			<div class="mad_contact_item m_bottom_0 ">
+				<h4 class="lnr lnr-calendar-full">
+				Apointment				</h4>
+				<p>Lorem ipsum dolor sit amet, <br>
+consectetur adipisicing elit!<br>
+<a href="#">Phone: +61 3 8376 6284</a></p>
+			</div>
+			</div>
+			
+			
+											</div>
+
+							
+								<div class="col-md-3 col-sm-6">
+												
+						
+			<div class="mad_contact_items mad_social_type_1">
+			<div class="mad_contact_item">
+				<h4 class="lnr lnr-earth">
+				Stay Connected				</h4>
+				<div class="social_icon_list">
+				
+
+	<ul class="social_btns">
+
+					<li>
+				<a target="_blank" href="http://www.facebook.com" class="soc_icon icon-facebook"></a>
+			</li>
+		
+					<li>
+				<a target="_blank" href="https://twitter.com" class="soc_icon icon-twitter "></a>
+			</li>
+		
+					<li>
+				<a target="_blank" href="http://plus.google.com/" class="soc_icon icon-gplus "></a>
+			</li>
+		
+					<li>
+				<a target="_blank" href="https://www.pinterest.com/" class="soc_icon icon-pinterest "></a>
+			</li>
+		
+		
+		
+		
+					<li>
+				<a target="_blank" href="http://instagram.com" class="soc_icon icon-instagram "></a>
+			</li>
+		
+					<li>
+				<a target="_blank" href="http://linkedin.com/" class="soc_icon icon-linkedin "></a>
+			</li>
+		
+		
+		
+	</ul><!--/ .social-icons-->
+
+				</div><!--/ .social_icons_holder-->
+			</div>
+			</div>
+			
+						
+			
+			
+						
+							
+											</div>
+
+							
+						
+					</div><!--/ .row-->
+				</div><!--/ .container-->
+
+			</section><!--/ .footer_section-->
+
+		
+		
+		
+
+			
+
+
+
+		<!-- Footer section -->
+		<div class="mad_top_footer mad_bottom_footer">
+
+		<div class="v_align_center_blocks">
+
+		<div class="container">
+		  
+		  <div class="row">
+		  
+			<div class="col-sm-4">
+			  
+			  <div class="mad_nav_list">
+				
+				<ul id="menu-bottom-menu" class="bottom_menu"><li id="menu-item-938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-938"><a href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/">Home</a></li>
+<li id="menu-item-939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-939"><a href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/services-v1/">Services</a></li>
+<li id="menu-item-1008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1008"><a href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/testimonial/">Testimonials</a></li>
+</ul><div class="clear"></div>
+			  </div>
+
+			</div>
+			<div class="col-sm-4">
+			  
+			   <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+
+					
+					
+								<a id="footer_logo" class="mad_logo_container" title="WordPress Theme" href="http://velikorodnov.com/wordpress/beauty-construction/construction-one/">
+									<img src="logo.png" alt="WordPress Theme">
+								</a>
+
+							
+			<!-- - - - - - - - - - - - - - End of logo - - - - - - - - - - - - - - - - -->
+		
+
+			</div>
+			<div class="col-sm-4">
+
+			  <div class="align_right">
+				<span>© 2016 Construction Template</span>
+			  </div>
+			  
+			</div>
+
+		  </div>
+
+		</div>
+
+		</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+		</footer><!--/ #footer-->
+
+		<!-- - - - - - - - - - - - - -/ Footer - - - - - - - - - - - - - - - - -->
+
+	</div><!--/ [layout]-->
+
+</div><!--/ #wrapper-->
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<script type="text/javascript" src="../js/js_composer_front.js"></script>
+<script type="text/javascript" src="../js/jquery.queryloader2.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../js/retina.js"></script>
+<script type="text/javascript" src="../js/jquery.localScroll.min.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="../js/smoothscroll.js"></script>
+<script type="text/javascript" src="../js/stickyfloat.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="../js/apear.js"></script>
+<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajax_masonry_load_more_posts = {"ajaxurl":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-admin\/admin-ajax.php","query_vars":"{\"page\":\"\",\"pagename\":\"wp-content\\\/plugins\\\/beautyconstruction-content-types\\\/config-composer\\\/assets\\\/images\\\/icons\\\/bookmark.png\"}","max_pages":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/theme.plugins.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sn_like_post = {"url":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-admin\/admin-ajax.php","nonce":"2f4f40b180"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/theme.core.js"></script>
+<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="../js/pop-widget.js"></script>
+<script type="text/javascript" src="../js/jquery.form.min.js"></script>
+<script type="text/javascript" src="../js/newsletter.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/velikorodnov.com\/wordpress\/beauty-construction\/construction-one\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/scripts.js"></script>
+<script type="text/javascript" src="../js/js.cookie.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wordpress\/beauty-construction\/construction-one\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/beauty-construction\/construction-one\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/woocommerce.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wordpress\/beauty-construction\/construction-one\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wordpress\/beauty-construction\/construction-one\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_f3ec507e96293e905c0bdf0672f679df","fragment_name":"wc_fragments_f3ec507e96293e905c0bdf0672f679df"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../js/cart-fragments.min.js"></script>
+<script type="text/javascript" src="../js/woocommerce-mod.js"></script>
+<script type="text/javascript" src="../js/wp-embed.min.js"></script>
+
+</div></body>
+</html>

@@ -28,6 +28,17 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
+  'gloudemans/shoppingcart' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Cart' => 'Gloudemans\\Shoppingcart\\Facades\\Cart',
+    ),
+  ),
   'harimayco/laravel-menu' => 
   array (
     'providers' => 
@@ -56,6 +67,20 @@
     array (
       0 => 'Jenssegers\\Mongodb\\MongodbServiceProvider',
       1 => 'Jenssegers\\Mongodb\\MongodbQueueServiceProvider',
+    ),
+  ),
+  'kalnoy/nestedset' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Kalnoy\\Nestedset\\NestedSetServiceProvider',
+    ),
+  ),
+  'laravel/cashier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Cashier\\CashierServiceProvider',
     ),
   ),
   'laravel/socialite' => 

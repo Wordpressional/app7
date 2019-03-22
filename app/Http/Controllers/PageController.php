@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Page;
 use App\Post;
-use App\Category;
+use App\Blogcategory;
 use App\Colorsetting;
 use App\Form;
 use App\Cform;
@@ -205,7 +205,7 @@ class PageController extends Controller
     public function eventsfunction()
     {
         $resultString = "nopost";
-        $category = Category::where('name', 'Events')->first();
+        $category = Blogcategory::where('name', 'Events')->first();
         if($category != "")
         {
          $posts = post::where('category_id', $category->id)->get();
@@ -223,7 +223,7 @@ class PageController extends Controller
      public function conferencesfunction()
     {
         $resultString = "nopost";
-        $category = Category::where('name', 'Conferences')->first();
+        $category = Blogcategory::where('name', 'Conferences')->first();
         if($category != "")
         {
          $posts = post::where('category_id', $category->id)->get();
@@ -240,7 +240,7 @@ class PageController extends Controller
     public function projectsfunction()
     {
          $resultString = "nopost";
-         $category = Category::where('name', 'Projects')->first();
+         $category = Blogcategory::where('name', 'Projects')->first();
         if($category != "")
         {
         $posts = post::where('category_id', $category->id)->get();

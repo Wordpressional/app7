@@ -1,5 +1,5 @@
 [
-"http://example.com/foldername",
+"http://velikorodnov.com/wordpress/beauty-construction/construction-one/",
 {
 "url": "http://example.com/foldername/page1",
 "filename": "page1.html"

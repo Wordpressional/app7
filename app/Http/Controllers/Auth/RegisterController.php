@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\Colorsetting;
-use App\Brand;
+use App\Compbrand;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Validator;
 use Illuminate\Support\Facades\Schema;

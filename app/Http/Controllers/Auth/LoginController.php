@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Colorsetting;
-use App\Brand;
+use App\Compbrand;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Schema;
@@ -54,7 +54,7 @@ class LoginController extends Controller
     {
         $data = $this->settingsAll();
         $colorsetting = Colorsetting::all();
-        $brand = Brand::where('id',1)->first();
+        $brand = Compbrand::where('id',1)->first();
         //dd($colorsetting);
         if($colorsetting->count() > 0)
         {  

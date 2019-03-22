@@ -9,7 +9,7 @@ use App\Page;
 use App\Cform;
 use App\Form;
 use App\Theme;
-use App\Brand;
+use App\Compbrand;
 use App\General;
 use File;
 use App\Http\Controllers\Controller;

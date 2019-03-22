@@ -2,7 +2,7 @@
 namespace App\Http\Traits;
 use App\Post;
 use App\User;
-use App\Brand;
+use App\Compbrand;
 use App\Role;
 use App\Permission;
 
@@ -18,7 +18,7 @@ trait BrandsTrait {
         $n_perms = Permission::all()->count();
         $n_logged = Auth::user()->name;
          $n_loggeduser = Auth::user()->email;
-         $n_companyname = Brand::where('id',1)->first();
+         $n_companyname = Compbrand::where('id',1)->first();
          $n_userrole = Auth::user()->roles[0]->name;
 
         $data = [

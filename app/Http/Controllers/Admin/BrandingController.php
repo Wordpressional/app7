@@ -6,7 +6,7 @@ use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
 use App\Post;
 use App\User;
-use App\Brand;
+use App\Compbrand;
 
 
 class BrandingController extends Controller
@@ -15,7 +15,7 @@ class BrandingController extends Controller
     
     public function branding()
     {
-        $company = Brand::where('id', 1)->first();
+        $company = Compbrand::where('id', 1)->first();
         //dd($colorsetting[0]->color);
         //dd($this->commomindex());
         $data = $this->brandsAll();
@@ -26,7 +26,7 @@ class BrandingController extends Controller
 
     public function storebranding(Request $request)
     {
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         $input = $request->all();
         //dd("hi");
         //dd($input);
@@ -138,7 +138,7 @@ class BrandingController extends Controller
             if($branding != "")
             {
 
-                $branding = Brand::find($branding->id);
+                $branding = Compbrand::find($branding->id);
                 
                 $branding->cname = $request->cname;
                 $branding->caddr = $request->caddr;
@@ -158,7 +158,7 @@ class BrandingController extends Controller
             else
             {
 
-                $branding = new Brand();
+                $branding = new Compbrand();
                
                 $branding->cname = $request->cname;
                 $branding->caddr = $request->caddr;
