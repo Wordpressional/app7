@@ -80,11 +80,11 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapAdminRoutes()
     {
-        Route::prefix('admin')
+        Route::prefix('cadmin')
              ->middleware(['web', 'auth', 'role_sadmin:superadministrator'])
-             ->namespace($this->namespace . '\Admin')
-             ->as('admin.')
-             ->group(base_path('routes/admin.php'));
+             ->namespace($this->namespace . '\CAdmin')
+             ->as('cadmin.')
+             ->group(base_path('routes/cadmin.php'));
     }
 
 

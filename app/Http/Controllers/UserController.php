@@ -7,7 +7,7 @@ use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Traits\SettingsTrait;
-use App\Brand;
+use App\Compbrand;
 use Shortcode;
 use App\Colorsetting;
 
@@ -25,7 +25,7 @@ class UserController extends Controller
         $shortcode = App('Shortcode');
     
         $colorsetting = Colorsetting::all();
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         $data = $this->settingsAll();
         
         return view('users.show', [

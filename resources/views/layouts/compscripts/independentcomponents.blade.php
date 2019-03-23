@@ -41,7 +41,7 @@ $(".savemparallaxone1").click(function() {
  $(".textmparallaxone1").removeAttr("contenteditable");
   $(".editmparallaxone1").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -88,7 +88,7 @@ $(".savemparallaxone2").click(function() {
  
   $(".editmparallaxone2").hide();
   $(".imageUploadmparallaxone2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -559,7 +559,7 @@ $(document).ready(function(){
   $(".mcolorlibedit2").show();
   $(".mcolorlibimageUpload2").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -579,7 +579,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit3").show();
   $(".mcolorlibimageUpload3").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -600,7 +600,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit4").show();
   $(".mcolorlibimageUpload4").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -621,7 +621,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit5").show();
   $(".mcolorlibimageUpload5").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -642,7 +642,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit6").show();
   $(".mcolorlibimageUpload6").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -662,7 +662,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit7").show();
   $(".mcolorlibimageUpload7").hide();
    
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -683,7 +683,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit8").show();
   $(".mcolorlibimageUpload8").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -703,7 +703,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit9").show();
   $(".mcolorlibimageUpload9").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -724,7 +724,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit10").show();
   $(".mcolorlibimageUpload10").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
   $(".mcolorlibedit11").click(function() {
@@ -743,7 +743,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit11").show();
   $(".mcolorlibimageUpload11").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
    $(".mcolorlibedit12").click(function() {
@@ -762,7 +762,7 @@ $(".mcolorlibedit3").click(function() {
   $(".mcolorlibedit12").show();
   $(".mcolorlibimageUpload12").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -782,7 +782,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit13").show();
   $(".mcolorlibimageUpload13").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
   $(".mcolorlibedit14").click(function() {
@@ -801,7 +801,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit14").show();
   $(".mcolorlibimageUpload14").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
    $(".mcolorlibedit15").click(function() {
@@ -820,7 +820,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit15").show();
   $(".mcolorlibimageUpload15").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
   $(".mcolorlibedit16").click(function() {
@@ -839,7 +839,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit16").show();
   $(".mcolorlibimageUpload16").hide();
     
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
    $(".mcolorlibedit17").click(function() {
@@ -858,7 +858,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit17").show();
   $(".mcolorlibimageUpload17").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  $(".mcolorlibedit18").click(function() {
@@ -877,7 +877,7 @@ $(".mcolorlibedit13").click(function() {
   $(".mcolorlibedit18").show();
   $(".mcolorlibimageUpload18").hide();
     
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -1449,7 +1449,7 @@ $(".savemlaboutspathemeone1").click(function() {
   $(".boxmlaboutspathemeone1").removeClass("editable");
  $(".textmlaboutspathemeone1").removeAttr("contenteditable");
   $(".editmlaboutspathemeone1").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1493,7 +1493,7 @@ $(".savemlaboutspathemeone2").click(function() {
   $(".boxmlaboutspathemeone2").removeClass("editable");
  $(".textmlaboutspathemeone2").removeAttr("contenteditable");
   $(".editmlaboutspathemeone2").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1537,7 +1537,7 @@ $(".savemlaboutspathemeone3").click(function() {
   $(".boxmlaboutspathemeone3").removeClass("editable");
  $(".textmlaboutspathemeone3").removeAttr("contenteditable");
   $(".editmlaboutspathemeone3").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1581,7 +1581,7 @@ $(".submitmaboutfacebook4").click(function() {
   $(".boxmlaboutspathemeone4").removeClass("editable");
   $(".contmaboutfacebook4").hide();
 addHrefmabout4();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1634,7 +1634,7 @@ $(".submitmabouttwitter5").click(function() {
   $(".boxmlaboutspathemeone5").removeClass("editable");
   $(".contmabouttwitter5").hide();
 addHrefmabout5();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1687,7 +1687,7 @@ $(".submitmabouttelegram6").click(function() {
   $(".boxmlaboutspathemeone6").removeClass("editable");
   $(".contmabouttelegram6").hide();
 addHrefmabout6();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1738,7 +1738,7 @@ $(".savemlaboutspathemeone7").click(function() {
   $(".boxmlaboutspathemeone7").removeClass("editable");
  $(".textmlaboutspathemeone7").removeAttr("contenteditable");
   $(".editmlaboutspathemeone7").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1784,7 +1784,7 @@ $(".savemlaboutspathemeone8").click(function() {
   $(".boxmlaboutspathemeone8").removeClass("editable");
  $(".textmlaboutspathemeone8").removeAttr("contenteditable");
   $(".editmlaboutspathemeone8").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -1827,7 +1827,7 @@ $(".submitmaboutfacebook9").click(function() {
   $(".boxmlaboutspathemeone9").removeClass("editable");
   $(".contmaboutfacebook9").hide();
 addHrefmabout9();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1880,7 +1880,7 @@ $(".submitmabouttwitter10").click(function() {
   $(".boxmlaboutspathemeone10").removeClass("editable");
   $(".contmabouttwitter10").hide();
 addHrefmabout10();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1933,7 +1933,7 @@ $(".submitmabouttelegram11").click(function() {
   $(".boxmlaboutspathemeone11").removeClass("editable");
   $(".contmabouttelegram11").hide();
 addHrefmabout11();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -1986,7 +1986,7 @@ $(".savemlaboutspathemeone12").click(function() {
   $(".boxmlaboutspathemeone12").removeClass("editable");
  $(".textmlaboutspathemeone12").removeAttr("contenteditable");
   $(".editmlaboutspathemeone12").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2030,7 +2030,7 @@ $(".savemlaboutspathemeone13").click(function() {
   $(".boxmlaboutspathemeone13").removeClass("editable");
  $(".textmlaboutspathemeone13").removeAttr("contenteditable");
   $(".editmlaboutspathemeone13").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2074,7 +2074,7 @@ $(".submitmaboutfacebook14").click(function() {
   $(".boxmlaboutspathemeone14").removeClass("editable");
   $(".contmaboutfacebook14").hide();
 addHrefmabout14();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -2126,7 +2126,7 @@ $(".submitmabouttwitter15").click(function() {
   $(".boxmlaboutspathemeone15").removeClass("editable");
   $(".contmabouttwitter15").hide();
 addHrefmabout15();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -2179,7 +2179,7 @@ $(".submitmabouttelegram16").click(function() {
   $(".boxmlaboutspathemeone16").removeClass("editable");
   $(".contmabouttelegram16").hide();
 addHrefmabout16();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -2231,7 +2231,7 @@ $(".savemlaboutspathemeone17").click(function() {
  
   $(".editmlaboutspathemeone17").hide();
   $(".imageUploadmlaboutspathemeone17").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -2300,7 +2300,7 @@ $(".savemlaboutspathemeone18").click(function() {
  
   $(".editmlaboutspathemeone18").hide();
   $(".imageUploadmlaboutspathemeone18").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -2367,7 +2367,7 @@ $(".savemlaboutspathemeone19").click(function() {
  
   $(".editmlaboutspathemeone19").hide();
   $(".imageUploadmlaboutspathemeone19").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -2435,7 +2435,7 @@ $(".savemlaboutt1theme1").click(function() {
  
   $(".editmlaboutt1theme1").hide();
   $(".imageUploadmlaboutt1theme1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -2502,7 +2502,7 @@ $(".savemlaboutt1theme2").click(function() {
   $(".boxmlaboutt1theme2").removeClass("editable");
  $(".textmlaboutt1theme2").removeAttr("contenteditable");
   $(".editmlaboutt1theme2").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2545,7 +2545,7 @@ $(".savemlaboutt1theme3").click(function() {
   $(".boxmlaboutt1theme3").removeClass("editable");
  $(".textmlaboutt1theme3").removeAttr("contenteditable");
   $(".editmlaboutt1theme3").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2586,7 +2586,7 @@ $(".savemlbannertheme1").click(function() {
   $(".boxmlbannertheme1").removeClass("editable");
  $(".textmlbannertheme1").removeAttr("contenteditable");
   $(".editmlbannertheme1").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2633,7 +2633,7 @@ $(".savemlbannertheme2").click(function() {
  
   $(".editmlbannertheme2").hide();
   $(".imageUploadmlbannertheme2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 
 });
 
@@ -2700,7 +2700,7 @@ $(".savemlfactsblabethemeone1").click(function() {
   $(".boxmlfactsblabethemeone1").removeClass("editable");
  $(".textmlfactsblabethemeone1").removeAttr("contenteditable");
   $(".editmlfactsblabethemeone1").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2743,7 +2743,7 @@ $(".savemlfactsblabethemeone2").click(function() {
   $(".boxmlfactsblabethemeone2").removeClass("editable");
  $(".textmlfactsblabethemeone2").removeAttr("contenteditable");
   $(".editmlfactsblabethemeone2").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2786,7 +2786,7 @@ $(".savemlfactsblabethemeone3").click(function() {
   $(".boxmlfactsblabethemeone3").removeClass("editable");
  $(".textmlfactsblabethemeone3").removeAttr("contenteditable");
   $(".editmlfactsblabethemeone3").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2829,7 +2829,7 @@ $(".savemlfactsblabethemeone4").click(function() {
   $(".boxmlfactsblabethemeone4").removeClass("editable");
  $(".textmlfactsblabethemeone4").removeAttr("contenteditable");
   $(".editmlfactsblabethemeone4").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -2874,7 +2874,7 @@ $(".savemlfactsblabethemeone5").click(function() {
  
   $(".editmlfactsblabethemeone5").hide();
   $(".imageUploadmlfactsblabethemeone5").hide();
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 
 
@@ -2940,7 +2940,7 @@ $(".savemlfaqtheme1").click(function() {
  $(".textmlfaqtheme1").removeAttr("contenteditable");
   $(".editmlfaqtheme1").hide();
 
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -2984,7 +2984,7 @@ $(".savemlfaqtheme2").click(function() {
  $(".textmlfaqtheme2").removeAttr("contenteditable");
   $(".editmlfaqtheme2").hide();
 
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -3028,7 +3028,7 @@ $(".savemlfaqtheme3").click(function() {
  $(".textmlfaqtheme3").removeAttr("contenteditable");
   $(".editmlfaqtheme3").hide();
 
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -3071,7 +3071,7 @@ $(".savemlfaqtheme4").click(function() {
   $(".boxmlfaqtheme4").removeClass("editable");
  $(".textmlfaqtheme4").removeAttr("contenteditable");
   $(".editmlfaqtheme4").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3115,7 +3115,7 @@ $(".savemlfaqtheme5").click(function() {
   $(".boxmlfaqtheme5").removeClass("editable");
  $(".textmlfaqtheme5").removeAttr("contenteditable");
   $(".editmlfaqtheme5").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3159,7 +3159,7 @@ $(".savemlfaqtheme6").click(function() {
  $(".textmlfaqtheme6").removeAttr("contenteditable");
   $(".editmlfaqtheme6").hide();
 
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -3201,7 +3201,7 @@ $(".savemlfaqtheme7").click(function() {
   $(".boxmlfaqtheme7").removeClass("editable");
  $(".textmlfaqtheme7").removeAttr("contenteditable");
   $(".editmlfaqtheme7").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3245,7 +3245,7 @@ $(".savemlfaqtheme8").click(function() {
  $(".textmlfaqtheme8").removeAttr("contenteditable");
   $(".editmlfaqtheme8").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -3288,7 +3288,7 @@ $(".savemlfaqtheme9").click(function() {
   $(".boxmlfaqtheme9").removeClass("editable");
  $(".textmlfaqtheme9").removeAttr("contenteditable");
   $(".editmlfaqtheme9").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3332,7 +3332,7 @@ $(".savemlfaqtheme10").click(function() {
   $(".boxmlfaqtheme10").removeClass("editable");
  $(".textmlfaqtheme10").removeAttr("contenteditable");
   $(".editmlfaqtheme10").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3375,7 +3375,7 @@ $(".savemlfaqtheme11").click(function() {
   $(".boxmlfaqtheme11").removeClass("editable");
  $(".textmlfaqtheme11").removeAttr("contenteditable");
   $(".editmlfaqtheme11").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3419,7 +3419,7 @@ $(".savemlactheme2").click(function() {
  
   $(".editmlactheme2").hide();
   $(".imageUploadmlactheme2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -3492,7 +3492,7 @@ $(".submitmfooterfacebook2").click(function() {
   $(".boxmlfooterbladethemeone2").removeClass("editable");
   $(".contmfooterfacebook2").hide();
 addHrefmfooter2();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -3550,7 +3550,7 @@ $(".submitmfootertwitter3").click(function() {
   $(".boxmlfooterbladethemeone3").removeClass("editable");
   $(".contmfootertwitter3").hide();
 addHrefmfooter3();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -3610,7 +3610,7 @@ $(".submitmfooterrss4").click(function() {
   $(".boxmlfooterbladethemeone4").removeClass("editable");
   $(".contmfooterrss4").hide();
 addHrefmfooter4();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -3670,7 +3670,7 @@ $(".submitmfooteryoutube5").click(function() {
   $(".boxmlfooterbladethemeone5").removeClass("editable");
   $(".contmfooteryoutube5").hide();
 addHrefmfooter5();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -3728,7 +3728,7 @@ $(".submitmfooterlinkedin6").click(function() {
   $(".boxmlfooterbladethemeone6").removeClass("editable");
   $(".contmfooterlinkedin6").hide();
 addHrefmfooter6();
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 
  
@@ -3787,7 +3787,7 @@ $(".submitmfootergoogleplus7").click(function() {
   $(".boxmlfooterbladethemeone7").removeClass("editable");
   $(".contmfootergoogleplus7").hide();
 addHrefmfooter7();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -3839,7 +3839,7 @@ $(".savemlservice0theme1").click(function() {
  
   $(".editmlservice0theme1").hide();
   $(".imageUploadmlservice0theme1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 
 });
 
@@ -3902,7 +3902,7 @@ $(".savemlservice1theme1").click(function() {
   $(".boxmlservice1theme1").removeClass("editable");
  $(".textmlservice1theme1").removeAttr("contenteditable");
   $(".editmlservice1theme1").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3945,7 +3945,7 @@ $(".savemlservice1theme2").click(function() {
   $(".boxmlservice1theme2").removeClass("editable");
  $(".textmlservice1theme2").removeAttr("contenteditable");
   $(".editmlservice1theme2").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -3989,7 +3989,7 @@ $(".savemlservice1theme3").click(function() {
  $(".textmlservice1theme3").removeAttr("contenteditable");
   $(".editmlservice1theme3").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -4032,7 +4032,7 @@ $(".savemlservice1theme4").click(function() {
   $(".boxmlservice1theme4").removeClass("editable");
  $(".textmlservice1theme4").removeAttr("contenteditable");
   $(".editmlservice1theme4").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4078,7 +4078,7 @@ $(".savemlservice1theme5").click(function() {
  $(".textmlservice1theme5").removeAttr("contenteditable");
   $(".editmlservice1theme5").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -4122,7 +4122,7 @@ $(".savemlservice1theme6").click(function() {
   $(".boxmlservice1theme6").removeClass("editable");
  $(".textmlservice1theme6").removeAttr("contenteditable");
   $(".editmlservice1theme6").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4167,7 +4167,7 @@ $(".submitmservice1facebook7").click(function() {
   $(".boxmlservice1theme7").removeClass("editable");
   $(".contmservice1facebook7").hide();
 addHrefmserviceone7();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -4220,7 +4220,7 @@ $(".submitmservice1twitter8").click(function() {
   $(".boxmlservice1theme8").removeClass("editable");
   $(".contmservice1twitter8").hide();
 addHrefmserviceone8();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -4273,7 +4273,7 @@ $(".submitmservice1telegram9").click(function() {
   $(".boxmlservice1theme9").removeClass("editable");
   $(".contmservice1telegram9").hide();
 addHrefmserviceone9();
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 
  
@@ -4323,7 +4323,7 @@ $(".savemlparallaxonetheme1").click(function() {
  $(".textmlparallaxonetheme1").removeAttr("contenteditable");
   $(".editmlparallaxonetheme1").hide();
 
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -4369,7 +4369,7 @@ $(".savemlparallaxonetheme2").click(function() {
  
   $(".editmlparallaxonetheme2").hide();
   $(".imageUploadmlparallaxonetheme2").hide();
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -4442,7 +4442,7 @@ $(".savemlparallaxonetheme3").click(function() {
  
   $(".editmlparallaxonetheme3").hide();
   $(".imageUploadmlparallaxonetheme3").hide();
-   Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+   Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -4509,7 +4509,7 @@ $(".savemlservices1theme1").click(function() {
   $(".boxmlservices1theme1").removeClass("editable");
  $(".textmlservices1theme1").removeAttr("contenteditable");
   $(".editmlservices1theme1").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4554,7 +4554,7 @@ $(".savemlservices1theme2").click(function() {
  $(".textmlservices1theme2").removeAttr("contenteditable");
   $(".editmlservices1theme2").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -4597,7 +4597,7 @@ $(".savemlservices1theme3").click(function() {
  $(".textmlservices1theme3").removeAttr("contenteditable");
   $(".editmlservices1theme3").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -4641,7 +4641,7 @@ $(".savemlservices1theme4").click(function() {
  $(".textmlservices1theme4").removeAttr("contenteditable");
   $(".editmlservices1theme4").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -4684,7 +4684,7 @@ $(".savemlservices1theme5").click(function() {
   $(".boxmlservices1theme5").removeClass("editable");
  $(".textmlservices1theme5").removeAttr("contenteditable");
   $(".editmlservices1theme5").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4729,7 +4729,7 @@ $(".savemlservices1theme6").click(function() {
  $(".textmlservices1theme6").removeAttr("contenteditable");
   $(".editmlservices1theme6").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -4772,7 +4772,7 @@ $(".savemlservices1theme7").click(function() {
   $(".boxmlservices1theme7").removeClass("editable");
  $(".textmlservices1theme7").removeAttr("contenteditable");
   $(".editmlservices1theme7").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4816,7 +4816,7 @@ $(".savemlservices1theme8").click(function() {
  
   $(".editmlservices1theme8").hide();
   $(".imageUploadmlservices1theme8").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -4889,7 +4889,7 @@ $( ".boxmlservicetheme1" )
   $(".contpresentationcolor").hide();
    $(".boxmlservicetheme1").removeClass("editable");
 addpresentationcolor();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
@@ -4898,7 +4898,7 @@ $(".savemlservicetheme1").click(function() {
   $(".boxmlservicetheme1").removeClass("editable");
  $(".textmlservicetheme1").removeAttr("contenteditable");
   $(".editmlservicetheme1").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -4949,7 +4949,7 @@ $(".savemlservicetheme2").click(function() {
   $(".boxmlservicetheme2").removeClass("editable");
  $(".textmlservicetheme2").removeAttr("contenteditable");
   $(".editmlservicetheme2").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
@@ -4966,7 +4966,7 @@ Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form
   $(".contpur").hide();
    $(".boxmlservicetheme2").removeClass("editable");
 addfontawesomecontpur();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -5025,7 +5025,7 @@ $(".savemlservicetheme3").click(function() {
   $(".boxmlservicetheme3").removeClass("editable");
  $(".textmlservicetheme3").removeAttr("contenteditable");
   $(".editmlservicetheme3").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
@@ -5041,7 +5041,7 @@ $(".editcontpur2").click(function() {
   $(".contpur2").hide();
   $(".boxmlservicetheme3").removeClass("editable");
 addfontawesomecontpur2();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5098,7 +5098,7 @@ $(".savemlservicetheme4").click(function() {
   $(".boxmlservicetheme4").removeClass("editable");
  $(".textmlservicetheme4").removeAttr("contenteditable");
   $(".editmlservicetheme4").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   });
 
 $(".editcontpur3").click(function() {
@@ -5113,7 +5113,7 @@ $(".editcontpur3").click(function() {
   $(".contpur3").hide();
   $(".boxmlservicetheme4").removeClass("editable");
 addfontawesomecontpur3();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5172,7 +5172,7 @@ $(".savemlservicetheme5").click(function() {
   $(".boxmlservicetheme5").removeClass("editable");
  $(".textmlservicetheme5").removeAttr("contenteditable");
   $(".editmlservicetheme5").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 $(".editcontpur4").click(function() {
@@ -5187,7 +5187,7 @@ $(".editcontpur4").click(function() {
   $(".contpur4").hide();
   $(".boxmlservicetheme5").removeClass("editable");
 addfontawesomecontpur4();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5243,7 +5243,7 @@ $(".savemlservicetheme5a").click(function() {
   $(".boxmlservicetheme5a").removeClass("editable");
  $(".textmlservicetheme5a").removeAttr("contenteditable");
   $(".editmlservicetheme5a").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 $(".editcontpur5").click(function() {
@@ -5258,7 +5258,7 @@ $(".editcontpur5").click(function() {
   $(".contpur5").hide();
   $(".boxmlservicetheme5a").removeClass("editable");
 addfontawesomecontpur5();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5317,7 +5317,7 @@ $(".savemlservicetheme6").click(function() {
   $(".boxmlservicetheme6").removeClass("editable");
  $(".textmlservicetheme6").removeAttr("contenteditable");
   $(".editmlservicetheme6").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 $(".editcontpur6").click(function() {
@@ -5332,7 +5332,7 @@ $(".editcontpur6").click(function() {
   $(".contpur6").hide();
   $(".boxmlservicetheme6").removeClass("editable");
 addfontawesomecontpur6();
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -5390,7 +5390,7 @@ $(".savemlservicetheme7").click(function() {
   $(".boxmlservicetheme7").removeClass("editable");
  $(".textmlservicetheme7").removeAttr("contenteditable");
   $(".editmlservicetheme7").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 $(".editcontpur7").click(function() {
@@ -5405,7 +5405,7 @@ $(".editcontpur7").click(function() {
   $(".contpur7").hide();
   $(".boxmlservicetheme7").removeClass("editable");
 addfontawesomecontpur7();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5464,7 +5464,7 @@ $(".savemlservicetheme7a").click(function() {
   $(".boxmlservicetheme7a").removeClass("editable");
  $(".textmlservicetheme7a").removeAttr("contenteditable");
   $(".editmlservicetheme7a").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
   
 });
@@ -5480,7 +5480,7 @@ $(".editcontpur8").click(function() {
   $(".contpur8").hide();
   $(".boxmlservicetheme8").removeClass("editable");
 addfontawesomecontpur8();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5535,7 +5535,7 @@ $(".savemmultithemeone1").click(function() {
  
   $(".editmmultithemeone1").hide();
   $(".imageUploadmmultithemeone1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5603,7 +5603,7 @@ $(".savemmultithemeone2").click(function() {
  
   $(".editmmultithemeone2").hide();
   $(".imageUploadmmultithemeone2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5670,7 +5670,7 @@ $(".savemmultithemeone3").click(function() {
   $(".boxmmultithemeone3").removeClass("editable");
  $(".textmmultithemeone3").removeAttr("contenteditable");
   $(".editmmultithemeone3").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5714,7 +5714,7 @@ $(".savemmultithemeone4").click(function() {
  $(".textmmultithemeone4").removeAttr("contenteditable");
   $(".editmmultithemeone4").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5755,7 +5755,7 @@ $(".savemmultithemeone5").click(function() {
  
   $(".editmmultithemeone5").hide();
   $(".imageUploadmmultithemeone5").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5821,7 +5821,7 @@ $(".savemmultithemeone6").click(function() {
  $(".textmmultithemeone6").removeAttr("contenteditable");
   $(".editmmultithemeone6").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -5863,7 +5863,7 @@ $(".savemmultithemeone7").click(function() {
  
   $(".editmmultithemeone7").hide();
   $(".imageUploadmmultithemeone7").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -5930,7 +5930,7 @@ $(".savemmultithemeone8").click(function() {
   $(".boxmmultithemeone8").removeClass("editable");
  $(".textmmultithemeone8").removeAttr("contenteditable");
   $(".editmmultithemeone8").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -5971,7 +5971,7 @@ $(".savemmultithemeone9").click(function() {
  
   $(".editmmultithemeone9").hide();
   $(".imageUploadmmultithemeone9").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6039,7 +6039,7 @@ $(".savemmultithemeone10").click(function() {
  
   $(".editmmultithemeone10").hide();
   $(".imageUploadmmultithemeone10").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6105,7 +6105,7 @@ $(".savemmultithemeone11").click(function() {
  
   $(".editmmultithemeone11").hide();
   $(".imageUploadmmultithemeone11").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6176,7 +6176,7 @@ $(".savemmultithemeone12").click(function() {
  
   $(".editmmultithemeone12").hide();
   $(".imageUploadmmultithemeone12").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6242,7 +6242,7 @@ $(".savemmultithemeone13").click(function() {
   $(".boxmmultithemeone13").removeClass("editable");
  $(".textmmultithemeone13").removeAttr("contenteditable");
   $(".editmmultithemeone13").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -6284,7 +6284,7 @@ $(".savemmultithemeone14").click(function() {
   $(".boxmmultithemeone14").removeClass("editable");
  $(".textmmultithemeone14").removeAttr("contenteditable");
   $(".editmmultithemeone14").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -6328,7 +6328,7 @@ $(".savemmultithemeone15").click(function() {
  $(".textmmultithemeone15").removeAttr("contenteditable");
   $(".editmmultithemeone15").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6370,7 +6370,7 @@ $(".savemmultithemeone16").click(function() {
  $(".textmmultithemeone16").removeAttr("contenteditable");
   $(".editmmultithemeone16").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -6412,7 +6412,7 @@ $(".savemmultithemeone17").click(function() {
   $(".boxmmultithemeone17").removeClass("editable");
  $(".textmmultithemeone17").removeAttr("contenteditable");
   $(".editmmultithemeone17").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -6455,7 +6455,7 @@ $(".savemmultithemeone18").click(function() {
  $(".textmmultithemeone18").removeAttr("contenteditable");
   $(".editmmultithemeone18").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6497,7 +6497,7 @@ $(".savemmultithemeone19").click(function() {
  $(".textmmultithemeone19").removeAttr("contenteditable");
   $(".editmmultithemeone19").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -6539,7 +6539,7 @@ $(".savemmultithemeone20").click(function() {
  $(".textmmultithemeone20").removeAttr("contenteditable");
   $(".editmmultithemeone20").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6581,7 +6581,7 @@ $(".savemmultithemeone21").click(function() {
  $(".textmmultithemeone21").removeAttr("contenteditable");
   $(".editmmultithemeone21").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6623,7 +6623,7 @@ $(".savemmultithemeone22").click(function() {
  $(".textmmultithemeone22").removeAttr("contenteditable");
   $(".editmmultithemeone22").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6665,7 +6665,7 @@ $(".savemmultithemeone23").click(function() {
  $(".textmmultithemeone23").removeAttr("contenteditable");
   $(".editmmultithemeone23").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -6707,7 +6707,7 @@ $(".savemmultithemeone24").click(function() {
  
   $(".editmmultithemeone24").hide();
   $(".imageUploadmmultithemeone24").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6777,7 +6777,7 @@ $(".savemmultithemeone25").click(function() {
  
   $(".editmmultithemeone25").hide();
   $(".imageUploadmmultithemeone25").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6847,7 +6847,7 @@ $(".savemmultithemeone26").click(function() {
  
   $(".editmmultithemeone26").hide();
   $(".imageUploadmmultithemeone26").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6916,7 +6916,7 @@ $(".savemmultithemeone27").click(function() {
  
   $(".editmmultithemeone27").hide();
   $(".imageUploadmmultithemeone27").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -6987,7 +6987,7 @@ $(".savemmultithemeone28").click(function() {
   $(".editmmultithemeone28").hide();
   $(".imageUploadmmultithemeone28").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7055,7 +7055,7 @@ $(".savemmultithemeone29").click(function() {
  
   $(".editmmultithemeone29").hide();
   $(".imageUploadmmultithemeone29").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7123,7 +7123,7 @@ $(".savemmultithemeone30").click(function() {
  $(".textmmultithemeone30").removeAttr("contenteditable");
   $(".editmmultithemeone30").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7165,7 +7165,7 @@ $(".savemmultithemeone31").click(function() {
  $(".textmmultithemeone31").removeAttr("contenteditable");
   $(".editmmultithemeone31").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -7207,7 +7207,7 @@ $(".savemmultithemeone32").click(function() {
  $(".textmmultithemeone32").removeAttr("contenteditable");
   $(".editmmultithemeone32").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7249,7 +7249,7 @@ $(".savemmultithemeone33").click(function() {
  $(".textmmultithemeone33").removeAttr("contenteditable");
   $(".editmmultithemeone33").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7291,7 +7291,7 @@ $(".savemmultithemeone34").click(function() {
  
   $(".editmmultithemeone34").hide();
   $(".imageUploadmmultithemeone34").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7360,7 +7360,7 @@ $(".savemmultithemeone35").click(function() {
  
   $(".editmmultithemeone35").hide();
   $(".imageUploadmmultithemeone35").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7429,7 +7429,7 @@ $(".savemmultithemeone36").click(function() {
  
   $(".editmmultithemeone36").hide();
   $(".imageUploadmmultithemeone36").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7499,7 +7499,7 @@ $(".savemmultithemeone37").click(function() {
  $(".textmmultithemeone37").removeAttr("contenteditable");
   $(".editmmultithemeone37").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7542,7 +7542,7 @@ $(".savemmultithemeone38").click(function() {
  $(".textmmultithemeone38").removeAttr("contenteditable");
   $(".editmmultithemeone38").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7585,7 +7585,7 @@ $(".savemmultithemeone39").click(function() {
  $(".textmmultithemeone39").removeAttr("contenteditable");
   $(".editmmultithemeone39").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7627,7 +7627,7 @@ $(".savemmultithemeone40").click(function() {
  $(".textmmultithemeone40").removeAttr("contenteditable");
   $(".editmmultithemeone40").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7670,7 +7670,7 @@ $(".savemmultithemeone41").click(function() {
  $(".textmmultithemeone41").removeAttr("contenteditable");
   $(".editmmultithemeone41").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7713,7 +7713,7 @@ $(".savemmultithemeone42").click(function() {
  $(".textmmultithemeone42").removeAttr("contenteditable");
   $(".editmmultithemeone42").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7755,7 +7755,7 @@ $(".savemmultithemeone43").click(function() {
  $(".textmmultithemeone43").removeAttr("contenteditable");
   $(".editmmultithemeone43").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -7797,7 +7797,7 @@ $(".savemmultithemeone44").click(function() {
  $(".textmmultithemeone44").removeAttr("contenteditable");
   $(".editmmultithemeone44").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7839,7 +7839,7 @@ $(".savemmultithemeone45").click(function() {
  $(".textmmultithemeone45").removeAttr("contenteditable");
   $(".editmmultithemeone45").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -7881,7 +7881,7 @@ $(".savemmultithemeone46").click(function() {
  $(".textmmultithemeone46").removeAttr("contenteditable");
   $(".editmmultithemeone46").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -7924,7 +7924,7 @@ $(".savemmultithemeone47").click(function() {
  
   $(".editmmultithemeone47").hide();
   $(".imageUploadmmultithemeone47").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -7992,7 +7992,7 @@ $(".savemmultithemeone48").click(function() {
  
   $(".editmmultithemeone48").hide();
   $(".imageUploadmmultithemeone48").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8060,7 +8060,7 @@ $(".savemmultithemeone49").click(function() {
  
   $(".editmmultithemeone49").hide();
   $(".imageUploadmmultithemeone49").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8128,7 +8128,7 @@ $(".savemmultithemeone50").click(function() {
  
   $(".editmmultithemeone50").hide();
   $(".imageUploadmmultithemeone50").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8197,7 +8197,7 @@ $(".savemmultithemeone51").click(function() {
  
   $(".editmmultithemeone51").hide();
   $(".imageUploadmmultithemeone51").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8266,7 +8266,7 @@ $(".savemmultithemeone52").click(function() {
  
   $(".editmmultithemeone52").hide();
   $(".imageUploadmmultithemeone52").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8334,7 +8334,7 @@ $(".savemmultithemeone53").click(function() {
  
   $(".editmmultithemeone53").hide();
   $(".imageUploadmmultithemeone53").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8402,7 +8402,7 @@ $(".savemmultithemeone54").click(function() {
  
   $(".editmmultithemeone54").hide();
   $(".imageUploadmmultithemeone54").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8470,7 +8470,7 @@ $(".savemmultithemeone55").click(function() {
  
   $(".editmmultithemeone55").hide();
   $(".imageUploadmmultithemeone55").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8539,7 +8539,7 @@ $(".savemmultithemeone56").click(function() {
  $(".textmmultithemeone56").removeAttr("contenteditable");
   $(".editmmultithemeone56").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -8579,7 +8579,7 @@ $(".savemmultithemeone57").click(function() {
  $(".textmmultithemeone57").removeAttr("contenteditable");
   $(".editmmultithemeone57").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -8623,7 +8623,7 @@ $(".savemmultithemeone58").click(function() {
  $(".textmmultithemeone58").removeAttr("contenteditable");
   $(".editmmultithemeone58").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -8666,7 +8666,7 @@ $(".savemmultithemeone59").click(function() {
  $(".textmmultithemeone59").removeAttr("contenteditable");
   $(".editmmultithemeone59").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -8711,7 +8711,7 @@ $(".savemmultithemeone60").click(function() {
  
   $(".editmmultithemeone60").hide();
   $(".imageUploadmmultithemeone60").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8781,7 +8781,7 @@ $(".savemmultithemeone61").click(function() {
  
   $(".editmmultithemeone61").hide();
   $(".imageUploadmmultithemeone61").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8847,7 +8847,7 @@ $(".savemlthemeone1").click(function() {
  
   $(".editmlthemeone1").hide();
   $(".imageUploadmlthemeone1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8915,7 +8915,7 @@ $(".savemlthemeone2").click(function() {
  
   $(".editmlthemeone2").hide();
   $(".imageUploadmlthemeone2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -8981,7 +8981,7 @@ $(".savemlthemeone3").click(function() {
  
   $(".editmlthemeone3").hide();
   $(".imageUploadmlthemeone3").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9048,7 +9048,7 @@ $(".savemlthemeone4").click(function() {
  
   $(".editmlthemeone4").hide();
   $(".imageUploadmlthemeone4").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9115,7 +9115,7 @@ $(".savemlthemeone5").click(function() {
  
   $(".editmlthemeone5").hide();
   $(".imageUploadmlthemeone5").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9182,7 +9182,7 @@ $(".savemlthemeone6").click(function() {
  
   $(".editmlthemeone6").hide();
   $(".imageUploadmlthemeone6").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9248,7 +9248,7 @@ $(".savemlthemeone7").click(function() {
  
   $(".editmlthemeone7").hide();
   $(".imageUploadmlthemeone7").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9316,7 +9316,7 @@ $(".savemlthemeone8").click(function() {
   $(".imageUploadmlthemeone8").hide();
   $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -9387,7 +9387,7 @@ $(".savemlthemeone9").click(function() {
   $(".imageUploadmlthemeone9").hide();
   $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -9458,7 +9458,7 @@ $(".savemlthemeone10").click(function() {
   $(".imageUploadmlthemeone10").hide();
   $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -9529,7 +9529,7 @@ $(".savemlthemeone11").click(function() {
   $(".imageUploadmlthemeone11").hide();
   $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -9599,7 +9599,7 @@ $(".savemlthemeone12").click(function() {
   $(".imageUploadmlthemeone12").hide();
   $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -9670,7 +9670,7 @@ $(".savemlthemeone13").click(function() {
   $(".imageUploadmlthemeone13").hide();
   $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -9737,7 +9737,7 @@ $(".savemlthemeone14").click(function() {
  
   $(".editmlthemeone14").hide();
   $(".imageUploadmlthemeone14").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9804,7 +9804,7 @@ $(".savemlthemeone15").click(function() {
  
   $(".editmlthemeone15").hide();
   $(".imageUploadmlthemeone15").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9872,7 +9872,7 @@ $(".savemlthemeone16").click(function() {
  
   $(".editmlthemeone16").hide();
   $(".imageUploadmlthemeone16").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -9941,7 +9941,7 @@ $(".savemlthemeone17").click(function() {
  
   $(".editmlthemeone17").hide();
   $(".imageUploadmlthemeone17").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10008,7 +10008,7 @@ $(".savemlthemeone18").click(function() {
  
   $(".editmlthemeone18").hide();
   $(".imageUploadmlthemeone18").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10075,7 +10075,7 @@ $(".savemlthemeone19").click(function() {
  
   $(".editmlthemeone19").hide();
   $(".imageUploadmlthemeone19").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10142,7 +10142,7 @@ $(".savemlthemeone20").click(function() {
  
   $(".editmlthemeone20").hide();
   $(".imageUploadmlthemeone20").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10208,7 +10208,7 @@ $(".savemlthemeone21").click(function() {
  
   $(".editmlthemeone21").hide();
   $(".imageUploadmlthemeone21").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10274,7 +10274,7 @@ $(".savemlthemeone22").click(function() {
  
   $(".editmlthemeone22").hide();
   $(".imageUploadmlthemeone22").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10341,7 +10341,7 @@ $(".savemlthemeone23").click(function() {
  
   $(".editmlthemeone23").hide();
   $(".imageUploadmlthemeone23").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10409,7 +10409,7 @@ $(".savemlthemeone24").click(function() {
  
   $(".editmlthemeone24").hide();
   $(".imageUploadmlthemeone24").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10477,7 +10477,7 @@ $(".savemlthemeone25").click(function() {
   $(".boxmlthemeone25").removeClass("editable");
  $(".textmlthemeone25").removeAttr("contenteditable");
   $(".editmlthemeone25").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -10537,7 +10537,7 @@ $(".submitmlfacebook26").click(function() {
   $(".boxmlthemeone26").removeClass("editable");
   $(".contmlfacebook26").hide();
 addHref26();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -10590,7 +10590,7 @@ $(".savemlthemeone27").click(function() {
  
   $(".editmlthemeone27").hide();
   $(".imageUploadmlthemeone27").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -10659,7 +10659,7 @@ $(".savemlthemeone28").click(function() {
   $(".boxmlthemeone28").removeClass("editable");
  $(".textmlthemeone28").removeAttr("contenteditable");
   $(".editmlthemeone28").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -10702,7 +10702,7 @@ $(".savemlthemeone29").click(function() {
  $(".textmlthemeone29").removeAttr("contenteditable");
   $(".editmlthemeone29").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10744,7 +10744,7 @@ $(".savemlthemeone30").click(function() {
  $(".textmlthemeone30").removeAttr("contenteditable");
   $(".editmlthemeone30").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10785,7 +10785,7 @@ $(".savemlthemeone31").click(function() {
   $(".boxmlthemeone31").removeClass("editable");
  $(".textmlthemeone31").removeAttr("contenteditable");
   $(".editmlthemeone31").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -10828,7 +10828,7 @@ $(".savemlthemeone32").click(function() {
  $(".textmlthemeone32").removeAttr("contenteditable");
   $(".editmlthemeone32").hide();
 
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -10869,7 +10869,7 @@ $(".savemlthemeone33").click(function() {
  $(".textmlthemeone33").removeAttr("contenteditable");
   $(".editmlthemeone33").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10910,7 +10910,7 @@ $(".savemlthemeone34").click(function() {
  $(".textmlthemeone34").removeAttr("contenteditable");
   $(".editmlthemeone34").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10952,7 +10952,7 @@ $(".savemlthemeone35").click(function() {
  $(".textmlthemeone35").removeAttr("contenteditable");
   $(".editmlthemeone35").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -10994,7 +10994,7 @@ $(".savemlthemeone36").click(function() {
  $(".textmlthemeone36").removeAttr("contenteditable");
   $(".editmlthemeone36").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11036,7 +11036,7 @@ $(".savemlthemeone37").click(function() {
  $(".textmlthemeone37").removeAttr("contenteditable");
   $(".editmlthemeone37").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11079,7 +11079,7 @@ $(".savemlthemeone38").click(function() {
  $(".textmlthemeone38").removeAttr("contenteditable");
   $(".editmlthemeone38").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11122,7 +11122,7 @@ $(".savemlthemeone39").click(function() {
  $(".textmlthemeone39").removeAttr("contenteditable");
   $(".editmlthemeone39").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11164,7 +11164,7 @@ $(".savemlthemeone40").click(function() {
  $(".textmlthemeone40").removeAttr("contenteditable");
   $(".editmlthemeone40").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11208,7 +11208,7 @@ $(".savemlthemeone41").click(function() {
 
    $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -11255,7 +11255,7 @@ $(".savemlthemeone42").click(function() {
 
    $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -11301,7 +11301,7 @@ $(".savemlthemeone43").click(function() {
 
    $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -11348,7 +11348,7 @@ $(".savemlthemeone44").click(function() {
 
   $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -11395,7 +11395,7 @@ $(".savemlthemeone45").click(function() {
 
    $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -11441,7 +11441,7 @@ $(".savemlthemeone46").click(function() {
 
    $('.mfp-close').trigger('click');
   setTimeout(function(){ 
-      Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
+      Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");              
 
       }, 500);
 });
@@ -11485,7 +11485,7 @@ $(".savemlthemeone47").click(function() {
  $(".textmlthemeone47").removeAttr("contenteditable");
   $(".editmlthemeone47").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11527,7 +11527,7 @@ $(".savemlthemeone48").click(function() {
  $(".textmlthemeone48").removeAttr("contenteditable");
   $(".editmlthemeone48").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11569,7 +11569,7 @@ $(".savemlthemeone49").click(function() {
  $(".textmlthemeone49").removeAttr("contenteditable");
   $(".editmlthemeone49").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11611,7 +11611,7 @@ $(".savemlthemeone50").click(function() {
  $(".textmlthemeone50").removeAttr("contenteditable");
   $(".editmlthemeone50").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11653,7 +11653,7 @@ $(".savemlthemeone51").click(function() {
  $(".textmlthemeone51").removeAttr("contenteditable");
   $(".editmlthemeone51").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11695,7 +11695,7 @@ $(".savemlthemeone52").click(function() {
  $(".textmlthemeone52").removeAttr("contenteditable");
   $(".editmlthemeone52").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11737,7 +11737,7 @@ $(".savemlthemeone53").click(function() {
  $(".textmlthemeone53").removeAttr("contenteditable");
   $(".editmlthemeone53").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11779,7 +11779,7 @@ $(".savemlthemeone54").click(function() {
  $(".textmlthemeone54").removeAttr("contenteditable");
   $(".editmlthemeone54").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11821,7 +11821,7 @@ $(".savemlthemeone55").click(function() {
  $(".textmlthemeone55").removeAttr("contenteditable");
   $(".editmlthemeone55").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11863,7 +11863,7 @@ $(".savemlthemeone56").click(function() {
  $(".textmlthemeone56").removeAttr("contenteditable");
   $(".editmlthemeone56").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11906,7 +11906,7 @@ $(".savemlthemeone57").click(function() {
  $(".textmlthemeone57").removeAttr("contenteditable");
   $(".editmlthemeone57").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11949,7 +11949,7 @@ $(".savemlthemeone58").click(function() {
  $(".textmlthemeone58").removeAttr("contenteditable");
   $(".editmlthemeone58").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -11993,7 +11993,7 @@ $(".savemlthemeone59").click(function() {
  $(".textmlthemeone59").removeAttr("contenteditable");
   $(".editmlthemeone59").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12037,7 +12037,7 @@ $(".savemlthemeone60").click(function() {
  $(".textmlthemeone60").removeAttr("contenteditable");
   $(".editmlthemeone60").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12081,7 +12081,7 @@ $(".savemlthemeone61").click(function() {
  $(".textmlthemeone61").removeAttr("contenteditable");
   $(".editmlthemeone61").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12125,7 +12125,7 @@ $(".savemlthemeone62").click(function() {
  $(".textmlthemeone62").removeAttr("contenteditable");
   $(".editmlthemeone62").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12190,7 +12190,7 @@ $(".submitmltwitter63").click(function() {
   $(".boxmlthemeone63").removeClass("editable");
   $(".contmltwitter63").hide();
 addHref63();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -12262,7 +12262,7 @@ $(".submitmlgoogleplus64").click(function() {
   $(".boxmlthemeone64").removeClass("editable");
   $(".contmlgoogleplus64").hide();
 addHref64();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -12335,7 +12335,7 @@ $(".submitmlinstagram65").click(function() {
   $(".boxmlthemeone65").removeClass("editable");
   $(".contmlinstagram65").hide();
 addHref65();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -12405,7 +12405,7 @@ $(".submitmllinkedin66").click(function() {
   $(".boxmlthemeone66").removeClass("editable");
   $(".contmllinkedin66").hide();
 addHref66();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -12474,7 +12474,7 @@ $(".submitmldribbble67").click(function() {
   $(".boxmlthemeone67").removeClass("editable");
   $(".contmldribbble67").hide();
 addHref67();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -12525,7 +12525,7 @@ $(".savemlthemeone68").click(function() {
  $(".textmlthemeone68").removeAttr("contenteditable");
   $(".editmlthemeone68").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12569,7 +12569,7 @@ $(".savemlthemeone69").click(function() {
  $(".textmlthemeone69").removeAttr("contenteditable");
   $(".editmlthemeone69").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12614,7 +12614,7 @@ $(".savemlthemeone70").click(function() {
  
   $(".editmlthemeone70").hide();
   $(".imageUploadmlthemeone70").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12683,7 +12683,7 @@ $(".savemlthemeone71").click(function() {
  $(".textmlthemeone71").removeAttr("contenteditable");
   $(".editmlthemeone71").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12726,7 +12726,7 @@ $(".savemlthemeone72").click(function() {
  $(".textmlthemeone72").removeAttr("contenteditable");
   $(".editmlthemeone72").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12770,7 +12770,7 @@ $(".savemlthemeone73").click(function() {
  $(".textmlthemeone73").removeAttr("contenteditable");
   $(".editmlthemeone73").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12814,7 +12814,7 @@ $(".savemlthemeone74").click(function() {
  $(".textmlthemeone74").removeAttr("contenteditable");
   $(".editmlthemeone74").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -12857,7 +12857,7 @@ $(".savemlthemeone75").click(function() {
   $(".boxmlthemeone75").removeClass("editable");
  $(".textmlthemeone75").removeAttr("contenteditable");
   $(".editmlthemeone75").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -12906,7 +12906,7 @@ $(".savemlthemeone76").click(function() {
  
   $(".editmlthemeone76").hide();
   $(".imageUploadmlthemeone76").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -12976,7 +12976,7 @@ $(".savemlthemeone77").click(function() {
  
   $(".editmlthemeone77").hide();
   $(".imageUploadmlthemeone77").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13046,7 +13046,7 @@ $(".savemlthemeone78").click(function() {
  
   $(".editmlthemeone78").hide();
   $(".imageUploadmlthemeone78").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13113,7 +13113,7 @@ $(".submitmlthemeone24").click(function() {
   $(".boxmlthemeone24").removeClass("editable");
   $(".contmllinkedin24").hide();
 addHref24();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -13163,7 +13163,7 @@ $(".submitmlthemeone27").click(function() {
   $(".boxmlthemeone27").removeClass("editable");
   $(".contmllinkedin27").hide();
 addHref27();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -13214,7 +13214,7 @@ $(".savesnipetimage1").click(function() {
  
   $(".editsnipetimage1").hide();
   $(".imageUploadsnipetimage1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13282,7 +13282,7 @@ $(".savesnipetimage2").click(function() {
  
   $(".editsnipetimage2").hide();
   $(".imageUploadsnipetimage2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13349,7 +13349,7 @@ $(".savesnipetimage3").click(function() {
  
   $(".editsnipetimage3").hide();
   $(".imageUploadsnipetimage3").hide();
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 
 
@@ -13418,7 +13418,7 @@ $(".savesnipetimage4").click(function() {
  
   $(".editsnipetimage4").hide();
   $(".imageUploadsnipetimage4").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13485,7 +13485,7 @@ $(".savesnipetimage5").click(function() {
  
   $(".editsnipetimage5").hide();
   $(".imageUploadsnipetimage5").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13551,7 +13551,7 @@ $(".savesnipetimage6").click(function() {
  
   $(".editsnipetimage6").hide();
   $(".imageUploadsnipetimage6").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13618,7 +13618,7 @@ $(".savesnipetimage7").click(function() {
  
   $(".editsnipetimage7").hide();
   $(".imageUploadsnipetimage7").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13685,7 +13685,7 @@ $(".savesnipetimage8").click(function() {
  
   $(".editsnipetimage8").hide();
   $(".imageUploadsnipetimage8").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13753,7 +13753,7 @@ $(".savesnipetimage9").click(function() {
  
   $(".editsnipetimage9").hide();
   $(".imageUploadsnipetimage9").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13820,7 +13820,7 @@ $(".savesnipetimage10").click(function() {
  
   $(".editsnipetimage10").hide();
   $(".imageUploadsnipetimage10").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13887,7 +13887,7 @@ $(".savesnipetimage11").click(function() {
  
   $(".editsnipetimage11").hide();
   $(".imageUploadsnipetimage11").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -13953,7 +13953,7 @@ $(".savegallerytheme1").click(function() {
  
   $(".editgallerytheme1").hide();
   $(".imageUploadgallerytheme1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14022,7 +14022,7 @@ $(".savegallerytheme2").click(function() {
  
   $(".editgallerytheme2").hide();
   $(".imageUploadgallerytheme2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14088,7 +14088,7 @@ $(".savegallerytheme3").click(function() {
  $(".textgallerytheme3").removeAttr("contenteditable");
   $(".editgallerytheme3").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -14129,7 +14129,7 @@ $(".savegallerytheme4").click(function() {
  
   $(".editgallerytheme4").hide();
   $(".imageUploadgallerytheme4").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14194,7 +14194,7 @@ $(".savegallerytheme5").click(function() {
  
   $(".editgallerytheme5").hide();
   $(".imageUploadgallerytheme5").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14261,7 +14261,7 @@ $(".savegallerytheme6").click(function() {
  
   $(".editgallerytheme6").hide();
   $(".imageUploadgallerytheme6").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14326,7 +14326,7 @@ $(".savegallerytheme7").click(function() {
  
   $(".editgallerytheme7").hide();
   $(".imageUploadgallerytheme7").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14389,7 +14389,7 @@ $(".savegallerytheme8").click(function() {
   $(".boxgallerytheme8").removeClass("editable");
  $(".textgallerytheme8").removeAttr("contenteditable");
   $(".editgallerytheme8").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -14427,7 +14427,7 @@ $(".savegallerytheme9").click(function() {
   $(".boxgallerytheme9").removeClass("editable");
  $(".textgallerytheme9").removeAttr("contenteditable");
   $(".editgallerytheme9").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -14466,7 +14466,7 @@ $(".savegallerytheme10").click(function() {
   $(".boxgallerytheme10").removeClass("editable");
  $(".textgallerytheme10").removeAttr("contenteditable");
   $(".editgallerytheme10").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -14505,7 +14505,7 @@ $(".savegallerytheme11").click(function() {
   $(".boxgallerytheme11").removeClass("editable");
  $(".textgallerytheme11").removeAttr("contenteditable");
   $(".editgallerytheme11").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -14544,7 +14544,7 @@ $(".savegallerytheme12").click(function() {
   $(".boxgallerytheme12").removeClass("editable");
  $(".textgallerytheme12").removeAttr("contenteditable");
   $(".editgallerytheme12").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 })
 
@@ -14587,7 +14587,7 @@ $(".savemoxygentheme1").click(function() {
  
   $(".editmoxygentheme1").hide();
   $(".imageUploadmoxygentheme1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14657,7 +14657,7 @@ $(".savemoxygentheme2").click(function() {
  
   $(".editmoxygentheme2").hide();
   $(".imageUploadmoxygentheme2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14728,7 +14728,7 @@ $(".savemoxygentheme3").click(function() {
  
   $(".editmoxygentheme3").hide();
   $(".imageUploadmoxygentheme3").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14797,7 +14797,7 @@ $(".savemoxygentheme4").click(function() {
  $(".textmoxygentheme4").removeAttr("contenteditable");
   $(".editmoxygentheme4").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -14839,7 +14839,7 @@ $(".savemoxygentheme5").click(function() {
  $(".textmoxygentheme5").removeAttr("contenteditable");
   $(".editmoxygentheme5").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -14880,7 +14880,7 @@ $(".savemoxygentheme6").click(function() {
   $(".boxmoxygentheme6").removeClass("editable");
  $(".textmoxygentheme6").removeAttr("contenteditable");
   $(".editmoxygentheme6").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -14923,7 +14923,7 @@ $(".savemoxygentheme7").click(function() {
  
   $(".editmoxygentheme7").hide();
   $(".imageUploadmoxygentheme7").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -14995,7 +14995,7 @@ $(".savemoxygentheme9").click(function() {
   $(".boxmoxygentheme9").removeClass("editable");
  $(".textmoxygentheme9").removeAttr("contenteditable");
   $(".editmoxygentheme9").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -15038,7 +15038,7 @@ $(".savemoxygentheme10").click(function() {
  
   $(".editmoxygentheme10").hide();
   $(".imageUploadmoxygentheme10").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15110,7 +15110,7 @@ $(".savemoxygentheme12").click(function() {
  
   $(".editmoxygentheme12").hide();
   $(".imageUploadmoxygentheme12").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15178,7 +15178,7 @@ $(".savemoxygentheme13").click(function() {
  
   $(".editmoxygentheme13").hide();
   $(".imageUploadmoxygentheme13").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15246,7 +15246,7 @@ $(".savemoxygentheme14").click(function() {
  
   $(".editmoxygentheme14").hide();
   $(".imageUploadmoxygentheme14").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15314,7 +15314,7 @@ $(".savemoxygentheme15").click(function() {
  
   $(".editmoxygentheme15").hide();
   $(".imageUploadmoxygentheme15").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15382,7 +15382,7 @@ $(".savemoxygentheme16").click(function() {
  
   $(".editmoxygentheme16").hide();
   $(".imageUploadmoxygentheme16").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15450,7 +15450,7 @@ $(".savemoxygentheme17").click(function() {
  
   $(".editmoxygentheme17").hide();
   $(".imageUploadmoxygentheme17").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15517,7 +15517,7 @@ $(".savemoxygentheme18").click(function() {
  
   $(".editmoxygentheme18").hide();
   $(".imageUploadmoxygentheme18").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15585,7 +15585,7 @@ $(".savemoxygentheme19").click(function() {
  
   $(".editmoxygentheme19").hide();
   $(".imageUploadmoxygentheme19").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15657,7 +15657,7 @@ $(".savemoxygentheme21").click(function() {
  
   $(".editmoxygentheme21").hide();
   $(".imageUploadmoxygentheme21").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15725,7 +15725,7 @@ $(".savemoxygentheme22").click(function() {
  
   $(".editmoxygentheme22").hide();
   $(".imageUploadmoxygentheme22").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15792,7 +15792,7 @@ $(".savemoxygentheme23").click(function() {
  
   $(".editmoxygentheme23").hide();
   $(".imageUploadmoxygentheme23").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15861,7 +15861,7 @@ $(".savemoxygentheme24").click(function() {
  
   $(".editmoxygentheme24").hide();
   $(".imageUploadmoxygentheme24").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -15929,7 +15929,7 @@ $(".savemoxygentheme25").click(function() {
   $(".boxmoxygentheme25").removeClass("editable");
  $(".textmoxygentheme25").removeAttr("contenteditable");
   $(".editmoxygentheme25").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -15973,7 +15973,7 @@ $(".savemoxygentheme26").click(function() {
  $(".textmoxygentheme26").removeAttr("contenteditable");
   $(".editmoxygentheme26").hide();
 
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -16016,7 +16016,7 @@ $(".savemoxygentheme27").click(function() {
  $(".textmoxygentheme27").removeAttr("contenteditable");
   $(".editmoxygentheme27").hide();
 
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");  
 });
 });
 
@@ -16176,7 +16176,7 @@ $(".submitmoxyfacebook29").click(function() {
   $(".boxmoxygentheme29").removeClass("editable");
   $(".contmoxyfacebook29").hide();
 addHrefoxy29();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16303,7 +16303,7 @@ $(".submitmoxyfacebook30").click(function() {
   $(".boxmoxygentheme30").removeClass("editable");
   $(".contmoxyfacebook30").hide();
 addHrefoxy30();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16428,7 +16428,7 @@ $(".submitmoxyfacebook31").click(function() {
   $(".boxmoxygentheme31").removeClass("editable");
   $(".contmoxyfacebook31").hide();
 addHrefoxy31();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16555,7 +16555,7 @@ $(".submitmoxyfacebook32").click(function() {
   $(".boxmoxygentheme32").removeClass("editable");
   $(".contmoxyfacebook32").hide();
 addHrefoxy32();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16682,7 +16682,7 @@ $(".submitmoxytwitter33").click(function() {
   $(".boxmoxygentheme33").removeClass("editable");
   $(".contmoxytwitter33").hide();
 addHrefoxy33();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16812,7 +16812,7 @@ $(".submitmoxytwitter34").click(function() {
   $(".boxmoxygentheme34").removeClass("editable");
   $(".contmoxytwitter34").hide();
 addHrefoxy34();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -16941,7 +16941,7 @@ $(".submitmoxytwitter35").click(function() {
   $(".boxmoxygentheme35").removeClass("editable");
   $(".contmoxytwitter35").hide();
 addHrefoxy35();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17065,7 +17065,7 @@ $(".submitmoxytwitter36").click(function() {
   $(".boxmoxygentheme36").removeClass("editable");
   $(".contmoxytwitter36").hide();
 addHrefoxy36();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17194,7 +17194,7 @@ $(".submitmoxylinkedin37").click(function() {
   $(".boxmoxygentheme37").removeClass("editable");
   $(".contmoxylinkedin37").hide();
 addHrefoxy37();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17322,7 +17322,7 @@ $(".submitmoxylinkedin38").click(function() {
   $(".boxmoxygentheme38").removeClass("editable");
   $(".contmoxylinkedin38").hide();
 addHrefoxy38();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17450,7 +17450,7 @@ $(".submitmoxylinkedin39").click(function() {
   $(".boxmoxygentheme39").removeClass("editable");
   $(".contmoxylinkedin39").hide();
 addHrefoxy39();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17579,7 +17579,7 @@ $(".submitmoxylinkedin40").click(function() {
   $(".boxmoxygentheme40").removeClass("editable");
   $(".contmoxylinkedin40").hide();
 addHrefoxy40();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17705,7 +17705,7 @@ $(".submitmoxydribbble41").click(function() {
   $(".boxmoxygentheme41").removeClass("editable");
   $(".contmoxydribbble41").hide();
 addHrefoxy41();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17833,7 +17833,7 @@ $(".submitmoxydribbble42").click(function() {
   $(".boxmoxygentheme42").removeClass("editable");
   $(".contmoxydribbble42").hide();
 addHrefoxy42();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -17961,7 +17961,7 @@ $(".submitmoxydribbble43").click(function() {
   $(".boxmoxygentheme43").removeClass("editable");
   $(".contmoxydribbble43").hide();
 addHrefoxy43();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18089,7 +18089,7 @@ $(".submitmoxydribbble44").click(function() {
   $(".boxmoxygentheme44").removeClass("editable");
   $(".contmoxydribbble44").hide();
 addHrefoxy44();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18217,7 +18217,7 @@ $(".submitmoxyrss45").click(function() {
   $(".boxmoxygentheme45").removeClass("editable");
   $(".contmoxyrss45").hide();
 addHrefoxy45();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18346,7 +18346,7 @@ $(".submitmoxyrss46").click(function() {
   $(".boxmoxygentheme46").removeClass("editable");
   $(".contmoxyrss46").hide();
 addHrefoxy46();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18474,7 +18474,7 @@ $(".submitmoxyrss47").click(function() {
   $(".boxmoxygentheme47").removeClass("editable");
   $(".contmoxyrss47").hide();
 addHrefoxy47();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18604,7 +18604,7 @@ $(".submitmoxyrss48").click(function() {
   $(".boxmoxygentheme48").removeClass("editable");
   $(".contmoxyrss48").hide();
 addHrefoxy48();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -18657,7 +18657,7 @@ $(".savemoxygentheme49").click(function() {
  $(".textmoxygentheme49").removeAttr("contenteditable");
   $(".editmoxygentheme49").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18704,7 +18704,7 @@ $(".savemoxygentheme50").click(function() {
  
   $(".editmoxygentheme50").hide();
   $(".imageUploadmoxygentheme50").hide();
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 
 
@@ -18775,7 +18775,7 @@ $(".savemoxygentheme52").click(function() {
  $(".textmoxygentheme52").removeAttr("contenteditable");
   $(".editmoxygentheme52").hide();
 
- Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
+ Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}"); 
 });
 });
 
@@ -18818,7 +18818,7 @@ $(".savemoxygentheme53").click(function() {
  $(".textmoxygentheme53").removeAttr("contenteditable");
   $(".editmoxygentheme53").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18860,7 +18860,7 @@ $(".savemoxygentheme54").click(function() {
  $(".textmoxygentheme54").removeAttr("contenteditable");
   $(".editmoxygentheme54").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18902,7 +18902,7 @@ $(".savemoxygentheme55").click(function() {
  $(".textmoxygentheme55").removeAttr("contenteditable");
   $(".editmoxygentheme55").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -18948,7 +18948,7 @@ $(".savemoxygentheme57").click(function() {
  
   $(".editmoxygentheme57").hide();
   $(".imageUploadmoxygentheme57").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19017,7 +19017,7 @@ $(".savemoxygentheme58").click(function() {
  
   $(".editmoxygentheme58").hide();
   $(".imageUploadmoxygentheme58").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19086,7 +19086,7 @@ $(".savemoxygentheme59").click(function() {
  
   $(".editmoxygentheme59").hide();
   $(".imageUploadmoxygentheme59").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19154,7 +19154,7 @@ $(".savemoxygentheme60").click(function() {
  
   $(".editmoxygentheme60").hide();
   $(".imageUploadmoxygentheme60").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19223,7 +19223,7 @@ $(".savemoxygentheme61").click(function() {
  
   $(".editmoxygentheme61").hide();
   $(".imageUploadmoxygentheme61").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19291,7 +19291,7 @@ $(".savemoxygentheme62").click(function() {
  $(".textmoxygentheme62").removeAttr("contenteditable");
   $(".editmoxygentheme62").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19334,7 +19334,7 @@ $(".savemoxygentheme63").click(function() {
  $(".textmoxygentheme63").removeAttr("contenteditable");
   $(".editmoxygentheme63").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19377,7 +19377,7 @@ $(".savemoxygentheme64").click(function() {
  $(".textmoxygentheme64").removeAttr("contenteditable");
   $(".editmoxygentheme64").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19421,7 +19421,7 @@ $(".savemoxygentheme65").click(function() {
  $(".textmoxygentheme65").removeAttr("contenteditable");
   $(".editmoxygentheme65").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19463,7 +19463,7 @@ $(".savemoxygentheme66").click(function() {
   $(".boxmoxygentheme66").removeClass("editable");
  $(".textmoxygentheme66").removeAttr("contenteditable");
   $(".editmoxygentheme66").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -19508,7 +19508,7 @@ $(".savemoxygentheme67").click(function() {
  $(".textmoxygentheme67").removeAttr("contenteditable");
   $(".editmoxygentheme67").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19552,7 +19552,7 @@ $(".savemoxygentheme68").click(function() {
  $(".textmoxygentheme68").removeAttr("contenteditable");
   $(".editmoxygentheme68").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19596,7 +19596,7 @@ $(".savemoxygentheme69").click(function() {
  $(".textmoxygentheme69").removeAttr("contenteditable");
   $(".editmoxygentheme69").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -19643,7 +19643,7 @@ $(".savemoxygentheme70").click(function() {
  
   $(".editmoxygentheme70").hide();
   $(".imageUploadmoxygentheme70").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19710,7 +19710,7 @@ $(".savemoxygentheme71").click(function() {
  
   $(".editmoxygentheme71").hide();
   $(".imageUploadmoxygentheme71").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -19793,7 +19793,7 @@ $(".submitmoxyenvelope72").click(function() {
   $(".boxmoxygentheme72").removeClass("editable");
   $(".contmoxyenvelope72").hide();
 addHrefoxy72();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -19857,7 +19857,7 @@ $(".submitmoxytwitter73").click(function() {
   $(".boxmoxygentheme73").removeClass("editable");
   $(".contmoxytwitter73").hide();
 addHrefoxy73();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -19923,7 +19923,7 @@ $(".submitmoxydribbble74").click(function() {
   $(".contmoxydribbble74").hide();
 
 addHrefoxy74();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -19988,7 +19988,7 @@ $(".submitmoxyfacebook75").click(function() {
   $(".boxmoxygentheme75").removeClass("editable");
   $(".contmoxyfacebook75").hide();
 addHrefoxy75();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20054,7 +20054,7 @@ $(".submitmoxylinkedin76").click(function() {
   $(".boxmoxygentheme76").removeClass("editable");
   $(".contmoxylinkedin76").hide();
 addHrefoxy76();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -20118,7 +20118,7 @@ $(".submitmoxytumblrsquare77").click(function() {
   $(".boxmoxygentheme77").removeClass("editable");
   $(".contmoxytumblrsquare77").hide();
 addHrefoxy77();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
@@ -20180,7 +20180,7 @@ $(".savemoxygentheme79").click(function() {
  
   $(".editmoxygentheme79").hide();
   $(".imageUploadmoxygentheme79").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -20252,7 +20252,7 @@ $(".savemoxygentheme80").click(function() {
  
   $(".editmoxygentheme80").hide();
   $(".imageUploadmoxygentheme80").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -20325,7 +20325,7 @@ $( ".boxmoxygentheme81" )
   $(".contpurmoxygentheme81").hide();
    $(".boxmoxygentheme81").removeClass("editable");
 addmoxyfontawesomecontpur81();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20391,7 +20391,7 @@ $( ".boxmoxygentheme82" )
   $(".contpurmoxygentheme82").hide();
    $(".boxmoxygentheme82").removeClass("editable");
 addmoxyfontawesomecontpur82();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20455,7 +20455,7 @@ $( ".boxmoxygentheme83" )
   $(".contpurmoxygentheme83").hide();
    $(".boxmoxygentheme83").removeClass("editable");
 addmoxyfontawesomecontpur83();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20518,7 +20518,7 @@ $( ".boxmoxygentheme84" )
   $(".contpurmoxygentheme84").hide();
    $(".boxmoxygentheme84").removeClass("editable");
 addmoxyfontawesomecontpur84();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20582,7 +20582,7 @@ $( ".boxmoxygentheme85" )
   $(".contpurmoxygentheme85").hide();
    $(".boxmoxygentheme85").removeClass("editable");
 addmoxyfontawesomecontpur85();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20644,7 +20644,7 @@ $( ".boxmoxygentheme86" )
   $(".contpurmoxygentheme86").hide();
    $(".boxmoxygentheme86").removeClass("editable");
 addmoxyfontawesomecontpur86();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20708,7 +20708,7 @@ $( ".boxmoxygentheme87" )
   $(".contpurmoxygentheme87").hide();
    $(".boxmoxygentheme87").removeClass("editable");
 addmoxyfontawesomecontpur87();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -20781,7 +20781,7 @@ $( ".boxmoxygentheme88" )
   $(".contpresentationcolormoxygentheme88").hide();
    $(".boxmoxygentheme88").removeClass("editable");
 moxyaddpresentationcolor88();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme88").click(function() {
@@ -20789,7 +20789,7 @@ $(".savemoxygentheme88").click(function() {
   $(".boxmoxygentheme88").removeClass("editable");
  $(".textmoxygentheme88").removeAttr("contenteditable");
   $(".editmoxygentheme88").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -20850,7 +20850,7 @@ $( ".boxmoxygentheme89" )
   $(".contpresentationcolormoxygentheme89").hide();
    $(".boxmoxygentheme89").removeClass("editable");
 moxyaddpresentationcolor89();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme89").click(function() {
@@ -20858,7 +20858,7 @@ $(".savemoxygentheme89").click(function() {
   $(".boxmoxygentheme89").removeClass("editable");
  $(".textmoxygentheme89").removeAttr("contenteditable");
   $(".editmoxygentheme89").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -20919,7 +20919,7 @@ $( ".boxmoxygentheme90" )
   $(".contpresentationcolormoxygentheme90").hide();
    $(".boxmoxygentheme90").removeClass("editable");
 moxyaddpresentationcolor90();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme90").click(function() {
@@ -20927,7 +20927,7 @@ $(".savemoxygentheme90").click(function() {
   $(".boxmoxygentheme90").removeClass("editable");
  $(".textmoxygentheme90").removeAttr("contenteditable");
   $(".editmoxygentheme90").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -20986,7 +20986,7 @@ $( ".boxmoxygentheme91" )
   $(".contpresentationcolormoxygentheme91").hide();
    $(".boxmoxygentheme91").removeClass("editable");
 moxyaddpresentationcolor91();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme91").click(function() {
@@ -20994,7 +20994,7 @@ $(".savemoxygentheme91").click(function() {
   $(".boxmoxygentheme91").removeClass("editable");
  $(".textmoxygentheme91").removeAttr("contenteditable");
   $(".editmoxygentheme91").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -21054,7 +21054,7 @@ $( ".boxmoxygentheme92" )
   $(".contpresentationcolormoxygentheme92").hide();
    $(".boxmoxygentheme92").removeClass("editable");
 moxyaddpresentationcolor92();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemoxygentheme92").click(function() {
@@ -21062,7 +21062,7 @@ $(".savemoxygentheme92").click(function() {
   $(".boxmoxygentheme92").removeClass("editable");
  $(".textmoxygentheme92").removeAttr("contenteditable");
   $(".editmoxygentheme92").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -21114,7 +21114,7 @@ $( ".boxmoxygentheme93" )
   $(".contpurmoxygentheme93").hide();
    $(".boxmoxygentheme93").removeClass("editable");
 addmoxyfontawesomecontpur93();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21178,7 +21178,7 @@ $( ".boxmoxygentheme94" )
   $(".contpurmoxygentheme94").hide();
    $(".boxmoxygentheme94").removeClass("editable");
 addmoxyfontawesomecontpur94();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21243,7 +21243,7 @@ $( ".boxmoxygentheme95" )
   $(".contpurmoxygentheme95").hide();
    $(".boxmoxygentheme95").removeClass("editable");
 addmoxyfontawesomecontpur95();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21305,7 +21305,7 @@ $( ".boxmoxygentheme96" )
   $(".contpurmoxygentheme96").hide();
    $(".boxmoxygentheme96").removeClass("editable");
 addmoxyfontawesomecontpur96();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21368,7 +21368,7 @@ $( ".boxmoxygentheme97" )
   $(".contpurmoxygentheme97").hide();
    $(".boxmoxygentheme97").removeClass("editable");
 addmoxyfontawesomecontpur97();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21431,7 +21431,7 @@ $( ".boxmoxygentheme98" )
   $(".contpurmoxygentheme98").hide();
    $(".boxmoxygentheme98").removeClass("editable");
 addmoxyfontawesomecontpur98();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21496,7 +21496,7 @@ $( ".boxmoxygentheme99" )
   $(".contpurmoxygentheme99").hide();
    $(".boxmoxygentheme99").removeClass("editable");
 addmoxyfontawesomecontpur99();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21560,7 +21560,7 @@ $( ".boxmoxygentheme100" )
   $(".contpurmoxygentheme100").hide();
    $(".boxmoxygentheme100").removeClass("editable");
 addmoxyfontawesomecontpur100();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -21626,7 +21626,7 @@ $( ".boxmoxygentheme101" )
   $(".contpresentationcolormoxygentheme101").hide();
    $(".boxmoxygentheme101").removeClass("editable");
 moxyaddpresentationcolor101();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -21689,7 +21689,7 @@ $( ".boxmoxygentheme102" )
   $(".contpresentationcolormoxygentheme102").hide();
    $(".boxmoxygentheme102").removeClass("editable");
 moxyaddpresentationcolor102();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 
   
 });
@@ -21699,7 +21699,7 @@ $(".savemoxygentheme102").click(function() {
   $(".boxmoxygentheme102").removeClass("editable");
  $(".textmoxygentheme102").removeAttr("contenteditable");
   $(".editmoxygentheme102").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -21750,7 +21750,7 @@ $(".submitmoxybg1").click(function() {
   $(".boxmoxygentheme111").removeClass("editable");
   $(".contmoxybg1").hide();
   addHrefoxy1();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -21805,7 +21805,7 @@ $(".submitmoxybg2").click(function() {
   $(".boxmoxygentheme222").removeClass("editable");
   $(".contmoxybg2").hide();
   addHrefoxy2();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -21861,7 +21861,7 @@ $(".submitmoxybg3").click(function() {
   $(".boxmoxygentheme333").removeClass("editable");
   $(".contmoxybg3").hide();
   addHrefoxy3();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -21917,7 +21917,7 @@ $(".submitmoxybg80").click(function() {
   $(".boxmoxygentheme80a").removeClass("editable");
   $(".contmoxybg80").hide();
   addHrefoxy80();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -21971,7 +21971,7 @@ $(".submitmoxybg50").click(function() {
   $(".boxmoxygentheme50a").removeClass("editable");
   $(".contmoxybg50").hide();
   addHrefoxy50();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22028,7 +22028,7 @@ $(".submitmoxybg79").click(function() {
   $(".boxmoxygentheme79a").removeClass("editable");
   $(".contmoxybg79").hide();
   addHrefoxy79();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22084,7 +22084,7 @@ $(".submitmoxybg70").click(function() {
   $(".boxmoxygentheme70a").removeClass("editable");
   $(".contmoxybg70").hide();
   addHrefoxy70();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22141,7 +22141,7 @@ $(".submitmoxysingup103").click(function() {
   $(".boxmoxygentheme103").removeClass("editable");
   $(".contmoxysingup103").hide();
 addHrefoxy103();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22195,7 +22195,7 @@ $(".submitmoxysingup104").click(function() {
   $(".boxmoxygentheme104").removeClass("editable");
   $(".contmoxysingup104").hide();
 addHrefoxy104();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22248,7 +22248,7 @@ $(".submitmoxysingup105").click(function() {
   $(".boxmoxygentheme105").removeClass("editable");
   $(".contmoxysingup105").hide();
 addHrefoxy105();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22301,7 +22301,7 @@ $(".submitmoxysingup106").click(function() {
   $(".boxmoxygentheme106").removeClass("editable");
   $(".contmoxysingup106").hide();
 addHrefoxy106();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22351,7 +22351,7 @@ $(".savempoltheme1").click(function() {
  
   $(".editmpoltheme1").hide();
   $(".imageUploadmpoltheme1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -22424,7 +22424,7 @@ $(".savempoltheme2").click(function() {
  
   $(".editmpoltheme2").hide();
   $(".imageUploadmpoltheme2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -22495,7 +22495,7 @@ $(".submitmpolbg2").click(function() {
   $(".boxmpoltheme222").removeClass("editable");
   $(".contmpolbg2").hide();
   addHrefpol2();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -22549,7 +22549,7 @@ $(".savempoltheme3").click(function() {
  $(".textmpoltheme3").removeAttr("contenteditable");
   $(".editmpoltheme3").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -22593,7 +22593,7 @@ $(".savempoltheme4").click(function() {
   $(".boxmpoltheme4").removeClass("editable");
  $(".textmpoltheme4").removeAttr("contenteditable");
   $(".editmpoltheme4").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -22637,7 +22637,7 @@ $(".savempoltheme5").click(function() {
  
   $(".editmpoltheme5").hide();
   $(".imageUploadmpoltheme5").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -22707,7 +22707,7 @@ $(".savempoltheme6").click(function() {
  
   $(".editmpoltheme6").hide();
   $(".imageUploadmpoltheme6").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -22777,7 +22777,7 @@ $(".savempoltheme7").click(function() {
  
   $(".editmpoltheme7").hide();
   $(".imageUploadmpoltheme7").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -22848,7 +22848,7 @@ $(".savempoltheme8").click(function() {
   $(".boxmpoltheme8").removeClass("editable");
  $(".textmpoltheme8").removeAttr("contenteditable");
   $(".editmpoltheme8").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -22896,7 +22896,7 @@ $(".savempoltheme9").click(function() {
  
   $(".editmpoltheme9").hide();
   $(".imageUploadmpoltheme9").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -22970,7 +22970,7 @@ $(".savempoltheme10").click(function() {
  $(".textmpoltheme10").removeAttr("contenteditable");
   $(".editmpoltheme10").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -23013,7 +23013,7 @@ $(".savempoltheme11").click(function() {
  
   $(".editmpoltheme11").hide();
   $(".imageUploadmpoltheme11").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23083,7 +23083,7 @@ $(".savempoltheme12").click(function() {
  
   $(".editmpoltheme12").hide();
   $(".imageUploadmpoltheme12").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23155,7 +23155,7 @@ $(".savempoltheme13").click(function() {
  
   $(".editmpoltheme13").hide();
   $(".imageUploadmpoltheme13").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23226,7 +23226,7 @@ $(".savempoltheme14").click(function() {
  
   $(".editmpoltheme14").hide();
   $(".imageUploadmpoltheme14").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23299,7 +23299,7 @@ $(".savempoltheme15").click(function() {
  $(".textmpoltheme15").removeAttr("contenteditable");
   $(".editmpoltheme15").hide();
 
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -23349,7 +23349,7 @@ $(".savempoltheme16").click(function() {
  
   $(".editmpoltheme16").hide();
   $(".imageUploadmpoltheme16").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23421,7 +23421,7 @@ $(".submitmpolbg16").click(function() {
   $(".boxmpoltheme16a").removeClass("editable");
   $(".contmpolbg16").hide();
   addHrefpol16();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -23472,7 +23472,7 @@ $(".savempoltheme17").click(function() {
   $(".boxmpoltheme17").removeClass("editable");
  $(".textmpoltheme17").removeAttr("contenteditable");
   $(".editmpoltheme17").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -23517,7 +23517,7 @@ $(".savempoltheme18").click(function() {
  
   $(".editmpoltheme18").hide();
   $(".imageUploadmpoltheme18").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23587,7 +23587,7 @@ $(".savempoltheme19").click(function() {
  
   $(".editmpoltheme19").hide();
   $(".imageUploadmpoltheme19").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23657,7 +23657,7 @@ $(".savempoltheme20").click(function() {
  
   $(".editmpoltheme20").hide();
   $(".imageUploadmpoltheme20").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23727,7 +23727,7 @@ $(".savempoltheme21").click(function() {
  
   $(".editmpoltheme21").hide();
   $(".imageUploadmpoltheme21").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -23796,7 +23796,7 @@ $(".savempoltheme22").click(function() {
   $(".boxmpoltheme22").removeClass("editable");
  $(".textmpoltheme22").removeAttr("contenteditable");
   $(".editmpoltheme22").hide();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 });
@@ -23862,7 +23862,7 @@ $(".submitmpolfacebook23").click(function() {
   $(".boxmpoltheme23").removeClass("editable");
   $(".contmpolfacebook23").hide();
 addHrefmpol23();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -23929,7 +23929,7 @@ $(".submitmpoltwitter24").click(function() {
   $(".boxmpoltheme24").removeClass("editable");
   $(".contmpoltwitter24").hide();
 addHrefmpol24();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -24001,7 +24001,7 @@ $(".submitmpoldribble25").click(function() {
   $(".boxmpoltheme25").removeClass("editable");
   $(".contmpoldribble25").hide();
 addHrefmpol25();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -24071,7 +24071,7 @@ $(".submitmpolbehance26").click(function() {
   $(".boxmpoltheme26").removeClass("editable");
   $(".contmpolbehance26").hide();
 addHrefmpol26();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -24133,7 +24133,7 @@ $( ".boxmpoltheme27" )
   $(".contpresentationcolormpoltheme27").hide();
    $(".boxmpoltheme27").removeClass("editable");
 addmpolpresentationcolor27();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savempoltheme27").click(function() {
@@ -24141,7 +24141,7 @@ $(".savempoltheme27").click(function() {
   $(".boxmpoltheme27").removeClass("editable");
  $(".textmpoltheme27").removeAttr("contenteditable");
   $(".editmpoltheme27").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -24188,7 +24188,7 @@ $(".savelogolnndynamic").click(function() {
  
   $(".editlogolnndynamic").hide();
   $(".imageUploadlogonlnndynamic").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -24247,7 +24247,7 @@ $(".submitmnabg2").click(function() {
   $(".boxmnatheme222").removeClass("editable");
   $(".contmpolbg2").hide();
   addHrefna2();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
  
@@ -24302,7 +24302,7 @@ $(".savemnatheme2").click(function() {
  
   $(".editmnatheme2").hide();
   $(".imageUploadmnatheme2").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 
@@ -24364,7 +24364,7 @@ $( ".boxpcservices1" )
   $(".contpurpcservices1").hide();
    $(".boxpcservices1").removeClass("editable");
 addpcfontawesomecontpur1a();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -24425,7 +24425,7 @@ $( ".boxpcservices2" )
   $(".contpurpcservices2").hide();
    $(".boxpcservices2").removeClass("editable");
 addpcfontawesomecontpur2();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -24487,7 +24487,7 @@ $( ".boxpcservices3" )
   $(".contpurpcservices3").hide();
    $(".boxpcservices3").removeClass("editable");
 addpcfontawesomecontpur3();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -24559,7 +24559,7 @@ $( ".boxpcservices4" )
   $(".contpresentationcolorpcservices4").hide();
    $(".boxpcservices4").removeClass("editable");
 addpcspresentationcolor4();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
@@ -24568,7 +24568,7 @@ $(".savepcservices4").click(function() {
   $(".boxpcservices4").removeClass("editable");
  $(".textpcservices4").removeAttr("contenteditable");
   $(".editpcservices4").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -24623,7 +24623,7 @@ $( ".boxpcservices5" )
   $(".contpurpcservices5").hide();
    $(".boxpcservices5").removeClass("editable");
 addpcfontawesomecontpur1();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -24689,7 +24689,7 @@ $( ".boxpcservices6" )
   $(".contpurpcservices6").hide();
    $(".boxpcservices6").removeClass("editable");
 addpcfontawesomecontpur6();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -24755,7 +24755,7 @@ $( ".boxpcservices7" )
   $(".contpurpcservices7").hide();
    $(".boxpcservices7").removeClass("editable");
 addpcfontawesomecontpur7();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -24824,7 +24824,7 @@ $( ".boxpcservices5" )
   $(".contpresentationcolorpcservices5").hide();
    $(".boxpcservices5").removeClass("editable");
 addpcspresentationcolor5();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
   
 });
 
@@ -24833,7 +24833,7 @@ $(".savepcservices5").click(function() {
   $(".boxpcservices5").removeClass("editable");
  $(".textpcservices5").removeAttr("contenteditable");
   $(".editpcservices5").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -24889,7 +24889,7 @@ $( ".boxpcservices7" )
   $(".contpresentationcolorpcservices7").hide();
    $(".boxpcservices7").removeClass("editable");
 addpcspresentationcolor7();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savepcservices7").click(function() {
@@ -24897,7 +24897,7 @@ $(".savepcservices7").click(function() {
   $(".boxpcservices7").removeClass("editable");
  $(".textpcservices7").removeAttr("contenteditable");
   $(".editpcservices7").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -24957,7 +24957,7 @@ $( ".boxmlthemeone79" )
   $(".contpresentationcolormlthemeone79").hide();
    $(".boxmlthemeone79").removeClass("editable");
 addmlpresentationcolor79();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemlthemeone79").click(function() {
@@ -24966,7 +24966,7 @@ $(".savemlthemeone79").click(function() {
   $(".boxmlthemeone79").removeClass("editable");
  $(".textmlthemeone79").removeAttr("contenteditable");
   $(".editmlthemeone79").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -25027,7 +25027,7 @@ $( ".boxmlthemeone80" )
   $(".contpresentationcolormlthemeone80").hide();
    $(".boxmlthemeone80").removeClass("editable");
 addmlpresentationcolor80();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savemlthemeone80").click(function() {
@@ -25035,7 +25035,7 @@ $(".savemlthemeone80").click(function() {
   $(".boxmlthemeone80").removeClass("editable");
  $(".textmlthemeone80").removeAttr("contenteditable");
   $(".editmlthemeone80").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -25094,7 +25094,7 @@ $( ".boxpccontact4" )
 addpcspresentationcolor4i();
 
   
-    Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+    Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 
    
 
@@ -25108,7 +25108,7 @@ $(".savepccontact4").click(function() {
   $(".boxpccontact4").removeClass("editable");
  $(".textpccontact4").removeAttr("contenteditable");
   $(".editpccontact4").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -25165,7 +25165,7 @@ $( ".boxcnfp1" )
   $(".contpresentationcolorcnfp1").hide();
    $(".boxcnfp1").removeClass("editable");
 addcnfp1i();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 $(".savecnfp1").click(function() {
@@ -25173,7 +25173,7 @@ $(".savecnfp1").click(function() {
   $(".boxcnfp1").removeClass("editable");
  $(".textcnfp1").removeAttr("contenteditable");
   $(".editcnfp1").hide();
-  Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+  Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 });
 
@@ -25225,7 +25225,7 @@ $( ".boxpcservicest2" )
   $(".contpurpcservicest2").hide();
    $(".boxpcservicest2").removeClass("editable");
 addpcfontawesomecontpurt2ai();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -25279,7 +25279,7 @@ $( ".boxpcfawe2" )
   $(".contpurpcfawe2").hide();
    $(".boxpcfawe2").removeClass("editable");
 addpcfontawesomecontpur2ai2();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -25333,7 +25333,7 @@ $( ".boxpcfawe3" )
   $(".contpurpcfawe3").hide();
    $(".boxpcfawe3").removeClass("editable");
 addpcfontawesomecontpur2i3();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -25387,7 +25387,7 @@ $( ".boxpcfawe4" )
   $(".contpurpcfawe4").hide();
    $(".boxpcfawe4").removeClass("editable");
 addpcfontawesomecontpur4qi4();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -25442,7 +25442,7 @@ $( ".boxpcfawe5" )
   $(".contpurpcfawe5").hide();
    $(".boxpcfawe5").removeClass("editable");
 addpcfontawesomecontpur1i5();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -25496,7 +25496,7 @@ $( ".boxpcfawe6" )
   $(".contpurpcfawe6").hide();
    $(".boxpcfawe6").removeClass("editable");
 addpcfontawesomecontpur6i6();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });
@@ -25553,7 +25553,7 @@ $( ".boxpcfawe7" )
   $(".contpurpcfawe7").hide();
    $(".boxpcfawe7").removeClass("editable");
 addpcfontawesomecontpur7i7();
-Uploadsavemone2("{{route('admin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
+Uploadsavemone2("{{route('cadmin.forms.updatepre',['id'=>$form->id])}}","{{ $form->id }}");
 });
 
 });

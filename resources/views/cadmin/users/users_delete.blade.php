@@ -1,0 +1,23 @@
+@extends('cadmin.layouts.master')
+
+@section('content')
+
+    <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
+
+   <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Users</h1>
+    </div>-->
+    <a class="btn btn-sm btn-primary moveright" href="{{route('cadmin.users')}}">Back</a>
+    <h2>{{$title}}</h2>
+    <div class="clearfix"></div>
+    <p>Are you sure you want to delete <strong>{{$user->name}}</strong></p>
+
+    <form method="GET" action="{{ route('cadmin.users.delete', ['id' => $user->id]) }}">
+        <input type="hidden" name="_token" value="{{ Session::token() }}">
+        <input name="_method" type="hidden" value="DELETE">
+        <button type="submit" class="btn btn-danger">Yes I'm sure. Delete</button>
+    </form>
+</main>
+</div>
+</div>
+@endsection

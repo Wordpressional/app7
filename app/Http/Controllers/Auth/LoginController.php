@@ -43,7 +43,7 @@ class LoginController extends Controller
 
         
         $this->middleware('guest')->except('logout');
-        $this->redirectTo = route('admin.dashboard');
+        $this->redirectTo = route('cadmin.dashboard');
         
     }
 

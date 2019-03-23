@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Form;
-use App\Brand;
+use App\Compbrand;
 use App\User;
 use App\Role;
 use App\Colorsetting;
@@ -92,7 +92,7 @@ class WebhomeController extends Controller
     $colorsetting = Colorsetting::all();
     $colortest = Colorsetting::find(1);
     
-    $branding = Brand::where('id', 1)->first();
+    $branding = Compbrand::where('id', 1)->first();
      $formshortcode = Form::where('formname', 'Home_Page')->first();
      //dd($formshortcode->htmlcontent);
     if(!$branding || $formshortcode->htmlcontent == "")
@@ -257,7 +257,7 @@ class WebhomeController extends Controller
 
     
         Auth::login($user);
-        return redirect()->to('/admin/dashboard');
+        return redirect()->to('/cadmin/dashboard');
     }
 
    

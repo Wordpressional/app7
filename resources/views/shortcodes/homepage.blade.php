@@ -4,7 +4,7 @@
 @section('content')
 
      
-      @include('admin.includes.errors')
+      @include('cadmin.includes.errors')
 
 
 <div id="previewtest">

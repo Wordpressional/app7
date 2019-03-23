@@ -114,7 +114,7 @@ Route::post('/generatedatabase/',[
 ]);*/
 
 // Administrator & SuperAdministrator Control Panel Routes
-Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'middleware' => ['role:cms_administrator|administrator|superadministrator'], 'namespace' => 'Admin'], function () {
+Route::group(['prefix' => 'cadmin', 'middleware' => 'auth', 'middleware' => ['role:cms_administrator|administrator|superadministrator'], 'namespace' => 'CAdmin'], function () {
     Route::resource('users', 'UserController');
     Route::resource('permission', 'PermissionController');
     Route::resource('roles', 'RolesController');
@@ -216,7 +216,7 @@ Route::namespace('Auth')->group(function () {
 });
 
 Route::namespace('Front')->group(function () {
-    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/front', 'HomeController@index')->name('home');
     Route::group(['middleware' => ['auth', 'web']], function () {
 
         Route::namespace('Payments')->group(function () {

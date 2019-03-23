@@ -1,4 +1,4 @@
-@extends('admin.layouts.master')
+@extends('cadmin.layouts.master')
 @section('content')
 
 <div style="display:none; padding-bottom:35px;" class="alert alert-success  form-control successalert"></div>
@@ -168,7 +168,7 @@
                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                   },
 
-                url: "{{route('admin.storecolors')}}",
+                url: "{{route('cadmin.storecolors')}}",
                
                 type: 'post',
                 data:  arrasso,

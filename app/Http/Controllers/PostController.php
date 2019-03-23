@@ -6,7 +6,7 @@ use App\Post;
 use App\Category;
 use App\Tag;
 use App\Colorsetting;
-use App\Brand;
+use App\Compbrand;
 use Illuminate\Http\Request;
 use Shortcode;
 use Auth;
@@ -59,7 +59,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
@@ -81,7 +81,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
        
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
@@ -104,7 +104,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
 
         $colorsetting = Colorsetting::all();
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         $colortest = Colorsetting::find(1);
         $post->comments_count = $post->comments()->count();
         $post->likes_count = $post->likes()->count();
@@ -126,7 +126,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
 
         return view('webhome.allcategory', [
             'data' => $data,
@@ -148,7 +148,7 @@ class PostController extends Controller
 
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
         $catid = Category::where('name', $cat)->first();
@@ -203,7 +203,7 @@ class PostController extends Controller
 
         $colorsetting = Colorsetting::all();
          $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
         $tagid = Tag::where('tag', $tag)->first();
@@ -247,7 +247,7 @@ class PostController extends Controller
         $shortcode = App('Shortcode');
 
          $data = $this->settingsAll();
-         $branding = Brand::where('id', 1)->first();
+         $branding = Compbrand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
         $tagid = Tag::where('tag', $tag)->first();
@@ -297,7 +297,7 @@ class PostController extends Controller
 
         $colorsetting = Colorsetting::all();
          $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         $catid = Category::where('name', $cat)->first();
 
         if($catid)
@@ -358,7 +358,7 @@ class PostController extends Controller
 
         $colorsetting = Colorsetting::all();
          $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         return view('webhome.articles', [
             'data' => $data,
             'colorsetting' => $colorsetting,
@@ -379,7 +379,7 @@ class PostController extends Controller
         
         $colorsetting = Colorsetting::all();
          $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
         
         return view('webhome.links', [
             'data' => $data,

@@ -1,5 +1,6 @@
 <?php
 
+Use App\User;
 use App\Shop\Employees\Employee;
 use App\Shop\Permissions\Permission;
 use App\Shop\Roles\Repositories\RoleRepository;
@@ -39,6 +40,10 @@ class EmployeesTableSeeder extends Seeder
             'email' => 'john@doe.com'
         ]);
 
+        $employee = factory(User::class)->create([
+            'email' => 'john@doe.com'
+        ]);
+
         $super = factory(Role::class)->create([
             'name' => 'superadmin',
             'display_name' => 'Super Admin'
@@ -54,6 +59,9 @@ class EmployeesTableSeeder extends Seeder
         $employee->roles()->save($super);
 
         $employee = factory(Employee::class)->create([
+            'email' => 'admin@doe.com'
+        ]);
+        $employee = factory(User::class)->create([
             'email' => 'admin@doe.com'
         ]);
 
@@ -72,6 +80,10 @@ class EmployeesTableSeeder extends Seeder
         $employee->roles()->save($admin);
 
         $employee = factory(Employee::class)->create([
+            'email' => 'clerk@doe.com'
+        ]);
+
+        $employee = factory(User::class)->create([
             'email' => 'clerk@doe.com'
         ]);
 

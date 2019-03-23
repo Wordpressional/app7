@@ -11,7 +11,7 @@ use App\Form;
 use App\Cform;
 use Illuminate\Http\Request;
 use App\General;
-use App\Brand;
+use App\Compbrand;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -56,7 +56,7 @@ class PageController extends Controller
         //dd($menuList);
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
 
          if($page->headercode == "nil")
          {
@@ -95,7 +95,7 @@ class PageController extends Controller
         //dd($menuList);
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
        
          if($page->headercode == "nil")
          {
@@ -132,7 +132,7 @@ class PageController extends Controller
         //dd($menuList);
         $colorsetting = Colorsetting::all();
         $colortest = Colorsetting::find(1);
-        $branding = Brand::where('id', 1)->first();
+        $branding = Compbrand::where('id', 1)->first();
 
           return view('pages.customtemplate5', [
             'page' => $page,

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Form;
-use App\Brand;
+use App\Compbrand;
 use App\Colorsetting;
 use Illuminate\Http\Request;
 use Imagecow\Image;
