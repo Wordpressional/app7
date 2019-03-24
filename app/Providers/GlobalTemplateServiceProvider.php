@@ -26,14 +26,14 @@ class GlobalTemplateServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer([
-            'layouts.admin.app',
-            'layouts.admin.sidebar',
+            'layoutsecom.admin.app',
+            'layoutsecom.admin.sidebar',
             'admin.shared.products'
         ], function ($view) {
             $view->with('admin', Auth::guard('employee')->user());
         });
 
-        view()->composer(['layouts.front.app', 'front.categories.sidebar-category'], function ($view) {
+        view()->composer(['layoutsecom.front.app', 'front.categories.sidebar-category'], function ($view) {
             $view->with('categories', $this->getCategories());
             $view->with('cartCount', $this->getCartCount());
         });
@@ -42,7 +42,7 @@ class GlobalTemplateServiceProvider extends ServiceProvider
          * breadcumb
          */
         view()->composer([
-            "layouts.admin.app"
+            "layoutsecom.admin.app"
         ], function ($view) {
             $breadcumb = [
                 ["name" => "Dashboard", "url" => route("admin.dashboard"), "icon" => "fa fa-dashboard"],
@@ -64,7 +64,7 @@ class GlobalTemplateServiceProvider extends ServiceProvider
         });
 
 
-        view()->composer(['layouts.front.category-nav'], function ($view) {
+        view()->composer(['layoutsecom.front.category-nav'], function ($view) {
             $view->with('categories', $this->getCategories());
         });
     }

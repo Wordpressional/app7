@@ -9,7 +9,7 @@
             <div class="box">
                 <div class="box-body">
                     <h2>Addresses</h2>
-                    @include('layouts.search', ['route' => route('admin.addresses.index')])
+                    @include('layoutsecom.search', ['route' => route('admin.addresses.index')])
                     <table class="table">
                         <thead>
                             <tr>
@@ -32,7 +32,7 @@
                                 <td>{{ $address->province }}</td>
                                 <td>{{ $address->city }}</td>
                                 <td>{{ $address->zip }}</td>
-                                <td>@include('layouts.status', ['status' => $address->status])</td>
+                                <td>@include('layoutsecom.status', ['status' => $address->status])</td>
                                 <td>
                                     <form action="{{ route('admin.addresses.destroy', $address->id) }}" method="post" class="form-horizontal">
                                         {{ csrf_field() }}

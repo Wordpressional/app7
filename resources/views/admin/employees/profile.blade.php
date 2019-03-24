@@ -1,9 +1,9 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
-        @include('layouts.errors-and-messages')
+        @include('layoutsecom.errors-and-messages')
         <form action="{{ route('admin.employee.profile.update', $employee->id) }}" method="post" class="form">
             <input type="hidden" name="_method" value="put">
             {{ csrf_field() }}

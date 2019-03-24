@@ -1,16 +1,16 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         @if($customers)
             <div class="box">
                 <div class="box-body">
                     <h2>Customers</h2>
-                    @include('layouts.search', ['route' => route('admin.customers.index')])
+                    @include('layoutsecom.search', ['route' => route('admin.customers.index')])
                     <table class="table">
                         <thead>
                             <tr>
@@ -27,7 +27,7 @@
                                 <td>{{ $customer['id'] }}</td>
                                 <td>{{ $customer['name'] }}</td>
                                 <td>{{ $customer['email'] }}</td>
-                                <td>@include('layouts.status', ['status' => $customer['status']])</td>
+                                <td>@include('layoutsecom.status', ['status' => $customer['status']])</td>
                                 <td>
                                     <form action="{{ route('admin.customers.destroy', $customer['id']) }}" method="post" class="form-horizontal">
                                         {{ csrf_field() }}

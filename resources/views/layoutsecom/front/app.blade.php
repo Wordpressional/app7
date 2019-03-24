@@ -18,7 +18,7 @@
     <meta name="description" content="Modern open-source e-commerce framework for free">
     <meta name="tags" content="modern, opensource, open-source, e-commerce, framework, free, laravel, php, php7, symfony, shop, shopping, responsive, fast, software, blade, cart, test driven, adminlte, storefront">
     <meta name="author" content="Jeff Simons Decena">
-    <link href="{{ asset('css/style.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/ecomm/css/style.min.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -93,7 +93,7 @@
                     <a class="navbar-brand" href="{{ route('home') }}">{{ config('app.name') }}</a>
                 </div>
                 <div class="col-md-10">
-                    @include('layouts.front.header-cart')
+                    @include('layoutsecom.front.header-cart')
                 </div>
             </div>
         </nav>
@@ -101,10 +101,10 @@
 </section>
 @yield('content')
 
-@include('layouts.front.footer')
+@include('layoutsecom.front.footer')
 
-<script src="{{ asset('js/front.min.js') }}"></script>
-<script src="{{ asset('js/custom.js') }}"></script>
+<script src="{{ asset('js/ecomm/js/front.min.js') }}"></script>
+<script src="{{ asset('js/ecomm/js/custom.js') }}"></script>
 @yield('js')
 </body>
 </html>

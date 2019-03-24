@@ -1,10 +1,10 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
         <!-- Default box -->
         <div class="box">
             <div class="box-body">
@@ -26,7 +26,7 @@
                         <td>{{ $country->iso3 }}</td>
                         <td>{{ $country->numcode }}</td>
                         <td>{{ $country->phonecode }}</td>
-                        <td>@include('layouts.status', ['status' => $country->status])</td>
+                        <td>@include('layoutsecom.status', ['status' => $country->status])</td>
                     </tr>
                     </tbody>
                 </table>

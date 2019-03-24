@@ -1,4 +1,4 @@
-@extends('layouts.front.app')
+@extends('layoutsecom.front.app')
 
 @section('og')
     <meta property="og:type" content="product"/>
@@ -22,6 +22,6 @@
                 </ol>
             </div>
         </div>
-        @include('layouts.front.product')
+        @include('layoutsecom.front.product')
     </div>
 @endsection

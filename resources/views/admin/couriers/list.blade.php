@@ -1,10 +1,10 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         @if($couriers)
             <div class="box">
@@ -29,12 +29,12 @@
                                 <td>{{ str_limit($courier->description, 100, ' ...') }}</td>
                                 <td>{{ $courier->url }}</td>
                                 <td>
-                                    @include('layouts.status', ['status' => $courier->is_free])
+                                    @include('layoutsecom.status', ['status' => $courier->is_free])
                                 </td>
                                 <td>
                                     {{config('cart.currency')}} {{ $courier->cost }}
                                 </td>
-                                <td>@include('layouts.status', ['status' => $courier->status])</td>
+                                <td>@include('layoutsecom.status', ['status' => $courier->status])</td>
                                 <td>
                                     <form action="{{ route('admin.couriers.destroy', $courier->id) }}" method="post" class="form-horizontal">
                                         {{ csrf_field() }}

@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
@@ -43,7 +43,7 @@
                             <td>{{ $address->alias }}</td>
                             <td>{{ $address->address_1 }}</td>
                             <td>{{ $address->country->name }}</td>
-                            <td>@include('layouts.status', ['status' => $address->status])</td>
+                            <td>@include('layoutsecom.status', ['status' => $address->status])</td>
                             <td>
                                 <form action="{{ route('admin.addresses.destroy', $address->id) }}" method="post" class="form-horizontal">
                                     {{ csrf_field() }}

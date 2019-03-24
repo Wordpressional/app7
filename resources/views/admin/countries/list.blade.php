@@ -1,10 +1,10 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         @if($countries)
             <div class="box">
@@ -30,7 +30,7 @@
                                 <td>{{ $country->iso3 }}</td>
                                 <td>{{ $country->numcode }}</td>
                                 <td>{{ $country->phonecode }}</td>
-                                <td>@include('layouts.status', ['status' => $country->status])</td>
+                                <td>@include('layoutsecom.status', ['status' => $country->status])</td>
                                 <td>
                                     <div class="btn-group">
                                         <a href="{{ route('admin.countries.show', $country->id) }}" class="btn btn-default btn-sm"><i class="fa fa-eye"></i> Show</a>

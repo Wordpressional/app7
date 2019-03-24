@@ -49,7 +49,7 @@
                     <div class="modal fade" id="myModal_{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                @include('layouts.front.product')
+                                @include('layoutsecom.front.product')
                             </div>
                         </div>
                     </div>

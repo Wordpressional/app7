@@ -7,7 +7,7 @@
 
     <title>{{ config('app.name') }}</title>
 
-    <link rel="stylesheet" href="{{ asset('css/admin.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ecomm/css/admin.min.css') }}">
     @yield('css')
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('favicons/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('favicons/apple-icon-60x60.png')}}">
@@ -36,26 +36,26 @@
 </noscript>
 <!-- Site wrapper -->
 <div class="wrapper">
-    @include('layouts.admin.header', ['user' => $admin])
+    @include('layoutsecom.admin.header', ['user' => $admin])
 
-    @include('layouts.admin.sidebar', ['user' => $admin])
+    @include('layoutsecom.admin.sidebar', ['user' => $admin])
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        @include("layouts.admin.breadcumb")
+        @include("layoutsecom.admin.breadcumb")
         @yield('content')
     </div>
     <!-- /.content-wrapper -->
 
-    @include('layouts.admin.footer')
+    @include('layoutsecom.admin.footer')
 
-    @include('layouts.admin.control-sidebar')
+    @include('layoutsecom.admin.control-sidebar')
 </div>
 <!-- ./wrapper -->
 
-<script src="{{ asset('js/admin.min.js') }}"></script>
+<script src="{{ asset('js/ecomm/js/admin.min.js') }}"></script>
 <script src="{{ asset('//cdn.ckeditor.com/4.8.0/standard/ckeditor.js') }}"></script>
-<script src="{{ asset('js/scripts.js?v=0.2') }}"></script>
+<script src="{{ asset('js/ecomm/js/scripts.js?v=0.2') }}"></script>
 @yield('js')
 </body>
 </html>

@@ -3,7 +3,7 @@
 @section('content')
     <!-- Main content -->
     <section class="content">
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         <div class="box">
             <div class="box-body">
@@ -32,7 +32,7 @@
                         </td>
                         <td>{{ $address->country->name }}</td>
                         <td>{{ $address->zip }}</td>
-                        <td>@include('layouts.status', ['status' => $address->status])</td>
+                        <td>@include('layoutsecom.status', ['status' => $address->status])</td>
                     </tr>
                     </tbody>
                 </table>

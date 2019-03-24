@@ -1,4 +1,4 @@
-@extends('layouts.front.app')
+@extends('layoutsecom.front.app')
 
 @section('og')
     <meta property="og:type" content="home"/>
@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    @include('layouts.front.home-slider')
+    @include('layoutsecom.front.home-slider')
 
     @if($cat1->products->isNotEmpty())
         <section class="new-product t100 home">

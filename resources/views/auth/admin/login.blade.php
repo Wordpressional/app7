@@ -9,7 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }}</title>
-    <link rel="stylesheet" href="{{ asset('css/admin.min.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="{{ asset('css/ecomm/css/admin.min.css') }}">
 </head>
 <body class="hold-transition skin-purple login-page">
     <div class="login-box">
@@ -21,7 +22,7 @@
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
-            <form action="{{ route('admin.login') }}" method="post">
+            <form action="{{ route('admin.emplogin') }}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group has-feedback">
                     <input name="email" type="email" class="form-control" placeholder="Email" value="{{ old('email') }}">
@@ -43,13 +44,13 @@
                 </div>
             </form>
 
-            <div class="social-auth-links text-center">
+            <!--<div class="social-auth-links text-center">
                 <p>- OR -</p>
                 <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
                     Facebook</a>
                 <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
                     Google+</a>
-            </div>
+            </div>-->
             <!-- /.social-auth-links -->
 
             <a href="#">I forgot my password</a><br>
@@ -59,6 +60,7 @@
         <!-- /.login-box-body -->
     </div>
     <!-- /.login-box -->
-    <script src="{{ asset('js/admin.min.js') }}"></script>
+
+    <script src="{{ asset('js/ecomm/js/admin.min.js') }}"></script>
 </body>
 </html>

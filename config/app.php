@@ -160,6 +160,12 @@ return [
     Intervention\Image\ImageServiceProvider::class,
     RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
     Harimayco\Menu\MenuServiceProvider::class,
+    Barryvdh\DomPDF\ServiceProvider::class,
+        Jsdecena\MCPro\McproServiceProvider::class,
+        Jsdecena\MailChimp\MailChimpServiceProvider::class,
+        Laravel\Cashier\CashierServiceProvider::class,
+        Jsdecena\Baserepo\BaseRepositoryProvider::class,
+        \Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
     
    
         /*
@@ -175,6 +181,8 @@ return [
         App\Providers\ObserverServiceProvider::class,
         App\Providers\ShortcodesServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
+        App\Providers\GlobalTemplateServiceProvider::class,
+        App\Providers\RepositoryServiceProvider::class,
 	
 
     ],

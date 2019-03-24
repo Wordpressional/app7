@@ -1,10 +1,10 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         @if(!$paymentMethods->isEmpty())
             <div class="box">
@@ -28,7 +28,7 @@
                                 <td>{{ $paymentMethod->account_id }}</td>
                                 <td>{{ $paymentMethod->client_id }}</td>
                                 <td>{{ $paymentMethod->client_secret }}</td>
-                                <td>@include('layouts.status', ['status' => $paymentMethod->status])</td>
+                                <td>@include('layoutsecom.status', ['status' => $paymentMethod->status])</td>
                                 <td>
                                     <form action="{{ route('admin.payment-methods.destroy', $paymentMethod->id) }}" method="post" class="form-horizontal">
                                         {{ csrf_field() }}

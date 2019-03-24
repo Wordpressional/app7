@@ -1,10 +1,10 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         @if($province)
             <div class="box">
@@ -21,7 +21,7 @@
                         <tbody>
                             <tr>
                                 <td>{{ $province->name }}</td>
-                                <td>@include('layouts.status', ['status' => $province->status])</td>
+                                <td>@include('layoutsecom.status', ['status' => $province->status])</td>
                                 <td>
                                     <div class="btn-group">
                                         <a href="{{ route('admin.countries.provinces.edit', [$countryId, $province->id]) }}" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</a>

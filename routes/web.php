@@ -159,14 +159,14 @@ Route::post('/registration',[
  * Admin routes
  */
 Route::namespace('Admin')->group(function () {
-     Route::get('admin/emplogin', 'EmpLoginController@showLoginForm')->name('admin.login');
-    Route::post('admin/emplogin', 'EmpLoginController@login')->name('admin.login');
+     Route::get('admin/emplogin', 'EmpLoginController@showLoginForm')->name('admin.emplogin');
+    Route::post('admin/emplogin', 'EmpLoginController@login')->name('admin.emplogin');
     Route::get('admin/logout', 'EmpLoginController@logout')->name('admin.logout');
 });
 Route::group(['prefix' => 'admin', 'middleware' => ['employee'], 'as' => 'admin.' ], function () {
     Route::namespace('Admin')->group(function () {
-        Route::group(['middleware' => ['role:admin|superadmin|clerk, guard:employee']], function () {
-            Route::get('/', 'DashboardController@index')->name('dashboard');
+        //Route::group(['middleware' => ['role:admin|superadmin|clerk, guard:employee']], function () {
+            Route::get('dashboard', 'DashboardController@index')->name('dashboard');
             Route::namespace('Products')->group(function () {
                 Route::resource('products', 'ProductController');
                 Route::get('remove-image-product', 'ProductController@removeImage')->name('product.remove.image');
@@ -202,7 +202,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['employee'], 'as' => 'admin.
             Route::resource('roles', 'Roles\RoleController');
             Route::resource('permissions', 'Permissions\PermissionController');
         });
-    });
+    //});
 });
 
 /**
@@ -216,7 +216,7 @@ Route::namespace('Auth')->group(function () {
 });
 
 Route::namespace('Front')->group(function () {
-    Route::get('/front', 'HomeController@index')->name('home');
+    Route::get('/', 'HomeController@index')->name('home');
     Route::group(['middleware' => ['auth', 'web']], function () {
 
         Route::namespace('Payments')->group(function () {

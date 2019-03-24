@@ -1,10 +1,10 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-        @include('layouts.errors-and-messages')
+        @include('layoutsecom.errors-and-messages')
         <!-- Default box -->
         @if($employees)
         <div class="box">
@@ -26,7 +26,7 @@
                             <td>{{ $employee->id }}</td>
                             <td>{{ $employee->name }}</td>
                             <td>{{ $employee->email }}</td>
-                            <td>@include('layouts.status', ['status' => $employee->status])</td>
+                            <td>@include('layoutsecom.status', ['status' => $employee->status])</td>
                             <td>
                                 <form action="{{ route('admin.employees.destroy', $employee->id) }}" method="post" class="form-horizontal">
                                     {{ csrf_field() }}

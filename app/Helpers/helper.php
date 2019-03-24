@@ -38,7 +38,7 @@ if (!function_exists("populate_breadcumb")) {
         $validated = validate_breadcumb($data);
         if ($validated["valid"] === true) {
             view()->composer([
-                "layouts.cadmin.app"
+                "layoutsecom.admin.app"
             ], function ($view) use ($data) {
                 $view->with(
                     [

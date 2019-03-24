@@ -1,16 +1,16 @@
-@extends('layouts.admin.app')
+@extends('layoutsecom.admin.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content">
 
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         @if($orders)
             <div class="box">
                 <div class="box-body">
                     <h2>Orders</h2>
-                    @include('layouts.search', ['route' => route('admin.orders.index')])
+                    @include('layoutsecom.search', ['route' => route('admin.orders.index')])
                     <table class="table">
                         <thead>
                             <tr>
