@@ -13,8 +13,19 @@
         @foreach($comments as $comment)
             <tr>
                 <td>{{ str_limit($comment->content, 50) }}</td>
-                <td>@if($thisuser->isCMSAdmin() == "yes") {{ link_to_route('cadmin.posts.edit', $comment->post->title, $comment->post->id) }}  @else {{ $comment->post->title }} @endif</td>
-                <td>@if($thisuser->isCMSAdmin() == "yes" || $thisuser->isSuperadministrator() == "yes") {{ link_to_route('cadmin.authors.edita', $comment->author->fullname, $comment->author) }} @else {{ $comment->author->fullname }} @endif</td>
+                <td>@if($thisuser->isCMSAdmin() == "yes") 
+
+                    @if($comment->post != null)
+                    {{ link_to_route('cadmin.posts.edit', $comment->post->title, $comment->post->id) }}  @endif @else  @if($comment->post != null) {{ $comment->post->title }}
+                    @endif  
+                   
+                @endif
+                </td>
+                <td>@if($thisuser->isCMSAdmin() == "yes" || $thisuser->isSuperadministrator() == "yes") 
+
+                    {{ link_to_route('cadmin.authors.edita', $comment->author->fullname, $comment->author) }} @else {{ $comment->author->fullname }} 
+                @endif
+            </td>
                 <td>{{ humanize_date_with_timezone($comment->posted_at,'d F Y, H:i') }}</td>
                 <td>
                      @if($thisuser->isCMSAdmin() == "yes" || $thisuser->isSuperadministrator() == "yes")
