@@ -8,7 +8,7 @@ use App\Page;
 use App\Cform;
 use App\Form;
 use App\Module;
-use App\Brand;
+use App\Compbrand;
 use App\General;
 use App\Role;
 use App\Permodule;
@@ -54,7 +54,7 @@ class ModuleController extends Controller
         {
         DB::unprepared(file_get_contents($sqlpermodule));
         }
-         return redirect('/admin/modules');
+         return redirect('/cadmin/modules');
 
     }
 
@@ -87,7 +87,7 @@ class ModuleController extends Controller
 
 
 
-         return redirect('/admin/modules');
+         return redirect('/cadmin/modules');
 
     }
     public function deactivate(Request $request)
@@ -98,7 +98,7 @@ class ModuleController extends Controller
         $module->mmstatus = "inactive";
         $module->save();
 
-         return redirect('/admin/modules');
+         return redirect('/cadmin/modules');
 
     }
     public function install(Request $request)
@@ -198,7 +198,7 @@ class ModuleController extends Controller
         }
            
         
-        return redirect('/admin/modules');
+        return redirect('/cadmin/modules');
 
     }
     public function uninstall(Request $request)
@@ -224,7 +224,7 @@ class ModuleController extends Controller
         Role::where('name', 'elec_asistantreturningofficer')->delete();
         Role::where('name', 'elec_boothlevelofficer')->delete();*/
 
-         return redirect('/admin/modules');
+         return redirect('/cadmin/modules');
 
     }
 

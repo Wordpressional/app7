@@ -41,9 +41,7 @@
                 </a>
                 </td>
                 <td>
-                    <a href="{{ route('cadmin.pages.edit', $page) }}" class="btn btn-primary">
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
+                   
                     @if($page->trashed())
                     @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
                     @if($page->createdby == $thisuser->id)
@@ -68,6 +66,9 @@
                     @endif
                     @else
                     @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
+                     <a href="{{ route('cadmin.pages.edit', $page) }}" class="btn btn-primary">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
                     @if($page->createdby == $thisuser->id)
 
                      <a class="btn btn-danger" href="{{ route('cadmin.pages.delete', ['id' => $page->id]) }}">
@@ -78,6 +79,9 @@
                     
                     @endif
                     @else
+                     <a href="{{ route('cadmin.pages.edit', $page) }}" class="btn btn-primary">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
                     <a class="btn btn-danger" href="{{ route('cadmin.pages.delete', ['id' => $page->id]) }}">
                     
                             <i class="fa fa-trash" aria-hidden="true"></i>

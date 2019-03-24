@@ -116,7 +116,7 @@ class PostController extends Controller
         $post = Post::where('id', $id)->first();
        
          $thisuser = Auth::user();
-         $categories = Category::all();
+         $categories = Blogcategory::all();
         
          $data = $this->brandsAll();
 
@@ -196,7 +196,7 @@ class PostController extends Controller
          
          $sthisuser = User::where('id', $thisuser->id)->authors()->pluck('name', 'id');
          //dd($sthisuser);
-        $categories = Category::all();
+        $categories = Blogcategory::all();
         if($categories->count() == 0)
         {
             //Session::flash('info', 'You Must have Choose At least One Category');
