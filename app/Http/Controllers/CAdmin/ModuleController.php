@@ -70,6 +70,10 @@ class ModuleController extends Controller
         if($user->isSuperadministrator() == "yes") {
         $module = Module::all();
         }
+        else
+        {
+            $module = Module::where('modulename', 'cms')->get();
+        }
         return view('cadmin.modules.loadmodule',compact('module','data'));
 
     }

@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
 use App\Blogcategory;
-use App\Brand;
+use App\Compbrand;
 
 
 class CategoryController extends Controller
@@ -35,7 +35,7 @@ class CategoryController extends Controller
         }
 
          $data = $this->brandsAll();
-        return view('cadmin.categories.index')->with(['categories' =>Category::withTrashed()->latest()->paginate(10),'data' => $data]);
+        return view('cadmin.categories.index')->with(['categories' => Blogcategory::withTrashed()->latest()->paginate(10),'data' => $data]);
     }
 
     /**

@@ -90,7 +90,7 @@
             </li>
             @endrole
 
-            @role('cms_subscriber')
+            @role(['cms_subscriber', 'cms_author'])
 
             <li class="treeview">
                 <a href="#">
@@ -399,7 +399,7 @@
         <li> 
         @if(session('user_is_switched'))
         
-        <a style="color:#ffffff;" href="{{ route('cadmin.dashboard.cmsrestoreuser') }}"><i class="fa fa-undo"></i><span>&nbsp;&nbsp;Return to CMS cadmin</span></a>
+        <a style="color:#ffffff;" href="{{ route('cadmin.dashboard.cmsrestoreuser') }}"><i class="fa fa-undo"></i><span>&nbsp;&nbsp;Return to CMS admin</span></a>
         
         @endif
                

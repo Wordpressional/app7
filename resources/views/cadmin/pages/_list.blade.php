@@ -25,7 +25,13 @@
                     {{ $page->display_name }}
                     @endif
                 </td>
-                <td>@if($thisuser->isCMSAdmin() == "yes" || $thisuser->isSAdmin() == "yes" || $thisuser->isSuperadministrator() == "yes") {{ link_to_route('cadmin.authors.edita', $page->author->name, $page->author) }} @else {{ $page->author->name }} @endif</td>
+                <td>@if($thisuser->isCMSAdmin() == "yes" || $thisuser->isSAdmin() == "yes" || $thisuser->isSuperadministrator() == "yes") 
+
+                    @if($page->author)
+                    {{ link_to_route('cadmin.authors.edita', $page->author->name, $page->author) }} @else {{ $page->author->name }} 
+                    @endif
+
+                @endif</td>
                 
                 <td>{{ humanize_date_with_timezone($page->created_at, 'd/m/Y H:i:s', $data['n_companyname']->timezone) }}</td>
                 <td>
@@ -50,6 +56,15 @@
                             <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
                     @endif
+                    @else
+                     <a class="btn btn-warning" href="{{ route('cadmin.pages.restore', ['id' => $page->id]) }}">
+                            
+                            <i class="fa fa-repeat" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-danger" href="{{ route('cadmin.pages.delete', ['id' => $page->id]) }}">
+                    
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
                     @endif
                     @else
                     @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")

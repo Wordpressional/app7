@@ -29,7 +29,11 @@
                     {{ $post->title }} 
                     @endif</td>
                 <td>{{ $post->category['name'] }}</td>
-                <td>@if($thisuser->isCMSAdmin() == "yes" || $thisuser->isSAdmin() == "yes" || $thisuser->isSuperadministrator() == "yes") {{ link_to_route('cadmin.authors.edita', $post->author->name, $post->author) }} @else {{ $post->author->name }} @endif</td>
+                <td>@if($thisuser->isCMSAdmin() == "yes" || $thisuser->isSAdmin() == "yes" || $thisuser->isSuperadministrator() == "yes") 
+                    @if($post->author)
+                        {{ link_to_route('cadmin.authors.edita', $post->author->name, $post->author) }} @else {{ $post->author->name }} 
+                    @endif
+                @endif</td>
                 
                 <td>{{ humanize_date($post->posted_at, 'd/m/Y H:i:s') }}</td>
                 <td><span class="badge badge-pill badge-secondary">{{ $post->comments_count }}</span></td>
@@ -62,6 +66,15 @@
                             <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
                     @endif
+                    @else
+                     <a class="btn btn-warning" href="{{ route('cadmin.posts.restore', ['id' => $post->id]) }}">
+                            
+                            <i class="fa fa-repeat" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-danger" href="{{ route('cadmin.posts.delete', ['id' => $post->id]) }}">
+                    
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
                     @endif
                     @else
                     @if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes")
@@ -76,6 +89,7 @@
                     @endif
                     
                     @else
+
                     <a class="btn btn-danger" href="{{ route('cadmin.posts.delete', ['id' => $post->id]) }}">
                     
                             <i class="fa fa-trash" aria-hidden="true"></i>

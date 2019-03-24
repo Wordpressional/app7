@@ -8,7 +8,7 @@ use App\Http\Requests\Admin\PagesRequest;
 use App\Page;
 use App\Post;
 use App\User;
-use App\Category;
+use App\Blogcategory;
 use App\Tag;
 
 use Illuminate\Support\Facades\Auth;

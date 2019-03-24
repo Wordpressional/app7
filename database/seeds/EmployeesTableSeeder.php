@@ -98,5 +98,63 @@ class EmployeesTableSeeder extends Seeder
         $roleClerkRepo->attachToPermission($updateProductPerm);
 
         $employee->roles()->save($clerk);
+
+
+       
+        $employee = factory(User::class)->create([
+            'email' => 'cmssuperadmin@cms.com'
+        ]);
+
+        $admin = factory(Role::class)->create([
+            'name' => 'cms_superadministrator',
+            'display_name' => 'CMS Superadministrator'
+        ]);
+
+        $employee->roles()->save($admin);
+
+        $employee = factory(User::class)->create([
+            'email' => 'cmsadmin@cms.com'
+        ]);
+
+        $admin = factory(Role::class)->create([
+            'name' => 'cms_administrator',
+            'display_name' => 'CMS Administrator'
+        ]);
+
+        $employee->roles()->save($admin);
+
+
+        $employee = factory(User::class)->create([
+            'email' => 'cmseditor@cms.com'
+        ]);
+
+        $admin = factory(Role::class)->create([
+            'name' => 'cms_editor',
+            'display_name' => 'CMS Editor'
+        ]);
+
+        $employee->roles()->save($admin);
+
+        $employee = factory(User::class)->create([
+            'email' => 'cmsauthor@cms.com'
+        ]);
+
+        $admin = factory(Role::class)->create([
+            'name' => 'cms_author',
+            'display_name' => 'CMS Author'
+        ]);
+
+        $employee->roles()->save($admin);
+
+        $employee = factory(User::class)->create([
+            'email' => 'cmssubscriber@cms.com'
+        ]);
+
+        $admin = factory(Role::class)->create([
+            'name' => 'cms_subscriber',
+            'display_name' => 'CMS Subscriber'
+        ]);
+
+        $employee->roles()->save($admin);
     }
 }

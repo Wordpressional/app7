@@ -18,7 +18,7 @@ class StaticController extends Controller
     
     public function downloadStarterStatic()
     {
-    	$company = Brand::where('id', 1)->first();
+    	$company = Compbrand::where('id', 1)->first();
         //dd($colorsetting[0]->color);
         //dd($this->commomindex());
         $data = $this->brandsAll();
@@ -40,7 +40,7 @@ class StaticController extends Controller
 
     public function StarterStaticForm()
     {
-        $company = Brand::where('id', 1)->first();
+        $company = Compbrand::where('id', 1)->first();
         //dd($colorsetting[0]->color);
         //dd($this->commomindex());
         $data = $this->brandsAll();

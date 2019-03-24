@@ -64,7 +64,8 @@ class Kernel extends HttpKernel
         'permission' => \Laratrust\Middleware\LaratrustPermission::class,
         'ability' => \Laratrust\Middleware\LaratrustAbility::class,
         'role_sadmin' => \App\Http\Middleware\RoleMiddleware::class,
-        
+        'employee' => \App\Http\Middleware\RedirectIfNotEmployee::class,
+        'checkout' => \App\Http\Middleware\RedirectIfNotCustomer::class,
         
     ];
 }

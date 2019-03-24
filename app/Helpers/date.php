@@ -1,5 +1,5 @@
 <?php
-use App\Brand;
+use App\Compbrand;
 /**
  * Return a formatted Carbon date.
  *
@@ -13,7 +13,7 @@ function humanize_date(Carbon\Carbon $date, $format = 'd F Y, H:i'): string
 }
 function humanize_date_with_timezone(Carbon\Carbon $date, $format = 'd F Y, H:i', $timezone = 'Asia/Kolkata'): string
 {
-	$branding = Brand::where('id', 1)->first();
+	$branding = Compbrand::where('id', 1)->first();
 	//dd($branding);
 	if($timezone)
 	{
