@@ -166,7 +166,7 @@ Route::namespace('Admin')->group(function () {
 Route::group(['prefix' => 'admin', 'middleware' => ['employee'], 'as' => 'admin.' ], function () {
     Route::namespace('Admin')->group(function () {
         //Route::group(['middleware' => ['role:admin|superadmin|clerk, guard:employee']], function () {
-            Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+            Route::get('/', 'DashboardController@index')->name('dashboard');
             Route::namespace('Products')->group(function () {
                 Route::resource('products', 'ProductController');
                 Route::get('remove-image-product', 'ProductController@removeImage')->name('product.remove.image');
@@ -210,8 +210,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['employee'], 'as' => 'admin.
  */
 Auth::routes();
 Route::namespace('Auth')->group(function () {
-    Route::get('cart/login', 'CartLoginController@showLoginForm')->name('cart.login');
-    Route::post('cart/login', 'CartLoginController@login')->name('cart.login');
+    Route::get('cart/custlogin', 'CartLoginController@showLoginForm')->name('cart.custlogin');
+    Route::post('cart/custlogin', 'CartLoginController@login')->name('cart.custlogin');
     Route::get('logout', 'LoginController@logout');
 });
 

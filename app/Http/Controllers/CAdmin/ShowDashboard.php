@@ -57,7 +57,20 @@ class ShowDashboard extends Controller
                 'data' => $data,
                 
             ]);
-        } else if($user->isSuperadministrator() == "yes") {
+        } 
+
+        else if($user->isSuperadministrator() == "yes") {
+            $data = $this->brandsAll();
+             return view('cadmin.dashboard.index_home', [
+                'comments' =>  Comment::lastWeek()->get(),
+                'posts' => Post::lastWeek()->get(),
+                'users' => User::lastWeek()->get(),
+                'data' => $data,
+                
+            ]);
+         }
+
+         else if($user->isSAdmin() == "yes") {
             $data = $this->brandsAll();
              return view('cadmin.dashboard.index_home', [
                 'comments' =>  Comment::lastWeek()->get(),

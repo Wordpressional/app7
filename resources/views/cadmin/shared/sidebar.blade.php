@@ -29,7 +29,7 @@
             
                    
                     
- @role(['superadministrator','administrator','cms_administrator','cms_editor'])
+ @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])
 
             <li class="treeview">
                 <a href="#">
@@ -130,7 +130,7 @@
              </ul>
             </li>
             @endrole
-            @role(['superadministrator','administrator','cms_administrator','cms_editor'])
+            @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Page Builder</span>
@@ -219,7 +219,7 @@
         </ul>
     </li>
     @endrole
-         @role(['superadministrator','administrator','cms_administrator','cms_editor'])
+         @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])
         <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Settings</span>
@@ -229,7 +229,7 @@
                 </a>
                 <ul class="treeview-menu">
          @endrole          
-            @role(['superadministrator','administrator','cms_administrator','cms_editor'])        
+            @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])        
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Color Management">
                     <a class="nav-link {{ Request::is('cadmin/styles') || Request::is('cadmin/styles/*') ? 'active' : '' }}" href="{{ route('cadmin.styles') }}">
@@ -244,7 +244,7 @@
                     </a>
                 </li>
                  @endrole
-                 @role(['superadministrator','administrator','cms_administrator'])  
+                 @role(['superadministrator','cms_superadministrator','cms_administrator'])  
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Install Modules">
                     <a class="nav-link {{ Request::is('cadmin/modules') || Request::is('cadmin/modules/*') ? 'active' : '' }}" href="{{ route('cadmin.modules') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
@@ -258,12 +258,12 @@
                     </a>
                 </li>
            @endrole
-                 @role(['superadministrator','administrator','cms_administrator','cms_editor'])  
+                 @role(['superadministrator','cms_administrator','cms_editor'])  
         </ul>
     </li>
      @endrole
         
-            @role(['superadministrator','administrator','cms_administrator'])
+            @role(['superadministrator','cms_superadministrator','cms_administrator'])
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>RBAC</span>
@@ -327,7 +327,7 @@
         </li>
         @endrole
 
-        @role('superadministrator')
+        @role(['superadministrator', 'cms_superadministrator'])
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>User Management</span>
@@ -358,7 +358,7 @@
         </li>
         @endrole
 
-        @role(['cms_administrator', 'cms_editor'] )
+        @role(['superadministrator','cms_administrator','cms_superadministrator', 'cms_editor'])
           <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Downloads</span>
