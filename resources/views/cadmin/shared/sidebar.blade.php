@@ -258,7 +258,7 @@
                     </a>
                 </li>
            @endrole
-                 @role(['superadministrator','cms_administrator','cms_editor'])  
+                 @role(['superadministrator','cms_administrator','cms_superadministrator','cms_editor'])  
         </ul>
     </li>
      @endrole
@@ -327,7 +327,7 @@
         </li>
         @endrole
 
-        @role(['superadministrator', 'cms_superadministrator'])
+        @role(['superadministrator'])
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>User Management</span>

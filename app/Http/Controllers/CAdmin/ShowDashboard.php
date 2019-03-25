@@ -277,7 +277,7 @@ class ShowDashboard extends Controller
         //dd($role);
        
         //dd($Elemblo);
-         if($user->isSuperadministrator() == "yes") {
+        if($user->isSuperadministrator() == "yes") {
 
         } else {
         $Cmsactivitylog = new Cmsactivitylog;
