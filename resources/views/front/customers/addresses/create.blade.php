@@ -1,9 +1,9 @@
-@extends('layouts.front.app')
+@extends('layoutsecom.front.app')
 
 @section('content')
     <!-- Main content -->
     <section class="container content">
-        @include('layouts.errors-and-messages')
+        @include('layoutsecom.errors-and-messages')
         <div class="box">
             <form action="{{ route('customer.address.store', $customer->id) }}" method="post" class="form" enctype="multipart/form-data">
                 <input type="hidden" name="status" value="1">

@@ -9852,7 +9852,7 @@ li.menubar-cart a {
         HERO AREA
 ************************** */
 .top-area {
-    background: #fff url('../images/banner.jpg') no-repeat;
+    background: #fff url('../../../images/cartimages/banner.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 760px;
@@ -10007,7 +10007,7 @@ li.menubar-cart a {
     padding: 0;
 }
 .offer-section {
-    background: url(images/bg.jpg) no-repeat;
+    background: url(../../../images/cartimages/bg.jpg) no-repeat;
     display: block;
     padding: 70px 0;
     position: relative;
@@ -10038,7 +10038,7 @@ li.menubar-cart a {
     height: auto;
 }
 .brand-section {
-    background: url(images/bg.jpg) no-repeat;
+    background: url(../../../images/cartimages/bg.jpg) no-repeat;
     display: block;
     padding: 70px 0;
     position: relative;

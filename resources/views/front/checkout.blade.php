@@ -1,4 +1,4 @@
-@extends('layouts.front.app')
+@extends('layoutsecom.front.app')
 
 @section('content')
     <div class="container product-in-cart-list">
@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-12 content">
                     <div class="box-body">
-                        @include('layouts.errors-and-messages')
+                        @include('layoutsecom.errors-and-messages')
                     </div>
                     @if(count($addresses) > 0)
                         <div class="row">

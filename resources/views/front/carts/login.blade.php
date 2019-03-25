@@ -1,11 +1,11 @@
-@extends('layouts.front.app')
+@extends('layoutsecom.front.app')
 
 @section('content')
     <hr>
     <!-- Main content -->
     <section class="container content">
         <div class="row">
-            <div class="col-md-12">@include('layouts.errors-and-messages')</div>
+            <div class="col-md-12">@include('layoutsecom.errors-and-messages')</div>
             <div class="col-md-5">
                 <h2>Login to your account</h2>
                 <form action="{{ route('cart.login') }}" method="post" class="form-horizontal">

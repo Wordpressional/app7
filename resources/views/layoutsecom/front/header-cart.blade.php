@@ -1,6 +1,6 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    @include('layouts.front.category-nav')
+    @include('layoutsecom.front.category-nav')
     <ul class="nav navbar-nav navbar-right">
         @if(auth()->check())
             <li class="visible-xs"><a href="{{ route('accounts', ['tab' => 'profile']) }}"><i class="fa fa-home"></i> My Account</a></li>

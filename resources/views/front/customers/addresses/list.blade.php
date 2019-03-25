@@ -1,9 +1,9 @@
-@extends('layouts.front.app')
+@extends('layoutsecom.front.app')
 
 @section('content')
     <!-- Main content -->
     <section class="content container">
-    @include('layouts.errors-and-messages')
+    @include('layoutsecom.errors-and-messages')
     <!-- Default box -->
         @if($addresses)
             <div class="box">
@@ -38,7 +38,7 @@
                                 <td>{{ $address->city }}</td>
                                 <td>{{ $address->zip }}</td>
                                 <td>{{ $address->country->name }}</td>
-                                <td>@include('layouts.status', ['status' => $address->status])</td>
+                                <td>@include('layoutsecom.status', ['status' => $address->status])</td>
                                 <td>
                                     <form action="{{ route('admin.addresses.destroy', $address->id) }}" method="post" class="form-horizontal">
                                         {{ csrf_field() }}

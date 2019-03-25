@@ -1,11 +1,11 @@
-@extends('layouts.front.app')
+@extends('layoutsecom.front.app')
 
 @section('content')
     <!-- Main content -->
     <section class="container content">
         <div class="row">
             <div class="box-body">
-                @include('layouts.errors-and-messages')
+                @include('layoutsecom.errors-and-messages')
             </div>
             <div class="col-md-12">
                 <h2> <i class="fa fa-home"></i> My Account</h2>
