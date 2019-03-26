@@ -12031,3 +12031,8 @@ table.dataTable thead th {
     list-style-type: none;
     padding-left: 25px;
 }
+
+.content-wrapper, .right-side
+{
+  min-height: 707px !important;
+}
