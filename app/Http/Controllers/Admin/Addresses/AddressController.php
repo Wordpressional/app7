@@ -17,9 +17,11 @@ use App\Shop\Customers\Repositories\Interfaces\CustomerRepositoryInterface;
 use App\Http\Controllers\Controller;
 use App\Shop\Provinces\Repositories\Interfaces\ProvinceRepositoryInterface;
 use Illuminate\Http\Request;
+use App\Http\Traits\EcommTrait;
 
 class AddressController extends Controller
 {
+    use EcommTrait;
     use AddressTransformable;
 
     private $addressRepo;
@@ -51,6 +53,7 @@ class AddressController extends Controller
      */
     public function index(Request $request)
     {
+        $data = $this->ebrandsAll();
         $list = $this->addressRepo->listAddress('created_at', 'desc');
 
         if ($request->has('q')) {
@@ -61,7 +64,8 @@ class AddressController extends Controller
             return $this->transformAddress($address);
         })->all();
 
-        return view('admin.addresses.list', ['addresses' => $this->addressRepo->paginateArrayResults($addresses)]);
+        return view('admin.addresses.list', ['addresses' => $this->addressRepo->paginateArrayResults($addresses),
+            'data' => $data]);
     }
 
     /**
@@ -71,6 +75,7 @@ class AddressController extends Controller
      */
     public function create()
     {
+        $data = $this->ebrandsAll();
         $countries = $this->countryRepo->listCountries();
         $country = $this->countryRepo->findCountryById(1);
 
@@ -80,7 +85,8 @@ class AddressController extends Controller
             'customers' => $customers,
             'countries' => $countries,
             'provinces' => $country->provinces,
-            'cities' => City::all()
+            'cities' => City::all(),
+            'data' => $data
         ]);
     }
 
@@ -92,6 +98,7 @@ class AddressController extends Controller
      */
     public function store(CreateAddressRequest $request)
     {
+
         $this->addressRepo->createAddress($request->except('_token', '_method'));
 
         $request->session()->flash('message', 'Creation successful');
@@ -106,7 +113,9 @@ class AddressController extends Controller
      */
     public function show(int $id)
     {
-        return view('admin.addresses.show', ['address' => $this->addressRepo->findAddressById($id)]);
+        $data = $this->ebrandsAll();
+        return view('admin.addresses.show', ['address' => $this->addressRepo->findAddressById($id),
+            'data' => $data]);
     }
 
     /**
@@ -117,6 +126,7 @@ class AddressController extends Controller
      */
     public function edit(int $id)
     {
+        $data = $this->ebrandsAll();
         $countries = $this->countryRepo->listCountries();
 
         $country = $countries->filter(function ($country) {
@@ -141,7 +151,8 @@ class AddressController extends Controller
             'cities' => $this->cityRepo->listCities(),
             'cityId' => $address->city_id,
             'customers' => $this->customerRepo->listCustomers(),
-            'customerId' => $customer->id
+            'customerId' => $customer->id,
+            'data' => $data
         ]);
     }
 

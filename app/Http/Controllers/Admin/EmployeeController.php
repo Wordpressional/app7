@@ -9,9 +9,11 @@ use App\Shop\Employees\Repositories\Interfaces\EmployeeRepositoryInterface;
 use App\Shop\Roles\Repositories\RoleRepositoryInterface;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use App\Http\Traits\EcommTrait;
 
 class EmployeeController extends Controller
 {
+    use EcommTrait;
     /**
      * @var EmployeeRepositoryInterface
      */

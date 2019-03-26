@@ -38,19 +38,21 @@
                     </div>
                     <div class="form-group">
                         <label for="province_id">Province </label>
-                        <select name="province_id" id="province_id" class="form-control" disabled>
+                        <!--<select name="province_id" id="province_id" class="form-control">
                             @foreach($provinces as $province)
                                 <option value="{{ $province->id }}">{{ $province->name }}</option>
                             @endforeach
-                        </select>
+                        </select>-->
+                        <input type="text" name="province_id" id="province_id" placeholder="Province" class="form-control" >
                     </div>
                     <div id="cities" class="form-group">
                         <label for="city_id">City </label>
-                        <select name="city_id" id="city_id" class="form-control" disabled>
+                        <!--<select name="city_id" id="city_id" class="form-control">
                             @foreach($cities as $city)
                                 <option value="{{ $city->id }}">{{ $city->name }}</option>
                             @endforeach
-                        </select>
+                        </select>-->
+                        <input type="text" name="city_id" id="city_id" placeholder="City" class="form-control" >
                     </div>
                     <div class="form-group">
                         <label for="zip">Zip Code </label>

@@ -130,7 +130,7 @@
                 </ul>
             </li>
             <li class="header">CONFIG</li>
-            @if($user->hasRole('admin|superadmin'))
+            
                 <li class="treeview @if(request()->segment(2) == 'employees' || request()->segment(2) == 'roles' || request()->segment(2) == 'permissions') active @endif">
             <a href="#">
                 <i class="fa fa-star"></i> <span>Employees</span>
@@ -165,7 +165,7 @@
                 </li>
             </ul>
         </li>
-            @endif
+            
             <li class="treeview @if(request()->segment(2) == 'countries' || request()->segment(2) == 'provinces') active @endif">
                 <a href="#">
                     <i class="fa fa-flag"></i> <span>Countries</span>

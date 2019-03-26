@@ -22,9 +22,11 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Traits\EcommTrait;
 
 class ProductController extends Controller
 {
+    use EcommTrait;
     use ProductTransformable, UploadableTrait;
 
     /**
@@ -82,10 +84,10 @@ class ProductController extends Controller
         $this->productAttribute = $productAttribute;
         $this->brandRepo = $brandRepository;
 
-        $this->middleware(['permission:create-product, guard:employee'], ['only' => ['create', 'store']]);
-        $this->middleware(['permission:update-product, guard:employee'], ['only' => ['edit', 'update']]);
-        $this->middleware(['permission:delete-product, guard:employee'], ['only' => ['destroy']]);
-        $this->middleware(['permission:view-product, guard:employee'], ['only' => ['index', 'show']]);
+        //$this->middleware(['permission:create-product, guard:employee'], ['only' => ['create', 'store']]);
+        //$this->middleware(['permission:update-product, guard:employee'], ['only' => ['edit', 'update']]);
+        //$this->middleware(['permission:delete-product, guard:employee'], ['only' => ['destroy']]);
+        //$this->middleware(['permission:view-product, guard:employee'], ['only' => ['index', 'show']]);
     }
 
     /**
@@ -95,6 +97,7 @@ class ProductController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
         $list = $this->productRepo->listProducts('id');
 
         if (request()->has('q') && request()->input('q') != '') {
@@ -106,7 +109,7 @@ class ProductController extends Controller
         })->all();
 
         return view('admin.products.list', [
-            'products' => $this->productRepo->paginateArrayResults($products, 25)
+            'products' => $this->productRepo->paginateArrayResults($products, 25), 'data' => $data
         ]);
     }
 
@@ -117,6 +120,7 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $data = $this->ebrandsAll();
         $categories = $this->categoryRepo->listCategories('name', 'asc');
 
         return view('admin.products.create', [
@@ -124,7 +128,7 @@ class ProductController extends Controller
             'brands' => $this->brandRepo->listBrands(['*'], 'name', 'asc'),
             'default_weight' => env('SHOP_WEIGHT'),
             'weight_units' => Product::MASS_UNIT,
-            'product' => new Product
+            'product' => new Product, 'data' => $data
         ]);
     }
 
@@ -137,6 +141,7 @@ class ProductController extends Controller
      */
     public function store(CreateProductRequest $request)
     {
+        
         $data = $request->except('_token', '_method');
         $data['slug'] = str_slug($request->input('name'));
 
@@ -170,8 +175,9 @@ class ProductController extends Controller
      */
     public function show(int $id)
     {
+        $data = $this->ebrandsAll();
         $product = $this->productRepo->findProductById($id);
-        return view('admin.products.show', compact('product'));
+        return view('admin.products.show', compact('product', 'data'));
     }
 
     /**
@@ -183,6 +189,7 @@ class ProductController extends Controller
      */
     public function edit(int $id)
     {
+        $data = $this->ebrandsAll();
         $product = $this->productRepo->findProductById($id);
         $productAttributes = $product->attributes()->get();
 
@@ -212,7 +219,8 @@ class ProductController extends Controller
             'brands' => $this->brandRepo->listBrands(['*'], 'name', 'asc'),
             'weight' => $product->weight,
             'default_weight' => $product->mass_unit,
-            'weight_units' => Product::MASS_UNIT
+            'weight_units' => Product::MASS_UNIT,
+            'data' => $data
         ]);
     }
 
@@ -227,6 +235,7 @@ class ProductController extends Controller
      */
     public function update(UpdateProductRequest $request, int $id)
     {
+        
         $product = $this->productRepo->findProductById($id);
         $productRepo = new ProductRepository($product);
 

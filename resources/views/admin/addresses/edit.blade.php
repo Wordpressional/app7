@@ -58,18 +58,22 @@
                             @endforeach
                         </select>
                     </div>
-                    <div id="cities" class="form-group">
-                        <label for="city_id">City </label>
+                    <!--<div id="cities" class="form-group">
+                        <label for="city_id">City1 </label>
                         <select name="city_id" id="city_id" class="form-control">
                             @foreach($cities as $city)
                                 @if($city->id == $cityId)
                                     <option selected="selected" value="{{ $city->id }}">{{ $city->name }}</option>
                                 @else
-                                    <option value="{{ $city->id }}">{{ $city->name }}</option>
+                                    
                                 @endif
                             @endforeach
                         </select>
-                    </div>
+                    </div>-->
+                <div id="cities" class="form-group">
+                        <label for="city_id">City </label>
+                    <input type="text" name="city_id" id="city_id" placeholder="city" class="form-control" value="{{ $address->city ?: old('city') }}">
+                </div>
                     <div class="form-group">
                         <label for="zip">Zip Code </label>
                         <input type="text" name="zip" id="zip" placeholder="Zip code" class="form-control" value="{{ $address->zip ?: old('zip') }}">
@@ -77,6 +81,8 @@
                     <div class="form-group">
                         @include('admin.shared.status-select', ['status' => $address->status])
                     </div>
+                
+                </div>
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">

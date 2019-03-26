@@ -7,9 +7,11 @@ use App\Shop\Couriers\Repositories\Interfaces\CourierRepositoryInterface;
 use App\Shop\Couriers\Requests\CreateCourierRequest;
 use App\Shop\Couriers\Requests\UpdateCourierRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\EcommTrait;
 
 class CourierController extends Controller
 {
+     use EcommTrait;
     /**
      * @var CourierRepositoryInterface
      */
@@ -31,7 +33,8 @@ class CourierController extends Controller
      */
     public function index()
     {
-        return view('admin.couriers.list', ['couriers' => $this->courierRepo->listCouriers('name', 'asc')]);
+        $data = $this->ebrandsAll();
+        return view('admin.couriers.list', ['couriers' => $this->courierRepo->listCouriers('name', 'asc'),  'data' => $data]);
     }
 
     /**
@@ -41,7 +44,8 @@ class CourierController extends Controller
      */
     public function create()
     {
-        return view('admin.couriers.create');
+        $data = $this->ebrandsAll();
+        return view('admin.couriers.create', compact('data'));
     }
 
     /**
@@ -66,7 +70,8 @@ class CourierController extends Controller
      */
     public function edit(int $id)
     {
-        return view('admin.couriers.edit', ['courier' => $this->courierRepo->findCourierById($id)]);
+        $data = $this->ebrandsAll();
+        return view('admin.couriers.edit', ['courier' => $this->courierRepo->findCourierById($id), 'data' => $data]);
     }
 
     /**

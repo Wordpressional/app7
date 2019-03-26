@@ -8,9 +8,11 @@ use App\Shop\Categories\Requests\CreateCategoryRequest;
 use App\Shop\Categories\Requests\UpdateCategoryRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Traits\EcommTrait;
 
 class CategoryController extends Controller
 {
+    use EcommTrait;
     /**
      * @var CategoryRepositoryInterface
      */
@@ -33,10 +35,11 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
         $list = $this->categoryRepo->rootCategories('created_at', 'desc');
 
         return view('admin.categories.list', [
-            'categories' => $this->categoryRepo->paginateArrayResults($list->all())
+            'categories' => $this->categoryRepo->paginateArrayResults($list->all()), 'data' => $data
         ]);
     }
 
@@ -47,8 +50,9 @@ class CategoryController extends Controller
      */
     public function create()
     {
+        $data = $this->ebrandsAll();
         return view('admin.categories.create', [
-            'categories' => $this->categoryRepo->listCategories('name', 'asc')
+            'categories' => $this->categoryRepo->listCategories('name', 'asc'), 'data' => $data
         ]);
     }
 
@@ -73,6 +77,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
+        $data = $this->ebrandsAll();
         $category = $this->categoryRepo->findCategoryById($id);
 
         $cat = new CategoryRepository($category);
@@ -80,7 +85,8 @@ class CategoryController extends Controller
         return view('admin.categories.show', [
             'category' => $category,
             'categories' => $category->children,
-            'products' => $cat->findProducts()
+            'products' => $cat->findProducts(),
+            'data' => $data
         ]);
     }
 
@@ -92,9 +98,12 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
+        $data = $this->ebrandsAll();
         return view('admin.categories.edit', [
             'categories' => $this->categoryRepo->listCategories('name', 'asc', $id),
-            'category' => $this->categoryRepo->findCategoryById($id)
+            'category' => $this->categoryRepo->findCategoryById($id), 
+            'data' => $data
+
         ]);
     }
 

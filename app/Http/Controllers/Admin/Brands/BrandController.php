@@ -7,9 +7,11 @@ use App\Shop\Brands\Repositories\BrandRepository;
 use App\Shop\Brands\Repositories\BrandRepositoryInterface;
 use App\Shop\Brands\Requests\CreateBrandRequest;
 use App\Shop\Brands\Requests\UpdateBrandRequest;
+use App\Http\Traits\EcommTrait;
 
 class BrandController extends Controller
 {
+    use EcommTrait;
     /**
      * @var BrandRepositoryInterface
      */
@@ -30,9 +32,10 @@ class BrandController extends Controller
      */
     public function index()
     {
+        $data1 = $this->ebrandsAll();
         $data = $this->brandRepo->paginateArrayResults($this->brandRepo->listBrands(['*'], 'name', 'asc')->all());
 
-        return view('admin.brands.list', ['brands' => $data]);
+        return view('admin.brands.list', ['brands' => $data, 'data' => $data1]);
     }
 
     /**
@@ -40,7 +43,8 @@ class BrandController extends Controller
      */
     public function create()
     {
-        return view('admin.brands.create');
+        $data = $this->ebrandsAll();
+        return view('admin.brands.create', compact('data'));
     }
 
     /**
@@ -62,7 +66,8 @@ class BrandController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.brands.edit', ['brand' => $this->brandRepo->findBrandById($id)]);
+        $data = $this->ebrandsAll();
+        return view('admin.brands.edit', ['brand' => $this->brandRepo->findBrandById($id), 'data' => $data]);
     }
 
     /**

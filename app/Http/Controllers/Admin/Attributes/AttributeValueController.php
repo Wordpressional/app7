@@ -8,9 +8,11 @@ use App\Shop\AttributeValues\AttributeValue;
 use App\Shop\AttributeValues\Repositories\AttributeValueRepository;
 use App\Shop\AttributeValues\Repositories\AttributeValueRepositoryInterface;
 use App\Shop\AttributeValues\Requests\CreateAttributeValueRequest;
+use App\Http\Traits\EcommTrait;
 
 class AttributeValueController extends Controller
 {
+    use EcommTrait;
     /**
      * @var AttributeRepositoryInterface
      */
@@ -36,8 +38,10 @@ class AttributeValueController extends Controller
 
     public function create($id)
     {
+        $data = $this->ebrandsAll();
         return view('admin.attribute-values.create', [
-            'attribute' => $this->attributeRepo->findAttributeById($id)
+            'attribute' => $this->attributeRepo->findAttributeById($id),
+            'data' => $data
         ]);
     }
 

@@ -10,9 +10,11 @@ use App\Shop\Attributes\Repositories\AttributeRepository;
 use App\Shop\Attributes\Repositories\AttributeRepositoryInterface;
 use App\Shop\Attributes\Requests\CreateAttributeRequest;
 use App\Shop\Attributes\Requests\UpdateAttributeRequest;
+use App\Http\Traits\EcommTrait;
 
 class AttributeController extends Controller
 {
+    use EcommTrait;
     private $attributeRepo;
 
     /**
@@ -29,10 +31,11 @@ class AttributeController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
         $results = $this->attributeRepo->listAttributes();
         $attributes = $this->attributeRepo->paginateArrayResults($results->all());
 
-        return view('admin.attributes.list', compact('attributes'));
+        return view('admin.attributes.list', compact('attributes', 'data'));
     }
 
     /**
@@ -40,7 +43,8 @@ class AttributeController extends Controller
      */
     public function create()
     {
-        return view('admin.attributes.create');
+        $data = $this->ebrandsAll();
+        return view('admin.attributes.create', compact('data'));
     }
 
     /**
@@ -82,9 +86,10 @@ class AttributeController extends Controller
      */
     public function edit($id)
     {
+        $data = $this->ebrandsAll();
         $attribute = $this->attributeRepo->findAttributeById($id);
 
-        return view('admin.attributes.edit', compact('attribute'));
+        return view('admin.attributes.edit', compact('attribute', 'data'));
     }
 
     /**

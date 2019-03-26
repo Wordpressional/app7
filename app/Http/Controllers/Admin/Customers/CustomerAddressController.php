@@ -6,9 +6,11 @@ use App\Shop\Addresses\Repositories\Interfaces\AddressRepositoryInterface;
 use App\Shop\Countries\Repositories\Interfaces\CountryRepositoryInterface;
 use App\Http\Controllers\Controller;
 use App\Shop\Provinces\Repositories\Interfaces\ProvinceRepositoryInterface;
+use App\Http\Traits\EcommTrait;
 
 class CustomerAddressController extends Controller
 {
+    use EcommTrait;
     /**
      * @var AddressRepositoryInterface
      */
@@ -47,9 +49,11 @@ class CustomerAddressController extends Controller
      */
     public function show(int $customerId, int $addressId)
     {
+        $data = $this->ebrandsAll();
         return view('admin.addresses.customers.show', [
             'address' => $this->addressRepo->findAddressById($addressId),
-            'customerId' => $customerId
+            'customerId' => $customerId,
+            'data' => $data
         ]);
     }
 
@@ -62,6 +66,7 @@ class CustomerAddressController extends Controller
      */
     public function edit(int $customerId, int $addressId)
     {
+        $data = $this->ebrandsAll();
         $this->countryRepo->findCountryById(env('COUNTRY_ID', 1));
         $province = $this->provinceRepo->findProvinceById(1);
 
@@ -70,7 +75,8 @@ class CustomerAddressController extends Controller
             'countries' => $this->countryRepo->listCountries(),
             'provinces' => $this->countryRepo->findProvinces(),
             'cities' => $this->provinceRepo->listCities($province->id),
-            'customerId' => $customerId
+            'customerId' => $customerId,
+            'data' => $data
         ]);
     }
 }

@@ -9,9 +9,11 @@ use App\Shop\Customers\Requests\CreateCustomerRequest;
 use App\Shop\Customers\Requests\UpdateCustomerRequest;
 use App\Shop\Customers\Transformations\CustomerTransformable;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\EcommTrait;
 
 class CustomerController extends Controller
 {
+    use EcommTrait;
     use CustomerTransformable;
 
     /**
@@ -35,6 +37,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
         $list = $this->customerRepo->listCustomers('created_at', 'desc');
 
         if (request()->has('q')) {
@@ -47,7 +50,8 @@ class CustomerController extends Controller
 
 
         return view('admin.customers.list', [
-            'customers' => $this->customerRepo->paginateArrayResults($customers)
+            'customers' => $this->customerRepo->paginateArrayResults($customers),
+            'data' => $data
         ]);
     }
 
@@ -58,7 +62,8 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        return view('admin.customers.create');
+         $data = $this->ebrandsAll();
+        return view('admin.customers.create',['data' => $data]);
     }
 
     /**
@@ -82,11 +87,13 @@ class CustomerController extends Controller
      */
     public function show(int $id)
     {
+         $data = $this->ebrandsAll();
         $customer = $this->customerRepo->findCustomerById($id);
         
         return view('admin.customers.show', [
             'customer' => $customer,
-            'addresses' => $customer->addresses
+            'addresses' => $customer->addresses,
+            'data' => $data
         ]);
     }
 
@@ -98,7 +105,9 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.customers.edit', ['customer' => $this->customerRepo->findCustomerById($id)]);
+         $data = $this->ebrandsAll();
+
+        return view('admin.customers.edit', ['customer' => $this->customerRepo->findCustomerById($id), 'data' => $data]);
     }
 
     /**

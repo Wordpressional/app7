@@ -19,9 +19,11 @@ use App\Shop\OrderStatuses\Repositories\OrderStatusRepository;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
+use App\Http\Traits\EcommTrait;
 
 class OrderController extends Controller
 {
+    use EcommTrait;
     use AddressTransformable;
 
     /**
@@ -72,6 +74,7 @@ class OrderController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
         $list = $this->orderRepo->listOrders('created_at', 'desc');
 
         if (request()->has('q')) {
@@ -80,7 +83,7 @@ class OrderController extends Controller
 
         $orders = $this->orderRepo->paginateArrayResults($this->transFormOrder($list), 10);
 
-        return view('admin.orders.list', ['orders' => $orders]);
+        return view('admin.orders.list', ['orders' => $orders, 'data' => $data]);
     }
 
     /**
@@ -91,6 +94,7 @@ class OrderController extends Controller
      */
     public function show($orderId)
     {
+        $data = $this->ebrandsAll();
         $order = $this->orderRepo->findOrderById($orderId);
         $order->courier = $this->courierRepo->findCourierById($order->courier_id);
         $order->address = $this->addressRepo->findAddressById($order->address_id);
@@ -105,7 +109,9 @@ class OrderController extends Controller
             'customer' => $this->customerRepo->findCustomerById($order->customer_id),
             'currentStatus' => $this->orderStatusRepo->findOrderStatusById($order->order_status_id),
             'payment' => $order->payment,
-            'user' => auth()->guard('employee')->user()
+            'user' => auth()->guard('employee')->user(), 
+            'data' => $data
+
         ]);
     }
 
@@ -116,6 +122,7 @@ class OrderController extends Controller
      */
     public function edit($orderId)
     {
+        $data = $this->ebrandsAll();
         $order = $this->orderRepo->findOrderById($orderId);
         $order->courier = $this->courierRepo->findCourierById($order->courier_id);
         $order->address = $this->addressRepo->findAddressById($order->address_id);
@@ -131,7 +138,8 @@ class OrderController extends Controller
             'customer' => $this->customerRepo->findCustomerById($order->customer_id),
             'currentStatus' => $this->orderStatusRepo->findOrderStatusById($order->order_status_id),
             'payment' => $order->payment,
-            'user' => auth()->guard('employee')->user()
+            'user' => auth()->guard('employee')->user(),
+            'data' => $data
         ]);
     }
 
@@ -143,6 +151,7 @@ class OrderController extends Controller
      */
     public function update(Request $request, $orderId)
     {
+        
         $order = $this->orderRepo->findOrderById($orderId);
         $orderRepo = new OrderRepository($order);
 
@@ -165,6 +174,7 @@ class OrderController extends Controller
      */
     public function generateInvoice(int $id)
     {
+        
         $order = $this->orderRepo->findOrderById($id);
 
         $data = [

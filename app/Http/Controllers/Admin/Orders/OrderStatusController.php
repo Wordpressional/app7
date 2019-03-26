@@ -40,7 +40,8 @@ class OrderStatusController extends Controller
      */
     public function create()
     {
-        return view('admin.order-statuses.create');
+        $data = $this->ebrandsAll();
+        return view('admin.order-statuses.create', ['data' => $data]);
     }
 
     /**
@@ -51,6 +52,7 @@ class OrderStatusController extends Controller
      */
     public function store(CreateOrderStatusRequest $request)
     {
+
         $this->orderStatuses->createOrderStatus($request->except('_token', '_method'));
         $request->session()->flash('message', 'Create successful');
         return redirect()->route('admin.order-statuses.index');
@@ -64,7 +66,8 @@ class OrderStatusController extends Controller
      */
     public function edit(int $id)
     {
-        return view('admin.order-statuses.edit', ['orderStatus' => $this->orderStatuses->findOrderStatusById($id)]);
+        $data = $this->ebrandsAll();
+        return view('admin.order-statuses.edit', ['orderStatus' => $this->orderStatuses->findOrderStatusById($id), 'data' => $data]);
     }
 
     /**

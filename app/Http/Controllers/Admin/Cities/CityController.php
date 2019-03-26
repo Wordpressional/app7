@@ -6,10 +6,12 @@ use App\Shop\Cities\Repositories\CityRepository;
 use App\Shop\Cities\Repositories\Interfaces\CityRepositoryInterface;
 use App\Shop\Cities\Requests\UpdateCityRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\EcommTrait;
 
 class CityController extends Controller
 {
-    /**
+     use EcommTrait;
+     /**
      * @var CityRepositoryInterface
      */
     private $cityRepo;
@@ -34,12 +36,14 @@ class CityController extends Controller
      */
     public function edit($countryId, $provinceId, $city)
     {
+        $data = $this->ebrandsAll();
         $city = $this->cityRepo->findCityByName($city);
 
         return view('admin.cities.edit', [
             'countryId' => $countryId,
             'provinceId' => $provinceId,
-            'city' => $city
+            'city' => $city,
+            'data' => $data
         ]);
     }
 
