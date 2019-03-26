@@ -1,5 +1,5 @@
 [
-"http://velikorodnov.com/wordpress/beauty-construction/construction-one/",
+"https://laracasts.com/discuss",
 {
 "url": "http://example.com/foldername/page1",
 "filename": "page1.html"

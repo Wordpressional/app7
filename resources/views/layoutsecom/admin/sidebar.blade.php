@@ -7,7 +7,9 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="{{ asset('img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                @if($data['n_companyname'])
+                        <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="user-image" alt="User Image" style="width:100% !important; min-height:50px !important;" />
+                        @endif
             </div>
             <div class="pull-left info">
                 <p>{{ $user->name }}</p>
@@ -27,8 +29,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    @if($user->hasPermission('view-product'))<li><a href="{{ route('admin.products.index') }}"><i class="fa fa-circle-o"></i> List products</a></li>@endif
-                    @if($user->hasPermission('create-product'))<li><a href="{{ route('admin.products.create') }}"><i class="fa fa-plus"></i> Create product</a></li>@endif
+                    <li><a href="{{ route('admin.products.index') }}"><i class="fa fa-circle-o"></i> List products</a></li>
+                    <li><a href="{{ route('admin.products.create') }}"><i class="fa fa-plus"></i> Create product</a></li>
                     <li class="@if(request()->segment(2) == 'attributes') active @endif">
                     <a href="#">
                         <i class="fa fa-gear"></i> <span>Attributes</span>

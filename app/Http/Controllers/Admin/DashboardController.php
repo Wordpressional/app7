@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\EcommTrait;
 
 class DashboardController extends Controller
 {
+	use EcommTrait;
     public function index()
     {
         $breadcumb = [
@@ -13,7 +15,9 @@ class DashboardController extends Controller
             ["name" => "Home", "url" => route("admin.dashboard"), "icon" => "fa fa-home"],
 
         ];
+
         populate_breadcumb($breadcumb);
-        return view('admin.dashboard');
+        $data = $this->ebrandsAll();
+        return view('admin.dashboard', ['data' => $data]);
     }
 }

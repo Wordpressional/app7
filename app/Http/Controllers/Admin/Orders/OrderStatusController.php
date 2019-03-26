@@ -9,9 +9,11 @@ use App\Shop\OrderStatuses\Requests\UpdateOrderStatusRequest;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\EcommTrait;
 
 class OrderStatusController extends Controller
 {
+    use EcommTrait;
     private $orderStatuses;
 
 
@@ -27,7 +29,8 @@ class OrderStatusController extends Controller
      */
     public function index()
     {
-        return view('admin.order-statuses.list', ['orderStatuses' => $this->orderStatuses->listOrderStatuses()]);
+        $data = $this->ebrandsAll();
+        return view('admin.order-statuses.list', ['orderStatuses' => $this->orderStatuses->listOrderStatuses(), 'data' => $data]);
     }
 
     /**

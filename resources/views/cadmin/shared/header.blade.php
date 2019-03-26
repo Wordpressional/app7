@@ -1,7 +1,7 @@
 <!-- header.blade.php -->
 
 <header class="main-header">
-    <a href="" class="logo">
+    <a href="{{route('admin.dashboard')}}" class="logo">
         <!--<span class="logo-mini"><b>Symbol</b></span>-->
         <span class="logo-lg"><b>@if($data['n_companyname'])<img src="{{ asset($data['n_companyname']->clogo) }}" alt="logo">@else @endif</b></span>
     </a>
@@ -18,7 +18,7 @@
                         @if($data['n_companyname'])
                         <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="user-image" alt="User Image" />
                         @endif
-                        <span class="hidden-xs">@if($data){{$data['n_loggeduser']}}@endif</span>
+                        <span class="hidden-xs">@if($data) {{$data['n_loggeduser']}} @endif</span>
                     </a>
                     <ul class="dropdown-menu">
                     <!-- User image -->

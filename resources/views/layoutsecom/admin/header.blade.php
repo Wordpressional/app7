@@ -1,10 +1,8 @@
 <header class="main-header">
     <!-- Logo -->
     <a href="{{route('admin.dashboard')}}" class="logo">
-        <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">{{ config('app.name') }}</span>
-        <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">{{ config('app.name') }}</span>
+       <!--<span class="logo-mini"><b>Symbol</b></span>-->
+        <span class="logo-lg"><b>@if($data['n_companyname'])<img src="{{ asset($data['n_companyname']->clogo) }}" alt="logo">@else @endif</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -19,18 +17,18 @@
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <!-- Messages: style can be found in dropdown.less-->
-                <li class="dropdown messages-menu">
+                <!--<li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
                         <span class="label label-success">4</span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="header">You have 4 messages</li>
-                        <li>
+                        <li>-->
                             <!-- inner menu: contains the actual data -->
-                            <ul class="menu">
-                                <li><!-- start message -->
-                                    <a href="#">
+                            <!--<ul class="menu">-->
+                                <!--<li>--><!-- start message -->
+                                  <!--  <a href="#">
                                         <div class="pull-left">
                                             <img src="{{ asset('img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
                                         </div>
@@ -40,47 +38,47 @@
                                         </h4>
                                         <p>Why not buy a new awesome theme?</p>
                                     </a>
-                                </li>
+                                </li>-->
                                 <!-- end message -->
-                            </ul>
-                        </li>
+                            <!--</ul>-->
+                        <!--</li>
                         <li class="footer"><a href="#">See All Messages</a></li>
                     </ul>
-                </li>
+                </li>-->
                 <!-- Notifications: style can be found in dropdown.less -->
-                <li class="dropdown notifications-menu">
+                <!--<li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-bell-o"></i>
                         <span class="label label-warning">10</span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="header">You have 10 notifications</li>
-                        <li>
+                        <li>-->
                             <!-- inner menu: contains the actual data -->
-                            <ul class="menu">
+                            <!--<ul class="menu">
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-users text-aqua"></i> 5 new members joined today
                                     </a>
                                 </li>
-                            </ul>
-                        </li>
+                            </ul>-->
+                        <!--</li>
                         <li class="footer"><a href="#">View all</a></li>
                     </ul>
-                </li>
+                </li>-->
                 <!-- Tasks: style can be found in dropdown.less -->
-                <li class="dropdown tasks-menu">
+                <!--<li class="dropdown tasks-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-flag-o"></i>
                         <span class="label label-danger">9</span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="header">You have 9 tasks</li>
-                        <li>
+                        <li>-->
                             <!-- inner menu: contains the actual data -->
-                            <ul class="menu">
-                                <li><!-- Task item -->
-                                    <a href="#">
+                            <!--<ul class="menu">-->
+                                <!--<li>--><!-- Task item -->
+                                    <!--<a href="#">
                                         <h3>
                                             Design some buttons
                                             <small class="pull-right">20%</small>
@@ -90,26 +88,30 @@
                                                 <span class="sr-only">20% Complete</span>
                                             </div>
                                         </div>
-                                    </a>
-                                </li>
+                                    </a>-->
+                                <!--</li>-->
                                 <!-- end task item -->
-                            </ul>
+                            <!--</ul>
                         </li>
                         <li class="footer">
                             <a href="#">View all tasks</a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{ asset('img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
+                       @if($data['n_companyname'])
+                        <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="user-image" alt="User Image" />
+                        @endif
                         <span class="hidden-xs">{{ $user->name }}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="{{ asset('img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                            @if($data['n_companyname'])
+                        <img src="{{ asset($data['n_companyname']->defaultprofileimg) }}" class="user-image" alt="User Image" />
+                        @endif
 
                             <p>
                                 {{ $user->name }}
@@ -117,7 +119,7 @@
                             </p>
                         </li>
                         <!-- Menu Body -->
-                        <li class="user-body">
+                       <!-- <li class="user-body">
                             <div class="row">
                                 <div class="col-xs-4 text-center">
                                     <a href="#">Followers</a>
@@ -128,9 +130,9 @@
                                 <div class="col-xs-4 text-center">
                                     <a href="#">Friends</a>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- /.row -->
-                        </li>
+                        <!--</li>-->
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
