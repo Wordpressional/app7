@@ -1,3 +1,8 @@
+@extends('layoutsecom.front.app')
+
+
+
+@section('content')
 <section id="hero" class="hero-section top-area">
     <div class="container">
         <div class="row">
@@ -13,3 +18,4 @@
         </div>
     </div>
 </section>
+@endsection

@@ -30,4 +30,36 @@ class HomeController
 
         return view('front.index', compact('cat1', 'cat2'));
     }
+
+    public function index1()
+    {
+        $cat1 = $this->categoryRepo->findCategoryById(2);
+        $cat2 = $this->categoryRepo->findCategoryById(3);
+
+        return view('layoutsecom.front.menu', compact('cat1', 'cat2'));
+    }
+
+    public function index2()
+    {
+        $cat1 = $this->categoryRepo->findCategoryById(2);
+        $cat2 = $this->categoryRepo->findCategoryById(3);
+
+        return view('layoutsecom.front.home-slider', compact('cat1', 'cat2'));
+    }
+
+    public function index3()
+    {
+        $cat1 = $this->categoryRepo->findCategoryById(2);
+        $cat2 = $this->categoryRepo->findCategoryById(3);
+
+        return view('front.index', compact('cat1', 'cat2'));
+    }
+
+    public function index4()
+    {
+        $cat1 = $this->categoryRepo->findCategoryById(2);
+        $cat2 = $this->categoryRepo->findCategoryById(3);
+
+        return view('layoutsecom.front.myfooter', compact('cat1', 'cat2'));
+    }
 }

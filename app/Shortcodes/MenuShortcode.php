@@ -1,7 +1,7 @@
 <?php 
 //https://github.com/harimayco/wmenu-builder
 namespace App\Shortcodes;
-use App\Category;
+use App\Blogcategory;
 use App\Post;
 
 use Harimayco\Menu\Facades\Menu;

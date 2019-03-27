@@ -1,0 +1,1 @@
+@include('layoutsecom.front.footer')

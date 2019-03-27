@@ -11,7 +11,7 @@ use App\User;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use Illuminate\Support\Facades\Auth;
-
+use App\Compbrand;
 use Illuminate\Http\Request;
 use Shortcode;
 
@@ -320,6 +320,8 @@ class FormbuilderController extends Controller
         
         }
 
+        
+        
 
         
         return "success";
@@ -332,6 +334,8 @@ class FormbuilderController extends Controller
         //dd($form);
         $form->htmlcontent = $request->htmlcontent;
         $form->save();
+
+             
         
         return "success";
     }

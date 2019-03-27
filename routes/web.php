@@ -195,13 +195,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['employee'], 'as' => 'admin.
             Route::resource('brands', 'Brands\BrandController');
 
         });
-        Route::group(['middleware' => ['role:admin|superadmin, guard:employee']], function () {
+        //Route::group(['middleware' => ['role:admin|superadmin, guard:employee']], function () {
             Route::resource('employees', 'EmployeeController');
             Route::get('employees/{id}/profile', 'EmployeeController@getProfile')->name('employee.profile');
             Route::put('employees/{id}/profile', 'EmployeeController@updateProfile')->name('employee.profile.update');
             Route::resource('roles', 'Roles\RoleController');
             Route::resource('permissions', 'Permissions\PermissionController');
-        });
+        //});
     //});
 });
 
@@ -213,10 +213,17 @@ Route::namespace('Auth')->group(function () {
     Route::get('cart/custlogin', 'CartLoginController@showLoginForm')->name('cart.custlogin');
     Route::post('cart/custlogin', 'CartLoginController@login')->name('cart.custlogin');
     Route::get('logout', 'LoginController@logout');
+    Route::get('cart/custreg', 'CartRegisterController@cartregister')->name('cart.custreg');
 });
 
+
+
 Route::namespace('Front')->group(function () {
-    Route::get('/', 'HomeController@index')->name('home');
+    //Route::get('/', 'HomeController@index')->name('home');
+    Route::get('index1', 'HomeController@index1')->name('index1');
+Route::get('index2', 'HomeController@index2')->name('index2');
+Route::get('index3', 'HomeController@index3')->name('index3');
+Route::get('index4', 'HomeController@index4')->name('index4');
     Route::group(['middleware' => ['auth', 'web']], function () {
 
         Route::namespace('Payments')->group(function () {

@@ -1,4 +1,4 @@
-<footer class="footer-section footer">
+<footer class="ecartnatheme1 footer-section footer">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">

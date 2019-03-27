@@ -9905,7 +9905,7 @@ li.menubar-cart a {
 
 .home .single-product {
     margin-bottom: 30px;
-    min-height: 460px;
+    min-height: 260px;
 }
 
 .single-product {
@@ -10314,4 +10314,29 @@ a:hover img {
 }
 #productAttribute {
     width: 312px;
+}
+.footer-section .fa
+{
+   color: #d89522 !important;
+}
+
+.footer-social
+{
+  margin-top: 32px;
+}
+
+.section-title h2
+{
+  margin-bottom: 35px;
+}
+
+.footer-social .fa-facebook, .footer-social .fa-twitter {
+    padding: 0px !important;
+    background-color: transparent !important;
+}
+
+.footer-section a
+{
+  color: #d89522 !important;
+    text-decoration: none;
 }

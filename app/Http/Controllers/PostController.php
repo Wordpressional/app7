@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Page;
 use App\Post;
-use App\Category;
+use App\Blogcategory;
 use App\Tag;
 use App\Colorsetting;
 use App\Compbrand;
@@ -151,7 +151,7 @@ class PostController extends Controller
         $branding = Compbrand::where('id', 1)->first();
         $arry = array();
         //dd($cat);
-        $catid = Category::where('name', $cat)->first();
+        $catid = Blogcategory::where('name', $cat)->first();
         //dd($catid);
         if($catid)
         {
@@ -298,7 +298,7 @@ class PostController extends Controller
         $colorsetting = Colorsetting::all();
          $colortest = Colorsetting::find(1);
         $branding = Compbrand::where('id', 1)->first();
-        $catid = Category::where('name', $cat)->first();
+        $catid = Blogcategory::where('name', $cat)->first();
 
         if($catid)
         {
@@ -328,7 +328,7 @@ class PostController extends Controller
     {
          $data = $this->settingsAll();
         //dd($cat);
-        $catid = Category::where('name', $cat)->first();
+        $catid = Blogcategory::where('name', $cat)->first();
         //dd($catid);
         if($catid)
         {

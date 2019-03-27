@@ -86,7 +86,7 @@ class WebhomeController extends Controller
 
      public function frontpage()
     {
-        
+       
         Shortcode::enable();
         $shortcode = App('Shortcode');
     $colorsetting = Colorsetting::all();
@@ -104,7 +104,7 @@ class WebhomeController extends Controller
         } 
         else
         {
-            return view('webhome.pyrupayindex')->with(['branding' => $branding, 'colorsetting' => $colorsetting, 'colortest' => $colortest])->withShortcodes();
+            return view('webhome.pyrupayindex')->with(['branding' => $branding, 'colorsetting' => $colorsetting, 'colortest' => $colortest, 'formshortcode' => $formshortcode])->withShortcodes();
         }
       
 

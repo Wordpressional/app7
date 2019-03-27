@@ -767,6 +767,7 @@ class ThemeController extends Controller
            
                 
         $branding->homepage = "[frontpage]-[/frontpage]";
+        $branding->hcontent = $theme->tcontent;
         $branding->save();
        
         return "success";
@@ -839,10 +840,13 @@ class ThemeController extends Controller
         $themef->status = "inactive";
         $themef->save();
 
+        $themehome = Form::where('formname', "Home_Page")->first();
+
         $branding = Compbrand::where('id', 1)->first();
            
                 
         $branding->homepage = "[homepage]-[/homepage]";
+        $branding->hcontent = $themehome->htmlcontent;
         $branding->save();
        
         return "success";

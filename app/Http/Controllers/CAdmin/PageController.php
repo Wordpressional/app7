@@ -48,7 +48,7 @@ class PageController extends Controller
         
 
          $thisuser = Auth::user();
-         $categories = Category::all();
+         $categories = Blogcategory::all();
         
    
          $data = $this->brandsAll();
