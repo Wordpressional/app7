@@ -1,260 +1,4 @@
-/*!
- * Bootstrap v3.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-.ecartnatheme1 {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-.ecartnatheme1 {
-  margin: 0;
-}
-.ecartnatheme1 article,
-.ecartnatheme1 aside,
-.ecartnatheme1 details,
-.ecartnatheme1 figcaption,
-.ecartnatheme1 figure,
-.ecartnatheme1 footer,
-.ecartnatheme1 header,
-.ecartnatheme1 hgroup,
-.ecartnatheme1 main,
-.ecartnatheme1 menu,
-.ecartnatheme1 nav,
-.ecartnatheme1 section,
-.ecartnatheme1 summary {
-  display: block;
-}
-.ecartnatheme1 audio,
-.ecartnatheme1 canvas,
-.ecartnatheme1 progress,
-.ecartnatheme1 video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-.ecartnatheme1 audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-.ecartnatheme1 [hidden],
-.ecartnatheme1 template {
-  display: none;
-}
-.ecartnatheme1 a {
-  background-color: transparent;
-}
-.ecartnatheme1 a:active,
-.ecartnatheme1 a:hover {
-  outline: 0;
-}
-.ecartnatheme1 abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-  -moz-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-}
-.ecartnatheme1 b,
-.ecartnatheme1 strong {
-  font-weight: bold;
-}
-.ecartnatheme1 dfn {
-  font-style: italic;
-}
-.ecartnatheme1 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-.ecartnatheme1 mark {
-  background: #ff0;
-  color: #000;
-}
-.ecartnatheme1 small {
-  font-size: 80%;
-}
-.ecartnatheme1 sub,
-.ecartnatheme1 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-.ecartnatheme1 sup {
-  top: -0.5em;
-}
-.ecartnatheme1 sub {
-  bottom: -0.25em;
-}
-.ecartnatheme1 img {
-  border: 0;
-}
-.ecartnatheme1 svg:not(:root) {
-  overflow: hidden;
-}
-.ecartnatheme1 figure {
-  margin: 1em 40px;
-}
-.ecartnatheme1 hr {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-.ecartnatheme1 pre {
-  overflow: auto;
-}
-.ecartnatheme1 code,
-.ecartnatheme1 kbd,
-.ecartnatheme1 pre,
-.ecartnatheme1 samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-.ecartnatheme1 button,
-.ecartnatheme1 input,
-.ecartnatheme1 optgroup,
-.ecartnatheme1 select,
-.ecartnatheme1 textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-.ecartnatheme1 button {
-  overflow: visible;
-}
-.ecartnatheme1 button,
-.ecartnatheme1 select {
-  text-transform: none;
-}
-.ecartnatheme1 button,
-.ecartnatheme1 html input[type="button"],
-.ecartnatheme1 input[type="reset"],
-.ecartnatheme1 input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-.ecartnatheme1 button[disabled],
-.ecartnatheme1 html input[disabled] {
-  cursor: default;
-}
-.ecartnatheme1 button::-moz-focus-inner,
-.ecartnatheme1 input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-.ecartnatheme1 input {
-  line-height: normal;
-}
-.ecartnatheme1 input[type="checkbox"],
-.ecartnatheme1 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-}
-.ecartnatheme1 input[type="number"]::-webkit-inner-spin-button,
-.ecartnatheme1 input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-.ecartnatheme1 input[type="search"] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-.ecartnatheme1 input[type="search"]::-webkit-search-cancel-button,
-.ecartnatheme1 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-.ecartnatheme1 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-.ecartnatheme1 legend {
-  border: 0;
-  padding: 0;
-}
-.ecartnatheme1 textarea {
-  overflow: auto;
-}
-.ecartnatheme1 optgroup {
-  font-weight: bold;
-}
-.ecartnatheme1 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.ecartnatheme1 td,
-.ecartnatheme1 th {
-  padding: 0;
-}
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-@media print {
- 
- .ecartnatheme1 a,
- .ecartnatheme1 a:visited {
-    text-decoration: underline;
-  }
- .ecartnatheme1 a[href]:after {
-    content: " (" attr(href) ")";
-  }
- .ecartnatheme1 abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
- .ecartnatheme1 a[href^="#"]:after,
- .ecartnatheme1 a[href^="javascript:"]:after {
-    content: "";
-  }
- .ecartnatheme1 pre,
- .ecartnatheme1 blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
- .ecartnatheme1 thead {
-    display: table-header-group;
-  }
-  .ecartnatheme1 tr,
- .ecartnatheme1 img {
-    page-break-inside: avoid;
-  }
- .ecartnatheme1 img {
-    max-width: 100% !important;
-  }
- .ecartnatheme1 p,
- .ecartnatheme1 h2,
- .ecartnatheme1 h3 {
-    orphans: 3;
-    widows: 3;
-  }
- .ecartnatheme1 h2,
- .ecartnatheme1 h3 {
-    page-break-after: avoid;
-  }
- .ecartnatheme1 .navbar {
-    display: none;
-  }
- .ecartnatheme1 .btn > .caret,
- .ecartnatheme1 .dropup > .btn > .caret {
-    border-top-color: #000 !important;
-  }
- .ecartnatheme1 .label {
-    border: 1px solid #000;
-  }
- .ecartnatheme1 .table {
-    border-collapse: collapse !important;
-  }
- .ecartnatheme1 .table td,
- .ecartnatheme1 .table th {
-    background-color: #fff !important;
-  }
- .ecartnatheme1 .table-bordered th,
- .ecartnatheme1 .table-bordered td {
-    border: 1px solid #ddd !important;
-  }
-}
+
 @font-face {
   font-family: "Glyphicons Halflings";
   src: url("../fonts/glyphicons-halflings-regular.eot");
@@ -1063,23 +807,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333333;
-  background-color: #fff;
-}
+
 input,
 button,
 select,
@@ -1089,12 +817,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  
   text-decoration: underline;
 }
 a:focus {
@@ -9674,71 +9402,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
      COMMON STYLES
 ************************** */
 
-html {
-    margin: 0;
-    padding: 0px;
-    position: relative;
-    min-height: 100%;
-}
-body {
-    font-family: 'Muli', sans-serif;
-    font-size: 15px;
-    line-height: 27px;
-    font-color: black;
-    margin-bottom: 170px;
-}
-::-moz-selection {
-    background: #222;
-    color: #d89522;
-}
-::selection {
-    background: #222;
-    color: #d89522;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Droid Serif', serif;
-    color: #222;
-    font-weight: 300;
-    margin-top: 0px;
-    margin-bottom: 15px;
-}
-p {
-    font-size: 15px;
-    color: #52575d;
-    line-height: 25px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    margin-top: 0px;
-}
-a {
-    color: #d89522;
-    cursor: pointer;
-    text-decoration: none;
-    transition: .3s;
-}
-a:hover {
-    color: #d89522;
-    text-decoration: none;
-}
+
+
+
 
 .btn.focus, .btn:focus, .btn:hover {
     text-decoration: none;
 }
 
-li.active a {
+.ecartnatheme1 li.active a {
     color: #d89522;
     background: #eee;
 }
-ul.sidebar-menu li a {
+.ecartnatheme1 ul.sidebar-menu li a {
     display: block;
     padding: 3px 10px;
     margin: 3px 0;
 }
-ul.sidebar-category-sub li {
+.ecartnatheme1 ul.sidebar-category-sub li {
     padding-left: 15px;
 }
 
-ul.navbar-nav > li.active > a {
+.ecartnatheme1 ul.navbar-nav > li.active > a {
     color: #d89522 !important;
 }
 
@@ -9791,19 +9476,19 @@ ul.navbar-nav > li.active > a {
     border: none;
 }
 
-ul.navbar-nav li a{
+.ecartnatheme1 ul.navbar-nav li a{
     font-size: 15px;
     color: #52575d !important;
     background: transparent !important;
 }
 
-ul.navbar-nav li a:hover {
+.ecartnatheme1 ul.navbar-nav li a:hover {
     color: #d89522 !important
 }
 
 
 
-li.menubar-cart a {
+.ecartnatheme1 li.menubar-cart a {
     display: inline-block;
 
 }
@@ -10218,7 +9903,7 @@ li.menubar-cart a {
     display: block;
 }
 
-a:hover img {
+.ecartnatheme1 a:hover img {
     border: 1px solid #d89522;
 }
 
@@ -10332,4 +10017,9 @@ a:hover img {
 }
 .ecartnatheme1 .navbar-nav{
   flex-direction: row !important;
+}
+
+.subscribe-section {
+    height: 320px;
+    text-align: center;
 }

@@ -1,7 +1,7 @@
 @extends('layoutsecom.front.app')
 
 @section('content')
-    <div class="container product-in-cart-list">
+    <div class="ecartnatheme1 container product-in-cart-list">
         @if(!$products->isEmpty())
             <div class="row">
                 <div class="col-md-12">

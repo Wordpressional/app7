@@ -4,9 +4,9 @@
 
 @section('content')
     
-
+<div class="ecartnatheme1">
     @if($cat1->products->isNotEmpty())
-        <section class="new-product t100 home">
+        <section class="ecartnatheme1 new-product t100 home">
             <div class="container">
                 <div class="section-title b50">
                     <h2>{{ $cat1->name }}</h2>
@@ -28,4 +28,5 @@
     @endif
     <hr />
     @include('mailchimp::mailchimp')
+</div>
 @endsection

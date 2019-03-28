@@ -16,8 +16,9 @@
         <a href="https://www.enable-javascript.com/" target="_blank">Read more</a>
     </p>
 </noscript>
-
+<div class="ecartnatheme1">
 @yield('content')
+</div>
 
 
 

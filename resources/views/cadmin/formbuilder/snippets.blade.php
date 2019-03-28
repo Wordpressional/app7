@@ -813,6 +813,7 @@
 <div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 
   <div data-dynamic-href="{{url('index3')}}"></div>
+   
 </div>
 
 

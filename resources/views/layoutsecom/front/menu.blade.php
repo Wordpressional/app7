@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section>
+<section class="ecartnatheme1">
     <div class="ecartnatheme1 hidden-xs">
         <div class="container">
             <div class="clearfix"></div>
@@ -28,6 +28,7 @@
         </div>
     </div>
     <header id="header-section">
+        <div class="ecartnatheme1">
         <nav class="navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -45,6 +46,7 @@
                 </div>
             </div>
         </nav>
+    </div>
     </header>
 </section>
 @endsection

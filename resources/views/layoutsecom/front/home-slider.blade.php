@@ -3,7 +3,7 @@
 
 
 @section('content')
-<section id="hero" class="hero-section top-area">
+<section id="hero" class="ecartnatheme1 hero-section top-area">
     <div class="container">
         <div class="row">
             <div class="col-md-8">

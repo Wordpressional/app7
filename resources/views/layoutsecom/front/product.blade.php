@@ -1,4 +1,4 @@
-<div class="row">
+<div class="ecartnatheme1 row">
     <div class="col-md-6">
         <ul id="thumbnails" class="col-md-4 list-unstyled">
             <li>

@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Main content -->
-    <section class="container content">
+    <section class="ecartnatheme1 container content">
         <div class="row">
             <div class="box-body">
                 @include('layoutsecom.errors-and-messages')
