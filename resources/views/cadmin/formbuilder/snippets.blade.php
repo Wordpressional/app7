@@ -800,24 +800,24 @@
  [bloglist]Post_Category_Name_Here[/bloglist]
 </div>
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 <div data-dynamic-href="{{url('index1')}}"></div>
   
 </div>
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 
   <div data-dynamic-href="{{url('index2')}}"></div>
 </div>
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 
   <div data-dynamic-href="{{url('index3')}}"></div>
 </div>
 
 
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 
  <div data-dynamic-href="{{url('index4')}}"></div>
 </div>

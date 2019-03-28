@@ -243,6 +243,8 @@ return [
         'Laratrust'   => Laratrust\LaratrustFacade::class,
         'LRedis'    => Illuminate\Support\Facades\Redis::class,
         'Menu' => Harimayco\Menu\Facades\Menu::class,
+        'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
 	
     ],

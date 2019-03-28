@@ -111,6 +111,8 @@
       'Laratrust' => 'Laratrust\\LaratrustFacade',
       'LRedis' => 'Illuminate\\Support\\Facades\\Redis',
       'Menu' => 'Harimayco\\Menu\\Facades\\Menu',
+      'Cart' => 'Gloudemans\\Shoppingcart\\Facades\\Cart',
+      'PDF' => 'Barryvdh\\DomPDF\\Facade',
     ),
   ),
   'auth' => 

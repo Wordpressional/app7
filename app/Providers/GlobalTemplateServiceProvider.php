@@ -33,7 +33,7 @@ class GlobalTemplateServiceProvider extends ServiceProvider
             $view->with('admin', Auth::guard('employee')->user());
         });
 
-        view()->composer(['layoutsecom.front.app', 'front.categories.sidebar-category'], function ($view) {
+        view()->composer(['layoutsecom.front.menu', 'front.categories.sidebar-category'], function ($view) {
             $view->with('categories', $this->getCategories());
             $view->with('cartCount', $this->getCartCount());
         });

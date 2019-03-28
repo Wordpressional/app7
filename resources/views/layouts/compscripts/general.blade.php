@@ -7,6 +7,7 @@
 
 <!-- Bootstrap -->
 <script src="{{ asset('webhome/js/bootstrap.min.js') }}"></script>
+
 <script src="{{ asset(mix('js/app.js')) }}"></script>
 <script type="text/javascript" src="{{asset('dist/js/lightbox-plus-jquery.min.js')}}"></script>   
 <script src="{{ asset('js/jquery-ui.min.js')}}"></script>

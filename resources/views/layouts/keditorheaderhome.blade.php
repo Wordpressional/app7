@@ -7,19 +7,12 @@
  </head>
     <body>
     <div id="app">
-    <div class="bg-mycolor1">     
-   <div class="rempm">
-    
-   
-    
-    @yield('content')
-  </div>
-  
-   
-       
     </div>
-  </div>
    
+   @yield('content')
+ 
+  
+    
  
 @include('layouts.compscripts.general')
  

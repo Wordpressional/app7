@@ -5,7 +5,7 @@
 @section('content')
 
 <section>
-    <div class="hidden-xs">
+    <div class="ecartnatheme1 hidden-xs">
         <div class="container">
             <div class="clearfix"></div>
             <div class="pull-right">
@@ -20,7 +20,7 @@
                     <li id="cart" class="menubar-cart">
                         <a href="{{ route('cart.index') }}" title="View Cart" class="awemenu-icon menu-shopping-cart">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            <span class="cart-number"></span>
+                            <span class="cart-number">{{ $cartCount }}</span>
                         </a>
                     </li>
                 </ul>

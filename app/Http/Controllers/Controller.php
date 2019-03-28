@@ -11,4 +11,8 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
+    protected function loggedUser()
+    {
+        return auth()->user();
+    }
 }
