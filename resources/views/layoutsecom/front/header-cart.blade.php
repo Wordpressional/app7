@@ -2,7 +2,7 @@
 <div class="ecartnatheme1 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     @include('layoutsecom.front.category-nav')
     <ul class="nav navbar-nav navbar-right">
-        @if(auth()->check())
+        @if(Auth::guard('checkout')->check())
             <li class="visible-xs"><a href="{{ route('accounts', ['tab' => 'profile']) }}"><i class="fa fa-home"></i> My Account</a></li>
             <li class="visible-xs"><a href="{{ route('logout') }}"><i class="fa fa-sign-out"></i> Logout</a></li>
         @else

@@ -67,5 +67,6 @@ class Kernel extends HttpKernel
         'employee' => \App\Http\Middleware\RedirectIfNotEmployee::class,
         'checkout' => \App\Http\Middleware\RedirectIfNotCustomer::class,
         
+        
     ];
 }

@@ -212,7 +212,7 @@ Auth::routes();
 Route::namespace('Auth')->group(function () {
     Route::get('cart/custlogin', 'CartLoginController@showLoginForm')->name('cart.custlogin');
     Route::post('cart/custlogin', 'CartLoginController@login')->name('cart.custlogin');
-    Route::get('logout', 'LoginController@logout');
+    Route::get('logout', 'CartLoginController@logout');
     Route::get('cart/custreg', 'CartRegisterController@cartregister')->name('cart.custreg');
 });
 
@@ -224,7 +224,7 @@ Route::namespace('Front')->group(function () {
 Route::get('index2', 'HomeController@index2')->name('index2');
 Route::get('index3', 'HomeController@index3')->name('index3');
 Route::get('index4', 'HomeController@index4')->name('index4');
-    Route::group(['middleware' => ['auth', 'web']], function () {
+    Route::group(['middleware' => ['checkout']], function () {
 
         Route::namespace('Payments')->group(function () {
             Route::get('bank-transfer', 'BankTransferController@index')->name('bank-transfer.index');

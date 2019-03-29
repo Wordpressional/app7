@@ -10,6 +10,8 @@ use App\Shop\Cities\Repositories\Interfaces\CityRepositoryInterface;
 use App\Shop\Addresses\Repositories\Interfaces\AddressRepositoryInterface;
 use App\Shop\Countries\Repositories\Interfaces\CountryRepositoryInterface;
 use App\Shop\Provinces\Repositories\Interfaces\ProvinceRepositoryInterface;
+use App\Shop\Customers\Repositories\Interfaces\CustomerRepositoryInterface;
+use Auth;
 
 class CustomerAddressController extends Controller
 {
@@ -44,12 +46,14 @@ class CustomerAddressController extends Controller
         AddressRepositoryInterface $addressRepository,
         CountryRepositoryInterface $countryRepository,
         CityRepositoryInterface $cityRepository,
-        ProvinceRepositoryInterface $provinceRepository
+        ProvinceRepositoryInterface $provinceRepository,
+        CustomerRepositoryInterface $customerRepository
     ) {
         $this->addressRepo = $addressRepository;
         $this->countryRepo = $countryRepository;
         $this->provinceRepo = $provinceRepository;
         $this->cityRepo = $cityRepository;
+        $this->customerRepo = $customerRepository;
     }
 
     /**
@@ -71,7 +75,7 @@ class CustomerAddressController extends Controller
      */
     public function create()
     {
-        $customer = auth()->user();
+        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
 
         return view('front.customers.addresses.create', [
             'customer' => $customer,

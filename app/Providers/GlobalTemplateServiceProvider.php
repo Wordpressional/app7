@@ -38,6 +38,11 @@ class GlobalTemplateServiceProvider extends ServiceProvider
             $view->with('cartCount', $this->getCartCount());
         });
 
+        view()->composer(['layoutsecom.front.app', 'front.categories.sidebar-category'], function ($view) {
+            $view->with('categories', $this->getCategories());
+            $view->with('cartCount', $this->getCartCount());
+        });
+
         /**
          * breadcumb
          */

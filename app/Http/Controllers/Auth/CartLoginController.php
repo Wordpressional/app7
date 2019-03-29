@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Shop\Admins\Requests\LoginRequest;
+use App\Shop\Customers\Requests\CartLoginRequest;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 
@@ -49,13 +49,19 @@ class CartLoginController extends Controller
      * @param LoginRequest $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
-    public function login(LoginRequest $request)
+    public function login(CartLoginRequest $request)
     {
         $this->validateLogin($request);
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
         // the login attempts for this application. We'll key this by the username and
         // the IP address of the client making these requests into this application.
+
+        // Attempt to log the user in
+      
+    
+    
+    
         if ($this->hasTooManyLoginAttempts($request)) {
             $this->fireLockoutEvent($request);
 
@@ -64,7 +70,7 @@ class CartLoginController extends Controller
 
         $details = $request->only('email', 'password');
         $details['status'] = 1;
-        if (auth()->attempt($details)) {
+        if (Auth::guard('checkout')->attempt($details)) {
             return $this->sendLoginResponse($request);
         }
 
@@ -75,4 +81,8 @@ class CartLoginController extends Controller
 
         return $this->sendFailedLoginResponse($request);
     }
+
+    
+
+
 }

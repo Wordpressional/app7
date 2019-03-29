@@ -95,7 +95,7 @@
                         <div role="tabpanel" class="tab-pane @if(request()->input('tab') == 'address')active @endif" id="address">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="{{ route('customer.address.create', auth()->user()->id) }}" class="btn btn-primary">Create your address</a>
+                                    <a href="{{ route('customer.address.create', Auth::guard('checkout')->id()) }}" class="btn btn-primary">Create your address</a>
                                 </div>
                             </div>
                             @if(!$addresses->isEmpty())

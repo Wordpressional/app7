@@ -3,7 +3,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Auth;
 use Illuminate\Contracts\Auth\Guard;
-use Illuminate\Auth\Middleware\Authenticate as xyz;
+use Illuminate\Auth\Middleware\Authenticate;
 
 class Authenticate
 {

@@ -8,6 +8,7 @@ use App\Shop\Customers\Repositories\Interfaces\CustomerRepositoryInterface;
 use App\Http\Controllers\Controller;
 use App\Shop\Orders\Order;
 use App\Shop\Orders\Transformers\OrderTransformable;
+use Auth;
 
 class AccountsController extends Controller
 {
@@ -39,7 +40,10 @@ class AccountsController extends Controller
 
     public function index()
     {
-        $customer = $this->customerRepo->findCustomerById(auth()->user()->id);
+        //dd($this->customerRepo->findCustomerById(15));
+        //dd(Auth::guard('checkout')->id());
+        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
+        //dd($customer);
 
         $customerRepo = new CustomerRepository($customer);
         $orders = $customerRepo->findOrders(['*'], 'created_at');

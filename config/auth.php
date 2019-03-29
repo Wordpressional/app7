@@ -40,7 +40,8 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-         'checkout' => [
+        
+        'checkout' => [
             'driver' => 'session',
             'provider' => 'customers',
         ],

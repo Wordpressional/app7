@@ -26,6 +26,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use PayPal\Exception\PayPalConnectionException;
+use Auth;
 
 class CheckoutController extends Controller
 {
@@ -100,7 +101,7 @@ class CheckoutController extends Controller
     public function index(Request $request)
     {
         $products = $this->cartRepo->getCartItems();
-        $customer = $request->user();
+        $customer =  $this->customerRepo;
         $rates = null;
         $shipment_object_id = null;
 
