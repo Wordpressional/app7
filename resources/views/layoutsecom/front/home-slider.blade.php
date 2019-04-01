@@ -1,4 +1,4 @@
-@extends('layoutsecom.front.app')
+@extends('layoutsecom.front.homeapp')
 
 
 

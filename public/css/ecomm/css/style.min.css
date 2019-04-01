@@ -3814,6 +3814,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs {
   border-bottom: 1px solid #ddd;
 }
+
+.nav-tabs a {
+color: #d89522;
+}
+
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
@@ -4493,6 +4498,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #f5f5f5;
   border-radius: 4px;
 }
+.breadcrumb a {
+color: #d89522;
+}
+
 .breadcrumb > li {
   display: inline-block;
 }
@@ -9854,7 +9863,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ************************** */
 
 .footer {
-    position: absolute;
+    margin-top: 20px;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */

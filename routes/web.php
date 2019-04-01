@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WebhomeController@frontpage')->name('home');
 Route::post('/', 'WebhomeController@frontpage')->name('home');
-Route::get('/testabc', 'WebhomeController@test33');
-Route::get('/index123', 'WebhomeController@index123');
-Route::get('/welcome1', 'WebhomeController@welcome1')->name('welcome1');
+//Route::get('/testabc', 'WebhomeController@test33');
+//Route::get('/index123', 'WebhomeController@index123');
+//Route::get('/welcome1', 'WebhomeController@welcome1')->name('welcome1');
 
-Route::get('/home1', 'WebhomeController@home1')->name('home1');
+//Route::get('/home1', 'WebhomeController@home1')->name('home1');
 
    
 Route::get('/allposts', 'PostController@index')->name('allposts');
@@ -219,8 +219,10 @@ Route::namespace('Auth')->group(function () {
 
 
 Route::namespace('Front')->group(function () {
+//Route::get('/123', 'WebhomeFrontController@frontpage')->name('home');
+//Route::post('/123', 'WebhomeFrontController@frontpage')->name('home');
     //Route::get('/', 'HomeController@index')->name('home');
-    Route::get('index1', 'HomeController@index1')->name('index1');
+Route::get('index1', 'HomeController@index1')->name('index1');
 Route::get('index2', 'HomeController@index2')->name('index2');
 Route::get('index3', 'HomeController@index3')->name('index3');
 Route::get('index4', 'HomeController@index4')->name('index4');

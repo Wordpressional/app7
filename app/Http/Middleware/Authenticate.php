@@ -3,7 +3,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Auth;
 use Illuminate\Contracts\Auth\Guard;
-use Illuminate\Auth\Middleware\Authenticate;
+use Illuminate\Auth\Middleware\Authenticate as xyz;
 
 class Authenticate
 {
@@ -26,7 +26,7 @@ public function handle($request, Closure $next, $guard = null)
       //      return redirect()->route('mylogin');
     //} 
 
-   if (Auth::guard($guard)->check()){
+   if(Auth::guard($guard)->check()){
 
     return $next($request);
   }

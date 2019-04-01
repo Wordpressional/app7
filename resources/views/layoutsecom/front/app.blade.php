@@ -65,7 +65,7 @@
 
 @yield('content')
 </div>
-
+@include('layoutsecom.front.footer')
 
 
 <script src="{{ asset('js/ecomm/js/front.min.js') }}"></script>

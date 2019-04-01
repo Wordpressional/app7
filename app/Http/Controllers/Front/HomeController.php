@@ -52,7 +52,7 @@ class HomeController
         $cat1 = $this->categoryRepo->findCategoryById(2);
         $cat2 = $this->categoryRepo->findCategoryById(3);
 
-        return view('front.index', compact('cat1', 'cat2'));
+        return view('front.productslistfront', compact('cat1', 'cat2'));
     }
 
     public function index4()
@@ -62,4 +62,6 @@ class HomeController
 
         return view('layoutsecom.front.myfooter', compact('cat1', 'cat2'));
     }
+
+    
 }
