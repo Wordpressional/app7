@@ -5,9 +5,9 @@ $(document).ready(function () {
         itemsDesktop: [1199, 6],
         itemsDesktopSmall: [979, 6]
     });
-
+    if ( $('.select2').length ){
     $('.select2').select2();
-
+    }
     if ($('#thumbnails li img').length > 0) {
         $('#thumbnails li img').on('click', function () {
             $('#main-image')
@@ -15,4 +15,5 @@ $(document).ready(function () {
                 .attr('data-zoom', $(this).attr('src') +'?w=1200');
         });
     }
+    
 });

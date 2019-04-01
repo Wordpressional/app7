@@ -9966,6 +9966,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     font-size: 14px;
     line-height: 16px;
     text-align: left;
+    background-color: white;
+    color: black;
+    width: 100%;
 }
 
 .modal-dialog .description {
