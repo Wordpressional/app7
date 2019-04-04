@@ -61,7 +61,7 @@ class CustomerAddressController extends Controller
      */
     public function index()
     {
-        $customer = auth()->user();
+        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
 
         return view('front.customers.addresses.list', [
             'customer' => $customer,
@@ -91,7 +91,7 @@ class CustomerAddressController extends Controller
      */
     public function store(CreateAddressRequest $request)
     {
-        $request['customer_id'] = auth()->user()->id;
+        $request['customer_id'] =  $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
 
         $this->addressRepo->createAddress($request->except('_token', '_method'));
 
@@ -108,10 +108,10 @@ class CustomerAddressController extends Controller
     {
         $countries = $this->countryRepo->listCountries();
 
-        $address = $this->addressRepo->findCustomerAddressById($addressId, auth()->user());
+        $address = $this->addressRepo->findCustomerAddressById($addressId, $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()));
 
         return view('front.customers.addresses.edit', [
-            'customer' => auth()->user(),
+            'customer' =>  $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()),
             'address' => $address,
             'countries' => $countries,
             'cities' => $this->cityRepo->listCities(),
@@ -127,10 +127,10 @@ class CustomerAddressController extends Controller
      */
     public function update(UpdateAddressRequest $request, $addressId)
     {
-        $address = $this->addressRepo->findCustomerAddressById($addressId, auth()->user());
-
+        $address = $this->addressRepo->findCustomerAddressById((int) $request['address_id'], $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()));
+        
         $request = $request->except('_token', '_method');
-        $request['customer_id'] = auth()->user()->id;
+        
 
         $addressRepo = new AddressRepository($address);
         $addressRepo->updateAddress($request);
@@ -147,7 +147,7 @@ class CustomerAddressController extends Controller
      */
     public function destroy($customerId, $addressId)
     {
-        $address = $this->addressRepo->findCustomerAddressById($addressId, auth()->user());
+        $address = $this->addressRepo->findCustomerAddressById($addressId, $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()));
 
         $address->delete();
 

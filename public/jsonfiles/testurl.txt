@@ -1,5 +1,5 @@
 [
-"https://laracasts.com/discuss",
+"http://justfreethemes.com/demo/?theme=Kindergarten%20Education",
 {
 "url": "http://example.com/foldername/page1",
 "filename": "page1.html"

@@ -294,12 +294,12 @@
   array (
     'name' => 'Bank Transfer',
     'description' => 'Online / Offline Bank fund transfer',
-    'bank_name' => 'Bank of Mars',
-    'account_type' => 'Savings Account (SA)',
-    'account_name' => 'John Doe',
-    'account_number' => '99999-999-99999',
-    'bank_swift_code' => 'ABC-123',
-    'note' => 'Choosing this option may delay the shipment of the item.',
+    'bank_name' => '',
+    'account_type' => '',
+    'account_name' => '',
+    'account_number' => '',
+    'bank_swift_code' => '',
+    'note' => '',
   ),
   'broadcasting' => 
   array (
@@ -389,7 +389,7 @@
   ),
   'cart' => 
   array (
-    'tax' => 12,
+    'tax' => '0',
     'database' => 
     array (
       'connection' => NULL,
@@ -870,7 +870,7 @@
     ),
     'cache' => 
     array (
-      'enabled' => true,
+      'enabled' => false,
       'period' => 5,
     ),
     'search' => 
@@ -1087,9 +1087,9 @@
       'address' => 'hello@example.com',
       'name' => 'Example',
     ),
-    'encryption' => NULL,
-    'username' => NULL,
-    'password' => NULL,
+    'encryption' => 'cram_md5',
+    'username' => '95d79a54649327',
+    'password' => '1e21706ab3ccda',
     'sendmail' => '/usr/sbin/sendmail -bs',
     'markdown' => 
     array (
@@ -1362,20 +1362,20 @@
   ),
   'payees' => 
   array (
-    'name' => NULL,
+    'name' => 'paypal,stripe,bank-transfer',
   ),
   'paypal' => 
   array (
     'name' => 'paypal',
     'description' => 'PayPal - Safe, Secured and Easy to pay online!',
-    'account_id' => 'xxxx',
-    'client_id' => 'xxxx',
-    'client_secret' => 'xxxx',
+    'account_id' => 'sandboxtest1@test.com',
+    'client_id' => 'AfRJ8JtCJIC8Lolu_ScDEODl3KzglYCpq95v5XyJivpyNITyQWfeyURtehhfA_a6w5S859Tm368xwsIa',
+    'client_secret' => 'EMVS9LQpXHpx9pEU9lZbo7lpGqKikRXHb5HE7bKY19hudlXvZ_WAZpk9-r2nAPUpp2-1Ok2mxdAxmPtV',
     'api_url' => 'https://api.sandbox.paypal.com',
-    'redirect_url' => 'xxxx',
-    'cancel_url' => 'xxxx',
-    'failed_url' => 'xxxx',
-    'mode' => 'xxxx',
+    'redirect_url' => 'http://localhost/pull/execute',
+    'cancel_url' => 'http://localhost/pull/success',
+    'failed_url' => 'http://localhost/pull/failed',
+    'mode' => 'sandbox',
   ),
   'queue' => 
   array (
@@ -1444,8 +1444,8 @@
     'stripe' => 
     array (
       'model' => 'App\\User',
-      'key' => NULL,
-      'secret' => NULL,
+      'key' => '',
+      'secret' => '',
     ),
     'github' => 
     array (
@@ -1484,12 +1484,12 @@
   ),
   'shop' => 
   array (
-    'shipping_token' => NULL,
-    'name' => 'Laracom',
-    'country' => 'US',
-    'country_id' => 226,
+    'shipping_token' => 'shippo_test_9a71d35b5bb461660008294c1d7734284a82dd77',
+    'name' => '',
+    'country' => '',
+    'country_id' => '226',
     'weight' => 'lbs',
-    'email' => 'john@doe.com',
+    'email' => 'janedoe@mailinator.com',
     'phone' => '1 855 791 4041',
     'warehouse' => 
     array (
@@ -1505,11 +1505,11 @@
   array (
     'name' => 'stripe',
     'description' => 'The new standard in online payments',
-    'key' => 'xxx',
-    'secret' => 'xxx',
-    'redirect_url' => 'xxxx',
-    'cancel_url' => 'xxxx',
-    'failed_url' => 'xxxx',
+    'key' => '',
+    'secret' => '',
+    'redirect_url' => '',
+    'cancel_url' => '',
+    'failed_url' => '',
   ),
   'view' => 
   array (

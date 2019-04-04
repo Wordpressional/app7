@@ -1,11 +1,14 @@
 @extends('layoutsecom.front.app')
 
 @section('content')
+
     <!-- Main content -->
-    <section class="container content">
+    <section class="container content" style="width:50%;">
         @include('layoutsecom.errors-and-messages')
         <div class="box">
-            <form action="{{ route('customer.address.update', [$customer->id, $address->id]) }}" method="post" class="form" enctype="multipart/form-data">
+            <form action="{{ route('customer.address.update', [$address->id, $customer]) }}" method="post" class="form" enctype="multipart/form-data">
+                <input type="hidden" name="address_id" value="{{$address->id}}">
+                <input type="hidden" name="customer_id" value="{{$customer->id}}">
                 <input type="hidden" name="status" value="1">
                 <input type="hidden" id="address_country_id" value="{{ $address->country_id }}">
                 <input type="hidden" id="address_province_id" value="{{ $address->province_id }}">

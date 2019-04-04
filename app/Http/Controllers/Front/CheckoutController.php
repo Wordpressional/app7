@@ -113,6 +113,8 @@ class CheckoutController extends Controller
             }
         }
 
+        //dd(config('payees.name'));
+
         // Get payment gateways
         $paymentGateways = collect(explode(',', config('payees.name')))->transform(function ($name) {
             return config($name);
@@ -160,7 +162,7 @@ class CheckoutController extends Controller
                     'metadata' => $this->cartRepo->getCartItems()->all()
                 ];
 
-                $customer = $this->customerRepo->findCustomerById(auth()->id());
+                $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
                 $customerRepo = new CustomerRepository($customer);
                 $customerRepo->charge($this->cartRepo->getTotal(2, $shippingFee), $details);
                 break;
@@ -176,10 +178,11 @@ class CheckoutController extends Controller
      */
     public function executePayPalPayment(PayPalCheckoutExecutionRequest $request)
     {
+        //dd($request);
         try {
             $this->payPal->execute($request);
             $this->cartRepo->clearCart();
-
+            
             return redirect()->route('checkout.success');
         } catch (PayPalConnectionException $e) {
             throw new PaypalRequestError($e->getData());
@@ -195,7 +198,7 @@ class CheckoutController extends Controller
     public function charge(StripeExecutionRequest $request)
     {
         try {
-            $customer = $this->customerRepo->findCustomerById(auth()->id());
+            $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
             $stripeRepo = new StripeRepository($customer);
 
             $stripeRepo->execute(
@@ -228,6 +231,7 @@ class CheckoutController extends Controller
      */
     public function success()
     {
+        //dd("hi");
         return view('front.checkout-success');
     }
 

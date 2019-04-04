@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Main content -->
-    <section class="container content">
+    <section class="container content" style="width:50%;">
         @include('layoutsecom.errors-and-messages')
         <div class="box">
             <form action="{{ route('customer.address.store', $customer->id) }}" method="post" class="form" enctype="multipart/form-data">

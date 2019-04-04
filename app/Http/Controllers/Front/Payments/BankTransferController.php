@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Log;
 use Ramsey\Uuid\Uuid;
 use Shippo_Shipment;
 use Shippo_Transaction;
+use Auth;
 
 class BankTransferController extends Controller
 {
@@ -108,7 +109,7 @@ class BankTransferController extends Controller
         $order = $checkoutRepo->buildCheckoutItems([
             'reference' => Uuid::uuid4()->toString(),
             'courier_id' => 1, // @deprecated
-            'customer_id' => $request->user()->id,
+            'customer_id' => Auth::guard('checkout')->id(),
             'address_id' => $request->input('billing_address'),
             'order_status_id' => $os->id,
             'payment' => strtolower(config('bank-transfer.name')),

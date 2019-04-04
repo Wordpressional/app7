@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 use PayPal\Exception\PayPalConnectionException;
 use PayPal\Api\Payment as PayPalPayment;
 use Ramsey\Uuid\Uuid;
+use Auth;
 
 class PayPalExpressCheckoutRepository implements PayPalExpressCheckoutRepositoryInterface
 {
@@ -101,19 +102,20 @@ class PayPalExpressCheckoutRepository implements PayPalExpressCheckoutRepository
      */
     public function execute(Request $request)
     {
+        
         $payment = PayPalPayment::get($request->input('paymentId'), $this->payPal->getApiContext());
         $execution = $this->payPal->setPayerId($request->input('PayerID'));
         $trans = $payment->execute($execution, $this->payPal->getApiContext());
 
         $cartRepo = new CartRepository(new ShoppingCart);
         $transactions = $trans->getTransactions();
-
+        //dd($transactions);
         foreach ($transactions as $transaction) {
             $checkoutRepo = new CheckoutRepository;
             $checkoutRepo->buildCheckoutItems([
                 'reference' => Uuid::uuid4()->toString(),
                 'courier_id' => 1,
-                'customer_id' => $request->user()->id,
+                'customer_id' => Auth::guard('checkout')->id(),
                 'address_id' => $request->input('billing_address'),
                 'order_status_id' => 1,
                 'payment' => $request->input('payment'),

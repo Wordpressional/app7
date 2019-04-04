@@ -77,7 +77,7 @@ class AddressController extends Controller
     {
         $data = $this->ebrandsAll();
         $countries = $this->countryRepo->listCountries();
-        $country = $this->countryRepo->findCountryById(1);
+        $country = $this->countryRepo->findCountryById(Auth::guard('checkout')->id());
 
         $customers = $this->customerRepo->listCustomers();
 
@@ -142,12 +142,16 @@ class AddressController extends Controller
         $addressRepo = new AddressRepository($address);
         $customer = $addressRepo->findCustomer();
         
+        //dd($address->province);
+        if($address->province != null) 
+            { $p = $address->province->id; } else { $p = 1; }
+
         return view('admin.addresses.edit', [
             'address' => $address,
             'countries' => $countries,
             'countryId' => $address->country->id,
             'provinces' => $countryRepo->findProvinces(),
-            'provinceId' => $address->province->id,
+            'provinceId' => $p,
             'cities' => $this->cityRepo->listCities(),
             'cityId' => $address->city_id,
             'customers' => $this->customerRepo->listCustomers(),
