@@ -1084,10 +1084,10 @@
     'port' => '2525',
     'from' => 
     array (
-      'address' => 'hello@example.com',
+      'address' => 'from@example.com',
       'name' => 'Example',
     ),
-    'encryption' => 'cram_md5',
+    'encryption' => 'TLS',
     'username' => '95d79a54649327',
     'password' => '1e21706ab3ccda',
     'sendmail' => '/usr/sbin/sendmail -bs',
