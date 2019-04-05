@@ -466,13 +466,19 @@ class UserController extends Controller
     {
         
         $thisuser = User::where('email', Auth::user()->email)->first();
-        if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin())
+
+        if($thisuser->isSuperadministrator() == "yes")
+        { 
+            $roles = Role::all();
+        }
+        elseif($thisuser->isCMSAdmin() || $thisuser->isSAdmin())
         { 
             $roles = Role::where('name', 'like', 'cms_' . '%')->get();
         }
+        
         else
         {
-            $roles = Role::where('name', 'like', 'cms_' . '%')->where('name','!=','cms_administrator')->get();
+            $roles = Role::where('name', 'like', 'cms_' . '%')->where('name','!=','cms_administrator')->where('name','!=','cms_superadministrator')->get();
         }
        
         $data = $this->brandsAll();

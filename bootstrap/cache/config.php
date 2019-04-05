@@ -129,6 +129,11 @@
         'driver' => 'session',
         'provider' => 'users',
       ),
+      'demo' => 
+      array (
+        'driver' => 'session',
+        'provider' => 'users',
+      ),
       'checkout' => 
       array (
         'driver' => 'session',

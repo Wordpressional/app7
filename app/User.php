@@ -249,6 +249,21 @@ class User extends Authenticatable
        return "no";
     }
 
+    public function isDemo()
+    {
+      $data = $this->brandsAll();
+       $user = User::where('email', $data['n_loggeduser'])->first();
+       $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
+       //$rname = ::where('name')
+       //dd($data['n_loggeduser']);
+       //dd($role->roles[0]->name);
+      if($role->roles[0]->name == "cust_demo")
+       {
+           return "yes";
+       }
+       return "no";
+    }
+
     public function isPO()
     {
       $data = $this->brandsAll();

@@ -53,6 +53,14 @@ Route::get('/forms/snippets',[
 
 ]);
 
+Route::get('/forms/snippetsspecific',[
+
+
+'uses' => 'FormbuilderController@snippetsspecific',
+'as' => 'forms.snippetsspecific'
+
+]);
+
 Route::get('/forms/preview/{id}',[
 
 

@@ -152,8 +152,9 @@ Route::post('/registration',[
 
 ]);
 
-
-
+Route::group(['middleware' => 'demo'], function () {
+Route::get('demo/dashboard', 'ShowDashboard@demoindex')->name('demo.dashboard');
+});
 
 /**
  * Admin routes
@@ -214,6 +215,9 @@ Route::namespace('Auth')->group(function () {
     Route::post('cart/custlogin', 'CartLoginController@login')->name('cart.custlogin');
     Route::get('logout', 'CartLoginController@logout');
     Route::get('cart/custreg', 'CartRegisterController@cartregister')->name('cart.custreg');
+    Route::get('demologin', 'DemoPortalLoginController@showLoginForm')->name('demologin');
+    Route::post('demologin', 'DemoPortalLoginController@login')->name('demologin');
+
 });
 
 

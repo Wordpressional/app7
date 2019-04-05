@@ -138,6 +138,20 @@ class ShowDashboard extends Controller
        }
     }
 
+    public function demoindex()
+    {
+        $user = User::where('email', Auth::guard('demo')->email)->first();
+       
+        if($user->isDemo() == "yes" ) {
+            $data = $this->accountsAll();
+            return view('cadmin.dashboard.index_demohome', [
+               
+                'data' => $data,
+                
+            ]);
+        } 
+    }
+
     public function cmsactivitylogs(Request $request){
         $data = $this->brandsAll();
         $Cmsactivitylog = new Cmsactivitylog;

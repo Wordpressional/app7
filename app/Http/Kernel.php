@@ -66,6 +66,7 @@ class Kernel extends HttpKernel
         'role_sadmin' => \App\Http\Middleware\RoleMiddleware::class,
         'employee' => \App\Http\Middleware\RedirectIfNotEmployee::class,
         'checkout' => \App\Http\Middleware\RedirectIfNotCustomer::class,
+        'demo' => \App\Http\Middleware\RedirectIfNotDemo::class,
         
         
     ];

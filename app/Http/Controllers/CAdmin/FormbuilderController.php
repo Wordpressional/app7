@@ -224,7 +224,19 @@ class FormbuilderController extends Controller
     {
         $form = Form::find($id);
          $data = $this->brandsAll();
-        return view('cadmin.formbuilder.edit')->with(['form'=> $form, 'data'=> $data]);
+         $thisuser = User::where('email', Auth::user()->email)->first();
+         //dd($thisuser);
+         if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin() || $thisuser->isSAdmin() == "yes" ) {
+            $surl = "cadmin.forms.snippets";
+           
+         } 
+
+         if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes") {
+            $surl = "cadmin.forms.snippetsspecific";
+           
+         } 
+         
+        return view('cadmin.formbuilder.edit')->with(['form'=> $form, 'data'=> $data , 'surl'=> $surl]);
     }
 
     /**
@@ -265,6 +277,12 @@ class FormbuilderController extends Controller
     {
         
         return view('cadmin.formbuilder.snippets');
+    }
+
+     public function snippetsspecific()
+    {
+        
+        return view('cadmin.formbuilder.snippetsspecific');
     }
 
     

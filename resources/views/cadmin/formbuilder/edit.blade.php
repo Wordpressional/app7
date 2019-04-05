@@ -107,7 +107,7 @@
                 $('#content-area').keditor({
                   
                     containerSettingEnabled: true,
-                     snippetsUrl: "{{route('cadmin.forms.snippets')}}",
+                     snippetsUrl: "{{ route($surl) }}",
                     contentAreasSelector: '#banner',
                     containerSettingInitFunction: function (form, keditor) {
                         // Add control for settings form
