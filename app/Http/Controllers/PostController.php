@@ -252,7 +252,12 @@ class PostController extends Controller
         //dd($cat);
         $tagid = Tag::where('tag', $tag)->first();
          $page = Page::where('display_name', $tag)->first();
+         $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         if($thisuser->isDemo() == "yes") {
+            $api_token = Auth::guard('demo')->user()->api_token;
+         } else {
         $api_token = Auth::user()->api_token;
+        }
          //dd($api_token);
         $colorsetting = Colorsetting::all();
          $colortest = Colorsetting::find(1);

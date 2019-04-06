@@ -17,7 +17,7 @@ class CanBePoster implements Rule
     public function passes($attribute, $value)
     {
         $author = User::find($value);
-        return $author->canBeAuthor() || $author->canBeAdmin() || $author->canBeEditor() || $author->canBeSAdmin();
+        return $author->canBeAuthor() || $author->canBeAdmin() || $author->canBeEditor() || $author->canBeSAdmin() || $author->canBeDemo() || $author->canBeSuperadmin();
     }
 
     /**

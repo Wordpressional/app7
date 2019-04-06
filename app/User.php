@@ -7,6 +7,7 @@ use Illuminate\Notifications\Notifiable;
 use Laratrust\Traits\LaratrustUserTrait ;
 use App\User;
 use App\Http\Traits\BrandsTrait;
+use App\Http\Traits\DemoTrait;
 
 use Auth;
 
@@ -17,6 +18,7 @@ class User extends Authenticatable
     use LaratrustUserTrait;
     use Notifiable;
    use BrandsTrait;
+   use DemoTrait;
     
 
 
@@ -130,6 +132,14 @@ class User extends Authenticatable
          return $this->isSAdmin();
      }
 
+     public function canBeDemo(): bool
+     {
+         return $this->isDemo();
+     }
+     public function canBeSuperadmin(): bool
+     {
+         return $this->isSuperadministrator();
+     }
      
 
     // /**
@@ -251,7 +261,7 @@ class User extends Authenticatable
 
     public function isDemo()
     {
-      $data = $this->brandsAll();
+      $data = $this->demoAll();
        $user = User::where('email', $data['n_loggeduser'])->first();
        $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
        //$rname = ::where('name')

@@ -152,8 +152,9 @@ Route::post('/registration',[
 
 ]);
 
-Route::group(['middleware' => 'demo'], function () {
+Route::namespace('CAdmin')->group(function () {
 Route::get('demo/dashboard', 'ShowDashboard@demoindex')->name('demo.dashboard');
+
 });
 
 /**
@@ -195,13 +196,14 @@ Route::group(['prefix' => 'admin', 'middleware' => ['employee'], 'as' => 'admin.
             Route::resource('attributes.values', 'Attributes\AttributeValueController');
             Route::resource('brands', 'Brands\BrandController');
 
-        });
+        
         //Route::group(['middleware' => ['role:admin|superadmin, guard:employee']], function () {
             Route::resource('employees', 'EmployeeController');
             Route::get('employees/{id}/profile', 'EmployeeController@getProfile')->name('employee.profile');
             Route::put('employees/{id}/profile', 'EmployeeController@updateProfile')->name('employee.profile.update');
             Route::resource('roles', 'Roles\RoleController');
             Route::resource('permissions', 'Permissions\PermissionController');
+            });
         //});
     //});
 });
@@ -215,8 +217,10 @@ Route::namespace('Auth')->group(function () {
     Route::post('cart/custlogin', 'CartLoginController@login')->name('cart.custlogin');
     Route::get('logout', 'CartLoginController@logout');
     Route::get('cart/custreg', 'CartRegisterController@cartregister')->name('cart.custreg');
+
+    
     Route::get('demologin', 'DemoPortalLoginController@showLoginForm')->name('demologin');
-    Route::post('demologin', 'DemoPortalLoginController@login')->name('demologin');
+    Route::post('demologin', 'DemoPortalLoginController@demologin')->name('demologin');
 
 });
 

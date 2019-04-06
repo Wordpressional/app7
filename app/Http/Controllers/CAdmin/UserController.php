@@ -5,6 +5,7 @@ namespace App\Http\Controllers\CAdmin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
+use App\Http\Traits\DemoTrait;
 use App\User;
 use App\Role;
 use App\Permission;
@@ -18,6 +19,7 @@ use App\Http\Requests\CAdmin\UsersRequest;
 class UserController extends Controller
 {
     use BrandsTrait;
+    use DemoTrait;
 
     public function __construct()
     {
@@ -690,8 +692,20 @@ class UserController extends Controller
 
     public function profile()
     {
-        $thisuser = User::with('roles')->where('email', Auth::user()->email)->first();
-        $data = $this->brandsAll();
+        
+        $user = User::where('id', Auth::guard('demo')->id())->first();
+       //dd($user);
+        if($user->isDemo() == "yes" ) {
+
+            $thisuser = User::with('roles')->where('email', Auth::guard('demo')->user()->email)->first();
+            $data = $this->demoAll();
+        } 
+        else
+        {
+            $thisuser = User::with('roles')->where('email', Auth::user()->email)->first();
+            $data = $this->brandsAll();
+
+        }
         //dd($thisuser->roles[0]->display_name);
         return view('cadmin.dashboard.profile')->with(['data' =>$data, 'thisuser' => $thisuser]);
     }

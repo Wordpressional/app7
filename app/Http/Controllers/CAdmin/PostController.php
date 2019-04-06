@@ -24,16 +24,33 @@ class PostController extends Controller
      */
     public function index()
     {
-        
-        $tuser = Auth::user()->displayname;
-        //dd($tuser);
         $author_ids = array();
-
-        $thisuser = User::where('email', Auth::user()->email)->first();
-         if($thisuser->isSuperadministrator() == "yes") {
+        $data = $this->brandsAll();
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+        if($thisuser->isDemo() == "yes") {
+            $tuser = Auth::guard('demo')->user()->displayname;
+            $post = Post::where('createdby', $thisuser->id)->withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(10);
+        }
+        else
+        {
+            $tuser = Auth::user()->displayname;
+           
+            $thisuser = User::where('email', Auth::user()->email)->first();
+            if($thisuser->isSuperadministrator() == "yes") {
       
             $post = Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(10);
-         }
+           }
+           
+        
+       
+         
          //dd($post);
 
          if($thisuser->isCMSAdmin() == "yes") {
@@ -94,6 +111,7 @@ class PostController extends Controller
          //dd($author_ids);
         //dd($post[0]->author->name);
         //dd($post[0]->author());
+         }
         $data = $this->brandsAll();
         return view('cadmin.posts.index', [
             'data' => $data,
@@ -115,7 +133,7 @@ class PostController extends Controller
         $author_ids = array();
         $post = Post::where('id', $id)->first();
        
-         $thisuser = Auth::user();
+        
          $categories = Blogcategory::all();
         
          $data = $this->brandsAll();
@@ -136,13 +154,49 @@ class PostController extends Controller
             return redirect()->back()->withErrors('You Must First Create At least One Category');
         }
 
-         $thisuser = User::where('email', Auth::user()->email)->first();
+        $data = $this->brandsAll();
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+         if($thisuser->isDemo() == "yes") {
+
+         
+           $tthisuser = Auth::guard('demo')->user();
+           $ttag = Tag::where('createdby', $thisuser->id)->get();
+            $rrole = Role::where('name', 'like', 'cust' . '%')->get();
+             $categories = Blogcategory::where('createdby', $thisuser->id)->get();
+          } 
+          else
+          {
+            $tthisuser = Auth::user();
+            $ttag = Tag::all();
+            $rrole = Role::all();
+            $categories = Blogcategory::all();
+          }
+
+
+         
+        if($thisuser->isDemo() == "yes") {
+
+         
+          $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cust' . '%');
+                                        })->pluck('name', 'id');
+          }
+         else
+         {
+             
          if($thisuser->isCMSAuthor() == "yes") {
             $userauthor = User::with('roles')->where('name', Auth::user()->name)->pluck('name', 'id');
             //dd($userauthor);
            //$userauthor = User::authors()->pluck('name', 'id');
            //dd($userauthor);
-         }
+        }
          if($thisuser->isSuperadministrator() == "yes") {
            $userauthor = User::whereHas('roles', function($q){
             $q->where('name', 'like', 'cms_' . '%');
@@ -161,16 +215,17 @@ class PostController extends Controller
                                         })->pluck('name', 'id');
 
          }
+         }
 
         //dd($userauthor);
 
         return view('cadmin.posts.edit', [
             'post' => $post,
             'data' => $data,
-            'roles' => Role::all(),
+            'roles' => $rrole,
             'users' => $userauthor,
             'categories'=>$categories,
-            'tags'=>Tag::all(),
+            'tags'=> $ttag,
             'tuser'=>$thisuser
             
         ]);
@@ -185,25 +240,58 @@ class PostController extends Controller
     {
 
         $rolearray = array();
-        $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+        $roles = Role::where('name', 'like', 'cust' . '%')->get();
         foreach($roles as $role)
         {
             array_push($rolearray, $role->display_name);
         }
        //dd($rolearray);
          $data = $this->brandsAll();
-         $thisuser = Auth::user();
+          $data = $this->brandsAll();
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+         if($thisuser->isDemo() == "yes") {
+
          
-         $sthisuser = User::where('id', $thisuser->id)->authors()->pluck('name', 'id');
+           $tthisuser = Auth::guard('demo')->user();
+           $ttag = Tag::where('createdby', $thisuser->id)->get();
+            $rrole = Role::where('name', 'like', 'cust' . '%')->get();
+             $categories = Blogcategory::where('createdby', $thisuser->id)->get();
+          } 
+          else
+          {
+            $tthisuser = Auth::user();
+            $ttag = Tag::all();
+            $rrole = Role::all();
+            $categories = Blogcategory::all();
+          }
+         
+         
+         $sthisuser = User::where('id', $tthisuser->id)->authors()->pluck('name', 'id');
          //dd($sthisuser);
-        $categories = Blogcategory::all();
+       
         if($categories->count() == 0)
         {
             //Session::flash('info', 'You Must have Choose At least One Category');
 
             return redirect()->back()->withErrors('You Must First Create At least One Category');
         }
+         
+        if($thisuser->isDemo() == "yes") {
 
+         
+          $userauthor = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cust' . '%');
+                                        })->pluck('name', 'id');
+          }
+         else
+         {
          $thisuser = User::where('email', Auth::user()->email)->first();
          if($thisuser->isCMSAuthor() == "yes") {
             $userauthor = User::with('roles')->where('name', Auth::user()->name)->pluck('name', 'id');
@@ -227,16 +315,16 @@ class PostController extends Controller
             $q->where('name', 'like', 'cms_' . '%');
                                         })->pluck('name', 'id');
          }
-
+         }
          //dd($userauthor);
         
         return view('cadmin.posts.create', [
             'users' => $userauthor,
             'categories'=>$categories,
              'roles' => $rolearray,
-            'tags'=>Tag::all(),
+            'tags'=> $ttag,
             'data' => $data,
-            'authors' => Role::all(),
+            'authors' => $rrole,
             'tuser'=>$thisuser,
             'sthisuser' => $sthisuser,
             'post' => null,
@@ -251,8 +339,21 @@ class PostController extends Controller
     public function store(PostsRequest $request)
     {
         $post = Post::create($request->only([addslashes('title'), 'excerpt', htmlentities('content'), 'posted_at', 'author_id', 'category_id', 'template', 'pubyear','slug1']));
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+        
+         if($thisuser->isDemo() == "yes") {
+         }
+         else{
 
-        $thisuser = User::where('email', Auth::user()->email)->first();    
+        $thisuser = User::where('email', Auth::user()->email)->first();
+        }    
         $postup = Post::find($post->id);
         $postup->createdby = $thisuser->id;
           
@@ -264,6 +365,7 @@ class PostController extends Controller
 
         
          $post->tags()->attach($request->tags);
+        
 
         return redirect()->route('cadmin.posts.index', $post)->withSuccess(__('posts.created'));
     }

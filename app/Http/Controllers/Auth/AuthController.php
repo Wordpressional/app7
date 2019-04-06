@@ -16,6 +16,7 @@ class AuthController extends Controller
      */
     public function redirectToProvider($provider)
     {
+        //dd($provider);
         return Socialite::driver($provider)->redirect();
     }
 
@@ -26,9 +27,11 @@ class AuthController extends Controller
      */
     public function handleProviderCallback($provider)
     {
+        //dd($provider);
         try {
             $user = Socialite::driver($provider)->stateless()->user();
         } catch (Exception $e) {
+            
             return redirect()->route('mylogin');
         }
 

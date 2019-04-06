@@ -19,15 +19,19 @@ class Authenticate
     }
 
    
-public function handle($request, Closure $next, $guard = null)
+public function handle($request, Closure $next, $guard = "demo")
 {
-    
+    //dd($guard);
     //if(!Auth::check()) {
       //      return redirect()->route('mylogin');
     //} 
 
    if(Auth::guard($guard)->check()){
-
+    
+    
+    return $next($request);
+  } else if(Auth::check()) {
+    $guard = null;
     return $next($request);
   }
 

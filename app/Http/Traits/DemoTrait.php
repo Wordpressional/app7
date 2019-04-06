@@ -8,8 +8,8 @@ use App\Permission;
 
 use Auth;
 
-trait BrandsTrait {
-    public function brandsAll() {
+trait DemoTrait {
+    public function demoAll() {
         // Get all the brands from the Brands Table.
        
         $data = [];
@@ -35,6 +35,7 @@ trait BrandsTrait {
          $n_userrole = Auth::user()->roles[0]->name;
 
          }
+
         $data = [
             'n_users' => $n_users,
             'n_roles' => $n_roles,

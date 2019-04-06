@@ -7,6 +7,9 @@ use App\Page;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
+use App\User;
+use App\Role;
+use Auth;
 
 class TagsController extends Controller
 {
@@ -19,7 +22,23 @@ class TagsController extends Controller
     public function index()
     {
         $data = $this->brandsAll();
-        return view('cadmin.tags.index')->with(['tags' => Tag::withTrashed()->latest()->paginate(10), 'data' => $data]);
+           $data = $this->brandsAll();
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+         if($thisuser->isDemo() == "yes") {
+        $uall = User::with('roles')->where('name', Auth::guard('demo')->user()->name)->first();
+        //dd($uall);
+         $tagall = Tag::where('createdby', $uall->id)->withTrashed()->latest()->paginate(10);
+         } else {
+            $tagall = Tag::withTrashed()->latest()->paginate(10);
+         }
+        return view('cadmin.tags.index')->with(['tags' => $tagall, 'data' => $data]);
     }
 
     /**

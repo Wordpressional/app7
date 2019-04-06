@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Shop\Customers\Requests\DemoLoginRequest;
+use App\Http\Requests\DemoLoginRequest;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 
@@ -36,10 +36,15 @@ class DemoPortalLoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+        //$this->redirectTo = route('demo.dashboard');
+        
     }
 
     public function showLoginForm()
     {
+        if (auth()->guard('demo')->check()) {
+            return redirect()->route('demo.dashboard');
+        }
         return view('auth.demo.login');
     }
 
@@ -49,7 +54,7 @@ class DemoPortalLoginController extends Controller
      * @param LoginRequest $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
-    public function login(DemoLoginRequest $request)
+    public function demologin(DemoLoginRequest $request)
     {
         $this->validateLogin($request);
 
@@ -69,7 +74,7 @@ class DemoPortalLoginController extends Controller
         }
 
         $details = $request->only('email', 'password');
-       
+        //$details['status'] = 1;
         if (Auth::guard('demo')->attempt($details)) {
             return $this->sendLoginResponse($request);
         }

@@ -14,23 +14,23 @@
 
              <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.dashboard')">
         <a class="nav-link {{ Request::is('cadmin/dashboard') ? 'active' : '' }}" href="{{ route('cadmin.dashboard') }}">
-            <i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
                 <span class="nav-link-text">@lang('dashboard.dashboard')</span>
             </a>
         </li>
 
         <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Profile">
                     <a class="nav-link {{ Request::is('cadmin/themes') || Request::is('cadmin/themes/*') ? 'active' : '' }}" href="{{ route('cadmin.dashboard.profile') }}">
-                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp;
+                        <i class="fa fa-user" aria-hidden="true"></i>
                         <span class="nav-link-text">Profile</span>
                     </a>
                 </li>
        
-            
+          
                    
-                    
- @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])
+ @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor', 'cust_demo'])
 
+ 
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>CMS</span>
@@ -130,7 +130,142 @@
              </ul>
             </li>
             @endrole
+            @if(Auth::guard('demo')->user())
+            @if(Auth::guard('demo')->user()->roles[0]->name == "cust_demo")
+              <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>CMS</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+
+     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.category')">
+        <a class="nav-link {{ Request::is('cadmin/categories') || Request::is('cadmin/posts/*') ? 'active' : '' }}" href="{{ route('cadmin.categories') }}">
+            <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.category')</span>
+        </a>
+    </li>
+
+     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.tag')">
+        <a class="nav-link {{ Request::is('cadmin/tags') || Request::is('cadmin/posts/*') ? 'active' : '' }}" href="{{ route('cadmin.tags') }}">
+            <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.tag')</span>
+        </a>
+    </li>
+    
+    
+    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.posts')">
+        <a class="nav-link {{ Request::is('cadmin/posts') || Request::is('cadmin/posts/*') ? 'active' : '' }}" href="{{ route('cadmin.posts.index') }}">
+            <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.posts')</span>
+        </a>
+    </li>
+     
+     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.pages')">
+        <a class="nav-link {{ Request::is('cadmin/pages') || Request::is('cadmin/pages/*') ? 'active' : '' }}" href="{{ route('cadmin.pages.index') }}">
+            <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.pages')</span>
+        </a>
+    </li>
+   
+   
+
+    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Authors">
+        <a class="nav-link {{ Request::is('cadmin/users') || Request::is('cadmin/users/*') ? 'active' : '' }}" href="{{ route('cadmin.authors.index') }}">
+            <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">@lang('dashboard.authors')</span>
+        </a>
+    </li> 
+               
+
+           
+
+             </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>Page Builder</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                   
+                    
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Widget Forms">
+                    <a class="nav-link {{ Request::is('cadmin/forms') || Request::is('cadmin/forms/*') ? 'active' : '' }}" href="{{ route('cadmin.forms.index') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Widget Forms</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Widget Editor">
+                    <a class="nav-link {{ Request::is('cadmin/widgeteditor') || Request::is('cadmin/widgeteditor/*') ? 'active' : '' }}" href="{{ route('cadmin.widgeteditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Widget Editor</span>
+                    </a>
+                </li>
+
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="CSS Editor">
+                    <a class="nav-link {{ Request::is('cadmin/csseditor') || Request::is('cadmin/csseditor/*') ? 'active' : '' }}" href="{{ route('cadmin.csseditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">CSS Editor</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="JS Editor">
+                    <a class="nav-link {{ Request::is('cadmin/jseditor') || Request::is('cadmin/jseditor/*') ? 'active' : '' }}" href="{{ route('cadmin.jseditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">JS Editor</span>
+                    </a>
+                </li>
+
+        </ul>
+    </li>
+
+     <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>Downloads</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+              
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Color Management">
+                    <a class="nav-link {{ Request::is('cadmin/styles') || Request::is('cadmin/styles/*') ? 'active' : '' }}" href="{{ route('cadmin.static.starterform') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Starter Kit</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Choose Themes">
+                    <a class="nav-link {{ Request::is('cadmin/themes') || Request::is('cadmin/themes/*') ? 'active' : '' }}" href="#">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Standard Kit</span>
+                    </a>
+                </li>
+                 
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Install Modules">
+                    <a class="nav-link {{ Request::is('cadmin/modules') || Request::is('cadmin/modules/*') ? 'active' : '' }}" href="#">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Enterprise Kit</span>
+                    </a>
+                </li>
+               
+             
+        </ul>
+    </li>
+            @endif
+            @endif
+                    
             @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])
+            
              <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Page Builder</span>
@@ -176,7 +311,7 @@
                         <span class="nav-link-text">JS Editor</span>
                     </a>
                 </li>
-
+                
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Contact Forms">
                     <a class="nav-link {{ Request::is('cadmin/cforms') || Request::is('cadmin/cforms/*') ? 'active' : '' }}" href="{{ route('cadmin.cforms.index') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
@@ -219,6 +354,52 @@
         </ul>
     </li>
     @endrole
+
+
+     @role('cust_demo')
+             <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>Page Builder</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                   
+                    
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Widget Forms">
+                    <a class="nav-link {{ Request::is('cadmin/forms') || Request::is('cadmin/forms/*') ? 'active' : '' }}" href="{{ route('cadmin.forms.index') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Widget Forms</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Widget Editor">
+                    <a class="nav-link {{ Request::is('cadmin/widgeteditor') || Request::is('cadmin/widgeteditor/*') ? 'active' : '' }}" href="{{ route('cadmin.widgeteditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">Widget Editor</span>
+                    </a>
+                </li>
+
+
+                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="CSS Editor">
+                    <a class="nav-link {{ Request::is('cadmin/csseditor') || Request::is('cadmin/csseditor/*') ? 'active' : '' }}" href="{{ route('cadmin.csseditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">CSS Editor</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="JS Editor">
+                    <a class="nav-link {{ Request::is('cadmin/jseditor') || Request::is('cadmin/jseditor/*') ? 'active' : '' }}" href="{{ route('cadmin.jseditor') }}">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
+                        <span class="nav-link-text">JS Editor</span>
+                    </a>
+                </li>
+
+        </ul>
+    </li>
+    @endrole
          @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])
         <li class="treeview">
                 <a href="#">
@@ -229,7 +410,7 @@
                 </a>
                 <ul class="treeview-menu">
          @endrole          
-            @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor'])        
+            @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor', 'cust_demo'])        
 
                  <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Color Management">
                     <a class="nav-link {{ Request::is('cadmin/styles') || Request::is('cadmin/styles/*') ? 'active' : '' }}" href="{{ route('cadmin.styles') }}">
@@ -321,7 +502,7 @@
 
             <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="@lang('dashboard.activitylog')">
         <a class="nav-link {{ Request::is('cadmin/activitylogs') ? 'active' : '' }}" href="{{ route('cadmin.cms.cmsactivitylogs') }}">
-            <i class="fa fa-history" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-history" aria-hidden="true"></i>
                 <span class="nav-link-text">Activity Logs</span>
             </a>
         </li>
@@ -358,7 +539,7 @@
         </li>
         @endrole
 
-        @role(['superadministrator','cms_administrator','cms_superadministrator', 'cms_editor'])
+        @role(['superadministrator','cms_administrator','cms_superadministrator', 'cms_editor', 'cust_demo'])
           <li class="treeview">
                 <a href="#">
                     <i class="fa fa-th"></i> <span>Downloads</span>
@@ -395,7 +576,7 @@
      @endrole
         
 
-         @role(['cms_administrator', 'cms_editor', 'cms_author', 'cms_subscriber', 'superadministrator', 'cms_superadministrator'] )
+         @role(['cms_administrator', 'cms_editor', 'cms_author', 'cms_subscriber', 'superadministrator', 'cms_superadministrator', 'cust_demo'] )
         <li> 
         @if(session('user_is_switched'))
         

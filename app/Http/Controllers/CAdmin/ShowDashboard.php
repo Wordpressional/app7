@@ -5,6 +5,7 @@ namespace App\Http\Controllers\CAdmin;
 use App\Comment;
 use App\Http\Controllers\Controller;
 use App\Http\Traits\BrandsTrait;
+use App\Http\Traits\DemoTrait;
 use App\Http\Traits\AccountsTrait;
 use App\Post;
 use App\User;
@@ -25,6 +26,7 @@ use Illuminate\Support\Facades\Input;
 class ShowDashboard extends Controller
 {
     use BrandsTrait;
+    use DemoTrait;
     use AccountsTrait;
     /**
      * Show the application admin dashboard.
@@ -42,6 +44,8 @@ class ShowDashboard extends Controller
 
     public function __invoke()
     {
+        
+
         $user = User::where('email', Auth::user()->email)->first();
 
         //dd($data['n_companyname']->cname);
@@ -124,9 +128,18 @@ class ShowDashboard extends Controller
                 
             ]);
          }
+         else if($user->isDemo() == "yes") {
+            $data = $this->brandsAll();
+              
+            return view('cadmin.dashboard.index_demohome', [
+               
+                'data' => $data,
+                
+            ]);
+         }
 
         
-             else if($user->isBoothOfficer() == "yes") {
+         else if($user->isBoothOfficer() == "yes") {
             $data = $this->accountsAll();
              return view('cadmin.dashboard.index_ceohome', [
                 
@@ -136,14 +149,17 @@ class ShowDashboard extends Controller
         } else {      
            return "You do not have permission to access this page";
        }
+       
     }
 
     public function demoindex()
     {
-        $user = User::where('email', Auth::guard('demo')->email)->first();
-       
+        
+        
+        $user = User::where('id', Auth::guard('demo')->id())->first();
+       //dd($user);
         if($user->isDemo() == "yes" ) {
-            $data = $this->accountsAll();
+            $data = $this->demoAll();
             return view('cadmin.dashboard.index_demohome', [
                
                 'data' => $data,

@@ -7,7 +7,9 @@ use App\Http\Traits\BrandsTrait;
 use Illuminate\Http\Request;
 use App\Blogcategory;
 use App\Compbrand;
-
+use App\User;
+use App\Role;
+use Auth;
 
 class CategoryController extends Controller
 {
@@ -35,7 +37,22 @@ class CategoryController extends Controller
         }
 
          $data = $this->brandsAll();
-        return view('cadmin.categories.index')->with(['categories' => Blogcategory::withTrashed()->latest()->paginate(10),'data' => $data]);
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+         if($thisuser->isDemo() == "yes") {
+        $uall = User::with('roles')->where('name', Auth::guard('demo')->user()->name)->first();
+        //dd($uall);
+         $catall = Blogcategory::whereIn('createdby', [$uall->id, 'nil'])->withTrashed()->latest()->paginate(10);
+         } else {
+            $catall = Blogcategory::withTrashed()->latest()->paginate(10);
+         }
+        return view('cadmin.categories.index')->with(['categories' => $catall,'data' => $data]);
     }
 
     /**

@@ -55,7 +55,14 @@ class FormbuilderController extends Controller
         }
          $data = $this->brandsAll();
 
-         $thisuser = User::where('email', Auth::user()->email)->first();
+          if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
          //dd($thisuser);
          if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin()) {
             $forms = Form::withTrashed()->latest()->paginate(10);
@@ -160,7 +167,27 @@ class FormbuilderController extends Controller
     public function create()
     {
          $data = $this->brandsAll();
-         return view('cadmin.formbuilder.create',compact('data'));
+          if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+         //dd($thisuser);
+         if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin() || $thisuser->isSAdmin() == "yes" ) {
+            $surl = "cadmin.forms.snippets";
+           
+         } 
+
+         if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes" || $thisuser->isDemo() == "yes") {
+            $surl = "cadmin.forms.snippetsspecific";
+           
+         } 
+         
+        return view('cadmin.formbuilder.create')->with(['data'=> $data , 'surl'=> $surl]);
+         //return view('cadmin.formbuilder.create',compact('data'));
     }
 
     /**
@@ -224,14 +251,21 @@ class FormbuilderController extends Controller
     {
         $form = Form::find($id);
          $data = $this->brandsAll();
-         $thisuser = User::where('email', Auth::user()->email)->first();
+          if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
          //dd($thisuser);
          if($thisuser->isSuperadministrator() == "yes" || $thisuser->isCMSAdmin() || $thisuser->isSAdmin() == "yes" ) {
             $surl = "cadmin.forms.snippets";
            
          } 
 
-         if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes") {
+         if($thisuser->isCMSEditor() == "yes" || $thisuser->isCMSAuthor() == "yes" || $thisuser->isDemo() == "yes") {
             $surl = "cadmin.forms.snippetsspecific";
            
          } 
