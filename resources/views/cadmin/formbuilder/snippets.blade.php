@@ -800,6 +800,21 @@
  [bloglist]Post_Category_Name_Here[/bloglist]
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="MegaMenu" data-keditor-categories="MegaMenu">
+
+@include('shortcodes.plainhtml.megamenu2')
+  
+</div>
+
+
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="MegaMenu">
+
+
+<div data-dynamic-href="{{url('index31')}}"></div>
+
+</div>
+
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
 [ecommtheme1]ecommtheme1[/ecommtheme1]
 

@@ -234,6 +234,8 @@ Route::get('index1', 'HomeController@index1')->name('index1');
 Route::get('index2', 'HomeController@index2')->name('index2');
 Route::get('index3', 'HomeController@index3')->name('index3');
 Route::get('index4', 'HomeController@index4')->name('index4');
+Route::get('index31', 'HomeController@index31')->name('index31');
+
     Route::group(['middleware' => ['checkout']], function () {
 
         Route::namespace('Payments')->group(function () {

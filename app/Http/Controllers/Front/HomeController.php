@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
 
+
 class HomeController
 {
     /**
@@ -18,6 +19,7 @@ class HomeController
     public function __construct(CategoryRepositoryInterface $categoryRepository)
     {
         $this->categoryRepo = $categoryRepository;
+        
     }
 
     /**
@@ -63,5 +65,14 @@ class HomeController
         return view('layoutsecom.front.myfooter', compact('cat1', 'cat2'));
     }
 
+    public function index31()
+    {
+        $cat1 = $this->categoryRepo->findCategoryById(4);
+        $cat2 = $this->categoryRepo->findCategoryById(3);
+        //dd($cat1);
+        $products1 = $cat1->products->where('status', 1);
+        //dd($products1);
+        return view('front.shopthemes', compact('products1', 'cat1'));
+    }
     
 }

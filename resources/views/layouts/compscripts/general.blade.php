@@ -227,7 +227,7 @@ if ($(window).scrollTop() > 100) {
 // divClass[0].innerHTML = decodeURI(pomStringClass);
 
     </script>
-    
+   
  @include ('layouts.shortcode-layout')    
 
 
