@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Compbrand;
 use Illuminate\Http\Request;
 use Shortcode;
+use App\Custsnippet;
 
 
 class FormbuilderController extends Controller
@@ -218,7 +219,14 @@ class FormbuilderController extends Controller
 
      public function fsave(Request $request)
     {
-        $thisuser = User::where('email', Auth::user()->email)->first();
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
         $pwd = bin2hex(openssl_random_pseudo_bytes(4));
         $form = new Form;
         $form->formname = $request->formname;
@@ -315,8 +323,18 @@ class FormbuilderController extends Controller
 
      public function snippetsspecific()
     {
-        
-        return view('cadmin.formbuilder.snippetsspecific');
+           if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+
+         $snippet = Custsnippet::where('custid', $thisuser->id)->get();
+            //dd( $snippet);
+        return view('cadmin.formbuilder.snippetsspecific')->with(['snippets'=> $snippet]);
     }
 
     

@@ -44,12 +44,16 @@ class ShowDashboard extends Controller
 
     public function __invoke()
     {
-        
-
-        $user = User::where('email', Auth::user()->email)->first();
 
         //dd($data['n_companyname']->cname);
-
+        if(Auth::guard('demo')->user())
+         {
+          $user = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $user = User::where('email', Auth::user()->email)->first();
+         }
          
        
        
