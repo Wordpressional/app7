@@ -6,7 +6,7 @@
 <label class="imageUploadmpoltheme1" for="imageUploadmpoltheme1">&nbsp;</label>
 <div class="col-md-7" style="float:left;">
 <a href="main.html">
-<img id="imagePreviewmpoltheme1" src="{{ asset('webhome/img/logo.png')}}" alt="" title="" style="padding-bottom:20px;"/>
+<img id="imagePreviewmpoltheme1" src="{{ asset('img/pwalogo.png')}}" alt="" title="" style="padding-bottom:20px;"/>
 </a>
 </div>
 

@@ -534,7 +534,7 @@ resizebanner();
             filter: '.filter' 
           },
           load: {
-            filter: '.app'  
+            filter: '.pwa'  
           }     
         });               
       
@@ -548,3 +548,10 @@ resizebanner();
     
   }); 
  
+$(document).ready(function() {
+$(".filter").click(function () {
+    $(this).addClass("active");
+    $(".filter").not(this).removeClass("active");
+});
+
+});

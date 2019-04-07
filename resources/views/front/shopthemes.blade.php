@@ -5,10 +5,18 @@
 @section('content')
 <div class="container">
 	<div class="row">
+		<div class="col-md-12">
+<center><h3> Shop PWA Templates </h3></center>
+</div>
+</div>
+</div>
+<div class="container">
+	<div class="row">
+
 <div class="col-md-3">
 <ul id="filters" class="clearfix">
-	<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
-	<li><span class="filter" data-filter=".app">App</span></li>
+	<li><span class="filter active" data-filter=".pwa, .{{ $cat1->name }}, .icon, .logo, .web">All</span></li>
+	<li><span class="filter" data-filter=".pwa">PWA</span></li>
 	<li><span class="filter" data-filter=".{{ $cat1->name }}">{{ $cat1->name }}</span></li>
 	<li><span class="filter" data-filter=".icon">Icon</span></li>
 	<li><span class="filter" data-filter=".logo">Logo</span></li>
@@ -23,6 +31,7 @@
 		<div class="portfolio-wrapper">				
 			 
             @php $imgt = 'storage/'.$product1->cover; @endphp
+            
                         @if(isset($product1->cover))
                             <img src="{{ asset($imgt)}}" alt="{{ $product1->name }}" class="img-bordered img-responsive">
                         @else
@@ -34,6 +43,14 @@
 					<a class="text-title" href="{{ route('front.get.product', str_slug($product1->slug)) }}">{{ $product1->name }}</a>
 					<span class="text-category">{{ $cat1->name }}</span>
 				</div>
+				@foreach($imarr as $simg)
+				@if($simg->product_id == $product1->id)
+				@php $imgmt = 'storage/'.$simg->src; @endphp
+				@break;
+				@endif	
+				@endforeach
+				<div class="diys-template-thumb-mobile"><img src="{{ asset($imgmt)}}" class="mimg"></div>
+				
 				<div class="label-bg"></div>
 			</div>
 		</div>
