@@ -18814,9 +18814,39 @@ span.contmldribbble67
   float: right;
 }
 
+ .editprice1, .saveprice1 {
+  width: 80px;
+  height:30px;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 6px 10px 5px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+  z-index: 10000;
+  line-height: 1.3em;
+}
 
+.editprice1 { 
+  background: #557a11;
+  color: #f0f0f0;
+  
+  transition: opacity .2s ease-in-out;
+}
 
+.saveprice1 {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
 
 }
+
+
+
 
 </style>

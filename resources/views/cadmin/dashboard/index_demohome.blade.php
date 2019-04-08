@@ -4,7 +4,7 @@
   
  
 <div class="page-header">
-    <h1>Demo Account - Dashboard</h1>
+    <h1>Welcome to Dashboard</h1>
   </div>
 
 @endsection

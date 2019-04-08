@@ -25565,5 +25565,46 @@ var inputcontpurpcfawe7 = $('.inputcontpurpcfawe7').val();
   $('#purpcfawe7').addClass(inputcontpurpcfawe7);
   
 }
+
+$(document).ready(function(){
+
+  
+
+$( ".boxprice1" )
+ .on("mouseenter", function() {
+   if ($(".boxprice1").hasClass("editable")) {
+    $(".editprice1").hide();
+
+   } 
+   else
+   {
+    $(".editprice1").show();
+   }
+  
+})
+.on("mouseleave", function() {
+  
+  $(".editprice1").hide();
+
+});
+
+ $(".editprice1").click(function() {
+  $(this).hide();
+  $(".boxprice1").addClass("editable");
+  $(".textprice1").attr("contenteditable", "true");
+   $(".editprice1").hide();
+  $(".saveprice1").show();
+ 
+});
+
+$(".saveprice1").click(function() {
+  $(this).hide();
+  $(".boxprice1").removeClass("editable");
+ $(".textprice1").removeAttr("contenteditable");
+  $(".editprice1").hide();
+
+  
+});
+});
 </script>
 

@@ -222,7 +222,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/megamenu.jpg')}}" data-keditor-title="MegaMenu" data-keditor-categories="Mega Menus">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/megamenu.jpg')}}" data-keditor-title="Mega Menus" data-keditor-categories="Mega Menus">
 
 @include('shortcodes.plainhtml.megamenu')
 
@@ -454,7 +454,7 @@
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/pricetablet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Loan Theme - T3">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/pricetablet3.jpg')}}" data-keditor-title="Photo" data-keditor-categories="Price Table;Loan Theme - T3">
 
 @include('shortcodes.plainhtml.pricetable_c5_t3')
 
@@ -800,20 +800,51 @@
  [bloglist]Post_Category_Name_Here[/bloglist]
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="MegaMenu" data-keditor-categories="MegaMenu">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Mega Menus" data-keditor-categories="Mega Menus;Shop Themes Layout - LT11">
 
 @include('shortcodes.plainhtml.megamenu2')
   
 </div>
 
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="MegaMenu">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="Mega Menus;Shop Themes Layout - LT11">
 
 
 <div data-dynamic-href="{{url('index31')}}"></div>
 
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+
+@include('shortcodes.plainhtml.aboutpwa')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+
+@include('shortcodes.plainhtml.pricingtable')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+
+@include('shortcodes.plainhtml.featurestable')
+  
+</div>
+
+
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+
+@include('shortcodes.plainhtml.subscribenow')
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+
+@include('shortcodes.plainhtml.themefooter')
+  
+</div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
 [ecommtheme1]ecommtheme1[/ecommtheme1]

@@ -1459,4 +1459,8 @@ display: none !important;
 {
   display: none !important;
 }
+.editprice1, .saveprice1, #imageUploadprice1, span.editprice1:hover{
+ 
+ display: none !important;
+}
 </style>
