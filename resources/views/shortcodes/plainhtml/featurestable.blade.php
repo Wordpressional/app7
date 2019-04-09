@@ -17,7 +17,7 @@
                 	<ul>
                     	<h1>Basic Features</h1>
                     	<li>Page Builder</li>
-						<li>Sliders</li>
+						<li>Scrollers</li>
 						<li>Single, 2 and 3 Level Menu</li>
 						<li>Sliders</li>
 						<li>Mega Menu</li>
@@ -27,6 +27,7 @@
 						<li>Portfolio</li>
 						<li>Google Map</li>
 						<li>Video</li>
+						<li>Audio</li>
 						<li>Responsive</li>
                         
                         

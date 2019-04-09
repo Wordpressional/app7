@@ -846,6 +846,12 @@
   
 </div>
 
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+
+@include('shortcodes.plainhtml.pwahelp')
+  
+</div>
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
 [ecommtheme1]ecommtheme1[/ecommtheme1]
 

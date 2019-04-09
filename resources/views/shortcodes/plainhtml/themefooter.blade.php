@@ -27,10 +27,10 @@
 
 <div class="copyright">
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
       <p>© 2019 - All Rights with Pyrumas</p>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
       <ul class="bottom_ul">
      
         <li><a href="http://webenlance.com">About us</a></li>
