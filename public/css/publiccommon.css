@@ -11585,7 +11585,7 @@ font-family: "Poppins", sans-serif !important;
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 500;
+  z-index: 150;
   opacity: 0.4;
 }
 .nagashwiniparallax section .stuff {
@@ -11597,7 +11597,7 @@ font-family: "Poppins", sans-serif !important;
   max-width: 70%;
   justify-content: center;
   text-align: center;
-  z-index: 1000;
+  z-index: 200;
   color: #ffffff;
   margin: 0 auto;
   font-size: 18px;
@@ -11774,4 +11774,10 @@ color:white !important;
 .who{
   float:right !important;
   font-family: "Poppins", sans-serif !important;
+}
+
+.whitebk{
+  background-color: white !important;
+  z-index: 300 !important;
+    opacity: 1 !important;
 }

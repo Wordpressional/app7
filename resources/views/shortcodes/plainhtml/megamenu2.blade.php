@@ -23,7 +23,7 @@
 	<ul class="mnav">
 		<li>
 			<a  href="#">Shop PWA Templates</a>
-			<div>
+			<div class="whitebk">
 				<div class="mnav-column one">
 					<h3 class="orange">PWA Static HTML Templates</h3>
 					<ul>
@@ -93,7 +93,7 @@
 		<li><a  href="#">Pricing</a></li>
 		<li>
 			<a  href="#">Features of PWA Software</a>
-			<div>
+			<div  class="whitebk" >
 				
 
 				<div class="mnav-column one">
