@@ -70,7 +70,7 @@ class HomeController
     public function index31()
     {
 
-        $cat0 = $this->categoryRepo->findCategoryBySlug(['slug' => 'All']);
+        $cat0 = $this->categoryRepo->findCategoryBySlug(['slug' => 'static-themes']);
 
         $cat1 = $this->categoryRepo->findCategoryBySlug(['slug' => 'hospital-and-clinic']);
         $cat2 = $this->categoryRepo->findCategoryBySlug(['slug' => 'travel']);

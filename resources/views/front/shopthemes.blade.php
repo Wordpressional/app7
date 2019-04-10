@@ -16,7 +16,8 @@
 
 <div class="col-md-3">
 <ul id="filters" class="clearfix">
-	<li><span class="filter active" data-filter=".pwa">All</span></li>
+	<li><span class="filter active" data-filter=".pwa, .{{ $cat1->slug }}, .{{ $cat2->slug }}, .{{ $cat3->slug }}, .{{ $cat4->slug }}, .{{ $cat5->slug }}, .{{ $cat6->slug }}, .{{ $cat7->slug }}, .{{ $cat8->slug }}, .{{ $cat9->slug }}">All</span></li>
+	<li><span class="filter active" data-filter=".pwa">Static</span></li>
 	
 	<li><span class="filter" data-filter=".{{ $cat1->slug }}">{{ $cat1->name }}</span></li>
 	<li><span class="filter" data-filter=".{{ $cat2->slug }}">{{ $cat2->name }}</span></li>
