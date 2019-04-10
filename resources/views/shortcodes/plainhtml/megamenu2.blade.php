@@ -22,7 +22,7 @@
 
 	<ul class="mnav">
 		<li>
-			<a  href="#">Shop PWA Templates</a>
+			<a  href="#pyshop">Shop PWA Templates</a>
 			<div class="whitebk">
 				<div class="mnav-column one">
 					<h3 class="orange">PWA Static HTML Templates</h3>
@@ -90,9 +90,10 @@
 				</div>
 			</div>
 		</li>
-		<li><a  href="#">Pricing</a></li>
+		<li><a  href="#pyabout">About PWA Software</a></li>
+		<li><a  href="#pypricing">Pricing</a></li>
 		<li>
-			<a  href="#">Features of PWA Software</a>
+			<a  href="#pyfeatures">Features of PWA Software</a>
 			<div  class="whitebk" >
 				
 
@@ -181,9 +182,9 @@
 				</div>
 			</div>
 		</li>
-		<li><a  href="#">Subscribe</a></li>
-		<li><a  href="#">Documentation</a></li>
-		<li><a  href="#">About PWA Software</a></li>
+		<li><a  href="#pysubscribe">Subscribe</a></li>
+		<li><a  href="#pydoc">Documentation</a></li>
+		
 		
 		<li class="mnav-search">
 			<form action="#">

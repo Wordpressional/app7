@@ -840,15 +840,17 @@
   
 </div>
 
+
+
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
 
-@include('shortcodes.plainhtml.themefooter')
+@include('shortcodes.plainhtml.pwahelp')
   
 </div>
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
 
-@include('shortcodes.plainhtml.pwahelp')
+@include('shortcodes.plainhtml.themefooter')
   
 </div>
 

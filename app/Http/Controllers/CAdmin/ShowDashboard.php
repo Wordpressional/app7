@@ -46,7 +46,12 @@ class ShowDashboard extends Controller
     {
 
         //dd($data['n_companyname']->cname);
-        if(Auth::guard('demo')->user())
+
+        if(Auth::user())
+         {
+            $user = User::where('email', Auth::user()->email)->first();
+         }
+        else if(Auth::guard('demo')->user())
          {
           $user = User::where('email', Auth::guard('demo')->user()->email)->first();
          } 

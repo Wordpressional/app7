@@ -3,7 +3,7 @@
 
 
 @section('content')
-<div class="container pradeepamains1">
+<div id="pyshop" class="container pradeepamains1">
 	<div class="row">
 		<div class="col-md-12">
 <center><h3 class="myblue"><b> SHOP PWA TEMPLATES </b></h3></center>
@@ -16,8 +16,8 @@
 
 <div class="col-md-3">
 <ul id="filters" class="clearfix">
-	<li><span class="filter active" data-filter=".pwa, .{{ $cat1->slug }}, .{{ $cat2->slug }}, .{{ $cat3->slug }}, .{{ $cat4->slug }}, .{{ $cat5->slug }}, .{{ $cat6->slug }}, .{{ $cat7->slug }}, .{{ $cat8->slug }}, .{{ $cat9->slug }}">All</span></li>
-	<li><span class="filter active" data-filter=".pwa">Static</span></li>
+	<li><span class="filter active" data-filter=".{{ $cat1->slug }}, .{{ $cat2->slug }}, .{{ $cat3->slug }}, .{{ $cat4->slug }}, .{{ $cat5->slug }}, .{{ $cat6->slug }}, .{{ $cat7->slug }}, .{{ $cat8->slug }}, .{{ $cat9->slug }}">All</span></li>
+	<li><span class="filter active" data-filter=".pwa">{{ $cat0->name }}</span></li>
 	
 	<li><span class="filter" data-filter=".{{ $cat1->slug }}">{{ $cat1->name }}</span></li>
 	<li><span class="filter" data-filter=".{{ $cat2->slug }}">{{ $cat2->name }}</span></li>
@@ -30,7 +30,7 @@
 	<li><span class="filter" data-filter=".{{ $cat9->slug }}">{{ $cat9->name }}</span></li>
 </ul>
 </div>
-<div class="col-md-9 col-md-12">
+<div class="col-md-9">
 <div id="portfoliolist">
 
 	 @if($cat0->products->isNotEmpty())

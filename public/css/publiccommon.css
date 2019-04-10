@@ -811,7 +811,7 @@ and (orientation : landscape) {
     right: 1px !important;
   }
   #portfoliolist .portfolio {
-  width: 80% !important;
+  width: 40% !important;
   }
 
   
@@ -10997,6 +10997,7 @@ span.icon-cog {
   margin:0;
   background: #006FB2;
   font-family: "Poppins", sans-serif !important;
+  background: linear-gradient(110deg, #006FB2 60%, #1357af 60%);
   }
   #menu-wrapper
   {
@@ -11487,7 +11488,7 @@ font-family: "Poppins", sans-serif !important;
     }    
 .features-table li {
     background: #0065B3 none repeat scroll 0 0;
-    border-bottom: 2px solid #0065B3;
+    border-bottom: 2px solid #1B40B0;
     color: #f1f1f1;
     font-size: 16px;
     padding: 15px 24px;
@@ -11747,7 +11748,8 @@ font-weight: bold !important;
 color:white !important;
 }
 
-.nagashwinimadefooter { font-family: "Poppins", sans-serif !important; margin-top:-10px; background-color:#0065B3; min-height:150px; text-align: center;}
+.nagashwinimadefooter { font-family: "Poppins", sans-serif !important; margin-top:-10px; background-color:#0065B3; min-height:150px; text-align: center; background: linear-gradient(110deg, #006FB2 60%, #1357af 60%);
+}
 .footerleft { margin-top:50px; padding:0 36px; }
 .logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
 
