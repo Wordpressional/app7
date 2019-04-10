@@ -803,6 +803,11 @@ div#demo {
 }
 
 @media (max-width: 550px) and (min-width: 50px){
+
+#portfoliolist .portfolio {
+  width: 100% !important;
+  }
+
 .copyright 
 { 
   min-height:160px !important;
@@ -11249,7 +11254,7 @@ span.icon-cog {
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   width:43%;
-  margin:1%;
+  margin:1% 3%;
   display:none;
   float:none;
   overflow:hidden;

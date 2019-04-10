@@ -30,7 +30,7 @@
 	<li><span class="filter" data-filter=".{{ $cat9->slug }}">{{ $cat9->name }}</span></li>
 </ul>
 </div>
-<div class="col-md-9">
+<div class="col-md-9 col-md-12">
 <div id="portfoliolist">
 
 	 @if($cat0->products->isNotEmpty())
