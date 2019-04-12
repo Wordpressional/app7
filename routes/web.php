@@ -259,6 +259,7 @@ Route::get('index31', 'HomeController@index31')->name('index31');
     });
     Route::resource('cart', 'CartController');
     Route::get("category/{slug}", 'CategoryController@getCategory')->name('front.category.slug');
+     Route::get("ecommcategory/{slug}", 'CategoryController@getEcommCategory')->name('front.ecommcategory.slug');
     Route::get("search", 'ProductController@search')->name('search.product');
     Route::get("{product}", 'ProductController@show')->name('front.get.product');
 

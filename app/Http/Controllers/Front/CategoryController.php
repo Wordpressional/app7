@@ -42,4 +42,18 @@ class CategoryController extends Controller
             'products' => $repo->paginateArrayResults($products, 20)
         ]);
     }
+
+    public function getEcommCategory(string $slug)
+    {
+        $category = $this->categoryRepo->findCategoryBySlug(['slug' => $slug]);
+
+        $repo = new CategoryRepository($category);
+
+        $products = $repo->findProducts()->where('status', 1)->all();
+
+        return view('front.categories.ecommcategory', [
+            'category' => $category,
+            'products' => $repo->paginateArrayResults($products, 20)
+        ]);
+    }
 }
