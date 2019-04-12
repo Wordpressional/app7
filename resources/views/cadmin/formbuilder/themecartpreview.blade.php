@@ -2,16 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         @include('cadmin.layouts.compscripts.previewcss')
+         @include('cadmin.layouts.compscripts.previewcsscart')
           @include('layouts.compscripts.previewfullhide')
          
     @yield('css') 
  </head>
     <body>
    <div id="app">
-    
+    @php $slug1 = app('request')->input('slug'); @endphp
     <center><h3> View Mode </h3></center>
      <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
+
+  <span><a style="font-size:20px; color:red; padding:20px;" href="{{ url('/theme').'/'.$slug1 }}" ><b> <i class="fa fa-arrow-left"></i>Back</b></a> </span>
    
    <span><a style="font-size:30px; color:red; padding:20px;" class="requestDesktopSite">
    <i class="fa fa-desktop"></i></a> </span>
@@ -26,7 +28,7 @@
     <div class="mau" id="mau">
       
     <div class="precon">
-    {!! $form->htmlcontent !!} 
+    {!! $theme->tcontent !!} 
     </div>
      
 </div>
@@ -57,8 +59,8 @@ if(detectmob()){
   $('a.phpdebugbar-restore-btn').css('display', 'none');
  $('.precon').css('display', 'none');
  $('.precon1').css('display', 'inline');
-//myWindow = window.open("{{route('cadmin.forms.preview', $form->id)}}", '_blank', 'toolbar=no, directories=no, location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=350, height=350');
-$('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("cadmin.forms.preview1", $form->id)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
+
+$('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("preview1cart", $theme->tname)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
 
 
 }
@@ -68,7 +70,7 @@ $('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("cadmin.
 $(".requestEditSite").click(function(){
 //alert("desktop");
 //location.reload();
-  window.location.href = "{{ url('/cadmin/forms/preview')}}"+"/"+"{{$form->id}}";
+  window.location.href = "{{ url('/previewcarttheme')}}"+"/"+"{{$theme->tname}}";
 // vpw = 100;
 // vph = 'auto';
 // $('.mau').css({'width': vpw + '%'});
@@ -79,7 +81,7 @@ $(".requestEditSite").click(function(){
 });
 $(".requestDesktopSite").click(function(){
 //alert("desktop");
-window.location.href = "{{ url('/cadmin/themepreview')}}";
+window.location.href = "{{ url('/previewcarttheme')}}"+"/"+"{{$theme->tname}}/?slug={{$slug1}}";
   
 // vpw = 100;
 // vph = 'auto';
@@ -114,7 +116,7 @@ if(detectmob()){
  $('.precon').css('display', 'none');
  $('.precon1').css('display', 'inline');
 
-$('.precon1').html('<center class="iframecentmobi1"><iframe src="{{route("cadmin.forms.preview1", $form->id)}}" frameborder="0" scrolling="auto" id="mypreFrame1" ></iframe></center>');
+$('.precon1').html('<center class="iframecentmobi1"><iframe src="{{route("preview1cart", $theme->tname)}}" frameborder="0" scrolling="auto" id="mypreFrame1" ></iframe></center>');
 }
 });
 });
@@ -398,7 +400,6 @@ $.ajax({
 
 </script>
 <script src="{{asset('webhome/js/psmtpmail.js')}}" type="text/javascript"></script>
-@include('layouts.compscripts.contactcustformscript')
  
  
 

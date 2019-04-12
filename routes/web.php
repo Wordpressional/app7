@@ -261,4 +261,29 @@ Route::get('index31', 'HomeController@index31')->name('index31');
     Route::get("category/{slug}", 'CategoryController@getCategory')->name('front.category.slug');
     Route::get("search", 'ProductController@search')->name('search.product');
     Route::get("{product}", 'ProductController@show')->name('front.get.product');
+
+    Route::get("/theme/{product}", 'ProductController@themeshow')->name('front.get.themeproduct');
+
+    Route::get("/my/cart1", 'CartController@cart1')->name('cart.cart1');
+   
+    Route::post('store1',[
+
+    'uses' => 'CartController@store1',
+    'as' => 'cart.store1'
+
+    ]);
+
 });
+
+
+Route::post('previewcarttheme',[
+
+
+'uses' => 'WebhomeController@previewcarttheme',
+'as' => 'previewcartthemep'
+
+]);
+
+Route::get("previewcarttheme/{name}", 'WebhomeController@previewcarttheme')->name('previewcarttheme');
+
+Route::get("preview1cart/{name}", 'WebhomeController@preview1cart')->name('preview1cart');

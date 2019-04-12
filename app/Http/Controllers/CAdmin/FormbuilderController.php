@@ -314,6 +314,7 @@ class FormbuilderController extends Controller
         return view('cadmin.formbuilder.preview1')->with(['form'=> $form, 'data' => $data])->withShortcodes();
     }
 
+    
 
     public function snippets()
     {

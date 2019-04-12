@@ -66,4 +66,20 @@ class ProductController extends Controller
             'combos'
         ));
     }
+
+    public function themeshow(string $slug)
+    {
+        $product = $this->productRepo->findProductBySlug(['slug' => $slug]);
+        $images = $product->images()->get();
+        $category = $product->categories()->first();
+        $productAttributes = $product->attributes;
+
+        return view('front.products.themeproduct', compact(
+            'product',
+            'images',
+            'productAttributes',
+            'category',
+            'combos'
+        ));
+    }
 }

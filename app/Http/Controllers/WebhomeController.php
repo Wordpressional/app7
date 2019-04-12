@@ -7,6 +7,7 @@ use App\Form;
 use App\Compbrand;
 use App\User;
 use App\Role;
+use App\Theme;
 use App\Colorsetting;
 use Illuminate\Http\Request;
 use Imagecow\Image;
@@ -260,6 +261,25 @@ class WebhomeController extends Controller
         return redirect()->to('/cadmin/dashboard');
     }
 
-   
+    public function previewcarttheme(Request $request)
+    {
+        
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+        $theme = Theme::where('tname', $request->name)->first();
+
+       
+        return view('cadmin.formbuilder.themecartpreview')->with(['theme'=> $theme])->withShortcodes();
+    }
+
+    public function preview1cart(Request $request)
+    {
+        
+        Shortcode::enable();
+        $shortcode = App('Shortcode');
+        $theme = Theme::where('tname', $request->name)->first();
+        return view('cadmin.formbuilder.preview1cart')->with(['theme'=> $theme])->withShortcodes();
+    }
+
    
 }

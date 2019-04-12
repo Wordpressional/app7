@@ -1,5 +1,6 @@
 <div class="ecartnatheme1 row">
     <div class="col-md-6">
+    	 <meta name="csrf-token" content="{{ csrf_token() }}">
         <ul id="thumbnails" class="col-md-4 list-unstyled">
             <li>
                 <a href="javascript: void(0)">
@@ -39,9 +40,14 @@
     </div>
     <div class="col-md-6">
         <div class="product-description">
+        	
             <h1>{{ $product->name }}
                 <small>{{ config('cart.currency') }} {{ $product->price }}</small>
             </h1>
+
+            <button type="submit" class="btn btn-primary cartpre"><i class="fa fa-eye"></i> Preview
+            </button>
+            <br><br>
             <div class="description">{!! $product->description !!}</div>
             <div class="excerpt">
                 <hr>{!!  str_limit($product->description, 100, ' ...') !!}</div>
@@ -49,7 +55,7 @@
             <div class="row">
                 <div class="col-md-12">
                     @include('layoutsecom.errors-and-messages')
-                    <form action="{{ route('cart.store') }}" class="form-inline" method="post">
+                    <form action="{{ route('cart.store1') }}" class="form-inline" method="post">
                         {{ csrf_field() }}
                         @if(isset($productAttributes) && !$productAttributes->isEmpty())
                             <div class="form-group">
@@ -96,5 +102,39 @@
                 inlinePane: false
             });
         });
+
+		$(".cartpre").click(function(){
+
+			//alert("{{ $product->name }}");
+
+		  var datak = JSON.stringify({
+                _token:String($('meta[name="csrf-token"]').attr('content')),
+                name:String("{{ $product->name }}"),
+                
+            });
+			//alert(datak);
+			  $.ajax({
+			            headers: {
+			                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+			                  'Content-Type': 'application/json'
+			                  },
+
+			                url: "{{route('previewcartthemep')}}",
+			            datatype : "application/json",
+			            contentType: "json",
+			            
+			            type: 'post',
+			            data:  datak,
+			    
+			         success: function(data) {
+			          //alert("File Upadated successfully");
+			           //alert(data);
+			           window.location.href = "{{url('previewcarttheme')}}"+"/"+"{{ $product->name }}/?slug={{$product->slug}}";
+			         
+			        },
+			       
+			    });
+			});
+		
     </script>
 @endsection

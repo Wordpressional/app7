@@ -69,6 +69,8 @@ Route::get('/forms/preview/{id}',[
 
 ]);
 
+
+
 Route::post('/forms/preview/{id}',[
 
 

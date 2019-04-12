@@ -76,6 +76,21 @@ class CartController extends Controller
         ]);
     }
 
+    public function cart1()
+    {
+        //dd("l");
+        $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
+        $shippingFee = $this->cartRepo->getShippingFee($courier);
+
+        return view('front.carts.cart1', [
+            'cartItems' => $this->cartRepo->getCartItemsTransformed(),
+            'subtotal' => $this->cartRepo->getSubTotal(),
+            'tax' => $this->cartRepo->getTax(),
+            'shippingFee' => $shippingFee,
+            'total' => $this->cartRepo->getTotal(2, $shippingFee)
+        ]);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -111,6 +126,39 @@ class CartController extends Controller
         $this->cartRepo->addToCart($product, $request->input('quantity'), $options);
 
         return redirect()->route('cart.index')
+            ->with('message', 'Add to cart successful');
+    }
+
+    public function store1(AddToCartRequest $request)
+    {
+        $product = $this->productRepo->findProductById($request->input('product'));
+
+        if ($product->attributes()->count() > 0) {
+            $productAttr = $product->attributes()->where('default', 1)->first();
+
+            if (isset($productAttr->sale_price)) {
+                $product->price = $productAttr->price;
+
+                if (!is_null($productAttr->sale_price)) {
+                    $product->price = $productAttr->sale_price;
+                }
+            }
+        }
+
+        $options = [];
+        if ($request->has('productAttribute')) {
+
+            $attr = $this->productAttributeRepo->findProductAttributeById($request->input('productAttribute'));
+            $product->price = $attr->price;
+
+            $options['product_attribute_id'] = $request->input('productAttribute');
+            $options['combination'] = $attr->attributesValues->toArray();
+        }
+
+        $this->cartRepo->addToCart($product, $request->input('quantity'), $options);
+        //dd($product);
+
+        return redirect()->route('cart.cart1')
             ->with('message', 'Add to cart successful');
     }
 

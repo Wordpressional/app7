@@ -236,12 +236,6 @@
 
 
 
-
-
-
-
-
-
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/aboutmenu.jpg')}}" data-keditor-title="AMenu" data-keditor-categories="Display Menus">
 
 @include('shortcodes.plainhtml.aboutmenu')

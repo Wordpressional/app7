@@ -48,7 +48,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product0->slug)) }}">{{ $product0->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product0->slug)) }}">{{ $product0->name }}</a>
 					<span class="text-category">{{ $cat0->name }}</span>
 				</div>
 				@foreach($imarr0 as $simg0)
@@ -81,7 +81,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product1->slug)) }}">{{ $product1->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product1->slug)) }}">{{ $product1->name }}</a>
 					<span class="text-category">{{ $cat1->name }}</span>
 				</div>
 				@foreach($imarr1 as $simg1)
@@ -114,7 +114,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product2->slug)) }}">{{ $product2->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product2->slug)) }}">{{ $product2->name }}</a>
 					<span class="text-category">{{ $cat2->name }}</span>
 				</div>
 				@foreach($imarr2 as $simg2)
@@ -148,7 +148,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product3->slug)) }}">{{ $product3->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product3->slug)) }}">{{ $product3->name }}</a>
 					<span class="text-category">{{ $cat3->name }}</span>
 				</div>
 				@foreach($imarr3 as $simg3)
@@ -181,7 +181,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product4->slug)) }}">{{ $product4->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product4->slug)) }}">{{ $product4->name }}</a>
 					<span class="text-category">{{ $cat4->name }}</span>
 				</div>
 				@foreach($imarr4 as $simg4)
@@ -214,7 +214,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product5->slug)) }}">{{ $product5->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product5->slug)) }}">{{ $product5->name }}</a>
 					<span class="text-category">{{ $cat5->name }}</span>
 				</div>
 				@foreach($imarr5 as $simg5)
@@ -248,7 +248,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product6->slug)) }}">{{ $product6->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product6->slug)) }}">{{ $product6->name }}</a>
 					<span class="text-category">{{ $cat6->name }}</span>
 				</div>
 				@foreach($imarr6 as $simg6)
@@ -281,7 +281,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product7->slug)) }}">{{ $product7->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product7->slug)) }}">{{ $product7->name }}</a>
 					<span class="text-category">{{ $cat7->name }}</span>
 				</div>
 				@foreach($imarr7 as $simg7)
@@ -314,7 +314,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product8->slug)) }}">{{ $product8->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product8->slug)) }}">{{ $product8->name }}</a>
 					<span class="text-category">{{ $cat8->name }}</span>
 				</div>
 				@foreach($imarr8 as $simg8)
@@ -347,7 +347,7 @@
                  
 			<div class="label">
 				<div class="label-text">
-					<a class="text-title" href="{{ route('front.get.product', str_slug($product9->slug)) }}">{{ $product9->name }}</a>
+					<a class="text-title" href="{{ route('front.get.themeproduct', str_slug($product9->slug)) }}">{{ $product9->name }}</a>
 					<span class="text-category">{{ $cat9->name }}</span>
 				</div>
 				@foreach($imarr9 as $simg9)
