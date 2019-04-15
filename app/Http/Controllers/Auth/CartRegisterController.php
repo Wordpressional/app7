@@ -44,6 +44,7 @@ class CartRegisterController extends Controller
     {
         $this->middleware('guest');
         $this->customerRepo = $customerRepository;
+        
     }
 
     /**

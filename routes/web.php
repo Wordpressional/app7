@@ -218,6 +218,8 @@ Route::namespace('Auth')->group(function () {
     Route::get('logout', 'CartLoginController@logout');
     Route::get('cart/custreg', 'CartRegisterController@cartregister')->name('cart.custreg');
 
+
+Route::post('cart/register', 'CartRegisterController@register')->name('cart.register');
     
     Route::get('demologin', 'DemoPortalLoginController@showLoginForm')->name('demologin');
     Route::post('demologin', 'DemoPortalLoginController@demologin')->name('demologin');
@@ -288,3 +290,13 @@ Route::post('previewcarttheme',[
 Route::get("previewcarttheme/{name}", 'WebhomeController@previewcarttheme')->name('previewcarttheme');
 
 Route::get("preview1cart/{name}", 'WebhomeController@preview1cart')->name('preview1cart');
+
+
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+
+Route::post('password/reset',[
+
+    'uses' => 'Auth\ResetPasswordController@reset',
+    'as' => 'password.resetd'
+
+    ]);

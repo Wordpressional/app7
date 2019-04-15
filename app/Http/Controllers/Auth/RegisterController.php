@@ -78,7 +78,7 @@ class RegisterController extends Controller
     {
         $data = $this->settingsAll();
         $colorsetting = Colorsetting::all();
-        $brand = Brand::where('id',1)->first();
+        $brand = Compbrand::where('id',1)->first();
         //dd($colorsetting);
         if($colorsetting->count() > 0)
         {  

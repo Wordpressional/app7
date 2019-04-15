@@ -29,3 +29,5 @@ Route::get('/signup', 'Auth\RegisterController@signup')->name('signup');
 
 Route::get('/laravel-filemanager', '\UniSharp\LaravelFilemanager\Controllers\LfmController@show')->name('laravel-filemanager');
     Route::post('/laravel-filemanager/upload', '\UniSharp\LaravelFilemanager\Controllers\UploadController@upload');
+
+

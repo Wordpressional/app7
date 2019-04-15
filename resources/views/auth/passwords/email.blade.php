@@ -4,7 +4,7 @@
 <div class="row justify-content-md-center m-3">
     <div class="col-md-6">
         <h1>@lang('auth.reset_password')</h1>
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
         @if (session('status'))
             @component('components.alerts.dismissible', ['type' => 'success'])
                 {{ session('status') }}
@@ -12,7 +12,9 @@
         @endif
 
         {!! Form::open(['route' => 'password.email', 'role' => 'form', 'method' => 'POST']) !!}
-            <div class="form-group">
+        
+            <div class="form-group" style="margin-left:-50px;">
+              
                 {!! Form::label('email', __('validation.attributes.email'), ['class' => 'control-label']) !!}
                 {!! Form::email('email', old('email'), ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'required']) !!}
 
@@ -21,7 +23,7 @@
                 @endif
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="margin-left:-50px;">
                 {!! Form::submit(__('auth.send_password_reset_link'), ['class' => 'btn btn-primary']) !!}
             </div>
 

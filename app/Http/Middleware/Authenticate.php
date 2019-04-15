@@ -25,16 +25,15 @@ public function handle($request, Closure $next, $guard = "demo")
     //if(!Auth::check()) {
       //      return redirect()->route('mylogin');
     //} 
-
-   if(Auth::guard($guard)->check()){
-    
-    
+  if(Auth::guard($guard)->check()){    
     return $next($request);
   } else if(Auth::check()) {
     $guard = null;
     return $next($request);
+  } else {
+    return redirect()->route('mylogin');
   }
-
-   return redirect()->route('mylogin');
+   
+  
 }
 }

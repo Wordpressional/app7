@@ -9,6 +9,9 @@ use App\User;
 use App\Http\Traits\BrandsTrait;
 use App\Http\Traits\DemoTrait;
 
+//Notification for Seller
+use App\Notifications\ResetPasswordNotification;
+
 use Auth;
 
 
@@ -413,4 +416,9 @@ class User extends Authenticatable
        }
        return false;
     }
+
+     public function sendPasswordResetNotification($token)
+  {
+      $this->notify(new ResetPasswordNotification($token));
+  }
 }

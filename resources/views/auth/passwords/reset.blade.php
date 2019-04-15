@@ -4,9 +4,9 @@
 <div class="row justify-content-md-center m-3">
     <div class="col-md-6">
         <h1>@lang('auth.reset_password')</h1>
-
-        {!! Form::open(['route' => 'password.reset', 'role' => 'form', 'method' => 'POST']) !!}
-            <div class="form-group">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        {!! Form::open(['route' => 'password.resetd', 'role' => 'form', 'method' => 'POST']) !!}
+            <div class="form-group" style="margin-left:-50px;">
                 {!! Form::label('email', __('validation.attributes.email'), ['class' => 'control-label']) !!}
                 {!! Form::email('email', $email or old('email'), ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'required']) !!}
 
@@ -15,7 +15,7 @@
                 @endif
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="margin-left:-50px;">
                 {!! Form::label('password', __('validation.attributes.password'), ['class' => 'control-label']) !!}
                 {!! Form::password('password', ['class' => 'form-control' . ($errors->has('password') ? ' is-invalid' : ''), 'required']) !!}
 
@@ -24,7 +24,7 @@
                 @endif
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="margin-left:-50px;">
                 {!! Form::label('password_confirmation', __('validation.attributes.password_confirmation'), ['class' => 'control-label']) !!}
                 {!! Form::password('password_confirmation', ['class' => 'form-control' . ($errors->has('password_confirmation') ? ' is-invalid' : ''), 'required']) !!}
 
@@ -33,9 +33,10 @@
                 @endif
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="margin-left:-50px;">
                 {!! Form::submit(__('auth.reset_password'), ['class' => 'btn btn-primary']) !!}
             </div>
+            <input type="hidden" name="token" value="{{ $token }}">
 
         {!! Form::close() !!}
     </div>
