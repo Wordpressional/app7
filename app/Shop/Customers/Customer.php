@@ -9,6 +9,10 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
 use Nicolaslopezj\Searchable\SearchableTrait;
+//Notification for Seller
+use App\Notifications\CartResetPasswordNotification;
+
+
 
 class Customer extends Authenticatable
 {
@@ -75,4 +79,10 @@ class Customer extends Authenticatable
     {
         return self::search($term);
     }
+
+    //Send password reset notification
+  public function sendPasswordResetNotification($token)
+  {
+      $this->notify(new CartResetPasswordNotification($token));
+  }
 }

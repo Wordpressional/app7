@@ -23,7 +23,7 @@
             </form>
             <div class="row">
                 <hr>
-                <a href="{{route('password.request')}}">I forgot my password</a><br>
+                <a href="{{route('cart.password.request')}}">I forgot my password</a><br>
                 <a href="{{route('cart.custreg')}}" class="text-center">No account? Register here.</a>
             </div>
         </div>

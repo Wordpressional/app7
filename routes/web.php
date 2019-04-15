@@ -222,7 +222,7 @@ Route::namespace('Auth')->group(function () {
 Route::post('cart/register', 'CartRegisterController@register')->name('cart.register');
     
     Route::get('demologin', 'DemoPortalLoginController@showLoginForm')->name('demologin');
-    Route::post('demologin', 'DemoPortalLoginController@demologin')->name('demologin');
+    Route::post('demologin', 'DemoPortalLoginController@demologin')->name('demologinp');
 
 });
 
@@ -291,12 +291,91 @@ Route::get("previewcarttheme/{name}", 'WebhomeController@previewcarttheme')->nam
 
 Route::get("preview1cart/{name}", 'WebhomeController@preview1cart')->name('preview1cart');
 
+Route::get('password/email', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
 
+Route::post('password/email',[
+
+    'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail',
+    'as' => 'password.email'
+
+    ]);
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 
 Route::post('password/reset',[
 
-    'uses' => 'Auth\ResetPasswordController@reset',
+    'uses' => 'Auth\ResetPasswordController@resetPassword',
     'as' => 'password.resetd'
+
+    ]);
+//cart
+Route::get('cart_password/email', 'Auth\CartForgotPasswordController@showcartLinkRequestForm')->name('cart.password.request');
+
+Route::post('cart_password/email',[
+
+    'uses' => 'Auth\CartForgotPasswordController@sendResetLinkEmail',
+    'as' => 'cart.password.email'
+
+    ]);
+
+
+
+
+Route::get('cart_password/reset/{token}', 'Auth\CartResetPasswordController@showcartResetForm')->name('cart.password.reset');
+
+
+Route::post('cart_password/reset',[
+
+    'uses' => 'Auth\CartResetPasswordController@reset',
+    'as' => 'cart.password.resetd'
+
+    ]);
+
+//emp
+Route::get('emp_password/email', 'Auth\EmpForgotPasswordController@showempLinkRequestForm')->name('emp.password.request');
+
+Route::post('emp_password/email',[
+
+    'uses' => 'Auth\EmpForgotPasswordController@sendResetLinkEmail1',
+    'as' => 'emp.password.email'
+
+    ]);
+
+
+
+
+Route::get('emp_password/reset/{token}', 'Auth\EmpResetPasswordController@showempResetForm')->name('emp.password.reset');
+
+
+Route::post('emp_password/reset',[
+
+    'uses' => 'Auth\EmpResetPasswordController@reset',
+    'as' => 'emp.password.resetd'
+
+    ]);
+
+//demo
+Route::get('demo_password/email', 'Auth\DemoForgotPasswordController@showdemoLinkRequestForm')->name('demo.password.request');
+
+Route::post('demo_password/email',[
+
+    'uses' => 'Auth\DemoForgotPasswordController@sendResetLinkEmail1',
+    'as' => 'demo.password.email'
+
+    ]
+     
+    
+
+);
+
+
+
+
+Route::get('demo_password/reset/{token}', 'Auth\DemoResetPasswordController@showdemoResetForm')->name('demo.password.reset');
+
+
+Route::post('demo_password/reset',[
+
+    'uses' => 'Auth\DemoResetPasswordController@resetPassword',
+    'as' => 'demo.password.resetd'
 
     ]);

@@ -26,7 +26,7 @@
        
        
             <h2>Login to your account</h2>
-            <form action="{{ route('demologin') }}" method="post" class="form-horizontal">
+            <form action="{{ route('demologinp') }}" method="post" class="form-horizontal">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -41,8 +41,9 @@
                 </div>
             </form>
             
-       
-   
+       <br />
+         <a href="{{route('demo.password.request')}}">I forgot my password</a><br>
+          
         
 
         </div>

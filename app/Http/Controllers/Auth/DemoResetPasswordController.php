@@ -7,14 +7,11 @@ use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Http\Request;
 //Auth Facade
 use Illuminate\Support\Facades\Auth;
-use App\Http\Traits\SettingsTrait;
-use App\user;
-use App\Colorsetting;
-use App\Compbrand;
-use App\Notifications\ResetPasswordNotification;
+use App\Notifications\DemoResetPasswordNotification;
 use Illuminate\Notifications\Notifiable;
+use App\user;
 
-class ResetPasswordController extends Controller
+class DemoResetPasswordController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -28,8 +25,7 @@ class ResetPasswordController extends Controller
     */
 
     use ResetsPasswords;
-    use SettingsTrait;
-    use Notifiable;
+   use Notifiable;
 
 
     /**
@@ -47,46 +43,44 @@ class ResetPasswordController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
-        $this->redirectTo = route('cadmin.dashboard');
+        $this->redirectTo = route('demo.dashboard');
     }
 
     //Shows form to request password reset
-    public function showResetForm(Request $request, $token = null)
+    public function showDemoResetForm(Request $request, $token = null)
     {
-        $data = $this->settingsAll();
-        $colorsetting = Colorsetting::all();
-        $brand = Compbrand::where('id',1)->first();
-        //dd($colorsetting);
-        if($colorsetting->count() > 0)
-        {  
+        
+        return view('auth.passwords.demoreset', [
             
-         
-         
-        } 
-        else
-        {
-            $colorsetting = 'empty';
-            $brand = '';
-        }
-        return view('auth.passwords.reset', [
-            'brand' => $brand,
-            'colorsetting' => $colorsetting,
-            'data' => $data,
             'token' => $token, 
             'email' => $request->email
         ]);
     }
 
-   protected function resetPassword(Request $request)
-    {
-    
-    $user = User::where('email', $request->email)->first();
+    protected function resetPassword(Request $request)
+	{
+	
+	$user = User::where('email', $request->email)->first();
 
     $user->password = $request->password;
 
     $user->save();
 
     //Auth::login($user, true);
-        return redirect()->route('mylogin');
+    	return redirect()->route('demologin');
+	}
+
+     
+
+     //returns Password broker of seller
+    public function broker()
+    {
+        return app('auth.password')->broker('users');
+    }
+
+    //returns authentication guard of seller
+    protected function guard()
+    {
+        return Auth::guard('demo');
     }
 }

@@ -5,9 +5,15 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use App\Http\Traits\SettingsTrait;
-use App\user;
+use App\User;
 use App\Colorsetting;
 use App\Compbrand;
+use App\Notifications\ResetPasswordNotification;
+use Illuminate\Http\Request;
+
+use Validator;
+use DB;
+use Illuminate\Support\Facades\Password;
 
 class ForgotPasswordController extends Controller
 {
@@ -33,6 +39,8 @@ class ForgotPasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+
      //Shows form to request password reset
     public function showLinkRequestForm()
     {
@@ -57,4 +65,6 @@ class ForgotPasswordController extends Controller
             'data' => $data,
         ]);
     }
+
+    
 }

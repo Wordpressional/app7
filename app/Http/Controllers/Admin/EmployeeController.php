@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Shop\Admins\Requests\CreateEmployeeRequest;
-use App\Shop\Admins\Requests\UpdateEmployeeRequest;
+use App\Shop\Employees\Requests\CreateEmployeeRequest;
+use App\Shop\Employees\Requests\UpdateEmployeeRequest;
 use App\Shop\Employees\Repositories\EmployeeRepository;
 use App\Shop\Employees\Repositories\Interfaces\EmployeeRepositoryInterface;
 use App\Shop\Roles\Repositories\RoleRepositoryInterface;
@@ -44,10 +44,12 @@ class EmployeeController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
         $list = $this->employeeRepo->listEmployees('created_at', 'desc');
 
         return view('admin.employees.list', [
-            'employees' => $this->employeeRepo->paginateArrayResults($list->all())
+            'employees' => $this->employeeRepo->paginateArrayResults($list->all()),
+            'data' => $data,
         ]);
     }
 
@@ -58,9 +60,10 @@ class EmployeeController extends Controller
      */
     public function create()
     {
+        $data = $this->ebrandsAll();
         $roles = $this->roleRepo->listRoles();
 
-        return view('admin.employees.create', compact('roles'));
+        return view('admin.employees.create', compact(['roles', 'data']));
     }
 
     /**
@@ -72,6 +75,7 @@ class EmployeeController extends Controller
      */
     public function store(CreateEmployeeRequest $request)
     {
+
         $employee = $this->employeeRepo->createEmployee($request->all());
 
         if ($request->has('role')) {
@@ -91,8 +95,9 @@ class EmployeeController extends Controller
      */
     public function show(int $id)
     {
+        $data = $this->ebrandsAll();
         $employee = $this->employeeRepo->findEmployeeById($id);
-        return view('admin.employees.show', ['employee' => $employee]);
+        return view('admin.employees.show', ['employee' => $employee, 'data' => $data]);
     }
 
     /**
@@ -104,6 +109,7 @@ class EmployeeController extends Controller
      */
     public function edit(int $id)
     {
+        $data = $this->ebrandsAll();
         $employee = $this->employeeRepo->findEmployeeById($id);
         $roles = $this->roleRepo->listRoles('created_at', 'desc');
         $isCurrentUser = $this->employeeRepo->isAuthUser($employee);
@@ -114,7 +120,8 @@ class EmployeeController extends Controller
                 'employee' => $employee,
                 'roles' => $roles,
                 'isCurrentUser' => $isCurrentUser,
-                'selectedIds' => $employee->roles()->pluck('role_id')->all()
+                'selectedIds' => $employee->roles()->pluck('role_id')->all(),
+                'data' => $data
             ]
         );
     }
@@ -174,8 +181,9 @@ class EmployeeController extends Controller
      */
     public function getProfile($id)
     {
+        $data = $this->ebrandsAll();
         $employee = $this->employeeRepo->findEmployeeById($id);
-        return view('admin.employees.profile', ['employee' => $employee]);
+        return view('admin.employees.profile', ['employee' => $employee, 'data' => $data]);
     }
 
     /**

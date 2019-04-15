@@ -9,8 +9,10 @@ use App\User;
 use App\Http\Traits\BrandsTrait;
 use App\Http\Traits\DemoTrait;
 
-//Notification for Seller
+
 use App\Notifications\ResetPasswordNotification;
+
+
 
 use Auth;
 
@@ -68,8 +70,12 @@ class User extends Authenticatable
      * @param string $passwword
      * @return void
      */
-    public function setPasswordAttribute($password)
+   public function setPasswordAttribute($password)
     {
+        //$this->attributes['password'] = bcrypt($password);
+      if(substr($password,6) == '$2y$10')
+        $this->attributes['password'] = $password;
+      else
         $this->attributes['password'] = bcrypt($password);
     }
 
@@ -417,8 +423,10 @@ class User extends Authenticatable
        return false;
     }
 
-     public function sendPasswordResetNotification($token)
+  public function sendPasswordResetNotification($token)
   {
       $this->notify(new ResetPasswordNotification($token));
   }
+
+  
 }

@@ -12,7 +12,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @auth
-        <meta name="api-token" content="{{ auth()->user()->api_token }}">
+    <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
     @if($data['n_companyname'])
     <title>{{$data['n_companyname']->cname}}</title>
