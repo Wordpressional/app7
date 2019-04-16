@@ -85,35 +85,7 @@ class CustomerAddressController extends Controller
         ]);
     }
 
-     /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function indexe1()
-    {
-        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
-
-        return view('front.customers.addresses.list', [
-            'customer' => $customer,
-            'addresses' => $customer->addresses
-        ]);
-    }
-
-    /**
-     * @param  $request
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function createe1()
-    {
-        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
-
-        return view('front.customers.addresses.createe1', [
-            'customer' => $customer,
-            'countries' => $this->countryRepo->listCountries(),
-            'cities' => $this->cityRepo->listCities(),
-            'provinces' => $this->provinceRepo->listProvinces()
-        ]);
-    }
-
+    
     /**
      * @param CreateAddressRequest $request
      * @return \Illuminate\Http\RedirectResponse

@@ -18,6 +18,7 @@ use App\Http\Controllers\Controller;
 use App\Shop\Provinces\Repositories\Interfaces\ProvinceRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Http\Traits\EcommTrait;
+use Auth;
 
 class AddressController extends Controller
 {
