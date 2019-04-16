@@ -60,4 +60,27 @@ class AccountsController extends Controller
             'addresses' => $addresses
         ]);
     }
+
+    public function indexe1()
+    {
+        //dd($this->customerRepo->findCustomerById(15));
+        //dd(Auth::guard('checkout')->id());
+        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
+        //dd($customer);
+
+        $customerRepo = new CustomerRepository($customer);
+        $orders = $customerRepo->findOrders(['*'], 'created_at');
+
+        $orders->transform(function (Order $order) {
+            return $this->transformOrder($order);
+        });
+
+        $addresses = $customerRepo->findAddresses();
+
+        return view('front.accountse1', [
+            'customer' => $customer,
+            'orders' => $this->customerRepo->paginateArrayResults($orders->toArray(), 15),
+            'addresses' => $addresses
+        ]);
+    }
 }

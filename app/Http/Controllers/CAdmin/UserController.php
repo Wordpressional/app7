@@ -92,7 +92,8 @@ class UserController extends Controller
        
         $role = Role::find($request->input('role_id'));
 
-        $user->attachRole($role);
+        //$user->attachRole($role);
+        $user->roles()->attach($role, ['user_type'=>'App/User']);
 
         $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
         //dd($role_permissions);
@@ -220,7 +221,8 @@ class UserController extends Controller
 
             $role = Role::find($request->input('role_id'));
 
-            $user->attachRole($role);
+            //$user->attachRole($role);
+            $user->roles()->attach($role, ['user_type'=>'App/User']);
 
              $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
         //dd($role_permissions);
@@ -310,7 +312,8 @@ class UserController extends Controller
 
             $role = Role::find($request->input('role_id'));
 
-            $user->attachRole($role);
+            //$user->attachRole($role);
+            $user->roles()->attach($role, ['user_type'=>'App/User']);
 
              $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
         //dd($role_permissions);
@@ -534,7 +537,8 @@ class UserController extends Controller
 
             $role = Role::find($request->input('role'));
 
-            $user->attachRole($role);
+            //$user->attachRole($role);
+            $user->roles()->attach($role, ['user_type'=>'App/User']);
 
              $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
         //dd($role_permissions);
@@ -596,7 +600,9 @@ class UserController extends Controller
 
             $role = Role::find($request->input('role_id'));
 
-            $user->attachRole($role);
+            //$user->attachRole($role);
+
+            $user->roles()->attach($role, ['user_type'=>'App/User']);
 
              $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
         //dd($role_permissions);
@@ -668,7 +674,8 @@ class UserController extends Controller
             //dd($role);
              $roleid = Role::find($role->id);
              //dd($roleid);
-        $user->attachRole($role);
+        //$user->attachRole($role);
+             $user->roles()->attach($role, ['user_type'=>'App/User']);
 
         $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
        //dd($role_permissions);

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
-use App\Notifications\DemoResetPasswordNotification;
+use App\Notifications\EmpResetPasswordNotification;
 use Illuminate\Http\Request;
 use App\User;
 use Validator;
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Notifications\Notifiable;
 
 
-class DemoForgotPasswordController extends Controller
+class EmpForgotPasswordController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -39,13 +39,13 @@ class DemoForgotPasswordController extends Controller
         $this->middleware('guest');
     }
      //Shows form to request password reset
-    public function showDemoLinkRequestForm()
+    public function showempLinkRequestForm()
     {
-        return view('auth.passwords.demoemail');
+        return view('auth.passwords.empemail');
     
     }
 
-    public function sendResetLinkEmail1(Request $request)
+    public function sendResetLinkEmail2(Request $request)
     {
 	    	$validator = Validator::make($request->all(), [
 	        'email' => 'required|email'
@@ -62,7 +62,7 @@ class DemoForgotPasswordController extends Controller
 	                'token' => $token
 	            ]);
 
-	           $user->notify(new DemoResetPasswordNotification($token));
+	           $user->notify(new EmpResetPasswordNotification($token));
 
 	            return redirect()->back()->with('status', trans(Password::RESET_LINK_SENT));
 	        }

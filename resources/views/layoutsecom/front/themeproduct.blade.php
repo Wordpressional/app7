@@ -1,4 +1,4 @@
-<div class="ecartnatheme1 row">
+<div class="ecartnatheme1 cartptheme1 row">
     <div class="col-md-6">
     	 <meta name="csrf-token" content="{{ csrf_token() }}">
         <ul id="thumbnails" class="col-md-4 list-unstyled">
@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-md-12">
                     @include('layoutsecom.errors-and-messages')
-                    <form action="{{ route('cart.store1') }}" class="form-inline" method="post">
+                    <form action="{{ route('cart.cart1store') }}" class="form-inline" method="post">
                         {{ csrf_field() }}
                         @if(isset($productAttributes) && !$productAttributes->isEmpty())
                             <div class="form-group">
@@ -83,7 +83,7 @@
                                    value="{{ old('quantity') }}" />
                             <input type="hidden" name="product" value="{{ $product->id }}" />
                         </div>
-                        <button type="submit" class="btn btn-warning"><i class="fa fa-cart-plus"></i> Add to cart
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-cart-plus"></i> Add to cart
                         </button>
                     </form>
                 </div>

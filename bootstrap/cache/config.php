@@ -783,7 +783,7 @@
   ),
   'laratrust' => 
   array (
-    'use_morph_map' => false,
+    'use_morph_map' => true,
     'use_cache' => true,
     'use_teams' => false,
     'teams_strict_check' => false,

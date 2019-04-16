@@ -217,9 +217,16 @@ Route::namespace('Auth')->group(function () {
     Route::post('cart/custlogin', 'CartLoginController@login')->name('cart.custlogin');
     Route::get('logout', 'CartLoginController@logout');
     Route::get('cart/custreg', 'CartRegisterController@cartregister')->name('cart.custreg');
-
-
 Route::post('cart/register', 'CartRegisterController@register')->name('cart.register');
+
+
+    Route::get('cart/custe1login', 'CartLoginController@showLogine1Form')->name('cart.custe1login');
+    Route::post('cart/custe1login', 'CartLoginController@login')->name('cart.custe1login');
+    Route::get('logout', 'CartLoginController@logout');
+    Route::get('cart/custe1reg', 'CartRegisterController@cartregistere1form')->name('cart.custe1reg');
+   Route::post('cart/registere1', 'CartRegisterController@register')->name('cart.registere1');
+
+
     
     Route::get('demologin', 'DemoPortalLoginController@showLoginForm')->name('demologin');
     Route::post('demologin', 'DemoPortalLoginController@demologin')->name('demologinp');
@@ -259,6 +266,32 @@ Route::get('index31', 'HomeController@index31')->name('index31');
         Route::get('checkout/success', 'CheckoutController@success')->name('checkout.success');
         Route::resource('customer.address', 'CustomerAddressController');
     });
+
+
+    Route::group(['middleware' => ['checkout']], function () {
+
+        Route::namespace('Payments')->group(function () {
+            Route::get('bank-transfer', 'BankTransferController@index')->name('bank-transfer.index');
+            Route::post('bank-transfer', 'BankTransferController@store')->name('bank-transfer.store');
+        });
+
+        Route::namespace('Addresses')->group(function () {
+            Route::resource('country.state', 'CountryStateController');
+            Route::resource('state.city', 'StateCityController');
+        });
+
+        Route::get('accountse1', 'AccountsController@indexe1')->name('accountse1');
+        Route::get('checkoute1', 'CheckoutController@indexe1')->name('checkoute1.index');
+        Route::post('checkoute1', 'CheckoutController@store')->name('checkoute1.store');
+        Route::get('checkoute1/execute', 'CheckoutController@executePayPalPayment')->name('checkoute1.execute');
+        Route::post('checkout/execute', 'CheckoutController@charge')->name('checkout.execute');
+        Route::get('checkoute1/cancel', 'CheckoutController@cancele1')->name('checkoute1.cancel');
+        Route::get('checkoute1/success', 'CheckoutController@successe1')->name('checkoute1.success');
+        //Route::resource('customer.address', 'CustomerAddressController');
+    });
+
+
+
     Route::resource('cart', 'CartController');
     Route::get("category/{slug}", 'CategoryController@getCategory')->name('front.category.slug');
      Route::get("ecommcategory/{slug}", 'CategoryController@getEcommCategory')->name('front.ecommcategory.slug');
@@ -268,11 +301,31 @@ Route::get('index31', 'HomeController@index31')->name('index31');
     Route::get("/theme/{product}", 'ProductController@themeshow')->name('front.get.themeproduct');
 
     Route::get("/my/cart1", 'CartController@cart1')->name('cart.cart1');
-   
-    Route::post('store1',[
 
-    'uses' => 'CartController@store1',
-    'as' => 'cart.store1'
+    Route::post("/my/cart1update", 'CartController@cart1update')->name('cart.cart1update');
+
+    Route::post("/my/cart1destroy", 'CartController@cart1destroy')->name('cart.cart1destroy');
+
+    Route::put('/my/cart1update/{cart}',[
+
+
+    'uses' => 'CartController@cart1update',
+    'as' => 'cart.cart1update'
+
+    ]);
+
+    Route::delete('/my/cart1destroy/{cart}',[
+
+
+    'uses' => 'CartController@cart1destroy',
+    'as' => 'cart.cart1destroy'
+
+    ]);
+
+    Route::post('/my/cart1/store1',[
+
+    'uses' => 'CartController@cart1store',
+    'as' => 'cart.cart1store'
 
     ]);
 
@@ -307,6 +360,7 @@ Route::post('password/reset',[
     'as' => 'password.resetd'
 
     ]);
+
 //cart
 Route::get('cart_password/email', 'Auth\CartForgotPasswordController@showcartLinkRequestForm')->name('cart.password.request');
 
@@ -330,12 +384,35 @@ Route::post('cart_password/reset',[
 
     ]);
 
+//============================================//
+Route::get('cart_e1password/email', 'Auth\CartForgotPasswordController@showcartLinkRequeste1Form')->name('cart.e1password.request');
+
+Route::post('cart_e1password/email',[
+
+    'uses' => 'Auth\CartForgotPasswordController@sendResetLinkEmail',
+    'as' => 'cart.e1password.email'
+
+    ]);
+
+
+
+
+Route::get('cart_e1password/reset/{token}', 'Auth\CartResetPasswordController@showcartResete1Form')->name('cart.e1password.reset');
+
+
+Route::post('cart_e1password/reset',[
+
+    'uses' => 'Auth\CartResetPasswordController@reset',
+    'as' => 'cart.e1password.resetd'
+
+    ]);
+
 //emp
 Route::get('emp_password/email', 'Auth\EmpForgotPasswordController@showempLinkRequestForm')->name('emp.password.request');
 
 Route::post('emp_password/email',[
 
-    'uses' => 'Auth\EmpForgotPasswordController@sendResetLinkEmail1',
+    'uses' => 'Auth\EmpForgotPasswordController@sendResetLinkEmail2',
     'as' => 'emp.password.email'
 
     ]);
@@ -348,7 +425,7 @@ Route::get('emp_password/reset/{token}', 'Auth\EmpResetPasswordController@showem
 
 Route::post('emp_password/reset',[
 
-    'uses' => 'Auth\EmpResetPasswordController@reset',
+    'uses' => 'Auth\EmpResetPasswordController@resetPassword',
     'as' => 'emp.password.resetd'
 
     ]);

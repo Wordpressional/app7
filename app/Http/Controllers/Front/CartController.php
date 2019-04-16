@@ -129,7 +129,7 @@ class CartController extends Controller
             ->with('message', 'Add to cart successful');
     }
 
-    public function store1(AddToCartRequest $request)
+    public function cart1store(AddToCartRequest $request)
     {
         $product = $this->productRepo->findProductById($request->input('product'));
 
@@ -177,6 +177,14 @@ class CartController extends Controller
         return redirect()->route('cart.index');
     }
 
+    public function cart1update(Request $request, $id)
+    {
+        $this->cartRepo->updateQuantityInCart($id, $request->input('quantity'));
+
+        request()->session()->flash('message', 'Update cart successful');
+        return redirect()->route('cart.cart1');
+    }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -189,5 +197,13 @@ class CartController extends Controller
 
         request()->session()->flash('message', 'Removed to cart successful');
         return redirect()->route('cart.index');
+    }
+
+    public function cart1destroy($id)
+    {
+        $this->cartRepo->removeToCart($id);
+
+        request()->session()->flash('message', 'Removed to cart successful');
+        return redirect()->route('cart.cart1');
     }
 }

@@ -8,7 +8,7 @@
 <input type='file' id="imageUploadmpoltheme1" accept=".png, .jpg, .jpeg" />
 <label class="imageUploadmpoltheme1" for="imageUploadmpoltheme1">&nbsp;</label>
 <div class="col-md-7" style="float:left;">
-<a href="main.html">
+<a href="{{ url('/') }}">
 <img id="imagePreviewmpoltheme1" src="{{ asset('img/pwalogo.png')}}" alt="" title="" style="padding-bottom:20px;"/>
 </a>
 </div>

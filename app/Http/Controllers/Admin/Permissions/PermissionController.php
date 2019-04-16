@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Admin\Permissions;
 
 use App\Http\Controllers\Controller;
 use App\Shop\Permissions\Repositories\PermissionRepository;
+use App\Http\Traits\EcommTrait;
 
 class PermissionController extends Controller
 {
+    use EcommTrait;
     /**
      * @var PermissionRepository
      */
@@ -27,10 +29,11 @@ class PermissionController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
         $list = $this->permRepo->listPermissions();
 
         $permissions = $this->permRepo->paginateArrayResults($list->all());
 
-        return view('admin.permissions.list', compact('permissions'));
+        return view('admin.permissions.list', compact('permissions', 'data'));
     }
 }

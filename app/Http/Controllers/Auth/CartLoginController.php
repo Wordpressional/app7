@@ -43,6 +43,11 @@ class CartLoginController extends Controller
         return view('auth.cart.login');
     }
 
+    public function showLogine1Form()
+    {
+        return view('auth.cart.logine1');
+    }
+
     /**
      * Login the customer
      *

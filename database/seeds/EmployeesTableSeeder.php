@@ -12,27 +12,27 @@ class EmployeesTableSeeder extends Seeder
     public function run()
     {
         $createProductPerm = factory(Permission::class)->create([
-            'name' => 'create-product',
+            'name' => 'ecom_create-product',
             'display_name' => 'Create product'
         ]);
 
         $viewProductPerm = factory(Permission::class)->create([
-            'name' => 'view-product',
+            'name' => 'ecom_view-product',
             'display_name' => 'View product'
         ]);
 
         $updateProductPerm = factory(Permission::class)->create([
-            'name' => 'update-product',
+            'name' => 'ecom_update-product',
             'display_name' => 'Update product'
         ]);
 
         $deleteProductPerm = factory(Permission::class)->create([
-            'name' => 'delete-product',
+            'name' => 'ecom_delete-product',
             'display_name' => 'Delete product'
         ]);
 
         $updateOrderPerm = factory(Permission::class)->create([
-            'name' => 'update-order',
+            'name' => 'ecom_update-order',
             'display_name' => 'Update order'
         ]);
 
@@ -45,7 +45,7 @@ class EmployeesTableSeeder extends Seeder
         ]);
 
         $super = factory(Role::class)->create([
-            'name' => 'superadmin',
+            'name' => 'ecom_superadmin',
             'display_name' => 'Super Admin'
         ]);
 
@@ -66,7 +66,7 @@ class EmployeesTableSeeder extends Seeder
         ]);
 
         $admin = factory(Role::class)->create([
-            'name' => 'admin',
+            'name' => 'ecom_admin',
             'display_name' => 'Admin'
         ]);
 
@@ -88,7 +88,7 @@ class EmployeesTableSeeder extends Seeder
         ]);
 
         $clerk = factory(Role::class)->create([
-            'name' => 'clerk',
+            'name' => 'ecom_clerk',
             'display_name' => 'Clerk'
         ]);
 

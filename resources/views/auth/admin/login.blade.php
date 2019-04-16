@@ -53,8 +53,8 @@
             </div>-->
             <!-- /.social-auth-links -->
 
-            <a href="#">I forgot my password</a><br>
-            <a href="{{ url('/') }}" class="text-center">Register a new membership</a>
+            <a href="{{route('emp.password.request')}}">I forgot my password</a><br>
+            
 
         </div>
         <!-- /.login-box-body -->

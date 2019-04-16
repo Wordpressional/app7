@@ -10,7 +10,7 @@
     <body>
    <div id="app">
     @php $slug1 = app('request')->input('slug'); @endphp
-    <center><h3> View Mode </h3></center>
+    <center><h3> Preview Mode </h3></center>
      <div class="switch" style="text-align: center; cursor:pointer; line-height: 4.6em; padding-top: 20px;">
 
   <span><a style="font-size:20px; color:red; padding:20px;" href="{{ url('/theme').'/'.$slug1 }}" ><b> <i class="fa fa-arrow-left"></i>Back</b></a> </span>
@@ -60,7 +60,7 @@ if(detectmob()){
  $('.precon').css('display', 'none');
  $('.precon1').css('display', 'inline');
 
-$('.precon1').html('<center class="iframecentmobi"><iframe src="{{route("preview1cart", $theme->tname)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
+$('.precon1').html('<center class="iframecentmobicart"><iframe src="{{route("preview1cart", $theme->tname)}}" frameborder="0" scrolling="auto" id="mypreFrame" ></iframe></center>');
 
 
 }
@@ -116,7 +116,7 @@ if(detectmob()){
  $('.precon').css('display', 'none');
  $('.precon1').css('display', 'inline');
 
-$('.precon1').html('<center class="iframecentmobi1"><iframe src="{{route("preview1cart", $theme->tname)}}" frameborder="0" scrolling="auto" id="mypreFrame1" ></iframe></center>');
+$('.precon1').html('<center class="iframecentmobi1cart"><iframe src="{{route("preview1cart", $theme->tname)}}" frameborder="0" scrolling="auto" id="mypreFrame1" ></iframe></center>');
 }
 });
 });
@@ -435,9 +435,9 @@ $.ajax({
    
 }
 
-.iframecentmobi
+.iframecentmobicart
 {
-    background: url(../images/Phone.png);
+    background: url(../../images/Phone.png);
     background-repeat: no-repeat;
     
     background-size: 37%;
@@ -450,9 +450,9 @@ $.ajax({
     margin-right: auto;
 }
 
-.iframecentmobi1
+.iframecentmobi1cart
 {
-    background: url(../images/Tablet.png);
+    background: url(../../images/Tablet.png);
     background-repeat: no-repeat;
     
     background-size: 70%;

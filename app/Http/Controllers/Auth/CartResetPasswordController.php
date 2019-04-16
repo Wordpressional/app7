@@ -54,6 +54,16 @@ class CartResetPasswordController extends Controller
         ]);
     }
 
+    public function showCartResete1Form(Request $request, $token = null)
+    {
+        
+        return view('auth.passwords.carte1reset', [
+            
+            'token' => $token, 
+            'email' => $request->email
+        ]);
+    }
+
      //returns Password broker of seller
     public function broker()
     {

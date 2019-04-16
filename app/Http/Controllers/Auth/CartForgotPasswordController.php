@@ -37,6 +37,12 @@ class CartForgotPasswordController extends Controller
         return view('auth.passwords.cartemail');
     }
 
+    public function showcartLinkRequeste1Form()
+    {
+        
+        return view('auth.passwords.carte1email');
+    }
+
     //Password Broker for Seller Model
     public function broker()
     {

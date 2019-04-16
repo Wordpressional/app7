@@ -1,7 +1,7 @@
-@extends('layoutsecom.front.app')
+@extends('layoutsecom.front.mythemeapp')
 
 @section('content')
-        <div class="container product-in-cart-list">
+        <div class="container product-in-cart-list cartptheme1">
             @if(!$cartItems->isEmpty())
                 <div class="row">
                     <div class="col-md-12">
@@ -79,7 +79,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <form action="{{ route('cart.update', $cartItem->rowId) }}" class="form-inline" method="post">
+                                        <form action="{{ route('cart.cart1update', $cartItem->rowId) }}" class="form-inline" method="post">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="put">
                                             <div class="input-group">
@@ -89,7 +89,7 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <form action="{{ route('cart.destroy', $cartItem->rowId) }}" method="post">
+                                        <form action="{{ route('cart.cart1destroy', $cartItem->rowId) }}" method="post">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="delete">
                                             <button onclick="return confirm('Are you sure?')" class="btn btn-danger"><i class="fa fa-times"></i></button>
@@ -105,7 +105,7 @@
                             <div class="col-md-12">
                                 <div class="btn-group pull-right">
                                     <a href="{{ route('home') }}" class="btn btn-default">Continue shopping</a>
-                                    <a href="{{ route('checkout.index') }}" class="btn btn-primary">Go to checkout</a>
+                                    <a href="{{ route('checkoute1.index', ['from' => 'cart1']) }}" class="btn btn-primary">Go to checkout</a>
                                 </div>
                             </div>
                         </div>
@@ -129,5 +129,6 @@
             line-height: 18px;
             font-size: 14px;
         }
+
     </style>
 @endsection

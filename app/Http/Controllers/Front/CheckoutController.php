@@ -137,6 +137,45 @@ class CheckoutController extends Controller
         ]);
     }
 
+    public function indexe1(Request $request)
+    {
+        $products = $this->cartRepo->getCartItems();
+        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
+        $rates = null;
+        $shipment_object_id = null;
+
+        if (env('ACTIVATE_SHIPPING') == 1) {
+            $shipment = $this->createShippingProcess($customer, $products);
+            if (!is_null($shipment)) {
+                $shipment_object_id = $shipment->object_id;
+                $rates = $shipment->rates;
+            }
+        }
+
+        //dd(config('payees.name'));
+
+        // Get payment gateways
+        $paymentGateways = collect(explode(',', config('payees.name')))->transform(function ($name) {
+            return config($name);
+        })->all();
+
+        $billingAddress = $customer->addresses()->first();
+
+        return view('front.checkoute1', [
+            'customer' => $customer,
+            'billingAddress' => $billingAddress,
+            'addresses' => $customer->addresses()->get(),
+            'products' => $this->cartRepo->getCartItems(),
+            'subtotal' => $this->cartRepo->getSubTotal(),
+            'tax' => $this->cartRepo->getTax(),
+            'total' => $this->cartRepo->getTotal(2),
+            'payments' => $paymentGateways,
+            'cartItems' => $this->cartRepo->getCartItemsTransformed(),
+            'shipment_object_id' => $shipment_object_id,
+            'rates' => $rates
+        ]);
+    }
+
     /**
      * Checkout the items
      *
@@ -233,6 +272,28 @@ class CheckoutController extends Controller
     {
         //dd("hi");
         return view('front.checkout-success');
+    }
+
+     /**
+     * Cancel page
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function cancele1(Request $request)
+    {
+        return view('front.checkout-cancele1', ['data' => $request->all()]);
+    }
+
+    /**
+     * Success page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function successe1()
+    {
+        //dd("hi");
+        return view('front.checkout-successe1');
     }
 
     /**

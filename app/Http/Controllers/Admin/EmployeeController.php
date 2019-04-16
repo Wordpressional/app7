@@ -10,6 +10,7 @@ use App\Shop\Roles\Repositories\RoleRepositoryInterface;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Traits\EcommTrait;
+use App\User;
 
 class EmployeeController extends Controller
 {
@@ -83,6 +84,13 @@ class EmployeeController extends Controller
             $employeeRepo->syncRoles([$request->input('role')]);
         }
 
+        $user = User::create($request->all());
+
+        if ($request->has('role')) {
+           
+            $user->roles()->attach($request->input('role'), ['user_type'=>'App/User']);
+        }
+
         return redirect()->route('admin.employees.index');
     }
 
@@ -137,6 +145,14 @@ class EmployeeController extends Controller
     public function update(UpdateEmployeeRequest $request, $id)
     {
         $employee = $this->employeeRepo->findEmployeeById($id);
+
+        $user = User::where('email', $employee->email)->first();
+         //dd($employee->email);
+         $user->email = $request->email;
+         $user->name = $request->name;
+         $user->displayname = $request->name;
+         $user->save();
+
         $isCurrentUser = $this->employeeRepo->isAuthUser($employee);
 
         $empRepo = new EmployeeRepository($employee);
@@ -151,6 +167,12 @@ class EmployeeController extends Controller
             $employee->roles()->sync($request->input('roles'));
         } elseif (!$isCurrentUser) {
             $employee->roles()->detach();
+        }
+
+
+        if ($request->has('role')) {
+           
+            $user->roles()->attach($request->input('role'), ['user_type'=>'App/User']);
         }
 
         return redirect()->route('admin.employees.edit', $id)
@@ -170,6 +192,17 @@ class EmployeeController extends Controller
         $employee = $this->employeeRepo->findEmployeeById($id);
         $employeeRepo = new EmployeeRepository($employee);
         $employeeRepo->deleteEmployee();
+
+        $user = User::where('email',$employee->email)->first();
+
+        // Detach from Role
+        $roles = $user->roles;
+
+        foreach ($roles as $key => $value) {
+            $user->detachRole($value);
+        }
+
+        $user->delete();
 
         return redirect()->route('admin.employees.index')->with('message', 'Delete successful');
     }

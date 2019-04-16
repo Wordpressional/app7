@@ -8,9 +8,11 @@ use App\Shop\Roles\Repositories\RoleRepository;
 use App\Shop\Roles\Repositories\RoleRepositoryInterface;
 use App\Shop\Roles\Requests\CreateRoleRequest;
 use App\Shop\Roles\Requests\UpdateRoleRequest;
+use App\Http\Traits\EcommTrait;
 
 class RoleController extends Controller
 {
+    use EcommTrait;
     /**
      * @var RoleRepositoryInterface
      */
@@ -40,11 +42,13 @@ class RoleController extends Controller
      */
     public function index()
     {
+        $data = $this->ebrandsAll();
+
         $list = $this->roleRepo->listRoles('name', 'asc')->all();
 
         $roles = $this->roleRepo->paginateArrayResults($list);
 
-        return view('admin.roles.list', compact('roles'));
+        return view('admin.roles.list', compact('roles', 'data'));
     }
 
     /**
@@ -52,7 +56,8 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('admin.roles.create');
+         $data = $this->ebrandsAll();
+        return view('admin.roles.create', compact('data'));
     }
 
     /**
@@ -75,6 +80,7 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
+        $data = $this->ebrandsAll();
         $role = $this->roleRepo->findRoleById($id);
 
         $roleRepo = new RoleRepository($role);
@@ -84,7 +90,8 @@ class RoleController extends Controller
         return view('admin.roles.edit', compact(
             'role',
             'permissions',
-            'attachedPermissionsArrayIds'
+            'attachedPermissionsArrayIds',
+            'data'
         ));
     }
 

@@ -93,6 +93,7 @@ class PermissionRepository extends BaseRepository implements PermissionRepositor
      */
     public function listPermissions($columns = array('*'), string $orderBy = 'id', string $sortBy = 'asc') : Collection
     {
-        return $this->all($columns, $orderBy, $sortBy);
+        //return $this->all($columns, $orderBy, $sortBy);
+        return $this->model->where('name', 'like', 'ecom_'.'%')->get();
     }
 }

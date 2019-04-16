@@ -35,7 +35,8 @@ class RoleRepository extends BaseRepository implements RoleRepositoryInterface
      */
     public function listRoles(string $order = 'id', string $sort = 'desc') : Collection
     {
-        return $this->all(['*'], $order, $sort);
+        //return $this->all(['*'], $order, $sort);
+        return $this->model->where('name', 'like', 'ecom_'.'%')->get();
     }
     /**
      * @param array $data

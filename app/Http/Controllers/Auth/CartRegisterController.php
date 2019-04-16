@@ -72,9 +72,12 @@ class CartRegisterController extends Controller
 
      public function cartregister()
     {        
-         return view('auth.cart.register', [
-          
-        ]);
+         return view('auth.cart.register');
+       
+    }
+    public function cartregistere1form()
+    {        
+         return view('auth.cart.registere1');
        
     }
 }

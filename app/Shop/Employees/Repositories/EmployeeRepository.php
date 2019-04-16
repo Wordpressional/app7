@@ -130,4 +130,9 @@ class EmployeeRepository extends BaseRepository implements EmployeeRepositoryInt
     {
         return $this->delete();
     }
+
+    public function findByEmail(string $email)
+    {
+        return $this->model->where('email', $email)->first();
+    }
 }

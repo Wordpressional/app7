@@ -27,18 +27,21 @@ class GlobalTemplateServiceProvider extends ServiceProvider
     {
         view()->composer([
             'layoutsecom.admin.app',
+            'layoutsecom.front.mythemeapp',
             'layoutsecom.admin.sidebar',
             'admin.shared.products'
         ], function ($view) {
             $view->with('admin', Auth::guard('employee')->user());
         });
 
-        view()->composer(['layoutsecom.front.menu', 'front.categories.sidebar-category'], function ($view) {
+        view()->composer(['layoutsecom.front.menu', 
+            'layoutsecom.front.mythemeapp', 'front.categories.sidebar-category'], function ($view) {
             $view->with('categories', $this->getCategories());
             $view->with('cartCount', $this->getCartCount());
         });
 
-        view()->composer(['layoutsecom.front.app', 'front.categories.sidebar-category'], function ($view) {
+        view()->composer(['layoutsecom.front.app',
+            'layoutsecom.front.mythemeapp', 'front.categories.sidebar-category'], function ($view) {
             $view->with('categories', $this->getCategories());
             $view->with('cartCount', $this->getCartCount());
         });
@@ -47,7 +50,7 @@ class GlobalTemplateServiceProvider extends ServiceProvider
          * breadcumb
          */
         view()->composer([
-            "layoutsecom.admin.app"
+            "layoutsecom.admin.app","layoutsecom.front.mythemeapp"
         ], function ($view) {
             $breadcumb = [
                 ["name" => "Dashboard", "url" => route("admin.dashboard"), "icon" => "fa fa-dashboard"],

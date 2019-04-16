@@ -1,4 +1,4 @@
-@extends('layoutsecom.front.app')
+@extends('layoutsecom.front.mythemeapp')
 
 @section('og')
     <meta property="og:type" content="product"/>
@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    <div class="container product">
+    <div class="container product cartptheme1">
         <div class="row">
             <div class="col-md-12">
                 <ol class="breadcrumb">
