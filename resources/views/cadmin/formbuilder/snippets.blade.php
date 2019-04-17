@@ -794,33 +794,33 @@
  [bloglist]Post_Category_Name_Here[/bloglist]
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="Mega Menus" data-keditor-categories="Mega Menus;Shop Themes Layout - LT11">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/menu_ecl1.jpg')}}" data-keditor-title="Mega Menus" data-keditor-categories="Mega Menus;Shop Themes Layout - ECL1">
 
 @include('shortcodes.plainhtml.megamenu2')
   
 </div>
 
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="Mega Menus;Shop Themes Layout - LT11">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/themes_ecl1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="Mega Menus;Shop Themes Layout - ECL1">
 
 
-<div data-dynamic-href="{{url('index31')}}"></div>
+<div data-dynamic-href="{{url('shopthemes')}}"></div>
 
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/about_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">
 
 @include('shortcodes.plainhtml.aboutpwa')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/price_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">
 
 @include('shortcodes.plainhtml.pricingtable')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/feature_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">
 
 @include('shortcodes.plainhtml.featurestable')
   
@@ -828,7 +828,7 @@
 
 
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/subscribe_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">
 
 @include('shortcodes.plainhtml.subscribenow')
   
@@ -836,30 +836,30 @@
 
 
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/help_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">
 
 @include('shortcodes.plainhtml.pwahelp')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/parallax1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - LT11">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/footer_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">
 
 @include('shortcodes.plainhtml.themefooter')
   
 </div>
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/menu_ec1.jpg')}}" data-keditor-title="text" data-keditor-categories="Ecommerce Theme - ET1 ">
 [ecommtheme1]ecommtheme1[/ecommtheme1]
 
   
 </div>
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/banner_ec1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 
   <div data-dynamic-href="{{url('index2')}}"></div>
 </div>
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/products_ec1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 
   <div data-dynamic-href="{{url('index3')}}"></div>
    
@@ -867,7 +867,7 @@
 
 
 
-<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/blog-icon.png')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/footer_ec1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="Ecommerce Theme - ET1 ">
 
  <div data-dynamic-href="{{url('index4')}}"></div>
 </div>

@@ -67,7 +67,7 @@ class HomeController
         return view('layoutsecom.front.myfooter', compact('cat1', 'cat2'));
     }
 
-    public function index31()
+    public function shopthemes()
     {
 
         $cat0 = $this->categoryRepo->findCategoryBySlug(['slug' => 'static-themes']);
@@ -199,6 +199,14 @@ class HomeController
         
         //dd($imarr);
         return view('front.shopthemes', compact('products0', 'products1', 'products2', 'products3', 'products4', 'products5', 'products6', 'products7', 'products8', 'products9','cat0', 'cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8', 'cat9', 'imarr0', 'imarr1', 'imarr2', 'imarr3', 'imarr4', 'imarr5', 'imarr6', 'imarr7', 'imarr8', 'imarr9'));
+    }
+
+    public function ecomm1()
+    {
+        $cat1 = $this->categoryRepo->findCategoryById(2);
+        $cat2 = $this->categoryRepo->findCategoryById(3);
+
+        return view('front.index', compact('cat1', 'cat2'));
     }
     
 }

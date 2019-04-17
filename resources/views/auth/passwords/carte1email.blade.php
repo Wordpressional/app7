@@ -12,7 +12,7 @@
             @endcomponent
         @endif
 
-        {!! Form::open(['route' => 'cart.password.email', 'role' => 'form', 'method' => 'POST']) !!}
+        {!! Form::open(['route' => 'cart.e1password.email', 'role' => 'form', 'method' => 'POST']) !!}
         
             <div class="form-group">
               

@@ -3834,6 +3834,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 color: #d89522;
 }
 
+.cartptheme1 .nav-tabs a {
+color: #0e3c88;
+    
+}
+
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
@@ -9478,6 +9483,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .ecartnatheme1 li.active a {
     color: #d89522;
     background: #eee;
+}
+
+.cartptheme1 li.active a {
+    color: #0e3c88;
+    background: #c4e1ed;
 }
 .ecartnatheme1 ul.sidebar-menu li a {
     display: block;

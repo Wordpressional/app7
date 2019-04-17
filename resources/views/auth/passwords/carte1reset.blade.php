@@ -6,7 +6,7 @@
         <div class="col-md-4 col-md-offset-4">
         <h1>@lang('auth.reset_password')</h1>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        {!! Form::open(['route' => 'cart.password.resetd', 'role' => 'form', 'method' => 'POST']) !!}
+        {!! Form::open(['route' => 'cart.e1password.resetde1', 'role' => 'form', 'method' => 'POST']) !!}
             <div class="form-group">
                 {!! Form::label('email', __('validation.attributes.email'), ['class' => 'control-label']) !!}
                 {!! Form::email('email', $email or old('email'), ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'required']) !!}

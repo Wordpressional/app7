@@ -220,8 +220,8 @@ Route::namespace('Auth')->group(function () {
 Route::post('cart/register', 'CartRegisterController@register')->name('cart.register');
 
 
-    Route::get('cart/custe1login', 'CartLoginController@showLogine1Form')->name('cart.custe1login');
-    Route::post('cart/custe1login', 'CartLoginController@login')->name('cart.custe1login');
+    Route::get('cart/custe1login', 'Carte1LoginController@showLogine1Form')->name('cart.custe1login');
+    Route::post('cart/custe1login', 'Carte1LoginController@login')->name('cart.custe1login');
     Route::get('logout', 'CartLoginController@logout');
     Route::get('cart/custe1reg', 'CartRegisterController@cartregistere1form')->name('cart.custe1reg');
    Route::post('cart/registere1', 'CartRegisterController@register')->name('cart.registere1');
@@ -239,11 +239,12 @@ Route::namespace('Front')->group(function () {
 //Route::get('/123', 'WebhomeFrontController@frontpage')->name('home');
 //Route::post('/123', 'WebhomeFrontController@frontpage')->name('home');
     //Route::get('/', 'HomeController@index')->name('home');
+Route::get('ecomm1', 'HomeController@ecomm1')->name('ecomm1');
 Route::get('index1', 'HomeController@index1')->name('index1');
 Route::get('index2', 'HomeController@index2')->name('index2');
 Route::get('index3', 'HomeController@index3')->name('index3');
 Route::get('index4', 'HomeController@index4')->name('index4');
-Route::get('index31', 'HomeController@index31')->name('index31');
+Route::get('shopthemes', 'HomeController@shopthemes')->name('shopthemes');
 
     Route::group(['middleware' => ['checkout']], function () {
 
@@ -389,7 +390,7 @@ Route::get('cart_e1password/email', 'Auth\CartForgotPasswordController@showcartL
 
 Route::post('cart_e1password/email',[
 
-    'uses' => 'Auth\CartForgotPasswordController@sendResetLinkEmail',
+    'uses' => 'Auth\CartForgotPasswordController@sendResetLinkEmaile1',
     'as' => 'cart.e1password.email'
 
     ]);
@@ -402,8 +403,8 @@ Route::get('cart_e1password/reset/{token}', 'Auth\CartResetPasswordController@sh
 
 Route::post('cart_e1password/reset',[
 
-    'uses' => 'Auth\CartResetPasswordController@reset',
-    'as' => 'cart.e1password.resetd'
+    'uses' => 'Auth\CartResetPasswordController@resetPassword',
+    'as' => 'cart.e1password.resetde1'
 
     ]);
 

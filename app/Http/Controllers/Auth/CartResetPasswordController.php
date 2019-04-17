@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Http\Request;
 //Auth Facade
 use Illuminate\Support\Facades\Auth;
-
+use App\Shop\Customers\Customer;
 
 class CartResetPasswordController extends Controller
 {
@@ -62,6 +62,19 @@ class CartResetPasswordController extends Controller
             'token' => $token, 
             'email' => $request->email
         ]);
+    }
+
+    protected function resetPassword(Request $request)
+    {
+    
+    $cust = Customer::where('email', $request->email)->first();
+
+    $cust->password = bcrypt($request->password);
+
+    $cust->save();
+
+   
+        return redirect()->route('cart.custe1login');
     }
 
      //returns Password broker of seller
