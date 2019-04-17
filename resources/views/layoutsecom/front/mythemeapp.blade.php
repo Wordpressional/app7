@@ -60,7 +60,7 @@
 					</a>
                 </div>
                 <div class="col-md-10">
-                    @include('layoutsecom.front.header-cart')
+                    @include('layoutsecom.front.header-themecart')
                 </div>
             </div>
         </nav>
