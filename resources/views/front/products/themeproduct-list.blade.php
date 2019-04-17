@@ -17,7 +17,7 @@
                                             </form>
                                         </li>
                                         
-                                        <li>  <a class="btn btn-default product-btn" href="{{ route('front.get.themeproduct', str_slug($product->slug)) }}"> <i class="fa fa-link"></i> Preview Theme</a> </li>
+                                        <li>  <a class="btn btn-default product-btn" href="{{ route('front.get.themeproduct', str_slug($product->slug)) }}"> <i class="fa fa-eye"></i> Preview Theme</a> </li>
                                     </ul>
                                 </div>
                             </div>
