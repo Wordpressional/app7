@@ -83,7 +83,7 @@
               <li><b>Unlimited Pages</b> can be created using content editor - No coding knowledge required</li>
               <li><b>Preview and Download </b> Static or CMS or Ecommerce PWA Templates from account and host it on Digitalocean Cloud server</li>
               <li><b>Responsive Design</b> made with Bootstrap</li>
-              <li><b>PWA Software</b> code is availabe for download</li>
+              <li><b>PWA Software</b> code is available for download</li>
               <li><b>Free </b>Support for installing this PWA Software on Digitalocean Cloud server</li>
                <li><b>1 free</b> Domain - to setup contact us</li>
                <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>
@@ -122,7 +122,7 @@
               <li><b>Unlimited Pages</b> can be created using content editor - No coding knowledge required</li>
               <li><b>Preview and Download </b> Static or CMS or Ecommerce PWA Templates from account and host it on Digitalocean Cloud server</li>
               <li><b>Responsive Design</b> made with Bootstrap</li>
-              <li><b>PWA Software</b> code is availabe for download</li>
+              <li><b>PWA Software</b> code is available for download</li>
               <li><b>Free </b>Support for installing this PWA Software on Digitalocean Cloud server</li>
                <li><b>1 free</b> Domain - to setup contact us</li>
               <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>

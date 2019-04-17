@@ -1,4 +1,4 @@
-@extends('layoutsecom.front.app')
+@extends('layoutsecom.front.mythemeapp')
 
 @section('og')
     <meta property="og:type" content="category"/>
@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container cartptheme1">
         <hr>
         <div class="row">
             <div class="category-top col-md-12">
@@ -19,10 +19,8 @@
             </div>
         </div>
         <hr>
-        <div class="col-md-3">
-            @include('front.categories.sidebar-category')
-        </div>
-        <div class="col-md-9">
+        
+        <div class="col-md-12">
             <div class="row">
                 <div class="category-image">
                     @if(isset($category->cover))
@@ -34,7 +32,7 @@
             </div>
             <hr>
             <div class="row">
-                @include('front.products.product-list', ['products' => $products])
+                @include('front.products.themeproduct-list', ['products' => $products])
             </div>
         </div>
     </div>

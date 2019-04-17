@@ -2901,9 +2901,9 @@ fieldset[disabled] a.btn {
   border-color: #adadad;
 }
 .cartptheme1 .btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #0e3c88;
+  color: #ffffff !important;
+  background-color: #1b82d1 !important;
+  border-color: #0e3c88 !important;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3106,6 +3106,13 @@ fieldset[disabled] .btn-info.focus {
   background-color: #f0ad4e;
   border-color: #eea236;
 }
+
+.cartptheme1 .btn-warning {
+  color: #fff;
+  background-color: #0e3c88 !important;
+  border-color: #0e3c88 !important;
+}
+
 .btn-warning:focus,
 .btn-warning.focus {
   color: #fff;
@@ -3116,6 +3123,12 @@ fieldset[disabled] .btn-info.focus {
   color: #fff;
   background-color: #ec971f;
   border-color: #d58512;
+}
+
+.cartptheme1 .btn-warning:hover {
+  color: #fff;
+  background-color: #0065b3 !important;
+  border-color: #0c5389 !important;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -3137,6 +3150,20 @@ fieldset[disabled] .btn-info.focus {
   color: #fff;
   background-color: #d58512;
   border-color: #985f0d;
+}
+
+.cartptheme1 .btn-warning:active:hover,
+.cartptheme1 .btn-warning.active:hover,
+.cartptheme1 .open > .dropdown-toggle.btn-warning:hover,
+.cartptheme1 .btn-warning:active:focus,
+.cartptheme1 .btn-warning.active:focus,
+.cartptheme1 .open > .dropdown-toggle.btn-warning:focus,
+.cartptheme1 .btn-warning:active.focus,
+.cartptheme1 .btn-warning.active.focus,
+.cartptheme1 .open > .dropdown-toggle.btn-warning.focus {
+  color: #fff;
+  background-color: #0065b3 !important;
+  border-color: #0c5389 !important;
 }
 
 
@@ -9453,11 +9480,11 @@ button.close {
 
 
 /* **************************************************
-Theme Name: Kenakata
-Theme URI: https://www.behance.net/gallery/38757389/Kenakata-Free-eCommerce-Bootstrap-Template-PSD-HTML
-Author URI: https://www.behance.net/shuvokhan
+Theme Name: Nagashwini
+Theme URI: 
+Author URI: https://www.behance.net/nagashwini
 Description:
-Author: Shuvo Khan
+Author: Nagahswini
 Version: 1.0.0
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -9612,7 +9639,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 .carttheme1 .cart-number {
     color: #fff;
-    background: #0e3c88;
+    background: #0e3c88 !important;
 }
 
 .carttheme1 .fa-shopping-cart{
@@ -9738,6 +9765,20 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     height: 40px;
     margin: auto;
 }
+
+.cartptheme1 .product-btn {
+    border-radius: 3px;
+    font-size: 14px;
+    background: #0065B3 !important;
+    color: #fff;
+    border: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+}
+
 .product-text h4 {
     font-size: 18px;
     margin: 20px 0 5px;
@@ -10054,6 +10095,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     min-height: 400px;
 }
 
+.cartptheme1 .product-list {
+    min-height: 300px;
+}
+
 .nav.navbar-nav .dropdown {
     top:11px;
 }
@@ -10224,10 +10269,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  .bottom_ul li:after { content:" "; color:#FFF; margin-right:8px; margin-left:8px;}
  .bottom_ul li a { color:#FFF;  font-size:12px;}
 
-.product-in-cart-list{
-    min-height: 570px;
+.product-in-cart-list .content{
+    min-height: 550px;
+    margin-bottom: 50px;
 }
 
 section.container.content {
     margin-bottom: 30px;
 }
+
