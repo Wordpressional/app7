@@ -4413,6 +4413,12 @@ color: #0e3c88;
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
 }
+
+.carttheme1 .navbar-default .navbar-collapse,
+.carttheme1 .navbar-default .navbar-form {
+  border: none !important;
+}
+
 .navbar-default .navbar-link {
   color: #777;
 }
