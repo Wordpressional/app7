@@ -555,3 +555,36 @@ $(".filter").click(function () {
 });
 
 });
+
+$(document).ready(function() {
+  var $toggleButton = $('.natoggle-button');
+  $toggleButton.on('click', function() {
+    $(this).toggleClass('nabutton-open');
+    //$('.nabutton-open').next('.mnav').slideToggle(300);
+    $('.mnav').toggleClass('inactive');
+  });
+
+   var $sidebarArrow = $('.m1wsm1');
+
+    // Sidebar navigation arrows
+
+    $sidebarArrow.click(function() {
+      //alert("hi");
+        $('.sub-menu1').toggleClass('active1');
+          $('.submenu2').removeClass('active2');
+
+    });
+
+    var $sidebarArrow = $('.m1wsm2');
+
+    // Sidebar navigation arrows
+
+    $sidebarArrow.click(function() {
+      //alert("hi");
+        
+         $('.sub-menu1').removeClass('active1');
+          $('.submenu2').toggleClass('active2');
+
+    });
+
+});

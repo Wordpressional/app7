@@ -1,29 +1,39 @@
 <div class="mbody">
 	<div class="container">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 col-lg-12 col-sm-12">
 	<div id="mpollogo" class="boxmpoltheme1" style="padding-top:17px;padding-left: 20px;">
 <span class="editmpoltheme1">edit</span>
 <span class="savempoltheme1">save</span>
 <input type='file' id="imageUploadmpoltheme1" accept=".png, .jpg, .jpeg" />
 <label class="imageUploadmpoltheme1" for="imageUploadmpoltheme1">&nbsp;</label>
-<div class="col-md-7" style="float:left;">
+<div class="col-md-7 col-lg-7 col-sm-7" style="float:left;">
 <a href="{{ url('/') }}">
 <img id="imagePreviewmpoltheme1" src="{{ asset('img/pwalogo.png')}}" alt="" title="" style="padding-bottom:20px;"/>
 </a>
 </div>
 
-<div  class="col-md-3 who"><span style="padding-top:17px;"><a href="/contact" title="1-866-991-2631"><img src="{{ asset('images/svg/ic-phone.svg') }}" alt="" style="height: 20px;">&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"><a   style="color:white;">Who We Are</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"><a href="{{ route('demologin') }}" style="color:white;">Sign In</a></span></div>
+<div  class="col-md-5 col-lg-3 col-sm-12 who"><span style="padding-top:17px;"><a href="/contact" title="1-866-991-2631"><img src="{{ asset('images/svg/ic-phone.svg') }}" alt="" style="height: 20px;">&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"><a   style="color:white;">Who We Are</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"><a href="{{ route('demologin') }}" style="color:white;">Sign In</a></span></div>
 </div>
 
 
+<div class="natoggle-button">
+<div class="wrapper">
+<div class="menu-bar menu-bar-top"></div>
+<div class="menu-bar menu-bar-middle"></div>
+<div class="menu-bar menu-bar-bottom"></div>
+</div>
+</div>
 
 <div id="menu-wrapper">
 
+ <div class="menu-sidebar">
+
 	<ul class="mnav">
-		<li>
-			<a  href="#pyshop">Shop PWA Templates</a>
-			<div class="whitebk">
+		<li class="m1wsm1">
+			<a  href="#pyshop">Shop PWA Templates  <span class="sidebar-menu-arrow">&nbsp;</span></a>
+			
+			<div class="whitebk sub-menu1">
 				<div class="mnav-column one">
 					<h3 class="orange">PWA Static HTML Templates</h3>
 					<ul>
@@ -92,9 +102,10 @@
 		</li>
 		<li><a  href="#pyabout">About PWA Software</a></li>
 		<li><a  href="#pypricing">Pricing</a></li>
-		<li>
-			<a  href="#pyfeatures">Features of PWA Software</a>
-			<div  class="whitebk" >
+		<li class="m1wsm2">
+			<a  href="#pyfeatures">Features of PWA Software  <span class="sidebar-menu-arrow">&nbsp;</span></a>
+
+			<div  class="whitebk submenu2" >
 				
 
 				<div class="mnav-column one">
@@ -194,8 +205,14 @@
 		</li>
 	</ul>
 
-      </div>
+      
+  	</div>
     </div>
+
+		
+
    </div>
  </div>
 </div>
+</div>
+

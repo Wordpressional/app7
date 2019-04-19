@@ -6,7 +6,7 @@
 		<center><h3 class="myblue"><b> Need Help? </b></h3></center>
 		<br /><br />
 		</div>
-		</div>
+		
 	<div class="wp-support-section odd wp-support-section-highlight">
 			<img src="{{ asset('images/start.png') }}" class="support-illustration">
 			<h3>Start</h3>
@@ -28,7 +28,7 @@
 			<a href="/customize/" class="section-button button-secondary">Show Me How</a>
 		</div>
 
-		
+	</div>	
 	</div>
 
 </div>

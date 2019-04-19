@@ -27,6 +27,7 @@
 
 <div class="copyright">
   <div class="container">
+    <div class="row">
     <div class="col-md-6 col-sm-12">
       <p>© 2019 - All Rights with Pyrumas</p>
     </div>
@@ -40,5 +41,6 @@
         <li><a href="http://webenlance.com">Site Map</a></li>
       </ul>
     </div>
+  </div>
   </div>
 </div>

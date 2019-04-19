@@ -14,9 +14,9 @@
 <div class="container">
 	<div class="row">
 
-<div class="col-md-3">
+<div class="col-lg-4 col-md-6 col-sm-11">
 <ul id="filters" class="clearfix">
-	<li><span class="filter active" data-filter=".{{ $cat1->slug }}, .{{ $cat2->slug }}, .{{ $cat3->slug }}, .{{ $cat4->slug }}, .{{ $cat5->slug }}, .{{ $cat6->slug }}, .{{ $cat7->slug }}, .{{ $cat8->slug }}, .{{ $cat9->slug }}">All</span></li>
+	<li><span class="filter" data-filter=".{{ $cat1->slug }}, .{{ $cat2->slug }}, .{{ $cat3->slug }}, .{{ $cat4->slug }}, .{{ $cat5->slug }}, .{{ $cat6->slug }}, .{{ $cat7->slug }}, .{{ $cat8->slug }}, .{{ $cat9->slug }}">All</span></li>
 	<li><span class="filter active" data-filter=".pwa">{{ $cat0->name }}</span></li>
 	
 	<li><span class="filter" data-filter=".{{ $cat1->slug }}">{{ $cat1->name }}</span></li>
@@ -30,7 +30,7 @@
 	<li><span class="filter" data-filter=".{{ $cat9->slug }}">{{ $cat9->name }}</span></li>
 </ul>
 </div>
-<div class="col-md-9">
+<div class="col-lg-8 col-md-6 col-sm-11">
 <div id="portfoliolist">
 
 	 @if($cat0->products->isNotEmpty())

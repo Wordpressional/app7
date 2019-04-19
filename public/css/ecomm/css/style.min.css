@@ -4073,7 +4073,19 @@ color: #0e3c88;
 .ecartnatheme1 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
+
+@media (max-device-width: 980px) and (orientation: landscape) {
+
+  .col-md-4.princing-item {
+    max-width: 100% !important;
+    /* width: 100% !important; */
+    flex: 100% !important;
+    margin-top: 20px;
+}
+}
 @media (max-device-width: 480px) and (orientation: landscape) {
+
+
  .ecartnatheme1  .navbar-fixed-top .navbar-collapse,
  .ecartnatheme1  .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px;
@@ -10259,7 +10271,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  .icon { float:left; margin-right:5px;}
  
  
- .copyright { min-height:70px; background-color:#003C60; font-family: "Poppins", sans-serif !important;}
+ .copyright { height:4em; background-color:#003C60; font-family: "Poppins", sans-serif !important;}
  .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
  .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
  .post p { font-size:12px; color:#FFF; line-height:20px;}
