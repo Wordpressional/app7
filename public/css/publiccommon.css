@@ -818,7 +818,8 @@ and (orientation : landscape) {
  top:50px !important;
  opacity: 1;
   visibility: visible;
-  overflow: visible;
+      margin-bottom: 50px;
+  
 }
   
 }
@@ -840,7 +841,7 @@ and (orientation : landscape) {
  top:50px !important;
  opacity: 1;
   visibility: visible;
-  overflow: visible;
+  
 }
   
 }
@@ -861,7 +862,7 @@ and (orientation : portrait) {
  top:150px !important;
  opacity: 1;
   visibility: visible;
-  overflow: visible;
+  
 }
   
 }
@@ -883,7 +884,7 @@ and (orientation : portrait) {
  top:150px !important;
  opacity: 1;
   visibility: visible;
-  overflow: visible;
+  
 }
   
 }
@@ -11106,7 +11107,7 @@ span.icon-cog {
 
 .sub-menu1.active1, .submenu2.active2{
  position: absolute;
- top:20px !important;
+ top:20px;
  opacity: 1;
   visibility: visible;
   
