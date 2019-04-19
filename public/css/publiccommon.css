@@ -813,7 +813,13 @@ and (orientation : landscape) {
   #portfoliolist .portfolio {
   width: 90% !important;
   }
-
+.sub-menu1.active1, .submenu2.active2{
+ position: relative !important;
+ top:50px !important;
+ opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
   
 }
 
@@ -828,8 +834,60 @@ and (orientation : landscape) {
   #portfoliolist .portfolio {
   width: 80% !important;
   }
+
+  .sub-menu1.active1, .submenu2.active2{
+ position: relative !important;
+ top:50px !important;
+ opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
   
 }
+
+@media only screen 
+and (min-device-width : 50px) 
+and (max-device-width : 1250px) 
+and (orientation : portrait) { 
+  #filters li span.active:after
+  {
+    right: 0.1em !important;
+  }
+  #portfoliolist .portfolio {
+  width: 90% !important;
+  }
+.sub-menu1.active1, .submenu2.active2{
+ position: relative !important;
+ top:150px !important;
+ opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
+  
+}
+
+@media only screen 
+and (min-device-width : 50px) 
+and (max-device-width : 550px) 
+and (orientation : portrait) { 
+  #filters li span.active:after
+  {
+    right: 4px !important;
+  }
+  #portfoliolist .portfolio {
+  width: 80% !important;
+  }
+
+  .sub-menu1.active1, .submenu2.active2{
+ position: relative !important;
+ top:150px !important;
+ opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
+  
+}
+
 
 @media (max-width: 550px) and (min-width: 50px){
 
