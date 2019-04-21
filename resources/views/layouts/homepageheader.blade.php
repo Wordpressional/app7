@@ -9,13 +9,14 @@
        
       
  
-@include('layouts.compscripts.general')
+  @include('layouts.compscripts.general')
  
 
 
  
-   @include('layouts.compscripts.themeone')
+  @include('layouts.compscripts.themeone')
   @yield('scripts')
-    @include('layouts.compscripts.serviceworker')
+  @include('layouts.compscripts.serviceworker')
+  
     </body>       
 </html>

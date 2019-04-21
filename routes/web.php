@@ -246,6 +246,8 @@ Route::get('index3', 'HomeController@index3')->name('index3');
 Route::get('index4', 'HomeController@index4')->name('index4');
 Route::get('shopthemes', 'HomeController@shopthemes')->name('shopthemes');
 
+Route::get('subscribenow', 'HomeController@subscribenow')->name('subscribenow');
+
     Route::group(['middleware' => ['checkout']], function () {
 
         Route::namespace('Payments')->group(function () {
@@ -457,3 +459,8 @@ Route::post('demo_password/reset',[
     'as' => 'demo.password.resetd'
 
     ]);
+
+
+Route::post('newsletter-subscriptions-fe', 'NewsletterSubscriptionController@store')->name('nfestore');
+
+Route::post('newsletter-subscriptions-fecheck', 'NewsletterSubscriptionController@check')->name('nfecheck');

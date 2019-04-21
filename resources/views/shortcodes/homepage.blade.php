@@ -3,9 +3,6 @@
 
 @section('content')
 
-     
-      @include('cadmin.includes.errors')
-
 
 <div id="previewtest">
    

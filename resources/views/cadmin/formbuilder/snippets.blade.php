@@ -828,12 +828,11 @@
 
 
 
-<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/subscribe_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">
 
-@include('shortcodes.plainhtml.subscribenow')
-  
+<div data-type="component-x" data-preview="{{asset('examples/snippets/preview/subscribe_ecl1.jpg')}}" data-keditor-title="dynamic" data-keditor-categories="Shop Themes Layout - ECL1">
+
+ <div data-dynamic-href="{{url('subscribenow')}}"></div>
 </div>
-
 
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/help_ecl1.jpg')}}" data-keditor-title="text" data-keditor-categories="Shop Themes Layout - ECL1">

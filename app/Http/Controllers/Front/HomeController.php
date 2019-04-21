@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Front;
 
 use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
 use App\Shop\Products\Repositories\Interfaces\ProductRepositoryInterface;
+use App\Http\Traits\SettingsTrait;
 
 class HomeController
 {
+    use SettingsTrait;
     /**
      * @var CategoryRepositoryInterface
      */
@@ -209,4 +211,10 @@ class HomeController
         return view('front.index', compact('cat1', 'cat2'));
     }
     
+    public function subscribenow()
+    {
+         $data = $this->settingsAll();
+
+        return view('shortcodes.plainhtml.subscribenow', compact('data'));
+    }
 }

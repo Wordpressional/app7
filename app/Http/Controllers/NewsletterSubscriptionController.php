@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Validator;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
 
 class NewsletterSubscriptionController extends Controller
 {
@@ -19,9 +21,26 @@ class NewsletterSubscriptionController extends Controller
      */
     public function store(NewsletterSubscriptionRequest $request)
     {
+         //return $request->validated();
         $newsletterSubscription = NewsletterSubscription::create($request->validated());
 
-        return back()->withSuccess(__('newsletter.created'));
+      
+        //return "success";
+        //return back()->withSuccess(__('newsletter.created'));
+        return Redirect::to(URL::previous() . "#pysubscribe");
+        //Session::flash('success', __('newsletter.created'));
+        //return redirect()->back()->withErrors($request->validated());
+    }
+
+    public function check(Request $request)
+    {
+         //return $request->validated();
+        $myemail = NewsletterSubscription::where('email', $request->email)->first();
+
+        if($myemail){
+            return "present";
+        }
+        return "no";
     }
 
     /**
@@ -38,7 +57,7 @@ class NewsletterSubscriptionController extends Controller
 
         if ($validator->fails()) {
             $errors = $validator->errors()->all();
-            $route = 'login';
+            $route = 'mylogin';
 
             if (Auth::check()) {
                 $route = 'home';
