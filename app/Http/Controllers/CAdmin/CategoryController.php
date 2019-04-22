@@ -40,13 +40,15 @@ class CategoryController extends Controller
          if(Auth::guard('demo')->user())
          {
           $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+          $uall = User::with('roles')->where('name', Auth::guard('demo')->user()->name)->first();
          } 
          else 
          {
             $thisuser = User::where('email', Auth::user()->email)->first();
+            $uall = User::with('roles')->where('name', Auth::user()->name)->first();
          }
          if($thisuser->isDemo() == "yes") {
-        $uall = User::with('roles')->where('name', Auth::guard('demo')->user()->name)->first();
+        
         //dd($uall);
          $catall = Blogcategory::whereIn('createdby', [$uall->id, 'nil'])->withTrashed()->latest()->paginate(10);
          } else {

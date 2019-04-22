@@ -6,6 +6,8 @@ use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
 use App\Shop\Products\Repositories\Interfaces\ProductRepositoryInterface;
 use App\Http\Traits\SettingsTrait;
 use Auth;
+use App\User;
+
 
 class HomeController
 {
@@ -238,4 +240,14 @@ class HomeController
         }
         
     }
+
+    public function demologine1()
+    {     
+
+        $user = User::where('email', Auth::guard('checkout')->user()->email)->first();
+        Auth::loginUsingId($user->id, true);
+        return redirect()->route('demo.dashboard');
+    }
+
+    
 }

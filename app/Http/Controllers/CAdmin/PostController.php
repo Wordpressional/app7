@@ -29,20 +29,22 @@ class PostController extends Controller
          if(Auth::guard('demo')->user())
          {
           $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+          $tuser = Auth::guard('demo')->user()->displayname;
+           
+            //$thisuser = User::where('email', Auth::user()->email)->first();
          } 
          else 
          {
             $thisuser = User::where('email', Auth::user()->email)->first();
+            $tuser = Auth::user()->displayname;
          }
         if($thisuser->isDemo() == "yes") {
-            $tuser = Auth::guard('demo')->user()->displayname;
+           
             $post = Post::where('createdby', $thisuser->id)->withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(10);
         }
         else
         {
-            $tuser = Auth::user()->displayname;
-           
-            $thisuser = User::where('email', Auth::user()->email)->first();
+            
             if($thisuser->isSuperadministrator() == "yes") {
       
             $post = Post::withCount('comments', 'likes')->with('author','category')->withTrashed()->latest()->paginate(10);

@@ -11,6 +11,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\User;
+use App\Role;
 
 class CartRegisterController extends Controller
 {
@@ -81,11 +83,11 @@ class CartRegisterController extends Controller
             'password' => $request->password,
         ]);
 
-        $role = Role::where('name', 'cust_demo');
+        $role = Role::where('name', 'cust_demo')->first();
         $user->roles()->attach($role, ['user_type'=>'App/User']);
 
         
-        $customer->users()->attach($user);
+        $customer->users()->attach($user->id);
         
         return redirect()->route('cart.custe1login');
     }

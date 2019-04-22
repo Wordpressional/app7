@@ -425,6 +425,12 @@ class UserController extends Controller
                                         })->latest()->paginate(10);
          }
 
+          if($user->isDemo() == "yes") {
+          $users = User::whereHas('roles', function($q){
+            $q->where('name', 'like', 'cust_demo' . '%');
+                                        })->latest()->paginate(10);
+         }
+
         return view('cadmin.authors.index', [
             'data' => $data,
             'users' => $users,
@@ -458,6 +464,10 @@ class UserController extends Controller
           $roles = Role::all();
          }
 
+         if($thisuser->isDemo() == "yes") {
+           $roles = Role::where('name', 'cust_demo')->get();
+         }
+
        
         $data = $this->brandsAll();
         return view('cadmin.authors.edit', [
@@ -479,6 +489,10 @@ class UserController extends Controller
         elseif($thisuser->isCMSAdmin() || $thisuser->isSAdmin())
         { 
             $roles = Role::where('name', 'like', 'cms_' . '%')->get();
+        }
+        elseif($thisuser->isDemo())
+        { 
+            $roles = Role::where('name', 'like', 'cust_demo' . '%')->get();
         }
         
         else
@@ -700,16 +714,32 @@ class UserController extends Controller
     public function profile()
     {
         
-        $user = User::where('id', Auth::guard('demo')->id())->first();
+        if(Auth::guard('demo')->user())
+         {
+           $user = User::where('id', Auth::guard('demo')->user()->id)->first();
+         } 
+         else 
+         {
+             $user = User::where('id', Auth::user()->id)->first();
+         }
        //dd($user);
+         if(Auth::guard('demo')->user())
+         {
+           $thisuser = User::with('roles')->where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+             $thisuser = User::with('roles')->where('email', Auth::user()->email)->first();
+         }
+
         if($user->isDemo() == "yes" ) {
 
-            $thisuser = User::with('roles')->where('email', Auth::guard('demo')->user()->email)->first();
+            //$thisuser = User::with('roles')->where('email', Auth::guard('demo')->user()->email)->first();
             $data = $this->demoAll();
         } 
         else
         {
-            $thisuser = User::with('roles')->where('email', Auth::user()->email)->first();
+            
             $data = $this->brandsAll();
 
         }

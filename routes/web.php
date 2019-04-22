@@ -231,11 +231,15 @@ Route::post('cart/register', 'CartRegisterController@register')->name('cart.regi
     Route::get('demologin', 'DemoPortalLoginController@showLoginForm')->name('demologin');
     Route::post('demologin', 'DemoPortalLoginController@demologin')->name('demologinp');
 
+
 });
 
 
 
+
 Route::namespace('Front')->group(function () {
+
+    Route::get('demologine1', 'HomeController@demologine1')->name('demologine1');
 //Route::get('/123', 'WebhomeFrontController@frontpage')->name('home');
 //Route::post('/123', 'WebhomeFrontController@frontpage')->name('home');
     //Route::get('/', 'HomeController@index')->name('home');

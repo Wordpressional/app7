@@ -163,9 +163,18 @@ class ShowDashboard extends Controller
 
     public function demoindex()
     {
+
+        if(Auth::guard('demo')->user())
+         {
+           $user = User::where('id', Auth::guard('demo')->user()->id)->first();
+         } 
+         else 
+         {
+             $user = User::where('id', Auth::user()->id)->first();
+         }
         
-        
-        $user = User::where('id', Auth::guard('demo')->id())->first();
+        //dd(Auth::guard('checkout')->user()->email);
+       
        //dd($user);
         if($user->isDemo() == "yes" ) {
             $data = $this->demoAll();
