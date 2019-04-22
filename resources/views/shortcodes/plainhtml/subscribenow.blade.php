@@ -35,7 +35,7 @@
     <div class="box no-border stylesuccess" style="display: none;">
     <div class="box-tools">
         <p class="alert alert-success s">
-            Successfully added email
+            {{  __('newsletter.created') }}
             <button type="button" class="close" aria-label="Close"></button>
         </p>
     </div>
