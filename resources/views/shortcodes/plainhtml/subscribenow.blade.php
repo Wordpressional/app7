@@ -54,7 +54,7 @@
                     <div class="shape7"></div>
                     
                     <div class="float">
-
+                        <meta name="csrf-token" content="{{ csrf_token() }}">
                         <form class="form" action="{{ route('nfestore') }}" method="post" id="subscribenow">
                             <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
                             
@@ -96,7 +96,11 @@
                     return false;
                 }
 
-               
+                $.ajaxSetup({
+                headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+                });
                 
                 var url = e.target.action;  // get the target
                 var formData = $(this).serialize() // get form data

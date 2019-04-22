@@ -460,7 +460,17 @@ Route::post('demo_password/reset',[
 
     ]);
 
+Route::post('newsletter-subscriptions-fe',[
 
-Route::post('newsletter-subscriptions-fe', 'NewsletterSubscriptionController@store')->name('nfestore');
+    'uses' => 'NewsletterSubscriptionController@store',
+    'as' => 'nfestore'
 
-Route::post('newsletter-subscriptions-fecheck', 'NewsletterSubscriptionController@check')->name('nfecheck');
+    ]);
+
+Route::post('newsletter-subscriptions-fecheck',[
+
+    'uses' => 'NewsletterSubscriptionController@check',
+    'as' => 'nfecheck'
+
+    ]);
+
