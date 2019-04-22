@@ -70,6 +70,26 @@ class CartRegisterController extends Controller
         return redirect()->route('accounts');
     }
 
+    public function registere1(RegisterCustomerRequest $request)
+    {
+        $customer = $this->create($request->except('_method', '_token'));
+        //Auth::login($customer);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+
+        $role = Role::where('name', 'cust_demo');
+        $user->roles()->attach($role, ['user_type'=>'App/User']);
+
+        
+        $customer->users()->attach($user);
+        
+        return redirect()->route('cart.custe1login');
+    }
+
      public function cartregister()
     {        
          return view('auth.cart.register');

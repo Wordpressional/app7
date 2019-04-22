@@ -11,6 +11,7 @@ use Laravel\Cashier\Billable;
 use Nicolaslopezj\Searchable\SearchableTrait;
 //Notification for Seller
 use App\Notifications\CartResetPasswordNotification;
+use App\User;
 
 
 
@@ -81,8 +82,13 @@ class Customer extends Authenticatable
     }
 
     //Send password reset notification
-  public function sendPasswordResetNotification($token)
-  {
-      $this->notify(new CartResetPasswordNotification($token));
-  }
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new CartResetPasswordNotification($token));
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class)->withTimestamps();
+    }
 }

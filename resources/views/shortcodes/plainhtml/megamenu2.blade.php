@@ -13,7 +13,7 @@
 </a>
 </div>
 
-<div  class="col-md-5 col-lg-3 col-sm-12 who"><span style="padding-top:17px;"><a href="/contact" title="1-866-991-2631"><img src="{{ asset('images/svg/ic-phone.svg') }}" alt="" style="height: 20px;">&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"><a   style="color:white;">Who We Are</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"><a href="{{ route('demologin') }}" style="color:white;">Sign In</a></span></div>
+<div  class="col-md-5 col-lg-3 col-sm-12 who"><span style="padding-top:17px;"><a href="/contact" title="1-866-991-2631"><img src="{{ asset('images/svg/ic-phone.svg') }}" alt="" style="height: 20px;">&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"><a href="{{ url('/landingsitepage/py-who-we-are') }}"  style="color:white;">Who We Are</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="padding-top:17px;"> <a href="{{ route('customere1login') }}" style="color:white;"><i class="fa fa-sign-in">&nbsp;</i></a></span></div>
 </div>
 
 

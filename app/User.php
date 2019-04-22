@@ -8,6 +8,7 @@ use Laratrust\Traits\LaratrustUserTrait ;
 use App\User;
 use App\Http\Traits\BrandsTrait;
 use App\Http\Traits\DemoTrait;
+use App\Shop\Customers\Customer;
 
 
 use App\Notifications\ResetPasswordNotification;
@@ -423,10 +424,14 @@ class User extends Authenticatable
        return false;
     }
 
-  public function sendPasswordResetNotification($token)
-  {
-      $this->notify(new ResetPasswordNotification($token));
-  }
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
+    }
 
+    public function customers()
+    {
+        return $this->belongsToMany(Customer::class)->withTimestamps();
+    }
   
 }

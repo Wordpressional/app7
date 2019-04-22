@@ -224,7 +224,7 @@ Route::post('cart/register', 'CartRegisterController@register')->name('cart.regi
     Route::post('cart/custe1login', 'Carte1LoginController@login')->name('cart.custe1login');
     Route::get('logout', 'CartLoginController@logout');
     Route::get('cart/custe1reg', 'CartRegisterController@cartregistere1form')->name('cart.custe1reg');
-   Route::post('cart/registere1', 'CartRegisterController@register')->name('cart.registere1');
+   Route::post('cart/registere1', 'CartRegisterController@registere1')->name('cart.registere1');
 
 
     
@@ -247,6 +247,8 @@ Route::get('index4', 'HomeController@index4')->name('index4');
 Route::get('shopthemes', 'HomeController@shopthemes')->name('shopthemes');
 
 Route::get('subscribenow', 'HomeController@subscribenow')->name('subscribenow');
+Route::get('theme_megamenu', 'HomeController@theme_megamenu')->name('theme_megamenu');
+Route::get('customere1login', 'HomeController@customere1login')->name('customere1login');
 
     Route::group(['middleware' => ['checkout']], function () {
 

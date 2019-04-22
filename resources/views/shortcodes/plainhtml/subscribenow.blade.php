@@ -64,7 +64,7 @@
                                 
                             </div>
                             
-                            <div class="form-group">
+                            <div class="form-group subtitle">
                                 <input type="submit" name="subscribe" class="btn btn-info btn-md subscribenow" value="Subscribe Now">
                             </div>
                         </form>
@@ -78,9 +78,10 @@
 <script>
      $(function() {
                 $('.box.styleerror').hide();
-                 $('.box.styleerror2').hide();
-                 $('.box.stylesuccess').hide();
+                $('.box.styleerror2').hide();
+                $('.box.stylesuccess').hide();
           
+                
          
             $('#subscribenow').submit(function(e) {
                  $('.box.styleerror').hide();

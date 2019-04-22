@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
 use App\Shop\Products\Repositories\Interfaces\ProductRepositoryInterface;
 use App\Http\Traits\SettingsTrait;
+use Auth;
 
 class HomeController
 {
@@ -216,5 +217,25 @@ class HomeController
          $data = $this->settingsAll();
 
         return view('shortcodes.plainhtml.subscribenow', compact('data'));
+    }
+
+    public function theme_megamenu()
+    {
+        $data = $this->settingsAll();
+        return view('shortcodes.plainhtml.megamenu2', compact('data'));
+    }
+
+    public function customere1login()
+    {
+        Auth::logout();
+        if(!auth::guard('checkout')->check())
+        {
+            return redirect()->route('cart.custe1login');
+        }
+        else
+        {
+            return redirect()->route('accountse1');
+        }
+        
     }
 }
