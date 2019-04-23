@@ -24,7 +24,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
-
+use App\Custtheme;
 
 class ThemeController extends Controller
 {
@@ -64,10 +64,31 @@ class ThemeController extends Controller
         $themebjptwo = view('cadmin.themes.bjpthemetwoa')->render();
         $themebjpthree = view('cadmin.themes.bjpthemethreepk')->render();
         
-        
+         if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+
+
+
+        if($thisuser->isDemo() == "yes") {
+
+          $themef = Form::where('formname', "Demo_Page_".$thisuser->id)->first();
+          $widgetid = $themef->id;
+
+          $custthemes = Custtheme::where('custid', $thisuser->id)->get();
+          //dd($custthemes);
+            return view('cadmin.themes.loadcusttheme',compact('custthemes','data','user','widgetid'));
+           
+         } 
 
         return view('cadmin.themes.loadtheme',compact('themeone', 'themetwo','themethree','themefour','themefive','themesix','themeseven','themebjpone','themebjptwo','themebjpthree','themes','data','user'));
     }
+
      /**
      * Show the form for creating a new resource.
      *
@@ -773,6 +794,67 @@ class ThemeController extends Controller
         return "success";
     }
 
+
+    public function activatecusttheme(Request $request)
+    {
+
+      //dd($request->tid);
+       if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+
+        $custthemes = Custtheme::where('custid', $thisuser->id)->get();
+
+        foreach($custthemes as $tf)
+        {
+
+        $tf->tstatus = "inactive";
+        $tf->save();
+
+        }
+        //$theme->tname = $request->ntname;
+        //$theme->tcontent = $request->newtheme;
+        $custtheme = Custtheme::where('custid', $thisuser->id)->where('id', $request->tid)->first();
+
+        $custtheme->tstatus = "active";
+        $custtheme->save();
+
+        $themef = Form::where('formname', "Demo_Page_".$thisuser->id)->first();
+
+        if($themef->formname == "Demo_Page_".$thisuser->id)
+        {
+
+        }
+        else
+        {
+        $formshortcode = new Form();
+        $formshortcode->formname = "Demo_Page_".$thisuser->id;
+        $formshortcode->shortcode = "demo".$thisuser->id;
+        $formshortcode->createdby = $thisuser->id;
+        $formshortcode->save();
+
+        }
+
+        
+
+
+        $themef = Form::where('formname', "Demo_Page_".$thisuser->id)->first();
+       
+        $themef->htmlcontent = $request->newtheme;
+
+        $themef->status = "active";
+        $themef->save();
+
+        
+       
+        return "success";
+    }
+
     public function Previewtheme(Request $request)
     {
         //dd($request->tid);
@@ -798,6 +880,63 @@ class ThemeController extends Controller
 
         $themef->status = "preview";
         $themef->save();
+
+        
+       
+        return "success";
+    }
+
+     public function Previewcusttheme(Request $request)
+    {
+
+      //dd($request->tid);
+        if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+
+        
+
+       
+        $custthemefs = Custtheme::where('custid', $thisuser->id)->get();
+
+        foreach($custthemefs as $tf)
+        {
+
+        $tf->tstatus = "inactive";
+        $tf->save();
+
+        }
+        $custtheme = Custtheme::where('custid', $thisuser->id)->where('id', $request->tid)->first();
+        //$theme->tname = $request->ntname;
+        //$theme->tcontent = $request->newtheme;
+
+        $custtheme->tstatus = "preview";
+        $custtheme->save();
+
+        $themef = Form::where('formname', "Demo_Page_".$thisuser->id)->first();
+
+        if($themef->formname == "Demo_Page_".$thisuser->id)
+        {
+
+        }
+        else
+        {
+
+        
+       
+        $themef->htmlcontent = $request->newtheme;
+
+        $themef->status = "preview";
+        $themef->save();
+        
+        }
+
+        
 
         
        
@@ -851,6 +990,55 @@ class ThemeController extends Controller
        
         return "success";
     }
+
+    public function deactivatecusttheme(Request $request)
+    {
+        //dd($request->tid);
+        if(Auth::guard('demo')->user())
+         {
+          $thisuser = User::where('email', Auth::guard('demo')->user()->email)->first();
+         } 
+         else 
+         {
+            $thisuser = User::where('email', Auth::user()->email)->first();
+         }
+
+        $custthemefs = Custtheme::where('custid', $thisuser->id)->get();
+
+        foreach($custthemefs as $tf)
+        {
+
+        $tf->tstatus = "inactive";
+        $tf->save();
+
+        }
+       $custtheme = Custtheme::where('custid', $thisuser->id)->where('id', $request->tid)->first();
+        //$theme->tname = $request->ntname;
+        //$theme->tcontent = $request->newtheme;
+
+        $custtheme->tstatus = "disabled";
+        $custtheme->save();
+
+        $custthemef = Form::where('formname', "Demo_Page_".$thisuser->id)->first();
+       //dd($custthemef);
+
+        if($custthemef->formname == "Demo_Page_".$thisuser->id)
+        {
+
+        }
+        else
+        {
+        $custthemef->htmlcontent = "";
+
+        $custthemef->status = "inactive";
+        $custthemef->save();
+        }
+        
+
+       
+        return "success";
+    }
+
 
     public function resettheme(Request $request)
     {

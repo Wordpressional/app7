@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use App\User;
 use App\Role;
+use App\Theme;
+use App\Custtheme;
 
 class CartRegisterController extends Controller
 {
@@ -86,6 +88,16 @@ class CartRegisterController extends Controller
         $role = Role::where('name', 'cust_demo')->first();
         $user->roles()->attach($role, ['user_type'=>'App/User']);
 
+        $mytheme = Theme::where('tname', 'Personal Theme - T2')->first();
+
+        $ctheme = new Custtheme;
+        $ctheme->tname = $mytheme->tname;
+        $ctheme->tcontent = $mytheme->tcontent;
+
+        $ctheme->tstatus = "inactive";
+        $ctheme->custid = $user->id;
+
+        $ctheme->save();
         
         $customer->users()->attach($user->id);
         

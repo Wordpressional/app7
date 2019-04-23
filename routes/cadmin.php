@@ -600,6 +600,36 @@ Route::post('/resettheme/',[
 ]);
 
 
+
+
+Route::post('/activatecusttheme/',[
+
+'uses' => 'ThemeController@activatecusttheme',
+'as' => 'activatecusttheme'
+
+]);
+
+Route::post('/previewcusttheme/',[
+
+'uses' => 'ThemeController@previewcusttheme',
+'as' => 'previewcusttheme'
+
+]);
+
+Route::post('/deactivatecusttheme/',[
+
+'uses' => 'ThemeController@deactivatecusttheme',
+'as' => 'deactivatecusttheme'
+
+]);
+
+
+
+
+
+
+
+
 Route::get('/widgeteditor',[
 
 

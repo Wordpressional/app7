@@ -9981,12 +9981,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     font-weight: 300;
 }
 
-.carttheme1 .ecartnatheme1 input,
-.carttheme1 .ecartnatheme1 input[type="text"],
-.carttheme1 .ecartnatheme1 input[type="email"],
-.carttheme1 .ecartnatheme1 input[type="password"],
-.carttheme1 .ecartnatheme1 textarea, .carttheme1 .ecartnatheme1 select {
-    border: 1px solid #0e3c88;
+.carttheme1 input,
+.carttheme1 input[type="text"],
+.carttheme1 input[type="email"],
+.carttheme1 input[type="password"],
+.carttheme1 textarea, .carttheme1  select {
+    border: 1px solid #0e3c88 !important;
     background: #fff;
     border-radius: 3px !important;
     color: #c4c4c4;

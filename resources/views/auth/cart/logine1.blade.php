@@ -3,7 +3,7 @@
 @section('content')
     <hr>
     <!-- Main content -->
-    <section class="container content">
+    <section class="container content cartptheme1">
         <div class="col-md-12">@include('layoutsecom.errors-and-messages')</div>
         <div class="col-md-4 col-md-offset-4">
             <h2>Login to your account</h2>
