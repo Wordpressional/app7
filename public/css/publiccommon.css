@@ -11070,11 +11070,23 @@ span.icon-cog {
   font-family: "Poppins", sans-serif !important;
   background: linear-gradient(110deg, #006FB2 60%, #1357af 60%);
   }
-  #menu-wrapper
-  {
-    margin:0 auto;position:relative;
-    left:0px;top:0px;
-  }
+
+.mbody1{
+margin:0;
+background: #006FB2;
+font-family: "Poppins", sans-serif !important;
+
+}
+
+.mnav {
+    margin-top: 0px !important;
+}
+
+#menu-wrapper
+{
+  margin:0 auto;position:relative;
+  left:0px;top:0px;
+}
 /* Reset */
 .mnav,
 .mnav a,
@@ -11938,7 +11950,7 @@ div#login-row input#email {
 }
 
 .nabutton-open .menu-bar-bottom {
-  transform: rotate(-45deg) translate(8px, -7px);
+  transform: rotate(-45deg) translate(-5px, -18px);
   transition: .5s;
 }
 

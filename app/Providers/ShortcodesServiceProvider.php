@@ -79,6 +79,8 @@ class ShortcodesServiceProvider extends ServiceProvider
         Shortcode::register('ftabbedmenulist', 'App\Shortcodes\MenuShortcode@ftabbedmenulist');
 
         Shortcode::register('ecommtheme1', 'App\Shortcodes\EcommerceShortcode@ecommtheme1');
+
+        Shortcode::register('thememegamenu', 'App\Shortcodes\EcommerceShortcode@thememegamenu');
         
 
         for($i=1;$i<=110;$i++){

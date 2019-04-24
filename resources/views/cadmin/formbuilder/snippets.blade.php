@@ -796,6 +796,12 @@
 
 <div data-type="component-text" data-preview="{{asset('examples/snippets/preview/menu_ecl1.jpg')}}" data-keditor-title="Mega Menus" data-keditor-categories="Mega Menus;Shop Themes Layout - ECL1">
 
+[thememegamenu]thememegamenu[/thememegamenu]
+  
+</div>
+
+<div data-type="component-text" data-preview="{{asset('examples/snippets/preview/menu_ecl1.jpg')}}" data-keditor-title="Mega Menus" data-keditor-categories="Mega Menus;Shop Themes Layout - ECL1">
+
 @include('shortcodes.plainhtml.megamenu2')
   
 </div>

@@ -3,9 +3,12 @@
 namespace App\Shortcodes;
 use App\Compbrand;
 use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
+use App\Http\Traits\SettingsTrait;
 
+   
 class EcommerceShortcode
 {
+     use SettingsTrait;
     /**
      * @var CategoryRepositoryInterface
      */
@@ -32,5 +35,11 @@ class EcommerceShortcode
         $cat2 = $this->categoryRepo->findCategoryById(3);
 
         return view('layoutsecom.front.menu', compact('cat1', 'cat2'));
+    }
+
+    public function thememegamenu($shortcode, $content, $compiler, $name, $viewData)
+    {
+        $data = $this->settingsAll();
+        return view('shortcodes.menus.megamenu2', compact('data'));
     }
 }
