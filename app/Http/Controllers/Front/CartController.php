@@ -91,6 +91,21 @@ class CartController extends Controller
         ]);
     }
 
+     public function cartp1()
+    {
+       //dd("l");
+        $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
+        $shippingFee = $this->cartRepo->getShippingFee($courier);
+
+        return view('front.carts.cartp1', [
+            'cartItems' => $this->cartRepo->getCartItemsTransformed(),
+            'subtotal' => $this->cartRepo->getSubTotal(),
+            'tax' => $this->cartRepo->getTax(),
+            'shippingFee' => $shippingFee,
+            'total' => $this->cartRepo->getTotal(2, $shippingFee)
+        ]);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -161,6 +176,33 @@ class CartController extends Controller
         return redirect()->route('cart.cart1')
             ->with('message', 'Add to cart successful');
     }
+
+     public function cartp1store(AddToCartRequest $request)
+    {
+        $product = $this->productRepo->findProductById($request->input('product'));
+
+        if ($product->attributes()->count() > 0) {
+            $productAttr = $product->attributes()->where('default', 1)->first();
+
+            if (isset($productAttr->sale_price)) {
+                $product->price = $productAttr->price;
+
+                if (!is_null($productAttr->sale_price)) {
+                    $product->price = $productAttr->sale_price;
+                }
+            }
+        }
+
+        $options = [];
+        
+
+        $this->cartRepo->addToCart($product, $request->input('quantity'), $options);
+        //dd($product);
+
+        return redirect()->route('cart.cartp1')
+            ->with('message', 'Add to cart successful');
+    }
+
 
     /**
      * Update the specified resource in storage.

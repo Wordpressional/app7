@@ -9,6 +9,8 @@ use App\Http\Controllers\Controller;
 use App\Shop\Orders\Order;
 use App\Shop\Orders\Transformers\OrderTransformable;
 use Auth;
+use App\Custtheme;
+use App\User;
 
 class AccountsController extends Controller
 {
@@ -77,10 +79,27 @@ class AccountsController extends Controller
 
         $addresses = $customerRepo->findAddresses();
 
+        $myorders =  $customerRepo->findOrders(['*'], 'created_at');
+
+        
+        $user = User::where('email', $customer->email)->first();
+         //dd($customer->email);
+        if($user)
+        {
+          $custtheme = Custtheme::where('custid', $user->id)->first();
+        }
+        else
+        {
+            $custtheme = null;
+        }
+        //dd($myorders);
+
         return view('front.accountse1', [
             'customer' => $customer,
             'orders' => $this->customerRepo->paginateArrayResults($orders->toArray(), 15),
-            'addresses' => $addresses
+            'addresses' => $addresses,
+            'myorders' => $myorders,
+            'custtheme' => $custtheme
         ]);
     }
 }

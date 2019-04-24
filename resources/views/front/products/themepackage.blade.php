@@ -18,7 +18,7 @@
                     @if(isset($category))
                     <li><a href="{{ route('front.ecommcategory.slug', $category->slug) }}">{{ $category->name }}</a></li>
                     @endif
-                    <li class="active">Product</li>
+                    <li class="active">Package</li>
                 </ol>
             </div>
         </div>

@@ -73,7 +73,7 @@ class ProductController extends Controller
         $images = $product->images()->get();
         $category = $product->categories()->first();
         $productAttributes = $product->attributes;
-
+        //dd($category);
         return view('front.products.themeproduct', compact(
             'product',
             'images',
@@ -81,5 +81,22 @@ class ProductController extends Controller
             'category',
             'combos'
         ));
+    }
+
+    public function packageshow(string $slug)
+    {
+        $product = $this->productRepo->findProductBySlug(['slug' => $slug]);
+        $images = $product->images()->get();
+        $category = $product->categories()->first();
+        $productAttributes = $product->attributes;
+        //dd($category);
+        return view('front.products.themepackage', compact(
+            'product',
+            'images',
+            'productAttributes',
+            'category',
+            'combos'
+        ));
+        
     }
 }

@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\DB;
 use App\Events\TestEvent;
 use App\Http\Traits\SettingsTrait;
 use Auth;
+use App\Custtheme;
+use App\Shop\Customers\Customer;
 
 class WebhomeController extends Controller
 {
@@ -280,6 +282,56 @@ class WebhomeController extends Controller
         $theme = Theme::where('tname', $request->name)->first();
         return view('cadmin.formbuilder.preview1cart')->with(['theme'=> $theme])->withShortcodes();
     }
+
+    public function createprofile(Request $request)
+    {
+        //dd("hi");
+        $customer = Customer::where('email', Auth::guard('checkout')->user()->email)->first();
+
+        $user = User::create([
+            'name' => $customer->name,
+            'email' => $customer->email,
+            'password' => bcrypt($customer->password),
+        ]);
+
+        $role = Role::where('name', 'cust_demo')->first();
+        $user->roles()->attach($role, ['user_type'=>'App/User']);
+
+        $mytheme = Theme::where('tname', 'Personal Theme - T2')->first();
+
+        $ctheme = new Custtheme;
+        $ctheme->tname = $mytheme->tname;
+        $ctheme->tcontent = $mytheme->tcontent;
+
+        $ctheme->tstatus = "inactive";
+        $ctheme->custid = $user->id;
+
+        $ctheme->save();
+        
+        $customer->users()->attach($user->id);
+        
+       return redirect()->back()->with('message', 'Demo Account Created Successfully');;
+      }
+
+    /*public function showprofile()
+    {
+         if(Auth::guard('checkout')->user())
+         {
+           $thisuser = User::with('roles')->where('email', Auth::guard('checkout')->user()->email)->first();
+         } 
+         else 
+         {
+             $thisuser = User::with('roles')->where('email', Auth::user()->email)->first();
+         }
+
+       
+            
+            $data = $this->settingsAll();
+
+        
+
+        return view('front.customers.profileform')->with(['data' =>$data, 'thisuser' => $thisuser]);
+    }*/
 
    
 }

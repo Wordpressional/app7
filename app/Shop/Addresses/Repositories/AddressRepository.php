@@ -40,8 +40,25 @@ class AddressRepository extends BaseRepository implements AddressRepositoryInter
      */
     public function createAddress(array $data) : Address
     {
+         
+
         try {
-            return $this->create($data);
+            //return $this->create($data);
+            $address = new Address();
+         $address->customer_id = (int) $data['customer'];
+         $address->alias = $data['alias'];
+         $address->address_1 = $data['address_1'];
+         $address->address_2 = $data['address_2'];
+         $address->country_id = (int) $data['country_id'];
+         $address->province_id = (int) $data['province_id'];
+         $address->city = $data['city'];
+         $address->zip = $data['zip'];
+         $address->status = $data['status'];
+         $address->save();
+
+        //dd($address);
+         return $this->model;
+
         } catch (QueryException $e) {
             throw new CreateAddressErrorException('Address creation error');
         }

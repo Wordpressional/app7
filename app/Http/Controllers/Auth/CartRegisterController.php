@@ -79,27 +79,6 @@ class CartRegisterController extends Controller
         $customer = $this->create($request->except('_method', '_token'));
         //Auth::login($customer);
 
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => $request->password,
-        ]);
-
-        $role = Role::where('name', 'cust_demo')->first();
-        $user->roles()->attach($role, ['user_type'=>'App/User']);
-
-        $mytheme = Theme::where('tname', 'Personal Theme - T2')->first();
-
-        $ctheme = new Custtheme;
-        $ctheme->tname = $mytheme->tname;
-        $ctheme->tcontent = $mytheme->tcontent;
-
-        $ctheme->tstatus = "inactive";
-        $ctheme->custid = $user->id;
-
-        $ctheme->save();
-        
-        $customer->users()->attach($user->id);
         
         return redirect()->route('cart.custe1login');
     }

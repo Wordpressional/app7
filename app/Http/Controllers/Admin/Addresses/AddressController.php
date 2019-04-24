@@ -54,6 +54,7 @@ class AddressController extends Controller
      */
     public function index(Request $request)
     {
+        //dd($request->all());
         $data = $this->ebrandsAll();
         $list = $this->addressRepo->listAddress('created_at', 'desc');
 
@@ -64,7 +65,8 @@ class AddressController extends Controller
         $addresses = $list->map(function (Address $address) {
             return $this->transformAddress($address);
         })->all();
-
+//dd($addresses);
+        //dd($this->transformAddress($list));
         return view('admin.addresses.list', ['addresses' => $this->addressRepo->paginateArrayResults($addresses),
             'data' => $data]);
     }
@@ -78,8 +80,15 @@ class AddressController extends Controller
     {
         $data = $this->ebrandsAll();
         $countries = $this->countryRepo->listCountries();
-        $country = $this->countryRepo->findCountryById(Auth::guard('checkout')->id());
-
+        
+        if(Auth::guard('checkout')->user())
+         {
+           $country = $this->countryRepo->findCountryById(Auth::guard('checkout')->id());
+         } 
+         else 
+         {
+             $country = $this->countryRepo->findCountryById(Auth::guard('employee')->id());
+         }
         $customers = $this->customerRepo->listCustomers();
 
         return view('admin.addresses.create', [
@@ -112,8 +121,9 @@ class AddressController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(int $id)
+    public function show($id)
     {
+        //dd($id);
         $data = $this->ebrandsAll();
         return view('admin.addresses.show', ['address' => $this->addressRepo->findAddressById($id),
             'data' => $data]);

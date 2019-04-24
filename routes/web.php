@@ -239,7 +239,7 @@ Route::post('cart/register', 'CartRegisterController@register')->name('cart.regi
 
 Route::namespace('Front')->group(function () {
 
-    Route::get('demologine1', 'HomeController@demologine1')->name('demologine1');
+Route::get('demologine1', 'HomeController@demologine1')->name('demologine1');
 //Route::get('/123', 'WebhomeFrontController@frontpage')->name('home');
 //Route::post('/123', 'WebhomeFrontController@frontpage')->name('home');
     //Route::get('/', 'HomeController@index')->name('home');
@@ -284,10 +284,10 @@ Route::get('customere1login', 'HomeController@customere1login')->name('customere
             Route::post('bank-transfer', 'BankTransferController@store')->name('bank-transfer.store');
         });
 
-        Route::namespace('Addresses')->group(function () {
-            Route::resource('country.state', 'CountryStateController');
-            Route::resource('state.city', 'StateCityController');
-        });
+        // Route::namespace('Addresses')->group(function () {
+        //     Route::resource('country.state', 'CountryStateController');
+        //     Route::resource('state.city', 'StateCityController');
+        // });
 
         Route::get('accountse1', 'AccountsController@indexe1')->name('accountse1');
         Route::get('checkoute1', 'CheckoutController@indexe1')->name('checkoute1.index');
@@ -309,7 +309,11 @@ Route::get('customere1login', 'HomeController@customere1login')->name('customere
 
     Route::get("/theme/{product}", 'ProductController@themeshow')->name('front.get.themeproduct');
 
+    Route::get("/mychoosen/{package}", 'ProductController@packageshow')->name('front.get.themepackage');
+
     Route::get("/my/cart1", 'CartController@cart1')->name('cart.cart1');
+
+    Route::get("/my/cartp1", 'CartController@cartp1')->name('cart.cartp1');
 
     Route::post("/my/cart1update", 'CartController@cart1update')->name('cart.cart1update');
 
@@ -335,6 +339,13 @@ Route::get('customere1login', 'HomeController@customere1login')->name('customere
 
     'uses' => 'CartController@cart1store',
     'as' => 'cart.cart1store'
+
+    ]);
+
+    Route::post('/my/cart1/storep1',[
+
+    'uses' => 'CartController@cartp1store',
+    'as' => 'cart.cartp1store'
 
     ]);
 
@@ -480,3 +491,13 @@ Route::post('newsletter-subscriptions-fecheck',[
 
     ]);
 
+Route::get('/demo/showprofile', 'WebhomeController@showprofile')->name('showprofile');
+
+Route::post('/demo/createprofile',[
+
+    'uses' => 'WebhomeController@createprofile',
+    'as' => 'createprofile'
+
+    ]);
+
+Route::get('/admin/address/list/index', 'Admin\Addresses\AddressController@index')->name('admin.addresses.index');

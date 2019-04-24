@@ -16,6 +16,7 @@ use App\Elemac;
 use Auth;
 use App\Http\Requests\CAdmin\UsersRequest;
 
+
 class UserController extends Controller
 {
     use BrandsTrait;
@@ -746,5 +747,7 @@ class UserController extends Controller
         //dd($thisuser->roles[0]->display_name);
         return view('cadmin.dashboard.profile')->with(['data' =>$data, 'thisuser' => $thisuser]);
     }
+
+    
 
 }

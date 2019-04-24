@@ -34,19 +34,19 @@ trait AddressTransformable
         $obj->zip = $address->zip;
         $obj->city = $address->city;
 
-        if (isset($address->province_id)) {
+        /*if (isset($address->province_id)) {
             $provinceRepo = new ProvinceRepository(new Province);
             $province = $provinceRepo->findProvinceById($address->province_id);
             $obj->province = $province->name;
         }
 
         $countryRepo = new CountryRepository(new Country);
-        $country = $countryRepo->findCountryById($address->country_id);
-        $obj->country = $country->name;
-
+        $country = $countryRepo->findCountryById($address->country_id);*/
+        //$obj->country = $country->name;
+/*
         $customerRepo = new CustomerRepository(new Customer);
-        $customer = $customerRepo->findCustomerById($address->customer_id);
-        $obj->customer = $customer->name;
+        $customer = $customerRepo->findCustomerById($address->customer_id);*/
+        //$obj->customer = $customer->name;
         $obj->status = $address->status;
 
         return $obj;

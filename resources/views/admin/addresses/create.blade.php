@@ -52,7 +52,7 @@
                                 <option value="{{ $city->id }}">{{ $city->name }}</option>
                             @endforeach
                         </select>-->
-                        <input type="text" name="city_id" id="city_id" placeholder="City" class="form-control" >
+                        <input type="text" name="city" id="city" placeholder="City" class="form-control" >
                     </div>
                     <div class="form-group">
                         <label for="zip">Zip Code </label>
