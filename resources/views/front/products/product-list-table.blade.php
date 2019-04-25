@@ -1,4 +1,75 @@
 @if(!$products->isEmpty())
+@if(app('request')->input('package') == "startup")
+ <table class="table table-striped">
+        <thead>
+        <th class="col-md-2 col-lg-2">Cover</th>
+        <th class="col-md-2 col-lg-5">Name</th>
+        
+        
+        <th class="col-md-2 col-lg-2">Price</th>
+        </thead>
+        <tfoot>
+        <tr>
+            <td class="bg-warning">Subtotal</td>
+            <td class="bg-warning"></td>
+            
+            <td class="bg-warning">{{config('cart.currency')}} {{ number_format($subtotal, 2, '.', ',') }}</td>
+        </tr>
+        <tr>
+            <td class="bg-warning">Shipping</td>
+            <td class="bg-warning"></td>
+           
+            <td class="bg-warning">{{config('cart.currency')}} <span id="shippingFee">{{ number_format(0, 2) }}</span></td>
+        </tr>
+        <tr>
+            <td class="bg-warning">Tax</td>
+            <td class="bg-warning"></td>
+            
+            <td class="bg-warning">{{config('cart.currency')}} {{ number_format($tax, 2) }}</td>
+        </tr>
+        <tr>
+            <td class="bg-success">Total</td>
+            <td class="bg-success"></td>
+            
+            <td class="bg-success">{{config('cart.currency')}} <span id="grandTotal" data-total="{{ $total }}">{{ number_format($total, 2, '.', ',') }}</span></td>
+        </tr>
+        </tfoot>
+        <tbody>
+        @foreach($cartItems as $cartItem)
+            <tr>
+                <td>
+                    <a href="{{ route('front.get.themepackage', [$cartItem->product->slug]) }}" class="hover-border">
+                        @if(isset($cartItem->cover))
+                            <img src="{{$cartItem->cover}}" alt="{{ $cartItem->name }}" class="img-responsive img-thumbnail">
+                        @else
+                            <img src="https://placehold.it/120x120" alt="" class="img-responsive img-thumbnail">
+                        @endif
+                    </a>
+                </td>
+                <td>
+                    <p>
+                        <strong>{{ $cartItem->name }}</strong> <br />
+                        @if($cartItem->options->has('combination'))
+                            @foreach($cartItem->options->combination as $option)
+                                <small class="label label-primary">{{$option['value']}}</small>
+                            @endforeach
+                        @endif
+                    </p>
+                    <hr>
+                    <div class="product-description">
+                        {!! $cartItem->product->description !!}
+                    </div>
+                </td>
+                
+                
+                <td>{{config('cart.currency')}} {{ number_format($cartItem->price, 2) }}</td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+
+@else
+
     <table class="table table-striped">
         <thead>
         <th class="col-md-2 col-lg-2">Cover</th>
@@ -85,6 +156,7 @@
         @endforeach
         </tbody>
     </table>
+    @endif
 @endif
 <script type="text/javascript">
     $(document).ready(function () {

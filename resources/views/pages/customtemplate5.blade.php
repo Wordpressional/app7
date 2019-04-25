@@ -8,6 +8,7 @@
 	
 
 @endsection
+
 @section('css')
 
 @if($page->ptitlecolor)

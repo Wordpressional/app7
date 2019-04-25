@@ -40,15 +40,16 @@
               <li><b>1</b> Progressive Web App Template for Desktop, Tablet, Mobile included</li>
               <li><b>Any </b> number of Static PWA Templates can be purchased and added to your account</li>
               <li><b>400 MB</b> of storage in your demo account</li>
-              <li><b>Drag and Drop</b> interface to customize your theme yourself from your demo account before downloading</li>
+              <li><b>Drag and Drop</b> interface to customize your landing page template yourself from your demo account before downloading</li>
                <li><b>Unlimited Pages</b> can be created using content editor - No coding knowledge required</li>
               <li><b>Free  </b>Support for sending mail from contact form</li>
-              <li><b>Preview and Download </b> Static PWA Templates from account and host it on any server of your choice</li>
+              <li><b>Preview and Download </b> Static PWA Templates from demo account and host it on any server of your choice</li>
               <li><b>Responsive Design</b> made with Bootstrap</li>
+              <li><b>Lets Encrypt</b> SSL https Certificate - to setup contact us</li>
               <li><b>1 free</b> Domain - to setup contact us</li>
               <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>
             </ul>
-            <a href="{{route('front.get.themepackage',['package'=>'startup'])}}" type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</a>
+            <a href="{{route('front.get.themepackage',['package'=>'startup'])}}" type="button" class="btn btn-lg btn-block  btn-custom ">Purchase Demo Account</a>
           </div>
         </div>
        
@@ -80,15 +81,16 @@
             <ul class="list-unstyled mb-5 position-relative">
               <li><b>1</b> Progressive Web App Template for Desktop, Tablet, Mobile included</li>
               <li><b>Any </b> number of Static or CMS or Ecommerce PWA Templates can be purchased and added to your account</li>
-              <li><b>600 MB </b> of storage in your demo account</li>
-              <li><b>Drag and Drop</b> interface to customize your theme yourself from your demo account before downloading</li>
+              <li><b>600 MB </b> of storage in your admin account</li>
+              <li><b>Drag and Drop</b> interface to customize your landing page template yourself from your admin account</li>
               <li><b>Unlimited Pages</b> can be created using content editor - No coding knowledge required</li>
-              <li><b>Preview and Download </b> Static or CMS or Ecommerce PWA Templates from account and host it on Digitalocean Cloud server</li>
+              <li><b>Preview and Download </b> Static or CMS or Ecommerce PWA Templates from admin account and host it on Digitalocean Cloud server</li>
               <li><b>Responsive Design</b> made with Bootstrap</li>
               <li><b>PWA Software</b> code is available for download</li>
+              <li><b>Lets Encrypt</b> SSL https Certificate </li>
               <li><b>Free </b>Support for installing this PWA Software on Digitalocean Cloud server</li>
-               <li><b>1 free</b> Domain - to setup contact us</li>
-               <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>
+               <li><b>1 free</b> Domain </li>
+               <li><b>1 free</b> Digital ocean droplet with 1GB storage space</li>
             </ul>
             <button type="button" class="btn btn-lg btn-block  btn-custom ">Contact Us</button>
           </div>
@@ -119,15 +121,16 @@
             <ul class="list-unstyled mb-5 position-relative">
               <li><b>1</b> Progressive Web App Template for Desktop, Tablet, Mobile included</li>
               <li><b>Any </b> number of Static or CMS or Ecommerce PWA Templates can be purchased and added to your account</li>
-              <li><b>1 GB </b> of storage in your demo account</li>
-              <li><b>Drag and Drop</b> interface to customize your theme yourself from your demo account before downloading</li>
+              <li><b>1 GB </b> of storage in your admin account</li>
+              <li><b>Drag and Drop</b> interface to customize your landing page template yourself from your admin account </li>
               <li><b>Unlimited Pages</b> can be created using content editor - No coding knowledge required</li>
-              <li><b>Preview and Download </b> Static or CMS or Ecommerce PWA Templates from account and host it on Digitalocean Cloud server</li>
+              <li><b>Preview and Download </b> Static or CMS or Ecommerce PWA Templates from admin account and host it on Digitalocean Cloud server</li>
               <li><b>Responsive Design</b> made with Bootstrap</li>
               <li><b>PWA Software</b> code is available for download</li>
+               <li><b>Lets Encrypt</b> SSL https Certificate </li>
               <li><b>Free </b>Support for installing this PWA Software on Digitalocean Cloud server</li>
-               <li><b>1 free</b> Domain - to setup contact us</li>
-              <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>
+               <li><b>1 free</b> Domain </li>
+              <li><b>1 free</b> Digital ocean droplet with 1GB storage space</li>
               <li><b>Customization</b> Based on initial Software Requirements provided by client is taken up by our technical experts</li>
             </ul>
             <button type="button" class="btn btn-lg btn-block  btn-custom ">Contact Us</button>

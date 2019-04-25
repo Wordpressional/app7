@@ -16,7 +16,7 @@
             	<div class="features-table">
                 	<ul>
                     	<h1>Basic Features</h1>
-                    	<li>Page Builder</li>
+                    	<li>Tailored Content</li>
 						<li>Scrollers</li>
 						<li>Single, 2 and 3 Level Menu</li>
 						<li>Sliders</li>

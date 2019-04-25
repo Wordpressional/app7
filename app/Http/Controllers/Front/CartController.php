@@ -19,6 +19,9 @@ use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
 use App\Shop\Orders\Repositories\Interfaces\OrderRepositoryInterface;
 use App\Shop\Customers\Repositories\Interfaces\CustomerRepositoryInterface;
 
+use App\User;
+use App\Custtheme;
+
 class CartController extends Controller
 {
     use ProductTransformable;
@@ -103,43 +106,76 @@ class CartController extends Controller
             $customer = $this->custRepo->findCustomerById(Auth::guard('checkout')->id());
 
             $startuppro = $this->productRepo->findProductBySlug(['slug' => 'start-up']);
-            //dd($startup);
-            $olist = $this->orderRepo->listOrders('created_at', 'desc')->where('customer_id', $customer->id)->where('product_id', $startuppro->id);
+            //dd($startuppro->id);
+            $olist = $this->orderRepo->listOrders('created_at', 'desc')->where('customer_id', $customer->id);
+
+            $user = User::where('email', $customer->email)->first();
+            //dd($user);
+            if(!$user)
+            {
+                $custtheme = null;
+            }
+            else
+            {
+            $custtheme = Custtheme::where('custid', $user->id)->first();
+            }
 
            
          //dd($olist);
        
          if(!$olist->isEmpty())
          {
+            
+            if($custtheme)
+            {
         
-        $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
-        $shippingFee = $this->cartRepo->getShippingFee($courier);
+                $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
+                $shippingFee = $this->cartRepo->getShippingFee($courier);
 
-        return view('front.carts.cart1', [
-            'cartItems' => $this->cartRepo->getCartItemsTransformed(),
-            'subtotal' => $this->cartRepo->getSubTotal(),
-            'tax' => $this->cartRepo->getTax(),
-            'shippingFee' => $shippingFee,
-            'total' => $this->cartRepo->getTotal(2, $shippingFee)
-        ]);
+                return view('front.carts.cart1', [
+                    'cartItems' => $this->cartRepo->getCartItemsTransformed(),
+                    'subtotal' => $this->cartRepo->getSubTotal(),
+                    'tax' => $this->cartRepo->getTax(),
+                    'shippingFee' => $shippingFee,
+                    'total' => $this->cartRepo->getTotal(2, $shippingFee)
+                ]);
+            }
+            else
+            {
+                $this->cartRepo->clearCart();
+                return redirect('/accountse1/?tab=profile')->with("message","Create Demo Account First");
+            }
         }
         else if($request->input('package') == "startup")
         {
-            $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
-            $shippingFee = $this->cartRepo->getShippingFee($courier);
+            
+            if(!$custtheme)
+            {
+                $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
+                $shippingFee = $this->cartRepo->getShippingFee($courier);
 
-        return view('front.carts.cart1', [
-            'cartItems' => $this->cartRepo->getCartItemsTransformed(),
-            'subtotal' => $this->cartRepo->getSubTotal(),
-            'tax' => $this->cartRepo->getTax(),
-            'shippingFee' => $shippingFee,
-            'total' => $this->cartRepo->getTotal(2, $shippingFee)
-        ]);
+            return view('front.carts.cart1', [
+                'cartItems' => $this->cartRepo->getCartItemsTransformed(),
+                'subtotal' => $this->cartRepo->getSubTotal(),
+                'tax' => $this->cartRepo->getTax(),
+                'shippingFee' => $shippingFee,
+                'total' => $this->cartRepo->getTotal(2, $shippingFee)
+            ]);
+            }
+            else
+            {
+                $this->cartRepo->clearCart();
+                
+            }
 
         } 
         else
         {
-            return redirect('/landingsitepage/pypricing')->with("message","hi");
+
+            $this->cartRepo->clearCart();
+
+           
+            return redirect('/landingsitepage/pypricing')->with("message","Select your Package");
         }
         }
         else
@@ -213,9 +249,8 @@ class CartController extends Controller
     {
      
        
-        
         $product = $this->productRepo->findProductById($request->input('product'));
-
+       
         if ($product->attributes()->count() > 0) {
             $productAttr = $product->attributes()->where('default', 1)->first();
 
@@ -238,15 +273,22 @@ class CartController extends Controller
             $options['combination'] = $attr->attributesValues->toArray();
         }
 
-        $this->cartRepo->addToCart($product, $request->input('quantity'), $options);
+            
         //dd($product);
         if($request->input('package') == "startup")
         {
+            $this->cartRepo->clearCart();
+             $this->cartRepo->addToCart($product, $request->input('quantity'), $options);
         return redirect()->route('cart.cart1', ['package' => 'startup'])
             ->with('message', 'Add to cart successful');
         }
         else
         {
+
+
+             $this->cartRepo->addToCart($product, $request->input('quantity'), $options);
+       
+
             return redirect()->route('cart.cart1')
             ->with('message', 'Add to cart successful');
         }

@@ -1,33 +1,8 @@
 <div class="ecartnatheme1 cartptheme1 row">
-    <div class="col-md-6">
+    <div class="col-md-8">
     	 <meta name="csrf-token" content="{{ csrf_token() }}">
-        <ul id="thumbnails" class="col-md-4 list-unstyled">
-            <li>
-                <a href="javascript: void(0)">
-                    @if(isset($product->cover))
-                    <img class="img-responsive img-thumbnail"
-                         src="{{ asset("storage/$product->cover") }}"
-                         alt="{{ $product->name }}" />
-                    @else
-                    <img class="img-responsive img-thumbnail"
-                         src="{{ asset('https://placehold.it/180x180') }}"
-                         alt="{{ $product->name }}" />
-                    @endif
-                </a>
-            </li>
-            @if(isset($images) && !$images->isEmpty())
-                @foreach($images as $image)
-                <li>
-                    <a href="javascript: void(0)">
-                    <img class="img-responsive img-thumbnail"
-                         src="{{ asset("storage/$image->src") }}"
-                         alt="{{ $product->name }}" />
-                    </a>
-                </li>
-                @endforeach
-            @endif
-        </ul>
-        <figure class="text-center product-cover-wrap col-md-8">
+        
+        <figure class="text-center product-cover-wrap col-md-12">
             @if(isset($product->cover))
                 <img id="main-image" class="product-cover img-responsive"
                      src="{{ asset("storage/$product->cover") }}?w=400"
@@ -38,15 +13,17 @@
             @endif
         </figure>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
         <div class="product-description">
         	
-            <h1>{{ $product->name }}
+            <h1>{{ $product->name }} Package
                 <small>{{ config('cart.currency') }} {{ $product->price }}</small>
+            
+            
             </h1>
 
-            <button type="submit" class="btn btn-primary cartpre"><i class="fa fa-eye"></i> Preview
-            </button>
+            <a href="{{url('/landingsitepage/startupfeatures')}}" class="btn btn-primary cartpre"><i class="fa fa-eye"></i> Features
+            </a>
             <br><br>
             <div class="description">{!! $product->description !!}</div>
             <div class="excerpt">
@@ -55,6 +32,9 @@
             <div class="row">
                 <div class="col-md-12">
                     @include('layoutsecom.errors-and-messages')
+                    
+                    <form action="{{ route('cart.cart1store', ['package'=>'startup']) }}" class="form-inline" method="post">
+                    
                     <form action="{{ route('cart.cart1store', ['package'=>'startup']) }}" class="form-inline" method="post">
                         {{ csrf_field() }}
                         @if(isset($productAttributes) && !$productAttributes->isEmpty())
@@ -75,16 +55,18 @@
                             </div><hr>
                         @endif
                         <div class="form-group">
-                            <input type="text"
+                            <input type="hidden"
                                    class="form-control"
                                    name="quantity"
                                    id="quantity"
                                    placeholder="Quantity"
-                                   value="{{ old('quantity') }}" />
+                                   value="1" />
                             <input type="hidden" name="product" value="{{ $product->id }}" />
                         </div>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-cart-plus"></i> Add to cart
+                        
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-cart-plus"></i> Buy this Account
                         </button>
+                        
                     </form>
                 </div>
             </div>
@@ -103,38 +85,7 @@
             });
         });
 
-		$(".cartpre").click(function(){
-
-			//alert("{{ $product->name }}");
-
-		  var datak = JSON.stringify({
-                _token:String($('meta[name="csrf-token"]').attr('content')),
-                name:String("{{ $product->name }}"),
-                
-            });
-			//alert(datak);
-			  $.ajax({
-			            headers: {
-			                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-			                  'Content-Type': 'application/json'
-			                  },
-
-			                url: "{{route('previewcartthemep')}}",
-			            datatype : "application/json",
-			            contentType: "json",
-			            
-			            type: 'post',
-			            data:  datak,
-			    
-			         success: function(data) {
-			          //alert("File Upadated successfully");
-			           //alert(data);
-			           window.location.href = "{{url('previewcarttheme')}}"+"/"+"{{ $product->name }}/?slug={{$product->slug}}";
-			         
-			        },
-			       
-			    });
-			});
+		
 		
     </script>
 @endsection

@@ -7,6 +7,12 @@ use App\Shop\Products\Repositories\Interfaces\ProductRepositoryInterface;
 use App\Http\Controllers\Controller;
 use App\Shop\Products\Transformations\ProductTransformable;
 
+use App\Shop\Customers\Customer;
+use App\User;
+use App\Custtheme;
+
+use Auth;
+
 class ProductController extends Controller
 {
     use ProductTransformable;
@@ -90,13 +96,44 @@ class ProductController extends Controller
         $category = $product->categories()->first();
         $productAttributes = $product->attributes;
         //dd($category);
-        return view('front.products.themepackage', compact(
+
+        if(auth::guard('checkout')->check())
+         {
+            $customer = Customer::where('id',Auth::guard('checkout')->id())->first();
+        
+        $user = User::where('email', $customer->email)->first();
+        //dd($user);
+        if(!$user)
+        {
+            $custtheme = null;
+        }
+        else
+        {
+            $custtheme = Custtheme::where('custid', $user->id)->first();
+        }
+        }
+        else
+        {
+           $notlogged = "false";
+        }
+        
+        if($custtheme || $notlogged == "false")
+        {
+                       
+            return redirect('/landingsitepage/pypricing')->with("message","You have already purchased this package");
+        } 
+        else
+        {
+            return view('front.products.themepackage', compact(
             'product',
             'images',
             'productAttributes',
             'category',
-            'combos'
-        ));
+            'combos',
+            'custtheme'
+            ));
+        }
+        
         
     }
 }
