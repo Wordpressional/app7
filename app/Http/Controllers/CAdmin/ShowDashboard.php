@@ -180,7 +180,7 @@ class ShowDashboard extends Controller
         //dd(Auth::guard('checkout')->user()->email);
        
        //dd($user);
-        if($user->isDemo() == "yes" ) {
+        if($user ) {
             $data = $this->demoAll();
             return view('cadmin.dashboard.index_demohome', [
                
