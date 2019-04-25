@@ -27,7 +27,7 @@
 <div role="tabpanel" class="tab-pane @if(request()->input('tab') == 'profile')active @endif" id="profile">
 {{$customer->name}} <br /><small>{{$customer->email}}</small>
 <br /><br />
-
+@if(!$orders->isEmpty())
 @if($myorders[0]->id)
 
 <a href="{{ route('demologine1') }}" class="btn btn-primary"> Demo Account Login </a>
@@ -39,7 +39,7 @@
 <input type="submit" class="btn btn-warning" value="Create Demo Account" />
 </form>
 
-
+@endif
 @endif
 </div>
 <div role="tabpanel" class="tab-pane @if(request()->input('tab') == 'orders')active @endif" id="orders">
