@@ -92,7 +92,7 @@ class AccountsController extends Controller
         {
             $custtheme = null;
         }
-        //dd($myorders);
+       // dd($custtheme);
 
         return view('front.accountse1', [
             'customer' => $customer,

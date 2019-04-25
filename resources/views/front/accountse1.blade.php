@@ -28,19 +28,20 @@
 {{$customer->name}} <br /><small>{{$customer->email}}</small>
 <br /><br />
 @if(!$orders->isEmpty())
-@if($myorders[0]->id)
 
-<a href="{{ route('demologine1') }}" class="btn btn-primary"> Demo Account Login </a>
+@if(!$myorders[0]->id)
 @else
-@endif
+<a href="{{ route('demologine1') }}" class="btn btn-primary"> Demo Account Login </a>
 
+@endif
+@if(!$custtheme->id)
 <form method="post" action="{{ route('createprofile') }}" class="createprofile">
 <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}" />
   
 <input type="submit" class="btn btn-warning" value="Create Demo Account" />
 </form>
 
-
+@endif
 @endif
 </div>
 <div role="tabpanel" class="tab-pane @if(request()->input('tab') == 'orders')active @endif" id="orders">
