@@ -31,16 +31,18 @@
 
 @if(!$myorders[0]->id)
 @else
+@if($custtheme != "not present")
 <a href="{{ route('demologine1') }}" class="btn btn-primary"> Demo Account Login </a>
-
 @endif
+@endif
+@if($custtheme != "not present")
 @if(!$custtheme->id)
 <form method="post" action="{{ route('createprofile') }}" class="createprofile">
 <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}" />
   
 <input type="submit" class="btn btn-warning" value="Create Demo Account" />
 </form>
-
+@endif
 @endif
 @endif
 </div>

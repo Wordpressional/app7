@@ -90,7 +90,7 @@ class AccountsController extends Controller
         }
         else
         {
-            $custtheme = null;
+            $custtheme = "not present";
         }
        // dd($custtheme);
 
