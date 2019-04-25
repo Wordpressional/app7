@@ -29,7 +29,8 @@ trait DemoTrait {
          $c_logged = Auth::guard('checkout')->id();
          $customer = Customer::where('id',$c_logged)->first();
   //dd(Auth::guard('demo')->user()->email);
-         $n_logged = Customer::where('email',$customer->email)->first();
+         $user = User::where('email',$customer->email)->first();
+         $n_logged = $user->id;
          $n_loggeduser = $customer->email;
          //dd($n_logged);
          $n_userrole = 'cust_demo';
