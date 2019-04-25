@@ -32,7 +32,7 @@ trait DemoTrait {
          $user = User::where('email',$customer->email)->first();
          $n_logged = $user->id;
          $n_loggeduser = $customer->email;
-         dd($n_logged);
+         //dd($n_logged);
          $n_userrole = 'cust_demo';
          } 
          else 

@@ -20,6 +20,7 @@ use App\Account;
 use App\Cmsactivitylog;
 use Illuminate\Http\Request;
 use Auth;
+use App\Shop\Customers\Customer;
 
 use Illuminate\Support\Facades\Input;
 
@@ -170,7 +171,11 @@ class ShowDashboard extends Controller
          } 
          else if(Auth::guard('checkout')->user())
          {
-           $user = User::where('id', Auth::guard('checkout')->user()->id)->first();
+           $c_logged = Auth::guard('checkout')->id();
+         $customer = Customer::where('id',$c_logged)->first();
+  //dd(Auth::guard('demo')->user()->email);
+         $user = User::where('email',$customer->email)->first();
+         
          } 
          else 
          {
