@@ -296,7 +296,7 @@ class WebhomeController extends Controller
 
         $role = Role::where('name', 'cust_demo')->first();
         $user->roles()->attach($role, ['user_type'=>'App/User']);
-
+        
         $mytheme = Theme::where('tname', 'Personal Theme - T2')->first();
 
         $ctheme = new Custtheme;
