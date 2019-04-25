@@ -5,7 +5,7 @@ use App\User;
 use App\Compbrand;
 use App\Role;
 use App\Permission;
-
+use App\Shop\Customers\Customer;
 use Auth;
 
 trait DemoTrait {
@@ -25,11 +25,13 @@ trait DemoTrait {
          
          $n_userrole = Auth::guard('demo')->user()->roles[0]->name;
          } 
-         if(Auth::guard('checkout')->check()){
-         $n_logged = Auth::guard('checkout')->id();
+         else if(Auth::guard('checkout')->check()){
+         $c_logged = Auth::guard('checkout')->id();
+         $customer = Customer::where('id',$c_logged)->first();
   //dd(Auth::guard('demo')->user()->email);
-         $n_loggeduser = Auth::guard('checkout')->user()->email;
-         
+         $n_logged = Customer::where('email',$customer->email)->first();
+         $n_loggeduser = $customer->email;
+         //dd($n_logged);
          $n_userrole = 'cust_demo';
          } 
          else 
