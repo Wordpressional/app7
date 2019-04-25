@@ -7,6 +7,7 @@ use App\Shop\Products\Repositories\Interfaces\ProductRepositoryInterface;
 use App\Http\Traits\SettingsTrait;
 use Auth;
 use App\User;
+use App\Shop\Customers\Customer;
 
 
 class HomeController
@@ -244,8 +245,8 @@ class HomeController
     public function demologine1()
     {     
 
-        $user = User::where('email', Auth::guard('checkout')->user()->email)->first();
-        $user1 = User::where('email', $user->email)->first();
+        $customer = Customer::where('email', Auth::guard('checkout')->user()->email)->first();
+        $user1 = User::where('email', $customer->email)->first();
         //dd($user1);
         Auth::loginUsingId($user1->id, true);
         return redirect()->route('demo.dashboard');
