@@ -85,7 +85,7 @@ class ProductController extends Controller
 
     public function packageshow(string $slug)
     {
-        $product = $this->productRepo->findProductBySlug(['slug' => $slug]);
+        $product = $this->productRepo->findProductBySlug(['slug' => 'start-up']);
         $images = $product->images()->get();
         $category = $product->categories()->first();
         $productAttributes = $product->attributes;

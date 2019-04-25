@@ -23,6 +23,6 @@
             </div>
         </div>
         
-        @include('layoutsecom.front.themeproduct')
+        @include('layoutsecom.front.themepackage')
     </div>
 @endsection

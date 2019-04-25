@@ -1,3 +1,4 @@
+@include('layoutsecom.errors-and-messages')
 <div id="pypricing" class="pradeepamains1 container-fluid bg-gradient p-5">
 
 	<div class="container">

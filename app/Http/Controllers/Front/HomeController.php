@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Front;
 
 use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
 use App\Shop\Products\Repositories\Interfaces\ProductRepositoryInterface;
+use App\Shop\Orders\Repositories\Interfaces\OrderRepositoryInterface;
+use App\Shop\Customers\Repositories\Interfaces\CustomerRepositoryInterface;
 use App\Http\Traits\SettingsTrait;
 use Auth;
 use App\User;
@@ -17,17 +19,22 @@ class HomeController
      * @var CategoryRepositoryInterface
      */
     private $categoryRepo;
+    private $orderRepo;
+    private $productRepo;
+    private $custRepo;
+
 
     /**
      * HomeController constructor.
      * @param CategoryRepositoryInterface $categoryRepository
      */
-    public function __construct(CategoryRepositoryInterface $categoryRepository, ProductRepositoryInterface $productRepository)
+    public function __construct(CategoryRepositoryInterface $categoryRepository, ProductRepositoryInterface $productRepository,
+    OrderRepositoryInterface $orderRepository, CustomerRepositoryInterface $customerRepository)
     {
+        $this->orderRepo = $orderRepository;
         $this->productRepo = $productRepository;
-    
         $this->categoryRepo = $categoryRepository;
-        
+        $this->custRepo = $customerRepository;
     }
 
     /**
@@ -75,6 +82,26 @@ class HomeController
 
     public function shopthemes()
     {
+        if(auth::guard('checkout')->check())
+         {
+            $customer = $this->custRepo->findCustomerById(Auth::guard('checkout')->id());
+
+            $startuppro = $this->productRepo->findProductBySlug(['slug' => 'start-up']);
+            //dd($startup);
+            $olist = $this->orderRepo->listOrders('created_at', 'desc')->where('customer_id', $customer->id)->where('product_id', $startuppro->id);
+
+           
+         //dd($list);
+         }
+         
+        
+        //$orders = $this->orderRepo->findOrderById(['id' => $oid]);
+
+        //$repo = new CategoryRepository($category);
+
+        //$products = $repo->findProducts()->where('status', 1)->all();
+
+
 
         $cat0 = $this->categoryRepo->findCategoryBySlug(['slug' => 'static-themes']);
 
@@ -204,7 +231,7 @@ class HomeController
         //$images = $product->images()->get();
         
         //dd($imarr);
-        return view('front.shopthemes', compact('products0', 'products1', 'products2', 'products3', 'products4', 'products5', 'products6', 'products7', 'products8', 'products9','cat0', 'cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8', 'cat9', 'imarr0', 'imarr1', 'imarr2', 'imarr3', 'imarr4', 'imarr5', 'imarr6', 'imarr7', 'imarr8', 'imarr9'));
+        return view('front.shopthemes', compact('products0', 'products1', 'products2', 'products3', 'products4', 'products5', 'products6', 'products7', 'products8', 'products9','cat0', 'cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8', 'cat9', 'imarr0', 'imarr1', 'imarr2', 'imarr3', 'imarr4', 'imarr5', 'imarr6', 'imarr7', 'imarr8', 'imarr9', 'olist'));
     }
 
     public function ecomm1()

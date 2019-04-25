@@ -13,6 +13,11 @@ use App\Shop\Products\Transformations\ProductTransformable;
 use Gloudemans\Shoppingcart\CartItem;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Auth;
+use App\Shop\Categories\Repositories\Interfaces\CategoryRepositoryInterface;
+
+use App\Shop\Orders\Repositories\Interfaces\OrderRepositoryInterface;
+use App\Shop\Customers\Repositories\Interfaces\CustomerRepositoryInterface;
 
 class CartController extends Controller
 {
@@ -38,6 +43,11 @@ class CartController extends Controller
      */
     private $productAttributeRepo;
 
+    private $categoryRepo;
+    private $orderRepo;
+   
+    private $custRepo;
+
     /**
      * CartController constructor.
      * @param CartRepositoryInterface $cartRepository
@@ -49,14 +59,22 @@ class CartController extends Controller
         CartRepositoryInterface $cartRepository,
         ProductRepositoryInterface $productRepository,
         CourierRepositoryInterface $courierRepository,
-        ProductAttributeRepositoryInterface $productAttributeRepository
+        ProductAttributeRepositoryInterface $productAttributeRepository,
+    OrderRepositoryInterface $orderRepository, CustomerRepositoryInterface $customerRepository, CategoryRepositoryInterface $categoryRepository
     ) {
         $this->cartRepo = $cartRepository;
         $this->productRepo = $productRepository;
         $this->courierRepo = $courierRepository;
         $this->productAttributeRepo = $productAttributeRepository;
+        $this->orderRepo = $orderRepository;
+        $this->categoryRepo = $categoryRepository;
+        $this->custRepo = $customerRepository;
     }
 
+
+
+
+    
     /**
      * Display a listing of the resource.
      *
@@ -76,9 +94,24 @@ class CartController extends Controller
         ]);
     }
 
-    public function cart1()
+    public function cart1(Request $request)
     {
+        //dd($request->input('a'));
         //dd("l");
+        if(auth::guard('checkout')->check())
+         {
+            $customer = $this->custRepo->findCustomerById(Auth::guard('checkout')->id());
+
+            $startuppro = $this->productRepo->findProductBySlug(['slug' => 'start-up']);
+            //dd($startup);
+            $olist = $this->orderRepo->listOrders('created_at', 'desc')->where('customer_id', $customer->id)->where('product_id', $startuppro->id);
+
+           
+         //dd($olist);
+       
+         if(!$olist->isEmpty())
+         {
+        
         $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
         $shippingFee = $this->cartRepo->getShippingFee($courier);
 
@@ -89,6 +122,33 @@ class CartController extends Controller
             'shippingFee' => $shippingFee,
             'total' => $this->cartRepo->getTotal(2, $shippingFee)
         ]);
+        }
+        else if($request->input('package') == "startup")
+        {
+            $courier = $this->courierRepo->findCourierById(request()->session()->get('courierId', 1));
+            $shippingFee = $this->cartRepo->getShippingFee($courier);
+
+        return view('front.carts.cart1', [
+            'cartItems' => $this->cartRepo->getCartItemsTransformed(),
+            'subtotal' => $this->cartRepo->getSubTotal(),
+            'tax' => $this->cartRepo->getTax(),
+            'shippingFee' => $shippingFee,
+            'total' => $this->cartRepo->getTotal(2, $shippingFee)
+        ]);
+
+        } 
+        else
+        {
+            return redirect('/landingsitepage/pypricing')->with("message","hi");
+        }
+        }
+        else
+        {
+            return redirect()->route('cart.custe1login');
+        }
+
+
+
     }
 
      public function cartp1()
@@ -114,6 +174,8 @@ class CartController extends Controller
      */
     public function store(AddToCartRequest $request)
     {
+
+      
         $product = $this->productRepo->findProductById($request->input('product'));
 
         if ($product->attributes()->count() > 0) {
@@ -142,10 +204,16 @@ class CartController extends Controller
 
         return redirect()->route('cart.index')
             ->with('message', 'Add to cart successful');
+        
+       
+
     }
 
     public function cart1store(AddToCartRequest $request)
     {
+     
+       
+        
         $product = $this->productRepo->findProductById($request->input('product'));
 
         if ($product->attributes()->count() > 0) {
@@ -172,9 +240,17 @@ class CartController extends Controller
 
         $this->cartRepo->addToCart($product, $request->input('quantity'), $options);
         //dd($product);
-
-        return redirect()->route('cart.cart1')
+        if($request->input('package') == "startup")
+        {
+        return redirect()->route('cart.cart1', ['package' => 'startup'])
             ->with('message', 'Add to cart successful');
+        }
+        else
+        {
+            return redirect()->route('cart.cart1')
+            ->with('message', 'Add to cart successful');
+        }
+        
     }
 
      public function cartp1store(AddToCartRequest $request)

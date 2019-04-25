@@ -1,9 +1,11 @@
+
 <div id="pypricing" class="pradeepamains1 container-fluid bg-gradient p-5">
 
 	<div class="container">
 	<div class="row">
 		<div class="col-md-12">
-<center><h3 class="myblue"><b> PRICING </b></h3></center>
+      
+<center><h3 class="myblue"><b> PRICING</b></h3></center>
 <br /><br />
 </div>
 </div>
@@ -46,7 +48,7 @@
               <li><b>1 free</b> Domain - to setup contact us</li>
               <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+            <a href="{{route('front.get.themepackage',['package'=>'startup'])}}" type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</a>
           </div>
         </div>
        
@@ -88,7 +90,7 @@
                <li><b>1 free</b> Domain - to setup contact us</li>
                <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+            <button type="button" class="btn btn-lg btn-block  btn-custom ">Contact Us</button>
           </div>
         </div>
                
@@ -128,7 +130,7 @@
               <li><b>1 free</b> Digital ocean droplet with 1GB storage space - to setup contact us</li>
               <li><b>Customization</b> Based on initial Software Requirements provided by client is taken up by our technical experts</li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+            <button type="button" class="btn btn-lg btn-block  btn-custom ">Contact Us</button>
           </div>
         </div>
                

@@ -1,7 +1,7 @@
 @extends('layouts.frontendsite')
 
 @section('contentfrontendsite')
-
+@include('layoutsecom.errors-and-messages')
 
 {!! html_entity_decode($page->content) !!}
 
