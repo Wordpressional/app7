@@ -31,8 +31,8 @@
 @if($myorders[0]->id)
 
 <a href="{{ route('demologine1') }}" class="btn btn-primary"> Demo Account Login </a>
-@endif
 @else
+@endif
 
 <form method="post" action="{{ route('createprofile') }}" class="createprofile">
 <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}" />
