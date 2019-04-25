@@ -244,9 +244,10 @@ class HomeController
     public function demologine1()
     {     
 
-        $user = User::where('email', Auth::guard('demo')->user()->email)->first();
-        //dd($user);
-        Auth::loginUsingId($user->id, true);
+        $user = User::where('email', Auth::guard('checkout')->user()->email)->first();
+        $user1 = User::where('email', $user->email)->first();
+        //dd($user1);
+        Auth::loginUsingId($user1->id, true);
         return redirect()->route('demo.dashboard');
     }
 
