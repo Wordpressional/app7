@@ -25,6 +25,13 @@ trait DemoTrait {
          
          $n_userrole = Auth::guard('demo')->user()->roles[0]->name;
          } 
+         if(Auth::guard('checkout')->check()){
+         $n_logged = Auth::guard('checkout')->id();
+  //dd(Auth::guard('demo')->user()->email);
+         $n_loggeduser = Auth::guard('checkout')->user()->email;
+         
+         $n_userrole = 'cust_demo';
+         } 
          else 
          {
 

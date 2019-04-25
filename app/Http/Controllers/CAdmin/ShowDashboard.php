@@ -168,6 +168,10 @@ class ShowDashboard extends Controller
          {
            $user = User::where('id', Auth::guard('demo')->user()->id)->first();
          } 
+         else if(Auth::guard('checkout')->user())
+         {
+           $user = User::where('id', Auth::guard('checkout')->user()->id)->first();
+         } 
          else 
          {
              $user = User::where('id', Auth::user()->id)->first();

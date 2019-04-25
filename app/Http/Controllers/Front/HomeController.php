@@ -245,7 +245,7 @@ class HomeController
     {     
 
         $user = User::where('email', Auth::guard('checkout')->user()->email)->first();
-        dd($user);
+        //dd($user);
         Auth::loginUsingId($user->id, true);
         return redirect()->route('demo.dashboard');
     }
