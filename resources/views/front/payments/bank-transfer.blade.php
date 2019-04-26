@@ -1,5 +1,6 @@
 <tr>
     <td>
+
         @if(isset($payment['name']))
             {{ ucwords($payment['name']) }}
         @else
@@ -12,7 +13,13 @@
         @endif
     </td>
     <td>
-        <form action="{{ route('bank-transfer.index') }}">
+        @php $from = app('request')->input('from'); @endphp
+        @if( $from == "cart1" )
+         <form action="{{ route('bank-transfere1.index') }}">
+            @else
+         <form action="{{ route('bank-transfer.index') }}">   
+        @endif
+       
             <input type="hidden" class="billing_address" name="billing_address" value="">
             <input type="hidden" class="rate" name="rate" value="">
             <input type="hidden" name="shipment_obj_id" value="{{ $shipment_object_id }}">

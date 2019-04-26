@@ -131,7 +131,7 @@
                 </div>
             </div>
         @else
-            <p class="alert alert-danger"><a href="{{ route('customere1.address.create', [$customer->id]) }}">No address found. You need to create an address first here.</a></p>
+            <p class="alert alert-danger"><a href="{{ route('customere1.address.create', [$customerid]) }}">No address found. You need to create an address first here.</a></p>
         @endif
     </div>
 </div>

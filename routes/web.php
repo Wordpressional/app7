@@ -259,6 +259,8 @@ Route::get('customere1login', 'HomeController@customere1login')->name('customere
         Route::namespace('Payments')->group(function () {
             Route::get('bank-transfer', 'BankTransferController@index')->name('bank-transfer.index');
             Route::post('bank-transfer', 'BankTransferController@store')->name('bank-transfer.store');
+            Route::get('bank-transfer-e1', 'BankTransferController@indexe1')->name('bank-transfere1.index');
+            Route::post('bank-transfer-e1', 'BankTransferController@storee1')->name('bank-transfere1.store');
         });
 
         Route::namespace('Addresses')->group(function () {

@@ -153,4 +153,77 @@ class BankTransferController extends Controller
 
         return redirect()->route('accounts', ['tab' => 'orders'])->with('message', 'Order successful!');
     }
+
+    public function indexe1()
+    {
+        return view('front.bank-transfer-redirecte1', [
+            'subtotal' => $this->cartRepo->getSubTotal(),
+            'shipping' => $this->shippingFee,
+            'tax' => $this->cartRepo->getTax(),
+            'total' => $this->cartRepo->getTotal(2, $this->shippingFee),
+            'rateObjectId' => $this->rateObjectId,
+            'shipmentObjId' => $this->shipmentObjId,
+            'billingAddress' => $this->billingAddress
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
+     */
+    public function storee1(Request $request)
+    {
+        $checkoutRepo = new CheckoutRepository;
+        $orderStatusRepo = new OrderStatusRepository(new OrderStatus);
+        $os = $orderStatusRepo->findByName('ordered');
+
+        $order = $checkoutRepo->buildCheckoutItems([
+            'reference' => Uuid::uuid4()->toString(),
+            'courier_id' => 1, // @deprecated
+            'customer_id' => Auth::guard('checkout')->id(),
+            'address_id' => $request->input('billing_address'),
+            'order_status_id' => $os->id,
+            'payment' => strtolower(config('bank-transfer.name')),
+            'discounts' => 0,
+            'total_products' => $this->cartRepo->getSubTotal(),
+            'total' => $this->cartRepo->getTotal(2, $this->shippingFee),
+            'total_shipping' => $this->shippingFee,
+            'total_paid' => 0,
+            'tax' => $this->cartRepo->getTax()
+        ]);
+
+        if (env('ACTIVATE_SHIPPING') == 1) {
+            $shipment = Shippo_Shipment::retrieve($this->shipmentObjId);
+
+            $details = [
+                'shipment' => [
+                    'address_to' => json_decode($shipment->address_to, true),
+                    'address_from' => json_decode($shipment->address_from, true),
+                    'parcels' => [json_decode($shipment->parcels[0], true)]
+                ],
+                'carrier_account' => $this->carrier->carrier_account,
+                'servicelevel_token' => $this->carrier->servicelevel->token
+            ];
+
+            $transaction = Shippo_Transaction::create($details);
+
+            if ($transaction['status'] != 'SUCCESS'){
+                Log::error($transaction['messages']);
+                return redirect()->route('checkout.index')->with('error', 'There is an error in the shipment details. Check logs.');
+            }
+
+            $orderRepo = new OrderRepository($order);
+            $orderRepo->updateOrder([
+                'courier' => $this->carrier->provider,
+                'label_url' => $transaction['label_url'],
+                'tracking_number' => $transaction['tracking_number']
+            ]);
+        }
+
+        Cart::destroy();
+
+        return redirect()->route('accountse1', ['tab' => 'orders'])->with('message', 'Order successful!');
+    }
 }

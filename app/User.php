@@ -276,7 +276,7 @@ class User extends Authenticatable
        $role = User::with('roles')->where('email', $data['n_loggeduser'])->first();
        //$rname = ::where('name')
        //dd($data['n_loggeduser']);
-       //dd($role->roles[0]->name);
+       //dd($role);
       if($role->roles[0]->name == "cust_demo")
        {
            return "yes";
