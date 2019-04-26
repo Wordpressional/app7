@@ -99,6 +99,7 @@ class ProductController extends Controller
 
         if(auth::guard('checkout')->check())
          {
+            $notlogged = "true";
             $customer = Customer::where('id',Auth::guard('checkout')->id())->first();
         
         $user = User::where('email', $customer->email)->first();
@@ -106,6 +107,7 @@ class ProductController extends Controller
         if(!$user)
         {
             $custtheme = null;
+
         }
         else
         {
@@ -118,7 +120,7 @@ class ProductController extends Controller
            return redirect('/cart/custe1login');
         }
         
-        if($custtheme && $notlogged == "false")
+        if($custtheme || $notlogged == "false")
         {
                        
             return redirect('/landingsitepage/pypricing')->with("message","You have already purchased this package");

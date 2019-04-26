@@ -19,6 +19,7 @@ use App\Http\Traits\SettingsTrait;
 use Auth;
 use App\Custtheme;
 use App\Shop\Customers\Customer;
+use App\Shop\Orders\Order;
 
 class WebhomeController extends Controller
 {
@@ -299,6 +300,14 @@ class WebhomeController extends Controller
         
         $mytheme = Theme::where('tname', 'Personal Theme - T2')->first();
 
+
+        $formshortcode = new Form();
+        $formshortcode->formname = "Demo_Page_".$user->id;
+        $formshortcode->shortcode = "demo".$user->id;
+        $formshortcode->createdby = $user->id;
+        $formshortcode->save();
+
+
         $ctheme = new Custtheme;
         $ctheme->tname = $mytheme->tname;
         $ctheme->tcontent = $mytheme->tcontent;
@@ -310,7 +319,7 @@ class WebhomeController extends Controller
         
         $customer->users()->attach($user->id);
         
-       return redirect()->back()->with('message', 'Demo Account Created Successfully');;
+       return redirect()->back()->with('message', 'Demo Account Created Successfully');
       }
 
     /*public function showprofile()
@@ -332,6 +341,37 @@ class WebhomeController extends Controller
 
         return view('front.customers.profileform')->with(['data' =>$data, 'thisuser' => $thisuser]);
     }*/
+
+    public function loadthemetodemo(Request $request)
+    {
+        if(Auth::guard('checkout')->user())
+         {
+           $thisuser = User::with('roles')->where('email', Auth::guard('checkout')->user()->email)->first();
+         } 
+         $order = Order::with('products')->where('reference', $request->order)->first();
+        
+        $orderid = $order->id;
+
+        $query = Order::whereHas('products', function ($q) use ($orderid) {
+                $q->where('order_id', $orderid);
+            })->with('products')->first();
+
+        //dd($query->products[0]->name);
+       $mytheme = Theme::where('tname', $query->products[0]->name)->first();
+
+
+        $ctheme = new Custtheme;
+        $ctheme->tname = $mytheme->tname;
+        $ctheme->tcontent = $mytheme->tcontent;
+
+        $ctheme->tstatus = "inactive";
+        $ctheme->custid = $thisuser->id;
+        $ctheme->orderid = $orderid;
+
+        $ctheme->save();
+
+         return redirect()->to('/accountse1')->with('message', 'Theme loaded into demo account successfully and ready for customization');
+    } 
 
    
 }

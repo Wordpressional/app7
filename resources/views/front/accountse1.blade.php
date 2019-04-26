@@ -32,7 +32,8 @@
 @if(!$myorders[0]->id)
 @else
 @if($custtheme != "not present")
-<a href="{{ route('demologine1') }}" class="btn btn-primary"> Demo Account Login </a>
+
+<a href="{{ route('demologine1') }}" target="_blank" class="btn btn-primary"> Demo Account Login </a>
 @endif
 @endif
 @if($custtheme == "not present")
@@ -53,11 +54,19 @@
 <tr>
 <td>Date</td>
 <td>Total</td>
-<td>Status</td>
+<td class="text-center">Status</td>
+<td class="text-center">Load Theme</td>
 </tr>
 </tbody>
 <tbody>
-@foreach ($orders as $order)
+@foreach ($orders as $key => $order)
+@foreach ($qorders as $key => $qorder)
+
+
+@if($qorder[0]->products[0]->pivot->order_id == $order['id'])
+@if($order['customer_id'] == Auth::guard('checkout')->user()->id)
+
+
 <tr>
 <td>
 <a data-toggle="modal" data-target="#order_modal_{{$order['id']}}" title="Show order" href="javascript: void(0)">{{ date('M d, Y h:i a', strtotime($order['created_at'])) }}</a>
@@ -77,6 +86,7 @@
             <th>Payment Method</th>
             <th>Total</th>
             <th>Status</th>
+            
         </thead>
         <tbody>
             <tr>
@@ -89,6 +99,7 @@
                 <td>{{$order['payment']}}</td>
                 <td>{{ config('cart.currency_symbol') }} {{$order['total']}}</td>
                 <td><p class="text-center" style="color: #ffffff; background-color: {{ $order['status']->color }}">{{ $order['status']->name }}</p></td>
+                
             </tr>
         </tbody>
     </table>
@@ -101,8 +112,25 @@
 </div>
 </td>
 <td><span class="label @if($order['total'] != $order['total_paid']) label-danger @else label-success @endif">{{ config('cart.currency') }} {{ $order['total'] }}</span></td>
-<td><p class="text-center" style="color: #ffffff; background-color: {{ $order['status']->color }}">{{ $order['status']->name }}</p></td>
+<td><p class="text-center" style="padding:4px 10px 4px 10px; font-size: 14px; color: #ffffff; background-color: {{ $order['status']->color }}">{{ $order['status']->name }}</p></td>
+<td>
+@if($custthemes)
+ @foreach ($custthemes as $key1 => $custt)  @if($qorder[0]->products[0]->pivot->product_name == $custt->tname) {{$qorder[0]->products[0]->pivot->product_name}} {{$custt->tname}}<br><p class="text-center" style="padding:4px 10px 4px 10px; font-size: 14px; color: #ffffff; background-color: green">Loaded</p>  @endif  @endforeach   
+
+
+@foreach ($custthemes as $key1 => $custt) @if($key1 == 0) @if($qorder[0]->products[0]->pivot->order_id != $custt->orderid) @if($qorder[0]->products[0]->pivot->product_name == "Start Up") @else  {{$qorder[0]->products[0]->pivot->product_name}} <br><p class="text-center"><a href="{{ route('loadthemetodemo', ['order'=>$order['reference']]) }}" style="color: #ffffff; background-color: maroon; padding:4px 20px 4px 20px; font-size: 14px; "> Load</a></p> @endif @endif @endif @endforeach
+
+
+@endif
+
+</td>
 </tr>
+@endif
+@endif
+
+@endforeach
+
+
 @endforeach
 </tbody>
 </table>

@@ -534,3 +534,5 @@ Route::post('/demo/createprofile',[
     ]);
 
 Route::get('/admin/address/list/index', 'Admin\Addresses\AddressController@index')->name('admin.addresses.index');
+
+Route::get("/load/themetodemo", 'WebhomeController@loadthemetodemo')->name('loadthemetodemo');

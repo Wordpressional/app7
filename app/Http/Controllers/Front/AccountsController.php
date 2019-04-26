@@ -65,6 +65,7 @@ class AccountsController extends Controller
 
     public function indexe1()
     {
+        $orderqueryarray = array();
         //dd($this->customerRepo->findCustomerById(15));
         //dd(Auth::guard('checkout')->id());
         $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
@@ -87,19 +88,38 @@ class AccountsController extends Controller
         if($user)
         {
           $custtheme = Custtheme::where('custid', $user->id)->first();
+          $custthemes = Custtheme::where('custid', $user->id)->get();
         }
         else
         {
             $custtheme = "not present";
+            $custthemes = null;
         }
-       // dd($custtheme);
+        
+        $orderss = Order::with('products')->where('customer_id', $customer->id)->get();
+        foreach($orderss as $order)
+        {
+        $orderid = $order->id; 
+        $orderquery = Order::whereHas('products', function ($q) use ($orderid) {
+                $q->where('order_id', $orderid);
+            })->with('products')->get();
+        array_push($orderqueryarray, $orderquery);
+        }
+        //dd($orderqueryarray[0][0]->products[0]);
+        $orderscust = $this->customerRepo->paginateArrayResults($orders->toArray(), 15);
+        //dd($orderscust);
+
+        //dd($custtheme->custid);
 
         return view('front.accountse1', [
             'customer' => $customer,
-            'orders' => $this->customerRepo->paginateArrayResults($orders->toArray(), 15),
+            'orders' => $orderscust,
+            'qorders' => $orderqueryarray,
             'addresses' => $addresses,
             'myorders' => $myorders,
-            'custtheme' => $custtheme
+            'custtheme' => $custtheme,
+            'custthemes' => $custthemes,
+             'user' => $user
         ]);
     }
 }
