@@ -296,7 +296,38 @@ Route::get('customere1login', 'HomeController@customere1login')->name('customere
         Route::post('checkout/execute', 'CheckoutController@charge')->name('checkout.execute');
         Route::get('checkoute1/cancel', 'CheckoutController@cancele1')->name('checkoute1.cancel');
         Route::get('checkoute1/success', 'CheckoutController@successe1')->name('checkoute1.success');
-        //Route::resource('customer.address', 'CustomerAddressController');
+        //Route::resource('customere1.address', 'CustomerAddressController');
+        Route::get('customere1/{customer}/address', 'CustomerAddressController@e1index')->name('customere1.address.index');
+
+        Route::get('customere1/{customer}/address/create', 'CustomerAddressController@e1create')->name('customere1.address.create');
+
+        Route::post('customere1/{customerid}/address',[
+
+        'uses' => 'CustomerAddressController@e1store',
+        'as' => 'customere1.address.store'
+
+        ]);
+
+        Route::get('customere1/{customer}/address/{address}/edit', 'CustomerAddressController@e1edit')->name('customere1.address.edit');
+
+        Route::put('customere1/{customer}/address/{address}',[
+
+
+        'uses' => 'CustomerAddressController@e1update',
+        'as' => 'customere1.address.update'
+
+        ]);
+
+        Route::delete('customere1/{customer}/address/{address}',[
+
+
+        'uses' => 'CustomerAddressController@e1destroy',
+        'as' => 'customere1.address.destroy'
+
+        ]);
+
+        
+
     });
 
 

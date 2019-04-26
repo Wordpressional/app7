@@ -114,7 +114,7 @@
 <div role="tabpanel" class="tab-pane @if(request()->input('tab') == 'address')active @endif" id="address">
 <div class="row">
 <div class="col-md-6">
-<a href="{{ route('customer.address.create', Auth::guard('checkout')->id()) }}" class="btn btn-primary">Create your address</a>
+<a href="{{ route('customere1.address.create', Auth::guard('checkout')->id()) }}" class="btn btn-primary">Create your address</a>
 </div>
 </div>
 @if(!$addresses->isEmpty())
@@ -148,11 +148,11 @@
 <td>{{$address->zip}}</td>
 <td>{{$address->phone}}</td>
 <td>
-<form method="post" action="{{ route('customer.address.destroy', [Auth::guard('checkout')->id(), $address->id]) }}" class="form-horizontal">
+<form method="post" action="{{ route('customere1.address.destroy', [Auth::guard('checkout')->id(), $address->id]) }}" class="form-horizontal">
 <div class="btn-group">
 <input type="hidden" name="_method" value="delete">
 {{ csrf_field() }}
-<a href="{{ route('customer.address.edit', [Auth::guard('checkout')->id(), $address->id]) }}" class="btn btn-primary"> <i class="fa fa-pencil"></i> Edit</a>
+<a href="{{ route('customere1.address.edit', [Auth::guard('checkout')->id(), $address->id]) }}" class="btn btn-primary"> <i class="fa fa-pencil"></i> Edit</a>
 <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-danger"> <i class="fa fa-trash"></i> Delete</button>
 </div>
 </form>

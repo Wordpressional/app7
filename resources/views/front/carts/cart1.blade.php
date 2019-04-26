@@ -57,7 +57,7 @@
                             </tfoot>
                             <tbody>
                             @foreach($cartItems as $cartItem)
-                            @if($cartItem->name == "Start Up")
+                            
                                 <tr>
                                     <td>
                                         <a href="{{ route('front.get.themepackage', [$cartItem->product->slug]) }}" class="hover-border">
@@ -83,7 +83,7 @@
                                     
                                     <td>{{config('cart.currency')}} {{ number_format($cartItem->price, 2) }}</td>
                                 </tr>
-                                @endif
+                                
                             @endforeach
                             </tbody>
                         </table>

@@ -40,7 +40,7 @@ class AddressRepository extends BaseRepository implements AddressRepositoryInter
      */
     public function createAddress(array $data) : Address
     {
-         
+         //dd($data);
 
         try {
             //return $this->create($data);
@@ -50,8 +50,8 @@ class AddressRepository extends BaseRepository implements AddressRepositoryInter
          $address->address_1 = $data['address_1'];
          $address->address_2 = $data['address_2'];
          $address->country_id = (int) $data['country_id'];
-         $address->province_id = (int) $data['province_id'];
-         $address->city = $data['city'];
+         //$address->province_id = (int) $data['province_id'];
+         //$address->city = $data['city'];
          $address->zip = $data['zip'];
          $address->status = $data['status'];
          $address->save();

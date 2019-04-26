@@ -115,9 +115,10 @@ class ProductController extends Controller
         else
         {
            $notlogged = "false";
+           return redirect('/cart/custe1login');
         }
         
-        if($custtheme || $notlogged == "false")
+        if($custtheme && $notlogged == "false")
         {
                        
             return redirect('/landingsitepage/pypricing')->with("message","You have already purchased this package");

@@ -69,6 +69,16 @@ class CustomerAddressController extends Controller
         ]);
     }
 
+    public function e1index()
+    {
+        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
+
+        return view('front.customers.addresses.e1list', [
+            'customer' => $customer,
+            'addresses' => $customer->addresses
+        ]);
+    }
+
     /**
      * @param  $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
@@ -79,6 +89,18 @@ class CustomerAddressController extends Controller
 
         return view('front.customers.addresses.create', [
             'customer' => $customer,
+            'countries' => $this->countryRepo->listCountries(),
+            'cities' => $this->cityRepo->listCities(),
+            'provinces' => $this->provinceRepo->listProvinces()
+        ]);
+    }
+
+    public function e1create()
+    {
+        $customer = $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
+        //dd($customer->id);
+        return view('front.customers.addresses.e1create', [
+            'customerid' => $customer->id,
             'countries' => $this->countryRepo->listCountries(),
             'cities' => $this->cityRepo->listCities(),
             'provinces' => $this->provinceRepo->listProvinces()
@@ -97,6 +119,18 @@ class CustomerAddressController extends Controller
         $this->addressRepo->createAddress($request->except('_token', '_method'));
 
         return redirect()->route('accounts', ['tab' => 'address'])
+            ->with('message', 'Address creation successful');
+    }
+
+    public function e1store(CreateAddressRequest $request)
+    {
+        
+        $customer =  $this->customerRepo->findCustomerById(Auth::guard('checkout')->id());
+        $request['customer'] = $customer->id;
+
+        $this->addressRepo->createAddress($request->except('_token', '_method'));
+
+        return redirect()->route('accountse1', ['tab' => 'address'])
             ->with('message', 'Address creation successful');
     }
 
@@ -120,6 +154,22 @@ class CustomerAddressController extends Controller
         ]);
     }
 
+    public function e1edit($customerId, $addressId)
+    {
+        $countries = $this->countryRepo->listCountries();
+
+        $address = $this->addressRepo->findCustomerAddressById($addressId, $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()));
+
+        return view('front.customers.addresses.e1edit', [
+            'customer' =>  $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()),
+            'address' => $address,
+            'countries' => $countries,
+            'cities' => $this->cityRepo->listCities(),
+            'provinces' => $this->provinceRepo->listProvinces()
+        ]);
+    }
+
+
     /**
      * @param UpdateAddressRequest $request
      * @param $addressId
@@ -140,6 +190,20 @@ class CustomerAddressController extends Controller
             ->with('message', 'Address update successful');
     }
 
+    public function e1update(UpdateAddressRequest $request, $addressId)
+    {
+        $address = $this->addressRepo->findCustomerAddressById((int) $request['address_id'], $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()));
+        
+        $request = $request->except('_token', '_method');
+        
+
+        $addressRepo = new AddressRepository($address);
+        $addressRepo->updateAddress($request);
+
+        return redirect()->route('accountse1', ['tab' => 'address'])
+            ->with('message', 'Address update successful');
+    }
+
     /**
      * @param $addressId
      *
@@ -153,6 +217,16 @@ class CustomerAddressController extends Controller
         $address->delete();
 
         return redirect()->route('customer.address.index', $customerId)
+            ->with('message', 'Address delete successful');
+    }
+
+     public function e1destroy($customerId, $addressId)
+    {
+        $address = $this->addressRepo->findCustomerAddressById($addressId, $this->customerRepo->findCustomerById(Auth::guard('checkout')->id()));
+
+        $address->delete();
+
+        return redirect()->route('accountse1', ['tab' => 'address'])
             ->with('message', 'Address delete successful');
     }
 }
