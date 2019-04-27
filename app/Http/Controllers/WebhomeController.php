@@ -301,7 +301,7 @@ class WebhomeController extends Controller
         $mytheme = Theme::where('tname', 'Personal Theme - T2')->first();
 
 
-        $formshortcode = new Form();
+        $formshortcode = new Form;
         $formshortcode->formname = "Demo_Page_".$user->id;
         $formshortcode->shortcode = "demo".$user->id;
         $formshortcode->createdby = $user->id;
@@ -373,5 +373,6 @@ class WebhomeController extends Controller
          return redirect()->to('/accountse1')->with('message', 'Theme loaded into demo account successfully and ready for customization');
     } 
 
+    
    
 }

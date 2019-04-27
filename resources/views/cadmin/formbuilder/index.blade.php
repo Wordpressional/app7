@@ -21,6 +21,7 @@
 					<th>@lang('form.formname')</th>
 					<th>Shortcode</th>
 					<th>Edit</th>
+					<th>Clone</th>
 					<th>Preview</th>
 
 					<th>Delete</th>
@@ -57,6 +58,13 @@
 			              	<a class="btn btn-info" href="{{ route('cadmin.forms.edit',['id'=>$form->id]) }}">
 			              	
 			              			<span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+			              	</a>
+			              	</td>
+			              	<td>
+
+			              	<a class="btn btn-success" href="{{ route('cadmin.forms.clone',['id'=>$form->id]) }}">
+			              	
+			              			<span><i class="fa fa-clone" aria-hidden="true"></i></span>
 			              	</a>
 			              	</td>
 			              	<td>

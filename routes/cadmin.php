@@ -133,6 +133,14 @@ Route::get('/forms/edit/{id}',[
 
 ]);
 
+Route::get('/forms/clone/{id}',[
+
+
+'uses' => 'FormbuilderController@clonewidget',
+'as' => 'forms.clone'
+
+]);
+
 Route::get('/forms/gereneratemenu',[
 
 

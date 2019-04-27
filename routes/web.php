@@ -303,7 +303,7 @@ Route::get('customere1login', 'HomeController@customere1login')->name('customere
 
         Route::get('customere1/{customer}/address/create', 'CustomerAddressController@e1create')->name('customere1.address.create');
 
-        Route::post('customere1/{customerid}/address',[
+        Route::post('customere1/{customer}/address',[
 
         'uses' => 'CustomerAddressController@e1store',
         'as' => 'customere1.address.store'

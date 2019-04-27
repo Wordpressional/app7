@@ -33,7 +33,7 @@ class FormbuilderController extends Controller
         {
         if($formshortcode['formname'] != 'Home_Page')
         {
-            $formshortcode = new Form();
+            $formshortcode = new Form;
             $formshortcode->formname = "Home_Page";
             $formshortcode->shortcode = "-";
             $formshortcode->save();
@@ -48,7 +48,7 @@ class FormbuilderController extends Controller
         {
         if($formshortcode['formname'] != 'Front_Page')
         {
-            $formshortcode = new Form();
+            $formshortcode = new Form;
             $formshortcode->formname = "Front_Page";
             $formshortcode->shortcode = "-";
             $formshortcode->save();
@@ -94,7 +94,7 @@ class FormbuilderController extends Controller
         {
         if($formshortcode['formname'] != 'Home_Page')
         {
-            $formshortcode = new Form();
+            $formshortcode = new Form;
             $formshortcode->formname = "Home_Page";
             $formshortcode->shortcode = "-";
             $formshortcode->save();
@@ -109,7 +109,7 @@ class FormbuilderController extends Controller
         {
         if($formshortcode['formname'] != 'Front_Page')
         {
-            $formshortcode = new Form();
+            $formshortcode = new Form;
             $formshortcode->formname = "Front_Page";
             $formshortcode->shortcode = "-";
             $formshortcode->save();
@@ -451,6 +451,21 @@ class FormbuilderController extends Controller
     {
          $data = $this->brandsAll();
          return view('cadmin.formbuilder.menubuilder')->with(['data'=> $data]);
+    }
+
+    public function clonewidget($id)
+    {
+        //dd($id);
+        $form = Form::where('id',$id)->first();
+        $rand = bin2hex(openssl_random_pseudo_bytes(4));
+         $newform = new Form;
+         $newform->formname = $id."_dup_".$rand;
+         $newform->shortcode = "dup".$rand;
+         $newform->htmlcontent = $form->htmlcontent;
+         $newform->createdby = $form->createdby;
+         $newform->save();
+
+        return redirect()->back()->with("success", "Duplicate widget was created successfully");
     }
 
 }

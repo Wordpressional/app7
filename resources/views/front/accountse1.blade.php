@@ -115,10 +115,11 @@
 <td><p class="text-center" style="padding:4px 10px 4px 10px; font-size: 14px; color: #ffffff; background-color: {{ $order['status']->color }}">{{ $order['status']->name }}</p></td>
 <td>
 @if($custthemes)
- @foreach ($custthemes as $key1 => $custt)  @if($qorder[0]->products[0]->pivot->product_name == $custt->tname) {{$qorder[0]->products[0]->pivot->product_name}} {{$custt->tname}}<br><p class="text-center" style="padding:4px 10px 4px 10px; font-size: 14px; color: #ffffff; background-color: green">Loaded</p>  @endif  @endforeach   
+    
 
 
-@foreach ($custthemes as $key1 => $custt) @if($key1 == 0) @if($qorder[0]->products[0]->pivot->order_id != $custt->orderid) @if($qorder[0]->products[0]->pivot->product_name == "Start Up") @else  {{$qorder[0]->products[0]->pivot->product_name}} <br><p class="text-center"><a href="{{ route('loadthemetodemo', ['order'=>$order['reference']]) }}" style="color: #ffffff; background-color: maroon; padding:4px 20px 4px 20px; font-size: 14px; "> Load</a></p> @endif @endif @endif @endforeach
+@foreach ($custthemes as $key1 => $custt)  @if($qorder[0]->products[0]->pivot->product_name == $custt->tname) {{$qorder[0]->products[0]->pivot->product_name}} <br><p class="text-center" style="padding:4px 10px 4px 10px; font-size: 14px; color: #ffffff; background-color: green">Loaded</p> @break;  @else  @if($key1+1 == count($custthemes)) @if($qorder[0]->products[0]->pivot->product_name != $custt->tname) @if($qorder[0]->products[0]->pivot->product_name == "Start Up") @else  {{$qorder[0]->products[0]->pivot->product_name}} <br><p class="text-center"><a href="{{ route('loadthemetodemo', ['order'=>$order['reference']]) }}" style="color: #ffffff; background-color: maroon; padding:4px 20px 4px 20px; font-size: 14px; "> Load</a></p> @endif @endif @endif @endif @endforeach
+
 
 
 @endif
@@ -132,6 +133,7 @@
 
 
 @endforeach
+
 </tbody>
 </table>
 {{ $orders->links() }}

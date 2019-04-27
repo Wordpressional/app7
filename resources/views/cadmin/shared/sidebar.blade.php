@@ -412,12 +412,12 @@
          @endrole          
             @role(['superadministrator','cms_superadministrator','cms_administrator','cms_editor', 'cust_demo'])        
 
-                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Color Management">
+                <!-- <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Color Management">
                     <a class="nav-link {{ Request::is('cadmin/styles') || Request::is('cadmin/styles/*') ? 'active' : '' }}" href="{{ route('cadmin.styles') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;
                         <span class="nav-link-text">Color Management</span>
                     </a>
-                </li>
+                </li>-->
                 <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Choose Themes">
                     <a class="nav-link {{ Request::is('cadmin/themes') || Request::is('cadmin/themes/*') ? 'active' : '' }}" href="{{ route('cadmin.themes') }}">
                         <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;

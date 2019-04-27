@@ -1,7 +1,7 @@
 @extends('layoutsecom.front.mythemeapp')
 
 @section('content')
-    <div class="ecartnatheme1 container product-in-cart-list">
+    <div class="ecartnatheme1 container product-in-cart-list cartptheme1">
         <div class="row">
             <div class="col-md-12">
                 <ol class="breadcrumb">
@@ -33,7 +33,7 @@
                             <p><small class="text-warning text">* {{ config('bank-transfer.note') }}</small></p>
                             <hr>
                             <div class="btn-group">
-                                <a href="{{ route('checkoute1.index') }}" class="btn btn-default">Back</a>
+                                <a href="{{ route('checkoute1.index',['from'=>'cart1']) }}" class="btn btn-default">Back</a>
                                 <button onclick="return confirm('Are you sure?')" class="btn btn-primary">Pay now with Bank Transfer</button>
                                 <input type="hidden" id="billing_address" name="billing_address" value="{{ $billingAddress }}">
                                 <input type="hidden" name="shipment_obj_id" value="{{ $shipmentObjId }}">
